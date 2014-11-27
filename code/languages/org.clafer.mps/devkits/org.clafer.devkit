@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.clafer" uuid="f5479205-2504-43e0-bdca-f3e2aed0435c">
+  <exported-language name="61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)" />
+  <exported-language name="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" />
+</dev-kit>
+
