@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.example.msd" folder="" />
     </projectModules>
   </component>
 </project>
