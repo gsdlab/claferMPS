@@ -1,5 +1,5 @@
-.mps/libraries.xml
-.mps/workspace.xml
+libraries.xml
+workspace.xml
 source_gen
 classes_gen
 test_gen
