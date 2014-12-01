@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="-1" />
+    </dependencies>
+    <rename id="mecy.204078314067494525" type="CONCEPT" from="IClaferModuleContent" to="IElement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="0" />
+    </dependencies>
+    <rename id="mecy.6300420630910100710" type="CHILD" from="cardinality" to="ExplicitCard" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="1" />
+    </dependencies>
+    <rename id="mecy.6300420630910343812" type="CONCEPT" from="GroupCardElement" to="CardElement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="2" />
+    </dependencies>
+    <rename id="mecy.6300420630910343791" type="CONCEPT" from="GroupOr" to="GCardOr" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="3" />
+    </dependencies>
+    <rename id="mecy.6300420630910100710" type="CHILD" from="ExplicitCard" to="explicitCard" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="4" />
+    </dependencies>
+    <rename id="mecy.6300420630910343812" type="CONCEPT" from="CardElement" to="ICardElement" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="5" />
+    </dependencies>
+    <rename id="mecy.7663324203601331313" type="CONCEPT" from="GCardMut" to="GCardMux" />
+  </StructureModification>
+</history>
+
