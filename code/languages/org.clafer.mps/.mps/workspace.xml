@@ -7,28 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="497dc940-49b5-4e6b-a811-8ee665ca912b" name="Default" comment="Added basic concepts&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.sugar/languageModels/behavior.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.sugar/languageModels/constraints.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.sugar/languageModels/editor.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/intentions.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.sugar/generator/template/main@generator.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.sugar/org.clafer.sugar.mpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/structure.history" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.sugar/languageModels/structure.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.clafer.sugar/languageModels/typesystem.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.clafer.expr/languageModels/actions.mps" afterPath="$PROJECT_DIR$/languages/org.clafer.expr/languageModels/actions.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/behavior.mps" afterPath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/constraints.mps" afterPath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/constraints.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.clafer.example/models/org/clafer/example/demo.mps" afterPath="$PROJECT_DIR$/solutions/org.clafer.example/models/org/clafer/example/demo.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/misc.xml" afterPath="$PROJECT_DIR$/.mps/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" afterPath="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" afterPath="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" afterPath="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/modules.xml" afterPath="$PROJECT_DIR$/.mps/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" afterPath="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/typesystem.mps" afterPath="$PROJECT_DIR$/languages/org.clafer.core/languageModels/typesystem.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="org.clafer.mps.iws" />
@@ -45,7 +24,7 @@
       <list>
         <TabState>
           <option name="title" value="Console" />
-          <option name="history" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;model modelUID=&quot;r:d4fe5521-ce3b-4fb7-b1ba-3975fafc5777(TempModel_26572347839306)&quot;&gt;&#13;&#10;  &lt;persistence version=&quot;8&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;de1ad86d-6e50-4a02-b306-d4d17f64c375(jetbrains.mps.console.base)&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;f26691d2-0def-4c06-aec6-2cb90c4af0a4(jetbrains.mps.console.scripts)&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;1a8554c4-eb84-43ba-8c34-6f0d90c6e75a(jetbrains.mps.console.blCommand)&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;a5e4de53-46a3-44da-aab3-68fdf1c34ed0(jetbrains.mps.console.ideCommands)&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;995a7394-7f76-4b8b-a929-c53448708106(jetbrains.mps.console.internalCommands)&quot; /&gt;&#13;&#10;  &lt;devkit namespace=&quot;fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)&quot; /&gt;&#13;&#10;  &lt;import index=&quot;eynw&quot; modelUID=&quot;r:359b1d2b-77c4-46df-9bf2-b25cbea32254(jetbrains.mps.console.base.structure)&quot; version=&quot;1&quot; /&gt;&#13;&#10;  &lt;import index=&quot;z2sp&quot; modelUID=&quot;r:e712f353-5c3c-4288-adce-87c956a52ffb(jetbrains.mps.console.scripts.structure)&quot; version=&quot;0&quot; /&gt;&#13;&#10;  &lt;import index=&quot;3xdn&quot; modelUID=&quot;r:935ba0ee-7291-4caa-a807-d76e8fc69391(jetbrains.mps.console.blCommand.structure)&quot; version=&quot;3&quot; /&gt;&#13;&#10;  &lt;import index=&quot;caxt&quot; modelUID=&quot;r:135a606f-0376-4c5c-9ab8-4030f051a062(jetbrains.mps.console.ideCommands.structure)&quot; version=&quot;-1&quot; /&gt;&#13;&#10;  &lt;import index=&quot;wns9&quot; modelUID=&quot;r:90445206-a973-4c1d-b760-30e5c77b7497(jetbrains.mps.console.internalCommands.structure)&quot; version=&quot;-1&quot; /&gt;&#13;&#10;  &lt;import index=&quot;tpck&quot; modelUID=&quot;r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)&quot; version=&quot;0&quot; implicit=&quot;yes&quot; /&gt;&#13;&#10;  &lt;root type=&quot;eynw.ConsoleRoot&quot; typeId=&quot;eynw.1583916890557930028&quot; id=&quot;7663324203600320934&quot; nodeInfo=&quot;ng&quot;&gt;&#13;&#10;    &lt;node role=&quot;history&quot; roleId=&quot;eynw.1583916890557930415&quot; type=&quot;eynw.History&quot; typeId=&quot;eynw.757553790980850366&quot; id=&quot;204078314067472854&quot; nodeInfo=&quot;ng&quot; /&gt;&#13;&#10;    &lt;node role=&quot;commandHolder&quot; roleId=&quot;eynw.1583916890557930417&quot; type=&quot;eynw.CommandHolder&quot; typeId=&quot;eynw.351968380916615243&quot; id=&quot;7663324203600320935&quot; nodeInfo=&quot;ng&quot;&gt;&#13;&#10;      &lt;property name=&quot;name&quot; nameId=&quot;tpck.1169194664001&quot; value=&quot;CommandHolder&quot; /&gt;&#13;&#10;    &lt;/node&gt;&#13;&#10;  &lt;/root&gt;&#13;&#10;&lt;/model&gt;&#13;&#10;&#13;&#10;" />
+          <option name="history" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;model modelUID=&quot;r:c04af4e7-d0a7-45f8-8390-a26da623963f(TempModel_33070955609276)&quot;&gt;&#13;&#10;  &lt;persistence version=&quot;8&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;de1ad86d-6e50-4a02-b306-d4d17f64c375(jetbrains.mps.console.base)&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;f26691d2-0def-4c06-aec6-2cb90c4af0a4(jetbrains.mps.console.scripts)&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;1a8554c4-eb84-43ba-8c34-6f0d90c6e75a(jetbrains.mps.console.blCommand)&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;a5e4de53-46a3-44da-aab3-68fdf1c34ed0(jetbrains.mps.console.ideCommands)&quot; /&gt;&#13;&#10;  &lt;language namespace=&quot;995a7394-7f76-4b8b-a929-c53448708106(jetbrains.mps.console.internalCommands)&quot; /&gt;&#13;&#10;  &lt;devkit namespace=&quot;fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)&quot; /&gt;&#13;&#10;  &lt;import index=&quot;eynw&quot; modelUID=&quot;r:359b1d2b-77c4-46df-9bf2-b25cbea32254(jetbrains.mps.console.base.structure)&quot; version=&quot;1&quot; /&gt;&#13;&#10;  &lt;import index=&quot;z2sp&quot; modelUID=&quot;r:e712f353-5c3c-4288-adce-87c956a52ffb(jetbrains.mps.console.scripts.structure)&quot; version=&quot;0&quot; /&gt;&#13;&#10;  &lt;import index=&quot;3xdn&quot; modelUID=&quot;r:935ba0ee-7291-4caa-a807-d76e8fc69391(jetbrains.mps.console.blCommand.structure)&quot; version=&quot;3&quot; /&gt;&#13;&#10;  &lt;import index=&quot;caxt&quot; modelUID=&quot;r:135a606f-0376-4c5c-9ab8-4030f051a062(jetbrains.mps.console.ideCommands.structure)&quot; version=&quot;-1&quot; /&gt;&#13;&#10;  &lt;import index=&quot;wns9&quot; modelUID=&quot;r:90445206-a973-4c1d-b760-30e5c77b7497(jetbrains.mps.console.internalCommands.structure)&quot; version=&quot;-1&quot; /&gt;&#13;&#10;  &lt;import index=&quot;tpck&quot; modelUID=&quot;r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)&quot; version=&quot;0&quot; implicit=&quot;yes&quot; /&gt;&#13;&#10;  &lt;root type=&quot;eynw.ConsoleRoot&quot; typeId=&quot;eynw.1583916890557930028&quot; id=&quot;7663324203602551736&quot; nodeInfo=&quot;ng&quot;&gt;&#13;&#10;    &lt;node role=&quot;history&quot; roleId=&quot;eynw.1583916890557930415&quot; type=&quot;eynw.History&quot; typeId=&quot;eynw.757553790980850366&quot; id=&quot;204078314067472854&quot; nodeInfo=&quot;ng&quot; /&gt;&#13;&#10;    &lt;node role=&quot;commandHolder&quot; roleId=&quot;eynw.1583916890557930417&quot; type=&quot;eynw.CommandHolder&quot; typeId=&quot;eynw.351968380916615243&quot; id=&quot;7663324203602551737&quot; nodeInfo=&quot;ng&quot;&gt;&#13;&#10;      &lt;property name=&quot;name&quot; nameId=&quot;tpck.1169194664001&quot; value=&quot;CommandHolder&quot; /&gt;&#13;&#10;    &lt;/node&gt;&#13;&#10;  &lt;/root&gt;&#13;&#10;&lt;/model&gt;&#13;&#10;&#13;&#10;" />
         </TabState>
       </list>
     </option>
@@ -70,23 +49,13 @@
         <entry file="mps://node://org.clafer.core/org.clafer.core.structure/ClaferModule">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="195">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="521" />
-                    <property name="caretXRelative" value="12" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_arlg9k_c0" cellNumber="0" isInList="false">
-                      <node node_reference="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)/204078314067556743" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -117,7 +86,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -133,24 +102,12 @@
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="selectionStart" value="0" />
-                    <property name="hasNonTrivialSelection" value="true" />
-                    <property name="caretX" value="579" />
-                    <property name="selectionEnd" value="2" />
-                    <property name="caretXRelative" value="18" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                      <node node_reference="r:0b784ab1-23fb-426b-b1a5-548466796576(org.clafer.core.typesystem)/7663324203601292041" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+                <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -169,8 +126,8 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="459" />
-                    <property name="caretXRelative" value="102" />
+                    <property name="caretX" value="363" />
+                    <property name="caretXRelative" value="6" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
                       <node node_reference="r:77666878-a961-4760-8fa7-8b6fd31b3f35(org.clafer.core.editor)/7663324203601369952" />
@@ -181,7 +138,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -198,12 +155,13 @@
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretX" value="0" />
-                    <property name="caretXRelative" value="-579" />
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="339" />
+                    <property name="caretXRelative" value="6" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_wnvs45_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" />
+                    <cellInfo cellId="empty_superClafer" cellNumber="0" isInList="false">
+                      <node node_reference="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -211,7 +169,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -226,22 +184,12 @@
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="39" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="empty_children" cellNumber="0" isInList="false">
-                      <node node_reference="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437279" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+                <selectionStack />
                 <errorLabels />
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -271,7 +219,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -290,10 +238,10 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="99" />
-                    <property name="caretXRelative" value="60" />
+                    <property name="caretX" value="267" />
+                    <property name="caretXRelative" value="6" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_g00aa7_a61d0" cellNumber="0" isInList="false">
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
                       <node node_reference="r:289d7096-13ad-4288-a2f3-9746bf0163eb(org.clafer.core.constraints)/7663324203601455575" />
                     </cellInfo>
                   </stackElement>
@@ -302,7 +250,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -333,7 +281,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -364,7 +312,7 @@
                 <folded />
                 <enabledHints />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+              <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -612,30 +560,6 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
-      <pane id="FileSystem">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -663,7 +587,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.core">
+            <PATH_ELEMENT USER_OBJECT="org.clafer.sugar">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -678,46 +602,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="org.clafer.core">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.core.typesystem">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.core">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.core.behavior">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.core">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.core.constraints">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -753,47 +637,31 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.core.editor">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.core">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="org.clafer.core.structure">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="FileSystem">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
+            <PATH_ELEMENT>
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.example">
+            <PATH_ELEMENT>
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.clafer.example.demo">
+            <PATH_ELEMENT>
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -871,8 +739,8 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Variabiity Consistency Verification" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Search" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Verification (CBMC)" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Tree" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -883,17 +751,17 @@
       <window_info id="Context Sidebar" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39502165" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39409906" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Node Info" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="mbeddr TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26524064" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -975,6 +843,63 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added basic concepts&#10;" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="mps://node://org.clafer.core/org.clafer.core.structure/ClaferRef">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:289d7096-13ad-4288-a2f3-9746bf0163eb(org.clafer.core.constraints)/7663324203601455575" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.clafer.core/org.clafer.core.structure/SuperClaferRef">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)/6300420630909770920" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.clafer.core/org.clafer.core.structure/EmptyClaferModuleContent">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)/204078314067568528" />
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://org.clafer.core/org.clafer.core.structure/ClaferModule">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
@@ -1970,10 +1895,10 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="99" />
-                <property name="caretXRelative" value="60" />
+                <property name="caretX" value="267" />
+                <property name="caretXRelative" value="6" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_g00aa7_a61d0" cellNumber="0" isInList="false">
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
                   <node node_reference="r:289d7096-13ad-4288-a2f3-9746bf0163eb(org.clafer.core.constraints)/7663324203601455575" />
                 </cellInfo>
               </stackElement>
@@ -1982,7 +1907,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2011,7 +1936,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2025,24 +1950,12 @@
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="579" />
-                <property name="selectionEnd" value="2" />
-                <property name="caretXRelative" value="18" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:0b784ab1-23fb-426b-b1a5-548466796576(org.clafer.core.typesystem)/7663324203601292041" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+            <selectionStack />
             <errorLabels />
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2059,8 +1972,8 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="459" />
-                <property name="caretXRelative" value="102" />
+                <property name="caretX" value="363" />
+                <property name="caretXRelative" value="6" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
                   <node node_reference="r:77666878-a961-4760-8fa7-8b6fd31b3f35(org.clafer.core.editor)/7663324203601369952" />
@@ -2071,7 +1984,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2086,12 +1999,13 @@
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-579" />
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="339" />
+                <property name="caretXRelative" value="6" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_wnvs45_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" />
+                <cellInfo cellId="empty_superClafer" cellNumber="0" isInList="false">
+                  <node node_reference="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2099,7 +2013,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2112,22 +2026,12 @@
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="39" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_children" cellNumber="0" isInList="false">
-                  <node node_reference="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437279" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+            <selectionStack />
             <errorLabels />
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2155,7 +2059,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2168,23 +2072,13 @@
     <entry file="mps://node://org.clafer.core/org.clafer.core.structure/ClaferModule">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="195">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="521" />
-                <property name="caretXRelative" value="12" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_arlg9k_c0" cellNumber="0" isInList="false">
-                  <node node_reference="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)/204078314067556743" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack />
             <errorLabels />
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2213,7 +2107,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2242,7 +2136,7 @@
             <folded />
             <enabledHints />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203601437285" viewPositionX="0" viewPositionY="-17">
+          <inspectorMemento currentlyEditedNode="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)/7663324203603221907" viewPositionX="0" viewPositionY="-17">
             <selectionStack />
             <errorLabels />
             <folded />
