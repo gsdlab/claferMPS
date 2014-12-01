@@ -168,6 +168,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7663324203600887714" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ClaferRef" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-&gt;" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7663324203601194103" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="isBag" />
