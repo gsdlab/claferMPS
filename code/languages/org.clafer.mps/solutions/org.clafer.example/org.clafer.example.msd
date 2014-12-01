@@ -7,6 +7,7 @@
   </models>
   <sourcePath />
   <usedLanguages>
+    <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
     <usedLanguage>137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
