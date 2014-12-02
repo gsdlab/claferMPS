@@ -68,7 +68,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128058" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BooleanType" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="types" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.boolean" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="true and false" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="boolean" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128056" resolveInfo="PrimitiveType" />
@@ -126,8 +126,8 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128108" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IntType" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.int" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C int type" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="int" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="integer type" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="integer" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512129322" nodeInfo="ig">
@@ -325,17 +325,6 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1664480272136214700" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
-    <property name="name" nameId="tpck.1169194664001" value="CharLiteral" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="character literal" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="'" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128090" resolveInfo="Literal" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="1664480272136214701" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="value" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7615572890648529894" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.comp" />
     <property name="name" nameId="tpck.1169194664001" value="NotEqualsExpression" />
@@ -365,10 +354,10 @@
     <property name="name" nameId="tpck.1169194664001" value="INumberOperation" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1664480272136207708" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="CharType" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.int" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="char" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="C char type" />
+    <property name="name" nameId="tpck.1169194664001" value="StringType" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.string" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="string" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="string type" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5569318043967823834" nodeInfo="ig">
@@ -576,6 +565,16 @@
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2254577831302317149" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3393165121846091587" resolveInfo="ISuppressErrors" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306470450753" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="literals" />
+    <property name="name" nameId="tpck.1169194664001" value="StringLiteral" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&quot;" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128090" resolveInfo="Literal" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="2851923306470456716" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="text" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
 </model>
