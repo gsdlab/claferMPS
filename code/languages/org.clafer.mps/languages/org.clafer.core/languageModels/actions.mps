@@ -191,13 +191,12 @@
             </node>
           </node>
           <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="9220590295544906677" nodeInfo="nn">
-            <property name="text" nameId="tpdg.1196433942569" value="&gt;" />
+            <property name="text" nameId="tpdg.1196433942569" value="-&gt;" />
           </node>
         </node>
       </node>
       <node role="precondition" roleId="tpdg.1154622757656" type="tpdg.SideTransformHintSubstitutePreconditionFunction" typeId="tpdg.1154622616118" id="9220590295545619582" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9220590295545619583" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="9220590295545671159" nodeInfo="nn" />
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9220590295545620433" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9220590295545736715" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="9220590295545736716" nodeInfo="nn" />
@@ -207,8 +206,6 @@
               </node>
             </node>
           </node>
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="9220590295545683201" nodeInfo="nn" />
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="9220590295545683212" nodeInfo="nn" />
         </node>
       </node>
     </node>
@@ -234,7 +231,7 @@
             </node>
           </node>
           <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="9220590295545618895" nodeInfo="nn">
-            <property name="text" nameId="tpdg.1196433942569" value="&gt;" />
+            <property name="text" nameId="tpdg.1196433942569" value="-&gt;" />
           </node>
         </node>
       </node>
