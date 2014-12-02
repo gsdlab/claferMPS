@@ -22,8 +22,13 @@
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4988923775218268445" nodeInfo="ng">
         <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.GreaterExpression" typeId="mj1k.8860443239512147445" id="4988923775218299671" nodeInfo="ng">
-          <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4988923775218299674" nodeInfo="ng">
-            <property name="value" nameId="mj1k.2212975673976043696" value="10" />
+          <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.PlusExpression" typeId="mj1k.5763383285156373013" id="2851923306465565116" nodeInfo="ng">
+            <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="2851923306465565164" nodeInfo="ng">
+              <property name="value" nameId="mj1k.2212975673976043696" value="20" />
+            </node>
+            <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4988923775218299674" nodeInfo="ng">
+              <property name="value" nameId="mj1k.2212975673976043696" value="10" />
+            </node>
           </node>
           <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4988923775218299562" nodeInfo="ng">
             <property name="value" nameId="mj1k.2212975673976043696" value="10" />

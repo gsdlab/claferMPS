@@ -189,7 +189,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5763383285156372997" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BinaryArithmeticExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith" />
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
@@ -206,28 +206,28 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5763383285156373013" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="PlusExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="plus" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5763383285156373018" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MinusExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="subtract" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5763383285156373020" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="MultiExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="multiply" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5763383285156373022" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DivExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="divide" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="/" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
@@ -367,188 +367,13 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="!=" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4006257212296698015" resolveInfo="BinaryEqualityComparisonExpression" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9013371069686136255" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="BitwiseLeftShiftExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise left shift" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;&lt;" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001101148" resolveInfo="BitwiseBinaryArithmaticsExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940094" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9013371069685926132" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="BitwiseXORExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise xor" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="^" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001101148" resolveInfo="BitwiseBinaryArithmaticsExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940097" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2799490600706093744" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith" />
     <property name="name" nameId="tpck.1169194664001" value="ModuloExpression" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="modulo" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="%" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940093" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3820836583575227340" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectPlusAssignmentExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+=" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="add assign" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3820836583575227338" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectAssignmentExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="329990661091916763" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="329990661091839232" resolveInfo="IAssignmentLike" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3976803464656498416" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <property name="name" nameId="tpck.1169194664001" value="PostDecrementExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="post decrement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="--" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7146330090831893150" resolveInfo="UnaryPrePosModificationExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655574725" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3976803464656498418" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <property name="name" nameId="tpck.1169194664001" value="PreDecrementExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="pre decrement" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="--" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7146330090831893150" resolveInfo="UnaryPrePosModificationExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3976803464656556878" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <property name="name" nameId="tpck.1169194664001" value="BitwiseNotExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise not" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="~" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="3976803464656531170" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <property name="name" nameId="tpck.1169194664001" value="UnaryMinusExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="unary minus" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7323976466035839496" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7323976466035492136" resolveInfo="IBinaryLike" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768541" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectBitwiseORAssignmentExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="|=" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise or assign" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001140386" resolveInfo="BitwiseDirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768537" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectBitwiseANDAssignmentExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="and assign" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;=" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001140386" resolveInfo="BitwiseDirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768539" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectBitwiseXORAssignmentExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="^=" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise xor assign" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001140386" resolveInfo="BitwiseDirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768533" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectBitwiseLeftShiftAssignmentExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise left shift assign" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;&lt;=" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001140386" resolveInfo="BitwiseDirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768535" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectBitwiseRightShiftExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise right shift assign" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&gt;&gt;=" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001140386" resolveInfo="BitwiseDirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4273030818770088796" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectMultiAssignmentExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*=" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="multiply assign" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4273030818770088794" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectMinusAssignmentExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="subtract and assign" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-=" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7193082937527768531" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectModuloAssignmentExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="%=" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="modulo assign" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4375898003726285486" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <property name="name" nameId="tpck.1169194664001" value="PostIncrementExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="post increment" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="++" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7146330090831893150" resolveInfo="UnaryPrePosModificationExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6584628407655574728" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4375898003726285487" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <property name="name" nameId="tpck.1169194664001" value="PreIncrementExpression" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="pre increment" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="++" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7146330090831893150" resolveInfo="UnaryPrePosModificationExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4375898003726285484" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <property name="name" nameId="tpck.1169194664001" value="UnaryArithmeticExpression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="--" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5962749441518381743" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="BitwiseAndExpression" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise and" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001101148" resolveInfo="BitwiseBinaryArithmaticsExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4273030818770088820" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment" />
-    <property name="name" nameId="tpck.1169194664001" value="DirectDivAssignmentExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="/=" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="divide and assign" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1136530067488156615" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="BitwiseORExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="|" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise or" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001101148" resolveInfo="BitwiseBinaryArithmaticsExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940095" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
     </node>
   </root>
@@ -571,16 +396,6 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="5569318043967823834" resolveInfo="PrimitiveBasicIntegralType" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2384034043170171918" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="2384034043170171910" resolveInfo="ISigned" />
-    </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="9013371069685947728" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="BitwiseRightShiftExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&gt;&gt;" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="bitwise right shift" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="1525530766001101148" resolveInfo="BitwiseBinaryArithmaticsExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3342324201518940096" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="3342324201518846461" resolveInfo="INumberOperation" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8463282783691492716" nodeInfo="ig">
@@ -875,19 +690,6 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="329990661091839232" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IAssignmentLike" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7146330090831893150" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.unary" />
-    <property name="name" nameId="tpck.1169194664001" value="UnaryPrePosModificationExpression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4375898003726285484" resolveInfo="UnaryArithmeticExpression" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2943235651224447789" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="329990661091839232" resolveInfo="IAssignmentLike" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7323976466035851065" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7323976466035492136" resolveInfo="IBinaryLike" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7533755140553634202" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
     <property name="name" nameId="tpck.1169194664001" value="StaticValueExpression" />
@@ -1029,20 +831,6 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2254577831302317149" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.3393165121846091587" resolveInfo="ISuppressErrors" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1525530766001101148" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.binary.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="BitwiseBinaryArithmaticsExpression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5763383285156372997" resolveInfo="BinaryArithmeticExpression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1525530766001140386" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.arith.directassignment.bitwise" />
-    <property name="name" nameId="tpck.1169194664001" value="BitwiseDirectAssignmentExpression" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3820836583575227338" resolveInfo="DirectAssignmentExpression" />
   </root>
 </model>
 
