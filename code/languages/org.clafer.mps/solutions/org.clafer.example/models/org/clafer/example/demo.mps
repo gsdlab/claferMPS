@@ -36,7 +36,16 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2851923306453928752" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Goal" typeId="mecy.6300420630909714375" id="2851923306471585827" nodeInfo="ng">
+      <node role="expr" roleId="mecy.2851923306471141996" type="mj1k.PlusExpression" typeId="mj1k.5763383285156373013" id="2851923306471660305" nodeInfo="ng">
+        <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="2851923306471660312" nodeInfo="ng">
+          <property name="value" nameId="mj1k.2212975673976043696" value="20" />
+        </node>
+        <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="2851923306471660297" nodeInfo="ng">
+          <property name="value" nameId="mj1k.2212975673976043696" value="10" />
+        </node>
+      </node>
+    </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2851923306454004885" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7663324203601158447" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Bob" />
