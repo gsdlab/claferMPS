@@ -2,7 +2,7 @@
 <solution name="org.clafer.mps.__spreferences.TypeSizeConfiguration" uuid="~_PreferencesModule#org.clafer.mps.__spreferences.TypeSizeConfiguration" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
+      <sourceRoot path="${module}/models" />
     </modelRoot>
   </models>
   <sourcePath />

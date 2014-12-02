@@ -68,6 +68,10 @@
         </node>
         <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="9220590295546027477" nodeInfo="ng" />
       </node>
+      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="5522049948180424337" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="name" />
+        <property name="isAbstract" nameId="mecy.6300420630909718843" value="true" />
+      </node>
       <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="7663324203601158488" nodeInfo="ng">
         <property name="isBag" nameId="mecy.7663324203601194103" value="false" />
         <link role="claferRef" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158478" resolveInfo="person" />
@@ -87,33 +91,15 @@
     <property name="name" nameId="tpck.1169194664001" value="M2" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7663324203601437279" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="M2Clafer" />
-      <node role="explicitCard" roleId="mecy.6300420630910100710" type=".org.clafer.core.structure.ExplicitCardinality" id="7663324203601437280" nodeInfo="ng">
-        <node role="card" type=".org.clafer.core.structure.NCard" id="7663324203601437281" nodeInfo="ng">
-          <property name="min" value="1" />
-          <property name="max" value="1" />
-        </node>
-      </node>
     </node>
   </root>
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="4988923775216023581" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StdLib" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4988923775216023582" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="integer" />
-      <node role="explicitCard" roleId="mecy.6300420630910100710" type=".org.clafer.core.structure.ExplicitCardinality" id="4988923775216023583" nodeInfo="ng">
-        <node role="card" type=".org.clafer.core.structure.NCard" id="4988923775216023584" nodeInfo="ng">
-          <property name="min" value="1" />
-          <property name="max" value="1" />
-        </node>
-      </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4988923775216023588" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="string" />
-      <node role="explicitCard" roleId="mecy.6300420630910100710" type=".org.clafer.core.structure.ExplicitCardinality" id="4988923775216023589" nodeInfo="ng">
-        <node role="card" type=".org.clafer.core.structure.NCard" id="4988923775216023590" nodeInfo="ng">
-          <property name="min" value="1" />
-          <property name="max" value="1" />
-        </node>
-      </node>
     </node>
   </root>
 </model>
