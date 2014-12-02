@@ -237,5 +237,8 @@
       </node>
     </node>
   </root>
+  <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="5522049948180425808" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="addExplicitCardinality" />
+  </root>
 </model>
 
