@@ -3,10 +3,12 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/org.clafer.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.clafer.sugar/org.clafer.sugar.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.example.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.sugar/org.clafer.sugar.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.example.msd" folder="examples" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ex.clafer.core/test.ex.clafer.core.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.ts.clafer.core/test.ts.clafer.core.msd" folder="tests" />
     </projectModules>
   </component>
 </project>
