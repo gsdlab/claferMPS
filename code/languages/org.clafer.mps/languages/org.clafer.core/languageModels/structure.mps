@@ -47,10 +47,12 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="204078314067922728" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Clafer" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="clafer" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="204078314067922729" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="204078314067494525" resolveInfo="IElement" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2851923306453928875" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6300420630909718843" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="isAbstract" />
