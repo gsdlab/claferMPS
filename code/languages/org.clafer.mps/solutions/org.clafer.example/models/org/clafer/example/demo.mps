@@ -42,7 +42,6 @@
       <property name="name" nameId="tpck.1169194664001" value="Bob" />
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4988923775215947654" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Hand" />
-        <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4988923775218308971" nodeInfo="ng" />
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4988923775215947676" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="left" />
