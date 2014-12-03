@@ -661,5 +661,19 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="for all" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005387556630" resolveInfo="Quantifier" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005389369785" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.binary" />
+    <property name="name" nameId="tpck.1169194664001" value="EquivalenceExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;=&gt;" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Equivalence" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005389678084" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.binary" />
+    <property name="name" nameId="tpck.1169194664001" value="ImplicationExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="=&gt;" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Implication" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
+  </root>
 </model>
 

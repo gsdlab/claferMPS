@@ -44,10 +44,9 @@
           </node>
         </node>
       </node>
-      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005388764387" nodeInfo="ng">
-        <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.AllQuant" typeId="mj1k.4545783005389062889" id="4545783005389366448" nodeInfo="ng">
-          <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.Expression" typeId="mj1k.8860443239512128050" id="4545783005389366450" nodeInfo="ng" />
-        </node>
+      <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005389672519" nodeInfo="ng" />
+      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Goal" typeId="mecy.6300420630909714375" id="4545783005389672550" nodeInfo="ng">
+        <node role="expr" roleId="mecy.2851923306471141996" type="mj1k.TrueLiteral" typeId="mj1k.8860443239512128094" id="4545783005389978706" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2851923306471672169" nodeInfo="ng">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2851923306471672170" nodeInfo="ng">
