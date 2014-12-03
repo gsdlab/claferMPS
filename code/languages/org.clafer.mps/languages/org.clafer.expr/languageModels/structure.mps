@@ -696,5 +696,24 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="not belonging to a set/not being a subset" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005390900221" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
+    <property name="name" nameId="tpck.1169194664001" value="UnionExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="++" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Set union" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005390900876" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
+    <property name="name" nameId="tpck.1169194664001" value="DifferenceExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="--" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005390901273" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
+    <property name="name" nameId="tpck.1169194664001" value="IntersectionExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
+  </root>
 </model>
 

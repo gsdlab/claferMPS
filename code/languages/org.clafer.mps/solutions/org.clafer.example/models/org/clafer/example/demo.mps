@@ -44,15 +44,9 @@
           </node>
         </node>
       </node>
-      <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005389672519" nodeInfo="ng" />
-      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005390296024" nodeInfo="ng">
-        <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.InExpression" typeId="mj1k.4545783005389986980" id="4545783005390296150" nodeInfo="ng">
-          <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005390296179" nodeInfo="ng">
-            <property name="value" nameId="mj1k.2212975673976043696" value="10" />
-          </node>
-          <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005390296084" nodeInfo="ng">
-            <property name="value" nameId="mj1k.2212975673976043696" value="1" />
-          </node>
+      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005390296756" nodeInfo="ng">
+        <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.AllQuant" typeId="mj1k.4545783005389062889" id="4545783005390296787" nodeInfo="ng">
+          <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.Expression" typeId="mj1k.8860443239512128050" id="4545783005390296789" nodeInfo="ng" />
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2851923306471672169" nodeInfo="ng">
