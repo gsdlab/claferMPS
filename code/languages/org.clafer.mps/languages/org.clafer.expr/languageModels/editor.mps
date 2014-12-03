@@ -2749,6 +2749,11 @@
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4545783005387558628" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4545783005387558647" nodeInfo="ng">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
+        <node role="menuDescriptor" roleId="tpc2.1164826688380" type="tpc2.CellMenuDescriptor" typeId="tpc2.1164824717996" id="4545783005387860793" nodeInfo="ng">
+          <node role="cellMenuPart" roleId="tpc2.1164824815888" type="tpc2.CellMenuPart_ReplaceNode_CustomNodeConcept" typeId="tpc2.1164914519156" id="4545783005387860795" nodeInfo="ng">
+            <link role="replacementConcept" roleId="tpc2.1164914727930" targetNodeId="mj1k.4545783005387556630" resolveInfo="Quantifier" />
+          </node>
+        </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4545783005387558664" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="(" />
@@ -2778,6 +2783,13 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.4545783005387558271" resolveInfo="SomeQuant" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4545783005387560250" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="4545783005387558620" resolveInfo="QuantifierEditor" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4545783005387854387" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.4545783005387853877" resolveInfo="NoQuant" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4545783005387855530" nodeInfo="ng">
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="4545783005387558620" resolveInfo="QuantifierEditor" />
     </node>
   </root>
