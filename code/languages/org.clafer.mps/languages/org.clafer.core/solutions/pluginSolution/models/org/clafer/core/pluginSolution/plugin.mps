@@ -14,7 +14,7 @@
   <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="2851923306481390307" nodeInfo="ng" />
   <root type="4w5v.ProjectionModeSwitcher" typeId="4w5v.3897771026684493688" id="3897771026685020053" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-    <property name="name" nameId="tpck.1169194664001" value="presentationMode" />
+    <property name="name" nameId="tpck.1169194664001" value="symbolicMode" />
     <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="3897771026685020054" nodeInfo="ng">
       <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Symbolic Representation" />
       <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="vrqc.2851923306480213196" resolveInfo="claferProjections" />
