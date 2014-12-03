@@ -55,15 +55,11 @@
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Goal" typeId="mecy.6300420630909714375" id="2851923306471585827" nodeInfo="ng">
-      <node role="expr" roleId="mecy.2851923306471141996" type="mj1k.PlusExpression" typeId="mj1k.5763383285156373013" id="2851923306471660305" nodeInfo="ng">
-        <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="2851923306471660312" nodeInfo="ng">
-          <property name="value" nameId="mj1k.2212975673976043696" value="20" />
-        </node>
-        <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="2851923306471660297" nodeInfo="ng">
-          <property name="value" nameId="mj1k.2212975673976043696" value="10" />
-        </node>
+      <node role="expr" roleId="mecy.2851923306471141996" type="mj1k.maxGoalExpression" typeId="mj1k.4545783005386404165" id="4545783005387501986" nodeInfo="ng">
+        <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.TrueLiteral" typeId="mj1k.8860443239512128094" id="4545783005387501988" nodeInfo="ng" />
       </node>
     </node>
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005387130961" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2851923306454004885" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7663324203601158447" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Bob" />
@@ -118,7 +114,29 @@
         <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="7663324203601437279" resolveInfo="M2Clafer" />
       </node>
     </node>
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2851923306453904725" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005382844734" nodeInfo="ng">
+      <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.NotEqualsExpression" typeId="mj1k.7615572890648529894" id="4545783005382846038" nodeInfo="ng">
+        <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005382846041" nodeInfo="ng">
+          <property name="value" nameId="mj1k.2212975673976043696" value="1" />
+        </node>
+        <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005382846040" nodeInfo="ng">
+          <property name="value" nameId="mj1k.2212975673976043696" value="2" />
+        </node>
+      </node>
+    </node>
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005382845922" nodeInfo="ng">
+      <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.TernaryExpression" typeId="mj1k.8729447926330528686" id="4545783005382846574" nodeInfo="ng">
+        <node role="thenExpr" roleId="mj1k.8729447926330528688" type="mj1k.NotExpression" typeId="mj1k.3830958861296781575" id="4545783005386360731" nodeInfo="ng">
+          <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.TrueLiteral" typeId="mj1k.8860443239512128094" id="4545783005386360783" nodeInfo="ng" />
+        </node>
+        <node role="elseExpr" roleId="mj1k.8729447926330528689" type="mj1k.Expression" typeId="mj1k.8860443239512128050" id="4545783005382846576" nodeInfo="ng" />
+        <node role="condition" roleId="mj1k.8729447926330528687" type=".org.clafer.expr.structure.setCountingExpression" id="4545783005384812266" nodeInfo="ng">
+          <node role="expression" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005386063697" nodeInfo="ng">
+            <property name="value" nameId="mj1k.2212975673976043696" value="2" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="imports" roleId="mecy.204078314067497532" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7663324203601437285" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7663324203601437278" resolveInfo="M2" />
     </node>

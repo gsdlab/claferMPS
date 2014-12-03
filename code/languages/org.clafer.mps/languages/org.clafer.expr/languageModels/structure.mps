@@ -577,5 +577,32 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005384490807" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.unary" />
+    <property name="name" nameId="tpck.1169194664001" value="SetCountingExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Set counting operator" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005386404165" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.goals" />
+    <property name="name" nameId="tpck.1169194664001" value="maxGoalExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="max" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="maximum" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005386733607" resolveInfo="GoalExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005386410983" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.goals" />
+    <property name="name" nameId="tpck.1169194664001" value="minGoalExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="min" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="minimum" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005386733607" resolveInfo="GoalExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005386733607" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.goals" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="name" nameId="tpck.1169194664001" value="GoalExpression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
+  </root>
 </model>
 
