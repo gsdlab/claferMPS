@@ -178,5 +178,11 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067922728" resolveInfo="Clafer" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7750719112878294493" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+    <property name="name" nameId="tpck.1169194664001" value="ThisExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="this" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1k.8860443239512128050" resolveInfo="Expression" />
+  </root>
 </model>
 
