@@ -45,8 +45,8 @@
         </node>
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005388764387" nodeInfo="ng">
-        <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.OneQuant" typeId="mj1k.4545783005388460810" id="4545783005388764436" nodeInfo="ng">
-          <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.Expression" typeId="mj1k.8860443239512128050" id="4545783005388764438" nodeInfo="ng" />
+        <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.AllQuant" typeId="mj1k.4545783005389062889" id="4545783005389366448" nodeInfo="ng">
+          <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.Expression" typeId="mj1k.8860443239512128050" id="4545783005389366450" nodeInfo="ng" />
         </node>
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="2851923306471672169" nodeInfo="ng">

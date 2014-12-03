@@ -2807,5 +2807,12 @@
       <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="4545783005387558620" resolveInfo="QuantifierEditor" />
     </node>
   </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4545783005389063706" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.4545783005389062889" resolveInfo="AllQuant" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="4545783005389064908" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="4545783005387558620" resolveInfo="QuantifierEditor" />
+    </node>
+  </root>
 </model>
 

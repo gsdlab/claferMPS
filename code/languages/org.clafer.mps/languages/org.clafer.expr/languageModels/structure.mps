@@ -654,5 +654,12 @@
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="exactly one" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005387556630" resolveInfo="Quantifier" />
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005389062889" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
+    <property name="name" nameId="tpck.1169194664001" value="AllQuant" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="all" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="for all" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005387556630" resolveInfo="Quantifier" />
+  </root>
 </model>
 
