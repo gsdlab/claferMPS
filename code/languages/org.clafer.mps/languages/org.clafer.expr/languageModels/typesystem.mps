@@ -3011,5 +3011,24 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.2851923306470450753" resolveInfo="StringLiteral" />
     </node>
   </root>
+  <root type="tpd4.SubtypingRule" typeId="tpd4.1175147670730" id="2851923306471879650" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.set" />
+    <property name="name" nameId="tpck.1169194664001" value="supertypeOf_SetType" />
+    <node role="body" roleId="tpd4.1175147624276" type="tpee.StatementList" typeId="tpee.1068580123136" id="2851923306471879651" nodeInfo="sn">
+      <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2851923306471885567" nodeInfo="nn">
+        <node role="expression" roleId="tpee.1068581517676" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2851923306471881872" nodeInfo="nn">
+          <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="2851923306471882882" nodeInfo="nn">
+            <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="2851923306471882884" nodeInfo="in">
+              <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1k.2851923306471872544" resolveInfo="GenericSetType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2851923306471879653" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="st" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.2851923306471879396" resolveInfo="SetType" />
+    </node>
+  </root>
 </model>
 
