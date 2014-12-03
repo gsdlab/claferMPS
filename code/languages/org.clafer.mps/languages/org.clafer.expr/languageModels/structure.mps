@@ -577,5 +577,61 @@
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983041843" resolveInfo="string" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005386733607" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.goals" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="name" nameId="tpck.1169194664001" value="GoalExpression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005386404165" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.goals" />
+    <property name="name" nameId="tpck.1169194664001" value="maxGoalExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="max" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="maximum" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005386733607" resolveInfo="GoalExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005386410983" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.goals" />
+    <property name="name" nameId="tpck.1169194664001" value="minGoalExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="min" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="minimum" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005386733607" resolveInfo="GoalExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005384490807" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.unary" />
+    <property name="name" nameId="tpck.1169194664001" value="SetCountingExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Set counting operator" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306471872544" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.set" />
+    <property name="name" nameId="tpck.1169194664001" value="GenericSetType" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128054" resolveInfo="Type" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306471879396" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="types.set" />
+    <property name="name" nameId="tpck.1169194664001" value="SetType" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2851923306471872544" resolveInfo="GenericSetType" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2851923306472522434" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="elementType" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8860443239512128054" resolveInfo="Type" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005387556630" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="name" nameId="tpck.1169194664001" value="Quantifier" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005387558271" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
+    <property name="name" nameId="tpck.1169194664001" value="SomeQuant" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="some" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="at least one" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005387556630" resolveInfo="Quantifier" />
+  </root>
 </model>
 
