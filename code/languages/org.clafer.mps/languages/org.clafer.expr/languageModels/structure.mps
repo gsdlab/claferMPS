@@ -598,7 +598,7 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005386733607" resolveInfo="GoalExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005384490807" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.unary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
     <property name="name" nameId="tpck.1169194664001" value="SetCountingExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Set counting operator" />
@@ -662,17 +662,24 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005387556630" resolveInfo="Quantifier" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005389369785" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.logic.binary" />
     <property name="name" nameId="tpck.1169194664001" value="EquivalenceExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;=&gt;" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Equivalence" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005389678084" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.binary" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.logic.binary" />
     <property name="name" nameId="tpck.1169194664001" value="ImplicationExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="=&gt;" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Implication" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005389978817" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.logic.binary" />
+    <property name="name" nameId="tpck.1169194664001" value="XorExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="xor" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="Exclusive or" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
   </root>
 </model>
