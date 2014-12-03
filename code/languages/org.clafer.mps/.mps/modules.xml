@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/org.clafer.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/solutions/pluginSolution/org.clafer.core.pluginSolution.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.sugar/org.clafer.sugar.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.example.msd" folder="examples" />
