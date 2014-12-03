@@ -156,5 +156,27 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067922728" resolveInfo="Clafer" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306472496585" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="ClaferRefExpr" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1k.8860443239512128050" resolveInfo="Expression" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2851923306472496958" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="clafer" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067922728" resolveInfo="Clafer" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306472509129" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+    <property name="name" nameId="tpck.1169194664001" value="ClaferType" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1k.8860443239512128054" resolveInfo="Type" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2851923306472509130" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="clafer" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067922728" resolveInfo="Clafer" />
+    </node>
+  </root>
 </model>
 
