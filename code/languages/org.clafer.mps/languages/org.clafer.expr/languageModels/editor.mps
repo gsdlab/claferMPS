@@ -2859,14 +2859,11 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
     <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.7750719112880673844" resolveInfo="WhereExpression" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7750719112880675103" nodeInfo="nn">
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7750719112880676285" nodeInfo="nn">
-        <property name="text" nameId="tpc2.1073389577007" value="{" />
-      </node>
-      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="7750719112881658651" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1k.7750719112881658573" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4545783005394412189" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1k.4545783005394410979" resolveInfo="quant" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="7750719112880676431" nodeInfo="ng">
-        <property name="separatorText" nameId="tpc2.1140524450557" value="," />
+        <property name="separatorText" nameId="tpc2.1140524450557" value=";" />
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1k.7750719112880676413" />
         <node role="cellLayout" roleId="tpc2.1140524464360" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7750719112880676433" nodeInfo="nn" />
       </node>

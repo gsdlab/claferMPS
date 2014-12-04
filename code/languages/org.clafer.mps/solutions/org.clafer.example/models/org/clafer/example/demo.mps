@@ -62,8 +62,8 @@
             <property name="value" nameId="mj1k.2212975673976043696" value="10" />
           </node>
           <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.SetCountingExpression" typeId="mj1k.4545783005384490807" id="2851923306478753043" nodeInfo="ng">
-            <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.AllQuant" typeId="mj1k.4545783005389062889" id="2851923306477823923" nodeInfo="ng">
-              <node role="expression" roleId="mj1k.7254843406768839760" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="2851923306478585149" nodeInfo="ng">
+            <node role="expression" roleId="mj1k.7254843406768839760" type=".org.clafer.expr.structure.AllQuant" id="2851923306477823923" nodeInfo="ng">
+              <node role="expression" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="2851923306478585149" nodeInfo="ng">
                 <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="7663324203601158447" resolveInfo="Bob" />
               </node>
             </node>
@@ -135,7 +135,6 @@
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392477837" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392477906" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392477976" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005391757462" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Person" />
@@ -166,7 +165,14 @@
         </node>
       </node>
     </node>
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392478047" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005394387816" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005394388045" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="person" />
+      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005394388276" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="gender" />
+      </node>
+    </node>
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005394386616" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392478119" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392477600" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Alice" />
@@ -208,18 +214,12 @@
         <property name="name" nameId="tpck.1169194664001" value="clafer" />
         <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392478218" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="subclafer1" />
-          <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392478220" nodeInfo="ng" />
         </node>
         <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392478226" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="subclafer2" />
           <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005392478232" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="0" />
             <property name="max" nameId="mecy.9220590295543795963" value="1" />
-          </node>
-        </node>
-        <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005392483652" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.AllQuant" typeId="mj1k.4545783005389062889" id="4545783005393099609" nodeInfo="ng">
-            <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.Expression" typeId="mj1k.8860443239512128050" id="4545783005393099611" nodeInfo="ng" />
           </node>
         </node>
         <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392785402" nodeInfo="ng" />
@@ -234,12 +234,15 @@
     <node role="imports" roleId="mecy.204078314067497532" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="4988923775216023600" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="4988923775216023581" resolveInfo="StdLib" />
     </node>
+    <node role="imports" roleId="mecy.204078314067497532" type="vs0r.EmptyChunkDependency" typeId="vs0r.6867589085886993301" id="4545783005394393420" nodeInfo="ng" />
   </root>
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="7663324203601437278" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="M2" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7663324203601437279" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="M2Clafer" />
     </node>
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005394628657" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005394628660" nodeInfo="ng" />
   </root>
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="4988923775216023581" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="StdLib" />
