@@ -871,7 +871,9 @@
                   <link role="link" roleId="tp25.1138056546658" targetNodeId="mecy.6300420630909825947" />
                 </node>
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="7750719112884995600" nodeInfo="nn" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddElementOperation" typeId="tp2q.1160612413312" id="2003025719977213612" nodeInfo="nn">
+                <node role="argument" roleId="tp2q.1160612519549" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="2003025719977214281" nodeInfo="nn" />
+              </node>
             </node>
           </node>
         </node>
