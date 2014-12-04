@@ -2744,8 +2744,13 @@
     <property name="name" nameId="tpck.1169194664001" value="claferProjections" />
     <node role="hints" roleId="tpc2.5944657839000877563" type="tpc2.ConceptEditorHintDeclaration" typeId="tpc2.5944657839003601246" id="2851923306480214334" nodeInfo="ig">
       <property name="showInUI" nameId="tpc2.168363875802087287" value="true" />
-      <property name="name" nameId="tpck.1169194664001" value="symbolic" />
-      <property name="presentation" nameId="tpc2.5944657839012629576" value="symbolic" />
+      <property name="name" nameId="tpck.1169194664001" value="symbolicClafer" />
+      <property name="presentation" nameId="tpc2.5944657839012629576" value="Symbolic Clafer" />
+    </node>
+    <node role="hints" roleId="tpc2.5944657839000877563" type="tpc2.ConceptEditorHintDeclaration" typeId="tpc2.5944657839003601246" id="2003025719977371616" nodeInfo="ig">
+      <property name="showInUI" nameId="tpc2.168363875802087287" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="graphicalClafer" />
+      <property name="presentation" nameId="tpc2.5944657839012629576" value="Graphical Clafer" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2851923306480214428" nodeInfo="ng">
@@ -2854,7 +2859,7 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="2851923306480226564" nodeInfo="nn" />
     </node>
     <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="2851923306480226565" nodeInfo="ig">
-      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="2851923306480214334" resolveInfo="symbolic" />
+      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="2851923306480214334" resolveInfo="symbolicClafer" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7750719112880673868" nodeInfo="ng">

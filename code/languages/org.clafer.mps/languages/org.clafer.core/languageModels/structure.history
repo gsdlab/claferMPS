@@ -42,5 +42,11 @@
     </dependencies>
     <rename id="mecy.7663324203601331313" type="CONCEPT" from="GCardMut" to="GCardMux" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="6" />
+    </dependencies>
+    <rename id="mecy.7663324203600887725" type="REFERENCE" from="claferRef" to="target" />
+  </StructureModification>
 </history>
 

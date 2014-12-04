@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)">
   <persistence version="8" />
+  <language namespace="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" />
   <devkit namespace="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="6" implicit="yes" />
+  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="7" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
   <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="36" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="suqv" modelUID="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" version="0" implicit="yes" />
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="204078314067975135" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="M1" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7663324203601158478" nodeInfo="ng">
@@ -17,7 +19,7 @@
           <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="7663324203601158447" resolveInfo="Bob" />
         </node>
         <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="2851923306452088934" nodeInfo="ng">
-          <link role="claferRef" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158447" resolveInfo="Bob" />
+          <link role="target" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158447" resolveInfo="Bob" />
         </node>
         <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7750719112879683621" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="fingers" />
@@ -108,7 +110,7 @@
         <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="9220590295545942892" nodeInfo="ng" />
         <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="4988923775216023579" nodeInfo="ng">
           <property name="isBag" nameId="mecy.7663324203601194103" value="true" />
-          <link role="claferRef" roleId="mecy.7663324203600887725" targetNodeId="4988923775216023582" resolveInfo="integer" />
+          <link role="target" roleId="mecy.7663324203600887725" targetNodeId="4988923775216023582" resolveInfo="integer" />
         </node>
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="5522049948180424337" nodeInfo="ng">
@@ -119,7 +121,7 @@
         </node>
         <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="7640150046758830558" nodeInfo="ng">
           <property name="isBag" nameId="mecy.7663324203601194103" value="true" />
-          <link role="claferRef" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158447" resolveInfo="Bob" />
+          <link role="target" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158447" resolveInfo="Bob" />
         </node>
         <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="7640150046758893918" nodeInfo="ng">
           <property name="min" nameId="mecy.9220590295543795961" value="12" />
@@ -128,7 +130,7 @@
       </node>
       <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="7663324203601158488" nodeInfo="ng">
         <property name="isBag" nameId="mecy.7663324203601194103" value="false" />
-        <link role="claferRef" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158478" resolveInfo="person" />
+        <link role="target" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158478" resolveInfo="person" />
       </node>
       <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="7663324203601454746" nodeInfo="ng">
         <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="7663324203601437279" resolveInfo="M2Clafer" />
@@ -143,7 +145,7 @@
         <property name="name" nameId="tpck.1169194664001" value="spouse" />
         <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392477494" nodeInfo="ng" />
         <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="4545783005392477488" nodeInfo="ng">
-          <link role="claferRef" roleId="mecy.7663324203600887725" targetNodeId="4545783005391757462" resolveInfo="Person" />
+          <link role="target" roleId="mecy.7663324203600887725" targetNodeId="4545783005391757462" resolveInfo="Person" />
         </node>
         <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005392477490" nodeInfo="ng">
           <property name="min" nameId="mecy.9220590295543795961" value="0" />
@@ -185,7 +187,7 @@
           <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="4545783005391757562" resolveInfo="spouse" />
         </node>
         <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="4545783005392477716" nodeInfo="ng">
-          <link role="claferRef" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158447" resolveInfo="Bob" />
+          <link role="target" roleId="mecy.7663324203600887725" targetNodeId="7663324203601158447" resolveInfo="Bob" />
         </node>
         <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005392477718" nodeInfo="ng">
           <property name="min" nameId="mecy.9220590295543795961" value="1" />
@@ -251,6 +253,74 @@
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4988923775216023588" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="string" />
+    </node>
+  </root>
+  <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="2003025719979074608" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="Graphical" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="2003025719979074672" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Unversity" />
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="2003025719979258495" nodeInfo="ng">
+        <property name="bounds_x" nameId="suqv.6720495385597071501" value="441.0002746582031" />
+        <property name="bounds_y" nameId="suqv.6720495385597071502" value="104.0" />
+        <property name="bounds_width" nameId="suqv.6720495385597071503" value="93.0" />
+        <property name="bounds_height" nameId="suqv.6720495385597071504" value="26.0" />
+      </node>
+    </node>
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2003025719979251312" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="2003025719979251329" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Student" />
+      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="2003025719979251367" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="studiesAt" />
+        <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="2003025719979251371" nodeInfo="ng">
+          <link role="target" roleId="mecy.7663324203600887725" targetNodeId="2003025719979074672" resolveInfo="Unversity" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="2003025719979258497" nodeInfo="ng">
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="22.0" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="151.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="200.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="26.0" />
+        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="2003025719980007058" nodeInfo="ng">
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="2003025719980215388" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="335.50018310546875" />
+            <property name="y" nameId="suqv.2319506556913310863" value="35.00004959106445" />
+          </node>
+          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="2003025719980215389" nodeInfo="ng">
+            <property name="x" nameId="suqv.2319506556913310861" value="335.50018310546875" />
+            <property name="y" nameId="suqv.2319506556913310863" value="117.00004577636719" />
+          </node>
+        </node>
+      </node>
+      <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="2003025719979258496" nodeInfo="ng">
+        <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
+        <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
+        <property name="bounds_width" nameId="suqv.6720495385597071503" value="218.0" />
+        <property name="bounds_height" nameId="suqv.6720495385597071504" value="46.0" />
+      </node>
+      <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="2003025719980215414" nodeInfo="ng">
+        <property name="min" nameId="mecy.9220590295543795961" value="1" />
+        <property name="max" nameId="mecy.9220590295543795963" value="-1" />
+      </node>
+    </node>
+    <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.LayoutMap" typeId="suqv.8963411245960991886" id="2003025719980007064" nodeInfo="ng">
+      <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="2003025719980007065" nodeInfo="ng">
+        <property name="key" nameId="suqv.8963411245960998400" value="2003025719979251367" />
+        <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="2003025719980007063" nodeInfo="ng">
+          <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="2003025719980007066" nodeInfo="ng">
+            <property name="type" nameId="suqv.4767615435799372759" value="label" />
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="2003025719980215396" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="2003025719980215397" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="-40.49981689453125" />
+                <property name="y" nameId="suqv.2319506556913310863" value="-20.999950408935547" />
+              </node>
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="2003025719980215398" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="335.50018310546875" />
+                <property name="y" nameId="suqv.2319506556913310863" value="75.99986457824807" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </root>
 </model>
