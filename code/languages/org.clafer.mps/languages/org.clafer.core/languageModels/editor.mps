@@ -360,7 +360,7 @@
           <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Horizontal" typeId="tpc2.1106270549637" id="8422637505143492105" nodeInfo="nn" />
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4988923775218402962" nodeInfo="nn">
             <property name="text" nameId="tpc2.1073389577007" value="abstract" />
-            <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="7750719112884636386" resolveInfo="indentClafer" />
+            <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="7750719112884636386" resolveInfo="indentContent" />
             <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="4988923775218404001" nodeInfo="nn">
               <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4988923775218404002" nodeInfo="sn">
                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4988923775218404336" nodeInfo="nn">
@@ -394,7 +394,7 @@
           </node>
           <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="4008051939603093888" nodeInfo="ng">
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
-            <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="7750719112884636386" resolveInfo="indentClafer" />
+            <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="7750719112884636386" resolveInfo="indentContent" />
             <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.SideTransformAnchorTagStyleClassItem" typeId="tpc2.1214320119173" id="4988923775217729310" nodeInfo="nn">
               <property name="tag" nameId="tpc2.1214320119174" value="ext_1_RTransform" />
             </node>
@@ -620,6 +620,7 @@
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4988923775215959634" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="&lt;&lt;" />
         <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="tpen.1186415544875" resolveInfo="KeyWord" />
+        <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="7750719112884636386" resolveInfo="indentContent" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="2851923306471586643" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -642,6 +643,7 @@
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="4988923775215959728" nodeInfo="nn" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="4988923775215959724" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="[" />
+        <link role="keyMap" roleId="tpc2.1081339532145" targetNodeId="7750719112884636386" resolveInfo="indentContent" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.PunctuationRightStyleClassItem" typeId="tpc2.1233759184865" id="4988923775218203963" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -765,8 +767,8 @@
     </node>
   </root>
   <root type="tpc2.CellKeyMapDeclaration" typeId="tpc2.1081293058843" id="7750719112884636386" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="indentClafer" />
-    <link role="applicableConcept" roleId="tpc2.1139445935125" targetNodeId="mecy.204078314067922728" resolveInfo="Clafer" />
+    <property name="name" nameId="tpck.1169194664001" value="indentContent" />
+    <link role="applicableConcept" roleId="tpc2.1139445935125" targetNodeId="mecy.204078314067494525" resolveInfo="IElement" />
     <node role="item" roleId="tpc2.1136930944870" type="tpc2.CellKeyMapItem" typeId="tpc2.1136916919141" id="7750719112884637013" nodeInfo="ng">
       <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
       <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="7750719112884637014" nodeInfo="ng">
