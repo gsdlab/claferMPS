@@ -2745,12 +2745,17 @@
     <node role="hints" roleId="tpc2.5944657839000877563" type="tpc2.ConceptEditorHintDeclaration" typeId="tpc2.5944657839003601246" id="2851923306480214334" nodeInfo="ig">
       <property name="showInUI" nameId="tpc2.168363875802087287" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="symbolicClafer" />
-      <property name="presentation" nameId="tpc2.5944657839012629576" value="Symbolic Clafer" />
+      <property name="presentation" nameId="tpc2.5944657839012629576" value="Clafer: Symbolic" />
     </node>
     <node role="hints" roleId="tpc2.5944657839000877563" type="tpc2.ConceptEditorHintDeclaration" typeId="tpc2.5944657839003601246" id="2003025719977371616" nodeInfo="ig">
       <property name="showInUI" nameId="tpc2.168363875802087287" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="graphicalClafer" />
-      <property name="presentation" nameId="tpc2.5944657839012629576" value="Graphical Clafer" />
+      <property name="presentation" nameId="tpc2.5944657839012629576" value="Clafer: Graphical" />
+    </node>
+    <node role="hints" roleId="tpc2.5944657839000877563" type="tpc2.ConceptEditorHintDeclaration" typeId="tpc2.5944657839003601246" id="7539794629909752903" nodeInfo="ig">
+      <property name="showInUI" nameId="tpc2.168363875802087287" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="showIndentsInClafer" />
+      <property name="presentation" nameId="tpc2.5944657839012629576" value="Clafer: Indent Lines" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="2851923306480214428" nodeInfo="ng">

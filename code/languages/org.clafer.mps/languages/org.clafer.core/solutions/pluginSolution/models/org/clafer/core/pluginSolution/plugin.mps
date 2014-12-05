@@ -16,7 +16,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <property name="name" nameId="tpck.1169194664001" value="symbolicMode" />
     <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="3897771026685020054" nodeInfo="ng">
-      <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Symbolic Clafer" />
+      <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Clafer: Symbolic" />
       <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="vrqc.2851923306480213196" resolveInfo="claferProjections" />
       <link role="hint" roleId="4w5v.3897771026684508454" targetNodeId="vrqc.2851923306480214334" resolveInfo="symbolicClafer" />
     </node>
@@ -29,11 +29,24 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
     <property name="name" nameId="tpck.1169194664001" value="graphicalMode" />
     <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="2003025719979251431" nodeInfo="ng">
-      <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Graphical Clafer" />
+      <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Clafer: Graphical" />
       <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="vrqc.2851923306480213196" resolveInfo="claferProjections" />
       <link role="hint" roleId="4w5v.3897771026684508454" targetNodeId="vrqc.2003025719977371616" resolveInfo="graphicalClafer" />
     </node>
     <node role="modification" roleId="4w5v.8575378964581617586" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="2003025719979251432" nodeInfo="ng">
+      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="d244.295213795664246603" resolveInfo="mbeddrPlatformProjectionModeGroup" />
+      <link role="point" roleId="tp4k.1204992316090" targetNodeId="d244.295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
+    </node>
+  </root>
+  <root type="4w5v.ProjectionModeSwitcher" typeId="4w5v.3897771026684493688" id="7539794629910671199" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
+    <property name="name" nameId="tpck.1169194664001" value="indentMode" />
+    <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="7539794629910671200" nodeInfo="ng">
+      <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Clafer: Indent Lines" />
+      <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="vrqc.2851923306480213196" resolveInfo="claferProjections" />
+      <link role="hint" roleId="4w5v.3897771026684508454" targetNodeId="vrqc.7539794629909752903" resolveInfo="showIndentsInClafer" />
+    </node>
+    <node role="modification" roleId="4w5v.8575378964581617586" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="7539794629910671201" nodeInfo="ng">
       <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="d244.295213795664246603" resolveInfo="mbeddrPlatformProjectionModeGroup" />
       <link role="point" roleId="tp4k.1204992316090" targetNodeId="d244.295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
     </node>
