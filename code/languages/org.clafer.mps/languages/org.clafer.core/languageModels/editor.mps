@@ -867,6 +867,7 @@
       <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
       <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="7750719112884975428" nodeInfo="ng">
         <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
+        <property name="modifiers" nameId="tpc2.1136923970223" value="none" />
       </node>
       <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="7750719112884975429" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7750719112884975430" nodeInfo="sn">
@@ -901,6 +902,45 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="7750719112884975448" nodeInfo="nn">
                 <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="7750719112884975449" nodeInfo="nn">
+                  <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mecy.204078314067922728" resolveInfo="Clafer" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="item" roleId="tpc2.1136930944870" type="tpc2.CellKeyMapItem" typeId="tpc2.1136916919141" id="5675649033540789765" nodeInfo="ng">
+      <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
+      <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="5675649033540789766" nodeInfo="ng">
+        <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
+        <property name="modifiers" nameId="tpc2.1136923970223" value="shift" />
+      </node>
+      <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="5675649033540789767" nodeInfo="nn">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5675649033540789768" nodeInfo="sn">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5675649033540793651" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5675649033540800214" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5675649033540794165" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="5675649033540793649" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="5675649033540798138" nodeInfo="nn" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_InsertNextSiblingOperation" typeId="tp25.1143224066846" id="5675649033540801959" nodeInfo="nn">
+                <node role="insertedNode" roleId="tp25.1143224066849" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="5675649033540802473" nodeInfo="nn" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="isApplicableFunction" roleId="tpc2.1136917325338" type="tpc2.CellKeyMap_IsApplicableFunction" typeId="tpc2.1136917249679" id="5675649033540789779" nodeInfo="nn">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5675649033540789780" nodeInfo="sn">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5675649033540804483" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5675649033540810872" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5675649033540805023" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellKeyMap_FunctionParm_selectedNode" typeId="tpc2.1402906326896143883" id="5675649033540804481" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetParentOperation" typeId="tp25.1139613262185" id="5675649033540809018" nodeInfo="nn" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsInstanceOfOperation" typeId="tp25.1139621453865" id="5675649033540812638" nodeInfo="nn">
+                <node role="conceptArgument" roleId="tp25.1177027386292" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="5675649033540813764" nodeInfo="nn">
                   <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mecy.204078314067922728" resolveInfo="Clafer" />
                 </node>
               </node>
