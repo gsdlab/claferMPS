@@ -554,12 +554,12 @@
             <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="1162838191474615049" resolveInfo="State" />
           </node>
         </node>
-        <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="1162838191474627903" nodeInfo="ng" />
       </node>
       <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="1162838191474613433" nodeInfo="ng">
         <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="1162838191474613416" resolveInfo="Component" />
       </node>
     </node>
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7542292670161171862" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1162838191474614135" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="motorStop" />
       <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="1162838191474614158" nodeInfo="ng">
@@ -599,6 +599,7 @@
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="1162838191474635902" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7542292670161167935" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1162838191474636567" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="PowerWindowSystem" />
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1162838191474637568" nodeInfo="ng">
@@ -629,7 +630,7 @@
             <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="1162838191474643011" resolveInfo="ObstacleStatus" />
           </node>
           <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="7542292670160669353" nodeInfo="ng">
-            <property name="min" nameId="mecy.9220590295543795961" value="0" />
+            <property name="min" nameId="mecy.9220590295543795961" value="1" />
             <property name="max" nameId="mecy.9220590295543795963" value="1" />
           </node>
         </node>
@@ -639,7 +640,7 @@
             <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="1162838191474643011" resolveInfo="ObstacleStatus" />
           </node>
           <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="7542292670160669355" nodeInfo="ng">
-            <property name="min" nameId="mecy.9220590295543795961" value="0" />
+            <property name="min" nameId="mecy.9220590295543795961" value="1" />
             <property name="max" nameId="mecy.9220590295543795963" value="1" />
           </node>
         </node>
