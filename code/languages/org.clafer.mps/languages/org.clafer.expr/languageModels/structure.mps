@@ -680,14 +680,14 @@
     <property name="name" nameId="tpck.1169194664001" value="InExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="in" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="belonging to a set/being a subset" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005389987624" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
     <property name="name" nameId="tpck.1169194664001" value="NinExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nin" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="not belonging to a set/not being a subset" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8399455261460717638" resolveInfo="BinaryLogicalExpression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005390900221" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />

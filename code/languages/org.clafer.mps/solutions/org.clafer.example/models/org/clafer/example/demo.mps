@@ -671,10 +671,10 @@
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="2003025719979074672" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Unversity" />
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="2003025719979258495" nodeInfo="ng">
-        <property name="bounds_x" nameId="suqv.6720495385597071501" value="441.0002746582031" />
-        <property name="bounds_y" nameId="suqv.6720495385597071502" value="104.0" />
-        <property name="bounds_width" nameId="suqv.6720495385597071503" value="93.0" />
-        <property name="bounds_height" nameId="suqv.6720495385597071504" value="26.0" />
+        <property name="bounds_x" nameId="suqv.6720495385597071501" value="451.0002746582031" />
+        <property name="bounds_y" nameId="suqv.6720495385597071502" value="100.0" />
+        <property name="bounds_width" nameId="suqv.6720495385597071503" value="116.0" />
+        <property name="bounds_height" nameId="suqv.6720495385597071504" value="33.0" />
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2003025719979251312" nodeInfo="ng" />
@@ -691,22 +691,13 @@
           <property name="bounds_width" nameId="suqv.6720495385597071503" value="200.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="26.0" />
         </node>
-        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="2003025719980007058" nodeInfo="ng">
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="2003025719980215388" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="335.50018310546875" />
-            <property name="y" nameId="suqv.2319506556913310863" value="35.00004959106445" />
-          </node>
-          <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="2003025719980215389" nodeInfo="ng">
-            <property name="x" nameId="suqv.2319506556913310861" value="335.50018310546875" />
-            <property name="y" nameId="suqv.2319506556913310863" value="117.00004577636719" />
-          </node>
-        </node>
+        <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="2003025719980007058" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="2003025719979258496" nodeInfo="ng">
-        <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
-        <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
+        <property name="bounds_x" nameId="suqv.6720495385597071501" value="16.000100135803223" />
+        <property name="bounds_y" nameId="suqv.6720495385597071502" value="61.0" />
         <property name="bounds_width" nameId="suqv.6720495385597071503" value="218.0" />
-        <property name="bounds_height" nameId="suqv.6720495385597071504" value="46.0" />
+        <property name="bounds_height" nameId="suqv.6720495385597071504" value="60.0" />
       </node>
       <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="2003025719980215414" nodeInfo="ng">
         <property name="min" nameId="mecy.9220590295543795961" value="1" />
@@ -719,14 +710,14 @@
         <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="2003025719980007063" nodeInfo="ng">
           <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="2003025719980007066" nodeInfo="ng">
             <property name="type" nameId="suqv.4767615435799372759" value="label" />
-            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="2003025719980215396" nodeInfo="ng">
-              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="2003025719980215397" nodeInfo="ng">
+            <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="4545783005397160196" nodeInfo="ng">
+              <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="4545783005397160197" nodeInfo="ng">
                 <property name="x" nameId="suqv.2319506556913310861" value="-40.49981689453125" />
                 <property name="y" nameId="suqv.2319506556913310863" value="-20.999950408935547" />
               </node>
-              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="2003025719980215398" nodeInfo="ng">
-                <property name="x" nameId="suqv.2319506556913310861" value="335.50018310546875" />
-                <property name="y" nameId="suqv.2319506556913310863" value="75.99986457824807" />
+              <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="4545783005397160198" nodeInfo="ng">
+                <property name="x" nameId="suqv.2319506556913310861" value="342.5" />
+                <property name="y" nameId="suqv.2319506556913310863" value="105.44335870490423" />
               </node>
             </node>
           </node>
