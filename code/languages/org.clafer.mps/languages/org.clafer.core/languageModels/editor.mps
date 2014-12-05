@@ -946,6 +946,7 @@
       <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
       <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="7750719112884637014" nodeInfo="ng">
         <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
+        <property name="modifiers" nameId="tpc2.1136923970223" value="alt" />
       </node>
       <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="7750719112884637015" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7750719112884637016" nodeInfo="sn">
@@ -996,7 +997,7 @@
       <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
       <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="7750719112884975428" nodeInfo="ng">
         <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
-        <property name="modifiers" nameId="tpc2.1136923970223" value="none" />
+        <property name="modifiers" nameId="tpc2.1136923970223" value="alt" />
       </node>
       <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="7750719112884975429" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7750719112884975430" nodeInfo="sn">
@@ -1043,7 +1044,7 @@
       <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
       <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="5675649033540789766" nodeInfo="ng">
         <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
-        <property name="modifiers" nameId="tpc2.1136923970223" value="shift" />
+        <property name="modifiers" nameId="tpc2.1136923970223" value="alt+shift" />
       </node>
       <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="5675649033540789767" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5675649033540789768" nodeInfo="sn">
