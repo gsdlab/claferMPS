@@ -460,6 +460,19 @@
             </node>
           </node>
         </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005398800546" nodeInfo="ng">
+          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.XorExpression" typeId="mj1k.4545783005389978817" id="4545783005398802015" nodeInfo="ng">
+            <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005398802044" nodeInfo="ng">
+              <property name="value" nameId="mj1k.2212975673976043696" value="2" />
+            </node>
+            <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005398801999" nodeInfo="ng">
+              <property name="value" nameId="mj1k.2212975673976043696" value="1" />
+            </node>
+            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4545783005398802204" nodeInfo="ng">
+              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4545783005398802205" nodeInfo="ng" />
+            </node>
+          </node>
+        </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005396519218" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005396520337" nodeInfo="ng">
           <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.InExpression" typeId="mj1k.4545783005389986980" id="4545783005396520944" nodeInfo="ng">
