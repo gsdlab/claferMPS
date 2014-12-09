@@ -60,5 +60,11 @@
     </dependencies>
     <rename id="mecy.4545783005404930938" type="CONCEPT" from="parentExpr" to="ParentExpr" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="9" />
+    </dependencies>
+    <rename id="mecy.4545783005415648009" type="CONCEPT" from="refExpr" to="RefExpr" />
+  </StructureModification>
 </history>
 
