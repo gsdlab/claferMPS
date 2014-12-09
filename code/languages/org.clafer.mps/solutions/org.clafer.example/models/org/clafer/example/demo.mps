@@ -163,7 +163,7 @@
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005394387816" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005394388045" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="person" />
+      <property name="name" nameId="tpck.1169194664001" value="person2" />
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005394388276" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="gender" />
       </node>
