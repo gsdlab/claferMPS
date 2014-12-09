@@ -384,8 +384,8 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8729447926330528686" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="TernaryExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="?" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ternary expression (cond ? then : else)" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="ternary expression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="if" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7323976466035707955" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="7323976466035492136" resolveInfo="IBinaryLike" />
@@ -612,7 +612,7 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306471879396" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="types.set" />
     <property name="name" nameId="tpck.1169194664001" value="SetType" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="2851923306471872544" resolveInfo="GenericSetType" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128054" resolveInfo="Type" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2851923306472522434" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="elementType" />
@@ -683,14 +683,14 @@
     <property name="name" nameId="tpck.1169194664001" value="InExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="in" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="belonging to a set/being a subset" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4480391400038037075" resolveInfo="BelongingExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005389987624" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
     <property name="name" nameId="tpck.1169194664001" value="NinExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="nin" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="not belonging to a set/not being a subset" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4480391400038037075" resolveInfo="BelongingExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005390900221" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
@@ -794,6 +794,11 @@
       <property name="externalValue" nameId="tpce.1083923523172" value="no" />
       <property name="internalValue" nameId="tpce.1083923523171" value="no" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4480391400038037075" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
+    <property name="name" nameId="tpck.1169194664001" value="BelongingExpression" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
   </root>
 </model>
 

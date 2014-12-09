@@ -169,63 +169,12 @@
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005394386616" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392478119" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392477600" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Alice" />
-      <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="4545783005392477654" nodeInfo="ng">
-        <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="4545783005391757462" resolveInfo="Person" />
-      </node>
-      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392477712" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="spouse" />
-        <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="4545783005392477714" nodeInfo="ng">
-          <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="4545783005391757562" resolveInfo="spouse" />
-        </node>
-        <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="4545783005392477716" nodeInfo="ng">
-          <node role="targetType" roleId="mecy.5675649033537919505" type="mecy.ClaferType" typeId="mecy.2851923306472509129" id="5675649033539133106" nodeInfo="ng">
-            <link role="clafer" roleId="mecy.2851923306472509130" targetNodeId="7663324203601158447" resolveInfo="Bob" />
-          </node>
-        </node>
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005392477718" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="1" />
-          <property name="max" nameId="mecy.9220590295543795963" value="1" />
-        </node>
-      </node>
-      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392477787" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="lh" />
-        <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="4545783005392477793" nodeInfo="ng">
-          <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="4545783005392477507" resolveInfo="Hand" />
-        </node>
-        <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392477803" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="indexFinger" />
-          <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="4545783005392477805" nodeInfo="ng">
-            <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="4545783005392477525" resolveInfo="Finger" />
-          </node>
-        </node>
-      </node>
-      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392477824" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="rh" />
-        <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="4545783005392477835" nodeInfo="ng">
-          <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="4545783005392477507" resolveInfo="Hand" />
-        </node>
-      </node>
-      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392478205" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="clafer" />
-        <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392478218" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="subclafer1" />
-        </node>
-        <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005392478226" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="subclafer2" />
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005392478232" nodeInfo="ng">
-            <property name="min" nameId="mecy.9220590295543795961" value="0" />
-            <property name="max" nameId="mecy.9220590295543795963" value="1" />
-          </node>
-        </node>
-        <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392785402" nodeInfo="ng" />
-      </node>
-      <node role="children" roleId="mecy.6300420630909825947" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392477795" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="6752327598763368542" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="clafer" />
     </node>
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392477720" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005392477656" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="6752327598763368721" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="options" />
+    </node>
     <node role="imports" roleId="mecy.204078314067497532" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="7663324203601437285" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="7663324203601437278" resolveInfo="PowerWindow" />
     </node>

@@ -15,6 +15,31 @@
     <node role="nodesToCheck" roleId="tp5g.1217501822150" type="tp5g.TestNode" typeId="tp5g.1216989428737" id="2851923306452090344" nodeInfo="ng">
       <node role="nodeToCheck" roleId="tp5g.1216989461394" type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="2851923306452090346" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Module" />
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="6752327598760752076" nodeInfo="ng">
+          <property name="isAbstract" nameId="mecy.6300420630909718843" value="true" />
+          <property name="name" nameId="tpck.1169194664001" value="Device" />
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="6752327598760762061" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="Component" />
+          <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="6752327598760763171" nodeInfo="ng">
+            <node role="targetType" roleId="mecy.5675649033537919505" type="mecy.ClaferType" typeId="mecy.2851923306472509129" id="6752327598760763173" nodeInfo="ng">
+              <link role="clafer" roleId="mecy.2851923306472509130" targetNodeId="6752327598760752076" resolveInfo="Device" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="6752327598760764294" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="ComponentSet" />
+          <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="6752327598760765407" nodeInfo="ng">
+            <node role="targetType" roleId="mecy.5675649033537919505" type="mecy.ClaferType" typeId="mecy.2851923306472509129" id="6752327598760765409" nodeInfo="ng">
+              <link role="clafer" roleId="mecy.2851923306472509130" targetNodeId="6752327598760752076" resolveInfo="Device" />
+            </node>
+          </node>
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="6752327598760765417" nodeInfo="ng">
+            <property name="min" nameId="mecy.9220590295543795961" value="2" />
+            <property name="max" nameId="mecy.9220590295543795963" value="4" />
+          </node>
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="6752327598760750967" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="2851923306452090348" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="C1" />
           <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="2851923306452090350" nodeInfo="ng">
@@ -135,8 +160,57 @@
             <property name="max" nameId="mecy.9220590295543795963" value="1" />
           </node>
         </node>
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005395847788" nodeInfo="ng" />
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4480391400037861895" nodeInfo="ng" />
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4480391400038937659" nodeInfo="ng" />
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4480391400038939758" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="claferInteger" />
+          <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="4480391400038940808" nodeInfo="ng">
+            <node role="targetType" roleId="mecy.5675649033537919505" type="mj1k.IntType" typeId="mj1k.8860443239512128108" id="4480391400038940810" nodeInfo="ng" />
+          </node>
+          <node role="value" roleId="mecy.4545783005407237529" type="mecy.ClaferValue" typeId="mecy.4545783005407580309" id="4480391400038940818" nodeInfo="ng">
+            <node role="value" roleId="mecy.4545783005407580361" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4480391400038940822" nodeInfo="ng">
+              <property name="value" nameId="mj1k.2212975673976043696" value="10" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4480391400038941895" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="claferString" />
+          <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="4480391400038942950" nodeInfo="ng">
+            <node role="targetType" roleId="mecy.5675649033537919505" type="mj1k.StringType" typeId="mj1k.1664480272136207708" id="4480391400038942952" nodeInfo="ng" />
+          </node>
+          <node role="value" roleId="mecy.4545783005407237529" type="mecy.ClaferValue" typeId="mecy.4545783005407580309" id="4480391400038942960" nodeInfo="ng">
+            <node role="value" roleId="mecy.4545783005407580361" type="mj1k.StringLiteral" typeId="mj1k.2851923306470450753" id="4480391400038942964" nodeInfo="ng">
+              <property name="text" nameId="mj1k.2851923306470456716" value="string" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4480391400038944072" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="claferIntegerError" />
+          <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="4480391400038945192" nodeInfo="ng">
+            <node role="targetType" roleId="mecy.5675649033537919505" type="mj1k.IntType" typeId="mj1k.8860443239512128108" id="4480391400038945194" nodeInfo="ng" />
+          </node>
+          <node role="value" roleId="mecy.4545783005407237529" type="mecy.ClaferValue" typeId="mecy.4545783005407580309" id="4480391400038945202" nodeInfo="ng">
+            <node role="value" roleId="mecy.4545783005407580361" type="mj1k.StringLiteral" typeId="mj1k.2851923306470450753" id="4480391400038945206" nodeInfo="ng">
+              <property name="text" nameId="mj1k.2851923306470456716" value="string" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6752327598760704341" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="6752327598760704342" nodeInfo="ng" />
+          </node>
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="6752327598760746356" nodeInfo="ng">
+          <property name="name" nameId="tpck.1169194664001" value="claferStringError" />
+          <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="6752327598760747450" nodeInfo="ng">
+            <node role="targetType" roleId="mecy.5675649033537919505" type="mj1k.StringType" typeId="mj1k.1664480272136207708" id="6752327598760747452" nodeInfo="ng" />
+          </node>
+          <node role="value" roleId="mecy.4545783005407237529" type="mecy.ClaferValue" typeId="mecy.4545783005407580309" id="6752327598760747460" nodeInfo="ng">
+            <node role="value" roleId="mecy.4545783005407580361" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="6752327598760747464" nodeInfo="ng">
+              <property name="value" nameId="mj1k.2212975673976043696" value="10" />
+            </node>
+          </node>
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="6752327598760747484" nodeInfo="ng">
+            <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="6752327598760747485" nodeInfo="ng" />
+          </node>
+        </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4480391400037862894" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005396095479" nodeInfo="ng">
           <node role="expr" roleId="mecy.4988923775218203830" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005396095810" nodeInfo="ng">
@@ -276,48 +350,14 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005396108414" nodeInfo="ng" />
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005396109289" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.NotExpression" typeId="mj1k.3830958861296781575" id="4545783005396109743" nodeInfo="ng">
-            <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.TrueLiteral" typeId="mj1k.8860443239512128094" id="4545783005396109767" nodeInfo="ng" />
-          </node>
-          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4545783005396118739" nodeInfo="ng">
-            <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4545783005396118740" nodeInfo="ng">
-              <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4545783005396118741" nodeInfo="ng">
-                <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4545783005396118742" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="NOT (LOGICAL)" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005396112077" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.NotExpression" typeId="mj1k.3830958861296781575" id="4545783005396112535" nodeInfo="ng">
-            <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="4545783005396112559" nodeInfo="ng">
-              <node role="expression" roleId="mj1k.7254843406768839760" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005396112587" nodeInfo="ng">
-                <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C5" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005396102136" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.NotExpression" typeId="mj1k.3830958861296781575" id="4545783005396102574" nodeInfo="ng">
-            <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005396102598" nodeInfo="ng">
-              <property name="value" nameId="mj1k.2212975673976043696" value="10" />
-              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4545783005396102738" nodeInfo="ng">
-                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4545783005396102739" nodeInfo="ng" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005396112622" nodeInfo="ng" />
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="6752327598761446526" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005395842961" nodeInfo="ng">
           <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.EqualsExpression" typeId="mj1k.8860443239512129322" id="4545783005395843355" nodeInfo="ng">
             <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="4545783005395843358" nodeInfo="ng">
               <property name="value" nameId="mj1k.2212975673976043696" value="10" />
             </node>
             <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.SetCountingExpression" typeId="mj1k.4545783005384490807" id="4545783005395843198" nodeInfo="ng">
-              <node role="expression" roleId="mj1k.7254843406768839760" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005395848922" nodeInfo="ng">
+              <node role="expression" roleId="mj1k.7254843406768839760" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6759927632792937545" nodeInfo="ng">
                 <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C5" />
               </node>
             </node>
@@ -470,14 +510,6 @@
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005396519218" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005396520337" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.InExpression" typeId="mj1k.4545783005389986980" id="4545783005396520944" nodeInfo="ng">
-            <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005396520981" nodeInfo="ng">
-              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395840292" resolveInfo="C10" />
-            </node>
-            <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005396520913" nodeInfo="ng">
-              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C5" />
-            </node>
-          </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4545783005397151180" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4545783005397151181" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4545783005397151182" nodeInfo="ng">
@@ -485,6 +517,24 @@
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="IN" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.InExpression" typeId="mj1k.4545783005389986980" id="6752327598762376834" nodeInfo="ng">
+            <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598762376863" nodeInfo="ng">
+              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="6752327598760764294" resolveInfo="ComponentSet" />
+            </node>
+            <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598762376813" nodeInfo="ng">
+              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="6752327598760762061" resolveInfo="Component" />
+            </node>
+          </node>
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="6752327598762658113" nodeInfo="ng">
+          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.InExpression" typeId="mj1k.4545783005389986980" id="6752327598762659112" nodeInfo="ng">
+            <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598762659141" nodeInfo="ng">
+              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="6752327598760764294" resolveInfo="ComponentSet" />
+            </node>
+            <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598762659091" nodeInfo="ng">
+              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="6752327598760762061" resolveInfo="Component" />
             </node>
           </node>
         </node>
@@ -503,14 +553,6 @@
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005397151338" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005397152839" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.NinExpression" typeId="mj1k.4545783005389987624" id="4545783005397153780" nodeInfo="ng">
-            <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005397153783" nodeInfo="ng">
-              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C5" />
-            </node>
-            <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005397153782" nodeInfo="ng">
-              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395840292" resolveInfo="C10" />
-            </node>
-          </node>
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4545783005397152843" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4545783005397152844" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4545783005397152845" nodeInfo="ng">
@@ -518,6 +560,14 @@
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="NIN" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.NinExpression" typeId="mj1k.4545783005389987624" id="4480391400038733032" nodeInfo="ng">
+            <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4480391400038733061" nodeInfo="ng">
+              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395840292" resolveInfo="C10" />
+            </node>
+            <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4480391400038733015" nodeInfo="ng">
+              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C5" />
             </node>
           </node>
         </node>
@@ -556,21 +606,21 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005397170577" nodeInfo="ng" />
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005397172656" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.DifferenceExpression" typeId="mj1k.4545783005390900876" id="4545783005397173637" nodeInfo="ng">
-            <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005397173676" nodeInfo="ng">
-              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395840292" resolveInfo="C10" />
-            </node>
-            <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="4545783005397173586" nodeInfo="ng">
-              <node role="expression" roleId="mj1k.7254843406768839760" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005397173608" nodeInfo="ng">
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="6752327598762274314" nodeInfo="ng">
+          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="6752327598762276122" nodeInfo="ng">
+            <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.UnionExpression" typeId="mj1k.4545783005390900221" id="6752327598762276161" nodeInfo="ng">
+              <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598762276192" nodeInfo="ng">
+                <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395840292" resolveInfo="C10" />
+              </node>
+              <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598762276140" nodeInfo="ng">
                 <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C5" />
               </node>
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4545783005397173761" nodeInfo="ng">
-              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4545783005397173762" nodeInfo="ng" />
-            </node>
           </node>
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="6752327598762275225" nodeInfo="ng" />
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005397170577" nodeInfo="ng" />
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005397172656" nodeInfo="ng">
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4545783005397173723" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4545783005397173724" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4545783005397173725" nodeInfo="ng">
@@ -580,28 +630,35 @@
               </node>
             </node>
           </node>
-        </node>
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005396103774" nodeInfo="ng" />
-        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005397204757" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.IntersectionExpression" typeId="mj1k.4545783005390901273" id="4545783005397206186" nodeInfo="ng">
-            <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005397206225" nodeInfo="ng">
-              <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395840292" resolveInfo="C10" />
-            </node>
-            <node role="left" roleId="mj1k.8860443239512128064" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="4545783005397206135" nodeInfo="ng">
-              <node role="expression" roleId="mj1k.7254843406768839760" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005397206157" nodeInfo="ng">
+          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="6752327598761284332" nodeInfo="ng">
+            <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.DifferenceExpression" typeId="mj1k.4545783005390900876" id="6752327598761284371" nodeInfo="ng">
+              <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598761284400" nodeInfo="ng">
+                <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395840292" resolveInfo="C10" />
+              </node>
+              <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598761284350" nodeInfo="ng">
                 <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C5" />
               </node>
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4545783005397206272" nodeInfo="ng">
-              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="4545783005397206273" nodeInfo="ng" />
-            </node>
           </node>
+        </node>
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005396103774" nodeInfo="ng" />
+        <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="4545783005397204757" nodeInfo="ng">
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="4545783005397206593" nodeInfo="ng">
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="4545783005397206594" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="4545783005397206595" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="4545783005397206596" nodeInfo="ng">
                   <property name="escapedValue" nameId="87nw.2557074442922438158" value="INTERSECTION" />
                 </node>
+              </node>
+            </node>
+          </node>
+          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="6752327598761284453" nodeInfo="ng">
+            <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.IntersectionExpression" typeId="mj1k.4545783005390901273" id="6752327598761284492" nodeInfo="ng">
+              <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598761284521" nodeInfo="ng">
+                <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395840292" resolveInfo="C10" />
+              </node>
+              <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="6752327598761284471" nodeInfo="ng">
+                <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C5" />
               </node>
             </node>
           </node>
