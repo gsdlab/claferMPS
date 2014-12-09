@@ -1206,5 +1206,23 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4545783005416240648" nodeInfo="sn" />
     </node>
   </root>
+  <root type="1i04.ConceptBehavior" typeId="1i04.1225194240794" id="4480391400036972210" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
+    <link role="concept" roleId="1i04.1225194240799" targetNodeId="mecy.4545783005415648009" resolveInfo="RefExpr" />
+    <node role="method" roleId="1i04.1225194240805" type="1i04.ConceptMethodDeclaration" typeId="1i04.1225194472830" id="4480391400036973341" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="getTarget" />
+      <link role="overriddenMethod" roleId="1i04.1225194472831" targetNodeId="ywuy.7034214596260727602" resolveInfo="getTarget" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="4480391400036973344" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4480391400037015640" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="4480391400037015639" nodeInfo="nn" />
+        </node>
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tp25.SNodeType" typeId="tp25.1138055754698" id="4480391400037014161" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4480391400037014162" nodeInfo="nn" />
+    </node>
+    <node role="constructor" roleId="1i04.1225194240801" type="1i04.ConceptConstructorDeclaration" typeId="1i04.1225194413805" id="4480391400036972362" nodeInfo="nn">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4480391400036972363" nodeInfo="sn" />
+    </node>
+  </root>
 </model>
 

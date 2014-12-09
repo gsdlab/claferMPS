@@ -227,7 +227,11 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005415648009" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
     <property name="name" nameId="tpck.1169194664001" value="RefExpr" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1k.8860443239512128050" resolveInfo="Expression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ref" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4480391400036972185" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1k.4620120465980511009" resolveInfo="IGenericDotTarget" />
+    </node>
   </root>
 </model>
 

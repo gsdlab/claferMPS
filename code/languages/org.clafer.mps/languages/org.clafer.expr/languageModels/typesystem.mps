@@ -3265,5 +3265,14 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.4545783005387556630" resolveInfo="Quantifier" />
     </node>
   </root>
+  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="4480391400037865702" nodeInfo="ng">
+    <property name="name" nameId="tpck.1169194664001" value="typeof_InExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
+    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="4480391400037865703" nodeInfo="sn" />
+    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="4480391400037865705" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="ie" />
+      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.4545783005389986980" resolveInfo="InExpression" />
+    </node>
+  </root>
 </model>
 
