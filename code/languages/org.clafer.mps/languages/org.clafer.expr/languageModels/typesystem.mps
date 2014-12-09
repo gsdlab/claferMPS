@@ -3079,42 +3079,6 @@
       <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.2851923306471879396" resolveInfo="SetType" />
     </node>
   </root>
-  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2851923306479121289" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="typeof_SomeQuant" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2851923306479121290" nodeInfo="sn" />
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2851923306479121292" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="someQuant" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.4545783005387558271" resolveInfo="SomeQuant" />
-    </node>
-  </root>
-  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2851923306479122315" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="typeof_OneQuant" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2851923306479122316" nodeInfo="sn" />
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2851923306479122318" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="oneQuant" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.4545783005388460810" resolveInfo="OneQuant" />
-    </node>
-  </root>
-  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2851923306479134383" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="typeof_NoQuant" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2851923306479134384" nodeInfo="sn" />
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2851923306479134386" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="noQuant" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.4545783005387853877" resolveInfo="NoQuant" />
-    </node>
-  </root>
-  <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="2851923306479136382" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="typeof_LoneQuant" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.quantifiers" />
-    <node role="body" roleId="tpd4.1195213635060" type="tpee.StatementList" typeId="tpee.1068580123136" id="2851923306479136383" nodeInfo="sn" />
-    <node role="applicableNode" roleId="tpd4.1174648101952" type="tpd4.ConceptReference" typeId="tpd4.1174642788531" id="2851923306479136385" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="loneQuant" />
-      <link role="concept" roleId="tpd4.1174642800329" targetNodeId="mj1k.4545783005388157881" resolveInfo="LoneQuant" />
-    </node>
-  </root>
   <root type="tpd4.InferenceRule" typeId="tpd4.1174643105530" id="7750719112881132788" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="typeof_WhereExpression" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
@@ -3255,6 +3219,29 @@
           <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="1338871068610727043" nodeInfo="nn">
             <node role="term" roleId="tpd4.1174657509053" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="1338871068610727068" nodeInfo="nn">
               <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1338871068610719293" resolveInfo="quantifier" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" roleId="tpee.1068581517665" type="tpd4.CreateLessThanInequationStatement" typeId="tpd4.1174663118805" id="7424246677467322778" nodeInfo="nn">
+        <node role="rightExpression" roleId="tpd4.1174660783414" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7424246677467322822" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7424246677467322818" nodeInfo="nn">
+            <node role="creator" roleId="tpee.1145553007750" type="tp25.SNodeCreator" typeId="tp25.1180636770613" id="7424246677467323833" nodeInfo="nn">
+              <node role="createdType" roleId="tp25.1180636770616" type="tp25.SNodeType" typeId="tp25.1138055754698" id="7424246677467323835" nodeInfo="in">
+                <link role="concept" roleId="tp25.1138405853777" targetNodeId="mj1k.2851923306471872544" resolveInfo="GenericSetType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" roleId="tpd4.1174660783413" type="tpd4.NormalTypeClause" typeId="tpd4.1185788614172" id="7424246677467322781" nodeInfo="ng">
+          <node role="normalType" roleId="tpd4.1185788644032" type="tpd4.TypeOfExpression" typeId="tpd4.1174657487114" id="7424246677467320322" nodeInfo="nn">
+            <node role="term" roleId="tpd4.1174657509053" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7424246677467320533" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="tpd4.ApplicableNodeReference" typeId="tpd4.1174650418652" id="7424246677467320357" nodeInfo="nn">
+                <link role="applicableNode" roleId="tpd4.1174650432090" targetNodeId="1338871068610719293" resolveInfo="quantifier" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7424246677467322511" nodeInfo="nn">
+                <link role="link" roleId="tp25.1138056516764" targetNodeId="mj1k.7254843406768839760" />
+              </node>
             </node>
           </node>
         </node>
