@@ -348,9 +348,6 @@
             <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="4545783005397222307" nodeInfo="ng">
               <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="4545783005395837112" resolveInfo="C6" />
             </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="2141331924786439040" nodeInfo="ng">
-              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="2141331924786439041" nodeInfo="ng" />
-            </node>
           </node>
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2141331924786452547" nodeInfo="ng" />
@@ -370,7 +367,7 @@
             <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="2141331924786452502" nodeInfo="ng">
               <node role="text" roleId="vs0r.8375407818529178007" type="87nw.Text" typeId="87nw.2557074442922380897" id="2141331924786452503" nodeInfo="ng">
                 <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2141331924786452504" nodeInfo="ng">
-                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="REF" />
+                  <property name="escapedValue" nameId="87nw.2557074442922438158" value="REF; second example is an error because it is unsupported sugar" />
                 </node>
               </node>
             </node>
@@ -383,6 +380,9 @@
             </node>
             <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="2141331924786455238" nodeInfo="ng">
               <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="2141331924786435496" resolveInfo="integerClafer" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5749248055795630648" nodeInfo="ng">
+                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5749248055795630649" nodeInfo="ng" />
+              </node>
             </node>
           </node>
         </node>
@@ -407,6 +407,9 @@
             </node>
             <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="2141331924786457232" nodeInfo="ng">
               <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="2141331924786437337" resolveInfo="stringClafer" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="5749248055795632257" nodeInfo="ng">
+                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="5749248055795632258" nodeInfo="ng" />
+              </node>
             </node>
           </node>
         </node>
@@ -418,9 +421,6 @@
             </node>
             <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="2141331924786448172" nodeInfo="ng">
               <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="2141331924786444553" resolveInfo="Person1" />
-            </node>
-            <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="2141331924786448668" nodeInfo="ng">
-              <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="2141331924786448669" nodeInfo="ng" />
             </node>
           </node>
         </node>
