@@ -34,8 +34,7 @@
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="5749248055796911254" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="5749248055801379016" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="5749248055801379040" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7980016436776517179" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="5749248055796911261" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="clafer" />
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="5749248055797062452" nodeInfo="ng">

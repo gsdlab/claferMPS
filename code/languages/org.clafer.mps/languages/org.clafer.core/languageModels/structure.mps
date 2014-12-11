@@ -92,6 +92,9 @@
       <property name="role" nameId="tpce.1071599776563" value="value" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4545783005407580309" resolveInfo="ClaferValue" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7980016436776286309" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6300420630909714375" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Goal" />
@@ -235,9 +238,6 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5749248055799253262" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
-    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5749248055799253267" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="204078314067494525" resolveInfo="IElement" />
     </node>
