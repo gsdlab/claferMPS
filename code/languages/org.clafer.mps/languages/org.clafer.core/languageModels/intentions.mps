@@ -149,7 +149,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="9220590295544654096" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="9220590295544661112" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9220590295544661111" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Group Cardinality OR" />
+            <property name="value" nameId="tpee.1070475926801" value="Group Cardinality or" />
           </node>
         </node>
       </node>
@@ -644,7 +644,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7424246677466853824" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7424246677466855594" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7424246677466855593" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Indent this Clafer" />
+            <property name="value" nameId="tpee.1070475926801" value="Indent This Clafer" />
           </node>
         </node>
       </node>

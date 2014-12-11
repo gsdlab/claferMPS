@@ -54,13 +54,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="204078314067922728" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Clafer" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="204078314067922729" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="204078314067494525" resolveInfo="IElement" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2851923306453928875" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
-    </node>
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6300420630909718843" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="isAbstract" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -173,7 +167,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="clafer" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067922728" resolveInfo="Clafer" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306472509129" nodeInfo="ig">
@@ -184,7 +178,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="clafer" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067922728" resolveInfo="Clafer" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7750719112878294493" nodeInfo="ig">
@@ -234,6 +228,18 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4480391400036972185" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1k.4620120465980511009" resolveInfo="IGenericDotTarget" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5749248055799253204" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="BaseClafer" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5749248055799253262" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5749248055799253267" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="204078314067494525" resolveInfo="IElement" />
     </node>
   </root>
 </model>
