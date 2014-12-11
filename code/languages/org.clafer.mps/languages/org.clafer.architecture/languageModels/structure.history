@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="-1" />
+    </dependencies>
+    <rename id="ddau.2850233261135198777" type="CONCEPT" from="ArchitectureElRef" to="ArchitectureElementRef" />
+  </StructureModification>
+</history>
+
