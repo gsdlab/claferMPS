@@ -639,12 +639,12 @@
   </root>
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="7424246677466853822" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="indent" />
-    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="mecy.204078314067922728" resolveInfo="Clafer" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="mecy.204078314067494525" resolveInfo="IElement" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="7424246677466853823" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7424246677466853824" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7424246677466855594" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7424246677466855593" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Indent This Clafer" />
+            <property name="value" nameId="tpee.1070475926801" value="Indent This Concept" />
           </node>
         </node>
       </node>

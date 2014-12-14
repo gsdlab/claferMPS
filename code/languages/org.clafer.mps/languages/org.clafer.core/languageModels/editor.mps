@@ -973,10 +973,6 @@
     <link role="applicableConcept" roleId="tpc2.1139445935125" targetNodeId="mecy.204078314067494525" resolveInfo="IElement" />
     <node role="item" roleId="tpc2.1136930944870" type="tpc2.CellKeyMapItem" typeId="tpc2.1136916919141" id="7750719112884637013" nodeInfo="ng">
       <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
-      <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="7750719112884637014" nodeInfo="ng">
-        <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
-        <property name="modifiers" nameId="tpc2.1136923970223" value="alt" />
-      </node>
       <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="7750719112884637015" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7750719112884637016" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7750719112884741401" nodeInfo="nn">
@@ -1026,7 +1022,6 @@
       <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
       <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="7750719112884975428" nodeInfo="ng">
         <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
-        <property name="modifiers" nameId="tpc2.1136923970223" value="alt" />
       </node>
       <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="7750719112884975429" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7750719112884975430" nodeInfo="sn">
@@ -1073,7 +1068,7 @@
       <property name="caretPolicy" nameId="tpc2.1141091278922" value="caret_at_first_position" />
       <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="5675649033540789766" nodeInfo="ng">
         <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
-        <property name="modifiers" nameId="tpc2.1136923970223" value="alt+shift" />
+        <property name="modifiers" nameId="tpc2.1136923970223" value="shift" />
       </node>
       <node role="executeFunction" roleId="tpc2.1136920925604" type="tpc2.CellKeyMap_ExecuteFunction" typeId="tpc2.1136917288805" id="5675649033540789767" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5675649033540789768" nodeInfo="sn">
