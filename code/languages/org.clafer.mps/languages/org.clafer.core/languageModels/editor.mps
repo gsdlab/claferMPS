@@ -1013,6 +1013,9 @@
           </node>
         </node>
       </node>
+      <node role="keystroke" roleId="tpc2.1136916998332" type="tpc2.CellKeyMapKeystroke" typeId="tpc2.1136916976737" id="4835973625144206055" nodeInfo="ng">
+        <property name="keycode" nameId="tpc2.1136923970224" value="VK_TAB" />
+      </node>
     </node>
   </root>
   <root type="tpc2.CellKeyMapDeclaration" typeId="tpc2.1081293058843" id="7750719112884975426" nodeInfo="ng">
