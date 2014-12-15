@@ -12,5 +12,11 @@
     </dependencies>
     <rename id="ddau.2850233261135222962" type="REFERENCE" from="ref" to="architectureElement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="1" />
+    </dependencies>
+    <rename id="ddau.4835973625144293104" type="CHILD" from="Content" to="contents" />
+  </StructureModification>
 </history>
 
