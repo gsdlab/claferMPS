@@ -12,5 +12,23 @@
     </dependencies>
     <rename id="ddau.2850233261135222962" type="REFERENCE" from="ref" to="architectureElement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="1" />
+    </dependencies>
+    <rename id="ddau.4835973625144293104" type="CHILD" from="Content" to="contents" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="2" />
+    </dependencies>
+    <rename id="ddau.4835973625144293103" type="CONCEPT" from="FArchitecture" to="FArchitectureDiagram" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="3" />
+    </dependencies>
+    <rename id="ddau.2141331924789116591" type="CONCEPT" from="Connector" to="FAConnector" />
+  </StructureModification>
 </history>
 
