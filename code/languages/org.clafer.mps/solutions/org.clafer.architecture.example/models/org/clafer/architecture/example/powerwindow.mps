@@ -36,6 +36,7 @@
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Fragment" typeId="ddau.4835973625145033923" id="4835973625145051509" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="pinchDtc" />
+        <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="4835973625145051542" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PinchDetection" />
         </node>
