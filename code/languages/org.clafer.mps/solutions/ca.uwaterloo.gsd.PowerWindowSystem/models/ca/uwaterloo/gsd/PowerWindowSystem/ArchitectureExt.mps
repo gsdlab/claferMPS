@@ -525,7 +525,6 @@
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Fragment" typeId="ddau.4835973625145033923" id="7694989595703594309" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSysDpl" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="mecy.IElement" typeId="mecy.204078314067494525" id="7694989595703654314" nodeInfo="ng" />
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7694989595705784418" nodeInfo="ng" />
