@@ -48,5 +48,11 @@
     </dependencies>
     <rename id="ddau.8119098109029325132" type="CHILD" from="tgt" to="dest" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="7" />
+    </dependencies>
+    <rename id="ddau.8119098109027555856" type="CONCEPT" from="Device" to="DNDevice" />
+  </StructureModification>
 </history>
 
