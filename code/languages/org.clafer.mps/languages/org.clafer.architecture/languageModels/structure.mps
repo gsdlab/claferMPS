@@ -168,17 +168,17 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Deployment" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="DiagramNode" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595705858344" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595706234370" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="fa" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144683651" resolveInfo="DiagramNodeRef" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144293103" resolveInfo="FAFragment" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595705858385" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595706234372" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="dn" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144683651" resolveInfo="DiagramNodeRef" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625147048739" resolveInfo="DeviceNodesDiagram" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595702755887" nodeInfo="ig">

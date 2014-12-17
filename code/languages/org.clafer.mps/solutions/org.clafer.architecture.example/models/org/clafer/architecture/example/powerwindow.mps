@@ -89,8 +89,10 @@
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4835973625144638744" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.Deployment" typeId="ddau.7694989595702755858" id="7694989595705909209" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Test" />
-      <node role="fa" roleId="ddau.7694989595705858344" type="ddau.DiagramNodeRef" typeId="ddau.4835973625144683651" id="7694989595705909211" nodeInfo="ng" />
-      <node role="dn" roleId="ddau.7694989595705858385" type="ddau.DiagramNodeRef" typeId="ddau.4835973625144683651" id="7694989595705909213" nodeInfo="ng" />
+      <link role="fa" roleId="ddau.7694989595706234370" targetNodeId="4835973625144344573" resolveInfo="WinSubSysFA" />
+      <link role="dn" roleId="ddau.7694989595706234372" targetNodeId="8119098109027946426" resolveInfo="WinSubSysDN" />
+      <node role="fa" roleId="ddau.7694989595706234370" type="ddau.DiagramNodeRef" typeId="ddau.4835973625144683651" id="7694989595705909211" nodeInfo="ng" />
+      <node role="dn" roleId="ddau.7694989595706234372" type="ddau.DiagramNodeRef" typeId="ddau.4835973625144683651" id="7694989595705909213" nodeInfo="ng" />
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7694989595705909252" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4835973625144665806" nodeInfo="ng" />

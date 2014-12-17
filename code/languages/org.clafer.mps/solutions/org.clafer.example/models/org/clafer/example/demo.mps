@@ -64,6 +64,7 @@
         </node>
         <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="1206747226561974986" nodeInfo="ng">
           <node role="targetType" roleId="mecy.5675649033537919505" type="mecy.ClaferType" typeId="mecy.2851923306472509129" id="1206747226561975026" nodeInfo="ng">
+            <property name="right_transform_hint" value="true" />
             <link role="clafer" roleId="mecy.2851923306472509130" targetNodeId="1206747226561974295" resolveInfo="Bob" />
           </node>
         </node>

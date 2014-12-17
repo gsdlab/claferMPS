@@ -242,12 +242,21 @@
   <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="7640150046758020823" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="addExplicitCardinality" />
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="7640150046758761890" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="mecy.7663324203600887714" resolveInfo="ClaferRef" />
+      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="mecy.2851923306472509129" resolveInfo="ClaferType" />
       <node role="precondition" roleId="tpdg.1154622757656" type="tpdg.SideTransformHintSubstitutePreconditionFunction" typeId="tpdg.1154622616118" id="7640150046758762095" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7640150046758762096" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7640150046758762748" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7640150046758763534" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="7640150046758762747" nodeInfo="nn" />
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7694989595706718518" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="7640150046758762747" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="7694989595706720914" nodeInfo="nn">
+                  <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="7694989595706720916" nodeInfo="ng">
+                    <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="7694989595706721638" nodeInfo="nn">
+                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mecy.7663324203600887714" resolveInfo="ClaferRef" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsRoleOperation" typeId="tp25.1144195091934" id="7640150046758764724" nodeInfo="nn">
                 <link role="conceptOfParent" roleId="tp25.1144195362400" targetNodeId="mecy.204078314067922728" resolveInfo="Clafer" />
                 <link role="linkInParent" roleId="tp25.1144195396777" targetNodeId="mecy.7663324203600887728" />
@@ -257,7 +266,7 @@
         </node>
       </node>
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="7640150046758768640" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="mecy.7663324203600887714" resolveInfo="ClaferRef" />
+        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="mecy.2851923306472509129" resolveInfo="ClaferType" />
         <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="7640150046758769330" nodeInfo="ng">
           <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="7640150046758769331" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7640150046758769332" nodeInfo="sn">
