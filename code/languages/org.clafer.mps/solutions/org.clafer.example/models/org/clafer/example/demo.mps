@@ -110,11 +110,9 @@
         </node>
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="2290628819054019903" nodeInfo="ng">
-        <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.GenericDotExpression" typeId="mj1k.4620120465980402700" id="7694989595702617726" nodeInfo="ng">
-          <node role="target" roleId="mj1k.7034214596252529803" type="mecy.RefRelationExpr" typeId="mecy.2290628819058175370" id="7694989595702617771" nodeInfo="ng">
-            <node role="child" roleId="mecy.2290628819058178688" type="mecy.RefRelationRef" typeId="mecy.2290628819058178519" id="7694989595702617773" nodeInfo="ng">
-              <link role="refChild" roleId="mecy.2290628819058178520" targetNodeId="2290628819054019898" resolveInfo="test" />
-            </node>
+        <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.GenericDotExpression" typeId="mj1k.4620120465980402700" id="7694989595704518791" nodeInfo="ng">
+          <node role="target" roleId="mj1k.7034214596252529803" type="mecy.RefRelationExpr" typeId="mecy.2290628819058175370" id="7694989595704518852" nodeInfo="ng">
+            <node role="child" roleId="mecy.2290628819058178688" type="mecy.RefRelationRef" typeId="mecy.2290628819058178519" id="7694989595704518854" nodeInfo="ng" />
           </node>
           <node role="expression" roleId="mj1k.7254843406768839760" type="mecy.ThisExpr" typeId="mecy.7750719112878294493" id="2290628819055565865" nodeInfo="ng" />
         </node>

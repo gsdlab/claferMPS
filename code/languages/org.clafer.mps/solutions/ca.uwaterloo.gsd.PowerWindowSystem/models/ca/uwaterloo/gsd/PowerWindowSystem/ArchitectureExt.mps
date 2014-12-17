@@ -140,7 +140,6 @@
       <property name="isAbstract" nameId="mecy.6300420630909718843" value="true" />
       <property name="name" nameId="tpck.1169194664001" value="Deployment" />
     </node>
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="8119098109029332893" nodeInfo="ng" />
     <node role="imports" roleId="mecy.204078314067497532" type="vs0r.EmptyChunkDependency" typeId="vs0r.6867589085886993301" id="8119098109029332894" nodeInfo="ng" />
   </root>
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="8119098109029332895" nodeInfo="ng">
@@ -524,6 +523,12 @@
           </node>
         </node>
       </node>
+      <node role="contents" roleId="ddau.4835973625144381739" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="7694989595705065690" nodeInfo="ng">
+        <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.GenericDotExpression" typeId="mj1k.4620120465980402700" id="7694989595705096666" nodeInfo="ng">
+          <node role="target" roleId="mj1k.7034214596252529803" type="mj1k.IGenericDotTarget" typeId="mj1k.4620120465980511009" id="7694989595705096667" nodeInfo="ng" />
+          <node role="expression" roleId="mj1k.7254843406768839760" type="mecy.ThisExpr" typeId="mecy.7750719112878294493" id="7694989595705084183" nodeInfo="ng" />
+        </node>
+      </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Fragment" typeId="ddau.4835973625145033923" id="7694989595703594309" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSysDpl" />
         <node role="contents" roleId="ddau.4835973625144381739" type="mecy.IElement" typeId="mecy.204078314067494525" id="7694989595703654314" nodeInfo="ng" />
@@ -563,6 +568,7 @@
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="8119098109029333053" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="S03_Func_Analysis_Generic_Window" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ArchitectureExt" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7694989595704653623" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109029337634" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="WinSubSystemFA" />
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029337701" nodeInfo="ng">
@@ -629,6 +635,7 @@
           </node>
           <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFConnector" typeId="ddau.2141331924789116591" id="8119098109029447115" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="object" />
+            <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
             <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029447147" nodeInfo="ng">
               <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029417843" resolveInfo="PinchDetection" />
             </node>

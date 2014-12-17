@@ -21,10 +21,7 @@
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="AFConnector" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mecy.5749248055799253204" resolveInfo="BaseClafer" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2141331924789116592" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
-    </node>
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="DiagramNode" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8119098109029325133" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="src" />
@@ -190,8 +187,38 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595704450831" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
-    <property name="name" nameId="tpck.1169194664001" value="HDF" />
+    <property name="name" nameId="tpck.1169194664001" value="HDFragment" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="HDFragment" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="DiagramNode" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595704452546" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
+    <property name="name" nameId="tpck.1169194664001" value="DeviceRef" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595704452547" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="device" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7694989595702755887" resolveInfo="Device" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595704452806" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
+    <property name="name" nameId="tpck.1169194664001" value="WireConnector" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Wire Connector" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595704452825" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="src" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7694989595704452546" resolveInfo="DeviceRef" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595704452827" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="dest" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7694989595704452546" resolveInfo="DeviceRef" />
+    </node>
   </root>
 </model>
 
