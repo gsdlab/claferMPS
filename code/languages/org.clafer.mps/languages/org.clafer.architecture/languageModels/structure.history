@@ -60,5 +60,35 @@
     </dependencies>
     <rename id="ddau.2141331924789116591" type="CONCEPT" from="AFConnector" to="FAConnector" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="9" />
+    </dependencies>
+    <rename id="ddau.4835973625147048739" type="CONCEPT" from="DeviceNodesDiagram" to="DeviceNodes" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="10" />
+    </dependencies>
+    <rename id="ddau.4835973625144396295" type="CONCEPT" from="AFunction" to="AFunctionDefault" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="11" />
+    </dependencies>
+    <rename id="ddau.637072140521777610" type="CONCEPT" from="IDontHaveNodeChildren" to="ICanNotHaveNodeChildren" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="12" />
+    </dependencies>
+    <rename id="ddau.637072140521777610" type="CONCEPT" from="ICanNotHaveNodeChildren" to="IDontHaveChildrenNode" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="13" />
+    </dependencies>
+    <rename id="ddau.637072140521777610" type="CONCEPT" from="IDontHaveChildrenNode" to="IDontHaveChildrenNodes" />
+  </StructureModification>
 </history>
 
