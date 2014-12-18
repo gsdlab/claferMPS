@@ -21,10 +21,7 @@
             <link role="clafer" roleId="mecy.2851923306472509130" targetNodeId="6759927632794239428" resolveInfo="Person" />
           </node>
         </node>
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="6759927632794274488" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="0" />
-          <property name="max" nameId="mecy.9220590295543795963" value="-1" />
-        </node>
+        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.StarCard" typeId="mecy.7389562969670486691" id="7389562969673191128" nodeInfo="ng" />
         <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="1206747226561977091" nodeInfo="ng">
           <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.GreaterEqualsExpression" typeId="mj1k.8860443239512147447" id="1206747226561977212" nodeInfo="ng">
             <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="1206747226561977263" nodeInfo="ng">
@@ -114,10 +111,7 @@
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1206747226561965819" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="W" />
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="1206747226561965821" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="0" />
-          <property name="max" nameId="mecy.9220590295543795963" value="1" />
-        </node>
+        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673190575" nodeInfo="ng" />
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="1206747226561969313" nodeInfo="ng">
         <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="1206747226561969521" nodeInfo="ng">
@@ -162,10 +156,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Y" />
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1206747226561965407" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Z" />
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="1206747226561965411" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="0" />
-          <property name="max" nameId="mecy.9220590295543795963" value="1" />
-        </node>
+        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673191138" nodeInfo="ng" />
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="1206747226561971480" nodeInfo="ng">
@@ -270,10 +261,7 @@
         <property name="bounds_width" nameId="suqv.6720495385597071503" value="218.0" />
         <property name="bounds_height" nameId="suqv.6720495385597071504" value="60.0" />
       </node>
-      <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="2003025719980215414" nodeInfo="ng">
-        <property name="min" nameId="mecy.9220590295543795961" value="1" />
-        <property name="max" nameId="mecy.9220590295543795963" value="-1" />
-      </node>
+      <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.PlusCard" typeId="mecy.7389562969672659109" id="7389562969673191104" nodeInfo="ng" />
     </node>
     <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.LayoutMap" typeId="suqv.8963411245960991886" id="2003025719980007064" nodeInfo="ng">
       <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="2003025719980007065" nodeInfo="ng">

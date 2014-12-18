@@ -319,12 +319,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="or" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672672981" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
-    <property name="name" nameId="tpck.1169194664001" value="OptionCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="?" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672673066" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
     <property name="name" nameId="tpck.1169194664001" value="MandatoryCard" />

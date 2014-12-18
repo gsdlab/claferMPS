@@ -120,10 +120,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Device" />
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="8119098109029332885" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="smart" />
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="8119098109029332886" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="0" />
-          <property name="max" nameId="mecy.9220590295543795963" value="1" />
-        </node>
+        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673191100" nodeInfo="ng" />
       </node>
       <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="vs0r.ElementDocumentation" typeId="vs0r.3857533489766146428" id="8119098109029332887" nodeInfo="ng">
         <node role="text" roleId="vs0r.4052432714772608243" type="vs0r.TextBlock" typeId="vs0r.8375407818529178006" id="8119098109029332888" nodeInfo="ng">
@@ -810,20 +807,14 @@
           <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="8515355272958490521" nodeInfo="ng">
             <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="ob7x.8515355272958487498" resolveInfo="Pin" />
           </node>
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="8515355272958490527" nodeInfo="ng">
-            <property name="min" nameId="mecy.9220590295543795961" value="0" />
-            <property name="max" nameId="mecy.9220590295543795963" value="1" />
-          </node>
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673189985" nodeInfo="ng" />
         </node>
         <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="8515355272958490549" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Serial" />
           <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="8515355272958490550" nodeInfo="ng">
             <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="ob7x.8515355272958487498" resolveInfo="Pin" />
           </node>
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="8515355272958490551" nodeInfo="ng">
-            <property name="min" nameId="mecy.9220590295543795961" value="0" />
-            <property name="max" nameId="mecy.9220590295543795963" value="1" />
-          </node>
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673191130" nodeInfo="ng" />
         </node>
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="8515355272958490606" nodeInfo="ng">
@@ -1097,10 +1088,7 @@
             </node>
           </node>
         </node>
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="2694715920806113617" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="0" />
-          <property name="max" nameId="mecy.9220590295543795963" value="1" />
-        </node>
+        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673190577" nodeInfo="ng" />
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="2694715920806110361" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="driverToMotor" />
@@ -1155,10 +1143,7 @@
             </node>
           </node>
         </node>
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="2694715920806113756" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="0" />
-          <property name="max" nameId="mecy.9220590295543795963" value="1" />
-        </node>
+        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673190573" nodeInfo="ng" />
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="2694715920806112152" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="lpToMotor" />
@@ -1218,10 +1203,7 @@
             </node>
           </node>
         </node>
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="2694715920806113806" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="0" />
-          <property name="max" nameId="mecy.9220590295543795963" value="1" />
-        </node>
+        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673190705" nodeInfo="ng" />
       </node>
       <node role="children" roleId="mecy.6300420630909825947" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="2694715920806113856" nodeInfo="ng">
         <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.EquivalenceExpression" typeId="mj1k.4545783005389369785" id="2694715920806115015" nodeInfo="ng">
@@ -1410,25 +1392,16 @@
           <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="8515355272958480468" nodeInfo="ng">
             <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="ob7x.8515355272958478055" resolveInfo="Feature" />
           </node>
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="8515355272958480470" nodeInfo="ng">
-            <property name="min" nameId="mecy.9220590295543795961" value="0" />
-            <property name="max" nameId="mecy.9220590295543795963" value="1" />
-          </node>
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673191106" nodeInfo="ng" />
           <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="8515355272958480482" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="pinchProtection" />
             <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="8515355272958480484" nodeInfo="ng">
               <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="ob7x.8515355272958478055" resolveInfo="Feature" />
             </node>
-            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="8515355272958480486" nodeInfo="ng">
-              <property name="min" nameId="mecy.9220590295543795961" value="0" />
-              <property name="max" nameId="mecy.9220590295543795963" value="1" />
-            </node>
+            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673190563" nodeInfo="ng" />
           </node>
         </node>
-        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="2149636062572347164" nodeInfo="ng">
-          <property name="min" nameId="mecy.9220590295543795961" value="0" />
-          <property name="max" nameId="mecy.9220590295543795963" value="1" />
-        </node>
+        <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.QuestionMarkCard" typeId="mecy.7389562969672659468" id="7389562969673191096" nodeInfo="ng" />
       </node>
     </node>
   </root>
