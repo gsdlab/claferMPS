@@ -251,7 +251,7 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="refChild" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067922728" resolveInfo="Clafer" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
     </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2290628819058542901" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1k.4620120465980511009" resolveInfo="IGenericDotTarget" />
