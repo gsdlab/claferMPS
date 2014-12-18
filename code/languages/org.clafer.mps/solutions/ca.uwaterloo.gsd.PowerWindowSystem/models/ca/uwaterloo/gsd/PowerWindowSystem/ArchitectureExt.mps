@@ -941,7 +941,6 @@
         <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="ob7x.2694715920806089916" resolveInfo="Deployment" />
       </node>
     </node>
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2149636062572347833" nodeInfo="ng" />
     <node role="imports" roleId="mecy.204078314067497532" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2149636062572347802" nodeInfo="ng">
       <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="ob7x.8515355272957394865" resolveInfo="EAST_ADL" />
     </node>

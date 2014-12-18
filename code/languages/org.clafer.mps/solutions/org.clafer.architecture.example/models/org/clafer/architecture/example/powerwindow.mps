@@ -76,7 +76,27 @@
         </node>
       </node>
     </node>
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="663277625446181192" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="ddau.HDFragment" typeId="ddau.7694989595704450831" id="663277625446186621" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="test" />
+      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Device" typeId="ddau.7694989595702755887" id="663277625447008759" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="device" />
+        <property name="isDumb" nameId="ddau.663277625446120312" value="false" />
+        <property name="isSmart" nameId="ddau.7694989595703520319" value="false" />
+        <property name="isOptional" nameId="ddau.7694989595702677415" value="false" />
+      </node>
+      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.ECU" typeId="ddau.663277625447331269" id="663277625447713185" nodeInfo="ng">
+        <property name="isAlwaysSmart" nameId="ddau.663277625447429143" value="true" />
+        <property name="isSmart" nameId="ddau.7694989595703520319" value="true" />
+        <property name="isDumb" nameId="ddau.663277625446120312" value="false" />
+      </node>
+    </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="637072140521688103" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="663277625447262787" nodeInfo="ng" />
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="663277625447262854" nodeInfo="ng">
+      <property name="isAbstract" nameId="mecy.6300420630909718843" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="test" />
+    </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="637072140521688114" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="637072140521688126" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4835973625144442240" nodeInfo="ng" />

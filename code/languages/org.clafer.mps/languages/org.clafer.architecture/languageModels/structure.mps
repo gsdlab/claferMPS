@@ -196,6 +196,14 @@
       <property name="name" nameId="tpck.1169194664001" value="isSmart" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="663277625446120312" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="isDumb" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="663277625447429143" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="isAlwaysSmart" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595703582599" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Architecture" />
@@ -263,6 +271,12 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="637072140521777610" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IDontHaveChildrenNodes" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="663277625447331269" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
+    <property name="name" nameId="tpck.1169194664001" value="ECU" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ECU" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595702755887" resolveInfo="Device" />
   </root>
 </model>
 
