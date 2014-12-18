@@ -66,5 +66,17 @@
     </dependencies>
     <rename id="mecy.4545783005415648009" type="CONCEPT" from="refExpr" to="RefExpr" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="10" />
+    </dependencies>
+    <rename id="mecy.6300420630909716911" type="CONCEPT" from="Cardinality" to="NumericCardinality" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="11" />
+    </dependencies>
+    <rename id="mecy.6300420630909716911" type="CONCEPT" from="NumericCardinality" to="RangeCardinality" />
+  </StructureModification>
 </history>
 

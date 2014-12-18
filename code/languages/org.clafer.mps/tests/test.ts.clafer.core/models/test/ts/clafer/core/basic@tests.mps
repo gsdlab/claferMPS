@@ -6,7 +6,7 @@
   <devkit namespace="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="10" implicit="yes" />
+  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="12" implicit="yes" />
   <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="36" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
@@ -34,7 +34,7 @@
               <link role="clafer" roleId="mecy.2851923306472509130" targetNodeId="6752327598760752076" resolveInfo="Device" />
             </node>
           </node>
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="6752327598760765417" nodeInfo="ng">
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="6752327598760765417" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="2" />
             <property name="max" nameId="mecy.9220590295543795963" value="4" />
           </node>
@@ -50,7 +50,7 @@
                 <link role="clafer" roleId="mecy.2851923306472509130" targetNodeId="6759927632794239428" resolveInfo="Person" />
               </node>
             </node>
-            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="6759927632794274488" nodeInfo="ng">
+            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="6759927632794274488" nodeInfo="ng">
               <property name="min" nameId="mecy.9220590295543795961" value="0" />
               <property name="max" nameId="mecy.9220590295543795963" value="1" />
             </node>
@@ -70,7 +70,7 @@
             <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="6759927632794274476" nodeInfo="ng">
               <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="6759927632794239429" resolveInfo="spouse" />
             </node>
-            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="1007360911390053778" nodeInfo="ng">
+            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="1007360911390053778" nodeInfo="ng">
               <property name="min" nameId="mecy.9220590295543795961" value="1" />
               <property name="max" nameId="mecy.9220590295543795963" value="1" />
             </node>
@@ -122,7 +122,7 @@
               <link role="clafer" roleId="mecy.2851923306472509130" targetNodeId="6759927632794239428" resolveInfo="Person" />
             </node>
           </node>
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="6759927632794260024" nodeInfo="ng">
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="6759927632794260024" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="0" />
             <property name="max" nameId="mecy.9220590295543795963" value="-1" />
           </node>
@@ -160,7 +160,7 @@
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="6752327598760750967" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="2851923306452090348" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="C1" />
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="2851923306452090350" nodeInfo="ng">
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="2851923306452090350" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="10" />
             <property name="max" nameId="mecy.9220590295543795963" value="1" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="2851923306452095791" nodeInfo="ng">
@@ -179,7 +179,7 @@
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395835736" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="C2" />
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395835939" nodeInfo="ng">
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395835939" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="-1" />
             <property name="max" nameId="mecy.9220590295543795963" value="0" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4545783005395836185" nodeInfo="ng">
@@ -189,7 +189,7 @@
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395839025" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="C3" />
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395839175" nodeInfo="ng">
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395839175" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="0" />
             <property name="max" nameId="mecy.9220590295543795963" value="-2" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4545783005395839185" nodeInfo="ng">
@@ -199,14 +199,14 @@
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395839344" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="C4" />
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395839498" nodeInfo="ng">
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395839498" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="1" />
             <property name="max" nameId="mecy.9220590295543795963" value="1" />
           </node>
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395839500" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="C5" />
-          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395839655" nodeInfo="ng">
+          <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395839655" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="1" />
             <property name="max" nameId="mecy.9220590295543795963" value="2" />
           </node>
@@ -214,7 +214,7 @@
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="6759927632794223909" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395836578" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="C12" />
-          <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395836707" nodeInfo="ng">
+          <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395836707" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="-1" />
             <property name="max" nameId="mecy.9220590295543795963" value="1" />
             <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4545783005395836709" nodeInfo="ng">
@@ -233,7 +233,7 @@
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395840292" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="C10" />
-          <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395840452" nodeInfo="ng">
+          <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395840452" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="0" />
             <property name="max" nameId="mecy.9220590295543795963" value="-1" />
           </node>
@@ -248,7 +248,7 @@
           <property name="name" nameId="tpck.1169194664001" value="C6" />
           <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395837648" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="C2" />
-            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395837650" nodeInfo="ng">
+            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395837650" nodeInfo="ng">
               <property name="min" nameId="mecy.9220590295543795961" value="1" />
               <property name="max" nameId="mecy.9220590295543795963" value="1" />
               <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="4545783005395837652" nodeInfo="ng">
@@ -258,12 +258,12 @@
           </node>
           <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395841038" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="C3" />
-            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395841044" nodeInfo="ng">
+            <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395841044" nodeInfo="ng">
               <property name="min" nameId="mecy.9220590295543795961" value="0" />
               <property name="max" nameId="mecy.9220590295543795963" value="1" />
             </node>
           </node>
-          <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.Cardinality" typeId="mecy.6300420630909716911" id="4545783005395837646" nodeInfo="ng">
+          <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.RangeCardinality" typeId="mecy.6300420630909716911" id="4545783005395837646" nodeInfo="ng">
             <property name="min" nameId="mecy.9220590295543795961" value="1" />
             <property name="max" nameId="mecy.9220590295543795963" value="1" />
           </node>

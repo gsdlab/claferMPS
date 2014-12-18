@@ -19,7 +19,7 @@
   <import index="tpcu" modelUID="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" version="-1" />
   <import index="unno" modelUID="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" version="-1" />
   <import index="x27k" modelUID="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" version="9" />
-  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="10" />
+  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="12" />
   <import index="tpen" modelUID="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" version="-1" />
   <import index="tpco" modelUID="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" version="-1" />
   <import index="vrqc" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0905(org.clafer.expr.editor)" version="5" />
@@ -900,8 +900,8 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="9220590295544565264" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mecy.6300420630909716911" resolveInfo="Cardinality" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mecy.6300420630909716911" resolveInfo="RangeCardinality" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="9220590295544565570" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="9220590295544565597" nodeInfo="ng">
         <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mecy.9220590295543795961" resolveInfo="min" />
@@ -1736,6 +1736,26 @@
             <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
           </node>
         </node>
+      </node>
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7389562969670486715" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mecy.7389562969670484839" resolveInfo="AbstractCardinality" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="7389562969670526381" nodeInfo="ng">
+      <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
+    </node>
+  </root>
+  <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7389562969672660515" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mecy.7389562969672660489" resolveInfo="NumberCard" />
+    <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7389562969672660579" nodeInfo="nn">
+      <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="7389562969672660580" nodeInfo="nn" />
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="7389562969672660576" nodeInfo="nn">
+        <property name="text" nameId="tpc2.1073389577007" value="number:" />
+      </node>
+      <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7389562969672660604" nodeInfo="ng">
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mecy.7389562969672660490" resolveInfo="number" />
       </node>
     </node>
   </root>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="10">
+<model modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="12">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -8,7 +8,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="10" implicit="yes" />
+  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="12" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="204078314067480627" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ClaferModule" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
@@ -74,13 +74,13 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="explicitCard" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6300420630909716911" resolveInfo="Cardinality" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6300420630910212770" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="groupCard" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6300420630909716911" resolveInfo="Cardinality" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7663324203600887728" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -125,9 +125,10 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6300420630909716911" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Cardinality" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+    <property name="name" nameId="tpck.1169194664001" value="RangeCardinality" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value=".." />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9220590295543795961" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="min" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
@@ -256,6 +257,79 @@
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2290628819058542901" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1k.4620120465980511009" resolveInfo="IGenericDotTarget" />
     </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670484839" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="AbstractCardinality" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670486691" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="StarCard" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798189" resolveInfo="ExplicitCardinality" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670798189" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
+    <property name="name" nameId="tpck.1169194664001" value="ExplicitCardinality" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670798190" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
+    <property name="name" nameId="tpck.1169194664001" value="GroupCardinality" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670798191" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
+    <property name="name" nameId="tpck.1169194664001" value="XorCard" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="xor" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672659109" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="PlusCard" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798189" resolveInfo="ExplicitCardinality" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672659468" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="QuestionMarkCard" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="?" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798189" resolveInfo="ExplicitCardinality" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672660489" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
+    <property name="name" nameId="tpck.1169194664001" value="NumberCard" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="number" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7389562969672660490" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="number" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672672893" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
+    <property name="name" nameId="tpck.1169194664001" value="OrCard" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="or" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672672981" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
+    <property name="name" nameId="tpck.1169194664001" value="OptionCard" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="?" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672673066" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
+    <property name="name" nameId="tpck.1169194664001" value="MandatoryCard" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="!" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
   </root>
 </model>
 
