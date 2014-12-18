@@ -288,9 +288,8 @@
     <property name="name" nameId="tpck.1169194664001" value="CardPlayground" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7389562969671155598" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Card" />
-      <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.NumberCard" typeId="mecy.7389562969672660489" id="7389562969673036377" nodeInfo="ng">
-        <property name="number" nameId="mecy.7389562969672660490" value="12" />
-      </node>
+      <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.StarCard" typeId="mecy.7389562969670486691" id="7389562969673652824" nodeInfo="ng" />
+      <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.OptionCard" typeId="mecy.7389562969673556519" id="7389562969673652827" nodeInfo="ng" />
     </node>
   </root>
 </model>
