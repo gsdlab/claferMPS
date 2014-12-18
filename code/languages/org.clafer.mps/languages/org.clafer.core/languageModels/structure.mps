@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="12">
+<model modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -8,7 +8,7 @@
   <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="12" implicit="yes" />
+  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="204078314067480627" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ClaferModule" />
     <property name="rootable" nameId="tpce.1096454100552" value="true" />
@@ -321,14 +321,14 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672673066" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
-    <property name="name" nameId="tpck.1169194664001" value="MandatoryCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="!" />
+    <property name="name" nameId="tpck.1169194664001" value="MuxCard" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="mux" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969673556519" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
     <property name="name" nameId="tpck.1169194664001" value="OptionCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="?" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="opt" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
   </root>
 </model>

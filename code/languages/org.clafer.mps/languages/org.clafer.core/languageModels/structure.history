@@ -78,5 +78,11 @@
     </dependencies>
     <rename id="mecy.6300420630909716911" type="CONCEPT" from="NumericCardinality" to="RangeCardinality" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="12" />
+    </dependencies>
+    <rename id="mecy.7389562969672673066" type="CONCEPT" from="MandatoryCard" to="MuxCard" />
+  </StructureModification>
 </history>
 
