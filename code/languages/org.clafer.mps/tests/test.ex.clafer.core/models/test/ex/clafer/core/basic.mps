@@ -71,6 +71,9 @@
         </node>
       </node>
       <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.MuxCard" typeId="mecy.7389562969672673066" id="663277625449409140" nodeInfo="ng" />
+      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1622790882557717742" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="thisOneAlsoHasAChild" />
+      </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005394634431" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005393101426" nodeInfo="ng">
@@ -158,6 +161,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1622790882557717450" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="soHereIsAChildSoThatOrWorks" />
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4545783005394634677" nodeInfo="ng" />
