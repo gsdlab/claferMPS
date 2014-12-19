@@ -242,6 +242,9 @@
             <property name="name" nameId="tpck.1169194664001" value="C2" />
             <node role="explicitCard" roleId="mecy.6300420630910100710" type="mecy.NumberCard" typeId="mecy.7389562969672660489" id="7389562969673191126" nodeInfo="ng">
               <property name="number" nameId="mecy.7389562969672660490" value="1" />
+              <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="tp5g.NodeOperationsContainer" typeId="tp5g.1215603922101" id="1622790882557723313" nodeInfo="ng">
+                <node role="nodeOperations" roleId="tp5g.1215604436604" type="tp5g.NodeErrorCheckOperation" typeId="tp5g.1215507671101" id="1622790882557723314" nodeInfo="ng" />
+              </node>
             </node>
           </node>
           <node role="children" roleId="mecy.6300420630909825947" type="mecy.Clafer" typeId="mecy.204078314067922728" id="4545783005395841038" nodeInfo="ng">

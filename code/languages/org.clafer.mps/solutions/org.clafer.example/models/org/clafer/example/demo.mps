@@ -69,10 +69,9 @@
         <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="6759927632794239428" resolveInfo="Person" />
       </node>
     </node>
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="663277625449210931" nodeInfo="ng">
+    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1622790882557711742" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="b" />
-      <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="663277625449211029" nodeInfo="ng">
-        <property name="right_transform_hint" value="true" />
+      <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="1622790882557712411" nodeInfo="ng">
         <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="4545783005394388045" resolveInfo="Alice" />
       </node>
     </node>
@@ -114,7 +113,7 @@
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="663277625448408079" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="663277625448408270" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Bob" />
+      <property name="name" nameId="tpck.1169194664001" value="BobWithAnotherName" />
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="6759927632794256705" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="1206747226561965419" nodeInfo="ng">
@@ -297,19 +296,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </root>
-  <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="7389562969671151342" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="CardPlayground" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7389562969675600946" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Super" />
-    </node>
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.Clafer" typeId="mecy.204078314067922728" id="7389562969673808363" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Clafer" />
-      <node role="superClafer" roleId="mecy.6300420630909770924" type="mecy.SuperClaferRef" typeId="mecy.6300420630909770920" id="7389562969675600940" nodeInfo="ng">
-        <link role="superClafer" roleId="mecy.6300420630909770921" targetNodeId="7389562969675600946" resolveInfo="Super" />
-      </node>
-      <node role="groupCard" roleId="mecy.6300420630910212770" type="mecy.XorCard" typeId="mecy.7389562969670798191" id="7389562969675726301" nodeInfo="ng" />
     </node>
   </root>
 </model>
