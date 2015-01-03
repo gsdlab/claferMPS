@@ -5,7 +5,7 @@
   <devkit namespace="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" implicit="yes" />
-  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="14" implicit="yes" />
+  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" implicit="yes" />
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="5749248055796907587" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="PowerWindow" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109029337634" nodeInfo="ng">
@@ -13,7 +13,7 @@
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029337701" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSwitch" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029337706" nodeInfo="ng">
+      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029337706" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinRqArbiter" />
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029357987" nodeInfo="ng">
@@ -25,7 +25,7 @@
           <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029337706" resolveInfo="WinRqArbiter" />
         </node>
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029358011" nodeInfo="ng">
+      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029358011" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinCtr" />
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.TechnicalFeatureModel" typeId="ddau.637072140521370399" id="637072140521380798" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="config" />
@@ -49,7 +49,7 @@
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109029417830" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="pinchDtc" />
         <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029417843" nodeInfo="ng">
+        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029417843" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PinchDetection" />
         </node>
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029417848" nodeInfo="ng">

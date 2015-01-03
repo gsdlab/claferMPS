@@ -9,7 +9,7 @@
   <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" implicit="yes" />
   <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="36" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
-  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="14" implicit="yes" />
+  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" implicit="yes" />
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="8119098109029332846" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="EAST_ADL" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="8119098109029332847" nodeInfo="ng" />
@@ -301,7 +301,7 @@
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029337701" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSwitch" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029337706" nodeInfo="ng">
+      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029337706" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinRqArbiter" />
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029357987" nodeInfo="ng">
@@ -313,7 +313,7 @@
           <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029337706" resolveInfo="WinRqArbiter" />
         </node>
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029358011" nodeInfo="ng">
+      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029358011" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinCtr" />
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.TechnicalFeatureModel" typeId="ddau.637072140521370399" id="637072140521380798" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="config" />
@@ -337,7 +337,7 @@
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109029417830" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="pinchDtc" />
         <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029417843" nodeInfo="ng">
+        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029417843" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PinchDetection" />
         </node>
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029417848" nodeInfo="ng">
@@ -729,8 +729,8 @@
                 <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="663277625452188022" nodeInfo="ng">
                   <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="663277625452186899" resolveInfo="DiscreteOut" />
                 </node>
-                <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="663277625452186963" nodeInfo="ng">
-                  <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="ob7x.8515355272958490549" resolveInfo="Serial" />
+                <node role="left" roleId="mj1k.8860443239512128064" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="663277625454959526" nodeInfo="ng">
+                  <link role="clafer" roleId="mecy.2851923306472496958" targetNodeId="663277625451013460" resolveInfo="Serial" />
                 </node>
               </node>
             </node>
