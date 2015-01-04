@@ -10,7 +10,7 @@
   <import index="tp3j" modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="8" implicit="yes" />
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8119098109030499133" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="addSuper" />
-    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="ddau.5749248055797052927" resolveInfo="IArchitectureElement" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="8119098109030499134" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8119098109030499135" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8119098109030501227" nodeInfo="nn">
@@ -54,7 +54,7 @@
   </root>
   <root type="tp3j.IntentionDeclaration" typeId="tp3j.1192794744107" id="8119098109030595552" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="makeOptional" />
-    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="forConcept" roleId="tp3j.2522969319638198290" targetNodeId="ddau.5749248055797052927" resolveInfo="IArchitectureElement" />
     <node role="descriptionFunction" roleId="tp3j.2522969319638093993" type="tp3j.DescriptionBlock" typeId="tp3j.1192794782375" id="8119098109030595553" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="8119098109030595554" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="8119098109030597222" nodeInfo="nn">
@@ -73,8 +73,8 @@
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="8119098109030603234" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tp3j.ConceptFunctionParameter_node" typeId="tp3j.1192796902958" id="8119098109030603052" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="7694989595702680575" nodeInfo="nn">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="ddau.7694989595702677415" resolveInfo="isOptional" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3112289778595795249" nodeInfo="nn">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="ddau.3112289778595687203" resolveInfo="IisOptional" />
               </node>
             </node>
           </node>

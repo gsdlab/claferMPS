@@ -38,7 +38,7 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="4835973625144381764" nodeInfo="ng">
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.5749248055797052927" resolveInfo="IArchitectureElement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="4835973625144381766" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="663277625444160148" nodeInfo="ng">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="663277625444156120" resolveInfo="DNOptional" />
@@ -208,7 +208,7 @@
   </root>
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="663277625443811840" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DNBody" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.5749248055797052927" resolveInfo="IArchitectureElement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="663277625443811842" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="663277625443824195" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="{" />
@@ -218,8 +218,8 @@
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625443824199" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625443824200" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="663277625443824201" nodeInfo="nn" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="663277625443824202" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.4835973625144381739" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="3112289778595740879" nodeInfo="nn">
+                    <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.3112289778595687205" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="663277625443824203" nodeInfo="nn" />
@@ -229,7 +229,7 @@
         </node>
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNodeList" typeId="tpc2.1073390211982" id="663277625443824204" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ddau.4835973625144381739" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ddau.3112289778595687205" />
         <node role="styleItem" roleId="tpc2.1219418656006" type="tpc2.IndentLayoutOnNewLineStyleClassItem" typeId="tpc2.1237385578942" id="663277625443824205" nodeInfo="nn">
           <property name="flag" nameId="tpc2.1186414551515" value="true" />
         </node>
@@ -246,8 +246,8 @@
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625443824212" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625443824213" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="663277625443824214" nodeInfo="nn" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="663277625443824215" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.4835973625144381739" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="3112289778595738951" nodeInfo="nn">
+                    <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.3112289778595687205" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="663277625443824216" nodeInfo="nn" />
@@ -264,8 +264,8 @@
               <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625443824221" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625443824222" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="663277625443824223" nodeInfo="nn" />
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="663277625443824224" nodeInfo="nn">
-                    <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.4835973625144381739" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="3112289778595742791" nodeInfo="nn">
+                    <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.3112289778595687205" />
                   </node>
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="663277625443824225" nodeInfo="nn" />
@@ -279,7 +279,7 @@
   </root>
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="663277625444156120" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DNOptional" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.5749248055797052927" resolveInfo="IArchitectureElement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="663277625444158838" nodeInfo="nn">
       <property name="text" nameId="tpc2.1073389577007" value="optional" />
       <link role="parentStyleClass" roleId="tpc2.1381004262292426837" targetNodeId="tpen.1186415544875" resolveInfo="KeyWord" />
@@ -289,8 +289,8 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="663277625444158841" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625444158842" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="663277625444158843" nodeInfo="nn" />
-              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="663277625444158844" nodeInfo="nn">
-                <link role="property" roleId="tp25.1138056395725" targetNodeId="ddau.7694989595702677415" resolveInfo="isOptional" />
+              <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3112289778595768692" nodeInfo="nn">
+                <link role="property" roleId="tp25.1138056395725" targetNodeId="ddau.3112289778595687203" resolveInfo="IisOptional" />
               </node>
             </node>
           </node>
@@ -300,14 +300,14 @@
   </root>
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="663277625444161031" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DNSuperNode" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.5749248055797052927" resolveInfo="IArchitectureElement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="663277625452062120" nodeInfo="nn">
       <node role="cellLayout" roleId="tpc2.1106270802874" type="tpc2.CellLayout_Indent" typeId="tpc2.1237303669825" id="663277625452062121" nodeInfo="nn" />
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="663277625452062124" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value=":" />
       </node>
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_RefNode" typeId="tpc2.1073389882823" id="8119098109030635909" nodeInfo="ng">
-        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ddau.7694989595702618530" />
+        <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="ddau.3112289778595687207" />
       </node>
       <node role="renderingCondition" roleId="tpc2.1142887637401" type="tpc2.QueryFunction_NodeCondition" typeId="tpc2.1142886221719" id="663277625452063709" nodeInfo="nn">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="663277625452063710" nodeInfo="sn">
@@ -315,8 +315,8 @@
             <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7694989595702854821" nodeInfo="nn">
               <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7694989595702836971" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.ConceptFunctionParameter_node" typeId="tpc2.1142886811589" id="7694989595702836512" nodeInfo="nn" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="7694989595702852552" nodeInfo="nn">
-                  <link role="link" roleId="tp25.1138056516764" targetNodeId="ddau.7694989595702618530" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="3112289778595746368" nodeInfo="nn">
+                  <link role="link" roleId="tp25.1138056516764" targetNodeId="ddau.3112289778595687207" />
                 </node>
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_IsNotNullOperation" typeId="tp25.1172008320231" id="7694989595704098416" nodeInfo="nn" />
@@ -328,7 +328,7 @@
   </root>
   <root type="tpc2.EditorComponentDeclaration" typeId="tpc2.1078938745671" id="663277625444169808" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="DNDefinition" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="ddau.5749248055797052927" resolveInfo="IArchitectureElement" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="663277625444169810" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Component" typeId="tpc2.1078939183254" id="663277625444169821" nodeInfo="ng">
         <link role="editorComponent" roleId="tpc2.1078939183255" targetNodeId="tpco.2900100530630621651" resolveInfo="alias" />
@@ -391,7 +391,7 @@
   </root>
   <root type="tpc2.CellActionMapDeclaration" typeId="tpc2.1139535219966" id="663277625447306497" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="removeOptional" />
-    <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="applicableConcept" roleId="tpc2.1139535219968" targetNodeId="ddau.5749248055797052927" resolveInfo="IArchitectureElement" />
     <node role="item" roleId="tpc2.1139535219969" type="tpc2.CellActionMapItem" typeId="tpc2.1139535280617" id="663277625447306498" nodeInfo="ng">
       <property name="actionId" nameId="tpc2.1139535298778" value="delete_action_id" />
       <node role="executeFunction" roleId="tpc2.1139535280620" type="tpc2.CellActionMap_ExecuteFunction" typeId="tpc2.1139535439104" id="663277625447306499" nodeInfo="nn">
@@ -403,8 +403,8 @@
               </node>
               <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625447306740" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="tpc2.CellActionMap_FunctionParm_selectedNode" typeId="tpc2.1402906326895675325" id="663277625447306508" nodeInfo="nn" />
-                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="663277625447309428" nodeInfo="nn">
-                  <link role="property" roleId="tp25.1138056395725" targetNodeId="ddau.7694989595702677415" resolveInfo="isOptional" />
+                <node role="operation" roleId="tpee.1197027833540" type="tp25.SPropertyAccess" typeId="tp25.1138056022639" id="3112289778595772229" nodeInfo="nn">
+                  <link role="property" roleId="tp25.1138056395725" targetNodeId="ddau.3112289778595687203" resolveInfo="IisOptional" />
                 </node>
               </node>
             </node>

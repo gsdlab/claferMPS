@@ -14,6 +14,21 @@
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5749248055797052928" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mecy.204078314067494525" resolveInfo="IElement" />
     </node>
+    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="3112289778595687203" nodeInfo="ig">
+      <property name="name" nameId="tpck.1169194664001" value="IisOptional" />
+      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3112289778595687205" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="Icontents" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="mecy.204078314067494525" resolveInfo="IElement" />
+    </node>
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="3112289778595687207" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
+      <property name="role" nameId="tpce.1071599776563" value="IsuperNode" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8119098109030421700" resolveInfo="SuperDNodeRef" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2141331924789116591" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="FAConnector" />
@@ -21,7 +36,6 @@
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="FAConnector" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8119098109029325133" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="src" />
@@ -34,14 +48,19 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625147065268" resolveInfo="AFunctionRef" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595797215" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625144293103" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="FAFragment" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="FAFragment" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="637072140521324690" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521324636" resolveInfo="IFragment" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595797220" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625144381654" nodeInfo="ig">
@@ -72,7 +91,9 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
     <property name="name" nameId="tpck.1169194664001" value="AFunction" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Analysis Function" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595797213" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625144817188" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
@@ -84,9 +105,11 @@
     <property name="name" nameId="tpck.1169194664001" value="Fragment" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Fragment" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="637072140521439826" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521324636" resolveInfo="IFragment" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595797209" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625147048739" nodeInfo="ig">
@@ -152,7 +175,9 @@
     <property name="name" nameId="tpck.1169194664001" value="Feature" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Feature" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595804444" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8119098109030421700" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="SuperDNodeRef" />
@@ -161,14 +186,13 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="superNode" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595702755858" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Deployment" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Deployment" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595706234370" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="fa" />
@@ -181,12 +205,14 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625147048739" resolveInfo="DeviceNodes" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595797224" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595702755887" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Device" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Device" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7694989595703520319" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="isSmart" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -199,20 +225,27 @@
       <property name="name" nameId="tpck.1169194664001" value="isAlwaysSmart" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595797226" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595703582599" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Architecture" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Architecture" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595797204" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595704450831" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
     <property name="name" nameId="tpck.1169194664001" value="HDFragment" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="HDFragment" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="637072140521392932" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521324636" resolveInfo="IFragment" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595805345" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595704452546" nodeInfo="ig">
@@ -230,7 +263,6 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
     <property name="name" nameId="tpck.1169194664001" value="WireConnector" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Wire Connector" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="663277625449422668" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="src" />
@@ -247,6 +279,9 @@
       <property name="name" nameId="tpck.1169194664001" value="type" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="663277625449423575" resolveInfo="WireConnectorType" />
     </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595806550" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
+    </node>
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="663277625450078603" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="663277625449533862" resolveInfo="IHaveNotSuperNode" />
     </node>
@@ -258,7 +293,9 @@
     <property name="name" nameId="tpck.1169194664001" value="TechnicalFeatureModel" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="TechnicalFeatureModel" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="3112289778595806541" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="5749248055797052927" resolveInfo="IArchitectureElement" />
+    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="637072140521422338" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
