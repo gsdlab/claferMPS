@@ -56,6 +56,7 @@
     <property name="name" nameId="tpck.1169194664001" value="FAFragment" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="FAFragment" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="637072140521324690" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521324636" resolveInfo="IFragment" />
     </node>
@@ -90,6 +91,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Fragment" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Fragment" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="637072140521439826" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521324636" resolveInfo="IFragment" />
     </node>
@@ -198,6 +200,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Device" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Device" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7694989595703520319" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="isSmart" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
@@ -226,6 +229,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
     <property name="name" nameId="tpck.1169194664001" value="HDFragment" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="HDFragment" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="637072140521392932" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521324636" resolveInfo="IFragment" />
     </node>
