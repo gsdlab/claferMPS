@@ -102,5 +102,29 @@
     </dependencies>
     <rename id="ddau.4835973625144381654" type="CONCEPT" from="DiagramNode" to="ArchElement" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" />
+    </dependencies>
+    <rename id="ddau.3112289778595687203" type="PROPERTY" from="IisOptional" to="isOptional" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="17" />
+    </dependencies>
+    <rename id="ddau.3112289778595687207" type="CHILD" from="IsuperNode" to="superNode" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="18" />
+    </dependencies>
+    <rename id="ddau.3112289778595687205" type="CHILD" from="Icontents" to="contents" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="19" />
+    </dependencies>
+    <rename id="ddau.3112289778595687203" type="PROPERTY" from="IisOptional" to="isOptional" />
+  </StructureModification>
 </history>
 

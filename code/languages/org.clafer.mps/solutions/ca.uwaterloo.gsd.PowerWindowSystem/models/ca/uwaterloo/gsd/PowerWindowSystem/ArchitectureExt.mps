@@ -9,7 +9,7 @@
   <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" implicit="yes" />
   <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="36" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" implicit="yes" />
-  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" implicit="yes" />
+  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="20" implicit="yes" />
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="8119098109029332846" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="EAST_ADL" />
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="8119098109029332847" nodeInfo="ng" />
@@ -298,13 +298,13 @@
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7694989595704653623" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109029337634" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="WinSubSystemFA" />
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029337701" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029337701" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSwitch" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029337706" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029337706" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinRqArbiter" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029357987" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029357987" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="localWinReq" />
         <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029357998" nodeInfo="ng">
           <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029337701" resolveInfo="WinSwitch" />
@@ -313,37 +313,36 @@
           <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029337706" resolveInfo="WinRqArbiter" />
         </node>
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029358011" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029358011" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinCtr" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.TechnicalFeatureModel" typeId="ddau.637072140521370399" id="637072140521380798" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.TechnicalFeatureModel" typeId="ddau.637072140521370399" id="637072140521380798" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="config" />
-          <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368242" nodeInfo="ng">
+          <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368242" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="noExpress" />
           </node>
-          <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368248" nodeInfo="ng">
+          <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368248" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="expressDown" />
           </node>
-          <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368256" nodeInfo="ng">
+          <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368256" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="ExpressUpDown" />
           </node>
         </node>
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029407567" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029407567" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinMotor" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029407589" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029407589" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="CurrentSensor" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109029417830" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109029417830" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="pinchDtc" />
-        <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029417843" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.AFunction" typeId="ddau.4835973625144396295" id="8119098109029417843" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PinchDetection" />
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029417848" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029417848" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PositionSensor" />
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029417856" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029417856" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="position" />
           <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029417905" nodeInfo="ng">
             <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029417848" resolveInfo="PositionSensor" />
@@ -352,9 +351,8 @@
             <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029417843" resolveInfo="PinchDetection" />
           </node>
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029447115" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029447115" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="object" />
-          <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
           <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029447147" nodeInfo="ng">
             <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029417843" resolveInfo="PinchDetection" />
           </node>
@@ -379,7 +377,7 @@
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="8119098109029333122" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109030618612" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="DWinSubSysFA" />
-      <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="8119098109030700944" nodeInfo="ng">
+      <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="8119098109030700944" nodeInfo="ng">
         <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="8119098109029337634" resolveInfo="WinSubSystemFA" />
       </node>
     </node>
@@ -402,13 +400,13 @@
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="8119098109029333131" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="7694989595702618465" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="PWinSubSysFA" />
-      <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="7694989595702618485" nodeInfo="ng">
+      <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="7694989595702618485" nodeInfo="ng">
         <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="8119098109029337634" resolveInfo="WinSubSystemFA" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="7694989595702618493" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="7694989595702618493" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="DWinSwitch" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="7694989595702618498" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="7694989595702618498" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="dWinReq" />
         <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="7694989595702618508" nodeInfo="ng">
           <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="7694989595702618493" resolveInfo="DWinSwitch" />
@@ -437,7 +435,7 @@
       <property name="name" nameId="tpck.1169194664001" value="DWinSubSysDpl" />
       <link role="fa" roleId="ddau.7694989595706234370" targetNodeId="8119098109030618612" resolveInfo="DWinSubSysFA" />
       <link role="dn" roleId="ddau.7694989595706234372" targetNodeId="663277625452186444" resolveInfo="DWInSubSysDn" />
-      <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452188720" nodeInfo="ng">
+      <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452188720" nodeInfo="ng">
         <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="663277625452058959" resolveInfo="WinSubSysDpl" />
       </node>
     </node>
@@ -458,32 +456,32 @@
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="663277625452189178" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.Architecture" typeId="ddau.7694989595703582599" id="663277625452189331" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="WinSysArch" />
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Fragment" typeId="ddau.4835973625145033923" id="663277625452189409" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Fragment" typeId="ddau.4835973625145033923" id="663277625452189409" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSysFA" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="663277625452189897" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="663277625452189897" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DWinSubSysFA" />
-          <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452189902" nodeInfo="ng">
+          <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452189902" nodeInfo="ng">
             <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="8119098109030618612" resolveInfo="DWinSubSysFA" />
           </node>
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="663277625452189905" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="663277625452189905" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PWinSubSysFA" />
-          <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452189911" nodeInfo="ng">
+          <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452189911" nodeInfo="ng">
             <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="663277625452133913" resolveInfo="PWinSubSysDN" />
           </node>
         </node>
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Fragment" typeId="ddau.4835973625145033923" id="663277625452189949" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Fragment" typeId="ddau.4835973625145033923" id="663277625452189949" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSysDpl" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Deployment" typeId="ddau.7694989595702755858" id="663277625452189959" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Deployment" typeId="ddau.7694989595702755858" id="663277625452189959" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DWinSubSysDpl" />
           <link role="fa" roleId="ddau.7694989595706234370" targetNodeId="8119098109030618612" resolveInfo="DWinSubSysFA" />
           <link role="dn" roleId="ddau.7694989595706234372" targetNodeId="663277625452186444" resolveInfo="DWInSubSysDn" />
-          <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452189964" nodeInfo="ng">
+          <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452189964" nodeInfo="ng">
             <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="663277625452188702" resolveInfo="DWinSubSysDpl" />
           </node>
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Deployment" typeId="ddau.7694989595702755858" id="663277625452190419" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Deployment" typeId="ddau.7694989595702755858" id="663277625452190419" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PWinSubSysDpl" />
           <link role="fa" roleId="ddau.7694989595706234370" targetNodeId="7694989595702618465" resolveInfo="PWinSubSysFA" />
           <link role="dn" roleId="ddau.7694989595706234372" targetNodeId="663277625452133913" resolveInfo="PWinSubSysDN" />
@@ -602,35 +600,33 @@
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="663277625450974349" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.DeviceNodes" typeId="ddau.4835973625147048739" id="663277625450974442" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="WinSubSysDN" />
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Switch" typeId="ddau.8119098109027576689" id="663277625450974492" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Switch" typeId="ddau.8119098109027576689" id="663277625450974492" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSwitch" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Motor" typeId="ddau.8119098109027610107" id="663277625450974498" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Motor" typeId="ddau.8119098109027610107" id="663277625450974498" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinMotor" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.ExternalDevice" typeId="ddau.663277625450975106" id="663277625451012832" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.ExternalDevice" typeId="ddau.663277625450975106" id="663277625451012832" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="MotorDriver" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.ExternalDevice" typeId="ddau.663277625450975106" id="663277625450992316" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.ExternalDevice" typeId="ddau.663277625450975106" id="663277625450992316" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="BCM" />
         <property name="isSmart" nameId="ddau.7694989595703520319" value="true" />
         <property name="isDumb" nameId="ddau.663277625446120312" value="false" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Inline" typeId="ddau.8119098109027610108" id="663277625451013425" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Inline" typeId="ddau.8119098109027610108" id="663277625451013425" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="DoorInline" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013446" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013446" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="LoadPwr" />
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013452" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013452" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DevicePwr" />
-          <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013460" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013460" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Serial" />
-          <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
         </node>
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="663277625451470250" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="663277625451470250" nodeInfo="ng">
         <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.EquivalenceExpression" typeId="mj1k.4545783005389369785" id="663277625451470760" nodeInfo="ng">
           <node role="right" roleId="mj1k.8860443239512128065" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="663277625451470869" nodeInfo="ng">
             <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.GenericDotExpression" typeId="mj1k.4620120465980402700" id="663277625451471296" nodeInfo="ng">
@@ -671,7 +667,7 @@
       <property name="name" nameId="tpck.1169194664001" value="PWinSubSysDpl" />
       <link role="fa" roleId="ddau.7694989595706234370" targetNodeId="7694989595702618465" resolveInfo="PWinSubSysFA" />
       <link role="dn" roleId="ddau.7694989595706234372" targetNodeId="663277625452133913" resolveInfo="PWinSubSysDN" />
-      <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452133010" nodeInfo="ng">
+      <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452133010" nodeInfo="ng">
         <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="663277625452058959" resolveInfo="WinSubSysDpl" />
       </node>
     </node>
@@ -708,18 +704,18 @@
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="2149636062572340805" nodeInfo="ng" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.DeviceNodes" typeId="ddau.4835973625147048739" id="663277625452186444" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="DWInSubSysDn" />
-      <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452186471" nodeInfo="ng">
+      <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452186471" nodeInfo="ng">
         <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="663277625450974442" resolveInfo="WinSubSysDN" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Inline" typeId="ddau.8119098109027610108" id="663277625452186894" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Inline" typeId="ddau.8119098109027610108" id="663277625452186894" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="DoorInline" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625452186899" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625452186899" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DiscreteOut" />
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625452186905" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625452186905" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DriverPwrOut" />
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="663277625452186913" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="663277625452186913" nodeInfo="ng">
           <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.SomeQuant" typeId="mj1k.4545783005387558271" id="663277625452186933" nodeInfo="ng">
             <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.UnionExpression" typeId="mj1k.4545783005390900221" id="663277625452187116" nodeInfo="ng">
               <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="663277625452187207" nodeInfo="ng">
@@ -736,7 +732,7 @@
             </node>
           </node>
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="663277625452187317" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="663277625452187317" nodeInfo="ng">
           <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.LoneQuant" typeId="mj1k.4545783005388157881" id="663277625452187344" nodeInfo="ng">
             <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.UnionExpression" typeId="mj1k.4545783005390900221" id="663277625452187413" nodeInfo="ng">
               <node role="right" roleId="mj1k.8860443239512128065" type="mecy.ClaferRefExpr" typeId="mecy.2851923306472496585" id="663277625452188113" nodeInfo="ng">
@@ -788,19 +784,19 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ArchitectureExt" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.DeviceNodes" typeId="ddau.4835973625147048739" id="663277625452133913" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="PWinSubSysDN" />
-      <node role="superNode" roleId="ddau.7694989595702618530" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452133945" nodeInfo="ng">
+      <node role="superNode" roleId="ddau.3112289778595687207" type="ddau.SuperDNodeRef" typeId="ddau.8119098109030421700" id="663277625452133945" nodeInfo="ng">
         <link role="superNode" roleId="ddau.8119098109030421731" targetNodeId="663277625450974442" resolveInfo="WinSubSysDN" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Inline" typeId="ddau.8119098109027610108" id="663277625452183669" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Inline" typeId="ddau.8119098109027610108" id="663277625452183669" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="DoorInline" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625452184760" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625452184760" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DiscreteIn" />
         </node>
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625452184766" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625452184766" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DriverPwrIn" />
         </node>
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.ExternalDevice" typeId="ddau.663277625450975106" id="663277625452185235" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.ExternalDevice" typeId="ddau.663277625450975106" id="663277625452185235" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="DWinSwitch" />
       </node>
     </node>
@@ -814,18 +810,15 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="ArchitectureExt" />
     <node role="contents" roleId="mecy.204078314067497530" type="ddau.TechnicalFeatureModel" typeId="ddau.637072140521370399" id="663277625452194305" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="PowerWindowSystemFM" />
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="663277625452194324" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Feature" typeId="ddau.8119098109029358023" id="663277625452194324" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="manualUpDown" />
       </node>
-      <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="663277625452194330" nodeInfo="ng">
+      <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Feature" typeId="ddau.8119098109029358023" id="663277625452194330" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="express" />
-        <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
-        <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="663277625452194336" nodeInfo="ng">
+        <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Feature" typeId="ddau.8119098109029358023" id="663277625452194336" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="expressUp" />
-          <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
-          <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="663277625452194341" nodeInfo="ng">
+          <node role="contents" roleId="ddau.3112289778595687205" type="ddau.Feature" typeId="ddau.8119098109029358023" id="663277625452194341" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="pinchProtection" />
-            <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
           </node>
         </node>
       </node>
