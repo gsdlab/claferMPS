@@ -90,17 +90,5 @@
     </dependencies>
     <rename id="ddau.637072140521777610" type="CONCEPT" from="IDontHaveChildrenNode" to="IDontHaveChildrenNodes" />
   </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="14" />
-    </dependencies>
-    <rename id="ddau.4835973625144396295" type="CONCEPT" from="AFunctionDefault" to="AFunction" />
-  </StructureModification>
-  <StructureModification>
-    <dependencies>
-      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="15" />
-    </dependencies>
-    <rename id="ddau.4835973625144381654" type="CONCEPT" from="DiagramNode" to="ArchElement" />
-  </StructureModification>
 </history>
 

@@ -3,7 +3,7 @@
   <persistence version="8" />
   <language namespace="aee9cad2-acd4-4608-aef2-0004f6a1cdbd(jetbrains.mps.lang.actions)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" />
+  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="14" />
   <import index="tpdg" modelUID="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" version="23" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
@@ -13,7 +13,7 @@
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="663277625452146745" nodeInfo="ng">
       <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ddau.8119098109030421700" resolveInfo="SuperDNodeRef" />
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="663277625452146761" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.4835973625144381654" resolveInfo="DiagramNode" />
         <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="663277625452146765" nodeInfo="ng">
           <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="663277625452146766" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="663277625452146767" nodeInfo="sn">
@@ -25,7 +25,7 @@
                       <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="663277625452149217" nodeInfo="nn">
                         <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="663277625452149219" nodeInfo="ng">
                           <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="663277625452149451" nodeInfo="nn">
-                            <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+                            <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="ddau.4835973625144381654" resolveInfo="DiagramNode" />
                           </node>
                         </node>
                       </node>
@@ -46,9 +46,9 @@
       </node>
     </node>
     <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="4835973625144949603" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ddau.4835973625144381654" resolveInfo="DiagramNode" />
       <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="4835973625144949668" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.4835973625144381654" resolveInfo="DiagramNode" />
         <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="4835973625144949670" nodeInfo="ng">
           <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="4835973625144949671" nodeInfo="nn">
             <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4835973625144949672" nodeInfo="sn">

@@ -4,7 +4,7 @@
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" />
+  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="14" />
   <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="25" />
   <import index="hwgx" modelUID="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" version="14" />
@@ -14,7 +14,7 @@
   <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4835973625144382948" nodeInfo="ng">
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ddau.4835973625144381654" resolveInfo="DiagramNode" />
     <node role="canBeParent" roleId="tp1t.1213106478122" type="tp1t.ConstraintFunction_CanBeAParent" typeId="tp1t.1203001093456" id="4835973625144394609" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4835973625144394610" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="7694989595704521980" nodeInfo="nn">
@@ -40,7 +40,7 @@
           </node>
           <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="7694989595704523921" nodeInfo="nn">
             <node role="rightExpression" roleId="tpee.1081773367579" type="tp25.LinkRefExpression" typeId="tp25.1226359078165" id="7694989595704524780" nodeInfo="nn">
-              <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+              <link role="conceptDeclaration" roleId="tp25.1226359078166" targetNodeId="ddau.4835973625144381654" resolveInfo="DiagramNode" />
               <link role="linkDeclaration" roleId="tp25.1226359192215" targetNodeId="ddau.4835973625144381739" />
             </node>
             <node role="leftExpression" roleId="tpee.1081773367580" type="tp1t.ConstraintFunctionParameter_link" typeId="tp1t.1203009604308" id="7694989595704522841" nodeInfo="nn" />
@@ -56,7 +56,7 @@
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="4835973625144462738" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ddau.4835973625144396295" resolveInfo="AFunction" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ddau.4835973625144396295" resolveInfo="AFunctionDefault" />
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="637072140521361239" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="637072140521361240" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="637072140521361891" nodeInfo="nn">
@@ -117,6 +117,9 @@
         </node>
       </node>
     </node>
+  </root>
+  <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="8119098109027958862" nodeInfo="ng">
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="ddau.4835973625144267015" resolveInfo="Diagram" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7694989595704452853" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
