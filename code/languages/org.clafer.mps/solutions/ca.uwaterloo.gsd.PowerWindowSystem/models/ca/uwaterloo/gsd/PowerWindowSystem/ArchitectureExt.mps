@@ -306,12 +306,8 @@
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029357987" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="localWinReq" />
-        <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029357998" nodeInfo="ng">
-          <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029337701" resolveInfo="WinSwitch" />
-        </node>
-        <node role="dest" roleId="ddau.8119098109029325132" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029358001" nodeInfo="ng">
-          <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029337706" resolveInfo="WinRqArbiter" />
-        </node>
+        <link role="source" roleId="ddau.7590219002335427867" targetNodeId="8119098109029337701" resolveInfo="WinSwitch" />
+        <link role="target" roleId="ddau.7590219002335427874" targetNodeId="8119098109029337706" resolveInfo="WinRqArbiter" />
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029358011" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinCtr" />
@@ -345,22 +341,14 @@
         </node>
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029417856" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="position" />
-          <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029417905" nodeInfo="ng">
-            <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029417848" resolveInfo="PositionSensor" />
-          </node>
-          <node role="dest" roleId="ddau.8119098109029325132" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029417908" nodeInfo="ng">
-            <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029417843" resolveInfo="PinchDetection" />
-          </node>
+          <link role="source" roleId="ddau.7590219002335427867" targetNodeId="8119098109029417848" resolveInfo="PositionSensor" />
+          <link role="target" roleId="ddau.7590219002335427874" targetNodeId="8119098109029417843" resolveInfo="PinchDetection" />
         </node>
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029447115" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="object" />
           <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
-          <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029447147" nodeInfo="ng">
-            <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029417843" resolveInfo="PinchDetection" />
-          </node>
-          <node role="dest" roleId="ddau.8119098109029325132" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="8119098109029447150" nodeInfo="ng">
-            <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029358011" resolveInfo="WinCtr" />
-          </node>
+          <link role="source" roleId="ddau.7590219002335427867" targetNodeId="8119098109029417843" resolveInfo="PinchDetection" />
+          <link role="target" roleId="ddau.7590219002335427874" targetNodeId="8119098109029358011" resolveInfo="WinCtr" />
         </node>
       </node>
     </node>
@@ -410,12 +398,8 @@
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="7694989595702618498" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="dWinReq" />
-        <node role="src" roleId="ddau.8119098109029325133" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="7694989595702618508" nodeInfo="ng">
-          <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="7694989595702618493" resolveInfo="DWinSwitch" />
-        </node>
-        <node role="dest" roleId="ddau.8119098109029325132" type="ddau.AFunctionRef" typeId="ddau.4835973625147065268" id="7694989595702618511" nodeInfo="ng">
-          <link role="diagramNode" roleId="ddau.4835973625147065330" targetNodeId="8119098109029337706" resolveInfo="WinRqArbiter" />
-        </node>
+        <link role="source" roleId="ddau.7590219002335427867" targetNodeId="7694989595702618493" resolveInfo="DWinSwitch" />
+        <link role="target" roleId="ddau.7590219002335427874" targetNodeId="8119098109029337706" resolveInfo="WinRqArbiter" />
       </node>
     </node>
     <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7694989595703579460" nodeInfo="ng" />
