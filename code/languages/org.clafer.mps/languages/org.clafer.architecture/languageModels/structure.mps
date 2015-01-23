@@ -80,16 +80,6 @@
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Analysis Function" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625144683651" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="DiagramNodeRef" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4835973625144683652" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="diagramNode" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
-    </node>
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625144817188" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
     <property name="name" nameId="tpck.1169194664001" value="FDevice" />
@@ -349,14 +339,6 @@
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7694989595704452546" resolveInfo="DeviceRef" />
     </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="663277625451299584" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
-    <property name="name" nameId="tpck.1169194664001" value="IDumb" />
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="663277625451299591" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
-    <property name="name" nameId="tpck.1169194664001" value="ISmart" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="663277625451478041" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
