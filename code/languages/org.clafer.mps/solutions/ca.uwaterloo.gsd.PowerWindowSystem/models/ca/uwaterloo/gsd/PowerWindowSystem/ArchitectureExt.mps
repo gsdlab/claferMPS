@@ -304,18 +304,18 @@
         <property name="name" nameId="tpck.1169194664001" value="WinSwitch" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7044172485591801062" nodeInfo="ng">
           <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="154.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="122.0" />
-          <property name="bounds_height" nameId="suqv.6720495385597071504" value="62.0" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="142.4999542236328" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="141.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
         </node>
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029337706" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinRqArbiter" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7044172485591801063" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="364.0002746582031" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="154.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="158.0" />
-          <property name="bounds_height" nameId="suqv.6720495385597071504" value="62.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="405.0002746582031" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="142.4999542236328" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="183.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
         </node>
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029357987" nodeInfo="ng">
@@ -331,18 +331,15 @@
           <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368242" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="noExpress" />
           </node>
-          <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368248" nodeInfo="ng">
-            <property name="name" nameId="tpck.1169194664001" value="expressDown" />
-          </node>
           <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Feature" typeId="ddau.8119098109029358023" id="8119098109029368256" nodeInfo="ng">
             <property name="name" nameId="tpck.1169194664001" value="ExpressUpDown" />
           </node>
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7044172485591801064" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="938.0001001358032" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="496.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="254.0" />
-          <property name="bounds_height" nameId="suqv.6720495385597071504" value="143.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="259.49993896484375" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="295.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="132.0" />
         </node>
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029407567" nodeInfo="ng">
@@ -350,17 +347,17 @@
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7044172485591801065" nodeInfo="ng">
           <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
           <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="122.0" />
-          <property name="bounds_height" nameId="suqv.6720495385597071504" value="62.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="127.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
         </node>
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029407589" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="CurrentSensor" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7044172485591801066" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="212.00030517578125" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="217.00030517578125" />
           <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="170.0" />
-          <property name="bounds_height" nameId="suqv.6720495385597071504" value="62.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="197.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
         </node>
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAFragment" typeId="ddau.4835973625144293103" id="8119098109029417830" nodeInfo="ng">
@@ -369,19 +366,19 @@
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.AFunctionDefault" typeId="ddau.4835973625144396295" id="8119098109029417843" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PinchDetection" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7044172485591801068" nodeInfo="ng">
-            <property name="bounds_x" nameId="suqv.6720495385597071501" value="382.0002746582031" />
-            <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
-            <property name="bounds_width" nameId="suqv.6720495385597071503" value="176.0" />
-            <property name="bounds_height" nameId="suqv.6720495385597071504" value="62.0" />
+            <property name="bounds_x" nameId="suqv.6720495385597071501" value="426.0002746582031" />
+            <property name="bounds_y" nameId="suqv.6720495385597071502" value="25.499950408935547" />
+            <property name="bounds_width" nameId="suqv.6720495385597071503" value="204.0" />
+            <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
           </node>
         </node>
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FDevice" typeId="ddau.4835973625144817188" id="8119098109029417848" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="PositionSensor" />
           <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7044172485591801069" nodeInfo="ng">
             <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
-            <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
-            <property name="bounds_width" nameId="suqv.6720495385597071503" value="176.0" />
-            <property name="bounds_height" nameId="suqv.6720495385597071504" value="62.0" />
+            <property name="bounds_y" nameId="suqv.6720495385597071502" value="25.499950408935547" />
+            <property name="bounds_width" nameId="suqv.6720495385597071503" value="204.0" />
+            <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
           </node>
         </node>
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.FAConnector" typeId="ddau.2141331924789116591" id="8119098109029417856" nodeInfo="ng">
@@ -394,12 +391,18 @@
           <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
           <link role="source" roleId="ddau.7590219002335427867" targetNodeId="8119098109029417843" resolveInfo="PinchDetection" />
           <link role="target" roleId="ddau.7590219002335427874" targetNodeId="8119098109029358011" resolveInfo="WinCtr" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="8804515278172194671" nodeInfo="ng">
+            <node role="anchors" roleId="suqv.2319506556913311101" type="suqv.Point" typeId="suqv.2319506556913310727" id="8804515278172194672" nodeInfo="ng">
+              <property name="x" nameId="suqv.2319506556913310861" value="462.21331213619703" />
+              <property name="y" nameId="suqv.2319506556913310863" value="391.0" />
+            </node>
+          </node>
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="7044172485591801067" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="171.00010013580322" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="405.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="576.0" />
-          <property name="bounds_height" nameId="suqv.6720495385597071504" value="117.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="471.49993896484375" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="646.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="109.0" />
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.LayoutMap" typeId="suqv.8963411245960991886" id="7044172485591801071" nodeInfo="ng">
           <node role="entries" roleId="suqv.8963411245960991904" type="suqv.LayoutMapEntry" typeId="suqv.8963411245960991903" id="7044172485591801072" nodeInfo="ng">
@@ -407,14 +410,14 @@
             <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7044172485591801070" nodeInfo="ng">
               <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7044172485591801073" nodeInfo="ng">
                 <property name="type" nameId="suqv.4767615435799372759" value="label" />
-                <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="4927644305842809406" nodeInfo="ng">
-                  <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="4927644305842809407" nodeInfo="ng">
-                    <property name="x" nameId="suqv.2319506556913310861" value="-223.9998016357422" />
-                    <property name="y" nameId="suqv.2319506556913310863" value="-462.99995040893555" />
+                <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="8804515278172194647" nodeInfo="ng">
+                  <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="8804515278172194648" nodeInfo="ng">
+                    <property name="x" nameId="suqv.2319506556913310861" value="-71.99981689453125" />
+                    <property name="y" nameId="suqv.2319506556913310863" value="-537.499981916859" />
                   </node>
-                  <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="4927644305842809408" nodeInfo="ng">
-                    <property name="x" nameId="suqv.2319506556913310861" value="460.0" />
-                    <property name="y" nameId="suqv.2319506556913310863" value="478.0" />
+                  <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="8804515278172194649" nodeInfo="ng">
+                    <property name="x" nameId="suqv.2319506556913310861" value="336.0" />
+                    <property name="y" nameId="suqv.2319506556913310863" value="549.499981916859" />
                   </node>
                 </node>
               </node>
@@ -425,14 +428,14 @@
             <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7044172485591801077" nodeInfo="ng">
               <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7044172485591801079" nodeInfo="ng">
                 <property name="type" nameId="suqv.4767615435799372759" value="label" />
-                <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="4927644305842809409" nodeInfo="ng">
-                  <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="4927644305842809410" nodeInfo="ng">
-                    <property name="x" nameId="suqv.2319506556913310861" value="-811.8290118679051" />
-                    <property name="y" nameId="suqv.2319506556913310863" value="-543.0946271553747" />
+                <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="8804515278172194663" nodeInfo="ng">
+                  <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="8804515278172194664" nodeInfo="ng">
+                    <property name="x" nameId="suqv.2319506556913310861" value="-368.1498171058574" />
+                    <property name="y" nameId="suqv.2319506556913310863" value="-485.5" />
                   </node>
-                  <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="4927644305842809411" nodeInfo="ng">
-                    <property name="x" nameId="suqv.2319506556913310861" value="835.5" />
-                    <property name="y" nameId="suqv.2319506556913310863" value="518.5946271553747" />
+                  <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="8804515278172194665" nodeInfo="ng">
+                    <property name="x" nameId="suqv.2319506556913310861" value="391.82080523795224" />
+                    <property name="y" nameId="suqv.2319506556913310863" value="461.0" />
                   </node>
                 </node>
               </node>
@@ -446,14 +449,14 @@
           <node role="value" roleId="suqv.8963411245960998404" type="suqv.Layout_Connection" typeId="suqv.2319506556913310852" id="7044172485591801083" nodeInfo="ng">
             <node role="labels" roleId="suqv.4767615435799372763" type="suqv.Layout_EdgeLabel" typeId="suqv.4767615435799372731" id="7044172485591801086" nodeInfo="ng">
               <property name="type" nameId="suqv.4767615435799372759" value="label" />
-              <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="4927644305842809325" nodeInfo="ng">
-                <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="4927644305842809326" nodeInfo="ng">
-                  <property name="x" nameId="suqv.2319506556913310861" value="-77.49980163574219" />
-                  <property name="y" nameId="suqv.2319506556913310863" value="-33.24675695245071" />
+              <node role="position" roleId="suqv.4767615435799372761" type="suqv.RelativePosition" typeId="suqv.3253043142928125505" id="8804515278172194639" nodeInfo="ng">
+                <node role="offset" roleId="suqv.3253043142928125559" type="suqv.Point" typeId="suqv.2319506556913310727" id="8804515278172194640" nodeInfo="ng">
+                  <property name="x" nameId="suqv.2319506556913310861" value="-77.99980163574219" />
+                  <property name="y" nameId="suqv.2319506556913310863" value="-31.56732617403722" />
                 </node>
-                <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="4927644305842809327" nodeInfo="ng">
-                  <property name="x" nameId="suqv.2319506556913310861" value="249.0" />
-                  <property name="y" nameId="suqv.2319506556913310863" value="185.0" />
+                <node role="referencePoint" roleId="suqv.3253043142928125557" type="suqv.Point" typeId="suqv.2319506556913310727" id="8804515278172194641" nodeInfo="ng">
+                  <property name="x" nameId="suqv.2319506556913310861" value="279.0" />
+                  <property name="y" nameId="suqv.2319506556913310863" value="160.56732617403722" />
                 </node>
               </node>
             </node>
