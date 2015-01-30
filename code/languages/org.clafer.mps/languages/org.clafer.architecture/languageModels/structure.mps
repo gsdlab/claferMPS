@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="15">
+<model modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -8,7 +8,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="15" implicit="yes" />
+  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5749248055797052927" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IArchitectureElement" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5749248055797052928" nodeInfo="ig">
@@ -26,13 +26,13 @@
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="source" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144396295" resolveInfo="AFunctionDefault" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144396295" resolveInfo="AFunction" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7590219002335427874" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
       <property name="role" nameId="tpce.1071599776563" value="target" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144396295" resolveInfo="AFunctionDefault" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="4835973625144396295" resolveInfo="AFunction" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625144267015" nodeInfo="ig">
@@ -76,7 +76,7 @@
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625144396295" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
-    <property name="name" nameId="tpck.1169194664001" value="AFunctionDefault" />
+    <property name="name" nameId="tpck.1169194664001" value="AFunction" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Analysis Function" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144381654" resolveInfo="ArchElement" />
   </root>
@@ -84,7 +84,8 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL.FunctionalArchitecture" />
     <property name="name" nameId="tpck.1169194664001" value="FDevice" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Functional Device" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144396295" resolveInfo="AFunctionDefault" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/gear.png" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4835973625144396295" resolveInfo="AFunction" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4835973625145033923" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Fragment" />
