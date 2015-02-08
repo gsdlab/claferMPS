@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="36">
+<model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="37">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" />
@@ -8,7 +8,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="36" implicit="yes" />
+  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="37" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128050" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Expression" />
@@ -590,19 +590,19 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.goals" />
     <property name="name" nameId="tpck.1169194664001" value="maxGoalExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="max" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="maximum" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="maximize" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005386733607" resolveInfo="GoalExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005386410983" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer.goals" />
     <property name="name" nameId="tpck.1169194664001" value="minGoalExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="min" />
-    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="minimum" />
+    <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="minimize" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005386733607" resolveInfo="GoalExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005384490807" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
-    <property name="name" nameId="tpck.1169194664001" value="SetCountingExpression" />
+    <property name="name" nameId="tpck.1169194664001" value="SetCardinalityExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="#" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="set counting operator" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
@@ -701,8 +701,8 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005390901273" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
     <property name="name" nameId="tpck.1169194664001" value="IntersectionExpression" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;" />
     <property name="conceptShortDescription" nameId="tpce.4628067390765907488" value="set intersection" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="**" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005390938951" nodeInfo="ig">
@@ -770,6 +770,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
     <property name="name" nameId="tpck.1169194664001" value="Quant" />
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
+    <link role="defaultMember" roleId="tpce.1083241965437" targetNodeId="4545783005394412199" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4545783005394410968" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="all" />
       <property name="externalValue" nameId="tpce.1083923523172" value="all" />
@@ -790,6 +791,8 @@
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4480391400038037075" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
     <property name="name" nameId="tpck.1169194664001" value="BelongingExpression" />
+    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
+    <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
   </root>
 </model>
