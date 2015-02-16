@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16">
+<model modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="20">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -8,7 +8,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" implicit="yes" />
+  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="20" implicit="yes" />
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="5749248055797052927" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IArchitectureElement" />
     <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5749248055797052928" nodeInfo="ig">
@@ -67,7 +67,7 @@
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7694989595702618530" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="superNode" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="8119098109030421700" resolveInfo="SuperDNodeRef" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="8119098109030421700" resolveInfo="SuperArchElRef" />
     </node>
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7694989595702677415" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="isOptional" />
@@ -106,31 +106,20 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
     <property name="name" nameId="tpck.1169194664001" value="Switch" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Switch" />
+    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/switch_icon.png" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595702755887" resolveInfo="Device" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="663277625450419208" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="663277625450415197" resolveInfo="IDeviceNode" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8119098109027610107" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
     <property name="name" nameId="tpck.1169194664001" value="Motor" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Motor" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595702755887" resolveInfo="Device" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="663277625450419183" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="663277625450415197" resolveInfo="IDeviceNode" />
-    </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8119098109027610108" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
     <property name="name" nameId="tpck.1169194664001" value="Inline" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Inline" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595702755887" resolveInfo="Device" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="637072140521468534" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521324636" resolveInfo="IFragment" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="663277625450419179" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="663277625450415197" resolveInfo="IDeviceNode" />
-    </node>
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595704450831" resolveInfo="HDFragment" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8119098109027610109" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
@@ -139,9 +128,6 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595702755887" resolveInfo="Device" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="637072140521805737" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521777610" resolveInfo="IDontHaveChildrenNodes" />
-    </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="663277625450419204" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="663277625450415197" resolveInfo="IDeviceNode" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8119098109029358023" nodeInfo="ig">
@@ -154,7 +140,7 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8119098109030421700" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="SuperDNodeRef" />
+    <property name="name" nameId="tpck.1169194664001" value="SuperArchElRef" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="8119098109030421731" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
@@ -197,6 +183,9 @@
     <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="663277625447429143" nodeInfo="ig">
       <property name="name" nameId="tpck.1169194664001" value="isAlwaysSmart" />
       <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    </node>
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5925036345151334662" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521777610" resolveInfo="IDontHaveChildrenNodes" />
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7694989595703582599" nodeInfo="ig">
@@ -267,12 +256,6 @@
     <property name="name" nameId="tpck.1169194664001" value="HardwareDesignArchitecture" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595704450831" resolveInfo="HDFragment" />
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8119098109027555856" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
-    <property name="name" nameId="tpck.1169194664001" value="DNDevice" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Device" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595702755887" resolveInfo="Device" />
-  </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="637072140521777610" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IDontHaveChildrenNodes" />
   </root>
@@ -281,9 +264,6 @@
     <property name="name" nameId="tpck.1169194664001" value="ECU" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ECU" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595702755887" resolveInfo="Device" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="663277625450418228" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="663277625450415197" resolveInfo="IDeviceNode" />
-    </node>
   </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="663277625449423575" nodeInfo="ng">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
@@ -319,14 +299,10 @@
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="663277625449533862" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="IHaveNotSuperNode" />
   </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="663277625450415197" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
-    <property name="name" nameId="tpck.1169194664001" value="IDeviceNode" />
-  </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="663277625450975106" nodeInfo="ig">
     <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
-    <property name="name" nameId="tpck.1169194664001" value="ExternalDevice" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="External Device" />
+    <property name="name" nameId="tpck.1169194664001" value="RefToDevice" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="Reference" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="7694989595702755887" resolveInfo="Device" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="663277625450975551" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="637072140521777610" resolveInfo="IDontHaveChildrenNodes" />
@@ -336,7 +312,7 @@
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="663277625451387232" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="extDevice" />
+      <property name="role" nameId="tpce.1071599776563" value="refToDevice" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7694989595704452546" resolveInfo="DeviceRef" />
     </node>
@@ -354,6 +330,11 @@
   </root>
   <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="7590219002334836067" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="DontShowAsBox" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="1979512562623543223" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
+    <property name="name" nameId="tpck.1169194664001" value="Smartness" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
   </root>
 </model>
 

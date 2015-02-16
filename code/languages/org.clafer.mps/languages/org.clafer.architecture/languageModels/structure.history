@@ -102,5 +102,29 @@
     </dependencies>
     <rename id="ddau.4835973625144396295" type="CONCEPT" from="AFunctionDefault" to="AFunction" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="16" />
+    </dependencies>
+    <rename id="ddau.663277625450975106" type="CONCEPT" from="ExternalDevice" to="RefToDevice" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="17" />
+    </dependencies>
+    <rename id="ddau.663277625451387232" type="CHILD" from="extDevice" to="refToDevice" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="18" />
+    </dependencies>
+    <rename id="ddau.663277625450975106" type="CONCEPT" from="ExternalDevice" to="RefToDevice" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="19" />
+    </dependencies>
+    <rename id="ddau.8119098109030421700" type="CONCEPT" from="SuperDNodeRef" to="SuperArchElRef" />
+  </StructureModification>
 </history>
 
