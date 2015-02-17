@@ -84,5 +84,17 @@
     </dependencies>
     <rename id="mecy.7389562969672673066" type="CONCEPT" from="MandatoryCard" to="MuxCard" />
   </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" />
+    </dependencies>
+    <rename id="mecy.4545783005407237529" type="CHILD" from="value" to="initializer" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="14" />
+    </dependencies>
+    <rename id="mecy.4545783005407580309" type="CONCEPT" from="ClaferValue" to="ClaferInit" />
+  </StructureModification>
 </history>
 

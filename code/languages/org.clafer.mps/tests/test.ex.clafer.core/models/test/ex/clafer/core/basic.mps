@@ -4,7 +4,7 @@
   <language namespace="61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)" />
   <devkit namespace="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" implicit="yes" />
+  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="15" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="40" implicit="yes" />
@@ -194,7 +194,7 @@
       <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="6759927632794273051" nodeInfo="ng">
         <node role="targetType" roleId="mecy.5675649033537919505" type="mj1k.IntType" typeId="mj1k.8860443239512128108" id="6759927632794273053" nodeInfo="ng" />
       </node>
-      <node role="value" roleId="mecy.4545783005407237529" type="mecy.ClaferValue" typeId="mecy.4545783005407580309" id="6759927632794273061" nodeInfo="ng">
+      <node role="initializer" roleId="mecy.4545783005407237529" type="mecy.ClaferInit" typeId="mecy.4545783005407580309" id="6759927632794273061" nodeInfo="ng">
         <node role="value" roleId="mecy.4545783005407580361" type="mj1k.NumberLiteral" typeId="mj1k.8860443239512128103" id="6759927632794273065" nodeInfo="ng">
           <property name="value" nameId="mj1k.2212975673976043696" value="10" />
         </node>
@@ -216,7 +216,7 @@
       <node role="ref" roleId="mecy.7663324203600887728" type="mecy.ClaferRef" typeId="mecy.7663324203600887714" id="6759927632794273381" nodeInfo="ng">
         <node role="targetType" roleId="mecy.5675649033537919505" type="mj1k.StringType" typeId="mj1k.1664480272136207708" id="6759927632794273383" nodeInfo="ng" />
       </node>
-      <node role="value" roleId="mecy.4545783005407237529" type="mecy.ClaferValue" typeId="mecy.4545783005407580309" id="6759927632794273391" nodeInfo="ng">
+      <node role="initializer" roleId="mecy.4545783005407237529" type="mecy.ClaferInit" typeId="mecy.4545783005407580309" id="6759927632794273391" nodeInfo="ng">
         <node role="value" roleId="mecy.4545783005407580361" type="mj1k.StringLiteral" typeId="mj1k.2851923306470450753" id="6759927632794273395" nodeInfo="ng">
           <property name="text" nameId="mj1k.2851923306470456716" value="string" />
         </node>

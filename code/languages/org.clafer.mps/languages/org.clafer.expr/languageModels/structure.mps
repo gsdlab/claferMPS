@@ -794,5 +794,26 @@
       <link role="target" roleId="tpce.1071599976176" targetNodeId="7750719112880676410" resolveInfo="QuantifiedVariable" />
     </node>
   </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="952337070379095520" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
+    <property name="name" nameId="tpck.1169194664001" value="SumExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="sum" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="952337070379891820" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
+    <property name="name" nameId="tpck.1169194664001" value="ProductExpr" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="product" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="3005510381523579442" resolveInfo="UnaryExpression" />
+    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="952337070380271177" nodeInfo="ig">
+      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="8793291511880188110" resolveInfo="IStopReshuffling" />
+    </node>
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="952337070380373569" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr.clafer" />
+    <property name="name" nameId="tpck.1169194664001" value="UnionCommaExpression" />
+    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="," />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="4545783005390900221" resolveInfo="UnionExpression" />
+  </root>
 </model>
 
