@@ -5,7 +5,7 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="37" />
+  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="40" />
   <import index="tpfp" modelUID="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" version="-1" />
   <import index="r4b4" modelUID="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" version="5" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" />
@@ -422,8 +422,8 @@
     <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1k.2254577831298739059" resolveInfo="CommentedContent" />
   </root>
   <root type="tp1t.ConceptConstraints" typeId="tp1t.1213093968558" id="7750719112881277178" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
-    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1k.7750719112881254547" resolveInfo="WhereVarRef" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="QuantExpr" />
+    <link role="concept" roleId="tp1t.1213093996982" targetNodeId="mj1k.7750719112881254547" resolveInfo="QuantifiedVarRef" />
     <node role="canBeChild" roleId="tp1t.1213106463729" type="tp1t.ConstraintFunction_CanBeAChild" typeId="tp1t.1202989531578" id="7750719112881277411" nodeInfo="nn">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7750719112881277412" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7750719112881280976" nodeInfo="nn">
@@ -433,7 +433,7 @@
               <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="7750719112881282787" nodeInfo="nn">
                 <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="7750719112881282789" nodeInfo="ng">
                   <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="7750719112881283483" nodeInfo="nn">
-                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mj1k.7750719112880673844" resolveInfo="WhereExpression" />
+                    <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mj1k.7750719112880673844" resolveInfo="QuantifiedExpression" />
                   </node>
                 </node>
                 <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="7750719112881624889" nodeInfo="ng" />
@@ -455,7 +455,7 @@
                 <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="7750719112881288117" nodeInfo="nn">
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="7750719112881288118" nodeInfo="ng">
                     <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="7750719112881288119" nodeInfo="nn">
-                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mj1k.7750719112880673844" resolveInfo="WhereExpression" />
+                      <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="mj1k.7750719112880673844" resolveInfo="QuantifiedExpression" />
                     </node>
                   </node>
                   <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Inclusion" typeId="tp25.1144100932627" id="7750719112881614214" nodeInfo="ng" />

@@ -13,7 +13,7 @@
   <language namespace="96ee7a94-411d-4cf8-9b94-96cad7e52411(jetbrains.mps.baseLanguage.jdk7)" />
   <language namespace="f89904fb-9486-43a1-865e-5ad0375a8a88(de.itemis.mps.editor.bool)" />
   <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="37" />
+  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="40" />
   <import index="e8zo" modelUID="r:58a558d9-50ed-4b86-91cf-66ce18b52795(org.clafer.expr.actions)" version="-1" />
   <import index="jsgz" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.cells(MPS.Editor/jetbrains.mps.nodeEditor.cells@java_stub)" version="-1" />
   <import index="9a8" modelUID="f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor(MPS.Editor/jetbrains.mps.nodeEditor@java_stub)" version="-1" />
@@ -2837,8 +2837,8 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7750719112880673868" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.7750719112880673844" resolveInfo="WhereExpression" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="QuantExpr" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.7750719112880673844" resolveInfo="QuantifiedExpression" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Collection" typeId="tpc2.1073389446423" id="7750719112880675103" nodeInfo="nn">
       <node role="childCellModel" roleId="tpc2.1073389446424" type="tpc2.CellModel_Constant" typeId="tpc2.1073389577006" id="2003025719975740761" nodeInfo="nn">
         <property name="text" nameId="tpc2.1073389577007" value="{" />
@@ -2877,15 +2877,15 @@
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7750719112880869181" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.7750719112880676410" resolveInfo="WhereVariable" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="QuantExpr" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.7750719112880676410" resolveInfo="QuantifiedVariable" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_Property" typeId="tpc2.1073389658414" id="7750719112880869203" nodeInfo="ng">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="tpck.1169194664001" resolveInfo="name" />
     </node>
   </root>
   <root type="tpc2.ConceptEditorDeclaration" typeId="tpc2.1071666914219" id="7750719112881254624" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
-    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.7750719112881254547" resolveInfo="WhereVarRef" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="QuantExpr" />
+    <link role="conceptDeclaration" roleId="tpc2.1166049300910" targetNodeId="mj1k.7750719112881254547" resolveInfo="QuantifiedVarRef" />
     <node role="cellModel" roleId="tpc2.1080736633877" type="tpc2.CellModel_RefCell" typeId="tpc2.1088013125922" id="7750719112881254689" nodeInfo="ng">
       <link role="relationDeclaration" roleId="tpc2.1140103550593" targetNodeId="mj1k.7750719112881254599" />
       <node role="editorComponent" roleId="tpc2.1088186146602" type="tpc2.InlineEditorComponent" typeId="tpc2.1088185857835" id="7750719112881254691" nodeInfo="ng">

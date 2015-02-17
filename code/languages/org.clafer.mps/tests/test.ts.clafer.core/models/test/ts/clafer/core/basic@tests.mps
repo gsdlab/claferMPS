@@ -7,7 +7,7 @@
   <import index="tp5g" modelUID="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" version="40" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" implicit="yes" />
-  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="37" implicit="yes" />
+  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="40" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <root type="tp5g.NodesTestCase" typeId="tp5g.1216913645126" id="2851923306452089177" nodeInfo="ng">
@@ -784,9 +784,9 @@
         </node>
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="7694989595706001362" nodeInfo="ng" />
         <node role="contents" roleId="mecy.204078314067497530" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="7694989595706004385" nodeInfo="ng">
-          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.WhereExpression" typeId="mj1k.7750719112880673844" id="7694989595706005162" nodeInfo="ng">
+          <node role="expr" roleId="mecy.4988923775218203830" type="mj1k.QuantifiedExpression" typeId="mj1k.7750719112880673844" id="7694989595706005162" nodeInfo="ng">
             <property name="quant" nameId="mj1k.4545783005394410979" value="all" />
-            <node role="vars" roleId="mj1k.7750719112880676413" type="mj1k.WhereVariable" typeId="mj1k.7750719112880676410" id="7694989595706005163" nodeInfo="ng">
+            <node role="vars" roleId="mj1k.7750719112880676413" type="mj1k.QuantifiedVariable" typeId="mj1k.7750719112880676410" id="7694989595706005163" nodeInfo="ng">
               <property name="name" nameId="tpck.1169194664001" value="x" />
             </node>
             <node role="type" roleId="mj1k.7750719112880676438" type="mecy.ClaferType" typeId="mecy.2851923306472509129" id="7694989595706005201" nodeInfo="ng">
@@ -800,7 +800,7 @@
                 <node role="target" roleId="mj1k.7034214596252529803" type="mecy.SubclaferRef" typeId="mecy.7750719112879013576" id="7694989595706005326" nodeInfo="ng">
                   <link role="clafer" roleId="mecy.7750719112879013668" targetNodeId="6759927632794240053" resolveInfo="age" />
                 </node>
-                <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.WhereVarRef" typeId="mj1k.7750719112881254547" id="7694989595706005232" nodeInfo="ng">
+                <node role="expression" roleId="mj1k.7254843406768839760" type="mj1k.QuantifiedVarRef" typeId="mj1k.7750719112881254547" id="7694989595706005232" nodeInfo="ng">
                   <link role="var" roleId="mj1k.7750719112881254599" targetNodeId="7694989595706005163" resolveInfo="x" />
                 </node>
               </node>

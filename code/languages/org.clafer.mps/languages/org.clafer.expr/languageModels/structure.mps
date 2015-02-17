@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="37">
+<model modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="40">
   <persistence version="8" />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <import index="tpd4" modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="7" />
@@ -8,7 +8,7 @@
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" />
   <import index="hba4" modelUID="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" version="16" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="37" implicit="yes" />
+  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="40" implicit="yes" />
   <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="8860443239512128050" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Expression" />
@@ -720,15 +720,15 @@
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7750719112880673844" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="WhereExpression" />
+    <property name="name" nameId="tpck.1169194664001" value="QuantifiedExpression" />
     <property name="conceptAlias" nameId="tpce.5092175715804935370" value="{" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="QuantExpr" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7750719112880676413" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
       <property name="role" nameId="tpce.1071599776563" value="vars" />
       <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7750719112880676410" resolveInfo="WhereVariable" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7750719112880676410" resolveInfo="QuantifiedVariable" />
     </node>
     <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7750719112880676438" nodeInfo="ig">
       <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
@@ -748,36 +748,24 @@
     </node>
   </root>
   <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7750719112880676410" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
-    <property name="name" nameId="tpck.1169194664001" value="WhereVariable" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="QuantExpr" />
+    <property name="name" nameId="tpck.1169194664001" value="QuantifiedVariable" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
     <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7750719112880676411" nodeInfo="ig">
       <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
     </node>
   </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7750719112881254547" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
-    <property name="name" nameId="tpck.1169194664001" value="WhereVarRef" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7750719112881254599" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="var" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7750719112880676410" resolveInfo="WhereVariable" />
-    </node>
-  </root>
   <root type="tpce.EnumerationDataTypeDeclaration" typeId="tpce.1082978164219" id="4545783005394410967" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="where" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="QuantExpr" />
     <property name="name" nameId="tpck.1169194664001" value="Quant" />
     <link role="memberDataType" roleId="tpce.1083171729157" targetNodeId="tpck.1082983041843" resolveInfo="string" />
-    <link role="defaultMember" roleId="tpce.1083241965437" targetNodeId="4545783005394412199" />
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4545783005394410968" nodeInfo="ig">
-      <property name="internalValue" nameId="tpce.1083923523171" value="all" />
-      <property name="externalValue" nameId="tpce.1083923523172" value="all" />
-    </node>
-    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4545783005394412199" nodeInfo="ig">
       <property name="internalValue" nameId="tpce.1083923523171" value="some" />
       <property name="externalValue" nameId="tpce.1083923523172" value="some" />
+    </node>
+    <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4545783005394412199" nodeInfo="ig">
+      <property name="internalValue" nameId="tpce.1083923523171" value="all" />
+      <property name="externalValue" nameId="tpce.1083923523172" value="all" />
     </node>
     <node role="member" roleId="tpce.1083172003582" type="tpce.EnumerationMemberDeclaration" typeId="tpce.1083171877298" id="4545783005394628826" nodeInfo="ig">
       <property name="externalValue" nameId="tpce.1083923523172" value="lone" />
@@ -794,6 +782,17 @@
     <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
     <property name="final" nameId="tpce.4628067390765956807" value="false" />
     <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128052" resolveInfo="BinaryExpression" />
+  </root>
+  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7750719112881254547" nodeInfo="ig">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="QuantExpr" />
+    <property name="name" nameId="tpck.1169194664001" value="QuantifiedVarRef" />
+    <link role="extends" roleId="tpce.1071489389519" targetNodeId="8860443239512128050" resolveInfo="Expression" />
+    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7750719112881254599" nodeInfo="ig">
+      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
+      <property name="role" nameId="tpce.1071599776563" value="var" />
+      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
+      <link role="target" roleId="tpce.1071599976176" targetNodeId="7750719112880676410" resolveInfo="QuantifiedVariable" />
+    </node>
   </root>
 </model>
 

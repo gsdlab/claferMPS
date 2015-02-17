@@ -8,7 +8,7 @@
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="13" implicit="yes" />
-  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="37" implicit="yes" />
+  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="40" implicit="yes" />
   <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
   <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="20" implicit="yes" />
   <import index="suqv" modelUID="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" version="0" implicit="yes" />
@@ -778,9 +778,9 @@
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Switch" typeId="ddau.8119098109027576689" id="663277625450974492" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="WinSwitch" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="3664156354818927624" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="267.00030517578125" />
           <property name="bounds_y" nameId="suqv.6720495385597071502" value="129.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="244.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="191.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
         </node>
       </node>
@@ -788,17 +788,17 @@
         <property name="name" nameId="tpck.1169194664001" value="WinMotor" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="3664156354818927625" nodeInfo="ng">
           <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="209.0" />
-          <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="129.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="177.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="38.0" />
         </node>
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="ddau.RefToDevice" typeId="ddau.663277625450975106" id="663277625451012832" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="MotorDriver" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="3664156354818927626" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="363.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="398.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="154.00030517578125" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="176.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
         </node>
       </node>
@@ -807,9 +807,9 @@
         <property name="isSmart" nameId="ddau.7694989595703520319" value="true" />
         <property name="isDumb" nameId="ddau.663277625446120312" value="false" />
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="3664156354818927627" nodeInfo="ng">
-          <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.0" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="246.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="255.0" />
+          <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="64.0" />
           <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
         </node>
       </node>
@@ -817,20 +817,38 @@
         <property name="name" nameId="tpck.1169194664001" value="DoorInline" />
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013446" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="LoadPwr" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="5925036345154572665" nodeInfo="ng">
+            <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
+            <property name="bounds_y" nameId="suqv.6720495385597071502" value="12.0" />
+            <property name="bounds_width" nameId="suqv.6720495385597071503" value="134.0" />
+            <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
+          </node>
         </node>
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013452" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="DevicePwr" />
           <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="5925036345154572666" nodeInfo="ng">
+            <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
+            <property name="bounds_y" nameId="suqv.6720495385597071502" value="246.0" />
+            <property name="bounds_width" nameId="suqv.6720495385597071503" value="190.0" />
+            <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
+          </node>
         </node>
         <node role="contents" roleId="ddau.4835973625144381739" type="ddau.Pin" typeId="ddau.8119098109027610109" id="663277625451013460" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="Serial" />
           <property name="isOptional" nameId="ddau.7694989595702677415" value="true" />
+          <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="5925036345154572667" nodeInfo="ng">
+            <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
+            <property name="bounds_y" nameId="suqv.6720495385597071502" value="129.0" />
+            <property name="bounds_width" nameId="suqv.6720495385597071503" value="148.0" />
+            <property name="bounds_height" nameId="suqv.6720495385597071504" value="37.0" />
+          </node>
         </node>
         <node role="smodelAttribute" roleId="tpck.5169995583184591170" type="suqv.Layout_Box" typeId="suqv.6720495385597071406" id="3664156354818927628" nodeInfo="ng">
           <property name="bounds_x" nameId="suqv.6720495385597071501" value="12.000100135803223" />
-          <property name="bounds_y" nameId="suqv.6720495385597071502" value="480.0" />
-          <property name="bounds_width" nameId="suqv.6720495385597071503" value="351.0" />
-          <property name="bounds_height" nameId="suqv.6720495385597071504" value="161.0" />
+          <property name="bounds_y" nameId="suqv.6720495385597071502" value="247.0" />
+          <property name="bounds_width" nameId="suqv.6720495385597071503" value="247.0" />
+          <property name="bounds_height" nameId="suqv.6720495385597071504" value="330.0" />
         </node>
       </node>
       <node role="contents" roleId="ddau.4835973625144381739" type="mecy.Constraint" typeId="mecy.6300420630909714393" id="663277625451470250" nodeInfo="ng">
@@ -859,12 +877,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node role="imports" roleId="mecy.204078314067497532" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2149636062572336878" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="ob7x.8515355272957394865" resolveInfo="EAST_ADL" />
-    </node>
-    <node role="imports" roleId="mecy.204078314067497532" type="vs0r.DefaultGenericChunkDependency" typeId="vs0r.747084250476811597" id="2149636062572336883" nodeInfo="ng">
-      <link role="chunk" roleId="vs0r.747084250476878887" targetNodeId="ob7x.3086438409798196818" resolveInfo="AutomotiveConcepts" />
     </node>
   </root>
   <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="2149636062572352525" nodeInfo="ng">
