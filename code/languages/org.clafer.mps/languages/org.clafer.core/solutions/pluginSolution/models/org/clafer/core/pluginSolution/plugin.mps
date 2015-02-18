@@ -1,55 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:9a9fafe1-dac4-4340-8f7a-d944ea8d438b(org.clafer.core.pluginSolution.plugin)">
-  <persistence version="8" />
-  <language namespace="ef7bf5ac-d06c-4342-b11d-e42104eb9343(jetbrains.mps.lang.plugin.standalone)" />
-  <language namespace="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" />
-  <language namespace="1fc20ffe-f35b-4791-a0b7-d706bad5c49a(com.mbeddr.mpsutil.refactoring)" />
-  <import index="qon6" modelUID="r:77666878-a961-4760-8fa7-8b6fd31b3f35(org.clafer.core.editor)" version="-1" />
-  <import index="vrqc" modelUID="r:53e59391-150a-45ff-930e-2b4fdafb0905(org.clafer.expr.editor)" version="5" />
-  <import index="d244" modelUID="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" version="-1" />
-  <import index="tgbt" modelUID="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" version="1" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tp4k" modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="35" implicit="yes" />
-  <import index="4w5v" modelUID="r:18d75373-a465-46d0-9749-aacc22a947bc(com.mbeddr.mpsutil.refactoring.structure)" version="-1" implicit="yes" />
-  <root type="tgbt.StandalonePluginDescriptor" typeId="tgbt.7520713872864775836" id="2851923306481390307" nodeInfo="ng" />
-  <root type="4w5v.ProjectionModeSwitcher" typeId="4w5v.3897771026684493688" id="3897771026685020053" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-    <property name="name" nameId="tpck.1169194664001" value="symbolicMode" />
-    <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="3897771026685020054" nodeInfo="ng">
-      <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Clafer: Symbolic" />
-      <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="vrqc.2851923306480213196" resolveInfo="claferProjections" />
-      <link role="hint" roleId="4w5v.3897771026684508454" targetNodeId="vrqc.2851923306480214334" resolveInfo="symbolicClafer" />
+<model ref="r:9a9fafe1-dac4-4340-8f7a-d944ea8d438b(org.clafer.core.pluginSolution.plugin)">
+  <persistence version="9" />
+  <languages>
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
+  </languages>
+  <imports>
+    <import index="qon6" ref="r:77666878-a961-4760-8fa7-8b6fd31b3f35(org.clafer.core.editor)" />
+    <import index="vrqc" ref="r:53e59391-150a-45ff-930e-2b4fdafb0905(org.clafer.expr.editor)" />
+    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+  </imports>
+  <registry>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
+        <reference id="1204992316090" name="point" index="2f8Tey" />
+        <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
+      </concept>
+    </language>
+    <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
+      <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
+      <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
+        <child id="8575378964581617586" name="modification" index="2hfP89" />
+        <child id="8575378964581602954" name="options" index="2hfSGL" />
+      </concept>
+      <concept id="3897771026684496949" name="com.mbeddr.mpsutil.refactoring.structure.PushHintOption" flags="ng" index="33gmoH">
+        <property id="3897771026684565063" name="menuLabel" index="33g7Lv" />
+        <reference id="3897771026684508452" name="hintCollection" index="33glcW" />
+        <reference id="3897771026684508454" name="hint" index="33glcY" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2DaZZR" id="2uk4icpuLbz" />
+  <node concept="33ghlw" id="3onExzPnGul">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="symbolicMode" />
+    <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
+      <property role="33g7Lv" value="Clafer: Symbolic" />
+      <ref role="33glcW" to="vrqc:2uk4icpqhNc" resolve="claferProjections" />
+      <ref role="33glcY" to="vrqc:2uk4icpqi4Y" resolve="symbolicClafer" />
     </node>
-    <node role="modification" roleId="4w5v.8575378964581617586" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="3897771026685020055" nodeInfo="ng">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="d244.295213795664246603" resolveInfo="mbeddrPlatformProjectionModeGroup" />
-      <link role="point" roleId="tp4k.1204992316090" targetNodeId="d244.295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
+    <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
-  </root>
-  <root type="4w5v.ProjectionModeSwitcher" typeId="4w5v.3897771026684493688" id="2003025719979251430" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-    <property name="name" nameId="tpck.1169194664001" value="graphicalMode" />
-    <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="2003025719979251431" nodeInfo="ng">
-      <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Clafer: Graphical" />
-      <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="vrqc.2851923306480213196" resolveInfo="claferProjections" />
-      <link role="hint" roleId="4w5v.3897771026684508454" targetNodeId="vrqc.2003025719977371616" resolveInfo="graphicalClafer" />
+  </node>
+  <node concept="33ghlw" id="1JcbkuzlprA">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="graphicalMode" />
+    <node concept="33gmoH" id="1JcbkuzlprB" role="2hfSGL">
+      <property role="33g7Lv" value="Clafer: Graphical" />
+      <ref role="33glcW" to="vrqc:2uk4icpqhNc" resolve="claferProjections" />
+      <ref role="33glcY" to="vrqc:1Jcbkuzeevw" resolve="graphicalClafer" />
     </node>
-    <node role="modification" roleId="4w5v.8575378964581617586" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="2003025719979251432" nodeInfo="ng">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="d244.295213795664246603" resolveInfo="mbeddrPlatformProjectionModeGroup" />
-      <link role="point" roleId="tp4k.1204992316090" targetNodeId="d244.295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
+    <node concept="tT9cl" id="1JcbkuzlprC" role="2hfP89">
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
-  </root>
-  <root type="4w5v.ProjectionModeSwitcher" typeId="4w5v.3897771026684493688" id="7539794629910671199" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="" />
-    <property name="name" nameId="tpck.1169194664001" value="indentMode" />
-    <node role="options" roleId="4w5v.8575378964581602954" type="4w5v.PushHintOption" typeId="4w5v.3897771026684496949" id="7539794629910671200" nodeInfo="ng">
-      <property name="menuLabel" nameId="4w5v.3897771026684565063" value="Clafer: Indent Lines" />
-      <link role="hintCollection" roleId="4w5v.3897771026684508452" targetNodeId="vrqc.2851923306480213196" resolveInfo="claferProjections" />
-      <link role="hint" roleId="4w5v.3897771026684508454" targetNodeId="vrqc.7539794629909752903" resolveInfo="showIndentsInClafer" />
+  </node>
+  <node concept="33ghlw" id="6yyIOiNeiXv">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="indentMode" />
+    <node concept="33gmoH" id="6yyIOiNeiXw" role="2hfSGL">
+      <property role="33g7Lv" value="Clafer: Indent Lines" />
+      <ref role="33glcW" to="vrqc:2uk4icpqhNc" resolve="claferProjections" />
+      <ref role="33glcY" to="vrqc:6yyIOiNaML7" resolve="showIndentsInClafer" />
     </node>
-    <node role="modification" roleId="4w5v.8575378964581617586" type="tp4k.ModificationStatement" typeId="tp4k.1203092361741" id="7539794629910671201" nodeInfo="ng">
-      <link role="modifiedGroup" roleId="tp4k.1203092736097" targetNodeId="d244.295213795664246603" resolveInfo="mbeddrPlatformProjectionModeGroup" />
-      <link role="point" roleId="tp4k.1204992316090" targetNodeId="d244.295213795664246606" resolveInfo="mbeddrPlatformProjectionModes" />
+    <node concept="tT9cl" id="6yyIOiNeiXx" role="2hfP89">
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
-  </root>
+  </node>
 </model>
 

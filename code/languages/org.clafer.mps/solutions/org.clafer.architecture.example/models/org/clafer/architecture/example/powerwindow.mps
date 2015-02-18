@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:447f8738-a2af-4f52-bc9f-9ed87632401a(org.clafer.architecture.example.powerwindow)">
-  <persistence version="8" />
-  <language namespace="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" />
-  <devkit namespace="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="15" implicit="yes" />
-  <root type="mecy.ClaferModule" typeId="mecy.204078314067480627" id="5749248055796907587" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="PowerWindow" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="663277625447262787" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="637072140521688114" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="637072140521688126" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4835973625144442240" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4835973625144433916" nodeInfo="ng" />
-    <node role="contents" roleId="mecy.204078314067497530" type="mecy.EmptyClaferModuleContent" typeId="mecy.204078314067568528" id="4835973625144433920" nodeInfo="ng" />
-  </root>
+<model ref="r:447f8738-a2af-4f52-bc9f-9ed87632401a(org.clafer.architecture.example.powerwindow)">
+  <persistence version="9" />
+  <languages>
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="-1" />
+    <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
+      <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <child id="204078314067497530" name="contents" index="UzTCv" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="UzPwm" id="4Z9rElrojT3">
+    <property role="TrG5h" value="PowerWindow" />
+    <node concept="UzEYP" id="$OrRLOfUD3" role="UzTCv" />
+    <node concept="UzEYP" id="znlrM85WKM" role="UzTCv" />
+    <node concept="UzEYP" id="znlrM85WKY" role="UzTCv" />
+    <node concept="UzEYP" id="4csP6flT7Q0" role="UzTCv" />
+    <node concept="UzEYP" id="4csP6flT5NW" role="UzTCv" />
+    <node concept="UzEYP" id="4csP6flT5O0" role="UzTCv" />
+  </node>
 </model>
 

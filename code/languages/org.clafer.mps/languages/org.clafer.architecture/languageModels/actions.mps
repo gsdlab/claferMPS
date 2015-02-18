@@ -1,169 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:c684fc79-88b3-4a31-988b-59840f84bb8a(org.clafer.architecture.actions)">
-  <persistence version="8" />
-  <language namespace="aee9cad2-acd4-4608-aef2-0004f6a1cdbd(jetbrains.mps.lang.actions)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="ddau" modelUID="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" version="20" />
-  <import index="tpdg" modelUID="r:00000000-0000-4000-0000-011c895902a8(jetbrains.mps.lang.actions.structure)" version="23" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="tp25" modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" implicit="yes" />
-  <import index="tpib" modelUID="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" version="0" implicit="yes" />
-  <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="4835973625144949602" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="AddContents" />
-    <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="663277625452146745" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ddau.8119098109030421700" resolveInfo="SuperArchElRef" />
-      <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="663277625452146761" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
-        <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="663277625452146765" nodeInfo="ng">
-          <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="663277625452146766" nodeInfo="nn">
-            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="663277625452146767" nodeInfo="sn">
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="663277625452147366" nodeInfo="nn">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625452147367" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625452147368" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="663277625452148120" nodeInfo="nn">
-                      <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="663277625452147369" nodeInfo="nn" />
-                      <node role="operation" roleId="tpee.1197027833540" type="tp25.Node_GetAncestorOperation" typeId="tp25.1171407110247" id="663277625452149217" nodeInfo="nn">
-                        <node role="parameter" roleId="tp25.1144104376918" type="tp25.OperationParm_Concept" typeId="tp25.1144101972840" id="663277625452149219" nodeInfo="ng">
-                          <node role="conceptArgument" roleId="tp25.1207343664468" type="tp25.RefConcept_Reference" typeId="tp25.1177026924588" id="663277625452149451" nodeInfo="nn">
-                            <link role="conceptDeclaration" roleId="tp25.1177026940964" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
+<model ref="r:c684fc79-88b3-4a31-988b-59840f84bb8a(org.clafer.architecture.actions)">
+  <persistence version="9" />
+  <languages>
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
+  </imports>
+  <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
+    <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="1196433923911" name="jetbrains.mps.lang.actions.structure.SideTransform_SimpleString" flags="nn" index="2h1dTh">
+        <property id="1196433942569" name="text" index="2h1i$Z" />
+      </concept>
+      <concept id="1177323996388" name="jetbrains.mps.lang.actions.structure.AddMenuPart" flags="ng" index="tYCnQ" />
+      <concept id="1177333529597" name="jetbrains.mps.lang.actions.structure.ConceptPart" flags="ng" index="uyZFJ">
+        <reference id="1177333551023" name="concept" index="uz4UX" />
+        <child id="1177333559040" name="part" index="uz6Si" />
+      </concept>
+      <concept id="1177497140107" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_sourceNode" flags="nn" index="Cj7Ep" />
+      <concept id="1177498013932" name="jetbrains.mps.lang.actions.structure.SimpleSideTransformMenuPart" flags="ng" index="Cmt7Y">
+        <child id="1177498166690" name="matchingText" index="Cn2iK" />
+        <child id="1177498207384" name="handler" index="Cncma" />
+      </concept>
+      <concept id="1177498227294" name="jetbrains.mps.lang.actions.structure.QueryFunction_SideTransform_Handler" flags="in" index="Cnhdc" />
+      <concept id="1138079221458" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" flags="ig" index="3UNGvq">
+        <reference id="1138079221462" name="applicableConcept" index="3UNGvu" />
+        <child id="1177442283389" name="part" index="_1QTJ" />
+      </concept>
+      <concept id="1138079416598" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActions" flags="ng" index="3UOs0u">
+        <child id="1138079416599" name="actionsBuilder" index="3UOs0v" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3UOs0u" id="4csP6flV3Hy">
+    <property role="TrG5h" value="AddContents" />
+    <node concept="3UNGvq" id="$OrRLOyz0T" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:72GPbqtjtj4" resolve="SuperArchElRef" />
+      <node concept="tYCnQ" id="$OrRLOyz19" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:4csP6flST3m" resolve="ArchElement" />
+        <node concept="Cmt7Y" id="$OrRLOyz1d" role="uz6Si">
+          <node concept="Cnhdc" id="$OrRLOyz1e" role="Cncma">
+            <node concept="3clFbS" id="$OrRLOyz1f" role="2VODD2">
+              <node concept="3clFbF" id="$OrRLOyzaA" role="3cqZAp">
+                <node concept="2OqwBi" id="$OrRLOyzaB" role="3clFbG">
+                  <node concept="2OqwBi" id="$OrRLOyzaC" role="2Oq$k0">
+                    <node concept="2OqwBi" id="$OrRLOyzmo" role="2Oq$k0">
+                      <node concept="Cj7Ep" id="$OrRLOyzaD" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="$OrRLOyzBx" role="2OqNvi">
+                        <node concept="1xMEDy" id="$OrRLOyzBz" role="1xVPHs">
+                          <node concept="chp4Y" id="$OrRLOyzFb" role="ri$Ld">
+                            <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="663277625452147370" nodeInfo="nn">
-                      <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.4835973625144381739" />
+                    <node concept="3Tsc0h" id="$OrRLOyzaE" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="663277625452147371" nodeInfo="nn" />
+                  <node concept="WFELt" id="$OrRLOyzaF" role="2OqNvi" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="663277625452146849" nodeInfo="nn">
-            <property name="text" nameId="tpdg.1196433942569" value="{" />
+          <node concept="2h1dTh" id="$OrRLOyz2x" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
           </node>
         </node>
       </node>
     </node>
-    <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="4835973625144949603" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
-      <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="4835973625144949668" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.4835973625144381654" resolveInfo="ArchElement" />
-        <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="4835973625144949670" nodeInfo="ng">
-          <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="4835973625144949671" nodeInfo="nn">
-            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4835973625144949672" nodeInfo="sn">
-              <node role="statement" roleId="tpee.1068581517665" type="tpib.LogStatement" typeId="tpib.1167227138527" id="5925036345150561422" nodeInfo="nn">
-                <property name="severity" nameId="tpib.1167245565795" value="error" />
-                <node role="logExpression" roleId="tpib.1167227463056" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5925036345150561424" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1070475926801" value="ERROR" />
+    <node concept="3UNGvq" id="4csP6flV3Hz" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:4csP6flST3m" resolve="ArchElement" />
+      <node concept="tYCnQ" id="4csP6flV3I$" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:4csP6flST3m" resolve="ArchElement" />
+        <node concept="Cmt7Y" id="4csP6flV3IA" role="uz6Si">
+          <node concept="Cnhdc" id="4csP6flV3IB" role="Cncma">
+            <node concept="3clFbS" id="4csP6flV3IC" role="2VODD2">
+              <node concept="34ab3g" id="58TXiBDY_Me" role="3cqZAp">
+                <property role="35gtTG" value="error" />
+                <node concept="Xl_RD" id="58TXiBDY_Mg" role="34bqiv">
+                  <property role="Xl_RC" value="ERROR" />
                 </node>
               </node>
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4835973625144949793" nodeInfo="nn">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4835973625144962668" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4835973625144950171" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="4835973625144949792" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="4835973625144956758" nodeInfo="nn">
-                      <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.4835973625144381739" />
+              <node concept="3clFbF" id="4csP6flV3Kx" role="3cqZAp">
+                <node concept="2OqwBi" id="4csP6flV6TG" role="3clFbG">
+                  <node concept="2OqwBi" id="4csP6flV3Qr" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="4csP6flV3Kw" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="4csP6flV5tm" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="4835973625145031468" nodeInfo="nn" />
+                  <node concept="WFELt" id="4csP6flVnGG" role="2OqNvi" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="4835973625144949754" nodeInfo="nn">
-            <property name="text" nameId="tpdg.1196433942569" value="{" />
+          <node concept="2h1dTh" id="4csP6flV3JU" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="5925036345145232252" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="AutomotiveConcepts.DeviceNodes" />
-    <property name="name" nameId="tpck.1169194664001" value="addRefToDevice" />
-    <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="5925036345145232253" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ddau.663277625450975106" resolveInfo="RefToDevice" />
-      <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="5925036345145235892" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.663277625450975106" resolveInfo="RefToDevice" />
-        <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="5925036345145235896" nodeInfo="ng">
-          <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="5925036345145235898" nodeInfo="nn">
-            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5925036345145235900" nodeInfo="sn">
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5925036345145236061" nodeInfo="nn">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5925036345145241859" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5925036345145236515" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="5925036345145236060" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkAccess" typeId="tp25.1138056143562" id="5925036345145239854" nodeInfo="nn">
-                      <link role="link" roleId="tp25.1138056516764" targetNodeId="ddau.663277625451387232" />
+  </node>
+  <node concept="3UOs0u" id="58TXiBDEgHW">
+    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="TrG5h" value="addRefToDevice" />
+    <node concept="3UNGvq" id="58TXiBDEgHX" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
+      <node concept="tYCnQ" id="58TXiBDEhAO" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
+        <node concept="Cmt7Y" id="58TXiBDEhAS" role="uz6Si">
+          <node concept="Cnhdc" id="58TXiBDEhAU" role="Cncma">
+            <node concept="3clFbS" id="58TXiBDEhAW" role="2VODD2">
+              <node concept="3clFbF" id="58TXiBDEhDt" role="3cqZAp">
+                <node concept="2OqwBi" id="58TXiBDEj43" role="3clFbG">
+                  <node concept="2OqwBi" id="58TXiBDEhKz" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="58TXiBDEhDs" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="58TXiBDEi$I" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ddau:$OrRLOvD_w" />
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.Link_SetNewChildOperation" typeId="tp25.1138757581985" id="5925036345145243027" nodeInfo="nn" />
+                  <node concept="zfrQC" id="58TXiBDEjmj" role="2OqNvi" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="5925036345145272455" nodeInfo="nn">
-            <property name="text" nameId="tpdg.1196433942569" value="to" />
+          <node concept="2h1dTh" id="58TXiBDEqy7" role="Cn2iK">
+            <property role="2h1i$Z" value="to" />
           </node>
         </node>
       </node>
     </node>
-  </root>
-  <root type="tpdg.SideTransformHintSubstituteActions" typeId="tpdg.1138079416598" id="5925036345151028942" nodeInfo="ng">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="EAST_ADL" />
-    <property name="name" nameId="tpck.1169194664001" value="AddDNContent" />
-    <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="5925036345151028943" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ddau.7694989595704450831" resolveInfo="HDFragment" />
-      <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="5925036345151029207" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.7694989595704450831" resolveInfo="HDFragment" />
-        <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="5925036345151029211" nodeInfo="ng">
-          <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="5925036345151029212" nodeInfo="nn">
-            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5925036345151029213" nodeInfo="sn">
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5925036345151029648" nodeInfo="nn">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5925036345151029649" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5925036345151029650" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="5925036345151029651" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5925036345151029652" nodeInfo="nn">
-                      <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.4835973625144381739" />
+  </node>
+  <node concept="3UOs0u" id="58TXiBE0nVe">
+    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="TrG5h" value="AddDNContent" />
+    <node concept="3UNGvq" id="58TXiBE0nVf" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:6Fa64hUi_Wf" resolve="HDFragment" />
+      <node concept="tYCnQ" id="58TXiBE0nZn" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:6Fa64hUi_Wf" resolve="HDFragment" />
+        <node concept="Cmt7Y" id="58TXiBE0nZr" role="uz6Si">
+          <node concept="Cnhdc" id="58TXiBE0nZs" role="Cncma">
+            <node concept="3clFbS" id="58TXiBE0nZt" role="2VODD2">
+              <node concept="3clFbF" id="58TXiBE0o6g" role="3cqZAp">
+                <node concept="2OqwBi" id="58TXiBE0o6h" role="3clFbG">
+                  <node concept="2OqwBi" id="58TXiBE0o6i" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="58TXiBE0o6j" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="58TXiBE0o6k" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="5925036345151029653" nodeInfo="nn" />
+                  <node concept="WFELt" id="58TXiBE0o6l" role="2OqNvi" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="5925036345151029295" nodeInfo="nn">
-            <property name="text" nameId="tpdg.1196433942569" value="{" />
+          <node concept="2h1dTh" id="58TXiBE0o0J" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
           </node>
         </node>
       </node>
     </node>
-    <node role="actionsBuilder" roleId="tpdg.1138079416599" type="tpdg.SideTransformHintSubstituteActionsBuilder" typeId="tpdg.1138079221458" id="5925036345151329745" nodeInfo="ng">
-      <link role="applicableConcept" roleId="tpdg.1138079221462" targetNodeId="ddau.7694989595702755887" resolveInfo="Device" />
-      <node role="part" roleId="tpdg.1177442283389" type="tpdg.AddMenuPart" typeId="tpdg.1177323996388" id="5925036345151329759" nodeInfo="ng">
-        <link role="concept" roleId="tpdg.1177333551023" targetNodeId="ddau.7694989595702755887" resolveInfo="Device" />
-        <node role="part" roleId="tpdg.1177333559040" type="tpdg.SimpleSideTransformMenuPart" typeId="tpdg.1177498013932" id="5925036345151329761" nodeInfo="ng">
-          <node role="handler" roleId="tpdg.1177498207384" type="tpdg.QueryFunction_SideTransform_Handler" typeId="tpdg.1177498227294" id="5925036345151329762" nodeInfo="nn">
-            <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5925036345151329763" nodeInfo="sn">
-              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5925036345151329898" nodeInfo="nn">
-                <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5925036345151329900" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5925036345151329901" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpdg.ConceptFunctionParameter_sourceNode" typeId="tpdg.1177497140107" id="5925036345151329902" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tp25.SLinkListAccess" typeId="tp25.1138056282393" id="5925036345151329903" nodeInfo="nn">
-                      <link role="link" roleId="tp25.1138056546658" targetNodeId="ddau.4835973625144381739" />
+    <node concept="3UNGvq" id="58TXiBE1xnh" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:6Fa64hUc88J" resolve="Device" />
+      <node concept="tYCnQ" id="58TXiBE1xnv" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:6Fa64hUc88J" resolve="Device" />
+        <node concept="Cmt7Y" id="58TXiBE1xnx" role="uz6Si">
+          <node concept="Cnhdc" id="58TXiBE1xny" role="Cncma">
+            <node concept="3clFbS" id="58TXiBE1xnz" role="2VODD2">
+              <node concept="3clFbF" id="58TXiBE1xpE" role="3cqZAp">
+                <node concept="2OqwBi" id="58TXiBE1xpG" role="3clFbG">
+                  <node concept="2OqwBi" id="58TXiBE1xpH" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="58TXiBE1xpI" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="58TXiBE1xpJ" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp25.LinkList_AddNewChildOperation" typeId="tp25.1139184414036" id="5925036345151329904" nodeInfo="nn" />
+                  <node concept="WFELt" id="58TXiBE1xpK" role="2OqNvi" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="matchingText" roleId="tpdg.1177498166690" type="tpdg.SideTransform_SimpleString" typeId="tpdg.1196433923911" id="5925036345151329845" nodeInfo="nn">
-            <property name="text" nameId="tpdg.1196433942569" value="{" />
+          <node concept="2h1dTh" id="58TXiBE1xoP" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
           </node>
         </node>
       </node>
     </node>
-  </root>
+  </node>
 </model>
 

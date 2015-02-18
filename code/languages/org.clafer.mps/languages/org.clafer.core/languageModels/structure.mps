@@ -1,335 +1,377 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="15">
-  <persistence version="8" />
-  <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
-  <devkit namespace="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" />
-  <import index="mj1k" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" version="40" />
-  <import index="mj1l" modelUID="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" version="36" />
-  <import index="tpce" modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" implicit="yes" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="mecy" modelUID="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" version="15" implicit="yes" />
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="204078314067480627" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ClaferModule" />
-    <property name="rootable" nameId="tpce.1096454100552" value="true" />
-    <property name="iconPath" nameId="tpce.1160488491229" value="${module}/icons/clafer.png" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="vs0r.7139820346881560230" resolveInfo="Chunk" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="204078314067497532" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="imports" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="vs0r.747084250476811597" resolveInfo="DefaultGenericChunkDependency" />
+<model ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)">
+  <persistence version="9" />
+  <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
+        <property id="1096454100552" name="rootable" index="19KtqR" />
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1TIwiD" id="bl22kSm_0N">
+    <property role="TrG5h" value="ClaferModule" />
+    <property role="19KtqR" value="true" />
+    <property role="MwhBj" value="${module}/icons/clafer.png" />
+    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <node concept="1TJgyj" id="bl22kSmD8W" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="imports" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="204078314067497530" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="contents" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067494525" resolveInfo="IElement" />
+    <node concept="1TJgyj" id="bl22kSmD8U" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="bl22kSmCpX" resolve="IElement" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="204078314067566573" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.13085436577882829" resolveInfo="IMbeddrIDERoot" />
+    <node concept="PrWs8" id="bl22kSmTZH" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7424246677466424703" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.5095889050031055796" resolveInfo="IContainerOfUniqueNames" />
+    <node concept="PrWs8" id="6s8egifgElZ" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
-  </root>
-  <root type="tpce.InterfaceConceptDeclaration" typeId="tpce.1169125989551" id="204078314067494525" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="IElement" />
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="204078314067497522" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.7024921229555594291" resolveInfo="IIdentifierNamedConcept" />
+  </node>
+  <node concept="PlHQZ" id="bl22kSmCpX">
+    <property role="TrG5h" value="IElement" />
+    <node concept="PrWs8" id="bl22kSmD8M" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
     </node>
-    <node role="extends" roleId="tpce.1169127546356" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2851923306471669277" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.3857533489766146432" resolveInfo="IDocumentable" />
+    <node concept="PrWs8" id="2uk4icoTFSt" role="PrDN$">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="204078314067568528" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="EmptyClaferModuleContent" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="204078314067568529" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="204078314067494525" resolveInfo="IElement" />
+  </node>
+  <node concept="1TIwiD" id="bl22kSmUug">
+    <property role="TrG5h" value="EmptyClaferModuleContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="bl22kSmUuh" role="PzmwI">
+      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="204078314067568534" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="vs0r.1049346859912912067" resolveInfo="IEmpty" />
+    <node concept="PrWs8" id="bl22kSmUum" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:Ug1QzfhXN3" resolve="IEmpty" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="204078314067922728" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Clafer" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="6300420630909718843" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="isAbstract" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+  </node>
+  <node concept="1TIwiD" id="bl22kSogWC">
+    <property role="TrG5h" value="Clafer" />
+    <ref role="1TJDcQ" node="4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="1TJgyi" id="5tJ_MV8UD4V" role="1TKVEl">
+      <property role="TrG5h" value="isAbstract" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6300420630909770924" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="superClafer" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="6300420630909770920" resolveInfo="SuperClaferRef" />
+    <node concept="1TJgyj" id="5tJ_MV8UPMG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="superClafer" />
+      <ref role="20lvS9" node="5tJ_MV8UPMC" resolve="SuperClaferRef" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6300420630909825947" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="children" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..n" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067494525" resolveInfo="IElement" />
+    <node concept="1TJgyj" id="5tJ_MV8V3er" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="children" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="bl22kSmCpX" resolve="IElement" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6300420630910100710" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="explicitCard" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
+    <node concept="1TJgyj" id="5tJ_MV8W6jA" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="explicitCard" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6qd05Uc_KdB" resolve="AbstractCardinality" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6300420630910212770" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="groupCard" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="0..1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
+    <node concept="1TJgyj" id="5tJ_MV8WxEy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="groupCard" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6qd05Uc_KdB" resolve="AbstractCardinality" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7663324203600887728" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="ref" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="7663324203600887714" resolveInfo="ClaferRef" />
+    <node concept="1TJgyj" id="6DpAcbqibYK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ref" />
+      <ref role="20lvS9" node="6DpAcbqibYy" resolve="ClaferRef" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4545783005407237529" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="initializer" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="4545783005407580309" resolveInfo="ClaferInit" />
+    <node concept="1TJgyj" id="3WlRoWfj_mp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initializer" />
+      <ref role="20lvS9" node="3WlRoWfkT2l" resolve="ClaferInit" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7980016436776286309" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="tpck.1835621062190663819" resolveInfo="IDontSubstituteByDefault" />
+    <node concept="PrWs8" id="6UYHEHnP3x_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6300420630909714375" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Goal" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&lt;&lt;" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2851923306471141996" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expr" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1k.4545783005386733607" resolveInfo="GoalExpression" />
+  </node>
+  <node concept="1TIwiD" id="5tJ_MV8UBZ7">
+    <property role="TrG5h" value="Goal" />
+    <property role="34LRSv" value="&lt;&lt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2uk4icoRF9G" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:3WlRoWe5nwB" resolve="GoalExpression" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6300420630909714390" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="204078314067494525" resolveInfo="IElement" />
+    <node concept="PrWs8" id="5tJ_MV8UBZm" role="PzmwI">
+      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6300420630909714393" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Constraint" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="[" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="6300420630909714394" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="204078314067494525" resolveInfo="IElement" />
+  </node>
+  <node concept="1TIwiD" id="5tJ_MV8UBZp">
+    <property role="TrG5h" value="Constraint" />
+    <property role="34LRSv" value="[" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5tJ_MV8UBZq" role="PzmwI">
+      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
     </node>
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4988923775218203830" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="expr" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1k.8860443239512128050" resolveInfo="Expression" />
+    <node concept="1TJgyj" id="4kWdVQTorMQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6300420630909716911" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="RangeCardinality" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value=".." />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9220590295543795961" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="min" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+  </node>
+  <node concept="1TIwiD" id="5tJ_MV8UCAJ">
+    <property role="TrG5h" value="RangeCardinality" />
+    <property role="3GE5qa" value="card" />
+    <property role="34LRSv" value=".." />
+    <ref role="1TJDcQ" node="6qd05Uc_KdB" resolve="AbstractCardinality" />
+    <node concept="1TJgyi" id="7ZQ7wlxjl3T" role="1TKVEl">
+      <property role="TrG5h" value="min" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="9220590295543795963" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="max" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+    <node concept="1TJgyi" id="7ZQ7wlxjl3V" role="1TKVEl">
+      <property role="TrG5h" value="max" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="6300420630909770920" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="SuperClaferRef" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="6300420630909770921" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="superClafer" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="204078314067922728" resolveInfo="Clafer" />
+  </node>
+  <node concept="1TIwiD" id="5tJ_MV8UPMC">
+    <property role="TrG5h" value="SuperClaferRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5tJ_MV8UPMD" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="superClafer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="bl22kSogWC" resolve="Clafer" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7663324203600887714" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ClaferRef" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="-&gt;" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="5675649033537919505" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="targetType" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1k.8860443239512128054" resolveInfo="Type" />
+  </node>
+  <node concept="1TIwiD" id="6DpAcbqibYy">
+    <property role="TrG5h" value="ClaferRef" />
+    <property role="34LRSv" value="-&gt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4V3XbAxOhCh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCQ" resolve="Type" />
     </node>
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7663324203601194103" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="isBag" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657063" resolveInfo="boolean" />
+    <node concept="1TJgyi" id="6DpAcbqjmLR" role="1TKVEl">
+      <property role="TrG5h" value="isBag" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306472496585" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ClaferRefExpr" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1k.8860443239512128050" resolveInfo="Expression" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2851923306472496958" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="clafer" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
+  </node>
+  <node concept="1TIwiD" id="2uk4icoWPR9">
+    <property role="TrG5h" value="ClaferRefExpr" />
+    <property role="3GE5qa" value="expr" />
+    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="2uk4icoWPWY" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="clafer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z9rElrxgzk" resolve="BaseClafer" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2851923306472509129" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <property name="name" nameId="tpck.1169194664001" value="ClaferType" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1k.8860443239512128054" resolveInfo="Type" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2851923306472509130" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="clafer" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
+  </node>
+  <node concept="1TIwiD" id="2uk4icoWSV9">
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="ClaferType" />
+    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCQ" resolve="Type" />
+    <node concept="1TJgyj" id="2uk4icoWSVa" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="clafer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z9rElrxgzk" resolve="BaseClafer" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7750719112878294493" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <property name="name" nameId="tpck.1169194664001" value="ThisExpr" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="this" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="mj1k.8860443239512128050" resolveInfo="Expression" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7750719112879013576" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <property name="name" nameId="tpck.1169194664001" value="SubclaferRef" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="7750719112879013668" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="clafer" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
+  </node>
+  <node concept="1TIwiD" id="6Ig5vvkWgnt">
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="ThisExpr" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="6Ig5vvkYZV8">
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="SubclaferRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6Ig5vvkYZW$" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="clafer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z9rElrxgzk" resolve="BaseClafer" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="7750719112879013666" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1k.4620120465980511009" resolveInfo="IGenericDotTarget" />
+    <node concept="PrWs8" id="6Ig5vvkYZWy" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005404930938" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <property name="name" nameId="tpck.1169194664001" value="ParentExpr" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="parent" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4545783005416240621" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1k.4620120465980511009" resolveInfo="IGenericDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="3WlRoWfaMdU">
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="ParentExpr" />
+    <property role="34LRSv" value="parent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3WlRoWfPVnH" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005407580309" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="ClaferInit" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="=" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="4545783005407580361" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="aggregation" />
-      <property name="role" nameId="tpce.1071599776563" value="value" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="mj1k.8860443239512128050" resolveInfo="Expression" />
+  </node>
+  <node concept="1TIwiD" id="3WlRoWfkT2l">
+    <property role="TrG5h" value="ClaferInit" />
+    <property role="34LRSv" value="=" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3WlRoWfkT39" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="4545783005415648009" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <property name="name" nameId="tpck.1169194664001" value="RefExpr" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="ref" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="4480391400036972185" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1k.4620120465980511009" resolveInfo="IGenericDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="3WlRoWfNEG9">
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="RefExpr" />
+    <property role="34LRSv" value="ref" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3SHz3PXUNqp" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="5749248055799253204" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="BaseClafer" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="5749248055799253267" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="204078314067494525" resolveInfo="IElement" />
+  </node>
+  <node concept="1TIwiD" id="4Z9rElrxgzk">
+    <property role="TrG5h" value="BaseClafer" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4Z9rElrxg$j" role="PzmwI">
+      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="2290628819058175370" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="expr" />
-    <property name="name" nameId="tpck.1169194664001" value="RefRelationExpr" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="&amp;" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-    <node role="linkDeclaration" roleId="tpce.1071489727083" type="tpce.LinkDeclaration" typeId="tpce.1071489288298" id="2290628819058178520" nodeInfo="ig">
-      <property name="metaClass" nameId="tpce.1071599937831" value="reference" />
-      <property name="role" nameId="tpce.1071599776563" value="refChild" />
-      <property name="sourceCardinality" nameId="tpce.1071599893252" value="1" />
-      <link role="target" roleId="tpce.1071599976176" targetNodeId="5749248055799253204" resolveInfo="BaseClafer" />
+  </node>
+  <node concept="1TIwiD" id="1Z9WGpgf2Qa">
+    <property role="3GE5qa" value="expr" />
+    <property role="TrG5h" value="RefRelationExpr" />
+    <property role="34LRSv" value="&amp;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1Z9WGpgf3Bo" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="refChild" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z9rElrxgzk" resolve="BaseClafer" />
     </node>
-    <node role="implements" roleId="tpce.1169129564478" type="tpce.InterfaceConceptReference" typeId="tpce.1169127622168" id="2290628819058542901" nodeInfo="ig">
-      <link role="intfc" roleId="tpce.1169127628841" targetNodeId="mj1k.4620120465980511009" resolveInfo="IGenericDotTarget" />
+    <node concept="PrWs8" id="1Z9WGpggs$P" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670484839" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="AbstractCardinality" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="tpck.1133920641626" resolveInfo="BaseConcept" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670486691" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="StarCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="*" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798189" resolveInfo="ExplicitCardinality" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670798189" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
-    <property name="name" nameId="tpck.1169194664001" value="ExplicitCardinality" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670798190" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
-    <property name="name" nameId="tpck.1169194664001" value="GroupCardinality" />
-    <property name="abstract" nameId="tpce.4628067390765956802" value="true" />
-    <property name="final" nameId="tpce.4628067390765956807" value="false" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969670798191" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
-    <property name="name" nameId="tpck.1169194664001" value="XorCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="xor" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672659109" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="PlusCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="+" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798189" resolveInfo="ExplicitCardinality" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672659468" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="QuestionMarkCard" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="?" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798189" resolveInfo="ExplicitCardinality" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672660489" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.explicit" />
-    <property name="name" nameId="tpck.1169194664001" value="NumberCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="number" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670484839" resolveInfo="AbstractCardinality" />
-    <node role="propertyDeclaration" roleId="tpce.1071489727084" type="tpce.PropertyDeclaration" typeId="tpce.1071489288299" id="7389562969672660490" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="number" />
-      <link role="dataType" roleId="tpce.1082985295845" targetNodeId="tpck.1082983657062" resolveInfo="integer" />
+  </node>
+  <node concept="1TIwiD" id="6qd05Uc_KdB">
+    <property role="TrG5h" value="AbstractCardinality" />
+    <property role="3GE5qa" value="card" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6qd05Uc_KEz">
+    <property role="TrG5h" value="StarCard" />
+    <property role="34LRSv" value="*" />
+    <property role="3GE5qa" value="card.explicit" />
+    <ref role="1TJDcQ" node="6qd05UcAWHH" resolve="ExplicitCardinality" />
+  </node>
+  <node concept="1TIwiD" id="6qd05UcAWHH">
+    <property role="3GE5qa" value="card.explicit" />
+    <property role="TrG5h" value="ExplicitCardinality" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6qd05Uc_KdB" resolve="AbstractCardinality" />
+  </node>
+  <node concept="1TIwiD" id="6qd05UcAWHI">
+    <property role="3GE5qa" value="card.group" />
+    <property role="TrG5h" value="GroupCardinality" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6qd05Uc_KdB" resolve="AbstractCardinality" />
+  </node>
+  <node concept="1TIwiD" id="6qd05UcAWHJ">
+    <property role="3GE5qa" value="card.group" />
+    <property role="TrG5h" value="XorCard" />
+    <property role="34LRSv" value="xor" />
+    <ref role="1TJDcQ" node="6qd05UcAWHI" resolve="GroupCardinality" />
+  </node>
+  <node concept="1TIwiD" id="6qd05UcI32_">
+    <property role="TrG5h" value="PlusCard" />
+    <property role="34LRSv" value="+" />
+    <property role="3GE5qa" value="card.explicit" />
+    <ref role="1TJDcQ" node="6qd05UcAWHH" resolve="ExplicitCardinality" />
+  </node>
+  <node concept="1TIwiD" id="6qd05UcI38c">
+    <property role="TrG5h" value="QuestionMarkCard" />
+    <property role="3GE5qa" value="card.explicit" />
+    <property role="34LRSv" value="?" />
+    <ref role="1TJDcQ" node="6qd05UcAWHH" resolve="ExplicitCardinality" />
+  </node>
+  <node concept="1TIwiD" id="6qd05UcI3o9">
+    <property role="3GE5qa" value="card.explicit" />
+    <property role="TrG5h" value="NumberCard" />
+    <property role="34LRSv" value="number" />
+    <ref role="1TJDcQ" node="6qd05Uc_KdB" resolve="AbstractCardinality" />
+    <node concept="1TJgyi" id="6qd05UcI3oa" role="1TKVEl">
+      <property role="TrG5h" value="number" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672672893" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
-    <property name="name" nameId="tpck.1169194664001" value="OrCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="or" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969672673066" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
-    <property name="name" nameId="tpck.1169194664001" value="MuxCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="mux" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
-  </root>
-  <root type="tpce.ConceptDeclaration" typeId="tpce.1071489090640" id="7389562969673556519" nodeInfo="ig">
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="card.group" />
-    <property name="name" nameId="tpck.1169194664001" value="OptionCard" />
-    <property name="conceptAlias" nameId="tpce.5092175715804935370" value="opt" />
-    <link role="extends" roleId="tpce.1071489389519" targetNodeId="7389562969670798190" resolveInfo="GroupCardinality" />
-  </root>
+  </node>
+  <node concept="1TIwiD" id="6qd05UcI6pX">
+    <property role="3GE5qa" value="card.group" />
+    <property role="TrG5h" value="OrCard" />
+    <property role="34LRSv" value="or" />
+    <ref role="1TJDcQ" node="6qd05UcAWHI" resolve="GroupCardinality" />
+  </node>
+  <node concept="1TIwiD" id="6qd05UcI6sE">
+    <property role="3GE5qa" value="card.group" />
+    <property role="TrG5h" value="MuxCard" />
+    <property role="34LRSv" value="mux" />
+    <ref role="1TJDcQ" node="6qd05UcAWHI" resolve="GroupCardinality" />
+  </node>
+  <node concept="1TIwiD" id="6qd05UcLu8B">
+    <property role="3GE5qa" value="card.group" />
+    <property role="TrG5h" value="OptionCard" />
+    <property role="34LRSv" value="opt" />
+    <ref role="1TJDcQ" node="6qd05UcAWHI" resolve="GroupCardinality" />
+  </node>
 </model>
 
