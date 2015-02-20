@@ -239,6 +239,12 @@
     <node concept="PrWs8" id="58TXiBE1y$6" role="PzmwI">
       <ref role="PrY4T" node="znlrM86iBa" resolve="IDontHaveChildrenNodes" />
     </node>
+    <node concept="1TJgyj" id="73PmbN3CTYP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="smartness" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1HSD30jAnuR" resolve="Smartness" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Fa64hUfhY7">
     <property role="TrG5h" value="Architecture" />
@@ -386,6 +392,8 @@
   <node concept="1TIwiD" id="1HSD30jAnuR">
     <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
     <property role="TrG5h" value="Smartness" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

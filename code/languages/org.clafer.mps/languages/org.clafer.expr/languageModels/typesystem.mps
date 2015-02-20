@@ -178,6 +178,9 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
+      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
+        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -3683,6 +3686,45 @@
         <node concept="3zrR0B" id="4Z9rElqOigr" role="2ShVmc">
           <node concept="3Tqbb2" id="4Z9rElqOigs" role="3zrR0E">
             <ref role="ehGHo" to="mj1k:2uk4icoUtww" resolve="GenericSetType" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3ciAk0" id="73PmbN3$5ng" role="3he0YX">
+      <node concept="3gn64h" id="73PmbN3$5t_" role="32tDTA">
+        <ref role="3gnhBz" to="mj1k:3WlRoWelgJX" resolve="UnionExpression" />
+      </node>
+      <node concept="2ShNRf" id="73PmbN3$cCQ" role="3ciSkW">
+        <node concept="3zrR0B" id="73PmbN3$j2R" role="2ShVmc">
+          <node concept="3Tqbb2" id="73PmbN3$j2T" role="3zrR0E">
+            <ref role="ehGHo" to="mj1k:7FQByU3CrCS" resolve="PrimitiveType" />
+          </node>
+        </node>
+      </node>
+      <node concept="2ShNRf" id="73PmbN3$j45" role="3ciSnv">
+        <node concept="3zrR0B" id="73PmbN3$jdR" role="2ShVmc">
+          <node concept="3Tqbb2" id="73PmbN3$jdT" role="3zrR0E">
+            <ref role="ehGHo" to="mj1k:7FQByU3CrCS" resolve="PrimitiveType" />
+          </node>
+        </node>
+      </node>
+      <node concept="3ciZUL" id="73PmbN3$5n$" role="32tDT$">
+        <node concept="3clFbS" id="73PmbN3$5nD" role="2VODD2">
+          <node concept="3SKdUt" id="73PmbN3CJfz" role="3cqZAp">
+            <node concept="3SKWN0" id="73PmbN3CJfC" role="3SKWNk">
+              <node concept="3clFbF" id="73PmbN3CJbl" role="3SKWNf">
+                <node concept="2ShNRf" id="73PmbN3CyKK" role="3clFbG">
+                  <node concept="3zrR0B" id="73PmbN3Cz3g" role="2ShVmc">
+                    <node concept="3Tqbb2" id="73PmbN3Cz3i" role="3zrR0E">
+                      <ref role="ehGHo" to="mj1k:2uk4icoUtww" resolve="GenericSetType" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="73PmbN3$m7Q" role="3cqZAp">
+            <node concept="3cjfiJ" id="73PmbN3$mch" role="3clFbG" />
           </node>
         </node>
       </node>

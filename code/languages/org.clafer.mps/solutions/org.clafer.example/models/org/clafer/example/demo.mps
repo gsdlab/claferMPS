@@ -151,28 +151,8 @@
       </node>
       <node concept="3E6wFX" id="ORookitkJp" role="2vBZf8" />
       <node concept="Kh$Oq" id="ORookitkJx" role="KmSwm">
-        <node concept="LgdpM" id="ORookitkPW" role="Kh$P6">
-          <node concept="3TlMh9" id="ORookitkRz" role="3TlMhJ">
-            <property role="2hmy$m" value="3" />
-          </node>
-          <node concept="LgdpM" id="ORookitkNz" role="3TlMhI">
-            <node concept="3TlMh9" id="ORookitkOW" role="3TlMhJ">
-              <property role="2hmy$m" value="2" />
-            </node>
-            <node concept="LgdpM" id="ORookitkLs" role="3TlMhI">
-              <node concept="3TlMh9" id="ORookitkMB" role="3TlMhJ">
-                <property role="2hmy$m" value="2" />
-              </node>
-              <node concept="LgdpM" id="ORookitkK3" role="3TlMhI">
-                <node concept="3TlMh9" id="ORookitkKE" role="3TlMhJ">
-                  <property role="2hmy$m" value="2" />
-                </node>
-                <node concept="3TlMh9" id="ORookitkJF" role="3TlMhI">
-                  <property role="2hmy$m" value="1" />
-                </node>
-              </node>
-            </node>
-          </node>
+        <node concept="3TlMh9" id="73PmbN3AGK4" role="Kh$P6">
+          <property role="2hmy$m" value="1" />
         </node>
       </node>
     </node>
@@ -241,6 +221,26 @@
           </node>
         </node>
       </node>
+      <node concept="2vxuzR" id="73PmbN3xVkU" role="2vwUiP">
+        <node concept="LgdpM" id="73PmbN3xVlh" role="3WnoGb">
+          <node concept="ZpONE" id="73PmbN3_OXs" role="3TlMhJ">
+            <ref role="ZpOSt" node="ORookilKg9" resolve="N" />
+          </node>
+          <node concept="ZpONE" id="73PmbN3_8O4" role="3TlMhI">
+            <ref role="ZpOSt" node="ORookilKg9" resolve="N" />
+          </node>
+        </node>
+      </node>
+      <node concept="2vxuzR" id="73PmbN3_uQM" role="2vwUiP">
+        <node concept="LgdpM" id="73PmbN3_uRN" role="3WnoGb">
+          <node concept="ZpONE" id="73PmbN3_uS4" role="3TlMhJ">
+            <ref role="ZpOSt" node="12ZezlWUx0n" resolve="Bob" />
+          </node>
+          <node concept="ZpONE" id="73PmbN3_uRC" role="3TlMhI">
+            <ref role="ZpOSt" node="3WlRoWey$hd" resolve="Alice" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="ORookiosQH" role="UzTCv" />
     <node concept="UH0sd" id="ORookiot6f" role="UzTCv">
@@ -264,11 +264,11 @@
       <node concept="Kh$Oq" id="ORookisWf6" role="KmSwm">
         <node concept="vmDRD" id="ORookisWf7" role="Kh$P6">
           <node concept="vgzv4" id="ORookiu2RO" role="1_9fRO">
-            <node concept="3TlMh9" id="ORookiu2Sf" role="3TlMhJ">
-              <property role="2hmy$m" value="4" />
-            </node>
-            <node concept="ZpONE" id="ORookiu2Qc" role="3TlMhI">
+            <node concept="ZpONE" id="73PmbN3$wT3" role="3TlMhJ">
               <ref role="ZpOSt" node="ORookilKg9" resolve="N" />
+            </node>
+            <node concept="3TlMh9" id="73PmbN3$wSp" role="3TlMhI">
+              <property role="2hmy$m" value="4" />
             </node>
           </node>
         </node>

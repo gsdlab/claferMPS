@@ -4,6 +4,7 @@
   <languages>
     <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="-1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
@@ -32,6 +33,7 @@
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="637072140521370399" name="org.clafer.architecture.structure.TechnicalFeatureModel" flags="ng" index="20Lqqz" />
+      <concept id="1979512562623543223" name="org.clafer.architecture.structure.Smartness" flags="ng" index="8Ste7" />
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
         <reference id="7694989595706234372" name="dn" index="gFST0" />
@@ -40,6 +42,7 @@
       <concept id="7694989595702755887" name="org.clafer.architecture.structure.Device" flags="ng" index="gYDDF">
         <property id="7694989595703520319" name="isSmart" index="gXzhV" />
         <property id="663277625446120312" name="isDumb" index="1X6_g4" />
+        <child id="8139509469301415861" name="smartness" index="2NlGs9" />
       </concept>
       <concept id="4835973625147048739" name="org.clafer.architecture.structure.DeviceNodes" flags="ng" index="2l49t0" />
       <concept id="4835973625145033923" name="org.clafer.architecture.structure.Fragment" flags="ng" index="2mWl2w" />
@@ -454,7 +457,7 @@
         <node concept="gqqVs" id="671VoRkhTNA" role="lGtFl">
           <property role="gqqTZ" value="12.000100135803223" />
           <property role="gqqTW" value="301.49993896484375" />
-          <property role="gqqTX" value="170.0" />
+          <property role="gqqTX" value="172.0" />
           <property role="gqqTy" value="37.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -464,7 +467,7 @@
         <node concept="gqqVs" id="671VoRkhTNB" role="lGtFl">
           <property role="gqqTZ" value="465.5002746582031" />
           <property role="gqqTW" value="301.49993896484375" />
-          <property role="gqqTX" value="181.0" />
+          <property role="gqqTX" value="183.0" />
           <property role="gqqTy" value="37.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -498,7 +501,7 @@
         <node concept="gqqVs" id="671VoRkhTNC" role="lGtFl">
           <property role="gqqTZ" value="867.00048828125" />
           <property role="gqqTW" value="238.4999542236328" />
-          <property role="gqqTX" value="286.0" />
+          <property role="gqqTX" value="288.0" />
           <property role="gqqTy" value="163.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -514,7 +517,7 @@
         <node concept="gqqVs" id="671VoRkhTND" role="lGtFl">
           <property role="gqqTZ" value="1344.000732421875" />
           <property role="gqqTW" value="301.49993896484375" />
-          <property role="gqqTX" value="156.0" />
+          <property role="gqqTX" value="158.0" />
           <property role="gqqTy" value="37.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -524,7 +527,7 @@
         <node concept="gqqVs" id="671VoRkhTNE" role="lGtFl">
           <property role="gqqTZ" value="443.0002746582031" />
           <property role="gqqTW" value="214.4999542236328" />
-          <property role="gqqTX" value="226.0" />
+          <property role="gqqTX" value="228.0" />
           <property role="gqqTy" value="37.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -534,11 +537,11 @@
         <ref role="2wMEbG" node="72GPbqtf_H_" resolve="CurrentSensor" />
         <ref role="2wMEbl" node="72GPbqtfpAV" resolve="WinCtr" />
         <node concept="2VclpC" id="4fqVouxx7U5" role="lGtFl">
-          <node concept="2VclrF" id="58TXiBDVe6g" role="2Vcluh">
+          <node concept="2VclrF" id="73PmbN438h_" role="2Vcluh">
             <property role="2Vclpx" value="842.0003662109375" />
             <property role="2Vclpz" value="233.0" />
           </node>
-          <node concept="2VclrF" id="58TXiBDVe6h" role="2Vcluh">
+          <node concept="2VclrF" id="73PmbN438hA" role="2Vcluh">
             <property role="2Vclpx" value="842.0003662109375" />
             <property role="2Vclpz" value="320.0" />
           </node>
@@ -552,7 +555,7 @@
           <node concept="gqqVs" id="671VoRkhTNG" role="lGtFl">
             <property role="gqqTZ" value="464.0002746582031" />
             <property role="gqqTW" value="25.499950408935547" />
-            <property role="gqqTX" value="209.0" />
+            <property role="gqqTX" value="211.0" />
             <property role="gqqTy" value="37.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
@@ -562,7 +565,7 @@
           <node concept="gqqVs" id="671VoRkhTNH" role="lGtFl">
             <property role="gqqTZ" value="12.000100135803223" />
             <property role="gqqTW" value="25.499950408935547" />
-            <property role="gqqTX" value="240.0" />
+            <property role="gqqTX" value="242.0" />
             <property role="gqqTy" value="37.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
@@ -580,8 +583,8 @@
           <node concept="2VclpC" id="7CJUZX6X0tJ" role="lGtFl" />
         </node>
         <node concept="gqqVs" id="671VoRkhTNF" role="lGtFl">
-          <property role="gqqTZ" value="12.000100135803223" />
-          <property role="gqqTW" value="12.0" />
+          <property role="gqqTZ" value="-5.999899864196777" />
+          <property role="gqqTW" value="32.0" />
           <property role="gqqTX" value="691.0" />
           <property role="gqqTy" value="109.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -598,8 +601,8 @@
                     <property role="2Vclpz" value="-77.58250414807046" />
                   </node>
                   <node concept="2VclrF" id="58TXiBDVe6H" role="3wpmZP">
-                    <property role="2Vclpx" value="374.0" />
-                    <property role="2Vclpz" value="89.99995040893555" />
+                    <property role="2Vclpx" value="356.0" />
+                    <property role="2Vclpz" value="101.99995040893555" />
                   </node>
                 </node>
               </node>
@@ -616,8 +619,8 @@
                     <property role="2Vclpz" value="-252.65180137832604" />
                   </node>
                   <node concept="2VclrF" id="58TXiBE0urT" role="3wpmZP">
-                    <property role="2Vclpx" value="778.5" />
-                    <property role="2Vclpz" value="173.0" />
+                    <property role="2Vclpx" value="769.5" />
+                    <property role="2Vclpz" value="179.0" />
                   </node>
                 </node>
               </node>
@@ -651,8 +654,8 @@
               <property role="3ul5GH" value="label" />
               <node concept="3wpmZ1" id="58TXiBE0urZ" role="3ul5Gz">
                 <node concept="2VclrF" id="58TXiBE0us0" role="3wpmZR">
-                  <property role="2Vclpx" value="-35.4996337890625" />
-                  <property role="2Vclpz" value="-31.99993896484375" />
+                  <property role="2Vclpx" value="-31.9996337890625" />
+                  <property role="2Vclpz" value="-7.5" />
                 </node>
                 <node concept="2VclrF" id="58TXiBE0us1" role="3wpmZP">
                   <property role="2Vclpx" value="758.0" />
@@ -669,8 +672,8 @@
               <property role="3ul5GH" value="label" />
               <node concept="3wpmZ1" id="58TXiBE0us5" role="3ul5Gz">
                 <node concept="2VclrF" id="58TXiBE0us6" role="3wpmZR">
-                  <property role="2Vclpx" value="-46.4993896484375" />
-                  <property role="2Vclpz" value="-31.999954223632812" />
+                  <property role="2Vclpx" value="-42.9993896484375" />
+                  <property role="2Vclpz" value="-7.5" />
                 </node>
                 <node concept="2VclrF" id="58TXiBE0us7" role="3wpmZP">
                   <property role="2Vclpx" value="1249.5" />
@@ -687,7 +690,7 @@
               <property role="3ul5GH" value="label" />
               <node concept="3wpmZ1" id="58TXiBE0us8" role="3ul5Gz">
                 <node concept="2VclrF" id="58TXiBE0us9" role="3wpmZR">
-                  <property role="2Vclpx" value="-93.4996337890625" />
+                  <property role="2Vclpx" value="-46.4996337890625" />
                   <property role="2Vclpz" value="-32.0" />
                 </node>
                 <node concept="2VclrF" id="58TXiBE0usa" role="3wpmZP">
@@ -934,33 +937,39 @@
     <node concept="UzEYP" id="$OrRLOu4Md" role="UzTCv" />
     <node concept="2l49t0" id="$OrRLOu4NE" role="UzTCv">
       <property role="TrG5h" value="WinSubSysDN" />
-      <node concept="3HzFZ7" id="$OrRLOu4Os" role="2mZOl8">
+      <node concept="3HzFZ7" id="73PmbN3ZqAF" role="2mZOl8">
         <property role="TrG5h" value="WinSwitch" />
-        <node concept="gqqVs" id="3bpGGEaueK8" role="lGtFl">
-          <property role="gqqTZ" value="259.00030517578125" />
-          <property role="gqqTW" value="129.0" />
-          <property role="gqqTX" value="182.0" />
+        <property role="1X6_g4" value="false" />
+        <property role="gXzhV" value="false" />
+        <node concept="gqqVs" id="73PmbN3ZuYN" role="lGtFl">
+          <property role="gqqTZ" value="168.00030517578125" />
+          <property role="gqqTW" value="38.0" />
+          <property role="gqqTX" value="184.0" />
           <property role="gqqTy" value="37.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
-      <node concept="3Hzz_d" id="$OrRLOu4Oy" role="2mZOl8">
+      <node concept="3Hzz_d" id="73PmbN3N8KN" role="2mZOl8">
         <property role="TrG5h" value="WinMotor" />
-        <node concept="gqqVs" id="3bpGGEaueK9" role="lGtFl">
-          <property role="gqqTZ" value="147.00030517578125" />
-          <property role="gqqTW" value="12.0" />
-          <property role="gqqTX" value="158.0" />
-          <property role="gqqTy" value="37.0" />
+        <property role="gXzhV" value="false" />
+        <property role="1X6_g4" value="false" />
+        <node concept="gqqVs" id="73PmbN3N8OT" role="lGtFl">
+          <property role="gqqTZ" value="12.000100135803223" />
+          <property role="gqqTW" value="152.0" />
+          <property role="gqqTX" value="160.0" />
+          <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
+        <node concept="8Ste7" id="73PmbN439sC" role="2NlGs9" />
       </node>
-      <node concept="1Xj23Y" id="$OrRLOuebw" role="2mZOl8">
+      <node concept="1Xj23Y" id="73PmbN3Zs$g" role="2mZOl8">
         <property role="TrG5h" value="MotorDriver" />
-        <node concept="gqqVs" id="3bpGGEaueKa" role="lGtFl">
-          <property role="gqqTZ" value="12.000100135803223" />
-          <property role="gqqTW" value="129.0" />
-          <property role="gqqTX" value="167.0" />
-          <property role="gqqTy" value="37.0" />
+        <node concept="8Ste7" id="73PmbN3Zs$h" role="2NlGs9" />
+        <node concept="gqqVs" id="73PmbN3ZuYO" role="lGtFl">
+          <property role="gqqTZ" value="250.00030517578125" />
+          <property role="gqqTW" value="152.0" />
+          <property role="gqqTX" value="169.0" />
+          <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -971,10 +980,11 @@
         <node concept="gqqVs" id="3bpGGEaueKb" role="lGtFl">
           <property role="gqqTZ" value="12.000100135803223" />
           <property role="gqqTW" value="12.0" />
-          <property role="gqqTX" value="55.0" />
-          <property role="gqqTy" value="37.0" />
+          <property role="gqqTX" value="57.0" />
+          <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
+        <node concept="8Ste7" id="73PmbN43aiz" role="2NlGs9" />
       </node>
       <node concept="3Hzz_a" id="$OrRLOuekL" role="2mZOl8">
         <property role="TrG5h" value="DoorInline" />
@@ -983,7 +993,7 @@
           <node concept="gqqVs" id="58TXiBEdT5T" role="lGtFl">
             <property role="gqqTZ" value="12.000100135803223" />
             <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="132.0" />
+            <property role="gqqTX" value="134.0" />
             <property role="gqqTy" value="37.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
@@ -994,7 +1004,7 @@
           <node concept="gqqVs" id="58TXiBEdT5U" role="lGtFl">
             <property role="gqqTZ" value="12.000100135803223" />
             <property role="gqqTW" value="246.0" />
-            <property role="gqqTX" value="188.0" />
+            <property role="gqqTX" value="190.0" />
             <property role="gqqTy" value="37.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
@@ -1002,18 +1012,20 @@
         <node concept="3Hzz_b" id="$OrRLOuelk" role="2mZOl8">
           <property role="TrG5h" value="Serial" />
           <property role="gTlvz" value="true" />
+          <property role="1X6_g4" value="true" />
+          <property role="gXzhV" value="false" />
           <node concept="gqqVs" id="58TXiBEdT5V" role="lGtFl">
             <property role="gqqTZ" value="12.000100135803223" />
             <property role="gqqTW" value="129.0" />
-            <property role="gqqTX" value="146.0" />
+            <property role="gqqTX" value="148.0" />
             <property role="gqqTy" value="37.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
         </node>
         <node concept="gqqVs" id="3bpGGEaueKc" role="lGtFl">
           <property role="gqqTZ" value="12.000100135803223" />
-          <property role="gqqTW" value="246.0" />
-          <property role="gqqTX" value="245.0" />
+          <property role="gqqTW" value="292.0" />
+          <property role="gqqTX" value="247.0" />
           <property role="gqqTy" value="330.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -1023,7 +1035,7 @@
           <node concept="LdX3K" id="$OrRLOvY0l" role="3TlMhJ">
             <node concept="2qmXGp" id="$OrRLOvY70" role="1_9fRO">
               <node concept="2ZqYGZ" id="$OrRLOvY8V" role="1ESnxz">
-                <ref role="2ZqYFj" node="$OrRLOu4Oy" resolve="WinMotor" />
+                <ref role="2ZqYFj" node="73PmbN3N8KN" resolve="WinMotor" />
               </node>
               <node concept="2Zoh0E" id="$OrRLOvY1X" role="1_9fRO" />
             </node>
@@ -1031,13 +1043,13 @@
           <node concept="3TlM44" id="$OrRLOvXSL" role="3TlMhI">
             <node concept="2qmXGp" id="$OrRLOvXWk" role="3TlMhJ">
               <node concept="2ZqYGZ" id="$OrRLOvXXl" role="1ESnxz">
-                <ref role="2ZqYFj" node="$OrRLOu4Oy" resolve="WinMotor" />
+                <ref role="2ZqYFj" node="73PmbN3N8KN" resolve="WinMotor" />
               </node>
               <node concept="2Zoh0E" id="$OrRLOvXT$" role="1_9fRO" />
             </node>
             <node concept="2qmXGp" id="$OrRLOvXRn" role="3TlMhI">
               <node concept="2ZqYGZ" id="58TXiBE6F3g" role="1ESnxz">
-                <ref role="2ZqYFj" node="$OrRLOuebw" resolve="MotorDriver" />
+                <ref role="2ZqYFj" node="73PmbN3Zs$g" resolve="MotorDriver" />
               </node>
               <node concept="2Zoh0E" id="$OrRLOvXR4" role="1_9fRO" />
             </node>
