@@ -17,9 +17,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -48,12 +45,6 @@
       </concept>
       <concept id="1138079416598" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActions" flags="ng" index="3UOs0u">
         <child id="1138079416599" name="actionsBuilder" index="3UOs0v" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -129,12 +120,6 @@
         <node concept="Cmt7Y" id="4csP6flV3IA" role="uz6Si">
           <node concept="Cnhdc" id="4csP6flV3IB" role="Cncma">
             <node concept="3clFbS" id="4csP6flV3IC" role="2VODD2">
-              <node concept="34ab3g" id="58TXiBDY_Me" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <node concept="Xl_RD" id="58TXiBDY_Mg" role="34bqiv">
-                  <property role="Xl_RC" value="ERROR" />
-                </node>
-              </node>
               <node concept="3clFbF" id="4csP6flV3Kx" role="3cqZAp">
                 <node concept="2OqwBi" id="4csP6flV6TG" role="3clFbG">
                   <node concept="2OqwBi" id="4csP6flV3Qr" role="2Oq$k0">
