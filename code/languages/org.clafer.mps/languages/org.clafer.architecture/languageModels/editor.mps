@@ -160,6 +160,9 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
+        <property id="5279705229678483899" name="value" index="2$xPTl" />
+      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -843,8 +846,8 @@
                   </node>
                 </node>
                 <node concept="2xDkLB" id="3diMC1cb$0Z" role="37wK5m" />
-                <node concept="3b6qkQ" id="3diMC1clHBW" role="37wK5m">
-                  <property role="$nhwW" value="0.08f" />
+                <node concept="2$xPTn" id="6VnofE1L3te" role="37wK5m">
+                  <property role="2$xPTl" value="0.08f" />
                 </node>
               </node>
             </node>
@@ -3017,8 +3020,8 @@
                   </node>
                 </node>
                 <node concept="2xDkLB" id="58TXiBDLS1Z" role="37wK5m" />
-                <node concept="3b6qkQ" id="58TXiBDLS20" role="37wK5m">
-                  <property role="$nhwW" value="0.08f" />
+                <node concept="2$xPTn" id="6VnofE1NP3k" role="37wK5m">
+                  <property role="2$xPTl" value="0.08f" />
                 </node>
               </node>
             </node>
