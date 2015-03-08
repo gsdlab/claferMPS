@@ -11,6 +11,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="hba4" ref="r:f5bd2ad9-cd54-4408-b815-07f9f306f074(com.mbeddr.mpsutil.blutil.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -873,6 +874,23 @@
     <property role="TrG5h" value="UnionCommaExpression" />
     <property role="34LRSv" value="," />
     <ref role="1TJDcQ" node="3WlRoWelgJX" resolve="UnionExpression" />
+  </node>
+  <node concept="1TIwiD" id="6BTUndBNkiZ">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="ClaferSetType" />
+    <ref role="1TJDcQ" node="2uk4icoUtww" resolve="GenericSetType" />
+    <node concept="1TJgyj" id="6BTUndBRzvn" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="clafers" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
+    </node>
+    <node concept="PrWs8" id="6BTUndCaq09" role="PzmwI">
+      <ref role="PrY4T" node="6BTUndCaj39" resolve="IClaferSet" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6BTUndCaj39">
+    <property role="TrG5h" value="IClaferSet" />
   </node>
 </model>
 

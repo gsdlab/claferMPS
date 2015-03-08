@@ -226,6 +226,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4Z9rElrxgzk" resolve="BaseClafer" />
     </node>
+    <node concept="PrWs8" id="6BTUndCcX1v" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:6BTUndCaj39" resolve="IClaferSet" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Ig5vvkWgnt">
     <property role="3GE5qa" value="expr" />

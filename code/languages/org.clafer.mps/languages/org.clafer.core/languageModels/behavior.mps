@@ -208,6 +208,7 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -1094,6 +1095,91 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="6BTUndBJ3dl" role="13h7CS">
+      <property role="TrG5h" value="getClaferTypes" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" node="6BTUndBIQqi" resolve="getClaferTypes" />
+      <node concept="3clFbS" id="6BTUndBJ3dn" role="3clF47">
+        <node concept="3cpWs8" id="6G5651Ezk$m" role="3cqZAp">
+          <node concept="3cpWsn" id="6G5651Ezk$p" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="2I9FWS" id="6G5651Ezk$l" role="1tU5fm">
+              <ref role="2I9WkF" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
+            </node>
+            <node concept="2ShNRf" id="6G5651Ezk_7" role="33vP2m">
+              <node concept="2T8Vx0" id="6G5651EzpaI" role="2ShVmc">
+                <node concept="2I9FWS" id="6G5651EzpaK" role="2T96Bj">
+                  <ref role="2I9WkF" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6BTUndBS76R" role="3cqZAp">
+          <node concept="2OqwBi" id="6BTUndBSaDX" role="3clFbG">
+            <node concept="2OqwBi" id="6BTUndBS8lX" role="2Oq$k0">
+              <node concept="13iPFW" id="6BTUndBS76P" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6BTUndBSasI" role="2OqNvi">
+                <ref role="37wK5l" node="1akC2iGAj$t" resolve="allSuperClafers" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="6BTUndBSbC$" role="2OqNvi">
+              <node concept="1bVj0M" id="6BTUndBSbCA" role="23t8la">
+                <node concept="3clFbS" id="6BTUndBSbCB" role="1bW5cS">
+                  <node concept="3clFbF" id="6BTUndBSbJN" role="3cqZAp">
+                    <node concept="2OqwBi" id="6BTUndBSc$1" role="3clFbG">
+                      <node concept="37vLTw" id="6BTUndBSbJM" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6G5651Ezk$p" resolve="res" />
+                      </node>
+                      <node concept="TSZUe" id="6BTUndBShh7" role="2OqNvi">
+                        <node concept="2OqwBi" id="6BTUndBShMF" role="25WWJ7">
+                          <node concept="37vLTw" id="6BTUndBShx0" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6BTUndBSbCC" resolve="it" />
+                          </node>
+                          <node concept="2qgKlT" id="6BTUndBSitq" role="2OqNvi">
+                            <ref role="37wK5l" node="2uk4icpllHZ" resolve="createType" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="6BTUndBSbCC" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="6BTUndBSbCD" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6G5651EzIfB" role="3cqZAp">
+          <node concept="2OqwBi" id="6G5651EzJp6" role="3clFbG">
+            <node concept="37vLTw" id="6G5651EzIf_" role="2Oq$k0">
+              <ref role="3cqZAo" node="6G5651Ezk$p" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="6G5651EzSx2" role="2OqNvi">
+              <node concept="2OqwBi" id="6BTUndBSjis" role="25WWJ7">
+                <node concept="13iPFW" id="6G5651EzSBe" role="2Oq$k0" />
+                <node concept="2qgKlT" id="6BTUndBSk2c" role="2OqNvi">
+                  <ref role="37wK5l" node="2uk4icpllHZ" resolve="createType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6G5651EzpnM" role="3cqZAp">
+          <node concept="37vLTw" id="6G5651EzpnK" role="3clFbG">
+            <ref role="3cqZAo" node="6G5651Ezk$p" resolve="res" />
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="6BTUndC7Bi_" role="3clF45">
+        <node concept="3Tqbb2" id="6BTUndC7BiB" role="A3Ik2">
+          <ref role="ehGHo" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6BTUndBMhe9" role="1B3o_S" />
+    </node>
     <node concept="13i0hz" id="1akC2iGAXaZ" role="13h7CS">
       <property role="TrG5h" value="hasSuperClafer" />
       <node concept="3Tm1VV" id="1akC2iGAXb0" role="1B3o_S" />
@@ -1948,6 +2034,21 @@
       <node concept="3clFbS" id="hUWpPwYSW4" role="3clF47">
         <node concept="3clFbF" id="hUWpPwYTd8" role="3cqZAp">
           <node concept="13iPFW" id="hUWpPwYTd5" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6BTUndBIQqi" role="13h7CS">
+      <property role="TrG5h" value="getClaferTypes" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="6BTUndBIQqj" role="1B3o_S" />
+      <node concept="3clFbS" id="6BTUndBIQqk" role="3clF47">
+        <node concept="3clFbF" id="6BTUndBIQu$" role="3cqZAp">
+          <node concept="10Nm6u" id="6BTUndBIQuz" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="A3Dl8" id="6BTUndC7BLt" role="3clF45">
+        <node concept="3Tqbb2" id="6BTUndC7BLv" role="A3Ik2">
+          <ref role="ehGHo" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
         </node>
       </node>
     </node>
