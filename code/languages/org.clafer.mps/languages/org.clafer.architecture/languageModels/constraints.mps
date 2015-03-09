@@ -182,7 +182,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="72GPbqt8ISl">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <ref role="1M2myG" to="ddau:72GPbqt8IRX" resolve="Pin" />
     <node concept="nKS2y" id="72GPbqt8ISW" role="1MLUbF">
       <node concept="3clFbS" id="72GPbqt8ISX" role="2VODD2">
@@ -328,7 +328,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="znlrM85dU4">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <ref role="1M2myG" to="ddau:72GPbqt8IRW" resolve="Inline" />
     <node concept="osYL8" id="$OrRLO8Bez" role="1MLXOK">
       <node concept="3clFbS" id="$OrRLO8Be$" role="2VODD2">

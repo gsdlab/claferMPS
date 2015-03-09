@@ -412,7 +412,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="$OrRLOv_53">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="addRefToDevice" />
     <ref role="2ZfgGC" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
     <node concept="2S6ZIM" id="$OrRLOv_54" role="2ZfVej">

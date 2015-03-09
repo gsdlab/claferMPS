@@ -147,33 +147,33 @@
   </node>
   <node concept="1TIwiD" id="4csP6fm34cz">
     <property role="TrG5h" value="DeviceNodes" />
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="34LRSv" value="Device Nodes" />
     <ref role="1TJDcQ" node="znlrM84VS2" resolve="HardwareDesignArchitecture" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8AHL">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="Switch" />
     <property role="34LRSv" value="Switch" />
     <property role="MwhBj" value="${module}/icons/switch_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRV">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="Motor" />
     <property role="34LRSv" value="Motor" />
     <property role="MwhBj" value="${module}/icons/motor_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRW">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="Inline" />
     <property role="34LRSv" value="Inline" />
     <property role="MwhBj" value="${module}/icons/inline_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUi_Wf" resolve="HDFragment" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRX">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="Pin" />
     <property role="34LRSv" value="Pin" />
     <property role="MwhBj" value="${module}/icons/pin_icon.png" />
@@ -318,7 +318,7 @@
     <property role="TrG5h" value="IDontHaveChildrenNodes" />
   </node>
   <node concept="1TIwiD" id="$OrRLOgbn5">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="ECU" />
     <property role="34LRSv" value="ECU" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
@@ -358,7 +358,7 @@
     <property role="TrG5h" value="IHaveNotSuperNode" />
   </node>
   <node concept="1TIwiD" id="$OrRLOu4Y2">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="RefToDevice" />
     <property role="34LRSv" value="Reference" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
@@ -376,7 +376,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="$OrRLOvZKp">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="DeviceNodesRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="$OrRLOwoAf" role="1TKVEi">
@@ -390,7 +390,7 @@
     <property role="TrG5h" value="DontShowAsBox" />
   </node>
   <node concept="1TIwiD" id="1HSD30jAnuR">
-    <property role="3GE5qa" value="AutomotiveConcepts.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="Smartness" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
