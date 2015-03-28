@@ -48,8 +48,8 @@
       <concept id="4835973625145033923" name="org.clafer.architecture.structure.Fragment" flags="ng" index="2mWl2w" />
       <concept id="4835973625144817188" name="org.clafer.architecture.structure.FDevice" flags="ng" index="2mXI97" />
       <concept id="4835973625144293103" name="org.clafer.architecture.structure.FAFragment" flags="ng" index="2mZIac" />
-      <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$" />
-      <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
+      <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunctionDefault" flags="ng" index="2mZLT$" />
+      <concept id="4835973625144381654" name="org.clafer.architecture.structure.DiagramNode" flags="ng" index="2mZOiP">
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
@@ -63,10 +63,10 @@
       <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
       <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
       <concept id="8119098109029358023" name="org.clafer.architecture.structure.Feature" flags="ng" index="3H$kPL" />
-      <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
+      <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperDNodeRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
       </concept>
-      <concept id="663277625450975106" name="org.clafer.architecture.structure.RefToDevice" flags="ng" index="1Xj23Y" />
+      <concept id="663277625450975106" name="org.clafer.architecture.structure.ExternalDevice" flags="ng" index="1Xj23Y" />
       <concept id="663277625449423679" name="org.clafer.architecture.structure.DeviceTopology" flags="ng" index="1XlcL3" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1429,6 +1429,7 @@
           </node>
         </node>
       </node>
+      <node concept="1eXri_" id="1o_kKWC5Iq4" role="2mZOl8" />
     </node>
     <node concept="UzEYP" id="72GPbqtfksG" role="UzTCv" />
     <node concept="UzEYP" id="72GPbqtfjxX" role="UzTCv" />

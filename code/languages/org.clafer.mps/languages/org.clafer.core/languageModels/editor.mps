@@ -14,6 +14,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
+    <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -257,10 +258,10 @@
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
     </language>
-    <language id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb">
-      <concept id="4313262807137635254" name="com.mbeddr.mpsutil.breadcrumb.structure.BreadcrumbEditor" flags="ng" index="2pz08t">
-        <property id="6508908841687149034" name="showIcons" index="12vifL" />
-        <child id="4313262807137944011" name="content" index="2pxOxw" />
+    <language id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor">
+      <concept id="4317384196709001934" name="com.mbeddr.mpsutil.breadcrumb.editor.structure.BreadcrumbEditor" flags="ng" index="1gkWj3">
+        <property id="4317384196709001935" name="showBreadcrumbIcons" index="1gkWj2" />
+        <child id="4317384196709001940" name="content" index="1gkWjp" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -340,9 +341,9 @@
   </node>
   <node concept="24kQdi" id="bl22kSoeSe">
     <ref role="1XX52x" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
-    <node concept="2pz08t" id="1Ga0ybhmrnn" role="2wV5jI">
-      <property role="12vifL" value="true" />
-      <node concept="3EZMnI" id="5_l8w1EmTdD" role="2pxOxw">
+    <node concept="1gkWj3" id="7NL61LdmCYF" role="2wV5jI">
+      <property role="1gkWj2" value="true" />
+      <node concept="3EZMnI" id="5_l8w1EmTdD" role="1gkWjp">
         <property role="S$Qs1" value="true" />
         <node concept="3EZMnI" id="3r83Ks0g9P$" role="3EZMnx">
           <node concept="VPM3Z" id="3r83Ks0g9P_" role="3F10Kt">
@@ -583,8 +584,8 @@
           </node>
         </node>
         <node concept="3F2HdR" id="5_l8w1EmTdN" role="3EZMnx">
-          <ref role="APP_o" to="r4b4:$hL4249ROO" resolve="deleteEmptyStuffInCollection" />
           <ref role="1NtTu8" to="mecy:bl22kSmD8U" />
+          <ref role="APP_o" to="r4b4:$hL4249ROO" resolve="deleteEmptyStuffInCollection" />
           <node concept="pj6Ft" id="7apEgWbIFgt" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
