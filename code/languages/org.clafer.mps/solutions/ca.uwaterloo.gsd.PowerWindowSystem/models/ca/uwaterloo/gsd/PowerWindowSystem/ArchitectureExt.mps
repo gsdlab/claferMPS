@@ -48,8 +48,8 @@
       <concept id="4835973625145033923" name="org.clafer.architecture.structure.Fragment" flags="ng" index="2mWl2w" />
       <concept id="4835973625144817188" name="org.clafer.architecture.structure.FDevice" flags="ng" index="2mXI97" />
       <concept id="4835973625144293103" name="org.clafer.architecture.structure.FAFragment" flags="ng" index="2mZIac" />
-      <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunctionDefault" flags="ng" index="2mZLT$" />
-      <concept id="4835973625144381654" name="org.clafer.architecture.structure.DiagramNode" flags="ng" index="2mZOiP">
+      <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$" />
+      <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
@@ -63,10 +63,10 @@
       <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
       <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
       <concept id="8119098109029358023" name="org.clafer.architecture.structure.Feature" flags="ng" index="3H$kPL" />
-      <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperDNodeRef" flags="ng" index="3HSg1M">
+      <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
       </concept>
-      <concept id="663277625450975106" name="org.clafer.architecture.structure.ExternalDevice" flags="ng" index="1Xj23Y" />
+      <concept id="663277625450975106" name="org.clafer.architecture.structure.RefToDevice" flags="ng" index="1Xj23Y" />
       <concept id="663277625449423679" name="org.clafer.architecture.structure.DeviceTopology" flags="ng" index="1XlcL3" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -853,7 +853,7 @@
           </node>
           <node concept="gqqVs" id="4jIombYkBqI" role="lGtFl">
             <property role="gqqTZ" value="12.000100135803223" />
-            <property role="gqqTW" value="139.0" />
+            <property role="gqqTW" value="142.0" />
             <property role="gqqTX" value="433.0" />
             <property role="gqqTy" value="50.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -963,6 +963,13 @@
       </node>
       <node concept="2mXI97" id="6Fa64hUbA_X" role="2mZOl8">
         <property role="TrG5h" value="DWinSwitch" />
+        <node concept="gqqVs" id="5JPjCIR3zei" role="lGtFl">
+          <property role="gqqTZ" value="12.000100135803223" />
+          <property role="gqqTW" value="12.0" />
+          <property role="gqqTX" value="30.0" />
+          <property role="gqqTy" value="20.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
       </node>
       <node concept="1eXri_" id="6Fa64hUbAA2" role="2mZOl8">
         <property role="TrG5h" value="dWinReq" />
@@ -1109,6 +1116,11 @@
           <ref role="2wMEbl" node="72GPbqtfCdN" resolve="PinchDetection" />
           <ref role="2wMEbG" node="72GPbqtfCdS" resolve="PositionSensor" />
         </node>
+        <node concept="1eXri_" id="5JPjCIR3z7h" role="2mZOl8">
+          <property role="TrG5h" value="object" />
+          <ref role="2wMEbG" node="72GPbqtfCdN" resolve="PinchDetection" />
+          <ref role="2wMEbl" node="72GPbqtfpAV" resolve="WinCtr" />
+        </node>
         <node concept="gqqVs" id="671VoRkhTNF" role="lGtFl">
           <property role="gqqTZ" value="12.000100135803223" />
           <property role="gqqTW" value="12.0" />
@@ -1200,6 +1212,50 @@
                   <node concept="2VclrF" id="4jIombXV2GH" role="3wpmZP">
                     <property role="2Vclpx" value="861.3375858900415" />
                     <property role="2Vclpz" value="466.03467450553245" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="5JPjCIR3z5A" role="37mRID">
+            <property role="37mO49" value="1595772967534913156" />
+            <node concept="2VclpC" id="5JPjCIR3z5_" role="37mO4d">
+              <node concept="3ul5H1" id="5JPjCIR3z5B" role="3ul5Gx">
+                <property role="3ul5GH" value="label" />
+                <node concept="3wpmZ1" id="5JPjCIR3z5C" role="3ul5Gz">
+                  <node concept="2VclrF" id="5JPjCIR3z5D" role="3wpmZR">
+                    <property role="2Vclpx" value="-3.5" />
+                    <property role="2Vclpz" value="0.0" />
+                  </node>
+                  <node concept="2VclrF" id="5JPjCIR3z5E" role="3wpmZP">
+                    <property role="2Vclpx" value="783.0" />
+                    <property role="2Vclpz" value="191.0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3ul5H1" id="5JPjCIR3z5F" role="3ul5Gx">
+                <property role="3ul5GH" value="startRole" />
+                <node concept="3wpmZ1" id="5JPjCIR3z5G" role="3ul5Gz">
+                  <node concept="2VclrF" id="5JPjCIR3z5H" role="3wpmZR">
+                    <property role="2Vclpx" value="-6.791755384320709" />
+                    <property role="2Vclpz" value="-0.1664828170438568" />
+                  </node>
+                  <node concept="2VclrF" id="5JPjCIR3z5I" role="3wpmZP">
+                    <property role="2Vclpx" value="700.9406382962542" />
+                    <property role="2Vclpz" value="86.3968576084119" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3ul5H1" id="5JPjCIR3z5J" role="3ul5Gx">
+                <property role="3ul5GH" value="endRole" />
+                <node concept="3wpmZ1" id="5JPjCIR3z5K" role="3ul5Gz">
+                  <node concept="2VclrF" id="5JPjCIR3z5L" role="3wpmZR">
+                    <property role="2Vclpx" value="-0.2082446156792912" />
+                    <property role="2Vclpz" value="0.1664828170438568" />
+                  </node>
+                  <node concept="2VclrF" id="5JPjCIR3z5M" role="3wpmZP">
+                    <property role="2Vclpx" value="865.0593617037458" />
+                    <property role="2Vclpz" value="295.6031423915881" />
                   </node>
                 </node>
               </node>
@@ -1303,7 +1359,7 @@
               <property role="3ul5GH" value="label" />
               <node concept="3wpmZ1" id="58TXiBE0us5" role="3ul5Gz">
                 <node concept="2VclrF" id="58TXiBE0us6" role="3wpmZR">
-                  <property role="2Vclpx" value="-45.4993896484375" />
+                  <property role="2Vclpx" value="-45.49945068359375" />
                   <property role="2Vclpz" value="-31.999954223632812" />
                 </node>
                 <node concept="2VclrF" id="58TXiBE0us7" role="3wpmZP">
@@ -1429,7 +1485,6 @@
           </node>
         </node>
       </node>
-      <node concept="1eXri_" id="1o_kKWC5Iq4" role="2mZOl8" />
     </node>
     <node concept="UzEYP" id="72GPbqtfksG" role="UzTCv" />
     <node concept="UzEYP" id="72GPbqtfjxX" role="UzTCv" />
