@@ -265,6 +265,7 @@
       </concept>
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -2875,6 +2876,66 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFb_" id="7txGj5iI7g2" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="isValidStart" />
+                          <node concept="10P_77" id="7txGj5iI7g3" role="3clF45" />
+                          <node concept="3Tm1VV" id="7txGj5iI7g4" role="1B3o_S" />
+                          <node concept="37vLTG" id="7txGj5iI7g6" role="3clF46">
+                            <property role="TrG5h" value="endpoint" />
+                            <node concept="3uibUv" id="7txGj5iI7g7" role="1tU5fm">
+                              <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="7txGj5iI7g9" role="3clF47">
+                            <node concept="3clFbF" id="7txGj5iI7gb" role="3cqZAp">
+                              <node concept="3clFbT" id="7txGj5iI7ga" role="3clFbG" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFb_" id="7txGj5iI7gc" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="isValidEnd" />
+                          <node concept="10P_77" id="7txGj5iI7gd" role="3clF45" />
+                          <node concept="3Tm1VV" id="7txGj5iI7ge" role="1B3o_S" />
+                          <node concept="37vLTG" id="7txGj5iI7gg" role="3clF46">
+                            <property role="TrG5h" value="endpoint" />
+                            <node concept="3uibUv" id="7txGj5iI7gh" role="1tU5fm">
+                              <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="7txGj5iI7gj" role="3clF47">
+                            <node concept="3clFbF" id="7txGj5iI7gl" role="3cqZAp">
+                              <node concept="3clFbT" id="7txGj5iI7gk" role="3clFbG" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFb_" id="7txGj5iI7gm" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="drawIcon" />
+                          <node concept="3cqZAl" id="7txGj5iI7gn" role="3clF45" />
+                          <node concept="3Tm1VV" id="7txGj5iI7go" role="1B3o_S" />
+                          <node concept="37vLTG" id="7txGj5iI7gp" role="3clF46">
+                            <property role="TrG5h" value="g" />
+                            <node concept="3uibUv" id="7txGj5iI7gq" role="1tU5fm">
+                              <ref role="3uigEE" to="1t7x:~Graphics2D" resolve="Graphics2D" />
+                            </node>
+                          </node>
+                          <node concept="37vLTG" id="7txGj5iI7gr" role="3clF46">
+                            <property role="TrG5h" value="bounds" />
+                            <node concept="3uibUv" id="7txGj5iI7gs" role="1tU5fm">
+                              <ref role="3uigEE" to="ar19:~Rectangle2D" resolve="Rectangle2D" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="7txGj5iI7gv" role="3clF47" />
+                        </node>
+                        <node concept="3clFb_" id="7txGj5iI7gw" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="extend_AbstractConnectionType_instead_of_implementing_IConnectionType" />
+                          <node concept="3cqZAl" id="7txGj5iI7gx" role="3clF45" />
+                          <node concept="3Tm1VV" id="7txGj5iI7gy" role="1B3o_S" />
+                          <node concept="3clFbS" id="7txGj5iI7g_" role="3clF47" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -3236,6 +3297,66 @@
                               </node>
                             </node>
                           </node>
+                        </node>
+                        <node concept="3clFb_" id="7txGj5iI8uM" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="isValidStart" />
+                          <node concept="10P_77" id="7txGj5iI8uN" role="3clF45" />
+                          <node concept="3Tm1VV" id="7txGj5iI8uO" role="1B3o_S" />
+                          <node concept="37vLTG" id="7txGj5iI8uQ" role="3clF46">
+                            <property role="TrG5h" value="endpoint" />
+                            <node concept="3uibUv" id="7txGj5iI8uR" role="1tU5fm">
+                              <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="7txGj5iI8uT" role="3clF47">
+                            <node concept="3clFbF" id="7txGj5iI8uV" role="3cqZAp">
+                              <node concept="3clFbT" id="7txGj5iI8uU" role="3clFbG" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFb_" id="7txGj5iI8uW" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="isValidEnd" />
+                          <node concept="10P_77" id="7txGj5iI8uX" role="3clF45" />
+                          <node concept="3Tm1VV" id="7txGj5iI8uY" role="1B3o_S" />
+                          <node concept="37vLTG" id="7txGj5iI8v0" role="3clF46">
+                            <property role="TrG5h" value="endpoint" />
+                            <node concept="3uibUv" id="7txGj5iI8v1" role="1tU5fm">
+                              <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="7txGj5iI8v3" role="3clF47">
+                            <node concept="3clFbF" id="7txGj5iI8v5" role="3cqZAp">
+                              <node concept="3clFbT" id="7txGj5iI8v4" role="3clFbG" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFb_" id="7txGj5iI8v6" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="drawIcon" />
+                          <node concept="3cqZAl" id="7txGj5iI8v7" role="3clF45" />
+                          <node concept="3Tm1VV" id="7txGj5iI8v8" role="1B3o_S" />
+                          <node concept="37vLTG" id="7txGj5iI8v9" role="3clF46">
+                            <property role="TrG5h" value="g" />
+                            <node concept="3uibUv" id="7txGj5iI8va" role="1tU5fm">
+                              <ref role="3uigEE" to="1t7x:~Graphics2D" resolve="Graphics2D" />
+                            </node>
+                          </node>
+                          <node concept="37vLTG" id="7txGj5iI8vb" role="3clF46">
+                            <property role="TrG5h" value="bounds" />
+                            <node concept="3uibUv" id="7txGj5iI8vc" role="1tU5fm">
+                              <ref role="3uigEE" to="ar19:~Rectangle2D" resolve="Rectangle2D" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="7txGj5iI8vf" role="3clF47" />
+                        </node>
+                        <node concept="3clFb_" id="7txGj5iI8vg" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="extend_AbstractConnectionType_instead_of_implementing_IConnectionType" />
+                          <node concept="3cqZAl" id="7txGj5iI8vh" role="3clF45" />
+                          <node concept="3Tm1VV" id="7txGj5iI8vi" role="1B3o_S" />
+                          <node concept="3clFbS" id="7txGj5iI8vl" role="3clF47" />
                         </node>
                       </node>
                     </node>
