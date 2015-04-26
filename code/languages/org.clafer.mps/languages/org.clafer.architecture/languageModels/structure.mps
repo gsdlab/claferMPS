@@ -83,6 +83,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4csP6flSWC7" resolve="AFunction" />
     </node>
+    <node concept="PrWs8" id="1tfNdgy1sjr" role="PzmwI">
+      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4csP6flSt47">
     <property role="TrG5h" value="Diagram" />
@@ -296,6 +299,9 @@
     <node concept="PrWs8" id="$OrRLOqE6b" role="PzmwI">
       <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
+    <node concept="PrWs8" id="1tfNdgy1sjw" role="PzmwI">
+      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
+    </node>
   </node>
   <node concept="PlHQZ" id="znlrM84$1s">
     <property role="TrG5h" value="IFragment" />
@@ -395,6 +401,9 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="1tfNdgy1e$L">
+    <property role="TrG5h" value="IConnector" />
   </node>
 </model>
 
