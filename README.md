@@ -63,3 +63,70 @@ Update
     * `git pull`
 
 Perform `Rebuild` as in step 6. of the installation
+
+Usage
+-----
+
+MPS is a projectional editor and requires some getting used to.
+In particular, the process of editing the model is more structured and guided by the syntax and the type system of the language then compared to more traditional plain text editing.
+We highly recommend viewing videos and going through basic usage tutorials on the [MPS's website](https://www.jetbrains.com/mps/).
+
+ClaferMPS is also built on top of [mbeddr](http://mbeddr.com/) and we recommend viewing the many materials available there.
+
+Once the project `org.clafer.mps` is successfully built, Clafer and the Automotive Architecture DSL become two of the many languages available within MPS and mbeddr.
+
+### Using Plain Clafer
+
+In the Logical View, navigate to `org.clafer.example` which is a sandbox solution containing some random Clafer models. Open one of the models `M1` and use arrows to navigate. The cursor will always be located in some syntactic unit (AST node), which gets highlighted.
+
+Go to an empty line and begin typing `abst` + `<ctrl>+<space>` and select `abstract` from the list.
+Now, a new clafer declaration was created.
+Enter `Carol` for the name.
+
+Press `<space>` to move to the next part of clafer definition: it could be a supertype, a reference type, or a multiplicity.
+Type `:` to enter a supertype and write `Per` + `<ctrl>+<space>` and select `Person` from the list.
+
+Press `<space>` to move to the next part of clafer definition: a reference type or a multiplicity.
+Type `->` to enter a reference type and write `Alice`.
+
+Press `<space>` to move to the next part of clafer definition: a multiplicity or an initializer.
+Type `1` for multiplicity.
+
+Press `<alt>+<enter>` to open a pop-up menu with the available `intentions`. Select `Add an initializer`. Type `Alice`.
+
+Press `<enter>` to move to the next line and `<tab>` to begin entering a nested clafer.
+Enter a clafer `name -> string = "Carol"`.
+
+You can navigate among the syntactical element by pressing `<ctrl>+<arrow>`. Press `<ctrl>+<right arrow>` until you reach the and of line marker furthest to the right. Press `<enter>` to create an empty line after the entire clafer `Carol`.
+
+### Inspecting the concept definitions of the automotive architecture DSL
+
+Expand the solution `ca.uwaterloo.gsd.PowerWindowSystem`. It contains two models:
+
+1. `Architecture` which is a plain Clafer version of the model, and
+2. `ArchitectureExt` which is a version of the model created using the architecture DSL.
+
+#### PowerWindowSystem in plain Clafer
+
+Expand the model `Architecture` and inspect modules `EAST-ADL` and `AutomotiveConcepts`, which define the architecture DSL. The actual model created using these concepts begins with the model `S01_Technical_Feature_Model` followed by functional analysis and design.
+
+For more information about this model and the EAST-ADL methodology, refer to Alexandr Murashkin's thesis [Automotive Electronic/Electric Architecture Modeling, Design Exploration and Optimization using Clafer](https://uwspace.uwaterloo.ca/handle/10012/8780).
+
+#### PowerWindowSystem in Automotive Architecture DSL
+
+Expand the model `ArchitectureExt`. The plain Clafer modules `EAST-ADL` and `AutomotiveConcepts` remain the same because they are a library.
+
+The folder `ArchitectureExt` contains modules expressed using the DSL. The DSL provides both textual and graphical syntaxes.
+
+Open `S02_System_Architecture`, right-click on the editor and select `Push Editor Hints` from the context menu.
+Select `Use custom hints` and check `architectureDiagrams`. This will toggle the graphical view.
+
+Inspect the remaining modules and compare the textual and graphical syntaxes.
+
+
+Need help?
+==========
+
+* Aks for a demo.
+* Visit [language's website](http://clafer.org).
+* Report issues to [issue tracker](https://github.com/gsdlab/claferMPS/issues)
