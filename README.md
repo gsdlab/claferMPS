@@ -97,7 +97,9 @@ Press `<alt>+<enter>` to open a pop-up menu with the available `intentions`. Sel
 Press `<enter>` to move to the next line and `<tab>` to begin entering a nested clafer.
 Enter a clafer `name -> string = "Carol"`.
 
-You can navigate among the syntactical element by pressing `<ctrl>+<arrow>`. Press `<ctrl>+<right arrow>` until you reach the and of line marker furthest to the right. Press `<enter>` to create an empty line after the entire clafer `Carol`.
+You can navigate among the syntactical element by pressing `<ctrl>+<arrow>`. Press `<ctrl>+<right arrow>` until you reach the end of line marker furthest to the right. Press `<enter>` to create an empty line after the entire clafer `Carol`.
+
+This definition does not make much sense but it illustrates the editing process.
 
 ### Inspecting the concept definitions of the automotive architecture DSL
 
@@ -108,7 +110,7 @@ Expand the solution `ca.uwaterloo.gsd.PowerWindowSystem`. It contains two models
 
 #### PowerWindowSystem in plain Clafer
 
-Expand the model `Architecture` and inspect modules `EAST-ADL` and `AutomotiveConcepts`, which define the architecture DSL. The actual model created using these concepts begins with the model `S01_Technical_Feature_Model` followed by functional analysis and design.
+Expand the model `Architecture` and inspect modules `EAST-ADL` and `AutomotiveConcepts`, which define the architecture DSL. The actual architecture created using these concepts begins with the module `S01_Technical_Feature_Model` followed by functional analysis and design.
 
 For more information about this model and the EAST-ADL methodology, refer to Alexandr Murashkin's thesis [Automotive Electronic/Electric Architecture Modeling, Design Exploration and Optimization using Clafer](https://uwspace.uwaterloo.ca/handle/10012/8780).
 
@@ -127,6 +129,6 @@ Inspect the remaining modules and compare the textual and graphical syntaxes.
 Need help?
 ==========
 
-* Aks for a demo.
+* Ask Michal Antkiewicz for a demo.
 * Visit [language's website](http://clafer.org).
 * Report issues to [issue tracker](https://github.com/gsdlab/claferMPS/issues)
