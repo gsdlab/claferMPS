@@ -14,6 +14,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -409,14 +410,91 @@
   <node concept="AxPO7" id="4aL7gvppFpB">
     <property role="TrG5h" value="idiomsNames" />
     <property role="3lZH7k" value="derive_from_internal_value" />
+    <property role="PDuV0" value="true" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="4aL7gvpy3xu" role="M5hS2">
+      <property role="1uS6qo" value="AnalysisFunction" />
+      <property role="1uS6qv" value="AFunction" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3vs" role="M5hS2">
+      <property role="1uS6qv" value="AnalogWireConnector" />
+      <property role="1uS6qo" value="AnalogWireConnector" />
+    </node>
     <node concept="M4N5e" id="4aL7gvppFpC" role="M5hS2">
       <property role="1uS6qv" value="Architecture" />
       <property role="1uS6qo" value="Architecture" />
     </node>
+    <node concept="M4N5e" id="4aL7gvpy6zR" role="M5hS2">
+      <property role="1uS6qo" value="Device" />
+      <property role="1uS6qv" value="Device" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpvE_L" role="M5hS2">
+      <property role="1uS6qv" value="DeviceNodes" />
+      <property role="1uS6qo" value="DeviceNodes" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3uz" role="M5hS2">
+      <property role="1uS6qv" value="DeviceTopology" />
+      <property role="1uS6qo" value="DeviceTopology" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3uY" role="M5hS2">
+      <property role="1uS6qv" value="DiscreteWireConnector" />
+      <property role="1uS6qo" value="DiscreteWireConnector" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3u9" role="M5hS2">
+      <property role="1uS6qv" value="ECU" />
+      <property role="1uS6qo" value="ECU" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3Kc" role="M5hS2">
+      <property role="1uS6qo" value="FAConnector" />
+      <property role="1uS6qv" value="FAConnector" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3xe" role="M5hS2">
+      <property role="1uS6qv" value="FAFragment" />
+      <property role="1uS6qo" value="FAFragment" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3xJ" role="M5hS2">
+      <property role="1uS6qo" value="FunctionalDevice" />
+      <property role="1uS6qv" value="FDevice" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3wL" role="M5hS2">
+      <property role="1uS6qv" value="Feature" />
+      <property role="1uS6qo" value="Feature" />
+    </node>
     <node concept="M4N5e" id="4aL7gvprCRM" role="M5hS2">
       <property role="1uS6qv" value="Fragment" />
       <property role="1uS6qo" value="Fragment" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3wZ" role="M5hS2">
+      <property role="1uS6qv" value="FunctionalAnalysisArchitecture" />
+      <property role="1uS6qo" value="FunctionalAnalysisArchitecture" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3ur" role="M5hS2">
+      <property role="1uS6qv" value="HardwareDesignArchitecture" />
+      <property role="1uS6qo" value="HardwareDesignArchitecture" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy6ze" role="M5hS2">
+      <property role="1uS6qv" value="HDFragment" />
+      <property role="1uS6qo" value="HDFragment" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3ue" role="M5hS2">
+      <property role="1uS6qv" value="Inline" />
+      <property role="1uS6qo" value="Inline" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3uk" role="M5hS2">
+      <property role="1uS6qv" value="Pin" />
+      <property role="1uS6qo" value="Pin" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3vB" role="M5hS2">
+      <property role="1uS6qv" value="PowerWireConnector" />
+      <property role="1uS6qo" value="PowerWireConnector" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy3vN" role="M5hS2">
+      <property role="1uS6qv" value="TechnicalFeatureModel" />
+      <property role="1uS6qo" value="TechnicalFeatureModel" />
+    </node>
+    <node concept="M4N5e" id="4aL7gvpy6zy" role="M5hS2">
+      <property role="1uS6qv" value="WireConnector" />
+      <property role="1uS6qo" value="WireConnector" />
     </node>
   </node>
 </model>
