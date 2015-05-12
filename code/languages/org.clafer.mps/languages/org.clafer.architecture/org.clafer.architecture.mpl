@@ -25,6 +25,7 @@
         <usedLanguage>b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</usedLanguage>
         <usedLanguage>137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</usedLanguage>
         <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
+        <usedLanguage>61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
