@@ -21,7 +21,6 @@
   </registry>
   <node concept="UzPwm" id="4Z9rElrojT3">
     <property role="TrG5h" value="PowerWindow" />
-    <node concept="UzEYP" id="znlrM85WKY" role="UzTCv" />
     <node concept="UzEYP" id="4csP6flT7Q0" role="UzTCv" />
     <node concept="UzEYP" id="4csP6flT5NW" role="UzTCv" />
     <node concept="UzEYP" id="4csP6flT5O0" role="UzTCv" />
