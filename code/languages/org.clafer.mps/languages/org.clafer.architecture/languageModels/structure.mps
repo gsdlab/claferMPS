@@ -88,6 +88,9 @@
     <node concept="PrWs8" id="1tfNdgy1sjr" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
     </node>
+    <node concept="PrWs8" id="2l5qjD1Ij0u" role="PzmwI">
+      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4csP6flSt47">
     <property role="TrG5h" value="Diagram" />
@@ -102,6 +105,9 @@
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="znlrM84$2i" role="PzmwI">
       <ref role="PrY4T" node="znlrM84$1s" resolve="IFragment" />
+    </node>
+    <node concept="PrWs8" id="2l5qjD1Ij0f" role="PzmwI">
+      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flST3m">
@@ -133,6 +139,9 @@
     <property role="TrG5h" value="AFunction" />
     <property role="34LRSv" value="Analysis Function" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <node concept="PrWs8" id="2l5qjD1KpOO" role="PzmwI">
+      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
     <property role="3GE5qa" value="EAST_ADL.FunctionalArchitecture" />
@@ -183,9 +192,6 @@
     <property role="34LRSv" value="Pin" />
     <property role="MwhBj" value="${module}/icons/pin_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
-    <node concept="PrWs8" id="znlrM86puD" role="PzmwI">
-      <ref role="PrY4T" node="znlrM86iBa" resolve="IDontHaveChildrenNodes" />
-    </node>
   </node>
   <node concept="1TIwiD" id="72GPbqtfpB7">
     <property role="TrG5h" value="Feature" />
@@ -241,9 +247,6 @@
       <property role="TrG5h" value="isAlwaysSmart" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="PrWs8" id="58TXiBE1y$6" role="PzmwI">
-      <ref role="PrY4T" node="znlrM86iBa" resolve="IDontHaveChildrenNodes" />
-    </node>
     <node concept="1TJgyj" id="73PmbN3CTYP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="smartness" />
@@ -284,13 +287,13 @@
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="$OrRLOo9Xc" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="src" />
+      <property role="20kJfa" value="source" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6Fa64hUc88J" resolve="Device" />
     </node>
     <node concept="1TJgyj" id="$OrRLOo9Xg" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="dest" />
+      <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6Fa64hUc88J" resolve="Device" />
     </node>
@@ -335,9 +338,6 @@
     <property role="3GE5qa" value="EAST_ADL" />
     <property role="TrG5h" value="WireConnectorType" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="$OrRLOoafq" role="M5hS2">
-      <property role="1uS6qo" value="No type" />
-    </node>
     <node concept="M4N5e" id="$OrRLOoabo" role="M5hS2">
       <property role="1uS6qv" value="discrete" />
       <property role="1uS6qo" value="Discrete" />
@@ -356,10 +356,11 @@
     <property role="TrG5h" value="DeviceTopology" />
     <property role="34LRSv" value="Device Topology" />
     <ref role="1TJDcQ" node="znlrM84VS2" resolve="HardwareDesignArchitecture" />
-    <node concept="1TJgyj" id="$OrRLOwjLb" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+    <node concept="1TJgyj" id="6yDAYyfHacR" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="dn" />
-      <ref role="20lvS9" node="$OrRLOvZKp" resolve="DeviceNodesRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNodes" />
     </node>
   </node>
   <node concept="PlHQZ" id="$OrRLOo_6A">
@@ -496,6 +497,10 @@
       <property role="1uS6qv" value="WireConnector" />
       <property role="1uS6qo" value="WireConnector" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="2l5qjD1IiLz">
+    <property role="3GE5qa" value="EAST_ADL.FunctionalArchitecture" />
+    <property role="TrG5h" value="IFunctionalAnalysisNode" />
   </node>
 </model>
 
