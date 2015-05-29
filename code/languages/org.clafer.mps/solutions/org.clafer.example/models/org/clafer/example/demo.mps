@@ -32,36 +32,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
-      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
-        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
-        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
-        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
-        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-      </concept>
-      <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
-        <child id="4767615435799372763" name="labels" index="3ul5Gx" />
-      </concept>
-      <concept id="2319506556913310727" name="de.itemis.mps.editor.diagram.layout.structure.Point" flags="ng" index="2VclrF">
-        <property id="2319506556913310861" name="x" index="2Vclpx" />
-        <property id="2319506556913310863" name="y" index="2Vclpz" />
-      </concept>
-      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
-        <child id="8963411245960991904" name="entries" index="37mRID" />
-      </concept>
-      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
-        <property id="8963411245960998400" name="key" index="37mO49" />
-        <child id="8963411245960998404" name="value" index="37mO4d" />
-      </concept>
-      <concept id="4767615435799372731" name="de.itemis.mps.editor.diagram.layout.structure.Layout_EdgeLabel" flags="ng" index="3ul5H1">
-        <property id="4767615435799372759" name="type" index="3ul5GH" />
-        <child id="4767615435799372761" name="position" index="3ul5Gz" />
-      </concept>
-      <concept id="3253043142928125505" name="de.itemis.mps.editor.diagram.layout.structure.RelativePosition" flags="ng" index="3wpmZ1">
-        <child id="3253043142928125557" name="referencePoint" index="3wpmZP" />
-        <child id="3253043142928125559" name="offset" index="3wpmZR" />
-      </concept>
-    </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
       <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
@@ -127,7 +97,6 @@
         <reference id="2290628819058178520" name="refChild" index="1fXsGu" />
       </concept>
       <concept id="7389562969670486691" name="org.clafer.core.structure.StarCard" flags="ng" index="3E6wFX" />
-      <concept id="7389562969672659109" name="org.clafer.core.structure.PlusCard" flags="ng" index="3Edj3V" />
       <concept id="7389562969672659468" name="org.clafer.core.structure.QuestionMarkCard" flags="ng" index="3Edj9i" />
       <concept id="7389562969672660489" name="org.clafer.core.structure.NumberCard" flags="ng" index="3Edjpn">
         <property id="7389562969672660490" name="number" index="3Edjpk" />
@@ -457,65 +426,6 @@
     </node>
     <node concept="UzEYP" id="12ZezlWUu_Q" role="UzTCv" />
     <node concept="1CU$1Q" id="3WlRoWey__c" role="UzTCp" />
-  </node>
-  <node concept="UzPwm" id="1JcbkuzkIgK">
-    <property role="TrG5h" value="Graphical" />
-    <node concept="UH0sd" id="1JcbkuzkIhK" role="UzTCv">
-      <property role="TrG5h" value="Unversity" />
-      <node concept="gqqVs" id="1Jcbkuzlr9Z" role="lGtFl">
-        <property role="gqqTZ" value="451.0002746582031" />
-        <property role="gqqTW" value="100.0" />
-        <property role="gqqTX" value="116.0" />
-        <property role="gqqTy" value="33.0" />
-      </node>
-    </node>
-    <node concept="UzEYP" id="1JcbkuzlppK" role="UzTCv" />
-    <node concept="UzEYP" id="4Z9rElroh1f" role="UzTCv" />
-    <node concept="UH0sd" id="1Jcbkuzlpq1" role="UzTCv">
-      <property role="TrG5h" value="Student" />
-      <node concept="UH0sd" id="1JcbkuzlpqB" role="2vwUiP">
-        <property role="TrG5h" value="studiesAt" />
-        <node concept="2K4itw" id="1JcbkuzlpqF" role="2K4itM">
-          <node concept="ZpTZE" id="2Pv0$Q3BLB_" role="3J4IUC">
-            <ref role="ZpTZD" node="1JcbkuzkIhK" resolve="Unversity" />
-          </node>
-        </node>
-        <node concept="gqqVs" id="1Jcbkuzlra1" role="lGtFl">
-          <property role="gqqTZ" value="22.0" />
-          <property role="gqqTW" value="151.0" />
-          <property role="gqqTX" value="200.0" />
-          <property role="gqqTy" value="26.0" />
-        </node>
-        <node concept="2VclpC" id="1JcbkuzohUi" role="lGtFl" />
-      </node>
-      <node concept="gqqVs" id="1Jcbkuzlra0" role="lGtFl">
-        <property role="gqqTZ" value="16.000100135803223" />
-        <property role="gqqTW" value="61.0" />
-        <property role="gqqTX" value="218.0" />
-        <property role="gqqTy" value="60.0" />
-      </node>
-      <node concept="3Edj3V" id="6qd05UcK4V0" role="2vBZf8" />
-    </node>
-    <node concept="37mRI7" id="1JcbkuzohUo" role="lGtFl">
-      <node concept="37mRIm" id="1JcbkuzohUp" role="37mRID">
-        <property role="37mO49" value="2003025719979251367" />
-        <node concept="2VclpC" id="1JcbkuzohUn" role="37mO4d">
-          <node concept="3ul5H1" id="1JcbkuzohUq" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="3WlRoWeH944" role="3ul5Gz">
-              <node concept="2VclrF" id="3WlRoWeH945" role="3wpmZR">
-                <property role="2Vclpx" value="-40.49981689453125" />
-                <property role="2Vclpz" value="-20.999950408935547" />
-              </node>
-              <node concept="2VclrF" id="3WlRoWeH946" role="3wpmZP">
-                <property role="2Vclpx" value="342.5" />
-                <property role="2Vclpz" value="105.44335870490423" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="UzPwm" id="6MOJxHINvX$">
     <property role="TrG5h" value="M2" />
