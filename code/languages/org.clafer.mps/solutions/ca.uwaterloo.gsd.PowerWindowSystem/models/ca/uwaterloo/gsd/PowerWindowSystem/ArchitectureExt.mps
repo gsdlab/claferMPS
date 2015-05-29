@@ -34,7 +34,6 @@
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="637072140521370399" name="org.clafer.architecture.structure.TechnicalFeatureModel" flags="ng" index="20Lqqz" />
       <concept id="1979512562623543223" name="org.clafer.architecture.structure.Smartness" flags="ng" index="8Ste7" />
-      <concept id="7694989595704452806" name="org.clafer.architecture.structure.WireConnector" flags="ng" index="gw7U2" />
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
         <reference id="7694989595706234372" name="dn" index="gFST0" />
@@ -538,7 +537,6 @@
     <node concept="1XlcL3" id="58TXiBE59PL" role="UzTCv">
       <property role="TrG5h" value="WinSubSysLoadPwrDT" />
       <ref role="3B7jzv" node="$OrRLOyGHc" resolve="DWInSubSysDn" />
-      <node concept="gw7U2" id="6yDAYyfLZBA" role="2mZOl8" />
     </node>
     <node concept="UzEYP" id="$OrRLOs9v7" role="UzTCv" />
     <node concept="UzEYP" id="$OrRLOvZ_i" role="UzTCv" />
@@ -1590,11 +1588,6 @@
           </node>
         </node>
       </node>
-      <node concept="1eXri_" id="2l5qjD1Kqll" role="2mZOl8">
-        <property role="TrG5h" value="ab" />
-        <ref role="2wMEbG" node="2l5qjD1KqgQ" resolve="a" />
-        <ref role="2wMEbl" node="72GPbqtf_Hf" resolve="WinMotor" />
-      </node>
       <node concept="37mRI7" id="671VoRkhTNW" role="lGtFl">
         <node concept="37mRIm" id="671VoRkhTNX" role="37mRID">
           <property role="37mO49" value="8119098109029357987" />
@@ -1816,9 +1809,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node concept="2mZLT$" id="2l5qjD1KqgQ" role="2mZOl8">
-        <property role="TrG5h" value="a" />
       </node>
     </node>
     <node concept="UzEYP" id="2l5qjD1Kqiv" role="UzTCv" />
