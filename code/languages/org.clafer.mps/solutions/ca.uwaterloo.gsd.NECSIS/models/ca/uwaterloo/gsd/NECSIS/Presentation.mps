@@ -17,6 +17,7 @@
   </languages>
   <imports>
     <import index="fc8m" ref="r:e7cbadc8-4b6d-4ada-94ee-6f4039ec73e4(ca.uwaterloo.gsd.PowerWindowSystem.ArchitectureExt)" />
+    <import index="ob7x" ref="r:ed3c2ea2-7329-405e-a4ef-6ad0d5a343e1(ca.uwaterloo.gsd.PowerWindowSystem.Architecture)" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -32,6 +33,15 @@
       <concept id="6165313375055797476" name="com.mbeddr.doc.structure.FormattedText" flags="ng" index="$DsGX">
         <child id="6165313375055797477" name="text" index="$DsGW" />
       </concept>
+      <concept id="5785245534399940636" name="com.mbeddr.doc.structure.InlineTableParagraph" flags="ng" index="C6TCP" />
+      <concept id="5785245534399928042" name="com.mbeddr.doc.structure.AbstractTableParagraph" flags="ng" index="C6Wj3">
+        <property id="5785245534399940634" name="numCols" index="C6TCN" />
+        <property id="8903209210859212281" name="lineAtBottom" index="1tGk1y" />
+        <child id="5785245534399940635" name="rows" index="C6TCM" />
+      </concept>
+      <concept id="5785245534400277706" name="com.mbeddr.doc.structure.TextBlockTableCell" flags="ng" index="C7FVz">
+        <child id="5785245534400277707" name="text" index="C7FVy" />
+      </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
@@ -44,7 +54,6 @@
       </concept>
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
         <property id="4755612053022517119" name="border" index="41Bi8" />
-        <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
         <property id="8730648445434174368" name="center" index="1DKIkx" />
         <child id="6386504476136278696" name="description" index="2SaI5j" />
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
@@ -61,8 +70,18 @@
         <child id="5785245534401182264" name="defaultTempPath" index="Cbewh" />
         <child id="6386504476136472817" name="paths" index="2SbYGa" />
       </concept>
+      <concept id="4208238404719201400" name="com.mbeddr.doc.structure.NameAnnotation" flags="ng" index="1h5QrK" />
+      <concept id="5185579450379471854" name="com.mbeddr.doc.structure.TableRow" flags="ng" index="1xAuFB">
+        <child id="5185579450379471857" name="cells" index="1xAuFS" />
+      </concept>
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
+      </concept>
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
+        <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
+      </concept>
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+        <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
       <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
         <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
@@ -107,32 +126,35 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="1_1swa" id="40D1f4$TKfP">
-    <property role="yApLE" value="0" />
+    <property role="yApLE" value="1" />
     <property role="TrG5h" value="ClaferMPS" />
     <ref role="G9hjw" node="40D1f4$TMlI" resolve="Config" />
     <node concept="1_0VNX" id="40D1f4$Vsf9" role="1_0VJ0">
       <property role="TrG5h" value="Slide0_Title" />
-      <property role="1_0VJr" value="ClaferMPS" />
-      <node concept="1_0LV8" id="40D1f4$Vsgd" role="1_0VJ0">
-        <node concept="19SGf9" id="40D1f4$Vsge" role="1_0LWR">
-          <node concept="19SUe$" id="40D1f4$VsgV" role="19SJt6" />
-          <node concept="2vpllh" id="40D1f4$VsgS" role="19SJt6">
-            <node concept="19SGf9" id="40D1f4$VsgT" role="$DsGW">
-              <node concept="19SUe$" id="40D1f4$VsgU" role="19SJt6">
-                <property role="19SUeA" value="Eldar Khalilov, Michal Antkiewitz, Krysztof Czarnecki" />
+      <property role="1_0VJr" value="EAST-ADL Modeling, Design Synthesis, and Optimization" />
+      <node concept="1_0LV8" id="40D1f4$ZjU$" role="1_0VJ0">
+        <node concept="19SGf9" id="40D1f4$ZjU_" role="1_0LWR">
+          <node concept="19SUe$" id="40D1f4$ZjVh" role="19SJt6" />
+          <node concept="2vpllh" id="40D1f4$ZjVe" role="19SJt6">
+            <node concept="19SGf9" id="40D1f4$ZjVt" role="$DsGW">
+              <node concept="19SUe$" id="40D1f4$ZjVu" role="19SJt6">
+                <property role="19SUeA" value="Eldar Khalilov, Michał Antkiewicz, Krzysztof Czarnecki" />
+                <node concept="1h5QrK" id="40D1f4$ZjYl" role="lGtFl">
+                  <property role="TrG5h" value="aWord" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="19SUe$" id="40D1f4$VsgW" role="19SJt6" />
-        </node>
-        <node concept="1xAIan" id="40D1f4$Vsgg" role="1xAIax">
-          <property role="1xAIam" value="EAST-ADL Modeling, Design Synthesis, and Optimization" />
+          <node concept="19SUe$" id="40D1f4$ZjVi" role="19SJt6" />
         </node>
       </node>
       <node concept="1_0LV8" id="40D1f4$Vsg$" role="1_0VJ0">
@@ -151,7 +173,7 @@
         <node concept="19SGf9" id="40D1f4$Vskc" role="1_0LWR">
           <node concept="19SUe$" id="40D1f4$VskL" role="19SJt6" />
           <node concept="1_0GAv" id="40D1f4$VskK" role="19SJt6">
-            <ref role="1_0GAl" node="40D1f4$VoDg" resolve="S03" />
+            <ref role="1_0GAl" node="40D1f4$Vsu6" resolve="S02" />
           </node>
           <node concept="19SUe$" id="40D1f4$VskM" role="19SJt6" />
         </node>
@@ -229,28 +251,45 @@
     </node>
   </node>
   <node concept="1_1swa" id="40D1f4$VoDf">
-    <property role="yApLE" value="3" />
+    <property role="yApLE" value="4" />
     <property role="TrG5h" value="S03_Func_Analysis_Generic_Window" />
     <ref role="G9hjw" node="40D1f4$TMlI" resolve="Config" />
     <node concept="1_0VNX" id="40D1f4$VoDg" role="1_0VJ0">
       <property role="1_0VJr" value="Functional Analysis (Generic Window)" />
       <property role="TrG5h" value="S03" />
-      <node concept="1_0LV8" id="40D1f4$Vpr$" role="1_0VJ0">
-        <node concept="19SGf9" id="40D1f4$Vpr_" role="1_0LWR">
-          <node concept="19SUe$" id="40D1f4$VpuE" role="19SJt6" />
-          <node concept="3z_lpY" id="40D1f4$VpuC" role="19SJt6">
-            <node concept="2NCZwO" id="40D1f4$VpuD" role="3z_lpZ">
-              <node concept="2NCMab" id="40D1f4$VpuO" role="2NCMaf">
-                <ref role="2NCMaa" to="fc8m:72GPbqtfjwX" resolve="S03_Func_Analysis_Generic_Window" />
+      <node concept="C6TCP" id="40D1f4$ZhQK" role="1_0VJ0">
+        <property role="C6TCN" value="2" />
+        <node concept="1xAuFB" id="40D1f4$ZhTe" role="C6TCM">
+          <node concept="C7FVz" id="40D1f4$ZhTh" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$ZhTi" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$ZhTj" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$ZhTw" role="19SJt6" />
+                <node concept="2vpllh" id="40D1f4$ZhTt" role="19SJt6">
+                  <node concept="19SGf9" id="40D1f4$ZhTu" role="$DsGW">
+                    <node concept="19SUe$" id="40D1f4$ZhTv" role="19SJt6">
+                      <property role="19SUeA" value="Back to:" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$ZhTx" role="19SJt6" />
               </node>
             </node>
           </node>
-          <node concept="19SUe$" id="40D1f4$VpuF" role="19SJt6" />
+          <node concept="C7FVz" id="40D1f4$Zi2B" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$Zi2C" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$Zi2D" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$Zi34" role="19SJt6" />
+                <node concept="1_0GAv" id="40D1f4$Zi33" role="19SJt6">
+                  <ref role="1_0GAl" node="40D1f4$Vsf9" resolve="Slide0_Title" />
+                </node>
+                <node concept="19SUe$" id="40D1f4$Zi35" role="19SJt6" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2SaynC" id="40D1f4$VoEt" role="1_0VJ0">
         <property role="TrG5h" value="WinSubSystemFA" />
-        <property role="2Sbq$t" value="true" />
         <node concept="OjmMv" id="40D1f4$VoEv" role="2SaI5j">
           <node concept="19SGf9" id="40D1f4$VoEw" role="OjmMu">
             <node concept="19SUe$" id="40D1f4$VoEx" role="19SJt6">
@@ -266,16 +305,89 @@
           <ref role="2Sb_kU" node="40D1f4$TP_W" resolve="images" />
         </node>
       </node>
-      <node concept="1_0LV8" id="40D1f4$VszC" role="1_0VJ0">
-        <node concept="19SGf9" id="40D1f4$VszD" role="1_0LWR">
-          <node concept="19SUe$" id="40D1f4$Vs$f" role="19SJt6" />
-          <node concept="1_0GAv" id="40D1f4$Vs$e" role="19SJt6">
-            <ref role="1_0GAl" node="40D1f4$Vsf9" resolve="Slide0_Title" />
+      <node concept="C6TCP" id="40D1f4$Zh4V" role="1_0VJ0">
+        <property role="C6TCN" value="2" />
+        <property role="1tGk1y" value="true" />
+        <node concept="1xAuFB" id="40D1f4$Zh4W" role="C6TCM">
+          <node concept="C7FVz" id="40D1f4$Zh4X" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$Zh4Y" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$Zh4Z" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$Zh50" role="19SJt6" />
+                <node concept="2vpllh" id="40D1f4$Zh51" role="19SJt6">
+                  <node concept="19SGf9" id="40D1f4$Zh52" role="$DsGW">
+                    <node concept="19SUe$" id="40D1f4$Zh53" role="19SJt6">
+                      <property role="19SUeA" value="Text" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$Zh54" role="19SJt6" />
+              </node>
+            </node>
           </node>
-          <node concept="19SUe$" id="40D1f4$Vs$g" role="19SJt6" />
+          <node concept="C7FVz" id="40D1f4$Zh55" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$Zh56" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$Zh57" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$Zh58" role="19SJt6" />
+                <node concept="3z_lpY" id="40D1f4$Zh59" role="19SJt6">
+                  <node concept="2NCZwO" id="40D1f4$Zh5a" role="3z_lpZ">
+                    <node concept="2NCMab" id="40D1f4$Zh5b" role="2NCMaf">
+                      <ref role="2NCMaa" node="40D1f4$VoDf" resolve="S03_Func_Analysis_Generic_Window" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$Zh5c" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1xAuFB" id="40D1f4$Zh5d" role="C6TCM">
+          <node concept="C7FVz" id="40D1f4$Zh5e" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$Zh5f" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$Zh5g" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$Zh5h" role="19SJt6" />
+                <node concept="2vpllh" id="40D1f4$Zh5i" role="19SJt6">
+                  <node concept="19SGf9" id="40D1f4$Zh5j" role="$DsGW">
+                    <node concept="19SUe$" id="40D1f4$Zh5k" role="19SJt6">
+                      <property role="19SUeA" value="Diagram" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$Zh5l" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+          <node concept="C7FVz" id="40D1f4$Zh5m" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$Zh5n" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$Zh5o" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$Zh5p" role="19SJt6" />
+                <node concept="3z_lpY" id="40D1f4$Zh5q" role="19SJt6">
+                  <node concept="2NCZwO" id="40D1f4$Zh5r" role="3z_lpZ">
+                    <node concept="2NCMab" id="40D1f4$Zh5s" role="2NCMaf">
+                      <ref role="2NCMaa" node="40D1f4$VoDf" resolve="S03_Func_Analysis_Generic_Window" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$Zh5t" role="19SJt6" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
-      <node concept="1_1sxE" id="40D1f4$Vsz9" role="1_0VJ0">
+      <node concept="3z_lpU" id="40D1f4$ZhGL" role="1_0VJ0">
+        <property role="3z_lpW" value="mbeddr" />
+        <node concept="2NCZwO" id="40D1f4$ZhGM" role="3z_lpI">
+          <node concept="2NCMab" id="40D1f4$ZigF" role="2NCMaf">
+            <ref role="2NCMaa" to="fc8m:72GPbqtfjwX" resolve="S03_Func_Analysis_Generic_Window" />
+          </node>
+          <node concept="2NCMab" id="40D1f4$ZiJe" role="2NCMaf">
+            <ref role="2NCMaa" to="fc8m:72GPbqtfkCy" resolve="WinSubSystemFA" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="40D1f4$ZgXs" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_1sxE" id="40D1f4$ZgA9" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
     </node>
@@ -290,6 +402,37 @@
     <node concept="1_0VNX" id="40D1f4$Vsu6" role="1_0VJ0">
       <property role="TrG5h" value="S02" />
       <property role="1_0VJr" value="System Architecture (Window System) " />
+      <node concept="C6TCP" id="40D1f4$ZjcF" role="1_0VJ0">
+        <property role="C6TCN" value="2" />
+        <node concept="1xAuFB" id="40D1f4$ZjcG" role="C6TCM">
+          <node concept="C7FVz" id="40D1f4$ZjcH" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$ZjcI" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$ZjcJ" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$ZjcK" role="19SJt6" />
+                <node concept="2vpllh" id="40D1f4$ZjcL" role="19SJt6">
+                  <node concept="19SGf9" id="40D1f4$ZjcM" role="$DsGW">
+                    <node concept="19SUe$" id="40D1f4$ZjcN" role="19SJt6">
+                      <property role="19SUeA" value="Back to:" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$ZjcO" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+          <node concept="C7FVz" id="40D1f4$ZjcP" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$ZjcQ" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$ZjcR" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$ZjcS" role="19SJt6" />
+                <node concept="1_0GAv" id="40D1f4$ZjcT" role="19SJt6">
+                  <ref role="1_0GAl" node="40D1f4$Vsf9" resolve="Slide0_Title" />
+                </node>
+                <node concept="19SUe$" id="40D1f4$ZjcU" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="2SaynC" id="40D1f4$Vsu7" role="1_0VJ0">
         <property role="TrG5h" value="WinSysArch" />
         <property role="1DKIkx" value="true" />
@@ -308,6 +451,91 @@
           <property role="2Sb_kV" value="Diagrams\S02_System_Architecture.png" />
           <ref role="2Sb_kU" node="40D1f4$TP_W" resolve="images" />
         </node>
+      </node>
+      <node concept="C6TCP" id="40D1f4$Zjhg" role="1_0VJ0">
+        <property role="C6TCN" value="2" />
+        <property role="1tGk1y" value="true" />
+        <node concept="1xAuFB" id="40D1f4$Zjhh" role="C6TCM">
+          <node concept="C7FVz" id="40D1f4$Zjhi" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$Zjhj" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$Zjhk" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$Zjhl" role="19SJt6" />
+                <node concept="2vpllh" id="40D1f4$Zjhm" role="19SJt6">
+                  <node concept="19SGf9" id="40D1f4$Zjhn" role="$DsGW">
+                    <node concept="19SUe$" id="40D1f4$Zjho" role="19SJt6">
+                      <property role="19SUeA" value="Text" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$Zjhp" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+          <node concept="C7FVz" id="40D1f4$Zjhq" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$Zjhr" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$Zjhs" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$Zjht" role="19SJt6" />
+                <node concept="3z_lpY" id="40D1f4$Zjhu" role="19SJt6">
+                  <node concept="2NCZwO" id="40D1f4$Zjhv" role="3z_lpZ">
+                    <node concept="2NCMab" id="40D1f4$ZjnO" role="2NCMaf">
+                      <ref role="2NCMaa" to="ob7x:1Rl2DKhZhfV" resolve="S02_System_Architecture" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$Zjhx" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1xAuFB" id="40D1f4$Zjhy" role="C6TCM">
+          <node concept="C7FVz" id="40D1f4$Zjhz" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$Zjh$" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$Zjh_" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$ZjhA" role="19SJt6" />
+                <node concept="2vpllh" id="40D1f4$ZjhB" role="19SJt6">
+                  <node concept="19SGf9" id="40D1f4$ZjhC" role="$DsGW">
+                    <node concept="19SUe$" id="40D1f4$ZjhD" role="19SJt6">
+                      <property role="19SUeA" value="Diagram" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$ZjhE" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+          <node concept="C7FVz" id="40D1f4$ZjhF" role="1xAuFS">
+            <node concept="OjmMv" id="40D1f4$ZjhG" role="C7FVy">
+              <node concept="19SGf9" id="40D1f4$ZjhH" role="OjmMu">
+                <node concept="19SUe$" id="40D1f4$ZjhI" role="19SJt6" />
+                <node concept="3z_lpY" id="40D1f4$ZjhJ" role="19SJt6">
+                  <node concept="2NCZwO" id="40D1f4$ZjhK" role="3z_lpZ">
+                    <node concept="2NCMab" id="40D1f4$ZjnS" role="2NCMaf">
+                      <ref role="2NCMaa" to="ob7x:1Rl2DKhZhfV" resolve="S02_System_Architecture" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="40D1f4$ZjhM" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3z_lpU" id="40D1f4$ZjlM" role="1_0VJ0">
+        <property role="3z_lpW" value="mbeddr" />
+        <node concept="2NCZwO" id="40D1f4$ZjlN" role="3z_lpI">
+          <node concept="2NCMab" id="40D1f4$ZjrK" role="2NCMaf">
+            <ref role="2NCMaa" to="ob7x:1Rl2DKhZhfV" resolve="S02_System_Architecture" />
+          </node>
+          <node concept="2NCMab" id="40D1f4$ZjrS" role="2NCMaf">
+            <ref role="2NCMaa" to="ob7x:7oGBC4$W9xI" resolve="WinSysArch" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="40D1f4$ZjjB" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="1_1sxE" id="40D1f4$ZjeS" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
       </node>
     </node>
     <node concept="1_0j5j" id="40D1f4$Vsud" role="1DXQ57">
