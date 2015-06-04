@@ -318,7 +318,7 @@
   </registry>
   <node concept="bUwia" id="4Z9rElrodEg">
     <property role="TrG5h" value="main" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
     <node concept="3aamgX" id="yF2aJfSi2k" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ddau:4csP6flST3m" resolve="ArchElement" />

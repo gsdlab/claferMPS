@@ -281,10 +281,16 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6Fa64hUiAr6">
-    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
     <property role="TrG5h" value="WireConnector" />
     <property role="34LRSv" value="Wire Connector" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <node concept="1TJgyj" id="6Ct43dp5uyE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="connectorType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6Ct43dp5mD9" resolve="WireConnectorType" />
+    </node>
     <node concept="1TJgyj" id="$OrRLOo9Xc" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
@@ -299,7 +305,7 @@
     </node>
     <node concept="1TJgyi" id="$OrRLOoafo" role="1TKVEl">
       <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="$OrRLOoabn" resolve="WireConnectorType" />
+      <ref role="AX2Wp" node="$OrRLOoabn" resolve="WireConnectorTypeEnum" />
     </node>
     <node concept="PrWs8" id="$OrRLOqE6b" role="PzmwI">
       <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
@@ -335,8 +341,8 @@
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
   </node>
   <node concept="AxPO7" id="$OrRLOoabn">
-    <property role="3GE5qa" value="EAST_ADL" />
-    <property role="TrG5h" value="WireConnectorType" />
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
+    <property role="TrG5h" value="WireConnectorTypeEnum" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="$OrRLOoabo" role="M5hS2">
       <property role="1uS6qv" value="discrete" />
@@ -502,6 +508,32 @@
   <node concept="PlHQZ" id="2l5qjD1IiLz">
     <property role="3GE5qa" value="EAST_ADL.FunctionalArchitecture" />
     <property role="TrG5h" value="IFunctionalAnalysisNode" />
+  </node>
+  <node concept="1TIwiD" id="6Ct43dp5mp_">
+    <property role="TrG5h" value="PowerWC" />
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
+    <property role="MwhBj" value="${module}/icons/powerWireConnector.png" />
+    <property role="34LRSv" value="power" />
+    <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
+  </node>
+  <node concept="1TIwiD" id="6Ct43dp5mD9">
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
+    <property role="TrG5h" value="WireConnectorType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6Ct43dp5mDa">
+    <property role="TrG5h" value="DiscreteWC" />
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
+    <property role="34LRSv" value="discrete" />
+    <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
+  </node>
+  <node concept="1TIwiD" id="6Ct43dp5mDb">
+    <property role="TrG5h" value="AnalogWC" />
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
+    <property role="34LRSv" value="Analog" />
+    <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
   </node>
 </model>
 

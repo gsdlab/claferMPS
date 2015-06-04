@@ -291,7 +291,7 @@
     <ref role="1M2myG" to="ddau:4csP6flSt47" resolve="Diagram" />
   </node>
   <node concept="1M2fIO" id="6Fa64hUiArP">
-    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
     <ref role="1M2myG" to="ddau:6Fa64hUiAr6" resolve="WireConnector" />
     <node concept="nKS2y" id="6Fa64hUiAts" role="1MLUbF">
       <node concept="3clFbS" id="6Fa64hUiAtt" role="2VODD2">
@@ -310,30 +310,40 @@
     <node concept="osYL8" id="6yDAYyfK$1I" role="1MLXOK">
       <node concept="3clFbS" id="6yDAYyfK$1J" role="2VODD2">
         <node concept="3clFbF" id="6yDAYyfK$7l" role="3cqZAp">
-          <node concept="22lmx$" id="6yDAYyfK$7m" role="3clFbG">
-            <node concept="22lmx$" id="6yDAYyfK$7n" role="3uHU7B">
-              <node concept="2OqwBi" id="6yDAYyfK$7o" role="3uHU7B">
-                <node concept="otxO1" id="6yDAYyfK$7p" role="2Oq$k0" />
-                <node concept="2Zo12i" id="6yDAYyfK$7q" role="2OqNvi">
-                  <node concept="chp4Y" id="6yDAYyfK$7r" role="2Zo12j">
-                    <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6yDAYyfK$7s" role="3uHU7w">
-                <node concept="otxO1" id="6yDAYyfK$7t" role="2Oq$k0" />
-                <node concept="2Zo12i" id="6yDAYyfK$7u" role="2OqNvi">
-                  <node concept="chp4Y" id="6yDAYyfK$7v" role="2Zo12j">
-                    <ref role="cht4Q" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
-                  </node>
-                </node>
-              </node>
-            </node>
+          <node concept="22lmx$" id="6Ct43dp6zmx" role="3clFbG">
             <node concept="2OqwBi" id="6yDAYyfK$7w" role="3uHU7w">
               <node concept="otxO1" id="6yDAYyfK$7x" role="2Oq$k0" />
               <node concept="2Zo12i" id="6yDAYyfK$7y" role="2OqNvi">
                 <node concept="chp4Y" id="6yDAYyfK$7z" role="2Zo12j">
                   <ref role="cht4Q" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+                </node>
+              </node>
+            </node>
+            <node concept="22lmx$" id="6Ct43dp6yRW" role="3uHU7B">
+              <node concept="22lmx$" id="6yDAYyfK$7n" role="3uHU7B">
+                <node concept="2OqwBi" id="6yDAYyfK$7o" role="3uHU7B">
+                  <node concept="otxO1" id="6yDAYyfK$7p" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="6yDAYyfK$7q" role="2OqNvi">
+                    <node concept="chp4Y" id="6yDAYyfK$7r" role="2Zo12j">
+                      <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6yDAYyfK$7s" role="3uHU7w">
+                  <node concept="otxO1" id="6yDAYyfK$7t" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="6yDAYyfK$7u" role="2OqNvi">
+                    <node concept="chp4Y" id="6yDAYyfK$7v" role="2Zo12j">
+                      <ref role="cht4Q" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6Ct43dp6zAu" role="3uHU7w">
+                <node concept="otxO1" id="6Ct43dp6zu1" role="2Oq$k0" />
+                <node concept="2Zo12i" id="6Ct43dp6zQY" role="2OqNvi">
+                  <node concept="chp4Y" id="6Ct43dp6zX_" role="2Zo12j">
+                    <ref role="cht4Q" to="ddau:6Ct43dp5mD9" resolve="WireConnectorType" />
+                  </node>
                 </node>
               </node>
             </node>

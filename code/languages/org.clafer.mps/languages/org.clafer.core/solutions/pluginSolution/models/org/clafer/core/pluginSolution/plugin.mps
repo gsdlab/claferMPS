@@ -5,11 +5,15 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
   </languages>
   <imports>
     <import index="qon6" ref="r:77666878-a961-4760-8fa7-8b6fd31b3f35(org.clafer.core.editor)" />
     <import index="vrqc" ref="r:53e59391-150a-45ff-930e-2b4fdafb0905(org.clafer.expr.editor)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+    <import index="jyho" ref="r:c0d845a2-4853-4b9b-a005-8551d02b2034(org.clafer.architecture.editor)" />
+    <import index="5xh9" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide.actions(MPS.Platform/jetbrains.mps.ide.actions@java_stub)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -77,6 +81,19 @@
       <ref role="33glcY" to="vrqc:6yyIOiNaML7" resolve="showIndentsInClafer" />
     </node>
     <node concept="tT9cl" id="6yyIOiNeiXx" role="2hfP89">
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+    </node>
+  </node>
+  <node concept="33ghlw" id="6Ct43dp6DgB">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="ArchitectureMode" />
+    <node concept="33gmoH" id="6Ct43dp6DgC" role="2hfSGL">
+      <property role="33g7Lv" value="EAST-ADL" />
+      <ref role="33glcW" to="jyho:1q5jVmNO7wz" resolve="architectureStuff" />
+      <ref role="33glcY" to="jyho:1q5jVmNO7w$" resolve="architectureDiagrams" />
+    </node>
+    <node concept="tT9cl" id="6Ct43dp6DgD" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
       <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>

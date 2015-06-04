@@ -142,6 +142,9 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="8758390115028452779" name="jetbrains.mps.lang.smodel.structure.Node_GetReferencesOperation" flags="nn" index="2z74zc" />
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
+        <reference id="1139880128956" name="concept" index="1A9B2P" />
+      </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -865,6 +868,27 @@
     </node>
     <node concept="13hLZK" id="1Mid6Xjg4P_" role="13h7CW">
       <node concept="3clFbS" id="1Mid6Xjg4PA" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6Ct43dp5uz5">
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
+    <ref role="13h7C2" to="ddau:6Fa64hUiAr6" resolve="WireConnector" />
+    <node concept="13hLZK" id="6Ct43dp5uz6" role="13h7CW">
+      <node concept="3clFbS" id="6Ct43dp5uz7" role="2VODD2">
+        <node concept="3clFbF" id="6Ct43dp5uEf" role="3cqZAp">
+          <node concept="2OqwBi" id="6Ct43dp5_FP" role="3clFbG">
+            <node concept="2OqwBi" id="6Ct43dp5uIR" role="2Oq$k0">
+              <node concept="13iPFW" id="6Ct43dp5uEe" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6Ct43dp5ydN" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:6Ct43dp5uyE" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6Ct43dp5_Ng" role="2OqNvi">
+              <ref role="1A9B2P" to="ddau:6Ct43dp5mDa" resolve="DiscreteWC" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

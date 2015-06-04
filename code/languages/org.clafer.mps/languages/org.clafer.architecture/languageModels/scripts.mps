@@ -42,7 +42,9 @@
       <concept id="1177458491964" name="jetbrains.mps.lang.script.structure.MigrationScriptPart_Instance_Updater" flags="in" index="_ZGcI" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
+        <reference id="1139880128956" name="concept" index="1A9B2P" />
+      </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -55,7 +57,7 @@
     </language>
   </registry>
   <node concept="_UgoZ" id="1Mid6Xjlt6_">
-    <property role="TrG5h" value="ClaferMigrateDeviceSmartness" />
+    <property role="TrG5h" value="ArchitectureMigrateDeviceSmartness" />
     <property role="_Wzho" value="Architecture: Migrate Smartness" />
     <node concept="_XfAh" id="1Mid6XjltaW" role="_YvDr">
       <property role="_XH9r" value="Smartness" />
@@ -84,6 +86,31 @@
                 </node>
               </node>
               <node concept="3w_OXm" id="1Mid6XjlxnJ" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="_UgoZ" id="6Ct43dp5IP$">
+    <property role="TrG5h" value="ArchitectueMigratePower" />
+    <property role="_Wzho" value="Architecture: Migrate Power" />
+    <node concept="_XfAh" id="6Ct43dp5IP_" role="_YvDr">
+      <property role="_XH9r" value="PowerConnector" />
+      <ref role="_XDHR" to="ddau:6Fa64hUiAr6" resolve="WireConnector" />
+      <node concept="_ZGcI" id="6Ct43dp5IPA" role="_XPhp">
+        <node concept="3clFbS" id="6Ct43dp5IPB" role="2VODD2">
+          <node concept="3clFbF" id="6Ct43dp5ITS" role="3cqZAp">
+            <node concept="2OqwBi" id="6Ct43dp5Kcw" role="3clFbG">
+              <node concept="2OqwBi" id="6Ct43dp5IYu" role="2Oq$k0">
+                <node concept="_YI3z" id="6Ct43dp5ITR" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6Ct43dp5JK_" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:6Ct43dp5uyE" />
+                </node>
+              </node>
+              <node concept="zfrQC" id="6Ct43dp5Ksl" role="2OqNvi">
+                <ref role="1A9B2P" to="ddau:6Ct43dp5mp_" resolve="PowerWC" />
+              </node>
             </node>
           </node>
         </node>
