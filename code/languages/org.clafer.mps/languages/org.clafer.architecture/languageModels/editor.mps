@@ -693,6 +693,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="5PgN_niJSfV" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
+      </node>
       <node concept="l2Vlx" id="6Fa64hUoaA$" role="2iSdaV" />
     </node>
   </node>
@@ -2232,14 +2235,11 @@
           <node concept="pkWqt" id="73PmbN3ZvTD" role="pqm2j">
             <node concept="3clFbS" id="73PmbN3ZvTE" role="2VODD2">
               <node concept="3clFbF" id="73PmbN3Zw40" role="3cqZAp">
-                <node concept="2OqwBi" id="73PmbN3Zxhe" role="3clFbG">
-                  <node concept="2OqwBi" id="73PmbN3Zwc4" role="2Oq$k0">
-                    <node concept="pncrf" id="73PmbN3Zw3Z" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="73PmbN3ZwKm" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ddau:73PmbN3CTYP" />
-                    </node>
+                <node concept="2OqwBi" id="73PmbN3Zwc4" role="3clFbG">
+                  <node concept="pncrf" id="73PmbN3Zw3Z" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="1Mid6Xji8Df" role="2OqNvi">
+                    <ref role="3TsBF5" to="ddau:6Fa64hUf2KZ" resolve="isSmart" />
                   </node>
-                  <node concept="3x8VRR" id="73PmbN3ZxAo" role="2OqNvi" />
                 </node>
               </node>
             </node>

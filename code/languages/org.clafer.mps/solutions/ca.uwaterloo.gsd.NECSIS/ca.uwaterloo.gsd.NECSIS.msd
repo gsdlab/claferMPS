@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">1dce1da1-c5a5-4625-a3f5-9cc9eeb0ecd3(ca.uwaterloo.gsd.PowerWindowSystem)</dependency>
+    <dependency reexport="false">925f4a66-e822-41c9-89f3-e1efeb4715ec(org.clafer.architecture.example)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</usedLanguage>
