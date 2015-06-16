@@ -996,15 +996,6 @@
               <ref role="2vxcI7" node="7oGBC4$W8rB" resolve="Feature" />
             </node>
           </node>
-          <node concept="1z9TsT" id="1Rl2DKhZzCV" role="lGtFl">
-            <node concept="OjmMv" id="1Rl2DKhZzCW" role="1w35rA">
-              <node concept="19SGf9" id="1Rl2DKhZzCX" role="OjmMu">
-                <node concept="19SUe$" id="1Rl2DKhZzCY" role="19SJt6">
-                  <property role="19SUeA" value="this comes from Slide4 but cannot figure out how to deal with it yet." />
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
       <node concept="UH0sd" id="7oGBC4$W9Ie" role="2vwUiP">
@@ -1076,7 +1067,7 @@
               <ref role="2vxcI7" node="7oGBC4$W8$U" resolve="src" />
             </node>
             <node concept="2K4itw" id="7oGBC4$W9PJ" role="2K4itM">
-              <node concept="ZpTZE" id="7oGBC4$W9Qq" role="3J4IUC">
+              <node concept="ZpTZE" id="2nqawvIv$04" role="3J4IUC">
                 <ref role="ZpTZD" node="7oGBC4$W9Nx" resolve="PinchDetection" />
               </node>
             </node>
@@ -1379,7 +1370,7 @@
         <node concept="UH0sd" id="2l_ztDefakW" role="2vwUiP">
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="2l_ztDefala" role="2K4itM">
-            <node concept="ZpTZE" id="2l_ztDefalc" role="3J4IUC">
+            <node concept="ZpTZE" id="Gq4B5skFu0" role="3J4IUC">
               <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
             </node>
           </node>

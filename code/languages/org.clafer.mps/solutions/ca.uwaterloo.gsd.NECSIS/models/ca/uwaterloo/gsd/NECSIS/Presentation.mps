@@ -48,13 +48,14 @@
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="8730648445433290694" name="dependsOn" index="1DXQ57" />
       </concept>
-      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.CPNamedNodeElement" flags="ng" index="2NCMab">
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
         <reference id="2286331641395252233" name="node" index="2NCMaa" />
       </concept>
-      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.CodePointer" flags="ng" index="2NCZwO">
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
         <child id="2286331641395252236" name="elements" index="2NCMaf" />
       </concept>
       <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
+        <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
         <property id="8730648445434174368" name="center" index="1DKIkx" />
         <child id="6386504476136278696" name="description" index="2SaI5j" />
         <child id="6386504476136531838" name="resource" index="2SbwM5" />
@@ -78,20 +79,22 @@
       <concept id="5185579450379273118" name="com.mbeddr.doc.structure.TextParHeader" flags="ng" index="1xAIan">
         <property id="5185579450379273119" name="text" index="1xAIam" />
       </concept>
-      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractCCodeParagraph" flags="ng" index="3z_lpG">
-        <property id="6955693250238922823" name="showCode" index="3z_lpJ" />
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
-      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.CCodeParagraph" flags="ng" index="3z_lpU">
+      <concept id="6955693250238922834" name="com.mbeddr.doc.structure.ModelContentAsTextParagraph" flags="ng" index="3z_lpU">
         <property id="6955693250238922836" name="language" index="3z_lpW" />
       </concept>
-      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.CodeRefWord" flags="ng" index="3z_lpY">
-        <child id="6955693250238922839" name="codeptr" index="3z_lpZ" />
+      <concept id="6955693250238922838" name="com.mbeddr.doc.structure.ModelContentRefWord" flags="ng" index="3z_lpY">
+        <child id="6955693250238922839" name="modelContentPtr" index="3z_lpZ" />
       </concept>
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
       <concept id="3350625596580108709" name="com.mbeddr.doc.structure.SectRefWord" flags="ng" index="1_0GAv">
+        <property id="988357225300474217" name="prefixed" index="3wzI31" />
+        <property id="988357225297982407" name="indexed" index="3wDeDJ" />
         <reference id="3350625596580108719" name="target" index="1_0GAl" />
       </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
@@ -559,37 +562,6 @@
     <node concept="1_0VNX" id="4xheIp8FLQc" role="1_0VJ0">
       <property role="1_0VJr" value="FA Design Variants" />
       <property role="TrG5h" value="S03Variants" />
-      <node concept="C6TCP" id="4xheIp8FLQd" role="1_0VJ0">
-        <property role="C6TCN" value="2" />
-        <node concept="1xAuFB" id="4xheIp8FLQe" role="C6TCM">
-          <node concept="C7FVz" id="4xheIp8FLQf" role="1xAuFS">
-            <node concept="OjmMv" id="4xheIp8FLQg" role="C7FVy">
-              <node concept="19SGf9" id="4xheIp8FLQh" role="OjmMu">
-                <node concept="19SUe$" id="4xheIp8FLQi" role="19SJt6" />
-                <node concept="2vpllh" id="4xheIp8FLQj" role="19SJt6">
-                  <node concept="19SGf9" id="4xheIp8FLQk" role="$DsGW">
-                    <node concept="19SUe$" id="4xheIp8FLQl" role="19SJt6">
-                      <property role="19SUeA" value="Back to:" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="19SUe$" id="4xheIp8FLQm" role="19SJt6" />
-              </node>
-            </node>
-          </node>
-          <node concept="C7FVz" id="4xheIp8FLQn" role="1xAuFS">
-            <node concept="OjmMv" id="4xheIp8FLQo" role="C7FVy">
-              <node concept="19SGf9" id="4xheIp8FLQp" role="OjmMu">
-                <node concept="19SUe$" id="4xheIp8FLQq" role="19SJt6" />
-                <node concept="1_0GAv" id="4xheIp8FLQr" role="19SJt6">
-                  <ref role="1_0GAl" node="40D1f4$Vsf9" resolve="Slide0_Title" />
-                </node>
-                <node concept="19SUe$" id="4xheIp8FLQs" role="19SJt6" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1_1sxE" id="4xheIp8FLTy" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
       </node>
@@ -623,8 +595,44 @@
           <ref role="2Sb_kU" node="40D1f4$TP_W" resolve="images" />
         </node>
       </node>
+      <node concept="C6TCP" id="4xheIp8FLQd" role="1_0VJ0">
+        <property role="C6TCN" value="2" />
+        <node concept="1xAuFB" id="4xheIp8FLQe" role="C6TCM">
+          <node concept="C7FVz" id="4xheIp8FLQf" role="1xAuFS">
+            <node concept="OjmMv" id="4xheIp8FLQg" role="C7FVy">
+              <node concept="19SGf9" id="4xheIp8FLQh" role="OjmMu">
+                <node concept="19SUe$" id="4xheIp8FLQi" role="19SJt6" />
+                <node concept="2vpllh" id="4xheIp8FLQj" role="19SJt6">
+                  <node concept="19SGf9" id="4xheIp8FLQk" role="$DsGW">
+                    <node concept="19SUe$" id="4xheIp8FLQl" role="19SJt6">
+                      <property role="19SUeA" value="Back to:" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="19SUe$" id="4xheIp8FLQm" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+          <node concept="C7FVz" id="4xheIp8FLQn" role="1xAuFS">
+            <node concept="OjmMv" id="4xheIp8FLQo" role="C7FVy">
+              <node concept="19SGf9" id="4xheIp8FLQp" role="OjmMu">
+                <node concept="19SUe$" id="4xheIp8FLQq" role="19SJt6" />
+                <node concept="1_0GAv" id="4xheIp8FLQr" role="19SJt6">
+                  <property role="3wDeDJ" value="false" />
+                  <property role="3wzI31" value="true" />
+                  <ref role="1_0GAl" node="40D1f4$Vsf9" resolve="Slide0_Title" />
+                </node>
+                <node concept="19SUe$" id="4xheIp8FLQs" role="19SJt6" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2DGtvxQXfY8" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
     </node>
-    <node concept="1_0j5j" id="4xheIp8FLQt" role="1DXQ57">
+    <node concept="1_0j5j" id="3e16BQcP2uI" role="1DXQ57">
       <ref role="1_0j5g" node="40D1f4$TKfP" resolve="ClaferMPS" />
     </node>
   </node>
@@ -635,6 +643,42 @@
     <node concept="1_0VNX" id="4xheIp8FNSm" role="1_0VJ0">
       <property role="1_0VJr" value="EAST ADL" />
       <property role="TrG5h" value="EASTADL" />
+      <node concept="1_1sxE" id="4xheIp8FNSB" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="2SaynC" id="4xheIp8FNSC" role="1_0VJ0">
+        <property role="TrG5h" value="EASTADL" />
+        <property role="2Sbq$t" value="true" />
+        <node concept="OjmMv" id="4xheIp8FNSD" role="2SaI5j">
+          <node concept="19SGf9" id="4xheIp8FNSE" role="OjmMu">
+            <node concept="19SUe$" id="4xheIp8FNSF" role="19SJt6">
+              <property role="19SUeA" value="EAST-ADL Diagram" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="4xheIp8FNSG" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="4xheIp8FNSH" role="2SbwM5">
+          <property role="2Sb_kV" value="EASTADL\EASTADL.png" />
+          <ref role="2Sb_kU" node="40D1f4$TP_W" resolve="images" />
+        </node>
+      </node>
+      <node concept="1_0LV8" id="4xheIp8HluJ" role="1_0VJ0">
+        <node concept="19SGf9" id="4xheIp8HluK" role="1_0LWR">
+          <node concept="19SUe$" id="4xheIp8HluL" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="3z_lpU" id="4xheIp8Hlwz" role="1_0VJ0">
+        <property role="3z_lpW" value="mbeddr" />
+        <property role="3z_lpJ" value="true" />
+        <node concept="2NCZwO" id="4xheIp8Hlw$" role="3z_lpI">
+          <node concept="2NCMab" id="4xheIp8Hlx2" role="2NCMaf">
+            <ref role="2NCMaa" to="ob7x:7oGBC4$RZYL" resolve="EAST_ADL" />
+          </node>
+        </node>
+      </node>
+      <node concept="1_1sxE" id="2DGtvxQVEfB" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
       <node concept="C6TCP" id="4xheIp8FNSn" role="1_0VJ0">
         <property role="C6TCN" value="2" />
         <node concept="1xAuFB" id="4xheIp8FNSo" role="C6TCM">
@@ -666,40 +710,56 @@
           </node>
         </node>
       </node>
-      <node concept="1_1sxE" id="4xheIp8FNSB" role="1_0VJ0">
+      <node concept="1_1sxE" id="2DGtvxQVEfQ" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />
-      </node>
-      <node concept="2SaynC" id="4xheIp8FNSC" role="1_0VJ0">
-        <property role="TrG5h" value="EASTADL" />
-        <node concept="OjmMv" id="4xheIp8FNSD" role="2SaI5j">
-          <node concept="19SGf9" id="4xheIp8FNSE" role="OjmMu">
-            <node concept="19SUe$" id="4xheIp8FNSF" role="19SJt6">
-              <property role="19SUeA" value="EAST-ADL Diagram" />
-            </node>
-          </node>
-        </node>
-        <node concept="2bctqb" id="4xheIp8FNSG" role="3SHJ_F" />
-        <node concept="2Sb_l4" id="4xheIp8FNSH" role="2SbwM5">
-          <property role="2Sb_kV" value="EASTADL\EASTADL.png" />
-          <ref role="2Sb_kU" node="40D1f4$TP_W" resolve="images" />
-        </node>
-      </node>
-      <node concept="1_0LV8" id="4xheIp8HluJ" role="1_0VJ0">
-        <node concept="19SGf9" id="4xheIp8HluK" role="1_0LWR">
-          <node concept="19SUe$" id="4xheIp8HluL" role="19SJt6" />
-        </node>
-      </node>
-      <node concept="3z_lpU" id="4xheIp8Hlwz" role="1_0VJ0">
-        <property role="3z_lpW" value="mbeddr" />
-        <property role="3z_lpJ" value="true" />
-        <node concept="2NCZwO" id="4xheIp8Hlw$" role="3z_lpI">
-          <node concept="2NCMab" id="4xheIp8Hlx2" role="2NCMaf">
-            <ref role="2NCMaa" to="ob7x:7oGBC4$RZYL" resolve="EAST_ADL" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="1_0j5j" id="4xheIp8FNSO" role="1DXQ57">
+      <ref role="1_0j5g" node="40D1f4$TKfP" resolve="ClaferMPS" />
+    </node>
+  </node>
+  <node concept="1_1swa" id="2DGtvxQXhkY">
+    <property role="yApLE" value="4" />
+    <property role="TrG5h" value="S13_Wiring_variants" />
+    <ref role="G9hjw" node="40D1f4$TMlI" resolve="Config" />
+    <node concept="1_0VNX" id="2DGtvxQXhkZ" role="1_0VJ0">
+      <property role="1_0VJr" value="Wiring Design Variants" />
+      <property role="TrG5h" value="S13Variants" />
+      <node concept="1_1sxE" id="2DGtvxQXhl0" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="2SaynC" id="2DGtvxQXhl1" role="1_0VJ0">
+        <property role="TrG5h" value="Wiring1" />
+        <node concept="OjmMv" id="2DGtvxQXhl2" role="2SaI5j">
+          <node concept="19SGf9" id="2DGtvxQXhl3" role="OjmMu">
+            <node concept="19SUe$" id="2DGtvxQXhl4" role="19SJt6">
+              <property role="19SUeA" value="Wiring (WinSubSysLoadPwrDT), variant 1" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2DGtvxQXhl5" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2DGtvxQXhl6" role="2SbwM5">
+          <property role="2Sb_kV" value="S13_wiring_variants\wiring1.png" />
+          <ref role="2Sb_kU" node="40D1f4$TP_W" resolve="images" />
+        </node>
+      </node>
+      <node concept="2SaynC" id="2DGtvxQXhl7" role="1_0VJ0">
+        <property role="TrG5h" value="Wiring2" />
+        <node concept="OjmMv" id="2DGtvxQXhl8" role="2SaI5j">
+          <node concept="19SGf9" id="2DGtvxQXhl9" role="OjmMu">
+            <node concept="19SUe$" id="2DGtvxQXhla" role="19SJt6">
+              <property role="19SUeA" value="Wiring (WinSubSysLoadPwrDT), variant 2" />
+            </node>
+          </node>
+        </node>
+        <node concept="2bctqb" id="2DGtvxQXhlb" role="3SHJ_F" />
+        <node concept="2Sb_l4" id="2DGtvxQXhlc" role="2SbwM5">
+          <property role="2Sb_kV" value="S13_wiring_variants\wiring2.png" />
+          <ref role="2Sb_kU" node="40D1f4$TP_W" resolve="images" />
+        </node>
+      </node>
+    </node>
+    <node concept="1_0j5j" id="2DGtvxQXhlu" role="1DXQ57">
       <ref role="1_0j5g" node="40D1f4$TKfP" resolve="ClaferMPS" />
     </node>
   </node>

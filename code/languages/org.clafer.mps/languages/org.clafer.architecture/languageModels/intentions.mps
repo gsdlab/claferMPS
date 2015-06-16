@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
+    <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -95,6 +96,9 @@
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1">
         <reference id="1240170836027" name="enum" index="2ZWj4r" />
       </concept>
@@ -119,6 +123,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -599,6 +606,36 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2nqawvIu6pa">
+    <property role="TrG5h" value="AddContent" />
+    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="2S6ZIM" id="2nqawvIu6pb" role="2ZfVej">
+      <node concept="3clFbS" id="2nqawvIu6pc" role="2VODD2">
+        <node concept="3clFbF" id="2nqawvIubsK" role="3cqZAp">
+          <node concept="Xl_RD" id="2nqawvIubsJ" role="3clFbG">
+            <property role="Xl_RC" value="Add Content" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2nqawvIu6pd" role="2ZfgGD">
+      <node concept="3clFbS" id="2nqawvIu6pe" role="2VODD2">
+        <node concept="3clFbF" id="2nqawvIubxX" role="3cqZAp">
+          <node concept="2OqwBi" id="2nqawvIuneh" role="3clFbG">
+            <node concept="2OqwBi" id="2nqawvIubTZ" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2nqawvIubxW" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2nqawvIumb2" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+              </node>
+            </node>
+            <node concept="WFELt" id="2nqawvIusvr" role="2OqNvi">
+              <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
             </node>
           </node>
         </node>

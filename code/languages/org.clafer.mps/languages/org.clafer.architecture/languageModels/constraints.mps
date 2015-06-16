@@ -694,5 +694,57 @@
     <property role="3GE5qa" value="EAST_ADL.FunctionalArchitecture" />
     <ref role="1M2myG" to="ddau:4csP6flSzrJ" resolve="FAFragment" />
   </node>
+  <node concept="1M2fIO" id="2LtTwkX04V2">
+    <property role="3GE5qa" value="EAST_ADL" />
+    <ref role="1M2myG" to="ddau:znlrM84Jcv" resolve="TechnicalFeatureModel" />
+    <node concept="osYL8" id="2LtTwkX04Zr" role="1MLXOK">
+      <node concept="3clFbS" id="2LtTwkX04Zs" role="2VODD2">
+        <node concept="3clFbJ" id="2LtTwkX052W" role="3cqZAp">
+          <node concept="3clFbS" id="2LtTwkX052X" role="3clFbx">
+            <node concept="3cpWs6" id="2LtTwkX052Y" role="3cqZAp">
+              <node concept="22lmx$" id="2LtTwkX052Z" role="3cqZAk">
+                <node concept="2OqwBi" id="2LtTwkX0530" role="3uHU7w">
+                  <node concept="otxO1" id="2LtTwkX0531" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="2LtTwkX0532" role="2OqNvi">
+                    <node concept="chp4Y" id="2LtTwkX0533" role="2Zo12j">
+                      <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="22lmx$" id="2LtTwkX0534" role="3uHU7B">
+                  <node concept="3clFbC" id="2LtTwkX0535" role="3uHU7B">
+                    <node concept="otxO1" id="2LtTwkX0536" role="3uHU7B" />
+                    <node concept="3TUQnm" id="2LtTwkX0537" role="3uHU7w">
+                      <ref role="3TV0OU" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2LtTwkX0538" role="3uHU7w">
+                    <node concept="otxO1" id="2LtTwkX0539" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="2LtTwkX053a" role="2OqNvi">
+                      <node concept="chp4Y" id="2LtTwkX058G" role="2Zo12j">
+                        <ref role="cht4Q" to="ddau:72GPbqtfpB7" resolve="Feature" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="2LtTwkX053c" role="3clFbw">
+            <node concept="28GBK8" id="2LtTwkX053d" role="3uHU7w">
+              <ref role="28H3Ia" to="ddau:4csP6flST4F" />
+              <ref role="28GBKb" to="ddau:4csP6flST3m" resolve="ArchElement" />
+            </node>
+            <node concept="oXsJc" id="2LtTwkX053e" role="3uHU7B" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2LtTwkX053f" role="3cqZAp">
+          <node concept="3clFbT" id="2LtTwkX053g" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
