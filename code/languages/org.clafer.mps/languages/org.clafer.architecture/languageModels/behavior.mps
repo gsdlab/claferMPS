@@ -84,7 +84,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -122,12 +121,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -732,21 +725,6 @@
       <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" to="f5p9:72GPbqtdfLI" resolve="getClaferScope" />
       <node concept="3clFbS" id="1Mid6XjgVeT" role="3clF47">
-        <node concept="34ab3g" id="1Mid6XjhyTH" role="3cqZAp">
-          <property role="35gtTG" value="error" />
-          <node concept="3cpWs3" id="1Mid6XjhzGZ" role="34bqiv">
-            <node concept="Xl_RD" id="1Mid6XjhyTJ" role="3uHU7B">
-              <property role="Xl_RC" value="----------------- " />
-            </node>
-            <node concept="2OqwBi" id="1Mid6XjhF8U" role="3uHU7w">
-              <node concept="2OqwBi" id="1Mid6XjhBo8" role="2Oq$k0">
-                <node concept="13iPFW" id="1Mid6XjhBo9" role="2Oq$k0" />
-                <node concept="32TBzR" id="1Mid6XjhBoa" role="2OqNvi" />
-              </node>
-              <node concept="ANE8D" id="1Mid6XjhFOL" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="1Mid6XjgVeU" role="3cqZAp">
           <node concept="3cpWsn" id="1Mid6XjgVeV" role="3cpWs9">
             <property role="TrG5h" value="result" />
