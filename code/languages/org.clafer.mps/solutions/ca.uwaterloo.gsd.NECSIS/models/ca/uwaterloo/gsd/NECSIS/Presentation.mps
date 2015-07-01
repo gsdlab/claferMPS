@@ -641,7 +641,7 @@
     <property role="TrG5h" value="EAST_ADL" />
     <ref role="G9hjw" node="40D1f4$TMlI" resolve="Config" />
     <node concept="1_0VNX" id="4xheIp8FNSm" role="1_0VJ0">
-      <property role="1_0VJr" value="EAST ADL" />
+      <property role="1_0VJr" value="EAST-ADL" />
       <property role="TrG5h" value="EASTADL" />
       <node concept="1_1sxE" id="4xheIp8FNSB" role="1_0VJ0">
         <property role="TrG5h" value="empty_-1" />

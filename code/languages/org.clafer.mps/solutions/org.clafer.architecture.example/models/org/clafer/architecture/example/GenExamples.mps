@@ -29,6 +29,13 @@
       </concept>
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
+      <concept id="1979512562623543223" name="org.clafer.architecture.structure.Smartness" flags="ng" index="8Ste7" />
+      <concept id="7694989595702755887" name="org.clafer.architecture.structure.Device" flags="ng" index="gYDDF">
+        <property id="7694989595703520319" name="isSmart" index="gXzhV" />
+        <property id="663277625446120312" name="isDumb" index="1X6_g4" />
+        <child id="8139509469301415861" name="smartness" index="2NlGs9" />
+      </concept>
+      <concept id="4835973625147048739" name="org.clafer.architecture.structure.DeviceNodes" flags="ng" index="2l49t0" />
       <concept id="4835973625144817188" name="org.clafer.architecture.structure.FDevice" flags="ng" index="2mXI97" />
       <concept id="4835973625144293103" name="org.clafer.architecture.structure.FAFragment" flags="ng" index="2mZIac" />
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$" />
@@ -914,7 +921,23 @@
       </node>
     </node>
     <node concept="UzEYP" id="4xheIp8HrV$" role="UzTCv" />
-    <node concept="UzEYP" id="4xheIp8HrQi" role="UzTCv" />
+    <node concept="2l49t0" id="4R3VY2vbrfb" role="UzTCv">
+      <property role="TrG5h" value="Test" />
+      <node concept="gYDDF" id="4R3VY2vbrxy" role="2mZOl8">
+        <property role="TrG5h" value="simpleDevice" />
+        <node concept="8Ste7" id="4R3VY2vbrxz" role="2NlGs9">
+          <property role="TrG5h" value="smart" />
+        </node>
+      </node>
+      <node concept="gYDDF" id="4R3VY2vbrxF" role="2mZOl8">
+        <property role="TrG5h" value="dumbDevice" />
+        <property role="1X6_g4" value="false" />
+        <property role="gXzhV" value="true" />
+        <node concept="8Ste7" id="4R3VY2vbrxW" role="2NlGs9">
+          <property role="TrG5h" value="smart" />
+        </node>
+      </node>
+    </node>
     <node concept="UzEYP" id="yF2aJfUHFc" role="UzTCv" />
     <node concept="UzEYP" id="yF2aJfUHF4" role="UzTCv" />
   </node>

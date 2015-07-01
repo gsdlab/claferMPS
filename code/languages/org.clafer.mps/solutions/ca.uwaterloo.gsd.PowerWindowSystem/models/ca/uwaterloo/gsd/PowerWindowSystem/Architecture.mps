@@ -1411,15 +1411,6 @@
           </node>
         </node>
       </node>
-      <node concept="1z9TsT" id="12ZezlWSxUY" role="lGtFl">
-        <node concept="OjmMv" id="12ZezlWSxUZ" role="1w35rA">
-          <node concept="19SGf9" id="12ZezlWSxV0" role="OjmMu">
-            <node concept="19SUe$" id="12ZezlWSxV1" role="19SJt6">
-              <property role="19SUeA" value="FAFragments should be only nested under FAFragments but cannot write a constraint\nbecause FAArchitecture is also an FAFragment but it can be nested anywhere" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="UzEYP" id="7oGBC4$Saud" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W8ys" role="UzTCv">
@@ -1460,15 +1451,6 @@
       <node concept="UH0sd" id="7oGBC4$Sdtd" role="2vwUiP">
         <property role="TrG5h" value="smart" />
         <node concept="3Edj9i" id="6qd05UcK4Vw" role="2vBZf8" />
-      </node>
-      <node concept="1z9TsT" id="7aoJJL5vXug" role="lGtFl">
-        <node concept="OjmMv" id="7aoJJL5vXuh" role="1w35rA">
-          <node concept="19SGf9" id="7aoJJL5vXui" role="OjmMu">
-            <node concept="19SUe$" id="7aoJJL5vXuj" role="19SJt6">
-              <property role="19SUeA" value="Need to have it top-level because must be able to extend under Inline and HDFragment.\nCannot restrict the parent here, see AutomotiveConcepts::Pin : Device under Inline." />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="UzEYP" id="7aoJJL5vWzJ" role="UzTCv" />

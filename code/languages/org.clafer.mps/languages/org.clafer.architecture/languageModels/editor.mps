@@ -4281,8 +4281,8 @@
                   <node concept="1pGfFk" id="1tfNdgy4msf" role="2ShVmc">
                     <ref role="37wK5l" to="r4b4:DubiFB4e4X" resolve="IconCell" />
                     <node concept="pncrf" id="1tfNdgy4msg" role="37wK5m" />
-                    <node concept="3cmrfG" id="1tfNdgy4msh" role="37wK5m">
-                      <property role="3cmrfH" value="3" />
+                    <node concept="3cmrfG" id="5VvawV7wFYz" role="37wK5m">
+                      <property role="3cmrfH" value="5" />
                     </node>
                   </node>
                 </node>
