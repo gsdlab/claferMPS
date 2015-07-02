@@ -31,6 +31,11 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
+        <property id="779128492853935960" name="anchorTag" index="1K8rD$" />
+        <property id="779128492853934523" name="cellId" index="1K8rM7" />
+        <property id="779128492853699361" name="side" index="1Kfyot" />
+      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
       <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
@@ -238,7 +243,13 @@
       <node concept="UH0sd" id="5Rg5_Rc34gP" role="2vwUiP">
         <property role="TrG5h" value="age" />
         <node concept="2K4itw" id="5Rg5_Rc34gS" role="2K4itM">
-          <node concept="3TlMh2" id="5Rg5_Rc34gU" role="3J4IUC" />
+          <node concept="3TlMh2" id="5Rg5_Rc34gU" role="3J4IUC">
+            <node concept="1KehLL" id="44ORmASU4uj" role="lGtFl">
+              <property role="1K8rM7" value="ALIAS_EDITOR_COMPONENT" />
+              <property role="1K8rD$" value="default_RTransform" />
+              <property role="1Kfyot" value="right" />
+            </node>
+          </node>
         </node>
         <node concept="2vxuzR" id="12ZezlWUxh$" role="2vwUiP">
           <node concept="3Tl9Jp" id="12ZezlWUxjd" role="3WnoGb">
@@ -246,6 +257,11 @@
               <property role="2hmy$m" value="0" />
             </node>
             <node concept="2Zoh0E" id="12ZezlWUxiU" role="3TlMhI" />
+          </node>
+        </node>
+        <node concept="2vxuzR" id="7jAnD$sH_Gf" role="2vwUiP">
+          <node concept="ZpONE" id="7jAnD$sH_HC" role="3WnoGb">
+            <ref role="ZpOSt" node="3WlRoWey$hd" resolve="Alice" />
           </node>
         </node>
       </node>
@@ -470,6 +486,11 @@
       </node>
       <node concept="3Edjpn" id="6MOJxHINBDG" role="2vBZf8">
         <property role="3Edjpk" value="2" />
+      </node>
+      <node concept="2K4itw" id="7jAnD$sJRik" role="2K4itM">
+        <node concept="ZpTZE" id="7jAnD$sJRiX" role="3J4IUC">
+          <ref role="ZpTZD" node="6MOJxHINBB4" resolve="Alice" />
+        </node>
       </node>
     </node>
     <node concept="UzEYP" id="6BTUndBQAWT" role="UzTCv" />

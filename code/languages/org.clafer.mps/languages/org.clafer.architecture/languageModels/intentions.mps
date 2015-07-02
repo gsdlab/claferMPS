@@ -31,7 +31,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -337,17 +336,6 @@
               <node concept="2Sf5sV" id="$OrRLObDFo" role="2Oq$k0" />
               <node concept="3TrcHB" id="$OrRLObE71" role="2OqNvi">
                 <ref role="3TsBF5" to="ddau:6Fa64hUf2KZ" resolve="isSmart" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="73PmbN416Yj" role="3cqZAp">
-          <node concept="37vLTI" id="73PmbN417Us" role="3clFbG">
-            <node concept="10Nm6u" id="73PmbN417Yu" role="37vLTx" />
-            <node concept="2OqwBi" id="73PmbN4172L" role="37vLTJ">
-              <node concept="2Sf5sV" id="73PmbN416Yh" role="2Oq$k0" />
-              <node concept="3TrEf2" id="73PmbN417tj" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:73PmbN3CTYP" />
               </node>
             </node>
           </node>

@@ -75,13 +75,13 @@
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="6_lRZv9BROr" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="source" />
+      <property role="20kJfa" value="src" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4csP6flSWC7" resolve="AFunction" />
     </node>
     <node concept="1TJgyj" id="6_lRZv9BROy" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
+      <property role="20kJfa" value="dest" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4csP6flSWC7" resolve="AFunction" />
     </node>

@@ -33,6 +33,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -227,6 +228,29 @@
               <node concept="117lpO" id="2uk4icoRKGK" role="2Oq$k0" />
               <node concept="3TrEf2" id="2uk4icoRL2I" role="2OqNvi">
                 <ref role="3Tt5mk" to="mecy:6DpAcbqibYK" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="44ORmASVt4X" role="3cqZAp">
+          <node concept="3clFbS" id="44ORmASVt4Z" role="3clFbx">
+            <node concept="lc7rE" id="44ORmASVtXQ" role="3cqZAp">
+              <node concept="l9hG8" id="44ORmASVtY6" role="lcghm">
+                <node concept="2OqwBi" id="44ORmASVu2W" role="lb14g">
+                  <node concept="117lpO" id="44ORmASVtYQ" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="44ORmASVuEt" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mecy:3WlRoWfj_mp" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="44ORmASVtUO" role="3clFbw">
+            <node concept="10Nm6u" id="44ORmASVtWp" role="3uHU7w" />
+            <node concept="2OqwBi" id="44ORmASVth1" role="3uHU7B">
+              <node concept="117lpO" id="44ORmASVtcw" role="2Oq$k0" />
+              <node concept="3TrEf2" id="44ORmASVt$J" role="2OqNvi">
+                <ref role="3Tt5mk" to="mecy:3WlRoWfj_mp" />
               </node>
             </node>
           </node>
@@ -751,6 +775,29 @@
             <property role="lacIc" value="parent" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="44ORmASU288">
+    <ref role="WuzLi" to="mecy:3WlRoWfkT2l" resolve="ClaferInit" />
+    <node concept="11bSqf" id="44ORmASU289" role="11c4hB">
+      <node concept="3clFbS" id="44ORmASU28a" role="2VODD2">
+        <node concept="lc7rE" id="44ORmASU2Jy" role="3cqZAp">
+          <node concept="la8eA" id="44ORmASU2Ok" role="lcghm">
+            <property role="lacIc" value="= " />
+          </node>
+        </node>
+        <node concept="lc7rE" id="44ORmASVa5i" role="3cqZAp">
+          <node concept="l9hG8" id="44ORmASVa9F" role="lcghm">
+            <node concept="2OqwBi" id="44ORmASVac4" role="lb14g">
+              <node concept="117lpO" id="44ORmASVaar" role="2Oq$k0" />
+              <node concept="3TrEf2" id="44ORmASVakc" role="2OqNvi">
+                <ref role="3Tt5mk" to="mecy:3WlRoWfkT39" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="44ORmASValu" role="3cqZAp" />
       </node>
     </node>
   </node>
