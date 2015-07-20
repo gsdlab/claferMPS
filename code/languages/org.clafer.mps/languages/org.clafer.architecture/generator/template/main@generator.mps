@@ -72,7 +72,6 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
@@ -297,18 +296,11 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
-      <concept id="8860443239512128054" name="org.clafer.expr.structure.Type" flags="ng" index="3TlMgo" />
-    </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
       <concept id="6300420630909770920" name="org.clafer.core.structure.SuperClaferRef" flags="ng" index="2vxcI6" />
-      <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
-        <child id="5675649033537919505" name="targetType" index="3J4IUC" />
-      </concept>
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
         <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="6300420630909770924" name="superClafer" index="2vxcI2" />
-        <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -1002,161 +994,6 @@
             </node>
             <node concept="3clFbH" id="7jAnD$sGI4E" role="3cqZAp" />
             <node concept="3clFbH" id="7jAnD$sG43n" role="3cqZAp" />
-          </node>
-        </node>
-      </node>
-      <node concept="2K4itw" id="7jAnD$sJunI" role="2K4itM">
-        <node concept="1W57fq" id="7jAnD$sJuP$" role="lGtFl">
-          <node concept="3IZrLx" id="7jAnD$sJuPA" role="3IZSJc">
-            <node concept="3clFbS" id="7jAnD$sJuPC" role="2VODD2">
-              <node concept="3clFbF" id="7jAnD$sJuU_" role="3cqZAp">
-                <node concept="2OqwBi" id="7jAnD$sJv44" role="3clFbG">
-                  <node concept="30H73N" id="7jAnD$sJuU$" role="2Oq$k0" />
-                  <node concept="1mIQ4w" id="7jAnD$sJvMk" role="2OqNvi">
-                    <node concept="chp4Y" id="7jAnD$sJvW$" role="cj9EA">
-                      <ref role="cht4Q" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3TlMgo" id="7jAnD$sJPNU" role="3J4IUC">
-          <node concept="3_AbJx" id="7jAnD$sJRu5" role="lGtFl">
-            <node concept="3_AbJw" id="7jAnD$sJRu7" role="3_A0Ny">
-              <node concept="3clFbS" id="7jAnD$sJRu9" role="2VODD2">
-                <node concept="3cpWs8" id="7jAnD$sJRDv" role="3cqZAp">
-                  <node concept="3cpWsn" id="7jAnD$sJRDy" role="3cpWs9">
-                    <property role="TrG5h" value="device" />
-                    <node concept="3Tqbb2" id="7jAnD$sJRDu" role="1tU5fm">
-                      <ref role="ehGHo" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
-                    </node>
-                    <node concept="2ShNRf" id="7jAnD$sJRv8" role="33vP2m">
-                      <node concept="3zrR0B" id="7jAnD$sJR$p" role="2ShVmc">
-                        <node concept="3Tqbb2" id="7jAnD$sJR$r" role="3zrR0E">
-                          <ref role="ehGHo" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="7jAnD$sJX2C" role="3cqZAp">
-                  <node concept="3clFbS" id="7jAnD$sJX2D" role="3clFbx">
-                    <node concept="3clFbF" id="7jAnD$sJRUp" role="3cqZAp">
-                      <node concept="37vLTI" id="7jAnD$sJUxI" role="3clFbG">
-                        <node concept="2OqwBi" id="7jAnD$sJUIz" role="37vLTx">
-                          <node concept="1iwH7S" id="7jAnD$sJUCj" role="2Oq$k0" />
-                          <node concept="1iwH70" id="7jAnD$sJUZQ" role="2OqNvi">
-                            <ref role="1iwH77" node="4aL7gvpvqUZ" resolve="ArchElement" />
-                            <node concept="2OqwBi" id="7jAnD$sK2Xz" role="1iwH7V">
-                              <node concept="2OqwBi" id="7jAnD$sJVLA" role="2Oq$k0">
-                                <node concept="1PxgMI" id="7jAnD$sJVsd" role="2Oq$k0">
-                                  <ref role="1PxNhF" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
-                                  <node concept="30H73N" id="7jAnD$sJVdy" role="1PxMeX" />
-                                </node>
-                                <node concept="3TrEf2" id="7jAnD$sJWrc" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="ddau:$OrRLOvD_w" />
-                                </node>
-                              </node>
-                              <node concept="3TrEf2" id="7jAnD$sK3ys" role="2OqNvi">
-                                <ref role="3Tt5mk" to="ddau:6Fa64hUiAn3" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="7jAnD$sJU2I" role="37vLTJ">
-                          <node concept="1PxgMI" id="7jAnD$sJTSy" role="2Oq$k0">
-                            <ref role="1PxNhF" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
-                            <node concept="37vLTw" id="7jAnD$sJRUn" role="1PxMeX">
-                              <ref role="3cqZAo" node="7jAnD$sJRDy" resolve="device" />
-                            </node>
-                          </node>
-                          <node concept="3TrEf2" id="7jAnD$sJUoF" role="2OqNvi">
-                            <ref role="3Tt5mk" to="mecy:2uk4icoWSVa" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="7jAnD$sJYLV" role="3clFbw">
-                    <node concept="2OqwBi" id="7jAnD$sJXPs" role="2Oq$k0">
-                      <node concept="1PxgMI" id="7jAnD$sJXPt" role="2Oq$k0">
-                        <ref role="1PxNhF" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
-                        <node concept="30H73N" id="7jAnD$sJXPu" role="1PxMeX" />
-                      </node>
-                      <node concept="3TrEf2" id="7jAnD$sJXPv" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ddau:$OrRLOvD_w" />
-                      </node>
-                    </node>
-                    <node concept="3x8VRR" id="7jAnD$sJZs1" role="2OqNvi" />
-                  </node>
-                  <node concept="9aQIb" id="7jAnD$sK7Az" role="9aQIa">
-                    <node concept="3clFbS" id="7jAnD$sK7A$" role="9aQI4">
-                      <node concept="3cpWs8" id="7jAnD$sJX30" role="3cqZAp">
-                        <node concept="3cpWsn" id="7jAnD$sJX31" role="3cpWs9">
-                          <property role="TrG5h" value="idioms" />
-                          <node concept="3rvAFt" id="7jAnD$sJX32" role="1tU5fm">
-                            <node concept="3Tqbb2" id="7jAnD$sJX33" role="3rvSg0">
-                              <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
-                            </node>
-                            <node concept="17QB3L" id="7jAnD$sJX34" role="3rvQeY" />
-                          </node>
-                          <node concept="1eOMI4" id="7jAnD$sJX35" role="33vP2m">
-                            <node concept="10QFUN" id="7jAnD$sJX36" role="1eOMHV">
-                              <node concept="2OqwBi" id="7jAnD$sJX37" role="10QFUP">
-                                <node concept="1iwH7S" id="7jAnD$sJX38" role="2Oq$k0" />
-                                <node concept="2g92yo" id="7jAnD$sJX39" role="2OqNvi">
-                                  <node concept="Xl_RD" id="7jAnD$sJX3a" role="2fWi3N">
-                                    <property role="Xl_RC" value="idioms" />
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="3rvAFt" id="7jAnD$sJX3b" role="10QFUM">
-                                <node concept="3Tqbb2" id="7jAnD$sJX3c" role="3rvSg0">
-                                  <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
-                                </node>
-                                <node concept="17QB3L" id="7jAnD$sJX3d" role="3rvQeY" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="7jAnD$sK98Q" role="3cqZAp">
-                        <node concept="37vLTI" id="7jAnD$sK98S" role="3clFbG">
-                          <node concept="2OqwBi" id="7jAnD$sK992" role="37vLTJ">
-                            <node concept="1PxgMI" id="7jAnD$sK993" role="2Oq$k0">
-                              <ref role="1PxNhF" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
-                              <node concept="37vLTw" id="7jAnD$sK994" role="1PxMeX">
-                                <ref role="3cqZAo" node="7jAnD$sJRDy" resolve="device" />
-                              </node>
-                            </node>
-                            <node concept="3TrEf2" id="7jAnD$sK995" role="2OqNvi">
-                              <ref role="3Tt5mk" to="mecy:2uk4icoWSVa" />
-                            </node>
-                          </node>
-                          <node concept="3EllGN" id="7jAnD$sKaR_" role="37vLTx">
-                            <node concept="Xl_RD" id="7jAnD$sKbm0" role="3ElVtu">
-                              <property role="Xl_RC" value="Device" />
-                            </node>
-                            <node concept="37vLTw" id="7jAnD$sKa9L" role="3ElQJh">
-                              <ref role="3cqZAo" node="7jAnD$sJX31" resolve="idioms" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbH" id="7jAnD$sK8H1" role="3cqZAp" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs6" id="7jAnD$sJX3k" role="3cqZAp">
-                  <node concept="37vLTw" id="7jAnD$sKeNH" role="3cqZAk">
-                    <ref role="3cqZAo" node="7jAnD$sJRDy" resolve="device" />
-                  </node>
-                </node>
-                <node concept="3clFbH" id="7jAnD$sJWPi" role="3cqZAp" />
-              </node>
-            </node>
           </node>
         </node>
       </node>
