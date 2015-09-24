@@ -604,19 +604,6 @@
     <ref role="13h7C2" to="ddau:$OrRLOgbn5" resolve="ECU" />
     <node concept="13hLZK" id="$OrRLOgbqC" role="13h7CW">
       <node concept="3clFbS" id="$OrRLOgbqD" role="2VODD2">
-        <node concept="3clFbF" id="$OrRLOgcMz" role="3cqZAp">
-          <node concept="37vLTI" id="$OrRLOgdEW" role="3clFbG">
-            <node concept="3clFbT" id="$OrRLOgdI4" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="$OrRLOgcQV" role="37vLTJ">
-              <node concept="13iPFW" id="$OrRLOgcMy" role="2Oq$k0" />
-              <node concept="3TrcHB" id="$OrRLOg$f7" role="2OqNvi">
-                <ref role="3TsBF5" to="ddau:$OrRLOgzgn" resolve="isAlwaysSmart" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="$OrRLOgk55" role="3cqZAp">
           <node concept="37vLTI" id="$OrRLOgl2e" role="3clFbG">
             <node concept="3clFbT" id="$OrRLOglcs" role="37vLTx">

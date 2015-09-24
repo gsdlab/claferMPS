@@ -184,7 +184,10 @@
     <property role="TrG5h" value="Inline" />
     <property role="34LRSv" value="Inline" />
     <property role="MwhBj" value="${module}/icons/inline_icon.png" />
-    <ref role="1TJDcQ" node="6Fa64hUi_Wf" resolve="HDFragment" />
+    <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
+    <node concept="PrWs8" id="5mrhk6vl6s3" role="PzmwI">
+      <ref role="PrY4T" node="5mrhk6vjYl$" resolve="IDumbDevice" />
+    </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRX">
     <property role="3GE5qa" value="DeviceNodes" />
@@ -192,6 +195,9 @@
     <property role="34LRSv" value="Pin" />
     <property role="MwhBj" value="${module}/icons/pin_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
+    <node concept="PrWs8" id="5mrhk6vl6zs" role="PzmwI">
+      <ref role="PrY4T" node="5mrhk6vjYl$" resolve="IDumbDevice" />
+    </node>
   </node>
   <node concept="1TIwiD" id="72GPbqtfpB7">
     <property role="TrG5h" value="Feature" />
@@ -339,6 +345,9 @@
     <property role="TrG5h" value="ECU" />
     <property role="34LRSv" value="ECU" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
+    <node concept="PrWs8" id="5mrhk6vk3L0" role="PzmwI">
+      <ref role="PrY4T" node="5mrhk6vjYjX" resolve="ISmartDevice" />
+    </node>
   </node>
   <node concept="AxPO7" id="$OrRLOoabn">
     <property role="3GE5qa" value="EAST_ADL.WireConnector" />
@@ -534,6 +543,14 @@
     <property role="3GE5qa" value="EAST_ADL.WireConnector" />
     <property role="34LRSv" value="Analog" />
     <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
+  </node>
+  <node concept="PlHQZ" id="5mrhk6vjYjX">
+    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="TrG5h" value="ISmartDevice" />
+  </node>
+  <node concept="PlHQZ" id="5mrhk6vjYl$">
+    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="TrG5h" value="IDumbDevice" />
   </node>
 </model>
 

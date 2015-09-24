@@ -274,21 +274,23 @@
     <node concept="2SaL7w" id="$OrRLOguQN" role="2ZfVeh">
       <node concept="3clFbS" id="$OrRLOguQO" role="2VODD2">
         <node concept="3clFbF" id="$OrRLOgv3J" role="3cqZAp">
-          <node concept="1Wc70l" id="6VnofE1JwtF" role="3clFbG">
-            <node concept="3fqX7Q" id="$OrRLOgv3H" role="3uHU7B">
-              <node concept="2OqwBi" id="$OrRLOgvmd" role="3fr31v">
-                <node concept="2Sf5sV" id="$OrRLOgvex" role="2Oq$k0" />
-                <node concept="3TrcHB" id="$OrRLOhr26" role="2OqNvi">
-                  <ref role="3TsBF5" to="ddau:$OrRLOgzgn" resolve="isAlwaysSmart" />
+          <node concept="1Wc70l" id="5mrhk6vl5pX" role="3clFbG">
+            <node concept="3fqX7Q" id="5mrhk6vl48W" role="3uHU7B">
+              <node concept="2OqwBi" id="5mrhk6vl4lI" role="3fr31v">
+                <node concept="2Sf5sV" id="5mrhk6vl4eb" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="5mrhk6vl55X" role="2OqNvi">
+                  <node concept="chp4Y" id="5mrhk6vl5co" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:5mrhk6vjYjX" resolve="ISmartDevice" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3fqX7Q" id="6VnofE1JwFS" role="3uHU7w">
-              <node concept="2OqwBi" id="6VnofE1JwFT" role="3fr31v">
-                <node concept="2Sf5sV" id="6VnofE1JwFU" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="6VnofE1JwFV" role="2OqNvi">
-                  <node concept="chp4Y" id="6VnofE1JwFW" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:72GPbqt8IRX" resolve="Pin" />
+            <node concept="3fqX7Q" id="5mrhk6vl5x8" role="3uHU7w">
+              <node concept="2OqwBi" id="5mrhk6vl5x9" role="3fr31v">
+                <node concept="2Sf5sV" id="5mrhk6vl5xa" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="5mrhk6vl5xb" role="2OqNvi">
+                  <node concept="chp4Y" id="5mrhk6vl5Cf" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:5mrhk6vjYl$" resolve="IDumbDevice" />
                   </node>
                 </node>
               </node>
@@ -344,22 +346,24 @@
     </node>
     <node concept="2SaL7w" id="$OrRLOhryu" role="2ZfVeh">
       <node concept="3clFbS" id="$OrRLOhryv" role="2VODD2">
-        <node concept="3clFbF" id="$OrRLOhrJq" role="3cqZAp">
-          <node concept="1Wc70l" id="6VnofE1Jrg1" role="3clFbG">
-            <node concept="3fqX7Q" id="$OrRLOhrJo" role="3uHU7B">
-              <node concept="2OqwBi" id="$OrRLOhs1S" role="3fr31v">
-                <node concept="2Sf5sV" id="$OrRLOhrUc" role="2Oq$k0" />
-                <node concept="3TrcHB" id="$OrRLOhsPI" role="2OqNvi">
-                  <ref role="3TsBF5" to="ddau:$OrRLOgzgn" resolve="isAlwaysSmart" />
+        <node concept="3clFbF" id="5mrhk6vl5Ya" role="3cqZAp">
+          <node concept="1Wc70l" id="5mrhk6vl5Yb" role="3clFbG">
+            <node concept="3fqX7Q" id="5mrhk6vl5Yc" role="3uHU7B">
+              <node concept="2OqwBi" id="5mrhk6vl5Yd" role="3fr31v">
+                <node concept="2Sf5sV" id="5mrhk6vl5Ye" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="5mrhk6vl5Yf" role="2OqNvi">
+                  <node concept="chp4Y" id="5mrhk6vl5Yg" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:5mrhk6vjYjX" resolve="ISmartDevice" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3fqX7Q" id="6VnofE1IZXf" role="3uHU7w">
-              <node concept="2OqwBi" id="6VnofE1J0v2" role="3fr31v">
-                <node concept="2Sf5sV" id="6VnofE1J0b0" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="6VnofE1Jfch" role="2OqNvi">
-                  <node concept="chp4Y" id="6VnofE1Jfqt" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:72GPbqt8IRX" resolve="Pin" />
+            <node concept="3fqX7Q" id="5mrhk6vl5Yh" role="3uHU7w">
+              <node concept="2OqwBi" id="5mrhk6vl5Yi" role="3fr31v">
+                <node concept="2Sf5sV" id="5mrhk6vl5Yj" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="5mrhk6vl5Yk" role="2OqNvi">
+                  <node concept="chp4Y" id="5mrhk6vl5Yl" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:5mrhk6vjYl$" resolve="IDumbDevice" />
                   </node>
                 </node>
               </node>
@@ -575,22 +579,24 @@
     </node>
     <node concept="2SaL7w" id="73PmbN41jTi" role="2ZfVeh">
       <node concept="3clFbS" id="73PmbN41jTj" role="2VODD2">
-        <node concept="3clFbF" id="73PmbN41jYJ" role="3cqZAp">
-          <node concept="1Wc70l" id="6VnofE1JxUH" role="3clFbG">
-            <node concept="3fqX7Q" id="73PmbN41jYK" role="3uHU7B">
-              <node concept="2OqwBi" id="73PmbN41jYL" role="3fr31v">
-                <node concept="2Sf5sV" id="73PmbN41jYM" role="2Oq$k0" />
-                <node concept="3TrcHB" id="73PmbN41jYN" role="2OqNvi">
-                  <ref role="3TsBF5" to="ddau:$OrRLOgzgn" resolve="isAlwaysSmart" />
+        <node concept="3clFbF" id="5mrhk6vl6kk" role="3cqZAp">
+          <node concept="1Wc70l" id="5mrhk6vl6kl" role="3clFbG">
+            <node concept="3fqX7Q" id="5mrhk6vl6km" role="3uHU7B">
+              <node concept="2OqwBi" id="5mrhk6vl6kn" role="3fr31v">
+                <node concept="2Sf5sV" id="5mrhk6vl6ko" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="5mrhk6vl6kp" role="2OqNvi">
+                  <node concept="chp4Y" id="5mrhk6vl6kq" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:5mrhk6vjYjX" resolve="ISmartDevice" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3fqX7Q" id="6VnofE1Jy8U" role="3uHU7w">
-              <node concept="2OqwBi" id="6VnofE1Jy8V" role="3fr31v">
-                <node concept="2Sf5sV" id="6VnofE1Jy8W" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="6VnofE1Jy8X" role="2OqNvi">
-                  <node concept="chp4Y" id="6VnofE1Jy8Y" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:72GPbqt8IRX" resolve="Pin" />
+            <node concept="3fqX7Q" id="5mrhk6vl6kr" role="3uHU7w">
+              <node concept="2OqwBi" id="5mrhk6vl6ks" role="3fr31v">
+                <node concept="2Sf5sV" id="5mrhk6vl6kt" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="5mrhk6vl6ku" role="2OqNvi">
+                  <node concept="chp4Y" id="5mrhk6vl6kv" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:5mrhk6vjYl$" resolve="IDumbDevice" />
                   </node>
                 </node>
               </node>
