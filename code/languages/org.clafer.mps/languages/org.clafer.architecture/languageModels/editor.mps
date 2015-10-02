@@ -93,6 +93,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1182191800432" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeListFilter" flags="in" index="107P5z" />
       <concept id="1182233249301" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_childNode" flags="nn" index="12_Ws6" />
@@ -445,6 +446,7 @@
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -496,6 +498,7 @@
         <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
@@ -543,6 +546,7 @@
         </node>
         <node concept="3F0ifn" id="4IooPifTJbm" role="3EZMnx">
           <property role="3F0ifm" value="deployed to" />
+          <ref role="1ERwB7" node="4IooPifWqxb" resolve="removeFAConnectorDeployment" />
         </node>
         <node concept="3F1sOY" id="4IooPifTJbC" role="3EZMnx">
           <ref role="1NtTu8" to="ddau:4IooPifSg5Y" />
@@ -732,6 +736,7 @@
     <node concept="3EZMnI" id="$OrRLO2K82" role="2wV5jI">
       <node concept="3F0ifn" id="$OrRLO2N93" role="3EZMnx">
         <property role="3F0ifm" value="{" />
+        <ref role="1ERwB7" node="4IooPig0m2y" resolve="removeContent" />
         <node concept="pkWqt" id="$OrRLO2N94" role="pqm2j">
           <node concept="3clFbS" id="$OrRLO2N95" role="2VODD2">
             <node concept="3clFbF" id="$OrRLO2N96" role="3cqZAp">
@@ -778,6 +783,7 @@
       </node>
       <node concept="3F0ifn" id="$OrRLO2N9p" role="3EZMnx">
         <property role="3F0ifm" value="}" />
+        <ref role="1ERwB7" node="4IooPig0m2y" resolve="removeContent" />
         <node concept="pkWqt" id="$OrRLO2N9q" role="pqm2j">
           <node concept="3clFbS" id="$OrRLO2N9r" role="2VODD2">
             <node concept="3clFbF" id="$OrRLO2N9s" role="3cqZAp">
@@ -849,6 +855,10 @@
     <node concept="3EZMnI" id="$OrRLO47xi" role="2wV5jI">
       <node concept="PMmxH" id="$OrRLO47xt" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1ERwB7" node="4IooPig5MFb" resolve="removeArchElement" />
+        <node concept="VPxyj" id="4IooPig5faU" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F0A7n" id="$OrRLO47xA" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -4707,6 +4717,7 @@
         </node>
         <node concept="3F0ifn" id="2IzCCeKpWh9" role="3EZMnx">
           <property role="3F0ifm" value="deployed to" />
+          <ref role="1ERwB7" node="4IooPifVa9q" resolve="removeAFunctionDeployment" />
         </node>
         <node concept="3F1sOY" id="2IzCCeKuaFF" role="3EZMnx">
           <ref role="1NtTu8" to="ddau:2IzCCeKsUmk" />
@@ -4887,6 +4898,125 @@
         <node concept="3F0A7n" id="4IooPifSiJ4" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="4IooPifVa9q">
+    <property role="3GE5qa" value="EAST_ADL.FunctionalArchitecture" />
+    <property role="TrG5h" value="removeAFunctionDeployment" />
+    <ref role="1h_SK9" to="ddau:4csP6flSWC7" resolve="AFunction" />
+    <node concept="1hA7zw" id="4IooPifVaLg" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="4IooPifVaLh" role="1hA7z_">
+        <node concept="3clFbS" id="4IooPifVaLi" role="2VODD2">
+          <node concept="3clFbF" id="4IooPifWnUO" role="3cqZAp">
+            <node concept="37vLTI" id="4IooPifWpPZ" role="3clFbG">
+              <node concept="10Nm6u" id="4IooPifWpSo" role="37vLTx" />
+              <node concept="2OqwBi" id="4IooPifWokQ" role="37vLTJ">
+                <node concept="0IXxy" id="4IooPifWnUM" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4IooPifWpLy" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:2IzCCeKsUmk" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4IooPifWZ4e" role="3cqZAp">
+            <node concept="2OqwBi" id="4IooPifWZ4f" role="3clFbG">
+              <node concept="0IXxy" id="4IooPifWZ4g" role="2Oq$k0" />
+              <node concept="1OKiuA" id="4IooPifWZ4h" role="2OqNvi">
+                <node concept="1Q80Hx" id="4IooPifWZ4i" role="lBI5i" />
+                <node concept="2B6iha" id="4IooPifZdRH" role="lGT1i">
+                  <property role="1lyBwo" value="lastEditable" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="4IooPifWqxb">
+    <property role="3GE5qa" value="EAST_ADL.FunctionalArchitecture" />
+    <property role="TrG5h" value="removeFAConnectorDeployment" />
+    <ref role="1h_SK9" to="ddau:1QRywDjgzUJ" resolve="FAConnector" />
+    <node concept="1hA7zw" id="4IooPifWqxf" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="4IooPifWqxg" role="1hA7z_">
+        <node concept="3clFbS" id="4IooPifWqxh" role="2VODD2">
+          <node concept="3clFbF" id="4IooPifWqCE" role="3cqZAp">
+            <node concept="37vLTI" id="4IooPifWrlC" role="3clFbG">
+              <node concept="10Nm6u" id="4IooPifWrmV" role="37vLTx" />
+              <node concept="2OqwBi" id="4IooPifWqHC" role="37vLTJ">
+                <node concept="0IXxy" id="4IooPifWqCD" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4IooPifWrhi" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:4IooPifSg5Y" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4IooPifYExL" role="3cqZAp">
+            <node concept="2OqwBi" id="4IooPifYExM" role="3clFbG">
+              <node concept="0IXxy" id="4IooPifYExN" role="2Oq$k0" />
+              <node concept="1OKiuA" id="4IooPifYExO" role="2OqNvi">
+                <node concept="1Q80Hx" id="4IooPifYExP" role="lBI5i" />
+                <node concept="2B6iha" id="4IooPifZL_E" role="lGT1i">
+                  <property role="1lyBwo" value="lastEditable" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="4IooPifYEx6" role="3cqZAp" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="4IooPig0m2y">
+    <property role="TrG5h" value="removeContent" />
+    <ref role="1h_SK9" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="1hA7zw" id="4IooPig0m2A" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="4IooPig0m2B" role="1hA7z_">
+        <node concept="3clFbS" id="4IooPig0m2C" role="2VODD2">
+          <node concept="3clFbF" id="4IooPig0m6n" role="3cqZAp">
+            <node concept="2OqwBi" id="4IooPig0uMd" role="3clFbG">
+              <node concept="2OqwBi" id="4IooPig0m9V" role="2Oq$k0">
+                <node concept="0IXxy" id="4IooPig0m6m" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="4IooPig0m$x" role="2OqNvi">
+                  <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                </node>
+              </node>
+              <node concept="2Kehj3" id="4IooPig0Ads" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="4IooPig2lij" role="3cqZAp">
+            <node concept="2OqwBi" id="4IooPig2lik" role="3clFbG">
+              <node concept="0IXxy" id="4IooPig2lil" role="2Oq$k0" />
+              <node concept="1OKiuA" id="4IooPig2lim" role="2OqNvi">
+                <node concept="1Q80Hx" id="4IooPig2lin" role="lBI5i" />
+                <node concept="2B6iha" id="4IooPig2lio" role="lGT1i">
+                  <property role="1lyBwo" value="lastEditable" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="4IooPig5MFb">
+    <property role="TrG5h" value="removeArchElement" />
+    <ref role="1h_SK9" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="1hA7zw" id="4IooPig5MFf" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="4IooPig5MFg" role="1hA7z_">
+        <node concept="3clFbS" id="4IooPig5MFh" role="2VODD2">
+          <node concept="3clFbF" id="4IooPig6Ug9" role="3cqZAp">
+            <node concept="2OqwBi" id="4IooPig6UjJ" role="3clFbG">
+              <node concept="0IXxy" id="4IooPig6Ug8" role="2Oq$k0" />
+              <node concept="1PgB_6" id="4IooPig6UIh" role="2OqNvi" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

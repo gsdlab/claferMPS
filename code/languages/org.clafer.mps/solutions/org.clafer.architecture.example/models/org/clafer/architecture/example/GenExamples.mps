@@ -52,6 +52,7 @@
       </concept>
       <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
+        <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
       <concept id="7646285555068921445" name="org.clafer.architecture.structure.PowerWC" flags="ng" index="N27pm" />
@@ -67,6 +68,9 @@
       <concept id="8119098109027610109" name="org.clafer.architecture.structure.Pin" flags="ng" index="3Hzz_b" />
       <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
       <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
+      <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
+        <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
+      </concept>
       <concept id="663277625450975106" name="org.clafer.architecture.structure.RefToDevice" flags="ng" index="1Xj23Y" />
       <concept id="663277625449423679" name="org.clafer.architecture.structure.DeviceTopology" flags="ng" index="1XlcL3">
         <reference id="7541730474154304311" name="dn" index="3B7jzv" />
@@ -117,9 +121,6 @@
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
       <concept id="1664480272136207708" name="org.clafer.expr.structure.StringType" flags="ng" index="biTqx" />
-      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
-        <property id="2212975673976043696" name="value" index="2hmy$m" />
-      </concept>
       <concept id="4620120465980402700" name="org.clafer.expr.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
@@ -136,8 +137,6 @@
         <child id="8860443239512128064" name="left" index="3TlMhI" />
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
-      <concept id="8860443239512128108" name="org.clafer.expr.structure.IntType" flags="ng" index="3TlMh2" />
-      <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
       <concept id="6300420630909770920" name="org.clafer.core.structure.SuperClaferRef" flags="ng" index="2vxcI6">
@@ -202,17 +201,6 @@
           <property role="gqqTy" value="37.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
-        <node concept="UH0sd" id="44ORmASVeQf" role="2mZOl8">
-          <property role="TrG5h" value="cost" />
-          <node concept="2K4itw" id="44ORmASVeQj" role="2K4itM">
-            <node concept="3TlMh2" id="44ORmASVeQl" role="3J4IUC" />
-          </node>
-          <node concept="Kh$Oq" id="44ORmASVeQr" role="KmSwm">
-            <node concept="3TlMh9" id="44ORmASVeQt" role="Kh$P6">
-              <property role="2hmy$m" value="300" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="2mZLT$" id="2DGtvxQX4pM" role="2mZOl8">
         <property role="TrG5h" value="WinRqArbiter" />
@@ -246,10 +234,16 @@
         <ref role="2wMEbG" node="2DGtvxQX4pK" resolve="WinSwitch" />
         <ref role="2wMEbl" node="2DGtvxQX4pM" resolve="WinRqArbiter" />
         <node concept="2VclpC" id="2DGtvxQX4pR" role="lGtFl" />
+        <node concept="34unUV" id="4IooPifZdRa" role="34um8E">
+          <ref role="34ukzH" node="1Mid6XjetVI" resolve="DriverToMotor" />
+        </node>
       </node>
       <node concept="2mZLT$" id="2IzCCeKtz9k" role="2mZOl8">
         <property role="TrG5h" value="WinCtr" />
-        <node concept="gw7Q6" id="4IooPifRf5U" role="2rO0sn">
+        <node concept="3HSg1M" id="4IooPifUMiJ" role="gT77A">
+          <ref role="3HSg1l" node="wYUv7_MqUY" resolve="DevicePwr" />
+        </node>
+        <node concept="gw7Q6" id="4IooPifV6eL" role="2rO0sn">
           <ref role="gw7Q7" node="wYUv7_MqUY" resolve="DevicePwr" />
         </node>
       </node>
@@ -261,12 +255,18 @@
             <property role="TrG5h" value="smart" />
           </node>
         </node>
+        <node concept="3HSg1M" id="4IooPifV3Uu" role="gT77A">
+          <ref role="3HSg1l" node="wYUv7_MqUY" resolve="DevicePwr" />
+        </node>
       </node>
       <node concept="1eXri_" id="2DGtvxQX4pU" role="2mZOl8">
         <property role="TrG5h" value="winCmd" />
         <ref role="2wMEbl" node="2DGtvxQX4pW" resolve="WinMotor" />
         <ref role="2wMEbG" node="2IzCCeKtz9k" resolve="WinCtr" />
         <node concept="2VclpC" id="2DGtvxQX4pV" role="lGtFl" />
+        <node concept="34unUV" id="4IooPifUIxR" role="34um8E">
+          <ref role="34ukzH" node="1Mid6XjetVI" resolve="DriverToMotor" />
+        </node>
       </node>
       <node concept="2mXI97" id="2DGtvxQX4pW" role="2mZOl8">
         <property role="TrG5h" value="WinMotor" />
@@ -300,6 +300,9 @@
               </node>
               <node concept="2Zoh0E" id="4IooPifRpB2" role="1_9fRO" />
             </node>
+          </node>
+          <node concept="2vxuzR" id="4IooPig85Bt" role="2mZOl8">
+            <node concept="2Zoh0E" id="4IooPig85BE" role="3WnoGb" />
           </node>
         </node>
         <node concept="2mXI97" id="2DGtvxQX4q1" role="2mZOl8">
