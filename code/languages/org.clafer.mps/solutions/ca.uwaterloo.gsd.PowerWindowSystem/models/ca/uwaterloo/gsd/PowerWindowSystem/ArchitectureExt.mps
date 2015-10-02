@@ -3025,16 +3025,6 @@
           </node>
         </node>
       </node>
-      <node concept="2mXI97" id="7_UebHXPE8A" role="2mZOl8">
-        <property role="TrG5h" value="sdf" />
-        <node concept="gqqVs" id="7_UebHXPEaj" role="lGtFl">
-          <property role="gqqTZ" value="1038.0" />
-          <property role="gqqTW" value="84.0" />
-          <property role="gqqTX" value="130.0" />
-          <property role="gqqTy" value="36.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
     </node>
     <node concept="UzEYP" id="44ORmASWi5g" role="UzTCv" />
     <node concept="UzEYP" id="UjrLPBqXZR" role="UzTCv" />

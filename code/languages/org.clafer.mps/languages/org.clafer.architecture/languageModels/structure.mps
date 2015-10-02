@@ -91,6 +91,11 @@
     <node concept="PrWs8" id="2l5qjD1Ij0u" role="PzmwI">
       <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
     </node>
+    <node concept="1TJgyj" id="4IooPifSg5Y" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="deployedTo" />
+      <ref role="20lvS9" node="4IooPifShRJ" resolve="WireConnectorRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4csP6flSt47">
     <property role="TrG5h" value="Diagram" />
@@ -141,6 +146,12 @@
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="2l5qjD1KpOO" role="PzmwI">
       <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
+    </node>
+    <node concept="1TJgyj" id="2IzCCeKsUmk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="deployedTo" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6Fa64hUiAn2" resolve="DeviceRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
@@ -278,7 +289,7 @@
   <node concept="1TIwiD" id="6Fa64hUiAn2">
     <property role="3GE5qa" value="EAST_ADL" />
     <property role="TrG5h" value="DeviceRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="1TJgyj" id="6Fa64hUiAn3" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="device" />
@@ -335,6 +346,7 @@
   <node concept="1TIwiD" id="znlrM84VS2">
     <property role="3GE5qa" value="EAST_ADL" />
     <property role="TrG5h" value="HardwareDesignArchitecture" />
+    <property role="34LRSv" value="HardwareDesignArchitecture" />
     <ref role="1TJDcQ" node="6Fa64hUi_Wf" resolve="HDFragment" />
   </node>
   <node concept="PlHQZ" id="znlrM86iBa">
@@ -551,6 +563,17 @@
   <node concept="PlHQZ" id="5mrhk6vjYl$">
     <property role="3GE5qa" value="EAST_ADL" />
     <property role="TrG5h" value="IDumbDevice" />
+  </node>
+  <node concept="1TIwiD" id="4IooPifShRJ">
+    <property role="3GE5qa" value="EAST_ADL.WireConnector" />
+    <property role="TrG5h" value="WireConnectorRef" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="1TJgyj" id="4IooPifSiIT" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="connector" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6Fa64hUiAr6" resolve="WireConnector" />
+    </node>
   </node>
 </model>
 
