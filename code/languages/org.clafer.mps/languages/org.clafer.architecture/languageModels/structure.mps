@@ -167,7 +167,7 @@
   <node concept="1TIwiD" id="4csP6flVoj3">
     <property role="TrG5h" value="Fragment" />
     <property role="34LRSv" value="Fragment" />
-    <property role="3GE5qa" value="AutomotiveConcepts" />
+    <property role="3GE5qa" value="0NewStuff" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="znlrM8509i" role="PzmwI">
       <ref role="PrY4T" node="znlrM84$1s" resolve="IFragment" />
@@ -216,7 +216,7 @@
   <node concept="1TIwiD" id="72GPbqtfpB7">
     <property role="TrG5h" value="Feature" />
     <property role="34LRSv" value="Feature" />
-    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="3GE5qa" value="0NewStuff" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="6_lRZv9_Bmx" role="PzmwI">
       <ref role="PrY4T" node="6_lRZv9_Blz" resolve="DontShowAsBox" />
@@ -276,7 +276,7 @@
   </node>
   <node concept="1TIwiD" id="6Fa64hUfhY7">
     <property role="TrG5h" value="Architecture" />
-    <property role="3GE5qa" value="AutomotiveConcepts" />
+    <property role="3GE5qa" value="0NewStuff" />
     <property role="34LRSv" value="Architecture" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
@@ -577,6 +577,18 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6Fa64hUiAr6" resolve="WireConnector" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="12rnRvMfu2B">
+    <property role="3GE5qa" value="0NewStuff" />
+    <property role="TrG5h" value="FeatureModel" />
+    <property role="34LRSv" value="FeatureModel" />
+    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+  </node>
+  <node concept="1TIwiD" id="12rnRvMhgdY">
+    <property role="TrG5h" value="System" />
+    <property role="3GE5qa" value="0NewStuff" />
+    <property role="34LRSv" value="System" />
+    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
 </model>
 

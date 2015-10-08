@@ -2723,7 +2723,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4jIombY8P8I">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="0NewStuff" />
     <ref role="1XX52x" to="ddau:6Fa64hUfhY7" resolve="Architecture" />
     <node concept="PMmxH" id="4jIombY93HT" role="2wV5jI">
       <ref role="PMmxG" node="4jIombY8S7J" resolve="ArchDiagram" />
@@ -3747,7 +3747,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4jIombYkkvW">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="0NewStuff" />
     <ref role="1XX52x" to="ddau:4csP6flVoj3" resolve="Fragment" />
     <node concept="PMmxH" id="4jIombYkkw0" role="2wV5jI">
       <ref role="PMmxG" node="4jIombYbtHf" resolve="Fragment" />
@@ -4680,7 +4680,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2LtTwkX0Cos">
-    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="3GE5qa" value="0NewStuff" />
     <ref role="1XX52x" to="ddau:72GPbqtfpB7" resolve="Feature" />
     <node concept="3EZMnI" id="2LtTwkX0D6N" role="2wV5jI">
       <node concept="PMmxH" id="2LtTwkX0D6O" role="3EZMnx">
@@ -5019,6 +5019,26 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="12rnRvMfueW">
+    <property role="3GE5qa" value="0NewStuff" />
+    <ref role="1XX52x" to="ddau:12rnRvMfu2B" resolve="FeatureModel" />
+    <node concept="PMmxH" id="12rnRvMfueY" role="2wV5jI">
+      <ref role="PMmxG" node="4jIombY8S7J" resolve="ArchDiagram" />
+    </node>
+    <node concept="2aJ2om" id="12rnRvMfuf0" role="CpUAK">
+      <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7DuSdC$ieEs">
+    <property role="3GE5qa" value="0NewStuff" />
+    <ref role="1XX52x" to="ddau:12rnRvMhgdY" resolve="System" />
+    <node concept="PMmxH" id="7DuSdC$i_z2" role="2wV5jI">
+      <ref role="PMmxG" node="4jIombY8S7J" resolve="ArchDiagram" />
+    </node>
+    <node concept="2aJ2om" id="7DuSdC$i_z0" role="CpUAK">
+      <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
   </node>
 </model>

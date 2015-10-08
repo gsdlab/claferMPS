@@ -121,9 +121,6 @@
       <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
-      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
-        <property id="2212975673976043696" name="value" index="2hmy$m" />
-      </concept>
       <concept id="4620120465980402700" name="org.clafer.expr.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
@@ -138,8 +135,6 @@
         <child id="8860443239512128064" name="left" index="3TlMhI" />
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
-      <concept id="8860443239512128108" name="org.clafer.expr.structure.IntType" flags="ng" index="3TlMh2" />
-      <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
       <concept id="6300420630909770920" name="org.clafer.core.structure.SuperClaferRef" flags="ng" index="2vxcI6">
@@ -152,9 +147,6 @@
         <child id="5675649033537919505" name="targetType" index="3J4IUC" />
       </concept>
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
-      <concept id="4545783005407580309" name="org.clafer.core.structure.ClaferInit" flags="ng" index="Kh$Oq">
-        <child id="4545783005407580361" name="value" index="Kh$P6" />
-      </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
         <child id="204078314067497532" name="imports" index="UzTCp" />
@@ -166,7 +158,6 @@
         <child id="6300420630909770924" name="superClafer" index="2vxcI2" />
         <child id="6300420630910100710" name="explicitCard" index="2vBZf8" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
-        <child id="4545783005407237529" name="initializer" index="KmSwm" />
       </concept>
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
@@ -1564,17 +1555,6 @@
           <property role="gqqTX" value="170.0" />
           <property role="gqqTy" value="37.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-        <node concept="UH0sd" id="44ORmASWhxb" role="2mZOl8">
-          <property role="TrG5h" value="cost" />
-          <node concept="2K4itw" id="44ORmASWhxf" role="2K4itM">
-            <node concept="3TlMh2" id="44ORmASWhxh" role="3J4IUC" />
-          </node>
-          <node concept="Kh$Oq" id="44ORmASWhxo" role="KmSwm">
-            <node concept="3TlMh9" id="44ORmASWhxu" role="Kh$P6">
-              <property role="2hmy$m" value="300" />
-            </node>
-          </node>
         </node>
       </node>
       <node concept="2mZLT$" id="72GPbqtfkDE" role="2mZOl8">
