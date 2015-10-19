@@ -1042,7 +1042,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="$OrRLOgbog">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <ref role="13h7C2" to="ddau:$OrRLOgbn5" resolve="ECU" />
     <node concept="13hLZK" id="$OrRLOgbqC" role="13h7CW">
       <node concept="3clFbS" id="$OrRLOgbqD" role="2VODD2">
@@ -1076,7 +1076,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="73PmbN3Et36">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <ref role="13h7C2" to="ddau:1HSD30jAnuR" resolve="Smartness" />
     <node concept="13i0hz" id="73PmbN40F3c" role="13h7CS">
       <property role="TrG5h" value="getIconPath" />

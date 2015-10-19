@@ -97,7 +97,7 @@
     <node concept="1TJgyj" id="4IooPifSg5Y" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="deployedTo" />
-      <ref role="20lvS9" node="4IooPifShRJ" resolve="WireConnectorRef" />
+      <ref role="20lvS9" node="4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flSt47">
@@ -163,6 +163,9 @@
     <property role="34LRSv" value="Functional Device" />
     <property role="MwhBj" value="${module}/icons/gear.png" />
     <ref role="1TJDcQ" node="4csP6flSWC7" resolve="AFunction" />
+    <node concept="PrWs8" id="5UcaHciRxOn" role="PzmwI">
+      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4csP6flVoj3">
     <property role="TrG5h" value="Fragment" />
@@ -184,21 +187,21 @@
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8AHL">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <property role="TrG5h" value="Switch" />
     <property role="34LRSv" value="Switch" />
     <property role="MwhBj" value="${module}/icons/switch_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRV">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <property role="TrG5h" value="Motor" />
     <property role="34LRSv" value="Motor" />
     <property role="MwhBj" value="${module}/icons/motor_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRW">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <property role="TrG5h" value="Inline" />
     <property role="34LRSv" value="Inline" />
     <property role="MwhBj" value="${module}/icons/inline_icon.png" />
@@ -208,7 +211,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRX">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <property role="TrG5h" value="Pin" />
     <property role="34LRSv" value="Pin" />
     <property role="MwhBj" value="${module}/icons/pin_icon.png" />
@@ -239,19 +242,19 @@
   <node concept="1TIwiD" id="6Fa64hUc88i">
     <property role="TrG5h" value="Deployment" />
     <property role="34LRSv" value="Deployment" />
-    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="3GE5qa" value="0NewStuff" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="6Fa64hUppo2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fa" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flSzrJ" resolve="FAFragment" />
+      <ref role="20lvS9" node="7DuSdC$vZ6L" resolve="FAArchitecture" />
     </node>
     <node concept="1TJgyj" id="6Fa64hUppo4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="dn" />
+      <property role="20kJfa" value="ht" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNodes" />
+      <ref role="20lvS9" node="7DuSdC$$2dR" resolve="HardwareTopology" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Fa64hUc88J">
@@ -360,7 +363,7 @@
     <property role="TrG5h" value="IDontHaveChildrenNodes" />
   </node>
   <node concept="1TIwiD" id="$OrRLOgbn5">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <property role="TrG5h" value="ECU" />
     <property role="34LRSv" value="ECU" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
@@ -402,7 +405,7 @@
     <property role="TrG5h" value="IHaveNotSuperNode" />
   </node>
   <node concept="1TIwiD" id="$OrRLOu4Y2">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <property role="TrG5h" value="RefToDevice" />
     <property role="34LRSv" value="Reference" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
@@ -434,7 +437,7 @@
     <property role="TrG5h" value="DontShowAsBox" />
   </node>
   <node concept="1TIwiD" id="1HSD30jAnuR">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <property role="TrG5h" value="Smartness" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
@@ -599,7 +602,13 @@
     <property role="TrG5h" value="FAArchitecture" />
     <property role="3GE5qa" value="0NewStuff.FunctionalArchitecture" />
     <property role="34LRSv" value="FAArchitecture" />
-    <ref role="1TJDcQ" node="4csP6flSzrJ" resolve="FAFragment" />
+    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <node concept="PrWs8" id="5UcaHciOGUw" role="PzmwI">
+      <ref role="PrY4T" node="znlrM84$1s" resolve="IFragment" />
+    </node>
+    <node concept="PrWs8" id="5UcaHciOGWM" role="PzmwI">
+      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7DuSdC$x1MY">
     <property role="3GE5qa" value="0NewStuff.DeviceNodes" />
@@ -748,6 +757,17 @@
     <node concept="M4N5e" id="3URpncZ4sjP" role="M5hS2">
       <property role="1uS6qo" value="FlexRay" />
       <property role="1uS6qv" value="FlexRay" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4xcaXO6V3hL">
+    <property role="3GE5qa" value="0NewStuff.Wiring.CommunicationTopology" />
+    <property role="TrG5h" value="LogicalDataConnectorRef" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="1TJgyj" id="4xcaXO6V8Mr" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="connector" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="19aTRzkPSlW" resolve="LogicalDataConnector" />
     </node>
   </node>
 </model>

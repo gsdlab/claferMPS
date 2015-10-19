@@ -690,7 +690,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6Fa64hUoamX">
-    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="3GE5qa" value="0NewStuff" />
     <ref role="1XX52x" to="ddau:6Fa64hUc88i" resolve="Deployment" />
     <node concept="3EZMnI" id="6Fa64hUoaAm" role="2wV5jI">
       <node concept="PMmxH" id="$OrRLO48Gq" role="3EZMnx">
@@ -703,6 +703,7 @@
         <property role="3F0ifm" value="of" />
       </node>
       <node concept="1iCGBv" id="6Fa64hUpqq_" role="3EZMnx">
+        <property role="1$x2rV" value="no FA Architecture" />
         <ref role="1NtTu8" to="ddau:6Fa64hUppo2" />
         <node concept="1sVBvm" id="6Fa64hUpqqB" role="1sWHZn">
           <node concept="3F0A7n" id="6Fa64hUpqBu" role="2wV5jI">
@@ -715,6 +716,7 @@
         <property role="3F0ifm" value="to" />
       </node>
       <node concept="1iCGBv" id="6Fa64hUpr17" role="3EZMnx">
+        <property role="1$x2rV" value="no Hardware Topology" />
         <ref role="1NtTu8" to="ddau:6Fa64hUppo4" />
         <node concept="1sVBvm" id="6Fa64hUpr19" role="1sWHZn">
           <node concept="3F0A7n" id="6Fa64hUpre2" role="2wV5jI">
@@ -1525,8 +1527,8 @@
                 <node concept="1Pxb5l" id="4fqVouxtdPg" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="4fqVouxteQF" role="2OqNvi">
                   <node concept="1xMEDy" id="4fqVouxteQH" role="1xVPHs">
-                    <node concept="chp4Y" id="4fqVouxteXh" role="ri$Ld">
-                      <ref role="cht4Q" to="ddau:4csP6flSzrJ" resolve="FAFragment" />
+                    <node concept="chp4Y" id="5UcaHciRxaT" role="ri$Ld">
+                      <ref role="cht4Q" to="ddau:7DuSdC$vZ6L" resolve="FAArchitecture" />
                     </node>
                   </node>
                 </node>
@@ -1540,8 +1542,8 @@
                 </node>
                 <node concept="2Xjw5R" id="4fqVouxtdqP" role="2OqNvi">
                   <node concept="1xMEDy" id="4fqVouxtdqR" role="1xVPHs">
-                    <node concept="chp4Y" id="4fqVouxtdxz" role="ri$Ld">
-                      <ref role="cht4Q" to="ddau:4csP6flSzrJ" resolve="FAFragment" />
+                    <node concept="chp4Y" id="5UcaHciOF$X" role="ri$Ld">
+                      <ref role="cht4Q" to="ddau:7DuSdC$vZ6L" resolve="FAArchitecture" />
                     </node>
                   </node>
                 </node>
@@ -1552,8 +1554,8 @@
                 <node concept="1Pxb5l" id="7397_S483Yo" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="7397_S48fgQ" role="2OqNvi">
                   <node concept="1xMEDy" id="7397_S48fgS" role="1xVPHs">
-                    <node concept="chp4Y" id="7397_S48fh_" role="ri$Ld">
-                      <ref role="cht4Q" to="ddau:4csP6flSzrJ" resolve="FAFragment" />
+                    <node concept="chp4Y" id="5UcaHciO_ym" role="ri$Ld">
+                      <ref role="cht4Q" to="ddau:7DuSdC$vZ6L" resolve="FAArchitecture" />
                     </node>
                   </node>
                 </node>
@@ -1960,7 +1962,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="58TXiBDBm_V">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <ref role="1XX52x" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
     <node concept="3EZMnI" id="58TXiBDBqel" role="2wV5jI">
       <node concept="PMmxH" id="58TXiBDBqem" role="3EZMnx">
@@ -2645,7 +2647,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="73PmbN3GoPt">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <ref role="1XX52x" to="ddau:1HSD30jAnuR" resolve="Smartness" />
     <node concept="2aJ2om" id="73PmbN3GoXi" role="CpUAK">
       <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
@@ -4540,8 +4542,8 @@
                 <node concept="1Pxb5l" id="6Ct43dp0VzA" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="6Ct43dp0VzB" role="2OqNvi">
                   <node concept="1xMEDy" id="6Ct43dp0VzC" role="1xVPHs">
-                    <node concept="chp4Y" id="6Ct43dp0VzD" role="ri$Ld">
-                      <ref role="cht4Q" to="ddau:4csP6flSzrJ" resolve="FAFragment" />
+                    <node concept="chp4Y" id="5UcaHciOGQK" role="ri$Ld">
+                      <ref role="cht4Q" to="ddau:7DuSdC$vZ6L" resolve="FAArchitecture" />
                     </node>
                   </node>
                 </node>
@@ -5045,7 +5047,7 @@
     <property role="3GE5qa" value="0NewStuff.FunctionalArchitecture" />
     <ref role="1XX52x" to="ddau:7DuSdC$vZ6L" resolve="FAArchitecture" />
     <node concept="PMmxH" id="7DuSdC$w0f5" role="2wV5jI">
-      <ref role="PMmxG" node="4jIombY8S7J" resolve="ArchDiagram" />
+      <ref role="PMmxG" node="4jIombYbtHf" resolve="Fragment" />
     </node>
     <node concept="2aJ2om" id="7DuSdC$w0f3" role="CpUAK">
       <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
@@ -5150,6 +5152,19 @@
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
       </node>
       <node concept="l2Vlx" id="3URpncZ4$lD" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4xcaXO6V8P6">
+    <property role="3GE5qa" value="0NewStuff.Wiring.CommunicationTopology" />
+    <ref role="1XX52x" to="ddau:4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
+    <node concept="1iCGBv" id="4xcaXO6VceH" role="2wV5jI">
+      <ref role="1NtTu8" to="ddau:4xcaXO6V8Mr" />
+      <node concept="1sVBvm" id="4xcaXO6VceJ" role="1sWHZn">
+        <node concept="3F0A7n" id="4xcaXO6VceQ" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

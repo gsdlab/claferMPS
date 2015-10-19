@@ -355,7 +355,7 @@
   </registry>
   <node concept="bUwia" id="4Z9rElrodEg">
     <property role="TrG5h" value="main" />
-    <property role="3GE5qa" value="0NewStuff.DeviceNodes" />
+    <property role="3GE5qa" value="0NewStuff" />
     <node concept="3aamgX" id="yF2aJfSi2k" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ddau:4csP6flST3m" resolve="ArchElement" />
@@ -1211,7 +1211,7 @@
   </node>
   <node concept="jVnub" id="yF2aJfTHao">
     <property role="TrG5h" value="ArchAttributesSwitch" />
-    <property role="3GE5qa" value="0NewStuff.FunctionalArchitecture" />
+    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
     <node concept="1N15co" id="yF2aJfTN9X" role="1s_3oS">
       <property role="TrG5h" value="parentNode" />
       <node concept="3Tqbb2" id="yF2aJfTPUO" role="1N15GL">
