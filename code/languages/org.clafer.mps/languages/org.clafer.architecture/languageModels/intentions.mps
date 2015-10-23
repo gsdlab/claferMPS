@@ -214,7 +214,7 @@
   </node>
   <node concept="2S6QgY" id="6Fa64hUf62D">
     <property role="TrG5h" value="makeSmart" />
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ddau:6Fa64hUc88J" resolve="Device" />
     <node concept="2S6ZIM" id="6Fa64hUf62E" role="2ZfVej">
@@ -376,7 +376,7 @@
     </node>
   </node>
   <node concept="3dkpOd" id="$OrRLOqTHW">
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <property role="TrG5h" value="addWireConnectorType" />
     <ref role="2ZfgGC" to="ddau:6Fa64hUiAr6" resolve="WireConnector" />
     <node concept="1jPt1T" id="$OrRLOqTHX" role="2ZfVej">
@@ -498,7 +498,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="$OrRLOv_53">
-    <property role="3GE5qa" value="0NewStuff.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="TrG5h" value="addRefToDevice" />
     <ref role="2ZfgGC" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
     <node concept="2S6ZIM" id="$OrRLOv_54" role="2ZfVej">
@@ -639,7 +639,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5OLu9WxUqZr">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <property role="TrG5h" value="AddGateway" />
     <ref role="2ZfgGC" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
     <node concept="2S6ZIM" id="5OLu9WxUqZs" role="2ZfVej">

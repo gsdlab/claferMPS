@@ -933,7 +933,7 @@
     </node>
   </node>
   <node concept="3UOs0u" id="2IzCCeKqIDA">
-    <property role="3GE5qa" value="EAST_ADL" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="AddDeployment" />
     <node concept="3UNGvq" id="4IooPifUMmz" role="3UOs0v">
       <ref role="3UNGvu" to="ddau:72GPbqtjtj4" resolve="SuperArchElRef" />
@@ -1082,7 +1082,7 @@
     </node>
   </node>
   <node concept="3UOs0u" id="5OLu9WxIM_Q">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <property role="TrG5h" value="makeCommaOperator" />
   </node>
 </model>

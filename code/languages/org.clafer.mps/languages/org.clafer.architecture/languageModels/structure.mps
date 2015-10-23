@@ -72,7 +72,7 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="FAConnector" />
-    <property role="3GE5qa" value="New.FunctionalArchitecture" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="6_lRZv9BROr" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -127,7 +127,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flSWC7">
-    <property role="3GE5qa" value="New.FunctionalArchitecture" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="AFunction" />
     <property role="34LRSv" value="Analysis Function" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
@@ -142,7 +142,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
-    <property role="3GE5qa" value="New.FunctionalArchitecture" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="FDevice" />
     <property role="34LRSv" value="Functional Device" />
     <property role="MwhBj" value="${module}/icons/gear.png" />
@@ -153,7 +153,7 @@
   </node>
   <node concept="1TIwiD" id="4csP6fm34cz">
     <property role="TrG5h" value="DeviceNodes" />
-    <property role="3GE5qa" value="New.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="34LRSv" value="Device Nodes" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyi" id="7DuSdC$_H4S" role="1TKVEl">
@@ -162,21 +162,21 @@
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8AHL">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="TrG5h" value="Switch" />
     <property role="34LRSv" value="Switch" />
     <property role="MwhBj" value="${module}/icons/switch_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRV">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="TrG5h" value="Motor" />
     <property role="34LRSv" value="Motor" />
     <property role="MwhBj" value="${module}/icons/motor_icon.png" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRW">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="TrG5h" value="Inline" />
     <property role="34LRSv" value="Inline" />
     <property role="MwhBj" value="${module}/icons/inline_icon.png" />
@@ -186,7 +186,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRX">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="TrG5h" value="Pin" />
     <property role="34LRSv" value="Pin" />
     <property role="MwhBj" value="${module}/icons/pin_icon.png" />
@@ -198,7 +198,7 @@
   <node concept="1TIwiD" id="72GPbqtfpB7">
     <property role="TrG5h" value="Feature" />
     <property role="34LRSv" value="Feature" />
-    <property role="3GE5qa" value="New.FeatureModel" />
+    <property role="3GE5qa" value="FeatureModel" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="6_lRZv9_Bmx" role="PzmwI">
       <ref role="PrY4T" node="6_lRZv9_Blz" resolve="DontShowAsBox" />
@@ -235,7 +235,7 @@
   <node concept="1TIwiD" id="6Fa64hUc88J">
     <property role="TrG5h" value="Device" />
     <property role="34LRSv" value="Device" />
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNodes" />
     <node concept="1TJgyi" id="6Fa64hUf2KZ" role="1TKVEl">
       <property role="TrG5h" value="isSmart" />
@@ -261,9 +261,12 @@
     <property role="3GE5qa" value="" />
     <property role="34LRSv" value="Architecture" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <node concept="PrWs8" id="3KrTRUBR2G1" role="PzmwI">
+      <ref role="PrY4T" node="znlrM84$1s" resolve="IFragment" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Fa64hUiAr6">
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <property role="TrG5h" value="WireConnector" />
     <property role="34LRSv" value="Wire Connector" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
@@ -305,7 +308,7 @@
     <property role="3GE5qa" value="Interfaces" />
   </node>
   <node concept="1TIwiD" id="$OrRLOgbn5">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="TrG5h" value="ECU" />
     <property role="34LRSv" value="ECU" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
@@ -314,7 +317,7 @@
     </node>
   </node>
   <node concept="AxPO7" id="$OrRLOoabn">
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <property role="TrG5h" value="WireConnectorTypeEnum" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
@@ -336,7 +339,7 @@
     <property role="3GE5qa" value="Interfaces" />
   </node>
   <node concept="1TIwiD" id="$OrRLOu4Y2">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="TrG5h" value="RefToDevice" />
     <property role="34LRSv" value="Reference" />
     <ref role="1TJDcQ" node="6Fa64hUc88J" resolve="Device" />
@@ -354,7 +357,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="$OrRLOvZKp">
-    <property role="3GE5qa" value="New.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="DeviceNodesRef" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="1TJgyj" id="$OrRLOwoAf" role="1TKVEi">
@@ -369,7 +372,7 @@
     <property role="3GE5qa" value="Interfaces" />
   </node>
   <node concept="1TIwiD" id="1HSD30jAnuR">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <property role="TrG5h" value="Smartness" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
@@ -471,18 +474,18 @@
     </node>
   </node>
   <node concept="PlHQZ" id="2l5qjD1IiLz">
-    <property role="3GE5qa" value="New.FunctionalArchitecture" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="IFunctionalAnalysisNode" />
   </node>
   <node concept="1TIwiD" id="6Ct43dp5mp_">
     <property role="TrG5h" value="PowerWC" />
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <property role="MwhBj" value="${module}/icons/powerWireConnector.png" />
     <property role="34LRSv" value="power" />
     <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
   </node>
   <node concept="1TIwiD" id="6Ct43dp5mD9">
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <property role="TrG5h" value="WireConnectorType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -490,13 +493,13 @@
   </node>
   <node concept="1TIwiD" id="6Ct43dp5mDa">
     <property role="TrG5h" value="DiscreteWC" />
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <property role="34LRSv" value="discrete" />
     <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
   </node>
   <node concept="1TIwiD" id="6Ct43dp5mDb">
     <property role="TrG5h" value="AnalogWC" />
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="WireConnector" />
     <property role="34LRSv" value="Analog" />
     <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
   </node>
@@ -509,7 +512,7 @@
     <property role="TrG5h" value="IDumbDevice" />
   </node>
   <node concept="1TIwiD" id="4IooPifShRJ">
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <property role="TrG5h" value="WireConnectorRef" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="1TJgyj" id="4IooPifSiIT" role="1TKVEi">
@@ -520,7 +523,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="12rnRvMfu2B">
-    <property role="3GE5qa" value="New.FeatureModel" />
+    <property role="3GE5qa" value="FeatureModel" />
     <property role="TrG5h" value="FeatureModel" />
     <property role="34LRSv" value="Feature Model" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
@@ -533,7 +536,7 @@
   </node>
   <node concept="1TIwiD" id="7DuSdC$vZ6L">
     <property role="TrG5h" value="FAArchitecture" />
-    <property role="3GE5qa" value="New.FunctionalArchitecture" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="34LRSv" value="FAArchitecture" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="5UcaHciOGUw" role="PzmwI">
@@ -551,12 +554,12 @@
   </node>
   <node concept="1TIwiD" id="7DuSdC$$3Vj">
     <property role="TrG5h" value="DeviceNodeTopology" />
-    <property role="3GE5qa" value="New.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="34LRSv" value="Device Node Topology" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
   <node concept="AxPO7" id="7DuSdC$_GOc">
-    <property role="3GE5qa" value="New.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="DeviceNodeTypeEnum" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
@@ -574,7 +577,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPQU0">
-    <property role="3GE5qa" value="New.Wiring" />
+    <property role="3GE5qa" value="Wiring" />
     <property role="TrG5h" value="HardwareConnector" />
     <property role="34LRSv" value="Hardware Connector" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
@@ -586,13 +589,13 @@
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSlW">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <property role="TrG5h" value="DataConnector" />
     <property role="34LRSv" value="Data Connector" />
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSmo">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <property role="TrG5h" value="DiscreteWireConnector" />
     <property role="34LRSv" value="Discrete Wire Connector" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="DataConnector" />
@@ -604,7 +607,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSoJ">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <property role="TrG5h" value="BusConnector" />
     <property role="34LRSv" value="BusConnector" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="DataConnector" />
@@ -621,55 +624,55 @@
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSt3">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <property role="TrG5h" value="CommunicationTopology" />
     <property role="34LRSv" value="Communication Topology" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSvs">
-    <property role="3GE5qa" value="New.Wiring.PowerTopology" />
+    <property role="3GE5qa" value="Wiring.PowerTopology" />
     <property role="TrG5h" value="PowerTopology" />
     <property role="34LRSv" value="Power Topology" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSHp">
-    <property role="3GE5qa" value="New.Wiring.PowerTopology" />
+    <property role="3GE5qa" value="Wiring.PowerTopology" />
     <property role="TrG5h" value="LoadPowerConnector" />
     <property role="34LRSv" value="Load Power Connector" />
     <ref role="1TJDcQ" node="19aTRzkPTSF" resolve="PowerConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSVo">
-    <property role="3GE5qa" value="New.Wiring.PowerTopology" />
+    <property role="3GE5qa" value="Wiring.PowerTopology" />
     <property role="TrG5h" value="DevicePowerConnector" />
     <property role="34LRSv" value="Device Power Connector" />
     <ref role="1TJDcQ" node="19aTRzkPTSF" resolve="PowerConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPTSF">
-    <property role="3GE5qa" value="New.Wiring.PowerTopology" />
+    <property role="3GE5qa" value="Wiring.PowerTopology" />
     <property role="TrG5h" value="PowerConnector" />
     <property role="34LRSv" value="Power Connector" />
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPTWb">
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <property role="TrG5h" value="Implementation" />
     <property role="34LRSv" value="Implementation" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPTWc">
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <property role="TrG5h" value="CommunicationImpl" />
     <property role="34LRSv" value="CommunicationImpl" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPTWd">
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <property role="TrG5h" value="PhysicalWire" />
     <property role="34LRSv" value="Physical Wire" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPTWe">
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <property role="TrG5h" value="PhysicalBus" />
     <property role="34LRSv" value="Physical Bus" />
     <ref role="1TJDcQ" node="19aTRzkPTWd" resolve="PhysicalWire" />
@@ -679,7 +682,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPTWf">
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <property role="TrG5h" value="DiscreteWire" />
     <property role="34LRSv" value="Discrete Wire" />
     <ref role="1TJDcQ" node="19aTRzkPTWd" resolve="PhysicalWire" />
@@ -703,7 +706,7 @@
     </node>
   </node>
   <node concept="AxPO7" id="3URpncZ4sjK">
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <property role="TrG5h" value="PhysicalBusEnum" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
@@ -721,7 +724,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4xcaXO6V3hL">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <property role="TrG5h" value="LogicalDataConnectorRef" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="1TJgyj" id="4xcaXO6V8Mr" role="1TKVEi">
@@ -732,7 +735,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6Fa64hUiAn2">
-    <property role="3GE5qa" value="New.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="DeviceRef" />
     <ref role="1TJDcQ" node="7DuSdC$x1MY" resolve="DNRef" />
     <node concept="1TJgyj" id="6Fa64hUiAn3" role="1TKVEi">
@@ -743,7 +746,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7DuSdC$x1MY">
-    <property role="3GE5qa" value="New.DeviceNodes" />
+    <property role="3GE5qa" value="DeviceNodes" />
     <property role="TrG5h" value="DNRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />

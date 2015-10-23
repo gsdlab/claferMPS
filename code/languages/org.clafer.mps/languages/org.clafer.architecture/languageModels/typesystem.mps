@@ -164,7 +164,7 @@
   </registry>
   <node concept="18kY7G" id="4z6NPpC6FtS">
     <property role="TrG5h" value="check_DataConnector" />
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <node concept="3clFbS" id="4z6NPpC6FtT" role="18ibNy">
       <node concept="3clFbJ" id="3KrTRUBI6UF" role="3cqZAp">
         <node concept="3clFbS" id="3KrTRUBI6UH" role="3clFbx">
@@ -275,7 +275,7 @@
   </node>
   <node concept="18kY7G" id="4B66Yaq4WF7">
     <property role="TrG5h" value="check_PhysicalBus" />
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <node concept="3clFbS" id="4B66Yaq4WF8" role="18ibNy">
       <node concept="3clFbJ" id="3KrTRUBIdOz" role="3cqZAp">
         <node concept="3clFbS" id="3KrTRUBIdO_" role="3clFbx">
@@ -364,7 +364,7 @@
   </node>
   <node concept="18kY7G" id="4B66Yaq6ii6">
     <property role="TrG5h" value="check_DiscreteWire" />
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <node concept="3clFbS" id="4B66Yaq6ii7" role="18ibNy">
       <node concept="2Mj0R9" id="4B66Yaq6iH$" role="3cqZAp">
         <node concept="Xl_RD" id="4B66Yaq6iH_" role="2MkJ7o">
@@ -438,7 +438,7 @@
   </node>
   <node concept="18kY7G" id="4xcaXO71KUL">
     <property role="TrG5h" value="check_FAConnector" />
-    <property role="3GE5qa" value="New.FunctionalArchitecture" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
     <node concept="3clFbS" id="4xcaXO71KUM" role="18ibNy">
       <node concept="3cpWs8" id="4xcaXO71L3P" role="3cqZAp">
         <node concept="3cpWsn" id="4xcaXO71L3S" role="3cpWs9">

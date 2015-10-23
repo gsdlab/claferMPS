@@ -1052,7 +1052,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="$OrRLOgbog">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <ref role="13h7C2" to="ddau:$OrRLOgbn5" resolve="ECU" />
     <node concept="13hLZK" id="$OrRLOgbqC" role="13h7CW">
       <node concept="3clFbS" id="$OrRLOgbqD" role="2VODD2">
@@ -1086,7 +1086,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="73PmbN3Et36">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <ref role="13h7C2" to="ddau:1HSD30jAnuR" resolve="Smartness" />
     <node concept="13i0hz" id="73PmbN40F3c" role="13h7CS">
       <property role="TrG5h" value="getIconPath" />
@@ -1157,7 +1157,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="73PmbN3Z52g">
-    <property role="3GE5qa" value="New.AutomobileConcepts" />
+    <property role="3GE5qa" value="AutomobileConcepts" />
     <ref role="13h7C2" to="ddau:6Fa64hUc88J" resolve="Device" />
     <node concept="13i0hz" id="1Mid6XjgVeS" role="13h7CS">
       <property role="TrG5h" value="getClaferScope" />
@@ -1224,7 +1224,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6Ct43dp5uz5">
-    <property role="3GE5qa" value="New.AutomobileConcepts.WireConnector" />
+    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <ref role="13h7C2" to="ddau:6Fa64hUiAr6" resolve="WireConnector" />
     <node concept="13hLZK" id="6Ct43dp5uz6" role="13h7CW">
       <node concept="3clFbS" id="6Ct43dp5uz7" role="2VODD2">
@@ -1245,28 +1245,28 @@
     </node>
   </node>
   <node concept="13h7C7" id="5OLu9WxucWp">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <ref role="13h7C2" to="ddau:4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
     <node concept="13hLZK" id="5OLu9WxucWq" role="13h7CW">
       <node concept="3clFbS" id="5OLu9WxucWr" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="4B66Yaq2KPL">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
-    <ref role="13h7C2" to="ddau:19aTRzkPSlW" resolve="LogicalDataConnector" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <ref role="13h7C2" to="ddau:19aTRzkPSlW" resolve="DataConnector" />
     <node concept="13hLZK" id="4B66Yaq2KPM" role="13h7CW">
       <node concept="3clFbS" id="4B66Yaq2KPN" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="4B66Yaq2MK7">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
-    <ref role="13h7C2" to="ddau:19aTRzkPSoJ" resolve="LogicalBus" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <ref role="13h7C2" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
     <node concept="13hLZK" id="4B66Yaq2MK8" role="13h7CW">
       <node concept="3clFbS" id="4B66Yaq2MK9" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="4B66Yaq3XHA">
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <ref role="13h7C2" to="ddau:19aTRzkPTWe" resolve="PhysicalBus" />
     <node concept="13i0hz" id="4B66Yaq4Tme" role="13h7CS">
       <property role="TrG5h" value="realize" />
@@ -1436,7 +1436,7 @@
       <node concept="37vLTG" id="4B66Yaq2Uni" role="3clF46">
         <property role="TrG5h" value="rNode" />
         <node concept="3Tqbb2" id="4B66Yaq2Unh" role="1tU5fm">
-          <ref role="ehGHo" to="ddau:19aTRzkPSoJ" resolve="LogicalBus" />
+          <ref role="ehGHo" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
         </node>
       </node>
       <node concept="10P_77" id="4B66Yaq4Tn9" role="3clF45" />
@@ -1568,14 +1568,14 @@
     </node>
   </node>
   <node concept="13h7C7" id="4B66Yaq5Ul5">
-    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
-    <ref role="13h7C2" to="ddau:19aTRzkPSmo" resolve="LogicalDiscreteWire" />
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <ref role="13h7C2" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
     <node concept="13hLZK" id="4B66Yaq5Ul6" role="13h7CW">
       <node concept="3clFbS" id="4B66Yaq5Ul7" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="4B66Yaq63Xu">
-    <property role="3GE5qa" value="New.Implementation" />
+    <property role="3GE5qa" value="Implementation" />
     <ref role="13h7C2" to="ddau:19aTRzkPTWf" resolve="DiscreteWire" />
     <node concept="13i0hz" id="4B66Yaq5UqZ" role="13h7CS">
       <property role="TrG5h" value="realize" />
@@ -1745,7 +1745,7 @@
       <node concept="37vLTG" id="4B66Yaq5Us7" role="3clF46">
         <property role="TrG5h" value="rNode" />
         <node concept="3Tqbb2" id="4B66Yaq5Us8" role="1tU5fm">
-          <ref role="ehGHo" to="ddau:19aTRzkPSmo" resolve="LogicalDiscreteWire" />
+          <ref role="ehGHo" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
         </node>
       </node>
       <node concept="10P_77" id="4B66Yaq5Us9" role="3clF45" />
