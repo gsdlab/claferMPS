@@ -8,9 +8,14 @@
   </languages>
   <imports>
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
+    <import index="ymbg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.constraints(MPS.Core/jetbrains.mps.smodel.constraints@java_stub)" />
+    <import index="msyo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
+    <import index="e8zo" ref="r:58a558d9-50ed-4b86-91cf-66ce18b52795(org.clafer.expr.actions)" />
+    <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -29,8 +34,13 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -66,6 +76,9 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
+        <child id="1140725362529" name="linkTarget" index="2oxUTC" />
+      </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
@@ -77,6 +90,10 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1144195091934" name="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" flags="nn" index="1BlSNk">
+        <reference id="1144195362400" name="conceptOfParent" index="1BmUXE" />
+        <reference id="1144195396777" name="linkInParent" index="1Bn3mz" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
@@ -137,6 +154,75 @@
           </node>
           <node concept="2h1dTh" id="4xcaXO71us8" role="Cn6ar">
             <property role="2h1i$Z" value="Add Content" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UNGvq" id="5OLu9WxXhlZ" role="3UOs0v">
+      <ref role="3UNGvu" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
+      <node concept="tYCnQ" id="5OLu9WxXhm0" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:4IooPifShRJ" resolve="WireConnectorRef" />
+        <node concept="Cmt7Y" id="5OLu9WxXhm1" role="uz6Si">
+          <node concept="Cnhdc" id="5OLu9WxXhm2" role="Cncma">
+            <node concept="3clFbS" id="5OLu9WxXhm3" role="2VODD2">
+              <node concept="3clFbF" id="5OLu9WxXhm4" role="3cqZAp">
+                <node concept="2OqwBi" id="5OLu9WxXhm5" role="3clFbG">
+                  <node concept="2OqwBi" id="5OLu9WxXhm6" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5OLu9WxXhm7" role="2Oq$k0">
+                      <node concept="Cj7Ep" id="5OLu9WxXhm8" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5OLu9WxXhm9" role="2OqNvi">
+                        <node concept="1xMEDy" id="5OLu9WxXhma" role="1xVPHs">
+                          <node concept="chp4Y" id="5OLu9WxXhmb" role="ri$Ld">
+                            <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3Tsc0h" id="5OLu9WxXhmc" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                    </node>
+                  </node>
+                  <node concept="WFELt" id="5OLu9WxXhmd" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="5OLu9WxXhme" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="5OLu9WxXhmf" role="Cn6ar">
+            <property role="2h1i$Z" value="Add Content" />
+          </node>
+        </node>
+      </node>
+      <node concept="3kRJcU" id="5OLu9WxXhwL" role="3kShCk">
+        <node concept="3clFbS" id="5OLu9WxXhwM" role="2VODD2">
+          <node concept="3clFbF" id="5OLu9WxX_jb" role="3cqZAp">
+            <node concept="22lmx$" id="5OLu9WxXBbh" role="3clFbG">
+              <node concept="2OqwBi" id="5OLu9WxXBpc" role="3uHU7w">
+                <node concept="Cj7Ep" id="5OLu9WxXBhm" role="2Oq$k0" />
+                <node concept="1BlSNk" id="5OLu9WxXBDF" role="2OqNvi">
+                  <ref role="1BmUXE" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                  <ref role="1Bn3mz" to="ddau:5OLu9WxSgwO" />
+                </node>
+              </node>
+              <node concept="22lmx$" id="5OLu9WxXAbC" role="3uHU7B">
+                <node concept="2OqwBi" id="5OLu9WxX_qu" role="3uHU7B">
+                  <node concept="Cj7Ep" id="5OLu9WxX_ja" role="2Oq$k0" />
+                  <node concept="1BlSNk" id="5OLu9WxX_OO" role="2OqNvi">
+                    <ref role="1BmUXE" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
+                    <ref role="1Bn3mz" to="ddau:5OLu9WxD38X" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5OLu9WxXAoR" role="3uHU7w">
+                  <node concept="Cj7Ep" id="5OLu9WxXAhg" role="2Oq$k0" />
+                  <node concept="1BlSNk" id="5OLu9WxXANG" role="2OqNvi">
+                    <ref role="1BmUXE" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                    <ref role="1Bn3mz" to="ddau:5OLu9WxUqZ1" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -555,9 +641,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="19aTRzkRSfg" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:19aTRzkPQU0" resolve="DesignWire" />
+      <ref role="3UNGvu" to="ddau:19aTRzkPQU0" resolve="HardwareConnector" />
       <node concept="tYCnQ" id="19aTRzkRSfh" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:19aTRzkPQU0" resolve="DesignWire" />
+        <ref role="uz4UX" to="ddau:19aTRzkPQU0" resolve="HardwareConnector" />
         <node concept="Cmt7Y" id="19aTRzkRSfi" role="uz6Si">
           <node concept="Cnhdc" id="19aTRzkRSfj" role="Cncma">
             <node concept="3clFbS" id="19aTRzkRSfk" role="2VODD2">
@@ -584,9 +670,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="19aTRzkShmZ" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:19aTRzkPSoJ" resolve="LogicalBus" />
+      <ref role="3UNGvu" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
       <node concept="tYCnQ" id="19aTRzkShn0" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:19aTRzkPSoJ" resolve="LogicalBus" />
+        <ref role="uz4UX" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
         <node concept="Cmt7Y" id="19aTRzkShn1" role="uz6Si">
           <node concept="Cnhdc" id="19aTRzkShn2" role="Cncma">
             <node concept="3clFbS" id="19aTRzkShn3" role="2VODD2">
@@ -613,9 +699,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="19aTRzkShDY" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:19aTRzkPSlW" resolve="LogicalDataConnector" />
+      <ref role="3UNGvu" to="ddau:19aTRzkPSlW" resolve="DataConnector" />
       <node concept="tYCnQ" id="19aTRzkShDZ" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:19aTRzkPSlW" resolve="LogicalDataConnector" />
+        <ref role="uz4UX" to="ddau:19aTRzkPSlW" resolve="DataConnector" />
         <node concept="Cmt7Y" id="19aTRzkShE0" role="uz6Si">
           <node concept="Cnhdc" id="19aTRzkShE1" role="Cncma">
             <node concept="3clFbS" id="19aTRzkShE2" role="2VODD2">
@@ -642,9 +728,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="19aTRzkShXC" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:19aTRzkPSmo" resolve="LogicalDiscreteWire" />
+      <ref role="3UNGvu" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
       <node concept="tYCnQ" id="19aTRzkShXD" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:19aTRzkPSmo" resolve="LogicalDiscreteWire" />
+        <ref role="uz4UX" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
         <node concept="Cmt7Y" id="19aTRzkShXE" role="uz6Si">
           <node concept="Cnhdc" id="19aTRzkShXF" role="Cncma">
             <node concept="3clFbS" id="19aTRzkShXG" role="2VODD2">
@@ -861,7 +947,7 @@
                   <node concept="2ShNRf" id="4IooPifUNhS" role="37vLTx">
                     <node concept="3zrR0B" id="4IooPifUNhT" role="2ShVmc">
                       <node concept="3Tqbb2" id="4IooPifUNhU" role="3zrR0E">
-                        <ref role="ehGHo" to="ddau:6Fa64hUiAn2" resolve="DeviceRef" />
+                        <ref role="ehGHo" to="ddau:$OrRLOvZKp" resolve="DeviceNodesRef" />
                       </node>
                     </node>
                   </node>
@@ -931,7 +1017,7 @@
                   <node concept="2ShNRf" id="4IooPifOSrP" role="37vLTx">
                     <node concept="3zrR0B" id="4IooPifOSrN" role="2ShVmc">
                       <node concept="3Tqbb2" id="4IooPifOSrO" role="3zrR0E">
-                        <ref role="ehGHo" to="ddau:6Fa64hUiAn2" resolve="DeviceRef" />
+                        <ref role="ehGHo" to="ddau:$OrRLOvZKp" resolve="DeviceNodesRef" />
                       </node>
                     </node>
                   </node>
@@ -961,23 +1047,28 @@
         <node concept="Cmt7Y" id="4IooPifUz8B" role="uz6Si">
           <node concept="Cnhdc" id="4IooPifUz8C" role="Cncma">
             <node concept="3clFbS" id="4IooPifUz8D" role="2VODD2">
-              <node concept="3clFbF" id="4IooPifUz8E" role="3cqZAp">
-                <node concept="37vLTI" id="4IooPifUz8F" role="3clFbG">
-                  <node concept="2ShNRf" id="4IooPifUz8G" role="37vLTx">
-                    <node concept="3zrR0B" id="4IooPifUz8H" role="2ShVmc">
-                      <node concept="3Tqbb2" id="4IooPifUz8I" role="3zrR0E">
-                        <ref role="ehGHo" to="ddau:4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
-                      </node>
+              <node concept="3clFbH" id="5OLu9WxzkI7" role="3cqZAp" />
+              <node concept="3clFbF" id="5OLu9WxyGsK" role="3cqZAp">
+                <node concept="2OqwBi" id="5OLu9WxyHWF" role="3clFbG">
+                  <node concept="2OqwBi" id="5OLu9WxyG$v" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="5OLu9WxyGsI" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="5OLu9WxyHsf" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ddau:4IooPifSg5Y" />
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="4IooPifUz8J" role="37vLTJ">
-                    <node concept="Cj7Ep" id="4IooPifUz8K" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="4IooPifUz8L" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ddau:4IooPifSg5Y" />
+                  <node concept="2oxUTD" id="5OLu9WxyIyh" role="2OqNvi">
+                    <node concept="2ShNRf" id="5OLu9WxyI_q" role="2oxUTC">
+                      <node concept="3zrR0B" id="5OLu9WxyNM$" role="2ShVmc">
+                        <node concept="3Tqbb2" id="5OLu9WxyNMA" role="3zrR0E">
+                          <ref role="ehGHo" to="ddau:4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="5OLu9WxzqUH" role="3cqZAp" />
+              <node concept="3clFbH" id="5OLu9WxzqW1" role="3cqZAp" />
             </node>
           </node>
           <node concept="2h1dTh" id="4IooPifUz8M" role="Cn2iK">
@@ -989,6 +1080,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="3UOs0u" id="5OLu9WxIM_Q">
+    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <property role="TrG5h" value="makeCommaOperator" />
   </node>
 </model>
 

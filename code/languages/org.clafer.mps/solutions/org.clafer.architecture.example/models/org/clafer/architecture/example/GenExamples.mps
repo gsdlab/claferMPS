@@ -1784,5 +1784,8 @@
       </node>
     </node>
   </node>
+  <node concept="UzPwm" id="5OLu9WxD20p">
+    <property role="TrG5h" value="M1" />
+  </node>
 </model>
 

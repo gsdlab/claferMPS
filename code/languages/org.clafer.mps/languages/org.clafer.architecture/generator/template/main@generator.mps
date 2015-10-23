@@ -355,7 +355,7 @@
   </registry>
   <node concept="bUwia" id="4Z9rElrodEg">
     <property role="TrG5h" value="main" />
-    <property role="3GE5qa" value="0NewStuff" />
+    <property role="3GE5qa" value="" />
     <node concept="3aamgX" id="yF2aJfSi2k" role="3acgRq">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ddau:4csP6flST3m" resolve="ArchElement" />
@@ -683,7 +683,7 @@
   </node>
   <node concept="13MO4I" id="4aL7gvpwYxe">
     <property role="TrG5h" value="template_ArchElement" />
-    <property role="3GE5qa" value="nodes_templates" />
+    <property role="3GE5qa" value="" />
     <ref role="3gUMe" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="UH0sd" id="4aL7gvpwPcx" role="13RCb5">
       <property role="TrG5h" value="Name" />

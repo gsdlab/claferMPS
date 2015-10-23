@@ -9,12 +9,15 @@
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -32,6 +35,9 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
@@ -46,11 +52,24 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
@@ -80,9 +99,24 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <reference id="1171323947160" name="concept" index="2SmgA8" />
+      </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -91,6 +125,10 @@
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -113,10 +151,294 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
+      <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
+    </language>
   </registry>
+  <node concept="18kY7G" id="4z6NPpC6FtS">
+    <property role="TrG5h" value="check_DataConnector" />
+    <property role="3GE5qa" value="New.Wiring.CommunicationTopology" />
+    <node concept="3clFbS" id="4z6NPpC6FtT" role="18ibNy">
+      <node concept="3clFbJ" id="3KrTRUBI6UF" role="3cqZAp">
+        <node concept="3clFbS" id="3KrTRUBI6UH" role="3clFbx">
+          <node concept="3cpWs8" id="4B66Yaq0K8Y" role="3cqZAp">
+            <node concept="3cpWsn" id="4B66Yaq0K91" role="3cpWs9">
+              <property role="TrG5h" value="modelConnectors" />
+              <node concept="2I9FWS" id="4B66Yaq0K8W" role="1tU5fm">
+                <ref role="2I9WkF" to="ddau:1QRywDjgzUJ" resolve="FAConnector" />
+              </node>
+              <node concept="2OqwBi" id="4B66Yaq0UqQ" role="33vP2m">
+                <node concept="2OqwBi" id="4B66Yaq0LSI" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4B66Yaq0GDi" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4B66Yaq0Ehk" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4B66Yaq0$$0" role="2Oq$k0">
+                        <node concept="2OqwBi" id="4B66Yaq0zst" role="2Oq$k0">
+                          <node concept="2OqwBi" id="3URpncZk262" role="2Oq$k0">
+                            <node concept="1YBJjd" id="4B66Yaq0yqS" role="2Oq$k0">
+                              <ref role="1YBMHb" node="4z6NPpC6FtV" resolve="ldConnector" />
+                            </node>
+                            <node concept="2Xjw5R" id="3URpncZk264" role="2OqNvi">
+                              <node concept="1xMEDy" id="3URpncZk265" role="1xVPHs">
+                                <node concept="chp4Y" id="3URpncZk266" role="ri$Ld">
+                                  <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                                </node>
+                              </node>
+                              <node concept="1xIGOp" id="3URpncZk267" role="1xVPHs" />
+                            </node>
+                          </node>
+                          <node concept="I4A8Y" id="4B66Yaq0zCY" role="2OqNvi" />
+                        </node>
+                        <node concept="2SmgA7" id="4B66Yaq0$HK" role="2OqNvi" />
+                      </node>
+                      <node concept="v3k3i" id="4B66Yaq0Grl" role="2OqNvi">
+                        <node concept="chp4Y" id="4B66Yaq0Kfa" role="v3oSu">
+                          <ref role="cht4Q" to="ddau:1QRywDjgzUJ" resolve="FAConnector" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="ANE8D" id="4B66Yaq0HuD" role="2OqNvi" />
+                  </node>
+                  <node concept="3zZkjj" id="4B66Yaq0PKY" role="2OqNvi">
+                    <node concept="1bVj0M" id="4B66Yaq0PL0" role="23t8la">
+                      <node concept="3clFbS" id="4B66Yaq0PL1" role="1bW5cS">
+                        <node concept="3clFbF" id="4B66Yaq0PV$" role="3cqZAp">
+                          <node concept="3clFbC" id="4B66Yaq13pQ" role="3clFbG">
+                            <node concept="1YBJjd" id="4B66Yaq13Bc" role="3uHU7w">
+                              <ref role="1YBMHb" node="4z6NPpC6FtV" resolve="ldConnector" />
+                            </node>
+                            <node concept="2OqwBi" id="4B66Yaq0Soy" role="3uHU7B">
+                              <node concept="2OqwBi" id="4B66Yaq0Q7$" role="2Oq$k0">
+                                <node concept="37vLTw" id="4B66Yaq0PVz" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4B66Yaq0PL2" resolve="it" />
+                                </node>
+                                <node concept="3TrEf2" id="4B66Yaq0QJZ" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="ddau:4IooPifSg5Y" />
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="4B66Yaq0T7w" role="2OqNvi">
+                                <ref role="3Tt5mk" to="ddau:4xcaXO6V8Mr" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="4B66Yaq0PL2" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="4B66Yaq0PL3" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="ANE8D" id="4B66Yaq0VzD" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Mj0R9" id="5OLu9Wxrx0P" role="3cqZAp">
+            <node concept="2OqwBi" id="5OLu9WxrHHi" role="2MkoU_">
+              <node concept="3GX2aA" id="4B66Yaq1o8G" role="2OqNvi" />
+              <node concept="37vLTw" id="4B66Yaq17Rd" role="2Oq$k0">
+                <ref role="3cqZAo" node="4B66Yaq0K91" resolve="modelConnectors" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5OLu9WxrI_Y" role="2MkJ7o">
+              <property role="Xl_RC" value="The node has to be a deployment of a FAConnector" />
+            </node>
+            <node concept="1YBJjd" id="5OLu9WxrIHT" role="2OEOjV">
+              <ref role="1YBMHb" node="4z6NPpC6FtV" resolve="ldConnector" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="3KrTRUBI6UG" role="3cqZAp" />
+        </node>
+        <node concept="3fqX7Q" id="3KrTRUBI8J5" role="3clFbw">
+          <node concept="2OqwBi" id="3KrTRUBI8J7" role="3fr31v">
+            <node concept="1YBJjd" id="3KrTRUBI8J8" role="2Oq$k0">
+              <ref role="1YBMHb" node="4z6NPpC6FtV" resolve="ldConnector" />
+            </node>
+            <node concept="3TrcHB" id="3KrTRUBI8J9" role="2OqNvi">
+              <ref role="3TsBF5" to="ddau:6Fa64hUbOYB" resolve="isOptional" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4z6NPpC6FtV" role="1YuTPh">
+      <property role="TrG5h" value="ldConnector" />
+      <ref role="1YaFvo" to="ddau:19aTRzkPSlW" resolve="DataConnector" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4B66Yaq4WF7">
+    <property role="TrG5h" value="check_PhysicalBus" />
+    <property role="3GE5qa" value="New.Implementation" />
+    <node concept="3clFbS" id="4B66Yaq4WF8" role="18ibNy">
+      <node concept="3clFbJ" id="3KrTRUBIdOz" role="3cqZAp">
+        <node concept="3clFbS" id="3KrTRUBIdO_" role="3clFbx">
+          <node concept="2Mj0R9" id="4B66Yaq5e3$" role="3cqZAp">
+            <node concept="Xl_RD" id="4B66Yaq5elb" role="2MkJ7o">
+              <property role="Xl_RC" value="The node has to be a realization of a Logical Bus" />
+            </node>
+            <node concept="1YBJjd" id="4B66Yaq5enR" role="2OEOjV">
+              <ref role="1YBMHb" node="4B66Yaq4WFa" resolve="pBus" />
+            </node>
+            <node concept="2OqwBi" id="4B66Yaq5cS7" role="2MkoU_">
+              <node concept="2OqwBi" id="4B66Yaq4cQ_" role="2Oq$k0">
+                <node concept="2OqwBi" id="4B66Yaq3Ulo" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4B66Yaq3Ulp" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4B66Yaq3Ulq" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4B66Yaq3Ulr" role="2Oq$k0">
+                        <node concept="1YBJjd" id="4B66Yaq4XLp" role="2Oq$k0">
+                          <ref role="1YBMHb" node="4B66Yaq4WFa" resolve="pBus" />
+                        </node>
+                        <node concept="2Xjw5R" id="4B66Yaq3Ult" role="2OqNvi">
+                          <node concept="1xMEDy" id="4B66Yaq3Ulu" role="1xVPHs">
+                            <node concept="chp4Y" id="4B66Yaq3Ulv" role="ri$Ld">
+                              <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                            </node>
+                          </node>
+                          <node concept="1xIGOp" id="4B66Yaq3Ulw" role="1xVPHs" />
+                        </node>
+                      </node>
+                      <node concept="I4A8Y" id="4B66Yaq3Ulx" role="2OqNvi" />
+                    </node>
+                    <node concept="2SmgA7" id="4B66Yaq3Uly" role="2OqNvi">
+                      <ref role="2SmgA8" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                    </node>
+                  </node>
+                  <node concept="ANE8D" id="4B66Yaq3Ulz" role="2OqNvi" />
+                </node>
+                <node concept="1z4cxt" id="4B66Yaq5adm" role="2OqNvi">
+                  <node concept="1bVj0M" id="4B66Yaq5ado" role="23t8la">
+                    <node concept="3clFbS" id="4B66Yaq5adp" role="1bW5cS">
+                      <node concept="9aQIb" id="4B66Yaq5tBU" role="3cqZAp">
+                        <node concept="3clFbS" id="4B66Yaq5tBV" role="9aQI4">
+                          <node concept="3clFbF" id="4B66Yaq5ao0" role="3cqZAp">
+                            <node concept="2OqwBi" id="4B66Yaq5bRk" role="3clFbG">
+                              <node concept="1YBJjd" id="4B66Yaq5bJq" role="2Oq$k0">
+                                <ref role="1YBMHb" node="4B66Yaq4WFa" resolve="pBus" />
+                              </node>
+                              <node concept="2qgKlT" id="4B66Yaq5cC_" role="2OqNvi">
+                                <ref role="37wK5l" to="f5o0:4B66Yaq4Tme" resolve="realize" />
+                                <node concept="37vLTw" id="4B66Yaq5cHM" role="37wK5m">
+                                  <ref role="3cqZAo" node="4B66Yaq5adq" resolve="it" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="4B66Yaq5adq" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="4B66Yaq5adr" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3x8VRR" id="4B66Yaq5e1F" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="3KrTRUBIdO$" role="3cqZAp" />
+        </node>
+        <node concept="3fqX7Q" id="3KrTRUBIdPw" role="3clFbw">
+          <node concept="2OqwBi" id="3KrTRUBIdV9" role="3fr31v">
+            <node concept="1YBJjd" id="3KrTRUBIdPK" role="2Oq$k0">
+              <ref role="1YBMHb" node="4B66Yaq4WFa" resolve="pBus" />
+            </node>
+            <node concept="3TrcHB" id="3KrTRUBIeKZ" role="2OqNvi">
+              <ref role="3TsBF5" to="ddau:6Fa64hUbOYB" resolve="isOptional" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4B66Yaq4WFa" role="1YuTPh">
+      <property role="TrG5h" value="pBus" />
+      <ref role="1YaFvo" to="ddau:19aTRzkPTWe" resolve="PhysicalBus" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4B66Yaq6ii6">
+    <property role="TrG5h" value="check_DiscreteWire" />
+    <property role="3GE5qa" value="New.Implementation" />
+    <node concept="3clFbS" id="4B66Yaq6ii7" role="18ibNy">
+      <node concept="2Mj0R9" id="4B66Yaq6iH$" role="3cqZAp">
+        <node concept="Xl_RD" id="4B66Yaq6iH_" role="2MkJ7o">
+          <property role="Xl_RC" value="The node has to be a realization of a Logical Discrete Wire" />
+        </node>
+        <node concept="1YBJjd" id="4B66Yaq6jia" role="2OEOjV">
+          <ref role="1YBMHb" node="4B66Yaq6ii9" resolve="dWire" />
+        </node>
+        <node concept="2OqwBi" id="4B66Yaq6iHB" role="2MkoU_">
+          <node concept="2OqwBi" id="4B66Yaq6iHC" role="2Oq$k0">
+            <node concept="2OqwBi" id="4B66Yaq6iHD" role="2Oq$k0">
+              <node concept="2OqwBi" id="4B66Yaq6iHE" role="2Oq$k0">
+                <node concept="2OqwBi" id="4B66Yaq6iHF" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4B66Yaq6iHG" role="2Oq$k0">
+                    <node concept="1YBJjd" id="4B66Yaq6iQt" role="2Oq$k0">
+                      <ref role="1YBMHb" node="4B66Yaq6ii9" resolve="dWire" />
+                    </node>
+                    <node concept="2Xjw5R" id="4B66Yaq6iHI" role="2OqNvi">
+                      <node concept="1xMEDy" id="4B66Yaq6iHJ" role="1xVPHs">
+                        <node concept="chp4Y" id="4B66Yaq6iHK" role="ri$Ld">
+                          <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+                        </node>
+                      </node>
+                      <node concept="1xIGOp" id="4B66Yaq6iHL" role="1xVPHs" />
+                    </node>
+                  </node>
+                  <node concept="I4A8Y" id="4B66Yaq6iHM" role="2OqNvi" />
+                </node>
+                <node concept="2SmgA7" id="4B66Yaq6iHN" role="2OqNvi">
+                  <ref role="2SmgA8" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
+                </node>
+              </node>
+              <node concept="ANE8D" id="4B66Yaq6iHO" role="2OqNvi" />
+            </node>
+            <node concept="1z4cxt" id="4B66Yaq6iHP" role="2OqNvi">
+              <node concept="1bVj0M" id="4B66Yaq6iHQ" role="23t8la">
+                <node concept="3clFbS" id="4B66Yaq6iHR" role="1bW5cS">
+                  <node concept="9aQIb" id="4B66Yaq6iHS" role="3cqZAp">
+                    <node concept="3clFbS" id="4B66Yaq6iHT" role="9aQI4">
+                      <node concept="3clFbF" id="4B66Yaq6iHU" role="3cqZAp">
+                        <node concept="2OqwBi" id="4B66Yaq6iHV" role="3clFbG">
+                          <node concept="1YBJjd" id="4B66Yaq6iXf" role="2Oq$k0">
+                            <ref role="1YBMHb" node="4B66Yaq6ii9" resolve="dWire" />
+                          </node>
+                          <node concept="2qgKlT" id="4B66Yaq6iHX" role="2OqNvi">
+                            <ref role="37wK5l" to="f5o0:4B66Yaq5UqZ" resolve="realize" />
+                            <node concept="37vLTw" id="4B66Yaq6iHY" role="37wK5m">
+                              <ref role="3cqZAo" node="4B66Yaq6iHZ" resolve="it" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="4B66Yaq6iHZ" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="4B66Yaq6iI0" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3x8VRR" id="4B66Yaq6iI1" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4B66Yaq6ii9" role="1YuTPh">
+      <property role="TrG5h" value="dWire" />
+      <ref role="1YaFvo" to="ddau:19aTRzkPTWf" resolve="DiscreteWire" />
+    </node>
+  </node>
   <node concept="18kY7G" id="4xcaXO71KUL">
     <property role="TrG5h" value="check_FAConnector" />
-    <property role="3GE5qa" value="0NewStuff.FunctionalArchitecture" />
+    <property role="3GE5qa" value="New.FunctionalArchitecture" />
     <node concept="3clFbS" id="4xcaXO71KUM" role="18ibNy">
       <node concept="3cpWs8" id="4xcaXO71L3P" role="3cqZAp">
         <node concept="3cpWsn" id="4xcaXO71L3S" role="3cpWs9">
@@ -345,7 +667,7 @@
                         </node>
                         <node concept="1mIQ4w" id="4xcaXO720bk" role="2OqNvi">
                           <node concept="chp4Y" id="4xcaXO720fu" role="cj9EA">
-                            <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="LogicalBus" />
+                            <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
                           </node>
                         </node>
                       </node>
@@ -371,7 +693,7 @@
                             </node>
                             <node concept="1mIQ4w" id="4xcaXO73lB6" role="2OqNvi">
                               <node concept="chp4Y" id="4xcaXO73lB7" role="cj9EA">
-                                <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="LogicalBus" />
+                                <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
                               </node>
                             </node>
                           </node>
