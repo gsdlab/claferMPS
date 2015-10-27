@@ -98,7 +98,7 @@
     <node concept="1TJgyj" id="4IooPifSg5Y" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="deployedTo" />
-      <ref role="20lvS9" node="4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flST3m">
@@ -138,7 +138,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="deployedTo" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="$OrRLOvZKp" resolve="DeviceNodesRef" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
@@ -156,6 +156,31 @@
     <property role="3GE5qa" value="DeviceNodes" />
     <property role="34LRSv" value="Device Nodes" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <node concept="1TJgyj" id="50FM0hzz9WP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mass" />
+      <ref role="20lvS9" node="50FM0hzzawM" resolve="Quality" />
+    </node>
+    <node concept="1TJgyj" id="50FM0hzC6kl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="length" />
+      <ref role="20lvS9" node="50FM0hzzawM" resolve="Quality" />
+    </node>
+    <node concept="1TJgyj" id="50FM0hzFXGk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ppm" />
+      <ref role="20lvS9" node="50FM0hzzawM" resolve="Quality" />
+    </node>
+    <node concept="1TJgyj" id="50FM0hzFXGo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="warrantyCost" />
+      <ref role="20lvS9" node="50FM0hzzawM" resolve="Quality" />
+    </node>
+    <node concept="1TJgyj" id="50FM0hzHiQ5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="replaceCost" />
+      <ref role="20lvS9" node="50FM0hzzawM" resolve="Quality" />
+    </node>
     <node concept="1TJgyi" id="7DuSdC$_H4S" role="1TKVEl">
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="7DuSdC$_GOc" resolve="DeviceNodeTypeEnum" />
@@ -587,6 +612,21 @@
     <node concept="PrWs8" id="19aTRzkPTOc" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
     </node>
+    <node concept="1TJgyj" id="50FM0hzH8X0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="length" />
+      <ref role="20lvS9" node="50FM0hzzawM" resolve="Quality" />
+    </node>
+    <node concept="1TJgyj" id="50FM0hzH8X2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="mass" />
+      <ref role="20lvS9" node="50FM0hzzawM" resolve="Quality" />
+    </node>
+    <node concept="1TJgyj" id="50FM0hzLTOm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cost" />
+      <ref role="20lvS9" node="50FM0hzzawM" resolve="Quality" />
+    </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSlW">
     <property role="3GE5qa" value="Wiring.CommunicationTopology" />
@@ -680,6 +720,12 @@
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="3URpncZ4sjK" resolve="PhysicalBusEnum" />
     </node>
+    <node concept="1TJgyj" id="3_X0pUT8Mfr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="connectedNodes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPTWf">
     <property role="3GE5qa" value="Implementation" />
@@ -751,6 +797,59 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+  </node>
+  <node concept="1TIwiD" id="1XvwwfKtGGx">
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <property role="TrG5h" value="ArchRef" />
+    <ref role="1TJDcQ" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
+    <node concept="PrWs8" id="2toL5DN3aP$" role="PzmwI">
+      <ref role="PrY4T" node="2toL5DN39dr" resolve="IArchExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2toL5DMUBtT">
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <property role="TrG5h" value="ArchLogicalExpr" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="mj1k:ORookitlp1" resolve="UnionCommaExpression" />
+  </node>
+  <node concept="1TIwiD" id="2toL5DMUByY">
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <property role="TrG5h" value="ArchLogicalAND" />
+    <property role="34LRSv" value="AND" />
+    <ref role="1TJDcQ" node="2toL5DMUBtT" resolve="ArchLogicalExpr" />
+  </node>
+  <node concept="1TIwiD" id="2toL5DN235n">
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <property role="TrG5h" value="ArchParens" />
+    <property role="34LRSv" value="(" />
+    <ref role="1TJDcQ" to="mj1k:4ZVDCZCbtj7" resolve="ParensExpression" />
+    <node concept="PrWs8" id="2toL5DN3aPs" role="PzmwI">
+      <ref role="PrY4T" node="2toL5DN39dr" resolve="IArchExpr" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2toL5DN39dr">
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <property role="TrG5h" value="IArchExpr" />
+  </node>
+  <node concept="1TIwiD" id="2toL5DN3CNJ">
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <property role="TrG5h" value="ArchLogicalOR" />
+    <property role="34LRSv" value="OR" />
+    <ref role="1TJDcQ" node="2toL5DMUBtT" resolve="ArchLogicalExpr" />
+  </node>
+  <node concept="1TIwiD" id="50FM0hzzawM">
+    <property role="TrG5h" value="Quality" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="50FM0hzBeB2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="50FM0hzFYbT">
+    <property role="TrG5h" value="IHaveQualityAttributes" />
   </node>
 </model>
 

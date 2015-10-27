@@ -1876,5 +1876,25 @@
       <node concept="3clFbS" id="4B66Yaq63Xw" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="50FM0hzBXhO">
+    <ref role="13h7C2" to="ddau:50FM0hzzawM" resolve="Quality" />
+    <node concept="13hLZK" id="50FM0hzBXhP" role="13h7CW">
+      <node concept="3clFbS" id="50FM0hzBXhQ" role="2VODD2">
+        <node concept="3clFbF" id="50FM0hzBX_q" role="3cqZAp">
+          <node concept="2OqwBi" id="50FM0hzBY01" role="3clFbG">
+            <node concept="2OqwBi" id="50FM0hzBXAx" role="2Oq$k0">
+              <node concept="13iPFW" id="50FM0hzBX_p" role="2Oq$k0" />
+              <node concept="3TrEf2" id="50FM0hzBXHV" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:50FM0hzBeB2" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="50FM0hzBYhR" role="2OqNvi">
+              <ref role="1A9B2P" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
