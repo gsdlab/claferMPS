@@ -356,6 +356,7 @@
         <child id="6554619383004026644" name="editorComponent" index="23bJyd" />
         <child id="5126420796713997777" name="shape" index="3Uta5s" />
       </concept>
+      <concept id="3462102746004176270" name="de.itemis.mps.editor.diagram.structure.DeleteHandler" flags="ig" index="2fs66k" />
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
         <child id="2044706694575458564" name="labelCell" index="3kqczz" />
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
@@ -393,6 +394,7 @@
       </concept>
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
+        <child id="5725606875425244480" name="deleteHandler" index="1idfhu" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
       </concept>
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
@@ -1299,6 +1301,9 @@
     <property role="3GE5qa" value="diagrams" />
     <ref role="1XX52x" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="2ZK4vF" id="6_lRZv9yZ$S" role="2wV5jI">
+      <node concept="2fs66k" id="37pXzv3sQJD" role="1idfhu">
+        <node concept="3clFbS" id="37pXzv3sQJE" role="2VODD2" />
+      </node>
       <node concept="3EZMnI" id="6_lRZv9yZ_0" role="1ytjkN">
         <node concept="2iRkQZ" id="6_lRZv9yZ_3" role="2iSdaV" />
         <node concept="PMmxH" id="1tfNdgy4nr5" role="3EZMnx">
