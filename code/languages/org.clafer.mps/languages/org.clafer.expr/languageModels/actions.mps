@@ -4188,7 +4188,6 @@
                 <node concept="3Tqbb2" id="4NFs2i9$Gg_" role="1tU5fm">
                   <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
                 </node>
-                <node concept="10Nm6u" id="4NFs2i9$H9P" role="33vP2m" />
               </node>
             </node>
             <node concept="3clFbJ" id="4NFs2i9$HoO" role="3cqZAp">
@@ -4727,15 +4726,6 @@
             <property role="TrG5h" value="candidateNodesWithParenthesis2" />
             <node concept="2I9FWS" id="4oMhk$ZdFnO" role="1tU5fm">
               <ref role="2I9WkF" to="mj1k:7FQByU3CrCM" resolve="Expression" />
-            </node>
-            <node concept="1rXfSq" id="4oMhk$ZdFnP" role="33vP2m">
-              <ref role="37wK5l" node="3M4aPu$QSVT" resolve="descendInto" />
-              <node concept="37vLTw" id="4oMhk$ZdFnQ" role="37wK5m">
-                <ref role="3cqZAo" node="4NFs2i9A3d2" resolve="topExpression" />
-              </node>
-              <node concept="37vLTw" id="4oMhk$ZdFnR" role="37wK5m">
-                <ref role="3cqZAo" node="4NFs2i9$PB9" resolve="completingRightParenthesis" />
-              </node>
             </node>
           </node>
         </node>
@@ -5460,7 +5450,6 @@
             <node concept="3Tqbb2" id="PyYoN57Oxt" role="1tU5fm">
               <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
             </node>
-            <node concept="10Nm6u" id="PyYoN57Ppj" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbH" id="PyYoN57Pq3" role="3cqZAp" />
@@ -6957,7 +6946,6 @@
             <node concept="3Tqbb2" id="PyYoN58O2P" role="1tU5fm">
               <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
             </node>
-            <node concept="10Nm6u" id="PyYoN58OeW" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbJ" id="PyYoN58Oq$" role="3cqZAp">
@@ -7990,9 +7978,6 @@
           <node concept="3cpWsn" id="PyYoN53XYc" role="3cpWs9">
             <property role="TrG5h" value="count" />
             <node concept="10Oyi0" id="PyYoN53XY8" role="1tU5fm" />
-            <node concept="3cmrfG" id="PyYoN53XZ$" role="33vP2m">
-              <property role="3cmrfH" value="0" />
-            </node>
           </node>
         </node>
         <node concept="3clFbJ" id="PyYoN53Y0V" role="3cqZAp">

@@ -1114,7 +1114,7 @@
               <node concept="2yIwOk" id="50FM0hzH9tL" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="50FM0hzH9tM" role="2OqNvi">
-              <ref role="37wK5l" to="c17a:~SAbstractConcept.getContainmentLinks():java.lang.Iterable" resolve="getContainmentLinks" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getContainmentLinks():java.util.Collection" resolve="getContainmentLinks" />
             </node>
           </node>
         </node>

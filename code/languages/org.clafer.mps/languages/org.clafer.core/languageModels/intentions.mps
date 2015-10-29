@@ -533,7 +533,7 @@
       <node concept="3clFbS" id="7CJUZX6WSN2" role="2VODD2">
         <node concept="3clFbF" id="7CJUZX6WTpr" role="3cqZAp">
           <node concept="Xl_RD" id="7CJUZX6WTpq" role="3clFbG">
-            <property role="Xl_RC" value="Add super clafer" />
+            <property role="Xl_RC" value="Add Super Clafer" />
           </node>
         </node>
       </node>

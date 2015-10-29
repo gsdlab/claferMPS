@@ -897,14 +897,6 @@
       </node>
       <node concept="gXKv3" id="3KrTRUBRkFy" role="2mZOl8">
         <property role="TrG5h" value="WinSysDpl" />
-        <node concept="gYDDm" id="3KrTRUBRkFH" role="2mZOl8">
-          <property role="TrG5h" value="DWinSubSysDpl" />
-          <ref role="gFST6" node="3KrTRUBR0WO" resolve="DWinSubSysFA" />
-        </node>
-        <node concept="gYDDm" id="3KrTRUBRkGK" role="2mZOl8">
-          <property role="TrG5h" value="PWinSubSysDpl" />
-          <ref role="gFST6" node="3KrTRUBR1bj" resolve="PWinSubSysFA" />
-        </node>
       </node>
     </node>
     <node concept="UzEYP" id="$OrRLOyGB0" role="UzTCv" />
