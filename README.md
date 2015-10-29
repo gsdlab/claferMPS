@@ -1,6 +1,8 @@
 claferMPS
 =========
 
+##### v0.4.2
+
 Meta-Programming System support for Clafer
 
 Warning: this is a highly experimental and unreleased project. Use at your own risk.
@@ -22,9 +24,9 @@ Contributors
 Features
 --------
 
-* Support for full Clafer 0.3.10 + the upcoming unreleased extensions (`&` operator, no `ref`, and redefinition)
+* Support for full Clafer 0.4.2
    * smart, type-driven editor
-   * export to textual `.cfr` files for downstream processing (instance generation, optimization, etc.)
+   * export to textual `.cfr` files for downstream processing (instance generation and optimization)
 * A graphical notation for an automotive architecture DSL based on EAST-ADL
    * editable textual and graphical projections
    * export to plain Clafer
@@ -37,11 +39,13 @@ Planned Features
 Installation
 ------------
 
-1. [Meta Programming System (MPS)](https://www.jetbrains.com/mps/download/index.html) v3.2.1.
+1. [JetBrains Meta Programming System (MPS)](https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+EAP+Download+Page) v3.3 EAP4 (build 142.230).
+    * *Important*, start and close MPS before proceeding to step 2.
 2. [mbeddr](http://mbeddr.com/)
     * Follow the [instructions](http://mbeddr.com/download.html); however, you may skip "Gcc, Make and Gdb", "Graphviz", "Verification Tools" sections
         * proceed to "mbeddr Source Installation"
-        * in some `<target directory>`, clone `mbeddr.core` repository using `git clone https://github.com/mbeddr/mbeddr.core.git --depth 1` to avoid downloading the complete history
+        * do not set the `Global Libraries` setting, it will result in errors when building ClaferMPS
+        * in some `<target directory>`, clone `mbeddr.core` repository using `git clone https://github.com/mbeddr/mbeddr.core.git --depth 10` to avoid downloading the complete history
 3. in some `<target directory>`, execute
     * `git clone https://github.com/gsdlab/claferMPS.git`
 4. run MPS
@@ -56,8 +60,7 @@ Update
     * `cd <target directory>/mbeddr.core`
     * `git pull`
     * `cd code/languages`
-    * `./recheckout-sl-all.sh`
-    * `./buildLanguages.sh`
+    * `./buildLanguages.sh`  (or `.bat` on Windows)
 2. to update ClaferMPS, execute
     * `cd <target directory>/claferMPS`
     * `git pull`
