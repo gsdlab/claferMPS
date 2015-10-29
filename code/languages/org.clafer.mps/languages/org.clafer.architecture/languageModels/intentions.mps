@@ -9,8 +9,8 @@
   <imports>
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
-    <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" implicit="true" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -915,7 +915,7 @@
                           <ref role="2Gs0qQ" node="50FM0hz_BbB" resolve="link" />
                         </node>
                         <node concept="liA8E" id="50FM0hzAtXx" role="2OqNvi">
-                          <ref role="37wK5l" to="t3eg:~SContainmentLink.getRoleName():java.lang.String" resolve="getRoleName" />
+                          <ref role="37wK5l" to="c17a:~SContainmentLink.getRoleName():java.lang.String" resolve="getRoleName" />
                         </node>
                       </node>
                     </node>
@@ -928,11 +928,11 @@
                     <ref role="2Gs0qQ" node="50FM0hz_BbB" resolve="link" />
                   </node>
                   <node concept="liA8E" id="50FM0hzAcHQ" role="2OqNvi">
-                    <ref role="37wK5l" to="t3eg:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                    <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                   </node>
                 </node>
                 <node concept="liA8E" id="50FM0hzAi3J" role="2OqNvi">
-                  <ref role="37wK5l" to="t3eg:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
                   <node concept="35c_gC" id="50FM0hzAlvZ" role="37wK5m">
                     <ref role="35c_gD" to="ddau:50FM0hzzawM" resolve="Quality" />
                   </node>
@@ -946,7 +946,7 @@
               <node concept="2yIwOk" id="50FM0hz_pJo" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="50FM0hz_s8E" role="2OqNvi">
-              <ref role="37wK5l" to="t3eg:~SAbstractConcept.getContainmentLinks():java.lang.Iterable" resolve="getContainmentLinks" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getContainmentLinks():java.util.Collection" resolve="getContainmentLinks" />
             </node>
           </node>
         </node>
@@ -1083,7 +1083,7 @@
                           <ref role="2Gs0qQ" node="50FM0hzH9tt" resolve="link" />
                         </node>
                         <node concept="liA8E" id="50FM0hzH9tB" role="2OqNvi">
-                          <ref role="37wK5l" to="t3eg:~SContainmentLink.getRoleName():java.lang.String" resolve="getRoleName" />
+                          <ref role="37wK5l" to="c17a:~SContainmentLink.getRoleName():java.lang.String" resolve="getRoleName" />
                         </node>
                       </node>
                     </node>
@@ -1096,11 +1096,11 @@
                     <ref role="2Gs0qQ" node="50FM0hzH9tt" resolve="link" />
                   </node>
                   <node concept="liA8E" id="50FM0hzH9tF" role="2OqNvi">
-                    <ref role="37wK5l" to="t3eg:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
+                    <ref role="37wK5l" to="c17a:~SContainmentLink.getTargetConcept():org.jetbrains.mps.openapi.language.SAbstractConcept" resolve="getTargetConcept" />
                   </node>
                 </node>
                 <node concept="liA8E" id="50FM0hzH9tG" role="2OqNvi">
-                  <ref role="37wK5l" to="t3eg:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
                   <node concept="35c_gC" id="50FM0hzH9tH" role="37wK5m">
                     <ref role="35c_gD" to="ddau:50FM0hzzawM" resolve="Quality" />
                   </node>
@@ -1114,7 +1114,7 @@
               <node concept="2yIwOk" id="50FM0hzH9tL" role="2OqNvi" />
             </node>
             <node concept="liA8E" id="50FM0hzH9tM" role="2OqNvi">
-              <ref role="37wK5l" to="t3eg:~SAbstractConcept.getContainmentLinks():java.lang.Iterable" resolve="getContainmentLinks" />
+              <ref role="37wK5l" to="c17a:~SAbstractConcept.getContainmentLinks():java.lang.Iterable" resolve="getContainmentLinks" />
             </node>
           </node>
         </node>

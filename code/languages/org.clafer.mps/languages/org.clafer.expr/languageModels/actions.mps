@@ -11,17 +11,17 @@
   </languages>
   <imports>
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
-    <import index="ymbg" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.constraints(MPS.Core/jetbrains.mps.smodel.constraints@java_stub)" />
-    <import index="msyo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ywuy" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd9(org.clafer.expr.behavior)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-    <import index="8dm4" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.internal.collections.runtime(MPS.Core/jetbrains.mps.internal.collections.runtime@java_stub)" />
-    <import index="t6w" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/jetbrains.mps.lang.smodel.generator.smodelAdapter@java_stub)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="k9t0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.internal.collections.runtime(MPS.Core/)" />
+    <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="vrqc" ref="r:53e59391-150a-45ff-930e-2b4fdafb0905(org.clafer.expr.editor)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -226,6 +226,7 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
         <child id="5858074156537516440" name="return" index="x79VK" />
@@ -385,7 +386,7 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
@@ -634,11 +635,11 @@
                           <node concept="3clFbS" id="4b5CJEn525s" role="1bW5cS">
                             <node concept="3clFbF" id="4b5CJEn525t" role="3cqZAp">
                               <node concept="2YIFZM" id="4b5CJEn525u" role="3clFbG">
-                                <ref role="1Pybhc" to="ymbg:~ModelConstraints" resolve="ModelConstraints" />
-                                <ref role="37wK5l" to="ymbg:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                                 <node concept="2YIFZM" id="4_OjW93m9L0" role="37wK5m">
-                                  <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
-                                  <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
+                                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+                                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
                                   <node concept="37vLTw" id="4_OjW93mbqX" role="37wK5m">
                                     <ref role="3cqZAo" node="4b5CJEn525C" resolve="it" />
                                   </node>
@@ -841,11 +842,11 @@
                           <node concept="3clFbS" id="4b5CJEn5fn5" role="1bW5cS">
                             <node concept="3clFbF" id="4b5CJEn5fn6" role="3cqZAp">
                               <node concept="2YIFZM" id="4b5CJEn5fn7" role="3clFbG">
-                                <ref role="1Pybhc" to="ymbg:~ModelConstraints" resolve="ModelConstraints" />
-                                <ref role="37wK5l" to="ymbg:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                                 <node concept="2YIFZM" id="4_OjW93mfH2" role="37wK5m">
-                                  <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-                                  <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+                                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
                                   <node concept="37vLTw" id="4_OjW93mfH3" role="37wK5m">
                                     <ref role="3cqZAo" node="4b5CJEn5fnh" resolve="it" />
                                   </node>
@@ -1134,11 +1135,11 @@
                           <node concept="3clFbS" id="4b5CJEn5g3d" role="1bW5cS">
                             <node concept="3clFbF" id="4b5CJEn5g3e" role="3cqZAp">
                               <node concept="2YIFZM" id="4b5CJEn5g3f" role="3clFbG">
-                                <ref role="1Pybhc" to="ymbg:~ModelConstraints" resolve="ModelConstraints" />
-                                <ref role="37wK5l" to="ymbg:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                                 <node concept="2YIFZM" id="4_OjW93mhbr" role="37wK5m">
-                                  <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-                                  <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+                                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
                                   <node concept="37vLTw" id="4_OjW93mhbs" role="37wK5m">
                                     <ref role="3cqZAo" node="4b5CJEn5g3p" resolve="it" />
                                   </node>
@@ -1283,11 +1284,11 @@
                           <node concept="3clFbS" id="4b5CJEn5g3W" role="1bW5cS">
                             <node concept="3clFbF" id="4b5CJEn5g3X" role="3cqZAp">
                               <node concept="2YIFZM" id="4b5CJEn5g3Y" role="3clFbG">
-                                <ref role="1Pybhc" to="ymbg:~ModelConstraints" resolve="ModelConstraints" />
-                                <ref role="37wK5l" to="ymbg:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
+                                <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
+                                <ref role="37wK5l" to="ykok:~ModelConstraints.canBeChild(java.lang.String,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.smodel.runtime.CheckingNodeContext):boolean" resolve="canBeChild" />
                                 <node concept="2YIFZM" id="4_OjW93mimK" role="37wK5m">
-                                  <ref role="1Pybhc" to="msyo:~NameUtil" resolve="NameUtil" />
-                                  <ref role="37wK5l" to="msyo:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
+                                  <ref role="1Pybhc" to="18ew:~NameUtil" resolve="NameUtil" />
+                                  <ref role="37wK5l" to="18ew:~NameUtil.nodeFQName(org.jetbrains.mps.openapi.model.SNode):java.lang.String" resolve="nodeFQName" />
                                   <node concept="37vLTw" id="4_OjW93mimL" role="37wK5m">
                                     <ref role="3cqZAo" node="4b5CJEn5g48" resolve="it" />
                                   </node>
@@ -6079,6 +6080,21 @@
         <node concept="10P_77" id="4oMhk$ZckjV" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="4oMhk$ZfnYB" role="lGtFl">
+        <node concept="TUZQ0" id="4oMhk$ZfnYE" role="3nqlJM">
+          <property role="TUZQ4" value="the root element of the subtree" />
+          <node concept="zr_55" id="5z74wHW4AQX" role="zr_5Q">
+            <ref role="zr_51" node="4oMhk$ZckhE" resolve="root" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4oMhk$ZfnYH" role="3nqlJM">
+          <property role="TUZQ4" value="true if we are completing a right parenthesis, false otherwise" />
+          <node concept="zr_55" id="4oMhk$ZfnYJ" role="zr_5Q">
+            <ref role="zr_51" node="4oMhk$Zckj_" resolve="completingRightParenthesis" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4oMhk$ZfnYK" role="3nqlJM">
+          <property role="x79VB" value="the list of candidates" />
+        </node>
         <node concept="TZ5HA" id="4oMhk$ZfnYC" role="TZ5H$">
           <node concept="1dT_AC" id="4oMhk$ZfnYD" role="1dT_Ay">
             <property role="1dT_AB" value="Finds candidates for parenthesis matching when the just input parenthesis is on the side given by the " />
@@ -6108,21 +6124,6 @@
           <node concept="1dT_AC" id="4oMhk$ZfouP" role="1dT_Ay">
             <property role="1dT_AB" value="priorities between binary expressions. " />
           </node>
-        </node>
-        <node concept="TUZQ0" id="4oMhk$ZfnYE" role="TUOzN">
-          <property role="TUZQ4" value="the root element of the subtree" />
-          <node concept="zr_55" id="4oMhk$ZfnYG" role="zr_5Q">
-            <ref role="zr_51" node="4oMhk$ZckhE" resolve="root" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="4oMhk$ZfnYH" role="TUOzN">
-          <property role="TUZQ4" value="true if we are completing a right parenthesis, false otherwise" />
-          <node concept="zr_55" id="4oMhk$ZfnYJ" role="zr_5Q">
-            <ref role="zr_51" node="4oMhk$Zckj_" resolve="completingRightParenthesis" />
-          </node>
-        </node>
-        <node concept="x79VA" id="4oMhk$ZfnYK" role="x79VK">
-          <property role="x79VB" value="the list of candidates" />
         </node>
       </node>
     </node>
@@ -7337,7 +7338,7 @@
               <ref role="3cqZAo" node="6PJCSNEmHDh" resolve="path" />
             </node>
             <node concept="liA8E" id="314RTCzn1rx" role="2OqNvi">
-              <ref role="37wK5l" to="k7g3:~List.add(java.lang.Object):boolean" resolve="add" />
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
               <node concept="37vLTw" id="314RTCzn1v3" role="37wK5m">
                 <ref role="3cqZAo" node="314RTCzlmUs" resolve="leafNode" />
               </node>
@@ -7433,6 +7434,21 @@
         <node concept="10P_77" id="4NFs2i9_G7T" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="314RTCzmGy5" role="lGtFl">
+        <node concept="TUZQ0" id="2R09Ku3PCzM" role="3nqlJM">
+          <property role="TUZQ4" value="the leaf node in the expression tree" />
+          <node concept="zr_55" id="6T8YJPpW_fz" role="zr_5Q">
+            <ref role="zr_51" node="314RTCzlmUs" resolve="leafNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4NFs2i9_Gcv" role="3nqlJM">
+          <property role="TUZQ4" value="true if the unmatched parenthesis is a right one, false if it is a left one" />
+          <node concept="zr_55" id="6T8YJPpW_fA" role="zr_5Q">
+            <ref role="zr_51" node="4NFs2i9_FTy" resolve="isRight" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2R09Ku3PEVz" role="3nqlJM">
+          <property role="x79VB" value="the parent path" />
+        </node>
         <node concept="TZ5HA" id="314RTCzmIco" role="TZ5H$">
           <node concept="1dT_AC" id="4NFs2i9_Gb5" role="1dT_Ay">
             <property role="1dT_AB" value="Finds all the ancestor expressions of the leafNode which can be wrapped in a parenthesis. " />
@@ -7442,21 +7458,6 @@
           <node concept="1dT_AC" id="4NFs2i9_Gb8" role="1dT_Ay">
             <property role="1dT_AB" value="Stops at the first ancestor which cannot be parenthesised. " />
           </node>
-        </node>
-        <node concept="TUZQ0" id="2R09Ku3PCzM" role="TUOzN">
-          <property role="TUZQ4" value="the leaf node in the expression tree" />
-          <node concept="zr_55" id="2R09Ku3PC$c" role="zr_5Q">
-            <ref role="zr_51" node="314RTCzlmUs" resolve="leafNode" />
-          </node>
-        </node>
-        <node concept="TUZQ0" id="4NFs2i9_Gcv" role="TUOzN">
-          <property role="TUZQ4" value="true if the unmatched parenthesis is a right one, false if it is a left one" />
-          <node concept="zr_55" id="4NFs2i9_Gey" role="zr_5Q">
-            <ref role="zr_51" node="4NFs2i9_FTy" resolve="isRight" />
-          </node>
-        </node>
-        <node concept="x79VA" id="2R09Ku3PEVz" role="x79VK">
-          <property role="x79VB" value="the parent path" />
         </node>
       </node>
       <node concept="2I9FWS" id="6PJCSNEmPfZ" role="3clF45">
@@ -7552,19 +7553,19 @@
         </node>
       </node>
       <node concept="P$JXv" id="4KWv2vK1VUs" role="lGtFl">
+        <node concept="TUZQ0" id="4KWv2vK1VUv" role="3nqlJM">
+          <property role="TUZQ4" value="the expression" />
+          <node concept="zr_55" id="6T8YJPpW_i7" role="zr_5Q">
+            <ref role="zr_51" node="4NFs2i9zCpR" resolve="expression" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4KWv2vK1VUy" role="3nqlJM">
+          <property role="x79VB" value="the first wrapping parenthesis expression, or null if none is present in the tree" />
+        </node>
         <node concept="TZ5HA" id="4KWv2vK1VUt" role="TZ5H$">
           <node concept="1dT_AC" id="4KWv2vK1VUu" role="1dT_Ay">
             <property role="1dT_AB" value="Finds the first wrapping parenthesis around the given expression in the expression tree. " />
           </node>
-        </node>
-        <node concept="TUZQ0" id="4KWv2vK1VUv" role="TUOzN">
-          <property role="TUZQ4" value="the expression" />
-          <node concept="zr_55" id="4KWv2vK1VUx" role="zr_5Q">
-            <ref role="zr_51" node="4NFs2i9zCpR" resolve="expression" />
-          </node>
-        </node>
-        <node concept="x79VA" id="4KWv2vK1VUy" role="x79VK">
-          <property role="x79VB" value="the first wrapping parenthesis expression, or null if none is present in the tree" />
         </node>
       </node>
     </node>
@@ -7950,24 +7951,24 @@
         <node concept="10P_77" id="314RTCzv4JT" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="314RTCzvroO" role="lGtFl">
-        <node concept="x79VA" id="3TW3f3PABUG" role="x79VK">
+        <node concept="x79VA" id="5z74wHW4ARr" role="x79VK">
           <property role="x79VB" value="the expression where the turn has been found, or null if no turn is present" />
         </node>
-        <node concept="TUZQ0" id="3TW3f3PA_5y" role="TUOzN">
+        <node concept="TUZQ0" id="5z74wHW4ARj" role="TUOzN">
           <property role="TUZQ4" value="the starting leaf expression" />
-          <node concept="zr_55" id="3TW3f3PA_pJ" role="zr_5Q">
+          <node concept="zr_55" id="5z74wHW4ARp" role="zr_5Q">
             <ref role="zr_51" node="314RTCzv4I$" resolve="leaf" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3TW3f3PAAyw" role="TUOzN">
+        <node concept="TUZQ0" id="5z74wHW4ARl" role="TUOzN">
           <property role="TUZQ4" value="the stop node where the traversal will be terminated" />
-          <node concept="zr_55" id="3TW3f3PAARV" role="zr_5Q">
+          <node concept="zr_55" id="5z74wHW4ARt" role="zr_5Q">
             <ref role="zr_51" node="314RTCzv4J4" resolve="stopNode" />
           </node>
         </node>
-        <node concept="TUZQ0" id="3TW3f3PAB0_" role="TUOzN">
+        <node concept="TUZQ0" id="5z74wHW4ARh" role="TUOzN">
           <property role="TUZQ4" value="true if we are looking for a right turn" />
-          <node concept="zr_55" id="3TW3f3PABj1" role="zr_5Q">
+          <node concept="zr_55" id="5z74wHW4ARn" role="zr_5Q">
             <ref role="zr_51" node="314RTCzv4JD" resolve="isRight" />
           </node>
         </node>

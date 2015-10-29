@@ -37,6 +37,7 @@
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -75,6 +76,7 @@
     <property role="3GE5qa" value="expr" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="23570336" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="$bJ0jgXxo3" role="PzmwI">
       <ref role="PrY4T" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
@@ -85,6 +87,7 @@
     <property role="3GE5qa" value="expr" />
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
+    <property role="1pbfSe" value="23570334" />
     <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="7FQByU3CrD0" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -131,6 +134,7 @@
     <property role="3GE5qa" value="types.boolean" />
     <property role="R4oN_" value="true and false" />
     <property role="34LRSv" value="boolean" />
+    <property role="1pbfSe" value="23570328" />
     <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
     <node concept="PrWs8" id="7FQByU3C_3R" role="PzmwI">
       <ref role="PrY4T" node="7FQByU3C_31" resolve="IComparable" />
