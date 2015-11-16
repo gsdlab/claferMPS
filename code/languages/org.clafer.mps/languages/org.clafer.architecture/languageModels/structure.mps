@@ -303,10 +303,9 @@
       <property role="TrG5h" value="isAlwaysSmart" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyj" id="73PmbN3CTYP" role="1TKVEi">
+    <node concept="1TJgyj" id="3zRPoaJOz1Q" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="smartness" />
-      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1HSD30jAnuR" resolve="Smartness" />
     </node>
   </node>
@@ -439,9 +438,13 @@
     <property role="TrG5h" value="Smartness" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="smart" />
+    <property role="34LRSv" value="smartness" />
     <property role="1pbfSe" value="789715943" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="1TJgyi" id="3zRPoaJJJII" role="1TKVEl">
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="7DuSdC$_GOc" resolve="DeviceNodeTypeEnum" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1tfNdgy1e$L">
     <property role="TrG5h" value="IConnector" />

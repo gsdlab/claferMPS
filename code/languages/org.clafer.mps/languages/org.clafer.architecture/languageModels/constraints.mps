@@ -851,19 +851,6 @@
   <node concept="1M2fIO" id="44ORmASOYIx">
     <property role="3GE5qa" value="AutomobileConcepts" />
     <ref role="1M2myG" to="ddau:1HSD30jAnuR" resolve="Smartness" />
-    <node concept="nKS2y" id="44ORmASOYVO" role="1MLUbF">
-      <node concept="3clFbS" id="44ORmASOYVP" role="2VODD2">
-        <node concept="3clFbF" id="4IooPifO$Nz" role="3cqZAp">
-          <node concept="3clFbC" id="4IooPifO$8t" role="3clFbG">
-            <node concept="28GBK8" id="4IooPifO$bZ" role="3uHU7w">
-              <ref role="28H3Ia" to="ddau:73PmbN3CTYP" />
-              <ref role="28GBKb" to="ddau:6Fa64hUc88J" resolve="Device" />
-            </node>
-            <node concept="oXsJc" id="4IooPifOzZq" role="3uHU7B" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="4IooPifSiPT">
     <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />

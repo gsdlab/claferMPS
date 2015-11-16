@@ -7,9 +7,9 @@
   </languages>
   <imports>
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -307,8 +307,8 @@
             </node>
             <node concept="2OqwBi" id="73PmbN3E1Et" role="37vLTJ">
               <node concept="2Sf5sV" id="73PmbN3E1xN" role="2Oq$k0" />
-              <node concept="3TrEf2" id="73PmbN3E22l" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:73PmbN3CTYP" />
+              <node concept="3TrEf2" id="3zRPoaJO_5A" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:3zRPoaJOz1Q" />
               </node>
             </node>
           </node>
@@ -625,8 +625,8 @@
           <node concept="2OqwBi" id="73PmbN41rtQ" role="3clFbG">
             <node concept="2OqwBi" id="73PmbN41l6N" role="2Oq$k0">
               <node concept="2Sf5sV" id="73PmbN41l6O" role="2Oq$k0" />
-              <node concept="3TrEf2" id="73PmbN41l6P" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:73PmbN3CTYP" />
+              <node concept="3TrEf2" id="3zRPoaJO$$7" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:3zRPoaJOz1Q" />
               </node>
             </node>
             <node concept="zfrQC" id="73PmbN41rJe" role="2OqNvi" />
