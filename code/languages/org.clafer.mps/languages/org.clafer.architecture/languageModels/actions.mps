@@ -601,6 +601,35 @@
         </node>
       </node>
     </node>
+    <node concept="3UNGvq" id="3dci_2vBhIG" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:19aTRzkPSvs" resolve="PowerTopology" />
+      <node concept="tYCnQ" id="3dci_2vBhIH" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+        <node concept="Cmt7Y" id="3dci_2vBhII" role="uz6Si">
+          <node concept="Cnhdc" id="3dci_2vBhIJ" role="Cncma">
+            <node concept="3clFbS" id="3dci_2vBhIK" role="2VODD2">
+              <node concept="3clFbF" id="3dci_2vBhIL" role="3cqZAp">
+                <node concept="2OqwBi" id="3dci_2vBhIM" role="3clFbG">
+                  <node concept="2OqwBi" id="3dci_2vBhIN" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="3dci_2vBhIO" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="3dci_2vBhIP" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                    </node>
+                  </node>
+                  <node concept="WFELt" id="3dci_2vBhIQ" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="3dci_2vBhIR" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="3dci_2vBhIS" role="Cn6ar">
+            <property role="2h1i$Z" value="Add Content" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3UNGvq" id="19aTRzkPg88" role="3UOs0v">
       <ref role="3UNGvu" to="ddau:7DuSdC$$3Vj" resolve="DeviceNodeTopology" />
       <node concept="tYCnQ" id="19aTRzkPg89" role="_1QTJ">

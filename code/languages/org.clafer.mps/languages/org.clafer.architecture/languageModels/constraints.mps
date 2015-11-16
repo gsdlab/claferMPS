@@ -12,8 +12,8 @@
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -1514,48 +1514,58 @@
         <node concept="3clFbJ" id="19aTRzkPa3F" role="3cqZAp">
           <node concept="3clFbS" id="19aTRzkPa3G" role="3clFbx">
             <node concept="3cpWs6" id="19aTRzkPa3H" role="3cqZAp">
-              <node concept="22lmx$" id="19aTRzkS7H_" role="3cqZAk">
-                <node concept="22lmx$" id="19aTRzkPa3J" role="3uHU7B">
-                  <node concept="22lmx$" id="19aTRzkPa3K" role="3uHU7B">
-                    <node concept="22lmx$" id="19aTRzkPa3L" role="3uHU7B">
-                      <node concept="3clFbC" id="19aTRzkPa3M" role="3uHU7B">
-                        <node concept="otxO1" id="19aTRzkPa3N" role="3uHU7B" />
-                        <node concept="3TUQnm" id="19aTRzkPa3O" role="3uHU7w">
-                          <ref role="3TV0OU" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+              <node concept="22lmx$" id="3dci_2vBd9C" role="3cqZAk">
+                <node concept="2OqwBi" id="3dci_2vBdlx" role="3uHU7w">
+                  <node concept="otxO1" id="3dci_2vBdfW" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="3dci_2vBdtV" role="2OqNvi">
+                    <node concept="chp4Y" id="3dci_2vBdyg" role="2Zo12j">
+                      <ref role="cht4Q" to="ddau:19aTRzkPSvs" resolve="PowerTopology" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="22lmx$" id="19aTRzkS7H_" role="3uHU7B">
+                  <node concept="22lmx$" id="19aTRzkPa3J" role="3uHU7B">
+                    <node concept="22lmx$" id="19aTRzkPa3K" role="3uHU7B">
+                      <node concept="22lmx$" id="19aTRzkPa3L" role="3uHU7B">
+                        <node concept="3clFbC" id="19aTRzkPa3M" role="3uHU7B">
+                          <node concept="otxO1" id="19aTRzkPa3N" role="3uHU7B" />
+                          <node concept="3TUQnm" id="19aTRzkPa3O" role="3uHU7w">
+                            <ref role="3TV0OU" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="19aTRzkPa3P" role="3uHU7w">
+                          <node concept="otxO1" id="19aTRzkPa3Q" role="2Oq$k0" />
+                          <node concept="2Zo12i" id="19aTRzkPa3R" role="2OqNvi">
+                            <node concept="chp4Y" id="19aTRzkPa3S" role="2Zo12j">
+                              <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
+                            </node>
+                          </node>
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="19aTRzkPa3P" role="3uHU7w">
-                        <node concept="otxO1" id="19aTRzkPa3Q" role="2Oq$k0" />
-                        <node concept="2Zo12i" id="19aTRzkPa3R" role="2OqNvi">
-                          <node concept="chp4Y" id="19aTRzkPa3S" role="2Zo12j">
-                            <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
+                      <node concept="2OqwBi" id="19aTRzkPa3T" role="3uHU7w">
+                        <node concept="otxO1" id="19aTRzkPa3U" role="2Oq$k0" />
+                        <node concept="2Zo12i" id="19aTRzkPa3V" role="2OqNvi">
+                          <node concept="chp4Y" id="19aTRzkPadX" role="2Zo12j">
+                            <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="19aTRzkPa3T" role="3uHU7w">
-                      <node concept="otxO1" id="19aTRzkPa3U" role="2Oq$k0" />
-                      <node concept="2Zo12i" id="19aTRzkPa3V" role="2OqNvi">
-                        <node concept="chp4Y" id="19aTRzkPadX" role="2Zo12j">
-                          <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+                    <node concept="2OqwBi" id="19aTRzkPa3X" role="3uHU7w">
+                      <node concept="otxO1" id="19aTRzkPa3Y" role="2Oq$k0" />
+                      <node concept="2Zo12i" id="19aTRzkPa3Z" role="2OqNvi">
+                        <node concept="chp4Y" id="19aTRzkPalZ" role="2Zo12j">
+                          <ref role="cht4Q" to="ddau:7DuSdC$$3Vj" resolve="DeviceNodeTopology" />
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="19aTRzkPa3X" role="3uHU7w">
-                    <node concept="otxO1" id="19aTRzkPa3Y" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="19aTRzkPa3Z" role="2OqNvi">
-                      <node concept="chp4Y" id="19aTRzkPalZ" role="2Zo12j">
-                        <ref role="cht4Q" to="ddau:7DuSdC$$3Vj" resolve="DeviceNodeTopology" />
+                  <node concept="2OqwBi" id="3dci_2vBcZ3" role="3uHU7w">
+                    <node concept="otxO1" id="3dci_2vBcZ4" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="3dci_2vBcZ5" role="2OqNvi">
+                      <node concept="chp4Y" id="3dci_2vBcZ6" role="2Zo12j">
+                        <ref role="cht4Q" to="ddau:19aTRzkPSt3" resolve="CommunicationTopology" />
                       </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="19aTRzkS7Rg" role="3uHU7w">
-                  <node concept="otxO1" id="19aTRzkS7Rh" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="19aTRzkS7Ri" role="2OqNvi">
-                    <node concept="chp4Y" id="19aTRzkS7Zq" role="2Zo12j">
-                      <ref role="cht4Q" to="ddau:19aTRzkPSt3" resolve="CommunicationTopology" />
                     </node>
                   </node>
                 </node>
