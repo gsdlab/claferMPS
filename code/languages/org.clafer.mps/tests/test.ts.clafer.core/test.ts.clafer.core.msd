@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.ts.clafer.core" uuid="84a4a951-0688-43c4-afde-241ff368a8db" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="test.ts.clafer.core" uuid="84a4a951-0688-43c4-afde-241ff368a8db" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -38,5 +38,8 @@
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="0" />
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" fqName="org.clafer.expr" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="84a4a951-0688-43c4-afde-241ff368a8db(test.ts.clafer.core)" version="0" />
+  </dependencyVersions>
 </solution>
 

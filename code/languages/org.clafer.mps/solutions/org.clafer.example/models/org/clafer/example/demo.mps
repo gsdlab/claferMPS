@@ -2,7 +2,6 @@
 <model ref="r:647d5160-fbac-41df-8046-fddc72ac6a9d(org.clafer.example.demo)">
   <persistence version="9" />
   <languages>
-    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="-1" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports />

@@ -2,7 +2,6 @@
 <model ref="r:731571da-756c-4fb2-90a3-d8e9c533b315(test.ex.clafer.core.basic)">
   <persistence version="9" />
   <languages>
-    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports />

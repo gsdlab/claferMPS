@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="ArchBaseConcepts" uuid="9dbd68bc-cb8b-44b4-bf6f-cd9789fe46b4" compileInMPS="true">
+<solution name="ArchBaseConcepts" uuid="9dbd68bc-cb8b-44b4-bf6f-cd9789fe46b4" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -32,5 +32,8 @@
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="0" />
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" fqName="org.clafer.expr" version="0" />
   </languageVersions>
+  <dependencyVersions>
+    <module reference="9dbd68bc-cb8b-44b4-bf6f-cd9789fe46b4(ArchBaseConcepts)" version="0" />
+  </dependencyVersions>
 </solution>
 

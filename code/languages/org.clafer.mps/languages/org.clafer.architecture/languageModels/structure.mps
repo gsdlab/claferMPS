@@ -113,10 +113,13 @@
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="" />
     <property role="1pbfSe" value="419456313" />
-    <property role="34LRSv" value="Architecture Element" />
+    <property role="34LRSv" value="ArchElement" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="PrWs8" id="4csP6flST3Q" role="PzmwI">
       <ref role="PrY4T" node="4Z9rElroRnZ" resolve="IArchitectureElement" />
+    </node>
+    <node concept="PrWs8" id="3ZFGVpNJOxj" role="PzmwI">
+      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     </node>
     <node concept="1TJgyj" id="4csP6flST4F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -131,6 +134,10 @@
     </node>
     <node concept="1TJgyi" id="6Fa64hUbOYB" role="1TKVEl">
       <property role="TrG5h" value="isOptional" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4diOXa0yQd0" role="1TKVEl">
+      <property role="TrG5h" value="hasQualityAttributes" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
@@ -195,6 +202,9 @@
     <node concept="1TJgyi" id="7DuSdC$_H4S" role="1TKVEl">
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="7DuSdC$_GOc" resolve="DeviceNodeTypeEnum" />
+    </node>
+    <node concept="PrWs8" id="4diOXa0yQdO" role="PzmwI">
+      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8AHL">
@@ -918,6 +928,12 @@
   <node concept="PlHQZ" id="50FM0hzFYbT">
     <property role="TrG5h" value="IHaveQualityAttributes" />
     <property role="1pbfSe" value="1277449475" />
+    <node concept="1TJgyj" id="4diOXa0$sm2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="qualities" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4diOXa0$smX" resolve="Quality" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6kt45HTiMty">
     <property role="1pbfSe" value="563595331" />
@@ -928,7 +944,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6kt45HTj4nJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="qualities" />
+      <property role="20kJfa" value="tuples" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6kt45HTj4rI" resolve="QualityTuple" />
     </node>
@@ -954,7 +970,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="qualities" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="57FaIEV_R4r" resolve="QTElement" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+    </node>
+    <node concept="1TJgyj" id="3_rlKvvnEFQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="qualityRef" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="57FaIEV_R4s" resolve="QualityRef" />
     </node>
     <node concept="PrWs8" id="6kt45HTlS$5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -975,7 +997,7 @@
   <node concept="1TIwiD" id="57FaIEVyhuB">
     <property role="1pbfSe" value="225723025" />
     <property role="3GE5qa" value="QualityModule" />
-    <property role="TrG5h" value="Quality" />
+    <property role="TrG5h" value="QualityTableElement" />
     <ref role="1TJDcQ" node="57FaIEV_R4r" resolve="QTElement" />
     <node concept="PrWs8" id="57FaIEVyhuR" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1001,7 +1023,25 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="quality" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="57FaIEVyhuB" resolve="Quality" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4diOXa0$smX">
+    <property role="1pbfSe" value="1008428657" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="Quality" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4diOXa0$snd" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="tElement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+    </node>
+    <node concept="1TJgyj" id="4diOXa0$snf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>

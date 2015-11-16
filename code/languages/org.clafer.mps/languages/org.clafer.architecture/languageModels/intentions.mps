@@ -3,14 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -116,12 +115,6 @@
       </concept>
       <concept id="1812109616120608865" name="jetbrains.mps.lang.intentions.structure.ParameterizedDescriptionBlock" flags="in" index="1jPt1T" />
       <concept id="1812109616120795373" name="jetbrains.mps.lang.intentions.structure.ParameterizedExecuteBlock" flags="in" index="1jPJzP" />
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -755,15 +748,6 @@
             <property role="3SKdUp" value="TODO" />
           </node>
         </node>
-        <node concept="34ab3g" id="50FM0hzLOEl" role="3cqZAp">
-          <property role="35gtTG" value="error" />
-          <node concept="3cpWs3" id="50FM0hzLOPP" role="34bqiv">
-            <node concept="38Zlrr" id="50FM0hzLOQg" role="3uHU7w" />
-            <node concept="Xl_RD" id="50FM0hzLOEn" role="3uHU7B">
-              <property role="Xl_RC" value="====== " />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="50FM0hzBaCP" role="3cqZAp">
           <node concept="3clFbS" id="50FM0hzBaCR" role="3clFbx">
             <node concept="3clFbF" id="50FM0hzBaTC" role="3cqZAp">
@@ -775,7 +759,7 @@
                   </node>
                 </node>
                 <node concept="zfrQC" id="50FM0hzBchY" role="2OqNvi">
-                  <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="Quality" />
+                  <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                 </node>
               </node>
             </node>
@@ -803,7 +787,7 @@
                     </node>
                   </node>
                   <node concept="zfrQC" id="50FM0hzCb0D" role="2OqNvi">
-                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="Quality" />
+                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                   </node>
                 </node>
               </node>
@@ -826,7 +810,7 @@
                     </node>
                   </node>
                   <node concept="zfrQC" id="50FM0hzG0C3" role="2OqNvi">
-                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="Quality" />
+                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                   </node>
                 </node>
               </node>
@@ -849,7 +833,7 @@
                     </node>
                   </node>
                   <node concept="zfrQC" id="50FM0hzHkmV" role="2OqNvi">
-                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="Quality" />
+                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                   </node>
                 </node>
               </node>
@@ -872,7 +856,7 @@
                     </node>
                   </node>
                   <node concept="zfrQC" id="50FM0hzG19R" role="2OqNvi">
-                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="Quality" />
+                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                   </node>
                 </node>
               </node>
@@ -934,7 +918,7 @@
                 <node concept="liA8E" id="50FM0hzAi3J" role="2OqNvi">
                   <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
                   <node concept="35c_gC" id="50FM0hzAlvZ" role="37wK5m">
-                    <ref role="35c_gD" to="ddau:50FM0hzzawM" resolve="Quality" />
+                    <ref role="35c_gD" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                   </node>
                 </node>
               </node>
@@ -989,7 +973,7 @@
                   </node>
                 </node>
                 <node concept="zfrQC" id="50FM0hzHbcG" role="2OqNvi">
-                  <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="Quality" />
+                  <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                 </node>
               </node>
             </node>
@@ -1017,7 +1001,7 @@
                     </node>
                   </node>
                   <node concept="zfrQC" id="50FM0hzHbcU" role="2OqNvi">
-                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="Quality" />
+                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                   </node>
                 </node>
               </node>
@@ -1040,7 +1024,7 @@
                     </node>
                   </node>
                   <node concept="zfrQC" id="50FM0hzLTm8" role="2OqNvi">
-                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="Quality" />
+                    <ref role="1A9B2P" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                   </node>
                 </node>
               </node>
@@ -1102,7 +1086,7 @@
                 <node concept="liA8E" id="50FM0hzH9tG" role="2OqNvi">
                   <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
                   <node concept="35c_gC" id="50FM0hzH9tH" role="37wK5m">
-                    <ref role="35c_gD" to="ddau:50FM0hzzawM" resolve="Quality" />
+                    <ref role="35c_gD" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
                   </node>
                 </node>
               </node>

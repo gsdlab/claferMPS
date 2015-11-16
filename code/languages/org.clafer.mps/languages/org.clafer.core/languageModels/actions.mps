@@ -9,10 +9,8 @@
   </languages>
   <imports>
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
-    <import index="msyo" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
-    <import index="ymbg" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.constraints(MPS.Core/jetbrains.mps.smodel.constraints@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -210,7 +208,7 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3THzug">
+      <concept id="1172420572800" name="jetbrains.mps.lang.smodel.structure.ConceptNodeType" flags="in" index="3THzug">
         <reference id="1180481110358" name="conceptDeclaraton" index="3qa414" />
       </concept>
       <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
@@ -521,7 +519,7 @@
                   <node concept="2OqwBi" id="2uk4icoRtOj" role="33vP2m">
                     <node concept="ub8z3" id="2uk4icoRtOk" role="2Oq$k0" />
                     <node concept="liA8E" id="2uk4icoRtOl" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                      <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                       <node concept="3cmrfG" id="2uk4icoRtOm" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
@@ -531,8 +529,8 @@
               </node>
               <node concept="3clFbF" id="2uk4icoRuFS" role="3cqZAp">
                 <node concept="2YIFZM" id="2uk4icoRuRr" role="3clFbG">
-                  <ref role="37wK5l" to="e2lb:~Character.isJavaIdentifierStart(char):boolean" resolve="isJavaIdentifierStart" />
-                  <ref role="1Pybhc" to="e2lb:~Character" resolve="Character" />
+                  <ref role="37wK5l" to="wyt6:~Character.isJavaIdentifierStart(char):boolean" resolve="isJavaIdentifierStart" />
+                  <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                   <node concept="37vLTw" id="2uk4icoRv2P" role="37wK5m">
                     <ref role="3cqZAo" node="2uk4icoRtOi" resolve="c" />
                   </node>
@@ -762,8 +760,8 @@
                   <node concept="3clFbF" id="6qd05UcLXXY" role="3cqZAp">
                     <node concept="37vLTI" id="6qd05UcMgst" role="3clFbG">
                       <node concept="2YIFZM" id="6qd05UcMhUT" role="37vLTx">
-                        <ref role="37wK5l" to="e2lb:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
-                        <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+                        <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                         <node concept="ub8z3" id="6qd05UcMilj" role="37wK5m" />
                       </node>
                       <node concept="2OqwBi" id="6qd05UcMfu5" role="37vLTJ">
@@ -781,7 +779,7 @@
                   <node concept="3cpWsn" id="6qd05UcMiX6" role="TDEfY">
                     <property role="TrG5h" value="ignore" />
                     <node concept="3uibUv" id="6qd05UcMjYK" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="6qd05UcMiXa" role="TDEfX" />
@@ -820,17 +818,17 @@
                     <node concept="2OqwBi" id="6qd05UcTNtH" role="3uHU7B">
                       <node concept="ub8z3" id="6qd05UcTNft" role="2Oq$k0" />
                       <node concept="liA8E" id="6qd05UcTOGA" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                        <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                       </node>
                     </node>
                   </node>
                   <node concept="2YIFZM" id="6qd05UcMsy8" role="3uHU7w">
-                    <ref role="37wK5l" to="e2lb:~Character.isDigit(char):boolean" resolve="isDigit" />
-                    <ref role="1Pybhc" to="e2lb:~Character" resolve="Character" />
+                    <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
+                    <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                     <node concept="2OqwBi" id="6qd05UcMt5q" role="37wK5m">
                       <node concept="ub8z3" id="6qd05UcMsRd" role="2Oq$k0" />
                       <node concept="liA8E" id="6qd05UcMunV" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                        <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                         <node concept="3cmrfG" id="6qd05UcMu$f" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -1011,8 +1009,8 @@
                   <node concept="3clFbF" id="6qd05UcTk_s" role="3cqZAp">
                     <node concept="37vLTI" id="6qd05UcTk_t" role="3clFbG">
                       <node concept="2YIFZM" id="6qd05UcTk_u" role="37vLTx">
-                        <ref role="37wK5l" to="e2lb:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
-                        <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+                        <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                         <node concept="ub8z3" id="6qd05UcTk_v" role="37wK5m" />
                       </node>
                       <node concept="2OqwBi" id="6qd05UcTk_w" role="37vLTJ">
@@ -1030,7 +1028,7 @@
                   <node concept="3cpWsn" id="6qd05UcTk_$" role="TDEfY">
                     <property role="TrG5h" value="ignore" />
                     <node concept="3uibUv" id="6qd05UcTk__" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="6qd05UcTk_A" role="TDEfX" />
@@ -1064,12 +1062,12 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="6qd05UcTk_O" role="3clFbw">
-                  <ref role="37wK5l" to="e2lb:~Character.isDigit(char):boolean" resolve="isDigit" />
-                  <ref role="1Pybhc" to="e2lb:~Character" resolve="Character" />
+                  <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
+                  <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                   <node concept="2OqwBi" id="6qd05UcTk_P" role="37wK5m">
                     <node concept="ub8z3" id="6qd05UcTk_Q" role="2Oq$k0" />
                     <node concept="liA8E" id="6qd05UcTk_R" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                      <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                       <node concept="3cmrfG" id="6qd05UcTk_S" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>
@@ -1176,8 +1174,8 @@
                   <node concept="3clFbF" id="6qd05UcTmoW" role="3cqZAp">
                     <node concept="37vLTI" id="6qd05UcTmoX" role="3clFbG">
                       <node concept="2YIFZM" id="6qd05UcTmoY" role="37vLTx">
-                        <ref role="37wK5l" to="e2lb:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
-                        <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+                        <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                         <node concept="ub8z3" id="6qd05UcTmoZ" role="37wK5m" />
                       </node>
                       <node concept="2OqwBi" id="6qd05UcTmp0" role="37vLTJ">
@@ -1195,7 +1193,7 @@
                   <node concept="3cpWsn" id="6qd05UcTmp4" role="TDEfY">
                     <property role="TrG5h" value="ignore" />
                     <node concept="3uibUv" id="6qd05UcTmp5" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="6qd05UcTmp6" role="TDEfX" />
@@ -1228,12 +1226,12 @@
                 </node>
                 <node concept="1Wc70l" id="6qd05UcTQT6" role="3clFbw">
                   <node concept="2YIFZM" id="6qd05UcTmpk" role="3uHU7w">
-                    <ref role="37wK5l" to="e2lb:~Character.isDigit(char):boolean" resolve="isDigit" />
-                    <ref role="1Pybhc" to="e2lb:~Character" resolve="Character" />
+                    <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
+                    <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
                     <node concept="2OqwBi" id="6qd05UcTmpl" role="37wK5m">
                       <node concept="ub8z3" id="6qd05UcTmpm" role="2Oq$k0" />
                       <node concept="liA8E" id="6qd05UcTmpn" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                        <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                         <node concept="3cmrfG" id="6qd05UcTmpo" role="37wK5m">
                           <property role="3cmrfH" value="0" />
                         </node>
@@ -1247,7 +1245,7 @@
                     <node concept="2OqwBi" id="6qd05UcTRbB" role="3uHU7B">
                       <node concept="ub8z3" id="6qd05UcTRbC" role="2Oq$k0" />
                       <node concept="liA8E" id="6qd05UcTRbD" role="2OqNvi">
-                        <ref role="37wK5l" to="e2lb:~String.length():int" resolve="length" />
+                        <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
                       </node>
                     </node>
                   </node>
@@ -1355,8 +1353,8 @@
                   <node concept="3clFbF" id="7397_S3ZfL0" role="3cqZAp">
                     <node concept="37vLTI" id="7397_S3ZfL1" role="3clFbG">
                       <node concept="2YIFZM" id="7397_S3ZfL2" role="37vLTx">
-                        <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
-                        <ref role="37wK5l" to="e2lb:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
+                        <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                        <ref role="37wK5l" to="wyt6:~Integer.valueOf(java.lang.String):java.lang.Integer" resolve="valueOf" />
                         <node concept="ub8z3" id="7397_S3ZfL3" role="37wK5m" />
                       </node>
                       <node concept="2OqwBi" id="7397_S3ZfL4" role="37vLTJ">
@@ -1374,7 +1372,7 @@
                   <node concept="3cpWsn" id="7397_S3ZfL8" role="TDEfY">
                     <property role="TrG5h" value="ignore" />
                     <node concept="3uibUv" id="7397_S3ZfL9" role="1tU5fm">
-                      <ref role="3uigEE" to="e2lb:~Exception" resolve="Exception" />
+                      <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="7397_S3ZfLa" role="TDEfX" />
@@ -1408,12 +1406,12 @@
                   </node>
                 </node>
                 <node concept="2YIFZM" id="7397_S3ZfLq" role="3clFbw">
-                  <ref role="1Pybhc" to="e2lb:~Character" resolve="Character" />
-                  <ref role="37wK5l" to="e2lb:~Character.isDigit(char):boolean" resolve="isDigit" />
+                  <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
+                  <ref role="37wK5l" to="wyt6:~Character.isDigit(char):boolean" resolve="isDigit" />
                   <node concept="2OqwBi" id="7397_S3ZfLr" role="37wK5m">
                     <node concept="ub8z3" id="7397_S3ZfLs" role="2Oq$k0" />
                     <node concept="liA8E" id="7397_S3ZfLt" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~String.charAt(int):char" resolve="charAt" />
+                      <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
                       <node concept="3cmrfG" id="7397_S3ZfLu" role="37wK5m">
                         <property role="3cmrfH" value="0" />
                       </node>

@@ -42,7 +42,7 @@
         <child id="7285997757218441139" name="qualities" index="sklvC" />
       </concept>
       <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
-        <child id="7285997757218440687" name="qualities" index="sklmO" />
+        <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommunicationTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
@@ -74,7 +74,7 @@
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
-      <concept id="5902858924256204711" name="org.clafer.architecture.structure.Quality" flags="ng" index="3EozPd" />
+      <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
       <concept id="2260668491394108193" name="org.clafer.architecture.structure.ArchRef" flags="ng" index="3Jak$y" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -920,23 +920,17 @@
   </node>
   <node concept="slzsT" id="4HhZvvSmPV5">
     <property role="TrG5h" value="Qualities" />
-    <node concept="sklqP" id="57FaIEVJt3g" role="sklmO">
-      <node concept="3EozPd" id="57FaIEVJt3t" role="sklvC">
-        <property role="TrG5h" value="xzc" />
-      </node>
-      <node concept="sjk9b" id="57FaIEVJt3o" role="skltt">
+    <node concept="sklqP" id="3ZFGVpNKfAD" role="sklmO">
+      <node concept="sjk9b" id="3ZFGVpNKfAK" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6flST3m" resolve="ArchElement" />
       </node>
     </node>
-    <node concept="sklqP" id="57FaIEVwLXk" role="sklmO">
-      <node concept="3EozPd" id="57FaIEV$4f5" role="sklvC">
-        <property role="TrG5h" value="s" />
+    <node concept="sklqP" id="4diOXa0BbmN" role="sklmO">
+      <node concept="3EozPd" id="1wJvPhFn_$A" role="sklvC">
+        <property role="TrG5h" value="quality1" />
       </node>
-      <node concept="3EozPd" id="57FaIEV$4f7" role="sklvC">
-        <property role="TrG5h" value="d" />
-      </node>
-      <node concept="sjk9b" id="57FaIEVwLXo" role="skltt">
-        <ref role="sjk9f" to="ddau:4csP6flSWC7" resolve="AFunction" />
+      <node concept="sjk9b" id="1wJvPhFmpMs" role="skltt">
+        <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNodes" />
       </node>
     </node>
   </node>
