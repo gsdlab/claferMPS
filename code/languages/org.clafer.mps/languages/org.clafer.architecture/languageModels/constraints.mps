@@ -404,21 +404,11 @@
         <node concept="3clFbF" id="6yDAYyfKr$B" role="3cqZAp">
           <node concept="22lmx$" id="6yDAYyfKr$C" role="3clFbG">
             <node concept="22lmx$" id="6yDAYyfKr$D" role="3uHU7B">
-              <node concept="22lmx$" id="1Mid6Xjkvae" role="3uHU7B">
-                <node concept="2OqwBi" id="1Mid6XjkvtL" role="3uHU7w">
-                  <node concept="otxO1" id="1Mid6Xjkvlj" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="1Mid6Xjkw8p" role="2OqNvi">
-                    <node concept="chp4Y" id="1Mid6Xjkwf0" role="2Zo12j">
-                      <ref role="cht4Q" to="ddau:1HSD30jAnuR" resolve="Smartness" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6yDAYyfKr$E" role="3uHU7B">
-                  <node concept="otxO1" id="6yDAYyfKr$F" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="6yDAYyfKr$G" role="2OqNvi">
-                    <node concept="chp4Y" id="6yDAYyfKr$H" role="2Zo12j">
-                      <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
-                    </node>
+              <node concept="2OqwBi" id="6yDAYyfKr$E" role="3uHU7B">
+                <node concept="otxO1" id="6yDAYyfKr$F" role="2Oq$k0" />
+                <node concept="2Zo12i" id="6yDAYyfKr$G" role="2OqNvi">
+                  <node concept="chp4Y" id="6yDAYyfKr$H" role="2Zo12j">
+                    <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
                   </node>
                 </node>
               </node>
@@ -661,146 +651,44 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="znlrM84U_K">
-    <property role="3GE5qa" value="AutomobileConcepts" />
-    <ref role="1M2myG" to="ddau:6Fa64hUc88J" resolve="Device" />
-    <node concept="osYL8" id="6yDAYyfKr6d" role="1MLXOK">
-      <node concept="3clFbS" id="6yDAYyfKr6e" role="2VODD2">
-        <node concept="3clFbF" id="6yDAYyfKrbR" role="3cqZAp">
-          <node concept="22lmx$" id="3KrTRUBRtQa" role="3clFbG">
-            <node concept="2OqwBi" id="3KrTRUBRu7p" role="3uHU7w">
-              <node concept="otxO1" id="3KrTRUBRtYG" role="2Oq$k0" />
-              <node concept="2Zo12i" id="3KrTRUBRuo6" role="2OqNvi">
-                <node concept="chp4Y" id="3KrTRUBRuuV" role="2Zo12j">
-                  <ref role="cht4Q" to="ddau:6Fa64hUc88J" resolve="Device" />
-                </node>
-              </node>
-            </node>
-            <node concept="22lmx$" id="6yDAYyfKxrb" role="3uHU7B">
-              <node concept="22lmx$" id="6yDAYyfKrbS" role="3uHU7B">
-                <node concept="22lmx$" id="6yDAYyfKrbT" role="3uHU7B">
-                  <node concept="2OqwBi" id="6yDAYyfKrbU" role="3uHU7B">
-                    <node concept="otxO1" id="6yDAYyfKrbV" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="6yDAYyfKrbW" role="2OqNvi">
-                      <node concept="chp4Y" id="6yDAYyfKrbX" role="2Zo12j">
-                        <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="6yDAYyfKrbY" role="3uHU7w">
-                    <node concept="otxO1" id="6yDAYyfKrbZ" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="6yDAYyfKrc0" role="2OqNvi">
-                      <node concept="chp4Y" id="6yDAYyfKrc1" role="2Zo12j">
-                        <ref role="cht4Q" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6yDAYyfKrc2" role="3uHU7w">
-                  <node concept="otxO1" id="6yDAYyfKrc3" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="6yDAYyfKrc4" role="2OqNvi">
-                    <node concept="chp4Y" id="6yDAYyfKrc5" role="2Zo12j">
-                      <ref role="cht4Q" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6yDAYyfKxFw" role="3uHU7w">
-                <node concept="otxO1" id="6yDAYyfKxz2" role="2Oq$k0" />
-                <node concept="3O6GUB" id="6yDAYyfKxVZ" role="2OqNvi">
-                  <node concept="chp4Y" id="6yDAYyfKy2A" role="3QVz_e">
-                    <ref role="cht4Q" to="ddau:1HSD30jAnuR" resolve="Smartness" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="nKS2y" id="3KrTRUBSIYX" role="1MLUbF">
-      <node concept="3clFbS" id="3KrTRUBSIYY" role="2VODD2">
-        <node concept="3clFbF" id="3KrTRUBSJ6a" role="3cqZAp">
-          <node concept="22lmx$" id="3KrTRUBSQtF" role="3clFbG">
-            <node concept="2OqwBi" id="3KrTRUBSQtG" role="3uHU7w">
-              <node concept="nLn13" id="3KrTRUBSQtH" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="3KrTRUBSQtI" role="2OqNvi">
-                <node concept="chp4Y" id="3KrTRUBSQtJ" role="cj9EA">
-                  <ref role="cht4Q" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
-                </node>
-              </node>
-            </node>
-            <node concept="22lmx$" id="3KrTRUBSQtK" role="3uHU7B">
-              <node concept="2OqwBi" id="3KrTRUBSQtL" role="3uHU7B">
-                <node concept="nLn13" id="3KrTRUBSQtM" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3KrTRUBSQtN" role="2OqNvi">
-                  <node concept="chp4Y" id="3KrTRUBSQtO" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="3KrTRUBSQtP" role="3uHU7w">
-                <node concept="nLn13" id="3KrTRUBSQtQ" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3KrTRUBSQtR" role="2OqNvi">
-                  <node concept="chp4Y" id="3KrTRUBSQtS" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:7DuSdC$$3Vj" resolve="DeviceNodeTopology" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="znlrM85dU4">
     <property role="3GE5qa" value="AutomobileConcepts" />
     <ref role="1M2myG" to="ddau:72GPbqt8IRW" resolve="Inline" />
     <node concept="osYL8" id="$OrRLO8Bez" role="1MLXOK">
       <node concept="3clFbS" id="$OrRLO8Be$" role="2VODD2">
         <node concept="3clFbF" id="58TXiBDYt_v" role="3cqZAp">
-          <node concept="22lmx$" id="wYUv7_MrB6" role="3clFbG">
-            <node concept="2OqwBi" id="wYUv7_MrYU" role="3uHU7w">
-              <node concept="otxO1" id="wYUv7_MrPd" role="2Oq$k0" />
-              <node concept="2Zo12i" id="wYUv7_MsgB" role="2OqNvi">
-                <node concept="chp4Y" id="wYUv7_Msos" role="2Zo12j">
-                  <ref role="cht4Q" to="ddau:1HSD30jAnuR" resolve="Smartness" />
+          <node concept="22lmx$" id="58TXiBDYt_x" role="3clFbG">
+            <node concept="22lmx$" id="58TXiBDYt_A" role="3uHU7B">
+              <node concept="22lmx$" id="58TXiBDYt_C" role="3uHU7B">
+                <node concept="3clFbC" id="58TXiBDYt_D" role="3uHU7B">
+                  <node concept="otxO1" id="58TXiBDYt_E" role="3uHU7B" />
+                  <node concept="3TUQnm" id="58TXiBDYt_F" role="3uHU7w">
+                    <ref role="3TV0OU" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="58TXiBDYt_G" role="3uHU7w">
+                  <node concept="otxO1" id="58TXiBDYt_H" role="2Oq$k0" />
+                  <node concept="3O6GUB" id="58TXiBDYt_I" role="2OqNvi">
+                    <node concept="chp4Y" id="5OLu9WxZvi0" role="3QVz_e">
+                      <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNodes" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="58TXiBDYt_O" role="3uHU7w">
+                <node concept="otxO1" id="58TXiBDYt_P" role="2Oq$k0" />
+                <node concept="2Zo12i" id="58TXiBDYt_Q" role="2OqNvi">
+                  <node concept="chp4Y" id="58TXiBDYt_R" role="2Zo12j">
+                    <ref role="cht4Q" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="22lmx$" id="58TXiBDYt_x" role="3uHU7B">
-              <node concept="22lmx$" id="58TXiBDYt_A" role="3uHU7B">
-                <node concept="22lmx$" id="58TXiBDYt_C" role="3uHU7B">
-                  <node concept="3clFbC" id="58TXiBDYt_D" role="3uHU7B">
-                    <node concept="otxO1" id="58TXiBDYt_E" role="3uHU7B" />
-                    <node concept="3TUQnm" id="58TXiBDYt_F" role="3uHU7w">
-                      <ref role="3TV0OU" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="58TXiBDYt_G" role="3uHU7w">
-                    <node concept="otxO1" id="58TXiBDYt_H" role="2Oq$k0" />
-                    <node concept="3O6GUB" id="58TXiBDYt_I" role="2OqNvi">
-                      <node concept="chp4Y" id="5OLu9WxZvi0" role="3QVz_e">
-                        <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNodes" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="58TXiBDYt_O" role="3uHU7w">
-                  <node concept="otxO1" id="58TXiBDYt_P" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="58TXiBDYt_Q" role="2OqNvi">
-                    <node concept="chp4Y" id="58TXiBDYt_R" role="2Zo12j">
-                      <ref role="cht4Q" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="58TXiBDYt_y" role="3uHU7w">
-                <node concept="otxO1" id="58TXiBDYt_z" role="2Oq$k0" />
-                <node concept="2Zo12i" id="58TXiBDYt_$" role="2OqNvi">
-                  <node concept="chp4Y" id="58TXiBDYuyr" role="2Zo12j">
-                    <ref role="cht4Q" to="ddau:72GPbqt8IRX" resolve="Pin" />
-                  </node>
+            <node concept="2OqwBi" id="58TXiBDYt_y" role="3uHU7w">
+              <node concept="otxO1" id="58TXiBDYt_z" role="2Oq$k0" />
+              <node concept="2Zo12i" id="58TXiBDYt_$" role="2OqNvi">
+                <node concept="chp4Y" id="58TXiBDYuyr" role="2Zo12j">
+                  <ref role="cht4Q" to="ddau:72GPbqt8IRX" resolve="Pin" />
                 </node>
               </node>
             </node>
@@ -847,10 +735,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="44ORmASOYIx">
-    <property role="3GE5qa" value="AutomobileConcepts" />
-    <ref role="1M2myG" to="ddau:1HSD30jAnuR" resolve="Smartness" />
   </node>
   <node concept="1M2fIO" id="4IooPifSiPT">
     <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
@@ -1307,8 +1191,8 @@
                                     <ref role="3cqZAo" node="3URpncZwiV$" resolve="it" />
                                   </node>
                                 </node>
-                                <node concept="3TrcHB" id="3URpncZyN1t" role="2OqNvi">
-                                  <ref role="3TsBF5" to="ddau:7DuSdC$_H4S" resolve="type" />
+                                <node concept="3TrcHB" id="23T79tC5F4P" role="2OqNvi">
+                                  <ref role="3TsBF5" to="ddau:23T79tC3_87" resolve="type" />
                                 </node>
                               </node>
                               <node concept="3t7uKx" id="3URpncZyN1u" role="2OqNvi">
@@ -2279,28 +2163,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="2IzCCeKuflx">
-    <property role="3GE5qa" value="DeviceNodes" />
-    <ref role="1M2myG" to="ddau:6Fa64hUiAn2" resolve="DeviceRef" />
-    <node concept="EnEH3" id="4IooPifPBpg" role="1MhHOB">
-      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="Eqf_E" id="4IooPifPBDs" role="EtsB7">
-        <node concept="3clFbS" id="4IooPifPBDt" role="2VODD2">
-          <node concept="3clFbF" id="4IooPifPC_I" role="3cqZAp">
-            <node concept="2OqwBi" id="4IooPifQBz0" role="3clFbG">
-              <node concept="2OqwBi" id="4IooPifQA68" role="2Oq$k0">
-                <node concept="EsrRn" id="4IooPifQ_ZB" role="2Oq$k0" />
-                <node concept="25OxAV" id="4IooPifQB9a" role="2OqNvi" />
-              </node>
-              <node concept="3TrcHB" id="4IooPifQCql" role="2OqNvi">
-                <ref role="3TsBF5" to="tpce:fA0kJcN" resolve="role" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1M2fIO" id="1XvwwfKuX8D">
     <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <ref role="1M2myG" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
@@ -2579,6 +2441,40 @@
                 <node concept="1mIQ4w" id="50FM0hzwHK5" role="2OqNvi">
                   <node concept="chp4Y" id="50FM0hzwI56" role="cj9EA">
                     <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3eNFk2" id="23T79tC4UbF" role="3eNLev">
+              <node concept="3clFbS" id="23T79tC4UbH" role="3eOfB_">
+                <node concept="3cpWs6" id="23T79tC4Vs3" role="3cqZAp">
+                  <node concept="2OqwBi" id="23T79tC4Vs4" role="3cqZAk">
+                    <node concept="37vLTw" id="23T79tC4Vs5" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3_X0pUT1TAy" resolve="list" />
+                    </node>
+                    <node concept="v3k3i" id="23T79tC4Vs6" role="2OqNvi">
+                      <node concept="chp4Y" id="23T79tC4VPy" role="v3oSu">
+                        <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNodes" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="23T79tC4UB4" role="3eO9$A">
+                <node concept="2OqwBi" id="23T79tC4UB5" role="2Oq$k0">
+                  <node concept="21POm0" id="23T79tC4UB6" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="23T79tC4UB7" role="2OqNvi">
+                    <node concept="1xMEDy" id="23T79tC4UB8" role="1xVPHs">
+                      <node concept="chp4Y" id="23T79tC4UB9" role="ri$Ld">
+                        <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="23T79tC4UBa" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="23T79tC4UBb" role="2OqNvi">
+                  <node concept="chp4Y" id="23T79tC4V1C" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:19aTRzkPTWf" resolve="DiscreteWire" />
                   </node>
                 </node>
               </node>
@@ -2878,6 +2774,73 @@
               </node>
               <node concept="3n3YKJ" id="57FaIEVtBsP" role="2OqNvi" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="23T79tC3_7w">
+    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <ref role="1M2myG" to="ddau:23T79tC3_6Y" resolve="INotPower" />
+  </node>
+  <node concept="1M2fIO" id="23T79tC6ZSE">
+    <property role="3GE5qa" value="Implementation" />
+    <ref role="1M2myG" to="ddau:19aTRzkPTWf" resolve="DiscreteWire" />
+    <node concept="osYL8" id="23T79tC6ZT6" role="1MLXOK">
+      <node concept="3clFbS" id="23T79tC6ZT7" role="2VODD2">
+        <node concept="3clFbJ" id="23T79tC6ZTH" role="3cqZAp">
+          <node concept="3clFbS" id="23T79tC6ZTI" role="3clFbx">
+            <node concept="3cpWs6" id="23T79tC6ZTJ" role="3cqZAp">
+              <node concept="22lmx$" id="23T79tC6ZTK" role="3cqZAk">
+                <node concept="2OqwBi" id="23T79tC6ZTL" role="3uHU7w">
+                  <node concept="otxO1" id="23T79tC6ZTM" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="23T79tC6ZTN" role="2OqNvi">
+                    <node concept="chp4Y" id="23T79tC6ZTO" role="2Zo12j">
+                      <ref role="cht4Q" to="ddau:2toL5DN235n" resolve="ArchParens" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="22lmx$" id="23T79tC6ZTP" role="3uHU7B">
+                  <node concept="2OqwBi" id="23T79tC6ZTQ" role="3uHU7B">
+                    <node concept="otxO1" id="23T79tC6ZTR" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="23T79tC6ZTS" role="2OqNvi">
+                      <node concept="chp4Y" id="23T79tC6ZTT" role="2Zo12j">
+                        <ref role="cht4Q" to="ddau:1XvwwfKtGGx" resolve="ArchRef" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="23T79tC6ZTU" role="3uHU7w">
+                    <node concept="otxO1" id="23T79tC6ZTV" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="23T79tC6ZTW" role="2OqNvi">
+                      <node concept="chp4Y" id="23T79tC6ZTX" role="2Zo12j">
+                        <ref role="cht4Q" to="ddau:2toL5DMUBtT" resolve="ArchLogicalExpr" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="23T79tC6ZTY" role="3clFbw">
+            <node concept="3clFbC" id="23T79tC6ZTZ" role="3uHU7B">
+              <node concept="oXsJc" id="23T79tC6ZU0" role="3uHU7B" />
+              <node concept="28GBK8" id="23T79tC6ZU1" role="3uHU7w">
+                <ref role="28GBKb" to="ddau:19aTRzkPTWf" resolve="DiscreteWire" />
+                <ref role="28H3Ia" to="ddau:23T79tC4TMt" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="23T79tC6ZU2" role="3uHU7w">
+              <node concept="28GBK8" id="23T79tC6ZU3" role="3uHU7w">
+                <ref role="28GBKb" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                <ref role="28H3Ia" to="ddau:5OLu9WxUqZ1" />
+              </node>
+              <node concept="oXsJc" id="23T79tC6ZU4" role="3uHU7B" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="23T79tC7mZf" role="3cqZAp">
+          <node concept="3clFbT" id="23T79tC7mZe" role="3clFbG">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

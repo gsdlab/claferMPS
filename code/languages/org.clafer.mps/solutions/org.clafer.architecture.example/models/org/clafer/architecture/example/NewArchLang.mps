@@ -23,9 +23,7 @@
         <reference id="7694989595706234372" name="ht" index="gFST0" />
         <reference id="7694989595706234370" name="fa" index="gFST6" />
       </concept>
-      <concept id="4835973625147048739" name="org.clafer.architecture.structure.DeviceNodes" flags="ng" index="2l49t0">
-        <property id="8817732347959365944" name="type" index="1uM37y" />
-      </concept>
+      <concept id="4835973625147048739" name="org.clafer.architecture.structure.DeviceNodes" flags="ng" index="2l49t0" />
       <concept id="4835973625144817188" name="org.clafer.architecture.structure.FDevice" flags="ng" index="2mXI97" />
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$">
         <child id="3144535651319522708" name="deployedTo" index="2rO0sn" />
@@ -46,7 +44,7 @@
       </concept>
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommunicationTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
-        <child id="6715281144249649204" name="realizedBy" index="1WO72F" />
+        <child id="6715281144249649204" name="connects" index="1WO72F" />
       </concept>
       <concept id="1318120347112277372" name="org.clafer.architecture.structure.DataConnector" flags="ng" index="36Bm84" />
       <concept id="1318120347112277400" name="org.clafer.architecture.structure.DiscreteWireConnector" flags="ng" index="36Bmbw">
@@ -59,8 +57,7 @@
         <child id="4142469013473272795" name="connectedNodes" index="20ny95" />
       </concept>
       <concept id="1318120347112283919" name="org.clafer.architecture.structure.DiscreteWire" flags="ng" index="36BnxR">
-        <reference id="4331309997813291850" name="dest" index="2rQrKO" />
-        <reference id="4331309997813291848" name="src" index="2rQrKQ" />
+        <child id="2375961715026402461" name="connects" index="18UC0a" />
       </concept>
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FAConnector" flags="ng" index="1eXri_">
         <reference id="7590219002335427874" name="dest" index="2wMEbl" />
@@ -75,7 +72,11 @@
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
       <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
+      <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
       <concept id="2260668491394108193" name="org.clafer.architecture.structure.ArchRef" flags="ng" index="3Jak$y" />
+      <concept id="6081592096124286448" name="org.clafer.architecture.structure.IDevice" flags="ng" index="1Uap8U">
+        <property id="2375961715026055687" name="type" index="18XOUg" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -188,14 +189,14 @@
           <node concept="gqqVs" id="3URpncZ8sud" role="lGtFl">
             <property role="gqqTZ" value="12.000100135803223" />
             <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="293.0" />
+            <property role="gqqTX" value="459.0" />
             <property role="gqqTy" value="614.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
           <node concept="1uNHS9" id="3URpncZ8sVJ" role="2mZOl8">
             <property role="TrG5h" value="dnTopology" />
             <node concept="gqqVs" id="4z6NPpC0mM7" role="lGtFl">
-              <property role="gqqTZ" value="12.000100135803223" />
+              <property role="gqqTZ" value="178.00030517578125" />
               <property role="gqqTW" value="12.0" />
               <property role="gqqTX" value="265.0" />
               <property role="gqqTy" value="562.0" />
@@ -204,20 +205,33 @@
             <node concept="2l49t0" id="3zRPoaJP1_K" role="2mZOl8">
               <property role="TrG5h" value="smartDN" />
               <node concept="gqqVs" id="3zRPoaJP1_W" role="lGtFl">
-                <property role="gqqTZ" value="0.0" />
-                <property role="gqqTW" value="0.0" />
+                <property role="gqqTZ" value="12.000100135803223" />
+                <property role="gqqTW" value="12.0" />
                 <property role="gqqTX" value="76.0" />
                 <property role="gqqTy" value="53.0" />
                 <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
               </node>
             </node>
-            <node concept="2l49t0" id="3zRPoaJPz5O" role="2mZOl8">
+            <node concept="2l49t0" id="23T79tC4ys6" role="2mZOl8">
               <property role="TrG5h" value="powerDN" />
-              <property role="1uM37y" value="power" />
+              <property role="18XOUg" value="power" />
             </node>
-            <node concept="2l49t0" id="3zRPoaJPz5Y" role="2mZOl8">
+            <node concept="2l49t0" id="23T79tC4ysg" role="2mZOl8">
               <property role="TrG5h" value="electrDN" />
-              <property role="1uM37y" value="electr" />
+              <property role="18XOUg" value="electr" />
+            </node>
+            <node concept="3Hzz_d" id="23T79tC4yss" role="2mZOl8">
+              <property role="TrG5h" value="motor" />
+            </node>
+          </node>
+          <node concept="1uNHS9" id="dCj2Z$w5uV" role="2mZOl8">
+            <property role="TrG5h" value="dnT2" />
+            <node concept="gqqVs" id="5hA9WCIjVm2" role="lGtFl">
+              <property role="gqqTZ" value="40.0" />
+              <property role="gqqTW" value="12.0" />
+              <property role="gqqTX" value="116.0" />
+              <property role="gqqTy" value="243.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             </node>
           </node>
         </node>
@@ -757,19 +771,21 @@
           <property role="TrG5h" value="test" />
           <node concept="2mZLT$" id="3KrTRUBHumN" role="2mZOl8">
             <property role="TrG5h" value="afTest" />
-            <node concept="1kl$yP" id="3_X0pUT8DXv" role="2rO0sn">
-              <node concept="3Jak$y" id="3_X0pUT8DYp" role="3TlMhJ">
-                <ref role="ZpOSt" node="3URpncZ8sWX" resolve="electrDN" />
-              </node>
-              <node concept="3Jak$y" id="3_X0pUT8DT1" role="3TlMhI">
-                <ref role="ZpOSt" node="3URpncZ8sVT" resolve="smartDN" />
+            <node concept="1kkfkd" id="5hA9WCIjVjM" role="2rO0sn">
+              <node concept="1kl$yP" id="5hA9WCIjVl0" role="1_9fRO">
+                <node concept="3Jak$y" id="5hA9WCIjVlg" role="3TlMhJ">
+                  <ref role="ZpOSt" node="23T79tC4ysg" resolve="electrDN" />
+                </node>
+                <node concept="3Jak$y" id="5hA9WCIjVjW" role="3TlMhI">
+                  <ref role="ZpOSt" node="23T79tC4ys6" resolve="powerDN" />
+                </node>
               </node>
             </node>
           </node>
           <node concept="2mZLT$" id="4B66YapUD6_" role="2mZOl8">
             <property role="TrG5h" value="afTest2" />
             <node concept="3Jak$y" id="3_X0pUT8DTT" role="2rO0sn">
-              <ref role="ZpOSt" node="3URpncZ8sVT" resolve="smartDN" />
+              <ref role="ZpOSt" node="3zRPoaJP1_K" resolve="smartDN" />
             </node>
           </node>
           <node concept="1eXri_" id="4B66YapUD6H" role="2mZOl8">
@@ -845,7 +861,7 @@
               <property role="TrG5h" value="ldWire" />
               <property role="gTlvz" value="false" />
               <node concept="3Jak$y" id="3_X0pUT2xD$" role="1W_kEy">
-                <ref role="ZpOSt" node="4B66Yaq6mDg" resolve="dWire" />
+                <ref role="ZpOSt" node="23T79tC7qnc" resolve="dWire" />
               </node>
             </node>
           </node>
@@ -859,20 +875,20 @@
             <property role="TrG5h" value="pBus" />
             <node concept="1lGFN$" id="3_X0pUTac5i" role="20ny95">
               <node concept="3Jak$y" id="3_X0pUTac67" role="3TlMhJ">
-                <ref role="ZpOSt" node="3URpncZ8sWX" resolve="electrDN" />
+                <ref role="ZpOSt" node="23T79tC4ysg" resolve="electrDN" />
               </node>
               <node concept="1kl$yP" id="3_X0pUTac3K" role="3TlMhI">
                 <node concept="1kkfkd" id="3_X0pUTac4i" role="3TlMhJ">
                   <node concept="3Jak$y" id="3_X0pUTac4I" role="1_9fRO">
-                    <ref role="ZpOSt" node="3URpncZ8sWX" resolve="electrDN" />
+                    <ref role="ZpOSt" node="23T79tC4ysg" resolve="electrDN" />
                   </node>
                 </node>
                 <node concept="1lGFN$" id="3_X0pUTac3a" role="3TlMhI">
                   <node concept="3Jak$y" id="3_X0pUTac3p" role="3TlMhJ">
-                    <ref role="ZpOSt" node="3URpncZ8sWX" resolve="electrDN" />
+                    <ref role="ZpOSt" node="23T79tC4ysg" resolve="electrDN" />
                   </node>
                   <node concept="3Jak$y" id="3_X0pUTac30" role="3TlMhI">
-                    <ref role="ZpOSt" node="3URpncZ8sWX" resolve="electrDN" />
+                    <ref role="ZpOSt" node="23T79tC4ysg" resolve="electrDN" />
                   </node>
                 </node>
               </node>
@@ -882,17 +898,18 @@
             <property role="TrG5h" value="pBus2" />
             <node concept="1lGFN$" id="3_X0pUTac7p" role="20ny95">
               <node concept="3Jak$y" id="3_X0pUTac7C" role="3TlMhJ">
-                <ref role="ZpOSt" node="3URpncZ8sWX" resolve="electrDN" />
+                <ref role="ZpOSt" node="23T79tC4ysg" resolve="electrDN" />
               </node>
               <node concept="3Jak$y" id="3_X0pUTac7f" role="3TlMhI">
-                <ref role="ZpOSt" node="3URpncZ8sWX" resolve="electrDN" />
+                <ref role="ZpOSt" node="23T79tC4ysg" resolve="electrDN" />
               </node>
             </node>
           </node>
-          <node concept="36BnxR" id="4B66Yaq6mDg" role="2mZOl8">
+          <node concept="36BnxR" id="23T79tC7qnc" role="2mZOl8">
             <property role="TrG5h" value="dWire" />
-            <ref role="2rQrKQ" node="3URpncZ8sWX" resolve="electrDN" />
-            <ref role="2rQrKO" node="3URpncZ8sWX" resolve="electrDN" />
+            <node concept="3Jak$y" id="23T79tC7FX2" role="18UC0a">
+              <ref role="ZpOSt" node="23T79tC4ysg" resolve="electrDN" />
+            </node>
           </node>
         </node>
       </node>

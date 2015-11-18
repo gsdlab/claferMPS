@@ -91,7 +91,6 @@
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
-      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -141,17 +140,11 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
-        <child id="1180636770616" name="createdType" index="3zrR0E" />
-      </concept>
       <concept id="1240930118027" name="jetbrains.mps.lang.smodel.structure.SEnumOperationInvocation" flags="nn" index="3HcIyF">
         <reference id="1240930118028" name="enumDeclaration" index="3HcIyG" />
         <child id="1240930317927" name="operation" index="3Hdvt7" />
       </concept>
       <concept id="1240930444980" name="jetbrains.mps.lang.smodel.structure.SEnum_MembersOperation" flags="ng" index="3HdYuk" />
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
-      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -260,169 +253,6 @@
               <node concept="2Sf5sV" id="72GPbqtk9$G" role="2Oq$k0" />
               <node concept="3TrcHB" id="6Fa64hUbPJZ" role="2OqNvi">
                 <ref role="3TsBF5" to="ddau:6Fa64hUbOYB" resolve="isOptional" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="6Fa64hUf62D">
-    <property role="TrG5h" value="makeSmart" />
-    <property role="3GE5qa" value="AutomobileConcepts" />
-    <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="ddau:6Fa64hUc88J" resolve="Device" />
-    <node concept="2S6ZIM" id="6Fa64hUf62E" role="2ZfVej">
-      <node concept="3clFbS" id="6Fa64hUf62F" role="2VODD2">
-        <node concept="3clFbF" id="6Fa64hUf6jm" role="3cqZAp">
-          <node concept="Xl_RD" id="6Fa64hUf6jl" role="3clFbG">
-            <property role="Xl_RC" value="Make Smart" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="6Fa64hUf62G" role="2ZfgGD">
-      <node concept="3clFbS" id="6Fa64hUf62H" role="2VODD2">
-        <node concept="3clFbF" id="6Fa64hUf7kf" role="3cqZAp">
-          <node concept="37vLTI" id="6Fa64hUf8y$" role="3clFbG">
-            <node concept="3clFbT" id="6Fa64hUf8GT" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="6Fa64hUf7og" role="37vLTJ">
-              <node concept="2Sf5sV" id="6Fa64hUf7ke" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6Fa64hUf81L" role="2OqNvi">
-                <ref role="3TsBF5" to="ddau:6Fa64hUf2KZ" resolve="isSmart" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="73PmbN3E1xP" role="3cqZAp">
-          <node concept="37vLTI" id="73PmbN3E38f" role="3clFbG">
-            <node concept="2ShNRf" id="73PmbN3E3ck" role="37vLTx">
-              <node concept="3zrR0B" id="73PmbN3E3ci" role="2ShVmc">
-                <node concept="3Tqbb2" id="73PmbN3E3cj" role="3zrR0E">
-                  <ref role="ehGHo" to="ddau:1HSD30jAnuR" resolve="Smartness" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="73PmbN3E1Et" role="37vLTJ">
-              <node concept="2Sf5sV" id="73PmbN3E1xN" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3zRPoaJO_5A" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:3zRPoaJOz1Q" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="$OrRLObAUE" role="3cqZAp">
-          <node concept="37vLTI" id="$OrRLObBwi" role="3clFbG">
-            <node concept="3clFbT" id="$OrRLObBEH" role="37vLTx">
-              <property role="3clFbU" value="false" />
-            </node>
-            <node concept="2OqwBi" id="$OrRLObAYI" role="37vLTJ">
-              <node concept="2Sf5sV" id="$OrRLObAUC" role="2Oq$k0" />
-              <node concept="3TrcHB" id="$OrRLObBmh" role="2OqNvi">
-                <ref role="3TsBF5" to="ddau:$OrRLObzHS" resolve="isDumb" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="$OrRLOguQN" role="2ZfVeh">
-      <node concept="3clFbS" id="$OrRLOguQO" role="2VODD2">
-        <node concept="3clFbF" id="$OrRLOgv3J" role="3cqZAp">
-          <node concept="1Wc70l" id="5mrhk6vl5pX" role="3clFbG">
-            <node concept="3fqX7Q" id="5mrhk6vl48W" role="3uHU7B">
-              <node concept="2OqwBi" id="5mrhk6vl4lI" role="3fr31v">
-                <node concept="2Sf5sV" id="5mrhk6vl4eb" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="5mrhk6vl55X" role="2OqNvi">
-                  <node concept="chp4Y" id="5mrhk6vl5co" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:5mrhk6vjYjX" resolve="ISmartDevice" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3fqX7Q" id="5mrhk6vl5x8" role="3uHU7w">
-              <node concept="2OqwBi" id="5mrhk6vl5x9" role="3fr31v">
-                <node concept="2Sf5sV" id="5mrhk6vl5xa" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="5mrhk6vl5xb" role="2OqNvi">
-                  <node concept="chp4Y" id="5mrhk6vl5Cf" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:5mrhk6vjYl$" resolve="IDumbDevice" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="$OrRLObBPl">
-    <property role="3GE5qa" value="EAST_ADL" />
-    <property role="TrG5h" value="makeDumb" />
-    <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="ddau:6Fa64hUc88J" resolve="Device" />
-    <node concept="2S6ZIM" id="$OrRLObBPm" role="2ZfVej">
-      <node concept="3clFbS" id="$OrRLObBPn" role="2VODD2">
-        <node concept="3clFbF" id="$OrRLObC5f" role="3cqZAp">
-          <node concept="Xl_RD" id="$OrRLObC5e" role="3clFbG">
-            <property role="Xl_RC" value="Make Dumb" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="$OrRLObBPo" role="2ZfgGD">
-      <node concept="3clFbS" id="$OrRLObBPp" role="2VODD2">
-        <node concept="3clFbF" id="$OrRLObCPI" role="3cqZAp">
-          <node concept="37vLTI" id="$OrRLObDoQ" role="3clFbG">
-            <node concept="3clFbT" id="$OrRLObDwO" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="$OrRLObCTJ" role="37vLTJ">
-              <node concept="2Sf5sV" id="$OrRLObCPH" role="2Oq$k0" />
-              <node concept="3TrcHB" id="$OrRLObDeP" role="2OqNvi">
-                <ref role="3TsBF5" to="ddau:$OrRLObzHS" resolve="isDumb" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="$OrRLObDFq" role="3cqZAp">
-          <node concept="37vLTI" id="$OrRLObEh2" role="3clFbG">
-            <node concept="3clFbT" id="$OrRLObErt" role="37vLTx">
-              <property role="3clFbU" value="false" />
-            </node>
-            <node concept="2OqwBi" id="$OrRLObDJu" role="37vLTJ">
-              <node concept="2Sf5sV" id="$OrRLObDFo" role="2Oq$k0" />
-              <node concept="3TrcHB" id="$OrRLObE71" role="2OqNvi">
-                <ref role="3TsBF5" to="ddau:6Fa64hUf2KZ" resolve="isSmart" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="$OrRLOhryu" role="2ZfVeh">
-      <node concept="3clFbS" id="$OrRLOhryv" role="2VODD2">
-        <node concept="3clFbF" id="5mrhk6vl5Ya" role="3cqZAp">
-          <node concept="1Wc70l" id="5mrhk6vl5Yb" role="3clFbG">
-            <node concept="3fqX7Q" id="5mrhk6vl5Yc" role="3uHU7B">
-              <node concept="2OqwBi" id="5mrhk6vl5Yd" role="3fr31v">
-                <node concept="2Sf5sV" id="5mrhk6vl5Ye" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="5mrhk6vl5Yf" role="2OqNvi">
-                  <node concept="chp4Y" id="5mrhk6vl5Yg" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:5mrhk6vjYjX" resolve="ISmartDevice" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3fqX7Q" id="5mrhk6vl5Yh" role="3uHU7w">
-              <node concept="2OqwBi" id="5mrhk6vl5Yi" role="3fr31v">
-                <node concept="2Sf5sV" id="5mrhk6vl5Yj" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="5mrhk6vl5Yk" role="2OqNvi">
-                  <node concept="chp4Y" id="5mrhk6vl5Yl" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:5mrhk6vjYl$" resolve="IDumbDevice" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -576,88 +406,6 @@
               </node>
             </node>
             <node concept="zfrQC" id="$OrRLOvJ4q" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="73PmbN41euq">
-    <property role="3GE5qa" value="EAST_ADL" />
-    <property role="TrG5h" value="MakeDefault" />
-    <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="ddau:6Fa64hUc88J" resolve="Device" />
-    <node concept="2S6ZIM" id="73PmbN41eur" role="2ZfVej">
-      <node concept="3clFbS" id="73PmbN41eus" role="2VODD2">
-        <node concept="3clFbF" id="73PmbN41eDm" role="3cqZAp">
-          <node concept="Xl_RD" id="73PmbN41eDl" role="3clFbG">
-            <property role="Xl_RC" value="Make Default" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="73PmbN41eut" role="2ZfgGD">
-      <node concept="3clFbS" id="73PmbN41euu" role="2VODD2">
-        <node concept="3clFbF" id="73PmbN41l6$" role="3cqZAp">
-          <node concept="37vLTI" id="73PmbN41l6_" role="3clFbG">
-            <node concept="3clFbT" id="73PmbN41l6A" role="37vLTx" />
-            <node concept="2OqwBi" id="73PmbN41l6B" role="37vLTJ">
-              <node concept="2Sf5sV" id="73PmbN41l6C" role="2Oq$k0" />
-              <node concept="3TrcHB" id="73PmbN41l6D" role="2OqNvi">
-                <ref role="3TsBF5" to="ddau:$OrRLObzHS" resolve="isDumb" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="73PmbN41l6E" role="3cqZAp">
-          <node concept="37vLTI" id="73PmbN41l6F" role="3clFbG">
-            <node concept="3clFbT" id="73PmbN41l6G" role="37vLTx">
-              <property role="3clFbU" value="false" />
-            </node>
-            <node concept="2OqwBi" id="73PmbN41l6H" role="37vLTJ">
-              <node concept="2Sf5sV" id="73PmbN41l6I" role="2Oq$k0" />
-              <node concept="3TrcHB" id="73PmbN41l6J" role="2OqNvi">
-                <ref role="3TsBF5" to="ddau:6Fa64hUf2KZ" resolve="isSmart" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="73PmbN41l6K" role="3cqZAp">
-          <node concept="2OqwBi" id="73PmbN41rtQ" role="3clFbG">
-            <node concept="2OqwBi" id="73PmbN41l6N" role="2Oq$k0">
-              <node concept="2Sf5sV" id="73PmbN41l6O" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3zRPoaJO$$7" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:3zRPoaJOz1Q" />
-              </node>
-            </node>
-            <node concept="zfrQC" id="73PmbN41rJe" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="73PmbN41jTi" role="2ZfVeh">
-      <node concept="3clFbS" id="73PmbN41jTj" role="2VODD2">
-        <node concept="3clFbF" id="5mrhk6vl6kk" role="3cqZAp">
-          <node concept="1Wc70l" id="5mrhk6vl6kl" role="3clFbG">
-            <node concept="3fqX7Q" id="5mrhk6vl6km" role="3uHU7B">
-              <node concept="2OqwBi" id="5mrhk6vl6kn" role="3fr31v">
-                <node concept="2Sf5sV" id="5mrhk6vl6ko" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="5mrhk6vl6kp" role="2OqNvi">
-                  <node concept="chp4Y" id="5mrhk6vl6kq" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:5mrhk6vjYjX" resolve="ISmartDevice" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3fqX7Q" id="5mrhk6vl6kr" role="3uHU7w">
-              <node concept="2OqwBi" id="5mrhk6vl6ks" role="3fr31v">
-                <node concept="2Sf5sV" id="5mrhk6vl6kt" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="5mrhk6vl6ku" role="2OqNvi">
-                  <node concept="chp4Y" id="5mrhk6vl6kv" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:5mrhk6vjYl$" resolve="IDumbDevice" />
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>

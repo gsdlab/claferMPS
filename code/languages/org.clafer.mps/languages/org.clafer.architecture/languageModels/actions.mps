@@ -342,44 +342,6 @@
         </node>
       </node>
     </node>
-    <node concept="3UNGvq" id="4IooPifRdjk" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:6Fa64hUiAn2" resolve="DeviceRef" />
-      <node concept="tYCnQ" id="4IooPifRdjO" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:6Fa64hUiAn2" resolve="DeviceRef" />
-        <node concept="Cmt7Y" id="4IooPifRdjQ" role="uz6Si">
-          <node concept="Cnhdc" id="4IooPifRdjR" role="Cncma">
-            <node concept="3clFbS" id="4IooPifRdjS" role="2VODD2">
-              <node concept="3clFbF" id="4IooPifRdls" role="3cqZAp">
-                <node concept="2OqwBi" id="4IooPifRdlt" role="3clFbG">
-                  <node concept="2OqwBi" id="4IooPifRdlu" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4IooPifRdlv" role="2Oq$k0">
-                      <node concept="Cj7Ep" id="4IooPifRdlw" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="4IooPifRdlx" role="2OqNvi">
-                        <node concept="1xMEDy" id="4IooPifRdly" role="1xVPHs">
-                          <node concept="chp4Y" id="4IooPifRdlz" role="ri$Ld">
-                            <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="4IooPifRdl$" role="2OqNvi">
-                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
-                    </node>
-                  </node>
-                  <node concept="WFELt" id="4IooPifRdl_" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2h1dTh" id="4IooPifRdkx" role="Cn2iK">
-            <property role="2h1i$Z" value="{" />
-          </node>
-          <node concept="2h1dTh" id="4xcaXO71uEf" role="Cn6ar">
-            <property role="2h1i$Z" value="Add Content" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3UNGvq" id="7DuSdC$x0Zh" role="3UOs0v">
       <ref role="3UNGvu" to="ddau:$OrRLOvZKp" resolve="DeviceNodesRef" />
       <node concept="tYCnQ" id="7DuSdC$x0Zi" role="_1QTJ">
@@ -604,7 +566,7 @@
     <node concept="3UNGvq" id="3dci_2vBhIG" role="3UOs0v">
       <ref role="3UNGvu" to="ddau:19aTRzkPSvs" resolve="PowerTopology" />
       <node concept="tYCnQ" id="3dci_2vBhIH" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+        <ref role="uz4UX" to="ddau:19aTRzkPSvs" resolve="PowerTopology" />
         <node concept="Cmt7Y" id="3dci_2vBhII" role="uz6Si">
           <node concept="Cnhdc" id="3dci_2vBhIJ" role="Cncma">
             <node concept="3clFbS" id="3dci_2vBhIK" role="2VODD2">

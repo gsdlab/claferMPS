@@ -20,10 +20,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <child id="1068580123160" name="condition" index="3clFbw" />
-        <child id="1068580123161" name="ifTrue" index="3clFbx" />
-      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -45,7 +41,6 @@
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
-      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -56,42 +51,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="_UgoZ" id="1Mid6Xjlt6_">
-    <property role="TrG5h" value="ArchitectureMigrateDeviceSmartness" />
-    <property role="_Wzho" value="Architecture: Migrate Smartness" />
-    <node concept="_XfAh" id="1Mid6XjltaW" role="_YvDr">
-      <property role="_XH9r" value="Smartness" />
-      <ref role="_XDHR" to="ddau:6Fa64hUc88J" resolve="Device" />
-      <node concept="_ZGcI" id="1Mid6XjltaY" role="_XPhp">
-        <node concept="3clFbS" id="1Mid6Xjltb0" role="2VODD2">
-          <node concept="3clFbJ" id="1Mid6Xjltr4" role="3cqZAp">
-            <node concept="3clFbS" id="1Mid6Xjltr5" role="3clFbx">
-              <node concept="3clFbF" id="1Mid6Xjlxq5" role="3cqZAp">
-                <node concept="2OqwBi" id="1Mid6Xjlycv" role="3clFbG">
-                  <node concept="2OqwBi" id="1Mid6Xjlxu1" role="2Oq$k0">
-                    <node concept="_YI3z" id="1Mid6Xjlxq4" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="3zRPoaJO_LU" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ddau:3zRPoaJOz1Q" />
-                    </node>
-                  </node>
-                  <node concept="zfrQC" id="1Mid6XjlyL5" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1Mid6XjlwN5" role="3clFbw">
-              <node concept="2OqwBi" id="1Mid6Xjltw8" role="2Oq$k0">
-                <node concept="_YI3z" id="1Mid6Xjltrg" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3zRPoaJO_mo" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ddau:3zRPoaJOz1Q" />
-                </node>
-              </node>
-              <node concept="3w_OXm" id="1Mid6XjlxnJ" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="_UgoZ" id="6Ct43dp5IP$">
     <property role="TrG5h" value="ArchitectueMigratePower" />
     <property role="_Wzho" value="Architecture: Migrate Power" />
