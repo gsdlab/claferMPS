@@ -94,6 +94,7 @@
     <dependency reexport="false">9e24fcdc-a232-4d24-8c95-1f525946191a(com.mbeddr.core.base.pluginSolution)</dependency>
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
     <dependency reexport="false">137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</dependency>
+    <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>

@@ -77,6 +77,8 @@
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IDevice" flags="ng" index="1Uap8U">
         <property id="2375961715026055687" name="type" index="18XOUg" />
       </concept>
+      <concept id="6081592096124551689" name="org.clafer.architecture.structure.DeviceTypeExpr" flags="ng" index="1Udun3" />
+      <concept id="6081592096124551692" name="org.clafer.architecture.structure.SmartDevice" flags="ng" index="1Udun6" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -122,17 +124,24 @@
       <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="4620120465980402700" name="org.clafer.expr.structure.GenericDotExpression" flags="ng" index="2qmXGp">
+        <child id="7034214596252529803" name="target" index="1ESnxz" />
+      </concept>
       <concept id="8860443239512128052" name="org.clafer.expr.structure.BinaryExpression" flags="ng" index="3TlMgq">
         <child id="8860443239512128064" name="left" index="3TlMhI" />
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="6300420630909714393" name="org.clafer.core.structure.Constraint" flags="ng" index="2vxuzR">
+        <child id="4988923775218203830" name="expr" index="3WnoGb" />
+      </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
+      <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
       </concept>
@@ -222,6 +231,15 @@
             </node>
             <node concept="3Hzz_d" id="23T79tC4yss" role="2mZOl8">
               <property role="TrG5h" value="motor" />
+              <node concept="2vxuzR" id="EXzEoUqwDk" role="2mZOl8">
+                <node concept="2qmXGp" id="EXzEoUu61N" role="3WnoGb">
+                  <node concept="1Udun6" id="EXzEoUu8nK" role="1ESnxz" />
+                  <node concept="2qmXGp" id="EXzEoUu60N" role="1_9fRO">
+                    <node concept="1Udun3" id="EXzEoUu611" role="1ESnxz" />
+                    <node concept="2Zoh0E" id="EXzEoUrSJz" role="1_9fRO" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node concept="1uNHS9" id="dCj2Z$w5uV" role="2mZOl8">

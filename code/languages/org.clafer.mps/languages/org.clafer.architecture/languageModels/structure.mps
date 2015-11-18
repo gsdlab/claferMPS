@@ -1009,9 +1009,10 @@
   <node concept="1TIwiD" id="5hA9WCIkW89">
     <property role="1pbfSe" value="2101745197" />
     <property role="3GE5qa" value="DeviceNodes.Smartness" />
-    <property role="TrG5h" value="DeviceType" />
-    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="DeviceTypeExpr" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="type" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5AgYs6yKJNw" role="PzmwI">
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
@@ -1022,21 +1023,21 @@
     <property role="3GE5qa" value="DeviceNodes.Smartness" />
     <property role="TrG5h" value="PowerDevice" />
     <property role="34LRSv" value="power" />
-    <ref role="1TJDcQ" node="5hA9WCIkW89" resolve="DeviceType" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceType" />
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8b">
     <property role="1pbfSe" value="2101745195" />
     <property role="3GE5qa" value="DeviceNodes.Smartness" />
     <property role="TrG5h" value="ElectrDevice" />
     <property role="34LRSv" value="electr" />
-    <ref role="1TJDcQ" node="5hA9WCIkW89" resolve="DeviceType" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceType" />
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8c">
     <property role="1pbfSe" value="2101745194" />
     <property role="3GE5qa" value="DeviceNodes.Smartness" />
     <property role="TrG5h" value="SmartDevice" />
     <property role="34LRSv" value="smart" />
-    <ref role="1TJDcQ" node="5hA9WCIkW89" resolve="DeviceType" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceType" />
   </node>
   <node concept="PlHQZ" id="23T79tC3_6Y">
     <property role="1pbfSe" value="1996001707" />
@@ -1052,6 +1053,17 @@
     <property role="TrG5h" value="IPowerDevice" />
     <node concept="PrWs8" id="23T79tC4AhR" role="PrDN$">
       <ref role="PrY4T" node="5hA9WCIjVnK" resolve="IDevice" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="EXzEoUsgG2">
+    <property role="1pbfSe" value="1160681896" />
+    <property role="3GE5qa" value="DeviceNodes.Smartness" />
+    <property role="TrG5h" value="DeviceType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="EXzEoUsgK_" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
   </node>
 </model>

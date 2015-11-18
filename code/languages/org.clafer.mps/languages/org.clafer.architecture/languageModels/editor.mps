@@ -5946,16 +5946,9 @@
   </node>
   <node concept="24kQdi" id="1a3IgB190fa">
     <property role="3GE5qa" value="DeviceNodes.Smartness" />
-    <ref role="1XX52x" to="ddau:5hA9WCIkW89" resolve="DeviceType" />
-    <node concept="3F0A7n" id="1a3IgB190fs" role="2wV5jI">
-      <ref role="1NtTu8" to="tpck:gOOYy9I" resolve="alias" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="23T79tC2m4j">
-    <property role="3GE5qa" value="DeviceNodes.Smartness" />
-    <ref role="1XX52x" to="ddau:5hA9WCIkW8b" resolve="ElectrDevice" />
-    <node concept="3F0ifn" id="23T79tC2m4l" role="2wV5jI">
-      <property role="3F0ifm" value="electr" />
+    <ref role="1XX52x" to="ddau:5hA9WCIkW89" resolve="DeviceTypeExpr" />
+    <node concept="3F0ifn" id="EXzEoUp7vg" role="2wV5jI">
+      <property role="3F0ifm" value="type" />
     </node>
   </node>
   <node concept="24kQdi" id="23T79tC3dBq">
@@ -5970,6 +5963,13 @@
     <ref role="1XX52x" to="ddau:5hA9WCIkW8a" resolve="PowerDevice" />
     <node concept="3F0ifn" id="23T79tC3dBT" role="2wV5jI">
       <property role="3F0ifm" value="power" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="23T79tC2m4j">
+    <property role="3GE5qa" value="DeviceNodes.Smartness" />
+    <ref role="1XX52x" to="ddau:5hA9WCIkW8b" resolve="ElectrDevice" />
+    <node concept="3F0ifn" id="23T79tC2m4l" role="2wV5jI">
+      <property role="3F0ifm" value="electr" />
     </node>
   </node>
 </model>

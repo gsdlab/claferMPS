@@ -2266,7 +2266,7 @@
   </node>
   <node concept="13h7C7" id="1a3IgB18KVy">
     <property role="3GE5qa" value="DeviceNodes.Smartness" />
-    <ref role="13h7C2" to="ddau:5hA9WCIkW89" resolve="DeviceType" />
+    <ref role="13h7C2" to="ddau:5hA9WCIkW89" resolve="DeviceTypeExpr" />
     <node concept="13i0hz" id="3WlRoWfPVrU" role="13h7CS">
       <property role="TrG5h" value="getTarget" />
       <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
@@ -2280,6 +2280,24 @@
     </node>
     <node concept="13hLZK" id="1a3IgB18KVz" role="13h7CW">
       <node concept="3clFbS" id="1a3IgB18KV$" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="EXzEoUsgMA">
+    <property role="3GE5qa" value="DeviceNodes.Smartness" />
+    <ref role="13h7C2" to="ddau:EXzEoUsgG2" resolve="DeviceType" />
+    <node concept="13i0hz" id="EXzEoUsgMD" role="13h7CS">
+      <property role="TrG5h" value="getTarget" />
+      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <node concept="3clFbS" id="EXzEoUsgME" role="3clF47">
+        <node concept="3clFbF" id="EXzEoUsgMF" role="3cqZAp">
+          <node concept="10Nm6u" id="EXzEoUsgMG" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="EXzEoUsgMH" role="3clF45" />
+      <node concept="3Tm1VV" id="EXzEoUsgMI" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="EXzEoUsgMB" role="13h7CW">
+      <node concept="3clFbS" id="EXzEoUsgMC" role="2VODD2" />
     </node>
   </node>
 </model>
