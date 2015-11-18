@@ -2502,6 +2502,40 @@
         </node>
       </node>
     </node>
+    <node concept="nKS2y" id="EXzEoUu956" role="1MLUbF">
+      <node concept="3clFbS" id="EXzEoUu957" role="2VODD2">
+        <node concept="3clFbF" id="EXzEoUucTu" role="3cqZAp">
+          <node concept="22lmx$" id="EXzEoUudkB" role="3clFbG">
+            <node concept="22lmx$" id="EXzEoUudac" role="3uHU7B">
+              <node concept="2OqwBi" id="EXzEoUucVE" role="3uHU7B">
+                <node concept="nLn13" id="EXzEoUucTs" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="EXzEoUud02" role="2OqNvi">
+                  <node concept="chp4Y" id="EXzEoUud29" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:2toL5DMUBtT" resolve="ArchLogicalExpr" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="EXzEoUudcG" role="3uHU7w">
+                <node concept="nLn13" id="EXzEoUudcH" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="EXzEoUudcI" role="2OqNvi">
+                  <node concept="chp4Y" id="EXzEoUudfM" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:2toL5DN235n" resolve="ArchParens" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="EXzEoUudof" role="3uHU7w">
+              <node concept="nLn13" id="EXzEoUudog" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="EXzEoUudoh" role="2OqNvi">
+                <node concept="chp4Y" id="EXzEoUudsE" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="2toL5DN1V8k">
     <property role="3GE5qa" value="Wiring.CommunicationTopology" />
