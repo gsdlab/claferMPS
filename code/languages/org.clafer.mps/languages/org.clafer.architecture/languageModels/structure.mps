@@ -99,7 +99,7 @@
       <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
     </node>
     <node concept="PrWs8" id="4IooPifUJdQ" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
+      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHasNotSuperNode" />
     </node>
     <node concept="1TJgyj" id="4IooPifSg5Y" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -119,7 +119,7 @@
       <ref role="PrY4T" node="4Z9rElroRnZ" resolve="IArchitectureElement" />
     </node>
     <node concept="PrWs8" id="3ZFGVpNJOxj" role="PzmwI">
-      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
+      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHasQualityAttributes" />
     </node>
     <node concept="1TJgyj" id="4csP6flST4F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -169,9 +169,9 @@
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6fm34cz">
-    <property role="TrG5h" value="DeviceNodes" />
+    <property role="TrG5h" value="DeviceNode" />
     <property role="3GE5qa" value="DeviceNodes" />
-    <property role="34LRSv" value="Device Nodes" />
+    <property role="34LRSv" value="Device Node" />
     <property role="1pbfSe" value="422123398" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="50FM0hzz9WP" role="1TKVEi">
@@ -200,7 +200,7 @@
       <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
     </node>
     <node concept="PrWs8" id="4diOXa0yQdO" role="PzmwI">
-      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
+      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHasQualityAttributes" />
     </node>
     <node concept="PrWs8" id="23T79tC3_81" role="PzmwI">
       <ref role="PrY4T" node="5hA9WCIjVnK" resolve="IDevice" />
@@ -212,10 +212,7 @@
     <property role="34LRSv" value="Switch" />
     <property role="MwhBj" value="${module}/icons/switch_icon.png" />
     <property role="1pbfSe" value="231686183" />
-    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNodes" />
-    <node concept="PrWs8" id="23T79tC4AhN" role="PzmwI">
-      <ref role="PrY4T" node="23T79tC3_6Y" resolve="INotPower" />
-    </node>
+    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRV">
     <property role="3GE5qa" value="AutomobileConcepts" />
@@ -223,10 +220,7 @@
     <property role="34LRSv" value="Motor" />
     <property role="MwhBj" value="${module}/icons/motor_icon.png" />
     <property role="1pbfSe" value="231719601" />
-    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNodes" />
-    <node concept="PrWs8" id="23T79tC4AhP" role="PzmwI">
-      <ref role="PrY4T" node="23T79tC3_6Y" resolve="INotPower" />
-    </node>
+    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRW">
     <property role="3GE5qa" value="AutomobileConcepts" />
@@ -234,9 +228,12 @@
     <property role="34LRSv" value="Inline" />
     <property role="MwhBj" value="${module}/icons/inline_icon.png" />
     <property role="1pbfSe" value="231719602" />
-    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNodes" />
-    <node concept="PrWs8" id="23T79tC4AhL" role="PzmwI">
+    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
+    <node concept="PrWs8" id="3f7bmGhuW9c" role="PzmwI">
       <ref role="PrY4T" node="23T79tC4AhE" resolve="IPowerDevice" />
+    </node>
+    <node concept="PrWs8" id="3f7bmGhwmiz" role="PzmwI">
+      <ref role="PrY4T" node="3f7bmGhwmis" resolve="IHasFixedDeviceType" />
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRX">
@@ -245,9 +242,9 @@
     <property role="34LRSv" value="Pin" />
     <property role="MwhBj" value="${module}/icons/pin_icon.png" />
     <property role="1pbfSe" value="231719603" />
-    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNodes" />
+    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
     <node concept="PrWs8" id="5hA9WCIkDVq" role="PzmwI">
-      <ref role="PrY4T" node="5hA9WCIjVny" resolve="IDontHaveDeviceType" />
+      <ref role="PrY4T" node="5hA9WCIjVny" resolve="IHasNotDeviceType" />
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqtfpB7">
@@ -316,20 +313,20 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNodes" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
     </node>
     <node concept="1TJgyj" id="$OrRLOo9Xg" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNodes" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
     </node>
     <node concept="1TJgyi" id="$OrRLOoafo" role="1TKVEl">
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="$OrRLOoabn" resolve="WireConnectorTypeEnum" />
     </node>
     <node concept="PrWs8" id="$OrRLOqE6b" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
+      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHasNotSuperNode" />
     </node>
     <node concept="PrWs8" id="1tfNdgy1sjw" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
@@ -350,9 +347,9 @@
     <property role="TrG5h" value="ECU" />
     <property role="34LRSv" value="ECU" />
     <property role="1pbfSe" value="2104829249" />
-    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNodes" />
-    <node concept="PrWs8" id="23T79tC4AhC" role="PzmwI">
-      <ref role="PrY4T" node="5mrhk6vjYjX" resolve="ISmartDevice" />
+    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
+    <node concept="PrWs8" id="3f7bmGhwmiB" role="PzmwI">
+      <ref role="PrY4T" node="3f7bmGhwmis" resolve="IHasFixedDeviceType" />
     </node>
   </node>
   <node concept="AxPO7" id="$OrRLOoabn">
@@ -374,7 +371,7 @@
     </node>
   </node>
   <node concept="PlHQZ" id="$OrRLOo_6A">
-    <property role="TrG5h" value="IHaveNotSuperNode" />
+    <property role="TrG5h" value="IHasNotSuperNode" />
     <property role="3GE5qa" value="Interfaces" />
     <property role="1pbfSe" value="2107031842" />
   </node>
@@ -383,12 +380,15 @@
     <property role="TrG5h" value="RefToDevice" />
     <property role="34LRSv" value="Reference" />
     <property role="1pbfSe" value="2108473086" />
-    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNodes" />
+    <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
     <node concept="PrWs8" id="$OrRLOu54Z" role="PzmwI">
       <ref role="PrY4T" node="znlrM86iBa" resolve="IDontHaveChildrenNodes" />
     </node>
+    <node concept="PrWs8" id="3EgEWBTGyP5" role="PzmwI">
+      <ref role="PrY4T" node="5hA9WCIjVny" resolve="IHasNotDeviceType" />
+    </node>
     <node concept="PrWs8" id="$OrRLOu554" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
+      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHasNotSuperNode" />
     </node>
     <node concept="1TJgyj" id="$OrRLOvD_w" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -406,7 +406,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="dn" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNodes" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
     </node>
   </node>
   <node concept="PlHQZ" id="6_lRZv9_Blz">
@@ -544,11 +544,6 @@
     <property role="1pbfSe" value="1020102018" />
     <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
   </node>
-  <node concept="PlHQZ" id="5mrhk6vjYjX">
-    <property role="3GE5qa" value="Interfaces.IDevice" />
-    <property role="TrG5h" value="ISmartDevice" />
-    <property role="1pbfSe" value="185914818" />
-  </node>
   <node concept="1TIwiD" id="4IooPifShRJ">
     <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
     <property role="TrG5h" value="WireConnectorRef" />
@@ -627,7 +622,7 @@
     <property role="1pbfSe" value="417180168" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="19aTRzkPTO7" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
+      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHasNotSuperNode" />
     </node>
     <node concept="PrWs8" id="19aTRzkPTOc" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
@@ -769,7 +764,7 @@
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
     </node>
     <node concept="PrWs8" id="3KrTRUBK_Hi" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
+      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHasNotSuperNode" />
     </node>
     <node concept="1TJgyj" id="23T79tC4TMt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -874,7 +869,7 @@
     </node>
   </node>
   <node concept="PlHQZ" id="50FM0hzFYbT">
-    <property role="TrG5h" value="IHaveQualityAttributes" />
+    <property role="TrG5h" value="IHasQualityAttributes" />
     <property role="1pbfSe" value="1277449475" />
     <node concept="1TJgyj" id="4diOXa0$sm2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -995,20 +990,22 @@
   <node concept="PlHQZ" id="5hA9WCIjVny">
     <property role="1pbfSe" value="2102010452" />
     <property role="3GE5qa" value="Interfaces.IDevice" />
-    <property role="TrG5h" value="IDontHaveDeviceType" />
+    <property role="TrG5h" value="IHasNotDeviceType" />
   </node>
   <node concept="PlHQZ" id="5hA9WCIjVnK">
     <property role="1pbfSe" value="2102010438" />
     <property role="3GE5qa" value="Interfaces.IDevice" />
     <property role="TrG5h" value="IDevice" />
-    <node concept="1TJgyi" id="23T79tC3_87" role="1TKVEl">
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="7DuSdC$_GOc" resolve="DeviceNodeTypeEnum" />
+    <node concept="1TJgyj" id="7xzoSpGQbAv" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="EXzEoUui47" resolve="DeviceType" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW89">
     <property role="1pbfSe" value="2101745197" />
-    <property role="3GE5qa" value="DeviceNodes.Smartness" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
     <property role="TrG5h" value="DeviceTypeExpr" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
@@ -1020,51 +1017,74 @@
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8a">
     <property role="1pbfSe" value="2101745196" />
-    <property role="3GE5qa" value="DeviceNodes.Smartness" />
-    <property role="TrG5h" value="PowerDevice" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
+    <property role="TrG5h" value="PowerDeviceExpr" />
     <property role="34LRSv" value="power" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceType" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceTypeDotTarget" />
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8b">
     <property role="1pbfSe" value="2101745195" />
-    <property role="3GE5qa" value="DeviceNodes.Smartness" />
-    <property role="TrG5h" value="ElectrDevice" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
+    <property role="TrG5h" value="ElectrDeviceExpr" />
     <property role="34LRSv" value="electr" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceType" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceTypeDotTarget" />
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8c">
     <property role="1pbfSe" value="2101745194" />
-    <property role="3GE5qa" value="DeviceNodes.Smartness" />
-    <property role="TrG5h" value="SmartDevice" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
+    <property role="TrG5h" value="SmartDeviceExpr" />
     <property role="34LRSv" value="smart" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceType" />
-  </node>
-  <node concept="PlHQZ" id="23T79tC3_6Y">
-    <property role="1pbfSe" value="1996001707" />
-    <property role="3GE5qa" value="Interfaces.IDevice" />
-    <property role="TrG5h" value="INotPower" />
-    <node concept="PrWs8" id="23T79tC3_89" role="PrDN$">
-      <ref role="PrY4T" node="5hA9WCIjVnK" resolve="IDevice" />
-    </node>
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceTypeDotTarget" />
   </node>
   <node concept="PlHQZ" id="23T79tC4AhE">
     <property role="1pbfSe" value="1995734783" />
     <property role="3GE5qa" value="Interfaces.IDevice" />
     <property role="TrG5h" value="IPowerDevice" />
-    <node concept="PrWs8" id="23T79tC4AhR" role="PrDN$">
-      <ref role="PrY4T" node="5hA9WCIjVnK" resolve="IDevice" />
-    </node>
   </node>
   <node concept="1TIwiD" id="EXzEoUsgG2">
     <property role="1pbfSe" value="1160681896" />
-    <property role="3GE5qa" value="DeviceNodes.Smartness" />
-    <property role="TrG5h" value="DeviceType" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
+    <property role="TrG5h" value="DeviceTypeDotTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="EXzEoUsgK_" role="PzmwI">
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="EXzEoUui47">
+    <property role="1pbfSe" value="1161211821" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
+    <property role="TrG5h" value="DeviceType" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7xzoSpGQbCo">
+    <property role="1pbfSe" value="449045090" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
+    <property role="TrG5h" value="ElectrDeviceType" />
+    <property role="34LRSv" value="electric" />
+    <ref role="1TJDcQ" node="EXzEoUui47" resolve="DeviceType" />
+  </node>
+  <node concept="1TIwiD" id="7xzoSpGSeYk">
+    <property role="1pbfSe" value="448507110" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
+    <property role="TrG5h" value="SmartDeviceType" />
+    <property role="34LRSv" value="smart" />
+    <ref role="1TJDcQ" node="EXzEoUui47" resolve="DeviceType" />
+  </node>
+  <node concept="1TIwiD" id="7xzoSpGSeYl">
+    <property role="1pbfSe" value="448507109" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
+    <property role="TrG5h" value="PowerDeviceType" />
+    <property role="34LRSv" value="power" />
+    <ref role="1TJDcQ" node="EXzEoUui47" resolve="DeviceType" />
+  </node>
+  <node concept="PlHQZ" id="3f7bmGhwmis">
+    <property role="1pbfSe" value="1162383879" />
+    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <property role="TrG5h" value="IHasFixedDeviceType" />
   </node>
 </model>
 

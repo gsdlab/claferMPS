@@ -1075,7 +1075,7 @@
   </node>
   <node concept="1YbPZF" id="EXzEoUqGbf">
     <property role="TrG5h" value="typeof_DeviceTypeExpr" />
-    <property role="3GE5qa" value="DeviceNodes.Smartness" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
     <node concept="3clFbS" id="EXzEoUqGbg" role="18ibNy">
       <node concept="3cpWs8" id="3WlRoWfRikw" role="3cqZAp">
         <node concept="3cpWsn" id="3WlRoWfRikx" role="3cpWs9">
@@ -1167,7 +1167,7 @@
   </node>
   <node concept="1YbPZF" id="EXzEoUtD2W">
     <property role="TrG5h" value="typeof_DeviceType" />
-    <property role="3GE5qa" value="DeviceNodes.Smartness" />
+    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
     <node concept="3clFbS" id="EXzEoUtD2X" role="18ibNy">
       <node concept="1Z5TYs" id="3kEjc_WIG$x" role="3cqZAp">
         <node concept="mw_s8" id="3kEjc_WIG$$" role="1ZfhK$">
@@ -1188,7 +1188,7 @@
     </node>
     <node concept="1YaCAy" id="EXzEoUtD2Z" role="1YuTPh">
       <property role="TrG5h" value="deviceType" />
-      <ref role="1YaFvo" to="ddau:EXzEoUsgG2" resolve="DeviceType" />
+      <ref role="1YaFvo" to="ddau:EXzEoUsgG2" resolve="DeviceTypeDotTarget" />
     </node>
   </node>
 </model>
