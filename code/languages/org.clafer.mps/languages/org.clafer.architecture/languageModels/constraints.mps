@@ -2770,7 +2770,7 @@
               <node concept="2OqwBi" id="6kt45HTkQ9O" role="2Oq$k0">
                 <node concept="2OqwBi" id="6kt45HTkONP" role="2Oq$k0">
                   <node concept="3B5_sB" id="6kt45HTkOjQ" role="2Oq$k0">
-                    <ref role="3B5MYn" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
+                    <ref role="3B5MYn" to="ddau:50FM0hzFYbT" resolve="IHasQualityAttributes" />
                   </node>
                   <node concept="1rGIog" id="6kt45HTkP9h" role="2OqNvi" />
                 </node>

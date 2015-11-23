@@ -118,9 +118,6 @@
     <node concept="PrWs8" id="4csP6flST3Q" role="PzmwI">
       <ref role="PrY4T" node="4Z9rElroRnZ" resolve="IArchitectureElement" />
     </node>
-    <node concept="PrWs8" id="3ZFGVpNJOxj" role="PzmwI">
-      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHasQualityAttributes" />
-    </node>
     <node concept="1TJgyj" id="4csP6flST4F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -174,31 +171,6 @@
     <property role="34LRSv" value="Device Node" />
     <property role="1pbfSe" value="422123398" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="1TJgyj" id="50FM0hzz9WP" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="mass" />
-      <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
-    </node>
-    <node concept="1TJgyj" id="50FM0hzC6kl" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="length" />
-      <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
-    </node>
-    <node concept="1TJgyj" id="50FM0hzFXGk" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="ppm" />
-      <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
-    </node>
-    <node concept="1TJgyj" id="50FM0hzFXGo" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="warrantyCost" />
-      <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
-    </node>
-    <node concept="1TJgyj" id="50FM0hzHiQ5" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="replaceCost" />
-      <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
-    </node>
     <node concept="PrWs8" id="4diOXa0yQdO" role="PzmwI">
       <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHasQualityAttributes" />
     </node>
@@ -627,21 +599,6 @@
     <node concept="PrWs8" id="19aTRzkPTOc" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
     </node>
-    <node concept="1TJgyj" id="50FM0hzH8X0" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="length" />
-      <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
-    </node>
-    <node concept="1TJgyj" id="50FM0hzH8X2" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="mass" />
-      <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
-    </node>
-    <node concept="1TJgyj" id="50FM0hzLTOm" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="cost" />
-      <ref role="20lvS9" node="50FM0hzzawM" resolve="QualityTemp" />
-    </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSlW">
     <property role="3GE5qa" value="Wiring.CommunicationTopology" />
@@ -905,9 +862,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6kt45HTj4s6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="archType" />
+      <property role="20kJfa" value="archConcept" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6kt45HTk58g" resolve="ArchType" />
+      <ref role="20lvS9" node="6kt45HTk58g" resolve="ArchConceptRef" />
     </node>
     <node concept="1TJgyj" id="6kt45HTj4uN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -928,11 +885,11 @@
   <node concept="1TIwiD" id="6kt45HTk58g">
     <property role="1pbfSe" value="563256725" />
     <property role="3GE5qa" value="QualityModule" />
-    <property role="TrG5h" value="ArchType" />
+    <property role="TrG5h" value="ArchConceptRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6kt45HTk58k" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="clafer" />
+      <property role="20kJfa" value="archConcept" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
     </node>
