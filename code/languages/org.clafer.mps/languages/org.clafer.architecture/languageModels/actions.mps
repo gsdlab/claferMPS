@@ -680,9 +680,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="19aTRzkPlJx" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:4csP6fm34cz" resolve="DeviceNodes" />
+      <ref role="3UNGvu" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
       <node concept="tYCnQ" id="19aTRzkPlJy" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:4csP6fm34cz" resolve="DeviceNodes" />
+        <ref role="uz4UX" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
         <node concept="Cmt7Y" id="19aTRzkPlJz" role="uz6Si">
           <node concept="Cnhdc" id="19aTRzkPlJ$" role="Cncma">
             <node concept="3clFbS" id="19aTRzkPlJ_" role="2VODD2">
