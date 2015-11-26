@@ -39,6 +39,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -65,6 +68,7 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -113,6 +117,8 @@
       </concept>
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
+      <concept id="1163200368514" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSetHandler" flags="in" index="3k9gUc" />
+      <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="1213098023997" name="property" index="1MhHOB" />
@@ -124,6 +130,7 @@
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
         <child id="3906442776579556548" name="presentation" index="Bn3R6" />
+        <child id="1163203787401" name="referentSetHandler" index="3kmjI7" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
     </language>
@@ -135,6 +142,12 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="5820409030208923287" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingLinkOperation" flags="nn" index="25OxAV" />
@@ -2742,7 +2755,7 @@
   </node>
   <node concept="1M2fIO" id="6kt45HTk58I">
     <property role="3GE5qa" value="QualityModule" />
-    <ref role="1M2myG" to="ddau:6kt45HTk58g" resolve="ArchType" />
+    <ref role="1M2myG" to="ddau:6kt45HTk58g" resolve="ArchConceptRef" />
     <node concept="1N5Pfh" id="6kt45HTk59e" role="1Mr941">
       <ref role="1N5Vy1" to="ddau:6kt45HTk58k" />
       <node concept="1MUpDS" id="6kt45HTk59g" role="1N6uqs">
@@ -3218,6 +3231,49 @@
         <node concept="3clFbF" id="3f7bmGhuSnz" role="3cqZAp">
           <node concept="3clFbT" id="3f7bmGhuSny" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1iqBiKUiuge">
+    <ref role="1M2myG" to="ddau:50FM0hzFYbT" resolve="IHasQualityAttributes" />
+  </node>
+  <node concept="1M2fIO" id="1iqBiKUiysd">
+    <property role="3GE5qa" value="QualityModule" />
+    <ref role="1M2myG" to="ddau:4diOXa0$smX" resolve="Quality" />
+    <node concept="1N5Pfh" id="1iqBiKUiyse" role="1Mr941">
+      <ref role="1N5Vy1" to="ddau:4diOXa0$snd" />
+      <node concept="1MUpDS" id="1iqBiKUiysi" role="1N6uqs">
+        <node concept="3clFbS" id="1iqBiKUiysj" role="2VODD2">
+          <node concept="3clFbF" id="1iqBiKUlg4q" role="3cqZAp">
+            <node concept="2OqwBi" id="1iqBiKUiKz0" role="3clFbG">
+              <node concept="1PxgMI" id="1iqBiKUiKc5" role="2Oq$k0">
+                <ref role="1PxNhF" to="ddau:50FM0hzFYbT" resolve="IHasQualityAttributes" />
+                <node concept="21POm0" id="1iqBiKUiAli" role="1PxMeX" />
+              </node>
+              <node concept="2qgKlT" id="1iqBiKUiKJX" role="2OqNvi">
+                <ref role="37wK5l" to="f5o0:6mpz4vWcxwE" resolve="getTableQAttributes" />
+              </node>
+            </node>
+          </node>
+          <node concept="3SKdUt" id="1iqBiKUj7Au" role="3cqZAp">
+            <node concept="3SKdUq" id="1iqBiKUj7Jv" role="3SKWNk">
+              <property role="3SKdUp" value="todo add quality references" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3k9gUc" id="1iqBiKUlaZX" role="3kmjI7">
+        <node concept="3clFbS" id="1iqBiKUlaZY" role="2VODD2">
+          <node concept="34ab3g" id="1iqBiKUlb8c" role="3cqZAp">
+            <property role="35gtTG" value="error" />
+            <node concept="3cpWs3" id="1iqBiKUlbay" role="34bqiv">
+              <node concept="3kakTB" id="1iqBiKUlbaQ" role="3uHU7w" />
+              <node concept="Xl_RD" id="1iqBiKUlb8e" role="3uHU7B">
+                <property role="Xl_RC" value="==== " />
+              </node>
+            </node>
           </node>
         </node>
       </node>

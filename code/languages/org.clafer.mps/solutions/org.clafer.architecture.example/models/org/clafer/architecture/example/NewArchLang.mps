@@ -9,6 +9,7 @@
   </languages>
   <imports>
     <import index="q3rx" ref="r:cb9e592b-aea8-4f88-9f6b-b138efc56b06(org.clafer.architecture.example.ImportedLang)" />
+    <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
@@ -35,7 +36,16 @@
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
-      <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT" />
+      <concept id="7285997757218705936" name="org.clafer.architecture.structure.ArchConceptRef" flags="ng" index="sjk9b">
+        <reference id="7285997757218705940" name="archConcept" index="sjk9f" />
+      </concept>
+      <concept id="7285997757218440942" name="org.clafer.architecture.structure.QualityTuple" flags="ng" index="sklqP">
+        <child id="7285997757218440966" name="archConcept" index="skltt" />
+        <child id="7285997757218441139" name="qualities" index="sklvC" />
+      </concept>
+      <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
+        <child id="7285997757218440687" name="tuples" index="sklmO" />
+      </concept>
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommunicationTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
         <child id="6715281144249649204" name="connects" index="1WO72F" />
@@ -65,6 +75,7 @@
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
+      <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
       <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
       <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
       <concept id="2260668491394108193" name="org.clafer.architecture.structure.ArchRef" flags="ng" index="3Jak$y" />
@@ -916,6 +927,17 @@
   </node>
   <node concept="slzsT" id="4HhZvvSmPV5">
     <property role="TrG5h" value="Qualities" />
+    <node concept="sklqP" id="6ja5T_18pMi" role="sklmO">
+      <node concept="sjk9b" id="6ja5T_18pMk" role="skltt">
+        <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+      </node>
+      <node concept="3EozPd" id="6mpz4vWbr7B" role="sklvC">
+        <property role="TrG5h" value="quality1" />
+      </node>
+      <node concept="3EozPd" id="6mpz4vWbr7D" role="sklvC">
+        <property role="TrG5h" value="quality2" />
+      </node>
+    </node>
   </node>
 </model>
 
