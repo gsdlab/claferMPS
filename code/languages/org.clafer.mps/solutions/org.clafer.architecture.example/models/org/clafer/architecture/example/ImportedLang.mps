@@ -42,12 +42,6 @@
       <node concept="sjk9b" id="6mpz4vWbrgn" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
       </node>
-      <node concept="3EozPd" id="6mpz4vWbrgq" role="sklvC">
-        <property role="TrG5h" value="quality1" />
-      </node>
-      <node concept="3EozPd" id="6mpz4vWbrgs" role="sklvC">
-        <property role="TrG5h" value="quality2" />
-      </node>
       <node concept="3EozPd" id="6mpz4vWbrgv" role="sklvC">
         <property role="TrG5h" value="quality3" />
       </node>
