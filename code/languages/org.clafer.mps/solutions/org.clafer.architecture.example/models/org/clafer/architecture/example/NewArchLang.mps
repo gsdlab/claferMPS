@@ -46,6 +46,13 @@
       <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
+      <concept id="5776930868210688761" name="org.clafer.architecture.structure.IHasQualityAttributes" flags="ng" index="Nx2FX">
+        <child id="4851172649685075330" name="qualities" index="33KLpg" />
+      </concept>
+      <concept id="4851172649685075389" name="org.clafer.architecture.structure.Quality" flags="ng" index="33KLpJ">
+        <reference id="4851172649685075405" name="tElement" index="33KLov" />
+        <child id="4851172649685075407" name="value" index="33KLot" />
+      </concept>
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommunicationTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
         <child id="6715281144249649204" name="connects" index="1WO72F" />
@@ -127,10 +134,14 @@
       <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
       <concept id="8860443239512128052" name="org.clafer.expr.structure.BinaryExpression" flags="ng" index="3TlMgq">
         <child id="8860443239512128064" name="left" index="3TlMhI" />
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
+      <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
@@ -214,6 +225,18 @@
             <node concept="2l49t0" id="7xzoSpGV1CB" role="2mZOl8">
               <property role="TrG5h" value="powerDN" />
               <node concept="kwSKj" id="7xzoSpGV1CG" role="kIXCp" />
+              <node concept="33KLpJ" id="1iqBiKUolpw" role="33KLpg">
+                <ref role="33KLov" node="6mpz4vWbr7B" resolve="quality1" />
+                <node concept="3TlMh9" id="1iqBiKUolpy" role="33KLot">
+                  <property role="2hmy$m" value="3" />
+                </node>
+              </node>
+              <node concept="33KLpJ" id="1iqBiKUolpB" role="33KLpg">
+                <ref role="33KLov" to="q3rx:6mpz4vWbrgz" resolve="quality4" />
+                <node concept="3TlMh9" id="1iqBiKUolpF" role="33KLot">
+                  <property role="2hmy$m" value="3" />
+                </node>
+              </node>
             </node>
             <node concept="2l49t0" id="7xzoSpGV1CO" role="2mZOl8">
               <property role="TrG5h" value="electrDN" />
