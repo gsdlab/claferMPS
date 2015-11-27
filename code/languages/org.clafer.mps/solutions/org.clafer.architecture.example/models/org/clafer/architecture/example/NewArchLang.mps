@@ -961,6 +961,11 @@
         <property role="TrG5h" value="quality2" />
       </node>
     </node>
+    <node concept="sklqP" id="5EXaBxYg1ZO" role="sklmO">
+      <node concept="sjk9b" id="5EXaBxYg1ZU" role="skltt">
+        <ref role="sjk9f" to="ddau:$OrRLOgbn5" resolve="ECU" />
+      </node>
+    </node>
   </node>
 </model>
 
