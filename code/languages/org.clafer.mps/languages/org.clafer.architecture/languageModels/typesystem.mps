@@ -1068,6 +1068,7 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="6QaP4sqQXKH" role="3cqZAp" />
       <node concept="3clFbH" id="57FaIEV$8II" role="3cqZAp" />
       <node concept="3clFbH" id="57FaIEV$8IQ" role="3cqZAp" />
     </node>
@@ -1196,6 +1197,7 @@
   </node>
   <node concept="18kY7G" id="1iqBiKUljYJ">
     <property role="TrG5h" value="check_IHasQualityAttributes" />
+    <property role="3GE5qa" value="QualityModule" />
     <node concept="3clFbS" id="1iqBiKUljYK" role="18ibNy">
       <node concept="3clFbF" id="1iqBiKUlkfE" role="3cqZAp">
         <node concept="2OqwBi" id="1iqBiKUlkIq" role="3clFbG">

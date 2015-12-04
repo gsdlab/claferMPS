@@ -41,17 +41,9 @@
       </concept>
       <concept id="7285997757218440942" name="org.clafer.architecture.structure.QualityTuple" flags="ng" index="sklqP">
         <child id="7285997757218440966" name="archConcept" index="skltt" />
-        <child id="7285997757218441139" name="qualities" index="sklvC" />
-        <child id="4132992774366472950" name="qualityRef" index="3A1vRL" />
       </concept>
       <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
         <child id="7285997757218440687" name="tuples" index="sklmO" />
-      </concept>
-      <concept id="5776930868210688761" name="org.clafer.architecture.structure.IHasQualityAttributes" flags="ng" index="Nx2FX">
-        <child id="4851172649685075330" name="qualities" index="33KLpg" />
-      </concept>
-      <concept id="4851172649685075389" name="org.clafer.architecture.structure.Quality" flags="ng" index="33KLpJ">
-        <reference id="4851172649685075405" name="tElement" index="33KLov" />
       </concept>
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommunicationTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
@@ -82,10 +74,6 @@
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
-      <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
-      <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityRef" flags="ng" index="3Ev5JQ">
-        <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
-      </concept>
       <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
       <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
       <concept id="2260668491394108193" name="org.clafer.architecture.structure.ArchRef" flags="ng" index="3Jak$y" />
@@ -221,59 +209,14 @@
             <node concept="2l49t0" id="3f7bmGhxqc3" role="2mZOl8">
               <property role="TrG5h" value="smartDN" />
               <node concept="kwSKi" id="3f7bmGhxqcg" role="kIXCp" />
-              <node concept="33KLpJ" id="5EXaBxYAgZL" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAgZH" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh0d" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh09" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh0K" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh0G" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh1q" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh1m" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh2b" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh27" />
-              </node>
             </node>
             <node concept="2l49t0" id="7xzoSpGV1CB" role="2mZOl8">
               <property role="TrG5h" value="powerDN" />
               <node concept="kwSKj" id="7xzoSpGV1CG" role="kIXCp" />
-              <node concept="33KLpJ" id="5EXaBxYAgZM" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAgZH" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh0e" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh09" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh0L" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh0G" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh1r" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh1m" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh2c" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh27" />
-              </node>
             </node>
             <node concept="2l49t0" id="7xzoSpGV1CO" role="2mZOl8">
               <property role="TrG5h" value="electrDN" />
               <node concept="kIXAu" id="7xzoSpGV1CV" role="kIXCp" />
-              <node concept="33KLpJ" id="5EXaBxYAgZN" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAgZH" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh0f" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh09" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh0M" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh0G" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh1s" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh1m" />
-              </node>
-              <node concept="33KLpJ" id="5EXaBxYAh2d" role="33KLpg">
-                <ref role="33KLov" node="5EXaBxYAh27" />
-              </node>
             </node>
             <node concept="3Hzz_d" id="3EgEWBTIQu3" role="2mZOl8">
               <property role="TrG5h" value="motor" />
@@ -986,45 +929,15 @@
     </node>
   </node>
   <node concept="slzsT" id="4HhZvvSmPV5">
-    <property role="TrG5h" value="Qualities" />
+    <property role="TrG5h" value="QualityAttributes" />
     <node concept="sklqP" id="6ja5T_18pMi" role="sklmO">
-      <node concept="3EozPd" id="5EXaBxY$QHi" role="sklvC">
-        <property role="TrG5h" value="quality1" />
-      </node>
-      <node concept="3EozPd" id="5EXaBxY$QH$" role="sklvC">
-        <property role="TrG5h" value="quality2" />
-      </node>
       <node concept="sjk9b" id="6ja5T_18pMk" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
       </node>
-      <node concept="3Ev5JQ" id="5EXaBxY$QHZ" role="3A1vRL">
-        <ref role="3Ev5JR" to="q3rx:5EXaBxY$QHX" resolve="quality3" />
-      </node>
-      <node concept="3Ev5JQ" id="5EXaBxY$QIr" role="3A1vRL">
-        <ref role="3Ev5JR" to="q3rx:5EXaBxY$QIp" resolve="quality4" />
-      </node>
     </node>
     <node concept="sklqP" id="5EXaBxYg1ZO" role="sklmO">
-      <node concept="3EozPd" id="5EXaBxY$QIW" role="sklvC">
-        <property role="TrG5h" value="ecuQuality1" />
-      </node>
       <node concept="sjk9b" id="5EXaBxYg1ZU" role="skltt">
         <ref role="sjk9f" to="ddau:$OrRLOgbn5" resolve="ECU" />
-      </node>
-      <node concept="3Ev5JQ" id="5EXaBxY$QHj" role="3A1vRL">
-        <ref role="3Ev5JR" node="5EXaBxY$QHi" resolve="quality1" />
-      </node>
-      <node concept="3Ev5JQ" id="5EXaBxY$QH_" role="3A1vRL">
-        <ref role="3Ev5JR" node="5EXaBxY$QH$" resolve="quality2" />
-      </node>
-      <node concept="3Ev5JQ" id="5EXaBxY$QI0" role="3A1vRL">
-        <ref role="3Ev5JR" to="q3rx:5EXaBxY$QHX" resolve="quality3" />
-      </node>
-      <node concept="3Ev5JQ" id="5EXaBxY$QIs" role="3A1vRL">
-        <ref role="3Ev5JR" to="q3rx:5EXaBxY$QIp" resolve="quality4" />
-      </node>
-      <node concept="3Ev5JQ" id="5EXaBxY$QJ5" role="3A1vRL">
-        <ref role="3Ev5JR" to="q3rx:5EXaBxY$QJ4" resolve="ecuQuality2" />
       </node>
     </node>
   </node>
