@@ -28,6 +28,7 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="vrqc" ref="r:53e59391-150a-45ff-930e-2b4fdafb0905(org.clafer.expr.editor)" />
+    <import index="qon6" ref="r:77666878-a961-4760-8fa7-8b6fd31b3f35(org.clafer.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -480,6 +481,12 @@
         <property id="1186403713874" name="color" index="Vb097" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -671,6 +678,9 @@
       <node concept="PMmxH" id="$OrRLO45H_" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO45o7" resolve="DNSuperNode" />
       </node>
+      <node concept="PMmxH" id="6LOryU0rqL3" role="3EZMnx">
+        <ref role="PMmxG" node="4zMtg5MUy4e" resolve="Qualities" />
+      </node>
       <node concept="PMmxH" id="$OrRLO2XAK" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
       </node>
@@ -732,6 +742,9 @@
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
+      </node>
+      <node concept="PMmxH" id="6LOryU0rr2N" role="3EZMnx">
+        <ref role="PMmxG" node="4zMtg5MUy4e" resolve="Qualities" />
       </node>
       <node concept="PMmxH" id="5PgN_niJSfV" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
@@ -1829,6 +1842,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="PMmxH" id="6LOryU0rrA0" role="3EZMnx">
+        <ref role="PMmxG" node="4zMtg5MUy4e" resolve="Qualities" />
       </node>
       <node concept="PMmxH" id="58TXiBDBqeL" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
@@ -3943,6 +3959,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="6LOryU0rrEg" role="3EZMnx">
+        <ref role="PMmxG" node="4zMtg5MUy4e" resolve="Qualities" />
+      </node>
       <node concept="PMmxH" id="6yDAYyfK_ZK" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
       </node>
@@ -4875,6 +4894,9 @@
       <node concept="3F1sOY" id="3_X0pUT8M$K" role="3EZMnx">
         <ref role="1NtTu8" to="ddau:3_X0pUT8Mfr" />
       </node>
+      <node concept="PMmxH" id="6LOryU0rrrb" role="3EZMnx">
+        <ref role="PMmxG" node="4zMtg5MUy4e" resolve="Qualities" />
+      </node>
       <node concept="PMmxH" id="3URpncZ4$lC" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
       </node>
@@ -4973,6 +4995,9 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="6LOryU0rrnq" role="3EZMnx">
+        <ref role="PMmxG" node="4zMtg5MUy4e" resolve="Qualities" />
+      </node>
       <node concept="PMmxH" id="5OLu9WxSfmU" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
       </node>
@@ -4994,6 +5019,9 @@
       </node>
       <node concept="3F1sOY" id="23T79tC4TNj" role="3EZMnx">
         <ref role="1NtTu8" to="ddau:23T79tC4TMt" />
+      </node>
+      <node concept="PMmxH" id="6LOryU0rrqW" role="3EZMnx">
+        <ref role="PMmxG" node="4zMtg5MUy4e" resolve="Qualities" />
       </node>
       <node concept="PMmxH" id="50FM0hzvBfI" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
@@ -5208,6 +5236,9 @@
       </node>
       <node concept="PMmxH" id="50FM0hzHi5L" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
+      </node>
+      <node concept="PMmxH" id="6LOryU0rr35" role="3EZMnx">
+        <ref role="PMmxG" node="4zMtg5MUy4e" resolve="Qualities" />
       </node>
       <node concept="PMmxH" id="50FM0hzHi6g" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
@@ -5499,14 +5530,25 @@
                                         <node concept="3cpWsn" id="5EXaBxYjKdB" role="3cpWs9">
                                           <property role="TrG5h" value="qRef" />
                                           <node concept="3Tqbb2" id="5EXaBxYjKdC" role="1tU5fm">
-                                            <ref role="ehGHo" to="ddau:57FaIEV_R4s" resolve="QualityRef" />
+                                            <ref role="ehGHo" to="ddau:57FaIEV_R4s" resolve="QualityTableElementRef" />
                                           </node>
                                           <node concept="2ShNRf" id="5EXaBxYjKdD" role="33vP2m">
                                             <node concept="3zrR0B" id="5EXaBxYjKdE" role="2ShVmc">
                                               <node concept="3Tqbb2" id="5EXaBxYjKdF" role="3zrR0E">
-                                                <ref role="ehGHo" to="ddau:57FaIEV_R4s" resolve="QualityRef" />
+                                                <ref role="ehGHo" to="ddau:57FaIEV_R4s" resolve="QualityTableElementRef" />
                                               </node>
                                             </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="34ab3g" id="H$98wx_KQH" role="3cqZAp">
+                                        <property role="35gtTG" value="error" />
+                                        <node concept="3cpWs3" id="H$98wx_MhR" role="34bqiv">
+                                          <node concept="37vLTw" id="H$98wx_Q0L" role="3uHU7w">
+                                            <ref role="3cqZAo" node="5EXaBxYnvlh" resolve="newQuality" />
+                                          </node>
+                                          <node concept="Xl_RD" id="H$98wx_KQJ" role="3uHU7B">
+                                            <property role="Xl_RC" value="=== " />
                                           </node>
                                         </node>
                                       </node>
@@ -5680,7 +5722,7 @@
   </node>
   <node concept="24kQdi" id="57FaIEV_R4R">
     <property role="3GE5qa" value="textEditors.QualityModule" />
-    <ref role="1XX52x" to="ddau:57FaIEV_R4s" resolve="QualityRef" />
+    <ref role="1XX52x" to="ddau:57FaIEV_R4s" resolve="QualityTableElementRef" />
     <node concept="1iCGBv" id="57FaIEV_R4T" role="2wV5jI">
       <ref role="1NtTu8" to="ddau:57FaIEV_R4t" />
       <ref role="1k5W1q" to="r4b4:2$$_2GR98qO" resolve="readOnly" />
@@ -6040,6 +6082,39 @@
             <node concept="2OqwBi" id="5EXaBxYurWj" role="3clFbG">
               <node concept="0IXxy" id="5EXaBxYurIg" role="2Oq$k0" />
               <node concept="1PgB_6" id="5EXaBxYus3S" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1T2jte6fwQ8">
+    <property role="3GE5qa" value="QualityModule" />
+    <ref role="1XX52x" to="ddau:1T2jte6fqCF" resolve="QualityRefExpr" />
+    <node concept="3F0ifn" id="1T2jte6lprl" role="2wV5jI">
+      <property role="3F0ifm" value="c" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="bgYpXHq2cj">
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityTableElement_Rename" />
+    <ref role="1h_SK9" to="ddau:57FaIEVyhuB" resolve="QualityTableElement" />
+    <node concept="1hA7zw" id="bgYpXHq2cw" role="1h_SK8">
+      <property role="1hAc7j" value="complete_action_id" />
+      <node concept="1hAIg9" id="bgYpXHq2cx" role="1hA7z_">
+        <node concept="3clFbS" id="bgYpXHq2cy" role="2VODD2">
+          <node concept="34ab3g" id="bgYpXHq2gi" role="3cqZAp">
+            <property role="35gtTG" value="error" />
+            <node concept="3cpWs3" id="bgYpXHq2kX" role="34bqiv">
+              <node concept="2OqwBi" id="bgYpXHq2pP" role="3uHU7w">
+                <node concept="0IXxy" id="bgYpXHq2lh" role="2Oq$k0" />
+                <node concept="3TrcHB" id="bgYpXHq2MH" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="bgYpXHq2gk" role="3uHU7B">
+                <property role="Xl_RC" value="==== " />
+              </node>
             </node>
           </node>
         </node>

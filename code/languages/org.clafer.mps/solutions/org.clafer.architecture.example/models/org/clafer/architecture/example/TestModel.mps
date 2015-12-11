@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:366fcfd6-779f-4b32-95f3-3f3dfb4e5a79(org.clafer.architecture.example.NewArchLang)">
+<model ref="r:366fcfd6-779f-4b32-95f3-3f3dfb4e5a79(org.clafer.architecture.example.TestModel)">
   <persistence version="9" />
   <languages>
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="-1" />
@@ -8,7 +8,8 @@
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
-    <import index="q3rx" ref="r:cb9e592b-aea8-4f88-9f6b-b138efc56b06(org.clafer.architecture.example.ImportedLang)" />
+    <import index="q3rx" ref="r:cb9e592b-aea8-4f88-9f6b-b138efc56b06(org.clafer.architecture.example.TestModel2)" />
+    <import index="t4ow" ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.example.QualityAttributes)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
   </imports>
   <registry>
@@ -226,9 +227,9 @@
               <property role="TrG5h" value="sw" />
               <node concept="kwSKi" id="3EgEWBTIUvr" role="kIXCp" />
             </node>
-            <node concept="1XtdET" id="5EXaBxY_QUc" role="2mZOl8">
-              <property role="TrG5h" value="ecu" />
-              <node concept="kwSKi" id="5EXaBxY_QUd" role="kIXCp" />
+            <node concept="1XtdET" id="7x7zn0efotk" role="2mZOl8">
+              <property role="TrG5h" value="test" />
+              <node concept="kwSKi" id="7x7zn0efotl" role="kIXCp" />
             </node>
           </node>
           <node concept="1uNHS9" id="dCj2Z$w5uV" role="2mZOl8">
@@ -930,14 +931,14 @@
   </node>
   <node concept="slzsT" id="4HhZvvSmPV5">
     <property role="TrG5h" value="QualityAttributes" />
-    <node concept="sklqP" id="6ja5T_18pMi" role="sklmO">
-      <node concept="sjk9b" id="6ja5T_18pMk" role="skltt">
+    <node concept="sklqP" id="H$98wxz$m9" role="sklmO">
+      <node concept="sjk9b" id="H$98wxz$mb" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
       </node>
     </node>
-    <node concept="sklqP" id="5EXaBxYg1ZO" role="sklmO">
-      <node concept="sjk9b" id="5EXaBxYg1ZU" role="skltt">
-        <ref role="sjk9f" to="ddau:$OrRLOgbn5" resolve="ECU" />
+    <node concept="sklqP" id="H$98wxz$mF" role="sklmO">
+      <node concept="sjk9b" id="H$98wxz$mJ" role="skltt">
+        <ref role="sjk9f" to="ddau:72GPbqt8IRV" resolve="Motor" />
       </node>
     </node>
   </node>

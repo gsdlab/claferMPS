@@ -118,6 +118,9 @@
     <node concept="PrWs8" id="4csP6flST3Q" role="PzmwI">
       <ref role="PrY4T" node="4Z9rElroRnZ" resolve="IArchitectureElement" />
     </node>
+    <node concept="PrWs8" id="6LOryU0rqHo" role="PzmwI">
+      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHasQualityAttributes" />
+    </node>
     <node concept="1TJgyj" id="4csP6flST4F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -171,9 +174,6 @@
     <property role="34LRSv" value="Device Node" />
     <property role="1pbfSe" value="422123398" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="PrWs8" id="4diOXa0yQdO" role="PzmwI">
-      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHasQualityAttributes" />
-    </node>
     <node concept="PrWs8" id="23T79tC3_81" role="PzmwI">
       <ref role="PrY4T" node="5hA9WCIjVnK" resolve="IDevice" />
     </node>
@@ -876,7 +876,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="qualityRef" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="57FaIEV_R4s" resolve="QualityRef" />
+      <ref role="20lvS9" node="57FaIEV_R4s" resolve="QualityTableElementRef" />
     </node>
     <node concept="PrWs8" id="6kt45HTlS$5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -912,12 +912,12 @@
     <property role="TrG5h" value="QTElement" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
   </node>
   <node concept="1TIwiD" id="57FaIEV_R4s">
     <property role="1pbfSe" value="226663430" />
     <property role="3GE5qa" value="QualityModule" />
-    <property role="TrG5h" value="QualityRef" />
+    <property role="TrG5h" value="QualityTableElementRef" />
     <ref role="1TJDcQ" node="57FaIEV_R4r" resolve="QTElement" />
     <node concept="1TJgyj" id="57FaIEV_R4t" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -930,7 +930,7 @@
     <property role="1pbfSe" value="1008428657" />
     <property role="3GE5qa" value="QualityModule" />
     <property role="TrG5h" value="Quality" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="1TJgyj" id="4diOXa0$snd" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="tElement" />
@@ -1042,6 +1042,12 @@
     <property role="1pbfSe" value="1162383879" />
     <property role="3GE5qa" value="Interfaces.IDevice" />
     <property role="TrG5h" value="IHasFixedDeviceType" />
+  </node>
+  <node concept="1TIwiD" id="1T2jte6fqCF">
+    <property role="1pbfSe" value="1535117314" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityRefExpr" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
   </node>
 </model>
 

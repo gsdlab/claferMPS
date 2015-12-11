@@ -1522,12 +1522,12 @@
                             <node concept="3cpWsn" id="57FaIEVAtvb" role="3cpWs9">
                               <property role="TrG5h" value="qRef" />
                               <node concept="3Tqbb2" id="57FaIEVAtv7" role="1tU5fm">
-                                <ref role="ehGHo" to="ddau:57FaIEV_R4s" resolve="QualityRef" />
+                                <ref role="ehGHo" to="ddau:57FaIEV_R4s" resolve="QualityTableElementRef" />
                               </node>
                               <node concept="2ShNRf" id="57FaIEVAu1D" role="33vP2m">
                                 <node concept="3zrR0B" id="57FaIEVAu1B" role="2ShVmc">
                                   <node concept="3Tqbb2" id="57FaIEVAu1C" role="3zrR0E">
-                                    <ref role="ehGHo" to="ddau:57FaIEV_R4s" resolve="QualityRef" />
+                                    <ref role="ehGHo" to="ddau:57FaIEV_R4s" resolve="QualityTableElementRef" />
                                   </node>
                                 </node>
                               </node>

@@ -1236,7 +1236,7 @@
                                 </node>
                               </node>
                               <node concept="Xl_RD" id="1iqBiKUlDjh" role="3uHU7B">
-                                <property role="Xl_RC" value="Dublicated attributes (" />
+                                <property role="Xl_RC" value="Dublicate attributes (" />
                               </node>
                             </node>
                           </node>
@@ -1437,7 +1437,7 @@
                                                             </node>
                                                             <node concept="3cpWs3" id="5EXaBxYfRqw" role="3uHU7B">
                                                               <node concept="Xl_RD" id="5EXaBxYfOWE" role="3uHU7B">
-                                                                <property role="Xl_RC" value="duplicated attribute in the " />
+                                                                <property role="Xl_RC" value="duplicate attribute in the " />
                                                               </node>
                                                               <node concept="2OqwBi" id="5EXaBxYfStg" role="3uHU7w">
                                                                 <node concept="37vLTw" id="5EXaBxYfRWj" role="2Oq$k0">
