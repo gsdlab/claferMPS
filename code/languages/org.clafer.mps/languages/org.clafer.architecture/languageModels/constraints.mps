@@ -2758,10 +2758,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="6kt45HTjQOL">
-    <property role="3GE5qa" value="QualityModule" />
-    <ref role="1M2myG" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
-  </node>
   <node concept="1M2fIO" id="6kt45HTk58I">
     <property role="3GE5qa" value="QualityModule" />
     <ref role="1M2myG" to="ddau:6kt45HTk58g" resolve="ArchConceptRef" />
@@ -3396,8 +3392,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="bgYpXHsrEa" role="3cqZAp" />
-          <node concept="3clFbH" id="bgYpXHsgeH" role="3cqZAp" />
         </node>
       </node>
     </node>

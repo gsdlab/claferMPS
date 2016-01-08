@@ -20,11 +20,15 @@
       <concept id="7285997757218440942" name="org.clafer.architecture.structure.QualityTuple" flags="ng" index="sklqP">
         <child id="7285997757218440966" name="archConcept" index="skltt" />
         <child id="7285997757218441139" name="qualities" index="sklvC" />
+        <child id="4132992774366472950" name="qualityRef" index="3A1vRL" />
       </concept>
       <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
       <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
+      <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityTableElementRef" flags="ng" index="3Ev5JQ">
+        <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -34,6 +38,14 @@
   </registry>
   <node concept="slzsT" id="H$98wxz$iD">
     <property role="TrG5h" value="QATable" />
+    <node concept="sklqP" id="7WEiGCkjCNm" role="sklmO">
+      <node concept="3EozPd" id="7WEiGCkk3Ys" role="sklvC">
+        <property role="TrG5h" value="asdsad" />
+      </node>
+      <node concept="sjk9b" id="7WEiGCkjCN$" role="skltt">
+        <ref role="sjk9f" to="ddau:4csP6flST3m" resolve="ArchElement" />
+      </node>
+    </node>
     <node concept="sklqP" id="H$98wxz$iE" role="sklmO">
       <node concept="3EozPd" id="H$98wxz$iI" role="sklvC">
         <property role="TrG5h" value="mass" />
@@ -53,10 +65,16 @@
       <node concept="sjk9b" id="H$98wxz$iG" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
       </node>
+      <node concept="3Ev5JQ" id="7WEiGCkk3Yt" role="3A1vRL">
+        <ref role="3Ev5JR" node="7WEiGCkk3Ys" resolve="asdsad" />
+      </node>
     </node>
     <node concept="sklqP" id="H$98wxz$kV" role="sklmO">
       <node concept="sjk9b" id="H$98wxz$l4" role="skltt">
         <ref role="sjk9f" to="ddau:19aTRzkPQU0" resolve="HardwareConnector" />
+      </node>
+      <node concept="3Ev5JQ" id="7WEiGCkk3Yu" role="3A1vRL">
+        <ref role="3Ev5JR" node="7WEiGCkk3Ys" resolve="asdsad" />
       </node>
     </node>
     <node concept="sklqP" id="H$98wxz$lh" role="sklmO">
@@ -65,6 +83,9 @@
       </node>
       <node concept="sjk9b" id="H$98wxz$lu" role="skltt">
         <ref role="sjk9f" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+      </node>
+      <node concept="3Ev5JQ" id="7WEiGCkk3Yv" role="3A1vRL">
+        <ref role="3Ev5JR" node="7WEiGCkk3Ys" resolve="asdsad" />
       </node>
     </node>
   </node>

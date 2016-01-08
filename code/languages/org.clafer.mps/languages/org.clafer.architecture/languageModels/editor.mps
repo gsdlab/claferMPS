@@ -5541,17 +5541,6 @@
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="34ab3g" id="H$98wx_KQH" role="3cqZAp">
-                                        <property role="35gtTG" value="error" />
-                                        <node concept="3cpWs3" id="H$98wx_MhR" role="34bqiv">
-                                          <node concept="37vLTw" id="H$98wx_Q0L" role="3uHU7w">
-                                            <ref role="3cqZAo" node="5EXaBxYnvlh" resolve="newQuality" />
-                                          </node>
-                                          <node concept="Xl_RD" id="H$98wx_KQJ" role="3uHU7B">
-                                            <property role="Xl_RC" value="=== " />
-                                          </node>
-                                        </node>
-                                      </node>
                                       <node concept="3clFbF" id="5EXaBxYjKdG" role="3cqZAp">
                                         <node concept="37vLTI" id="5EXaBxYjKdH" role="3clFbG">
                                           <node concept="37vLTw" id="5EXaBxYjKdI" role="37vLTx">
