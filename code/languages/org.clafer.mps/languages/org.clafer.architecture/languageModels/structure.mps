@@ -930,7 +930,7 @@
     <property role="1pbfSe" value="1008428657" />
     <property role="3GE5qa" value="QualityModule" />
     <property role="TrG5h" value="Quality" />
-    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <ref role="1TJDcQ" to="mecy:bl22kSogWC" resolve="Clafer" />
     <node concept="1TJgyj" id="4diOXa0$snd" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="tElement" />

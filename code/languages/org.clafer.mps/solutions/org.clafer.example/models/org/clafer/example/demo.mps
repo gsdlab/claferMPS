@@ -47,6 +47,7 @@
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
       <concept id="952337070379891820" name="org.clafer.expr.structure.ProductExpr" flags="ng" index="vmDRD" />
+      <concept id="5763383285156373020" name="org.clafer.expr.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156533447" name="org.clafer.expr.structure.ParensExpression" flags="ng" index="2BPB98" />
       <concept id="4545783005387558271" name="org.clafer.expr.structure.SomeQuant" flags="ng" index="LdX3K" />
       <concept id="4545783005390900221" name="org.clafer.expr.structure.UnionExpression" flags="ng" index="LgdpM" />
@@ -179,11 +180,31 @@
         </node>
       </node>
       <node concept="2vxuzR" id="ORookiu3E9" role="2vwUiP">
-        <node concept="3TlM44" id="ORookiu3Eq" role="3WnoGb">
-          <node concept="3TlMh9" id="ORookiu3EL" role="3TlMhJ">
-            <property role="2hmy$m" value="3" />
+        <node concept="3TlM44" id="26Xszes9Ws2" role="3WnoGb">
+          <node concept="2BOcij" id="26Xszes9WsJ" role="3TlMhJ">
+            <node concept="3TlMh9" id="26Xszes9Wt8" role="3TlMhJ">
+              <property role="2hmy$m" value="1" />
+            </node>
+            <node concept="ZpONE" id="26Xszes9Wsv" role="3TlMhI">
+              <ref role="ZpOSt" node="ORookilKg9" resolve="N" />
+            </node>
           </node>
           <node concept="ZpONE" id="ORookiu3Eh" role="3TlMhI">
+            <ref role="ZpOSt" node="ORookilKg9" resolve="N" />
+          </node>
+        </node>
+      </node>
+      <node concept="2vxuzR" id="26XszesbtgM" role="2vwUiP">
+        <node concept="3TlM44" id="26Xszesbthb" role="3WnoGb">
+          <node concept="2BOcij" id="26XszesbthE" role="3TlMhJ">
+            <node concept="3TlMh9" id="26XszesbthH" role="3TlMhJ">
+              <property role="2hmy$m" value="3" />
+            </node>
+            <node concept="ZpONE" id="26Xszesbthq" role="3TlMhI">
+              <ref role="ZpOSt" node="ORookilKg9" resolve="N" />
+            </node>
+          </node>
+          <node concept="ZpONE" id="26Xszesbth3" role="3TlMhI">
             <ref role="ZpOSt" node="ORookilKg9" resolve="N" />
           </node>
         </node>
@@ -199,7 +220,6 @@
         </node>
       </node>
     </node>
-    <node concept="UzEYP" id="ORookiosQH" role="UzTCv" />
     <node concept="UH0sd" id="ORookiot6f" role="UzTCv">
       <property role="TrG5h" value="p" />
       <node concept="2K4itw" id="ORookiot8i" role="2K4itM">
@@ -230,8 +250,8 @@
             <node concept="3TlMh9" id="12ZezlWUxIJ" role="3TlMhJ">
               <property role="2hmy$m" value="18" />
             </node>
-            <node concept="2qmXGp" id="12ZezlWUxGG" role="3TlMhI">
-              <node concept="2ZqYGZ" id="12ZezlWUxHh" role="1ESnxz">
+            <node concept="2qmXGp" id="4tJTDPIa4S6" role="3TlMhI">
+              <node concept="2ZqYGZ" id="4tJTDPIa4Sn" role="1ESnxz">
                 <ref role="2ZqYFj" node="5Rg5_Rc34gP" resolve="age" />
               </node>
               <node concept="2Zoh0E" id="12ZezlWUxGl" role="1_9fRO" />
