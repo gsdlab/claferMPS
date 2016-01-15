@@ -186,6 +186,10 @@
       <property role="TrG5h" value="max" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="3T8tWljQgBi" role="1TKVEl">
+      <property role="TrG5h" value="maxString" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5tJ_MV8UPMC">
     <property role="TrG5h" value="SuperClaferRef" />
