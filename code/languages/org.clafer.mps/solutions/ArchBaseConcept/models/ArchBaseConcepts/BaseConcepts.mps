@@ -110,7 +110,6 @@
   <node concept="UzPwm" id="3T8tWljPWR5">
     <property role="TrG5h" value="EAST_ADL" />
     <node concept="1CU$1Q" id="3T8tWljPWVo" role="UzTCp" />
-    <node concept="1CU$1Q" id="3T8tWljPWVq" role="UzTCp" />
     <node concept="UH0sd" id="3T8tWljPWVz" role="UzTCv">
       <property role="TrG5h" value="System" />
       <property role="2vxgol" value="true" />
