@@ -1043,11 +1043,5 @@
     <property role="3GE5qa" value="Interfaces.IDevice" />
     <property role="TrG5h" value="IHasFixedDeviceType" />
   </node>
-  <node concept="1TIwiD" id="1T2jte6fqCF">
-    <property role="1pbfSe" value="1535117314" />
-    <property role="3GE5qa" value="QualityModule" />
-    <property role="TrG5h" value="QualityRefExpr" />
-    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
-  </node>
 </model>
 

@@ -817,6 +817,19 @@
             </node>
           </node>
         </node>
+        <node concept="4$FPG" id="5RLJ9gut35U" role="4_6I_">
+          <node concept="3clFbS" id="5RLJ9gut35V" role="2VODD2">
+            <node concept="3clFbF" id="4kWdVQTeKaC" role="3cqZAp">
+              <node concept="2ShNRf" id="4kWdVQTeKaA" role="3clFbG">
+                <node concept="3zrR0B" id="4kWdVQTeMid" role="2ShVmc">
+                  <node concept="3Tqbb2" id="4kWdVQTeMif" role="3zrR0E">
+                    <ref role="ehGHo" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="$OrRLO2N9p" role="3EZMnx">
         <property role="3F0ifm" value="}" />
@@ -6153,13 +6166,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="1T2jte6fwQ8">
-    <property role="3GE5qa" value="QualityModule" />
-    <ref role="1XX52x" to="ddau:1T2jte6fqCF" resolve="QualityRefExpr" />
-    <node concept="3F0ifn" id="1T2jte6lprl" role="2wV5jI">
-      <property role="3F0ifm" value="c" />
     </node>
   </node>
   <node concept="1h_SRR" id="bgYpXHq2cj">

@@ -8,6 +8,7 @@
   <imports>
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="e8zo" ref="r:58a558d9-50ed-4b86-91cf-66ce18b52795(org.clafer.expr.actions)" />
+    <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
   </imports>
   <registry>
@@ -155,7 +156,9 @@
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -257,7 +260,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="4IooPifSw6c" role="2OqNvi" />
+                  <node concept="WFELt" id="4IooPifSw6c" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -295,7 +300,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="5OLu9WxXhmd" role="2OqNvi" />
+                  <node concept="WFELt" id="5OLu9WxXhmd" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -333,7 +340,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="4xcaXO6VEvk" role="2OqNvi" />
+                  <node concept="WFELt" id="4xcaXO6VEvk" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -371,7 +380,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="7DuSdC$x0Zv" role="2OqNvi" />
+                  <node concept="WFELt" id="7DuSdC$x0Zv" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -409,7 +420,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="$OrRLOyzaF" role="2OqNvi" />
+                  <node concept="WFELt" id="$OrRLOyzaF" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -438,7 +451,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="7DuSdC$qN0L" role="2OqNvi" />
+                  <node concept="WFELt" id="7DuSdC$qN0L" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -467,7 +482,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="7DuSdC$rNns" role="2OqNvi" />
+                  <node concept="WFELt" id="7DuSdC$rNns" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -496,7 +513,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="7DuSdC$rNwH" role="2OqNvi" />
+                  <node concept="WFELt" id="7DuSdC$rNwH" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -525,7 +544,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="7DuSdC$rNEa" role="2OqNvi" />
+                  <node concept="WFELt" id="7DuSdC$rNEa" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -554,7 +575,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="19aTRzkOZBf" role="2OqNvi" />
+                  <node concept="WFELt" id="19aTRzkOZBf" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -583,7 +606,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="3dci_2vBhIQ" role="2OqNvi" />
+                  <node concept="WFELt" id="3dci_2vBhIQ" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -612,7 +637,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="19aTRzkPg8i" role="2OqNvi" />
+                  <node concept="WFELt" id="19aTRzkPg8i" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -641,7 +668,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="7DuSdC$w0ns" role="2OqNvi" />
+                  <node concept="WFELt" id="7DuSdC$w0ns" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -670,7 +699,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="4xcaXO71$E2" role="2OqNvi" />
+                  <node concept="WFELt" id="4xcaXO71$E2" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -699,7 +730,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="19aTRzkPlJF" role="2OqNvi" />
+                  <node concept="WFELt" id="19aTRzkPlJF" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -728,7 +761,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="19aTRzkRSfq" role="2OqNvi" />
+                  <node concept="WFELt" id="19aTRzkRSfq" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -757,7 +792,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="19aTRzkShn9" role="2OqNvi" />
+                  <node concept="WFELt" id="19aTRzkShn9" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -786,7 +823,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="19aTRzkShE8" role="2OqNvi" />
+                  <node concept="WFELt" id="19aTRzkShE8" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -815,7 +854,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="19aTRzkShXM" role="2OqNvi" />
+                  <node concept="WFELt" id="19aTRzkShXM" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -844,7 +885,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="19aTRzkRSxl" role="2OqNvi" />
+                  <node concept="WFELt" id="19aTRzkRSxl" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -873,7 +916,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="1mj7PajegKk" role="2OqNvi" />
+                  <node concept="WFELt" id="1mj7PajegKk" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -902,7 +947,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="1mj7Pajeh47" role="2OqNvi" />
+                  <node concept="WFELt" id="1mj7Pajeh47" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -931,7 +978,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="1mj7Pajehgg" role="2OqNvi" />
+                  <node concept="WFELt" id="1mj7Pajehgg" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -960,7 +1009,9 @@
                       <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
                   </node>
-                  <node concept="WFELt" id="1mj7PajelzI" role="2OqNvi" />
+                  <node concept="WFELt" id="1mj7PajelzI" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
                 </node>
               </node>
             </node>
