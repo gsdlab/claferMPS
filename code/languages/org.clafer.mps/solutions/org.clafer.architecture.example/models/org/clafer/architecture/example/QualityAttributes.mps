@@ -38,12 +38,18 @@
   </registry>
   <node concept="slzsT" id="H$98wxz$iD">
     <property role="TrG5h" value="QATable" />
-    <node concept="sklqP" id="7WEiGCkjCNm" role="sklmO">
-      <node concept="3EozPd" id="7WEiGCkk3Ys" role="sklvC">
-        <property role="TrG5h" value="asdsad" />
+    <node concept="sklqP" id="5RLJ9guqKTN" role="sklmO">
+      <node concept="3EozPd" id="5RLJ9guqKU3" role="sklvC">
+        <property role="TrG5h" value="totalMass" />
       </node>
-      <node concept="sjk9b" id="7WEiGCkjCN$" role="skltt">
-        <ref role="sjk9f" to="ddau:4csP6flST3m" resolve="ArchElement" />
+      <node concept="3EozPd" id="5RLJ9guqKU5" role="sklvC">
+        <property role="TrG5h" value="totalCost" />
+      </node>
+      <node concept="3EozPd" id="5RLJ9guqKU8" role="sklvC">
+        <property role="TrG5h" value="totalWarrantyCost" />
+      </node>
+      <node concept="sjk9b" id="5RLJ9guqKU1" role="skltt">
+        <ref role="sjk9f" to="ddau:12rnRvMhgdY" resolve="System" />
       </node>
     </node>
     <node concept="sklqP" id="H$98wxz$iE" role="sklmO">
@@ -65,16 +71,16 @@
       <node concept="sjk9b" id="H$98wxz$iG" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
       </node>
-      <node concept="3Ev5JQ" id="7WEiGCkk3Yt" role="3A1vRL">
-        <ref role="3Ev5JR" node="7WEiGCkk3Ys" resolve="asdsad" />
-      </node>
     </node>
     <node concept="sklqP" id="H$98wxz$kV" role="sklmO">
+      <node concept="3EozPd" id="5RLJ9guqKUg" role="sklvC">
+        <property role="TrG5h" value="length" />
+      </node>
+      <node concept="3EozPd" id="5RLJ9guqKUk" role="sklvC">
+        <property role="TrG5h" value="mass" />
+      </node>
       <node concept="sjk9b" id="H$98wxz$l4" role="skltt">
         <ref role="sjk9f" to="ddau:19aTRzkPQU0" resolve="HardwareConnector" />
-      </node>
-      <node concept="3Ev5JQ" id="7WEiGCkk3Yu" role="3A1vRL">
-        <ref role="3Ev5JR" node="7WEiGCkk3Ys" resolve="asdsad" />
       </node>
     </node>
     <node concept="sklqP" id="H$98wxz$lh" role="sklmO">
@@ -84,8 +90,11 @@
       <node concept="sjk9b" id="H$98wxz$lu" role="skltt">
         <ref role="sjk9f" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
       </node>
-      <node concept="3Ev5JQ" id="7WEiGCkk3Yv" role="3A1vRL">
-        <ref role="3Ev5JR" node="7WEiGCkk3Ys" resolve="asdsad" />
+      <node concept="3Ev5JQ" id="5RLJ9guqKUh" role="3A1vRL">
+        <ref role="3Ev5JR" node="5RLJ9guqKUg" resolve="length" />
+      </node>
+      <node concept="3Ev5JQ" id="5RLJ9guqKUl" role="3A1vRL">
+        <ref role="3Ev5JR" node="5RLJ9guqKUk" resolve="mass" />
       </node>
     </node>
   </node>

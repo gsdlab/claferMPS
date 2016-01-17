@@ -72,6 +72,7 @@
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
+      <concept id="8119098109027610108" name="org.clafer.architecture.structure.Inline" flags="ng" index="3Hzz_a" />
       <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
       <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
       <concept id="2260668491394108193" name="org.clafer.architecture.structure.ArchRef" flags="ng" index="3Jak$y" />
@@ -227,16 +228,6 @@
             <node concept="2l49t0" id="7xzoSpGV1CO" role="2mZOl8">
               <property role="TrG5h" value="electrDN" />
               <node concept="kIXAu" id="7xzoSpGV1CV" role="kIXCp" />
-              <node concept="33KLpJ" id="7WEiGCkk3Y$" role="33KLpg">
-                <property role="TrG5h" value="asdsad" />
-                <ref role="33KLov" to="t4ow:7WEiGCkk3Ys" resolve="asdsad" />
-                <node concept="2K4itw" id="7WEiGCkk3Y_" role="2K4itM">
-                  <node concept="3TlMh2" id="7WEiGCkk3YA" role="3J4IUC" />
-                </node>
-                <node concept="3TlMh9" id="7WEiGCkk3YH" role="33KLot">
-                  <property role="2hmy$m" value="2" />
-                </node>
-              </node>
               <node concept="33KLpJ" id="7WEiGCkk3YM" role="33KLpg">
                 <property role="TrG5h" value="cost" />
                 <ref role="33KLov" to="t4ow:H$98wxz$iP" resolve="cost" />
@@ -274,6 +265,10 @@
             <node concept="1XtdET" id="7x7zn0efotk" role="2mZOl8">
               <property role="TrG5h" value="test" />
               <node concept="kwSKi" id="7x7zn0efotl" role="kIXCp" />
+            </node>
+            <node concept="3Hzz_a" id="5RLJ9gutsUO" role="2mZOl8">
+              <property role="TrG5h" value="inline" />
+              <node concept="kwSKj" id="5RLJ9gutsUP" role="kIXCp" />
             </node>
           </node>
           <node concept="1uNHS9" id="dCj2Z$w5uV" role="2mZOl8">
