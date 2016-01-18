@@ -13,9 +13,9 @@
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="ywuy" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd9(org.clafer.expr.behavior)" implicit="true" />
   </imports>
@@ -75,6 +75,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1059,6 +1060,44 @@
       <node concept="A3Dl8" id="6clJcrJXo2E" role="3clF45">
         <node concept="3Tqbb2" id="6clJcrJXo2F" role="A3Ik2" />
       </node>
+    </node>
+    <node concept="13i0hz" id="1wmiO1AOlc4" role="13h7CS">
+      <property role="TrG5h" value="getArchIcon" />
+      <node concept="3Tm1VV" id="1wmiO1AOlc5" role="1B3o_S" />
+      <node concept="3clFbS" id="1wmiO1AOlc6" role="3clF47">
+        <node concept="3clFbJ" id="1wmiO1AOmKj" role="3cqZAp">
+          <node concept="3clFbS" id="1wmiO1AOmKk" role="3clFbx">
+            <node concept="3cpWs6" id="1wmiO1AOovg" role="3cqZAp">
+              <node concept="2OqwBi" id="1wmiO1AOpas" role="3cqZAk">
+                <node concept="2OqwBi" id="1wmiO1AOoB6" role="2Oq$k0">
+                  <node concept="13iPFW" id="1wmiO1AOoxx" role="2Oq$k0" />
+                  <node concept="3NT_Vc" id="1wmiO1AOoNT" role="2OqNvi" />
+                </node>
+                <node concept="3TrcHB" id="1wmiO1AOplk" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpce:gSMwhzt" resolve="iconPath" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1wmiO1AOol_" role="3clFbw">
+            <node concept="2OqwBi" id="1wmiO1AOnZd" role="2Oq$k0">
+              <node concept="2OqwBi" id="1wmiO1AOn$j" role="2Oq$k0">
+                <node concept="13iPFW" id="1wmiO1AOmKv" role="2Oq$k0" />
+                <node concept="3NT_Vc" id="1wmiO1AOnJ2" role="2OqNvi" />
+              </node>
+              <node concept="3TrcHB" id="1wmiO1AOo91" role="2OqNvi">
+                <ref role="3TsBF5" to="tpce:gSMwhzt" resolve="iconPath" />
+              </node>
+            </node>
+            <node concept="17RvpY" id="1wmiO1AOot9" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1wmiO1AOpnQ" role="3cqZAp" />
+        <node concept="3clFbF" id="1wmiO1AOpry" role="3cqZAp">
+          <node concept="10Nm6u" id="1wmiO1AOprw" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="1wmiO1AOmKg" role="3clF45" />
     </node>
     <node concept="13hLZK" id="4csP6flTZZ6" role="13h7CW">
       <node concept="3clFbS" id="4csP6flTZZ7" role="2VODD2" />

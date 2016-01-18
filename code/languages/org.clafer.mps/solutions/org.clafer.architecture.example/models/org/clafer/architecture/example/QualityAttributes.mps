@@ -97,6 +97,26 @@
         <ref role="3Ev5JR" node="5RLJ9guqKUk" resolve="mass" />
       </node>
     </node>
+    <node concept="sklqP" id="1wmiO1AKB6l" role="sklmO">
+      <node concept="sjk9b" id="1wmiO1AKB6G" role="skltt">
+        <ref role="sjk9f" to="ddau:72GPbqt8IRV" resolve="Motor" />
+      </node>
+    </node>
+    <node concept="sklqP" id="1wmiO1APVen" role="sklmO">
+      <node concept="sjk9b" id="1wmiO1APVeY" role="skltt">
+        <ref role="sjk9f" to="ddau:72GPbqt8IRX" resolve="Pin" />
+      </node>
+    </node>
+    <node concept="sklqP" id="1wmiO1APVfg" role="sklmO">
+      <node concept="sjk9b" id="1wmiO1APVh7" role="skltt">
+        <ref role="sjk9f" to="ddau:72GPbqt8IRW" resolve="Inline" />
+      </node>
+    </node>
+    <node concept="sklqP" id="1wmiO1APVjD" role="sklmO">
+      <node concept="sjk9b" id="1wmiO1APVkq" role="skltt">
+        <ref role="sjk9f" to="ddau:72GPbqt8AHL" resolve="Switch" />
+      </node>
+    </node>
   </node>
 </model>
 
