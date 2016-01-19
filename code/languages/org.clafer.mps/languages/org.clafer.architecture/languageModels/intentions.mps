@@ -825,5 +825,165 @@
       <node concept="17QB3L" id="50FM0hz_7Ik" role="3ddBve" />
     </node>
   </node>
+  <node concept="2S6QgY" id="7ZQ7wlxn2e5">
+    <property role="TrG5h" value="makeGCardMux" />
+    <property role="3GE5qa" value="GroupCard" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="2S6ZIM" id="7ZQ7wlxn2e6" role="2ZfVej">
+      <node concept="3clFbS" id="7ZQ7wlxn2e7" role="2VODD2">
+        <node concept="3clFbF" id="7ZQ7wlxn2Hh" role="3cqZAp">
+          <node concept="Xl_RD" id="7ZQ7wlxn2Hg" role="3clFbG">
+            <property role="Xl_RC" value="Group Cardinality MUX" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7ZQ7wlxn2e8" role="2ZfgGD">
+      <node concept="3clFbS" id="7ZQ7wlxn2e9" role="2VODD2">
+        <node concept="3clFbF" id="6qd05UcLlJg" role="3cqZAp">
+          <node concept="2OqwBi" id="6qd05UcLlJh" role="3clFbG">
+            <node concept="2OqwBi" id="6qd05UcLlJi" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6qd05UcLlJj" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7ErTnvEK4w$" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:7ErTnvEGNJB" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6qd05UcLlJl" role="2OqNvi">
+              <ref role="1A9B2P" to="mecy:6qd05UcI6sE" resolve="MuxCard" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7ZQ7wlxryc5">
+    <property role="TrG5h" value="makeGCardNum" />
+    <property role="3GE5qa" value="GroupCard" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="2S6ZIM" id="7ZQ7wlxryc6" role="2ZfVej">
+      <node concept="3clFbS" id="7ZQ7wlxryc7" role="2VODD2">
+        <node concept="3clFbF" id="7ZQ7wlxr$9g" role="3cqZAp">
+          <node concept="Xl_RD" id="7ZQ7wlxr$9f" role="3clFbG">
+            <property role="Xl_RC" value="Group Cardinality Num" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7ZQ7wlxryc8" role="2ZfgGD">
+      <node concept="3clFbS" id="7ZQ7wlxryc9" role="2VODD2">
+        <node concept="3clFbF" id="$OrRLO5RGg" role="3cqZAp">
+          <node concept="2OqwBi" id="7ZQ7wlxrCJW" role="3clFbG">
+            <node concept="2OqwBi" id="7ZQ7wlxrC3b" role="2Oq$k0">
+              <node concept="2Sf5sV" id="7ZQ7wlxrBZW" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7ErTnvEK5u_" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:7ErTnvEGNJB" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="7ZQ7wlxrD04" role="2OqNvi">
+              <ref role="1A9B2P" to="mecy:6qd05UcI3o9" resolve="NumberCard" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7ZQ7wlxncJs">
+    <property role="TrG5h" value="makeGCardOpt" />
+    <property role="3GE5qa" value="GroupCard" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="mecy:bl22kSogWC" resolve="Clafer" />
+    <node concept="2S6ZIM" id="7ZQ7wlxncJt" role="2ZfVej">
+      <node concept="3clFbS" id="7ZQ7wlxncJu" role="2VODD2">
+        <node concept="3clFbF" id="7ZQ7wlxneQR" role="3cqZAp">
+          <node concept="Xl_RD" id="7ZQ7wlxneQQ" role="3clFbG">
+            <property role="Xl_RC" value="Group Cardinality OPT" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7ZQ7wlxncJv" role="2ZfgGD">
+      <node concept="3clFbS" id="7ZQ7wlxncJw" role="2VODD2">
+        <node concept="3clFbF" id="6qd05UcLmlP" role="3cqZAp">
+          <node concept="2OqwBi" id="6qd05UcLmlQ" role="3clFbG">
+            <node concept="2OqwBi" id="6qd05UcLmlR" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6qd05UcLmlS" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6qd05UcLu3s" role="2OqNvi">
+                <ref role="3Tt5mk" to="mecy:5tJ_MV8WxEy" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6qd05UcLmlU" role="2OqNvi">
+              <ref role="1A9B2P" to="mecy:6qd05UcLu8B" resolve="OptionCard" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7ZQ7wlxmA$e">
+    <property role="TrG5h" value="makeGCardOr" />
+    <property role="3GE5qa" value="GroupCard" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="mecy:bl22kSogWC" resolve="Clafer" />
+    <node concept="2S6ZIM" id="7ZQ7wlxmA$f" role="2ZfVej">
+      <node concept="3clFbS" id="7ZQ7wlxmA$g" role="2VODD2">
+        <node concept="3clFbF" id="7ZQ7wlxmChS" role="3cqZAp">
+          <node concept="Xl_RD" id="7ZQ7wlxmChR" role="3clFbG">
+            <property role="Xl_RC" value="Group Cardinality or" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7ZQ7wlxmA$h" role="2ZfgGD">
+      <node concept="3clFbS" id="7ZQ7wlxmA$i" role="2VODD2">
+        <node concept="3clFbF" id="2Pv0$Q3Fql4" role="3cqZAp">
+          <node concept="2OqwBi" id="2Pv0$Q3Fql5" role="3clFbG">
+            <node concept="2OqwBi" id="2Pv0$Q3Fql6" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2Pv0$Q3Fql7" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2Pv0$Q3Fql8" role="2OqNvi">
+                <ref role="3Tt5mk" to="mecy:5tJ_MV8WxEy" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="2Pv0$Q3Fql9" role="2OqNvi">
+              <ref role="1A9B2P" to="mecy:6qd05UcI6pX" resolve="OrCard" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="4kWdVQTp6Uy">
+    <property role="TrG5h" value="makeGCardXor" />
+    <property role="3GE5qa" value="GroupCard" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="2S6ZIM" id="4kWdVQTp6Uz" role="2ZfVej">
+      <node concept="3clFbS" id="4kWdVQTp6U$" role="2VODD2">
+        <node concept="3clFbF" id="4kWdVQTp7lF" role="3cqZAp">
+          <node concept="Xl_RD" id="4kWdVQTp7lE" role="3clFbG">
+            <property role="Xl_RC" value="Group Cardinality XOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="4kWdVQTp6U_" role="2ZfgGD">
+      <node concept="3clFbS" id="4kWdVQTp6UA" role="2VODD2">
+        <node concept="3clFbF" id="6qd05UcLmQk" role="3cqZAp">
+          <node concept="2OqwBi" id="6qd05UcLmQl" role="3clFbG">
+            <node concept="2OqwBi" id="6qd05UcLmQm" role="2Oq$k0">
+              <node concept="2Sf5sV" id="7ErTnvEKuA0" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7ErTnvEKuzr" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:7ErTnvEGNJB" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="6qd05UcLmQp" role="2OqNvi">
+              <ref role="1A9B2P" to="mecy:6qd05UcAWHJ" resolve="XorCard" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

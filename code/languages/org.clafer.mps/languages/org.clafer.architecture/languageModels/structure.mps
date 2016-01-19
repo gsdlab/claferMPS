@@ -127,6 +127,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
     </node>
+    <node concept="1TJgyj" id="7ErTnvEGNJB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="groupCard" />
+      <ref role="20lvS9" to="mecy:6qd05Uc_KdB" resolve="AbstractCardinality" />
+    </node>
     <node concept="1TJgyj" id="6Fa64hUbAAy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="superNode" />

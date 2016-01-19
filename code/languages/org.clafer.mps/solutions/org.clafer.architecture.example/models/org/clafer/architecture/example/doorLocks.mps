@@ -15,6 +15,7 @@
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$" />
       <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
+        <child id="8834907397218843623" name="groupCard" index="2gadUg" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FAConnector" flags="ng" index="1eXri_">
@@ -68,6 +69,7 @@
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
+      <concept id="7389562969670798191" name="org.clafer.core.structure.XorCard" flags="ng" index="3E5GGL" />
     </language>
   </registry>
   <node concept="UzPwm" id="5RLJ9guqKSD">
@@ -94,6 +96,7 @@
       <node concept="UzEYP" id="5RLJ9gutNmH" role="2mZOl8" />
       <node concept="2mXI97" id="5RLJ9gutNo4" role="2mZOl8">
         <property role="TrG5h" value="RearRightPassChildLockSwitch" />
+        <node concept="3E5GGL" id="7ErTnvEP5a1" role="2gadUg" />
       </node>
       <node concept="2mXI97" id="5RLJ9gutNoA" role="2mZOl8">
         <property role="TrG5h" value="RearLeftPassChildLockSwitch" />

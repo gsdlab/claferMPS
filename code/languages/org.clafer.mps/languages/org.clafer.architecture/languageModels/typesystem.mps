@@ -62,6 +62,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -213,6 +216,7 @@
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
@@ -1577,6 +1581,86 @@
     <node concept="1YaCAy" id="5EXaBxYa60X" role="1YuTPh">
       <property role="TrG5h" value="qualityModule" />
       <ref role="1YaFvo" to="ddau:6kt45HTiMty" resolve="QualityModule" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7ErTnvEGRzJ">
+    <property role="TrG5h" value="check_ArchElement" />
+    <property role="3GE5qa" value="" />
+    <node concept="3clFbS" id="7ErTnvEGRzK" role="18ibNy">
+      <node concept="3clFbJ" id="6qd05UcKthB" role="3cqZAp">
+        <node concept="3clFbS" id="6qd05UcKthE" role="3clFbx">
+          <node concept="2MkqsV" id="6qd05UcKCyK" role="3cqZAp">
+            <node concept="Xl_RD" id="6qd05UcKCz2" role="2MkJ7o">
+              <property role="Xl_RC" value="only elements with children can have group cardinality" />
+            </node>
+            <node concept="2OqwBi" id="6qd05UcKCFe" role="2OEOjV">
+              <node concept="1YBJjd" id="7ErTnvEGSps" role="2Oq$k0">
+                <ref role="1YBMHb" node="7ErTnvEGRzM" resolve="archElement" />
+              </node>
+              <node concept="3TrEf2" id="7ErTnvEHgAZ" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:7ErTnvEGNJB" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="6qd05UcKB9j" role="3clFbw">
+          <node concept="2OqwBi" id="6qd05UcKCdR" role="3uHU7w">
+            <node concept="2OqwBi" id="6qd05UcKBhf" role="2Oq$k0">
+              <node concept="1YBJjd" id="7ErTnvEGSla" role="2Oq$k0">
+                <ref role="1YBMHb" node="7ErTnvEGRzM" resolve="archElement" />
+              </node>
+              <node concept="3TrEf2" id="7ErTnvEHgoB" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:7ErTnvEGNJB" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6qd05UcKCuT" role="2OqNvi" />
+          </node>
+          <node concept="1eOMI4" id="7ErTnvEGUSY" role="3uHU7B">
+            <node concept="1Wc70l" id="7ErTnvEMxrU" role="1eOMHV">
+              <node concept="2OqwBi" id="7ErTnvEGUd$" role="3uHU7B">
+                <node concept="2OqwBi" id="6qd05UcKvvL" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6qd05UcKtw0" role="2Oq$k0">
+                    <node concept="1YBJjd" id="7ErTnvEGRBq" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7ErTnvEGRzM" resolve="archElement" />
+                    </node>
+                    <node concept="3Tsc0h" id="7ErTnvEGS1c" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                    </node>
+                  </node>
+                  <node concept="v3k3i" id="7ErTnvEGU6e" role="2OqNvi">
+                    <node concept="chp4Y" id="7ErTnvEGU8c" role="v3oSu">
+                      <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7ErTnvELVQA" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="7ErTnvEGUzM" role="3uHU7w">
+                <node concept="2OqwBi" id="7ErTnvEGUzN" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7ErTnvEGUzO" role="2Oq$k0">
+                    <node concept="1YBJjd" id="7ErTnvEGUzP" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7ErTnvEGRzM" resolve="archElement" />
+                    </node>
+                    <node concept="3Tsc0h" id="7ErTnvEGUzQ" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                    </node>
+                  </node>
+                  <node concept="v3k3i" id="7ErTnvEGUzR" role="2OqNvi">
+                    <node concept="chp4Y" id="7ErTnvEGUD0" role="v3oSu">
+                      <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7ErTnvELVV5" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7ErTnvEGRzM" role="1YuTPh">
+      <property role="TrG5h" value="archElement" />
+      <ref role="1YaFvo" to="ddau:4csP6flST3m" resolve="ArchElement" />
     </node>
   </node>
 </model>

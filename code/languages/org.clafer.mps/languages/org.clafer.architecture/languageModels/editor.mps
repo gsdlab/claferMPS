@@ -482,12 +482,6 @@
         <property id="1186403713874" name="color" index="Vb097" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
         <reference id="1204851882689" name="link" index="26LbJp" />
@@ -610,6 +604,9 @@
     <property role="3GE5qa" value="textEditors.FunctionalArchitecture" />
     <ref role="1XX52x" to="ddau:1QRywDjgzUJ" resolve="FAConnector" />
     <node concept="3EZMnI" id="1QRywDjgB9P" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO1_0" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="$OrRLO48Uh" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -682,6 +679,9 @@
     <property role="3GE5qa" value="textEditors" />
     <ref role="1XX52x" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="3EZMnI" id="4csP6flST56" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEIR_n" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="$OrRLO45ak" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -724,6 +724,9 @@
     <property role="3GE5qa" value="textEditors" />
     <ref role="1XX52x" to="ddau:6Fa64hUc88i" resolve="Deployment" />
     <node concept="3EZMnI" id="6Fa64hUoaAm" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO28m" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="$OrRLO48Gq" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -1847,6 +1850,9 @@
     <property role="3GE5qa" value="textEditors.AutomobileConcepts" />
     <ref role="1XX52x" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
     <node concept="3EZMnI" id="58TXiBDBqel" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO1gu" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="58TXiBDBqem" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -1943,6 +1949,9 @@
         <node concept="3EZMnI" id="58TXiBDLy7E" role="3EZMnx">
           <node concept="VPM3Z" id="58TXiBDLy7F" role="3F10Kt">
             <property role="VOm3f" value="false" />
+          </node>
+          <node concept="PMmxH" id="7ErTnvEO0KS" role="3EZMnx">
+            <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
           </node>
           <node concept="3F0A7n" id="58TXiBDLy7G" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -2706,6 +2715,9 @@
           <node concept="VechU" id="4jIombYjCCO" role="3F10Kt">
             <property role="Vb096" value="WHITE" />
           </node>
+        </node>
+        <node concept="PMmxH" id="7ErTnvEHkfL" role="3EZMnx">
+          <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
         </node>
         <node concept="2iRfu4" id="4jIombYjCCP" role="2iSdaV" />
         <node concept="3F0A7n" id="4jIombYjCCQ" role="3EZMnx">
@@ -3573,6 +3585,9 @@
             <property role="Vb096" value="WHITE" />
           </node>
         </node>
+        <node concept="PMmxH" id="7ErTnvENZCR" role="3EZMnx">
+          <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+        </node>
         <node concept="2iRfu4" id="47UEYDo9IJ7" role="2iSdaV" />
         <node concept="3F0A7n" id="47UEYDo9IJ8" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -4126,6 +4141,9 @@
       <node concept="VPM3Z" id="1tfNdgy4mrG" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
+      <node concept="PMmxH" id="7ErTnvENYtH" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="3F0A7n" id="1tfNdgy4mrH" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <node concept="3$7fVu" id="1tfNdgy4mrI" role="3F10Kt">
@@ -4240,6 +4258,9 @@
     <property role="3GE5qa" value="textEditors.AutomobileConcepts.WireConnector" />
     <ref role="1XX52x" to="ddau:6Fa64hUiAr6" resolve="WireConnector" />
     <node concept="3EZMnI" id="6yDAYyfK_Z_" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO13V" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="6yDAYyfK_ZA" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -4465,6 +4486,9 @@
     <property role="3GE5qa" value="textEditors.FeatureModel" />
     <ref role="1XX52x" to="ddau:72GPbqtfpB7" resolve="Feature" />
     <node concept="3EZMnI" id="2LtTwkX0D6N" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO1t$" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="2LtTwkX0D6O" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -4484,6 +4508,9 @@
     <property role="3GE5qa" value="textEditors.FunctionalArchitecture" />
     <ref role="1XX52x" to="ddau:4csP6flSWC7" resolve="AFunction" />
     <node concept="3EZMnI" id="2IzCCeKmhcf" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO1wE" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="2IzCCeKmhcg" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -4881,6 +4908,9 @@
     <property role="3GE5qa" value="textEditors.DeviceNodes" />
     <ref role="1XX52x" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
     <node concept="3EZMnI" id="7DuSdC$_H6b" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO1pH" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="7DuSdC$_H6c" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -4941,6 +4971,9 @@
             <property role="VOm3f" value="false" />
           </node>
           <node concept="2iRfu4" id="4z6NPpC14DU" role="2iSdaV" />
+          <node concept="PMmxH" id="7ErTnvEO0ku" role="3EZMnx">
+            <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+          </node>
           <node concept="3F0A7n" id="4z6NPpC14DV" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <node concept="VechU" id="4z6NPpC14DW" role="3F10Kt">
@@ -5209,6 +5242,9 @@
     <property role="3GE5qa" value="textEditors.Implementation" />
     <ref role="1XX52x" to="ddau:19aTRzkPTWe" resolve="PhysicalBus" />
     <node concept="3EZMnI" id="3URpncZ4$l$" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO1LV" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="3URpncZ4$l_" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -5251,6 +5287,9 @@
     <property role="3GE5qa" value="textEditors.Wiring.CommunicationTopology" />
     <ref role="1XX52x" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
     <node concept="3EZMnI" id="5OLu9WxD3ee" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO223" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="5OLu9WxD3ef" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -5277,6 +5316,9 @@
     <property role="3GE5qa" value="textEditors.Wiring.CommunicationTopology" />
     <ref role="1XX52x" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
     <node concept="3EZMnI" id="5OLu9WxSfmO" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO25c" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="5OLu9WxSfmP" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -5343,6 +5385,9 @@
     <property role="3GE5qa" value="textEditors.Implementation" />
     <ref role="1XX52x" to="ddau:19aTRzkPTWf" resolve="DiscreteWire" />
     <node concept="3EZMnI" id="3KrTRUBKA1V" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO1LE" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="3KrTRUBKA1W" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -5566,6 +5611,9 @@
     <property role="3GE5qa" value="textEditors.Wiring" />
     <ref role="1XX52x" to="ddau:19aTRzkPQU0" resolve="HardwareConnector" />
     <node concept="3EZMnI" id="50FM0hzHi5I" role="2wV5jI">
+      <node concept="PMmxH" id="7ErTnvEO27c" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
       <node concept="PMmxH" id="50FM0hzHi5J" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
@@ -6530,26 +6578,28 @@
       </node>
     </node>
   </node>
-  <node concept="1h_SRR" id="bgYpXHq2cj">
-    <property role="3GE5qa" value="QualityModule" />
-    <property role="TrG5h" value="QualityTableElement_Rename" />
-    <ref role="1h_SK9" to="ddau:57FaIEVyhuB" resolve="QualityTableElement" />
-    <node concept="1hA7zw" id="bgYpXHq2cw" role="1h_SK8">
-      <property role="1hAc7j" value="complete_action_id" />
-      <node concept="1hAIg9" id="bgYpXHq2cx" role="1hA7z_">
-        <node concept="3clFbS" id="bgYpXHq2cy" role="2VODD2">
-          <node concept="34ab3g" id="bgYpXHq2gi" role="3cqZAp">
-            <property role="35gtTG" value="error" />
-            <node concept="3cpWs3" id="bgYpXHq2kX" role="34bqiv">
-              <node concept="2OqwBi" id="bgYpXHq2pP" role="3uHU7w">
-                <node concept="0IXxy" id="bgYpXHq2lh" role="2Oq$k0" />
-                <node concept="3TrcHB" id="bgYpXHq2MH" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+  <node concept="PKFIW" id="7ErTnvEHhF$">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="ArchGroupCard" />
+    <ref role="1XX52x" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="3F1sOY" id="5tJ_MV8WM2K" role="2wV5jI">
+      <ref role="1NtTu8" to="ddau:7ErTnvEGNJB" />
+      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+      <node concept="pkWqt" id="4kWdVQToPNw" role="pqm2j">
+        <node concept="3clFbS" id="4kWdVQToPNx" role="2VODD2">
+          <node concept="3clFbF" id="7ErTnvEJDQS" role="3cqZAp">
+            <node concept="2OqwBi" id="7ErTnvEJExh" role="3clFbG">
+              <node concept="2OqwBi" id="7ErTnvEJDWF" role="2Oq$k0">
+                <node concept="pncrf" id="7ErTnvEJDQR" role="2Oq$k0" />
+                <node concept="Bykcj" id="7ErTnvEJEoh" role="2OqNvi">
+                  <node concept="1aIX9F" id="7ErTnvEJEoj" role="1xVPHs">
+                    <node concept="26LbJo" id="7ErTnvEJEtn" role="1aIX9E">
+                      <ref role="26LbJp" to="ddau:7ErTnvEGNJB" />
+                    </node>
+                  </node>
                 </node>
               </node>
-              <node concept="Xl_RD" id="bgYpXHq2gk" role="3uHU7B">
-                <property role="Xl_RC" value="==== " />
-              </node>
+              <node concept="3GX2aA" id="7ErTnvEJEDx" role="2OqNvi" />
             </node>
           </node>
         </node>

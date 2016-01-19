@@ -153,6 +153,7 @@
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
+        <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
@@ -200,6 +201,19 @@
     <property role="TrG5h" value="DeviceNodeTopology" />
     <node concept="3yR_K9" id="3URpncZ8su9" role="UzTCv">
       <property role="TrG5h" value="htSystem" />
+      <node concept="gXKv3" id="7ErTnvEJfEY" role="2mZOl8">
+        <property role="TrG5h" value="htA" />
+        <node concept="UH0sd" id="7ErTnvEJfGm" role="2mZOl8">
+          <property role="TrG5h" value="test" />
+          <node concept="UH0sd" id="7ErTnvEM234" role="2vwUiP">
+            <property role="TrG5h" value="d" />
+          </node>
+          <node concept="UH0sd" id="7ErTnvEM239" role="2vwUiP">
+            <property role="TrG5h" value="df" />
+          </node>
+        </node>
+        <node concept="UzEYP" id="7ErTnvELVFp" role="2mZOl8" />
+      </node>
       <node concept="gXKv3" id="3URpncZ8sua" role="2mZOl8">
         <property role="TrG5h" value="htArch" />
         <node concept="gqqVs" id="3URpncZ8sub" role="lGtFl">
