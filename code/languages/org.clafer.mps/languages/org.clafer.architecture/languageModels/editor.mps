@@ -2271,6 +2271,9 @@
           </node>
         </node>
         <node concept="2iRfu4" id="4jIombY8SwF" role="2iSdaV" />
+        <node concept="PMmxH" id="7ErTnvEVJBu" role="3EZMnx">
+          <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+        </node>
         <node concept="3F0A7n" id="4jIombY8SwG" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <node concept="VechU" id="4jIombY8SwH" role="3F10Kt">
@@ -6585,6 +6588,7 @@
     <node concept="3F1sOY" id="5tJ_MV8WM2K" role="2wV5jI">
       <ref role="1NtTu8" to="ddau:7ErTnvEGNJB" />
       <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+      <ref role="1ERwB7" node="7ErTnvEP6Ft" resolve="ArchElement_removeGroupCardinality" />
       <node concept="pkWqt" id="4kWdVQToPNw" role="pqm2j">
         <node concept="3clFbS" id="4kWdVQToPNx" role="2VODD2">
           <node concept="3clFbF" id="7ErTnvEJDQS" role="3cqZAp">
@@ -6600,6 +6604,29 @@
                 </node>
               </node>
               <node concept="3GX2aA" id="7ErTnvEJEDx" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="7ErTnvEP6Ft">
+    <property role="TrG5h" value="ArchElement_removeGroupCardinality" />
+    <property role="3GE5qa" value="actionMaps" />
+    <ref role="1h_SK9" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="1hA7zw" id="7ErTnvEP6Fu" role="1h_SK8">
+      <property role="1hAc7j" value="backspace_action_id" />
+      <node concept="1hAIg9" id="7ErTnvEP6Fv" role="1hA7z_">
+        <node concept="3clFbS" id="7ErTnvEP6Fw" role="2VODD2">
+          <node concept="3clFbF" id="7ErTnvEP6Fx" role="3cqZAp">
+            <node concept="2OqwBi" id="7ErTnvEP7n4" role="3clFbG">
+              <node concept="2OqwBi" id="7ErTnvEP6F$" role="2Oq$k0">
+                <node concept="0IXxy" id="7ErTnvEP6F_" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7ErTnvEP72Z" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:7ErTnvEGNJB" />
+                </node>
+              </node>
+              <node concept="1PgB_6" id="7ErTnvEP7sb" role="2OqNvi" />
             </node>
           </node>
         </node>
