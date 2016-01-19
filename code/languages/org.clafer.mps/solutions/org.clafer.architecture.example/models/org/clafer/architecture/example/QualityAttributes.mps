@@ -53,19 +53,19 @@
       </node>
     </node>
     <node concept="sklqP" id="H$98wxz$iE" role="sklmO">
-      <node concept="3EozPd" id="H$98wxz$iI" role="sklvC">
+      <node concept="3EozPd" id="1wmiO1AQkSV" role="sklvC">
         <property role="TrG5h" value="mass" />
       </node>
-      <node concept="3EozPd" id="H$98wxz$iP" role="sklvC">
+      <node concept="3EozPd" id="1wmiO1AQkV2" role="sklvC">
         <property role="TrG5h" value="cost" />
       </node>
-      <node concept="3EozPd" id="H$98wxz$iZ" role="sklvC">
+      <node concept="3EozPd" id="1wmiO1AQkXe" role="sklvC">
         <property role="TrG5h" value="ppm" />
       </node>
-      <node concept="3EozPd" id="H$98wxz$jc" role="sklvC">
+      <node concept="3EozPd" id="1wmiO1AQkZ7" role="sklvC">
         <property role="TrG5h" value="replaceCost" />
       </node>
-      <node concept="3EozPd" id="H$98wxz$js" role="sklvC">
+      <node concept="3EozPd" id="1wmiO1AQl45" role="sklvC">
         <property role="TrG5h" value="warrantyCost" />
       </node>
       <node concept="sjk9b" id="H$98wxz$iG" role="skltt">
@@ -101,20 +101,80 @@
       <node concept="sjk9b" id="1wmiO1AKB6G" role="skltt">
         <ref role="sjk9f" to="ddau:72GPbqt8IRV" resolve="Motor" />
       </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkSW" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkSV" resolve="mass" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkV3" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkV2" resolve="cost" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkXf" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkXe" resolve="ppm" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkZ8" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkZ7" resolve="replaceCost" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQl46" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQl45" resolve="warrantyCost" />
+      </node>
     </node>
     <node concept="sklqP" id="1wmiO1APVen" role="sklmO">
       <node concept="sjk9b" id="1wmiO1APVeY" role="skltt">
         <ref role="sjk9f" to="ddau:72GPbqt8IRX" resolve="Pin" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkSX" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkSV" resolve="mass" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkV4" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkV2" resolve="cost" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkXg" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkXe" resolve="ppm" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkZ9" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkZ7" resolve="replaceCost" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQl47" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQl45" resolve="warrantyCost" />
       </node>
     </node>
     <node concept="sklqP" id="1wmiO1APVfg" role="sklmO">
       <node concept="sjk9b" id="1wmiO1APVh7" role="skltt">
         <ref role="sjk9f" to="ddau:72GPbqt8IRW" resolve="Inline" />
       </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkSY" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkSV" resolve="mass" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkV5" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkV2" resolve="cost" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkXh" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkXe" resolve="ppm" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkZa" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkZ7" resolve="replaceCost" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQl48" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQl45" resolve="warrantyCost" />
+      </node>
     </node>
     <node concept="sklqP" id="1wmiO1APVjD" role="sklmO">
       <node concept="sjk9b" id="1wmiO1APVkq" role="skltt">
         <ref role="sjk9f" to="ddau:72GPbqt8AHL" resolve="Switch" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkSZ" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkSV" resolve="mass" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkV6" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkV2" resolve="cost" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkXi" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkXe" resolve="ppm" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQkZb" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQkZ7" resolve="replaceCost" />
+      </node>
+      <node concept="3Ev5JQ" id="1wmiO1AQl49" role="3A1vRL">
+        <ref role="3Ev5JR" node="1wmiO1AQl45" resolve="warrantyCost" />
       </node>
     </node>
   </node>
