@@ -46,12 +46,22 @@
       <concept id="4620120465980402700" name="org.clafer.expr.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
+      <concept id="952337070380373569" name="org.clafer.expr.structure.UnionCommaExpression" flags="ng" index="vgzv4" />
+      <concept id="952337070379095520" name="org.clafer.expr.structure.SumExpr" flags="ng" index="vlFh_" />
       <concept id="952337070379891820" name="org.clafer.expr.structure.ProductExpr" flags="ng" index="vmDRD" />
       <concept id="5763383285156373020" name="org.clafer.expr.structure.MultiExpression" flags="ng" index="2BOcij" />
       <concept id="5763383285156533447" name="org.clafer.expr.structure.ParensExpression" flags="ng" index="2BPB98" />
       <concept id="4545783005387558271" name="org.clafer.expr.structure.SomeQuant" flags="ng" index="LdX3K" />
       <concept id="4545783005390900221" name="org.clafer.expr.structure.UnionExpression" flags="ng" index="LgdpM" />
       <concept id="4545783005389986980" name="org.clafer.expr.structure.InExpression" flags="ng" index="LkG4F" />
+      <concept id="4545783005389987624" name="org.clafer.expr.structure.NinExpression" flags="ng" index="LkGaB" />
+      <concept id="7750719112880673844" name="org.clafer.expr.structure.QuantifiedExpression" flags="ng" index="2Yxk73">
+        <property id="4545783005394410979" name="quant" index="LBO1G" />
+        <child id="7750719112880676510" name="expr" index="2YxkHD" />
+        <child id="7750719112880676438" name="type" index="2YxkIx" />
+        <child id="7750719112880676413" name="vars" index="2YxkJa" />
+      </concept>
+      <concept id="7750719112880676410" name="org.clafer.expr.structure.QuantifiedVariable" flags="ng" index="2YxkJd" />
       <concept id="8860443239512147447" name="org.clafer.expr.structure.GreaterEqualsExpression" flags="ng" index="3Tl9Jp" />
       <concept id="8860443239512129322" name="org.clafer.expr.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128052" name="org.clafer.expr.structure.BinaryExpression" flags="ng" index="3TlMgq">
@@ -219,6 +229,16 @@
           </node>
         </node>
       </node>
+      <node concept="2vxuzR" id="7ErTnvEW4O0" role="2vwUiP">
+        <node concept="LkGaB" id="7ErTnvEW4Pi" role="3WnoGb">
+          <node concept="ZpONE" id="7ErTnvEW4Pl" role="3TlMhI">
+            <ref role="ZpOSt" node="3WlRoWey$hd" resolve="Alice" />
+          </node>
+          <node concept="ZpONE" id="7ErTnvEW4Pk" role="3TlMhJ">
+            <ref role="ZpOSt" node="12ZezlWUx0n" resolve="Bob" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="UH0sd" id="ORookiot6f" role="UzTCv">
       <property role="TrG5h" value="p" />
@@ -226,9 +246,56 @@
         <node concept="3TlMh2" id="ORookiot8k" role="3J4IUC" />
       </node>
       <node concept="Kh$Oq" id="ORookiot8s" role="KmSwm">
-        <node concept="vmDRD" id="ORookirS5J" role="Kh$P6">
-          <node concept="ZpONE" id="ORookirS65" role="1_9fRO">
-            <ref role="ZpOSt" node="ORookilKg9" resolve="N" />
+        <node concept="vlFh_" id="7ErTnvEW4If" role="Kh$P6">
+          <node concept="3TlMh9" id="7ErTnvEW4It" role="1_9fRO">
+            <property role="2hmy$m" value="3" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="UH0sd" id="7ErTnvEW6fS" role="UzTCv">
+      <property role="TrG5h" value="p1" />
+      <node concept="2K4itw" id="7ErTnvEW6fT" role="2K4itM">
+        <node concept="3TlMh2" id="7ErTnvEW6fU" role="3J4IUC" />
+      </node>
+      <node concept="Kh$Oq" id="7ErTnvEW6fV" role="KmSwm">
+        <node concept="vmDRD" id="7ErTnvEW6iR" role="Kh$P6">
+          <node concept="vgzv4" id="7ErTnvEWAzT" role="1_9fRO">
+            <node concept="3TlMh9" id="7ErTnvEWA$N" role="3TlMhJ">
+              <property role="2hmy$m" value="3" />
+            </node>
+            <node concept="2BOcij" id="7ErTnvEW6jh" role="3TlMhI">
+              <node concept="3TlMh9" id="7ErTnvEW6jk" role="3TlMhJ">
+                <property role="2hmy$m" value="3" />
+              </node>
+              <node concept="3TlMh9" id="7ErTnvEW6j5" role="3TlMhI">
+                <property role="2hmy$m" value="3" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2vxuzR" id="7ErTnvEWAIW" role="UzTCv">
+      <node concept="2Yxk73" id="7ErTnvEWAL$" role="3WnoGb">
+        <property role="LBO1G" value="some" />
+        <node concept="2YxkJd" id="7ErTnvEWAL_" role="2YxkJa">
+          <property role="TrG5h" value="x" />
+        </node>
+        <node concept="ZpTZE" id="7ErTnvEWALU" role="2YxkIx">
+          <ref role="ZpTZD" node="3WlRoWey$hd" resolve="Alice" />
+        </node>
+        <node concept="3TlM44" id="7ErTnvEWAP0" role="2YxkHD">
+          <node concept="3TlMh9" id="7ErTnvEWAP3" role="3TlMhJ">
+            <property role="2hmy$m" value="1" />
+          </node>
+          <node concept="2qmXGp" id="7ErTnvEWAMX" role="3TlMhI">
+            <node concept="2ZqYGZ" id="7ErTnvEWANk" role="1ESnxz">
+              <ref role="2ZqYFj" node="5Rg5_Rc34gP" resolve="age" />
+            </node>
+            <node concept="ZpONE" id="7ErTnvEWAM8" role="1_9fRO">
+              <ref role="ZpOSt" node="3WlRoWey$hd" resolve="Alice" />
+            </node>
           </node>
         </node>
       </node>
