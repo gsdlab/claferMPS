@@ -12,7 +12,21 @@
     <import index="t4ow" ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.example.QualityAttributes)" />
   </imports>
   <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+      <concept id="3857533489766146428" name="com.mbeddr.core.base.structure.ElementDocumentation" flags="ng" index="1z9TsT">
+        <child id="4052432714772608243" name="text" index="1w35rA" />
+      </concept>
       <concept id="6867589085886993301" name="com.mbeddr.core.base.structure.EmptyChunkDependency" flags="ng" index="1CU$1Q" />
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
@@ -179,6 +193,15 @@
           </node>
         </node>
       </node>
+      <node concept="1z9TsT" id="7$28d_Yyv$h" role="lGtFl">
+        <node concept="OjmMv" id="7$28d_Yyv$i" role="1w35rA">
+          <node concept="19SGf9" id="7$28d_Yyv$j" role="OjmMu">
+            <node concept="19SUe$" id="7$28d_Yyv$k" role="19SJt6">
+              <property role="19SUeA" value="============================================ Implementation =====================================" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="1mj7PajewS0" role="UzTCv" />
   </node>
@@ -190,6 +213,15 @@
         <property role="TrG5h" value="implementation" />
         <node concept="36BnxO" id="3URpncZ8asv" role="2mZOl8">
           <property role="TrG5h" value="comImplementation" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="7$28d_YyvzS" role="lGtFl">
+        <node concept="OjmMv" id="7$28d_YyvzT" role="1w35rA">
+          <node concept="19SGf9" id="7$28d_YyvzU" role="OjmMu">
+            <node concept="19SUe$" id="7$28d_YyvzV" role="19SJt6">
+              <property role="19SUeA" value="============================================ CommunicationImplementation =====================================" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -421,6 +453,15 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1z9TsT" id="7$28d_YyvyF" role="lGtFl">
+        <node concept="OjmMv" id="7$28d_YyvyG" role="1w35rA">
+          <node concept="19SGf9" id="7$28d_YyvyH" role="OjmMu">
+            <node concept="19SUe$" id="7$28d_YyvyI" role="19SJt6">
+              <property role="19SUeA" value="============================================ Device Node Topology =====================================" />
             </node>
           </node>
         </node>
@@ -917,6 +958,15 @@
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
+      <node concept="1z9TsT" id="7$28d_Yyvyz" role="lGtFl">
+        <node concept="OjmMv" id="7$28d_Yyvy$" role="1w35rA">
+          <node concept="19SGf9" id="7$28d_Yyvy_" role="OjmMu">
+            <node concept="19SUe$" id="7$28d_YyvyA" role="19SJt6">
+              <property role="19SUeA" value="============================================ FAArhitecture =====================================" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="3URpncZz6IG" role="UzTCv" />
     <node concept="UzEYP" id="3URpncZiVUy" role="UzTCv" />
@@ -941,13 +991,19 @@
           <ref role="gFST0" node="3URpncZ8suc" resolve="hwTopology" />
         </node>
       </node>
+      <node concept="1z9TsT" id="7$28d_Yyvyq" role="lGtFl">
+        <node concept="OjmMv" id="7$28d_Yyvyr" role="1w35rA">
+          <node concept="19SGf9" id="7$28d_Yyvys" role="OjmMu">
+            <node concept="19SUe$" id="7$28d_Yyvyt" role="19SJt6">
+              <property role="19SUeA" value="============================================ Deployment =====================================" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="5OLu9WxZuSQ" role="UzTCv" />
     <node concept="3GEVxB" id="4xcaXO780R_" role="UzTCp">
       <ref role="3GEb4d" node="3URpncZ8spi" resolve="FAArchitecture" />
-    </node>
-    <node concept="3GEVxB" id="4xcaXO780RE" role="UzTCp">
-      <ref role="3GEb4d" node="1mj7PajewUq" resolve="DeviceNodeTopology" />
     </node>
   </node>
   <node concept="UzPwm" id="4z6NPpC0mDg">
