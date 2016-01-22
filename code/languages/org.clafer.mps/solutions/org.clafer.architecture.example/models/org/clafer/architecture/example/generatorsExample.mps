@@ -35,8 +35,14 @@
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$" />
       <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
+        <property id="7694989595702677415" name="isOptional" index="gTlvz" />
+        <child id="8834907397218843623" name="groupCard" index="2gadUg" />
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
+      </concept>
+      <concept id="2141331924789116591" name="org.clafer.architecture.structure.FAConnector" flags="ng" index="1eXri_">
+        <reference id="7590219002335427874" name="dest" index="2wMEbl" />
+        <reference id="7590219002335427867" name="src" index="2wMEbG" />
       </concept>
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FAArchitecture" flags="ng" index="1u8h5F" />
       <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
@@ -57,12 +63,14 @@
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
+      <concept id="7389562969673556519" name="org.clafer.core.structure.OptionCard" flags="ng" index="3Eie9T" />
     </language>
   </registry>
   <node concept="UzPwm" id="3T8tWlk9Spi">
     <property role="TrG5h" value="TestModel2" />
     <node concept="gXKv3" id="3T8tWlk9Spj" role="UzTCv">
       <property role="TrG5h" value="superArch2" />
+      <property role="gTlvz" value="true" />
       <node concept="1z9TsT" id="7$28d_Yyvnl" role="lGtFl">
         <node concept="OjmMv" id="7$28d_Yyvnm" role="1w35rA">
           <node concept="19SGf9" id="7$28d_Yyvnn" role="OjmMu">
@@ -85,13 +93,21 @@
           <property role="TrG5h" value="faArchitecture" />
         </node>
       </node>
+      <node concept="3Eie9T" id="g6kGtGtVU5" role="2gadUg" />
     </node>
     <node concept="UzEYP" id="3T8tWlk9Spp" role="UzTCv" />
     <node concept="1u8h5F" id="7$28d_YKByg" role="UzTCv">
       <property role="TrG5h" value="fa" />
-      <node concept="UzEYP" id="7$28d_YKByz" role="2mZOl8" />
-      <node concept="2mZLT$" id="7$28d_YKByI" role="2mZOl8">
+      <node concept="2mZLT$" id="g6kGtGtWJO" role="2mZOl8">
         <property role="TrG5h" value="afunction" />
+      </node>
+      <node concept="2mZLT$" id="7$28d_YKByI" role="2mZOl8">
+        <property role="TrG5h" value="afunction2" />
+      </node>
+      <node concept="1eXri_" id="g6kGtGtWJW" role="2mZOl8">
+        <property role="TrG5h" value="faConnector" />
+        <ref role="2wMEbG" node="g6kGtGtWJO" resolve="afunction" />
+        <ref role="2wMEbl" node="7$28d_YKByI" resolve="afunction2" />
       </node>
     </node>
     <node concept="UzEYP" id="7$28d_YKBy0" role="UzTCv" />
