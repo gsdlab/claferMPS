@@ -6582,7 +6582,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="7ErTnvEHhF$">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="ArchGroupCard" />
     <ref role="1XX52x" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="3F1sOY" id="5tJ_MV8WM2K" role="2wV5jI">
