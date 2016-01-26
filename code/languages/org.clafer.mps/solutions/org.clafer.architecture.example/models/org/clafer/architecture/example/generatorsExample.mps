@@ -120,7 +120,7 @@
     <node concept="UzEYP" id="g6kGtGv6N5" role="UzTCv" />
     <node concept="2l49t0" id="g6kGtGv6Q1" role="UzTCv">
       <property role="TrG5h" value="deviceNodeSmart" />
-      <node concept="kwSKi" id="g6kGtGv6Q2" role="kIXCp" />
+      <node concept="kwSKi" id="WgjoVd6S45" role="kIXCp" />
     </node>
     <node concept="2l49t0" id="WgjoVd2$8M" role="UzTCv">
       <property role="TrG5h" value="deviceNodeElectric" />

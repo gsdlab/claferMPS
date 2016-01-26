@@ -4,6 +4,7 @@
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -101,6 +102,11 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
+      </concept>
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -108,6 +114,8 @@
       </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
+      <concept id="3618415754251190715" name="jetbrains.mps.lang.intentions.structure.ChildFilterFunction" flags="in" index="zTJ1e" />
+      <concept id="3618415754251192144" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_childNode" flags="nn" index="zTJq_" />
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
       <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
@@ -117,6 +125,7 @@
         <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093994" name="childFilterFunction" index="2ZfVeg" />
         <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
@@ -153,6 +162,7 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -825,6 +835,9 @@
       </node>
       <node concept="17QB3L" id="50FM0hz_7Ik" role="3ddBve" />
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6G1q" role="lGtFl">
+      <property role="1SWRpm" value="QUALITY ATTRIBUTES" />
+    </node>
   </node>
   <node concept="2S6QgY" id="7ZQ7wlxn2e5">
     <property role="TrG5h" value="makeGCardMux" />
@@ -856,6 +869,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="WgjoVd6CBX" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
     </node>
   </node>
   <node concept="2S6QgY" id="7ZQ7wlxryc5">
@@ -889,6 +905,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6CGV" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="7ZQ7wlxncJs">
     <property role="TrG5h" value="makeGCardOpt" />
@@ -920,6 +939,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="WgjoVd6CKK" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
     </node>
   </node>
   <node concept="2S6QgY" id="7ZQ7wlxmA$e">
@@ -953,6 +975,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6CVi" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4kWdVQTp6Uy">
     <property role="TrG5h" value="makeGCardXor" />
@@ -985,10 +1010,14 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6D0m" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="WgjoVd3shc">
     <property role="3GE5qa" value="Interfaces.IDevice" />
     <property role="TrG5h" value="addDeviceType" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ddau:5hA9WCIjVnK" resolve="IDevice" />
     <node concept="2S6ZIM" id="WgjoVd3shd" role="2ZfVej">
       <node concept="3clFbS" id="WgjoVd3she" role="2VODD2">
@@ -1051,6 +1080,19 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="zTJ1e" id="WgjoVd6OTM" role="2ZfVeg">
+      <node concept="3clFbS" id="WgjoVd6OTN" role="2VODD2">
+        <node concept="3clFbF" id="WgjoVd6OXG" role="3cqZAp">
+          <node concept="3clFbC" id="WgjoVd6PnI" role="3clFbG">
+            <node concept="2Sf5sV" id="WgjoVd6PpH" role="3uHU7w" />
+            <node concept="2OqwBi" id="WgjoVd6OZY" role="3uHU7B">
+              <node concept="zTJq_" id="WgjoVd6OXF" role="2Oq$k0" />
+              <node concept="1mfA1w" id="WgjoVd6P2J" role="2OqNvi" />
             </node>
           </node>
         </node>
