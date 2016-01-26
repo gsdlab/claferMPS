@@ -204,7 +204,7 @@
                   <ref role="2ZqYFj" node="3T8tWljQ2Cv" resolve="power" />
                 </node>
                 <node concept="2qmXGp" id="3T8tWljQ6Ii" role="1_9fRO">
-                  <node concept="2ZqYGZ" id="3T8tWljQ6IB" role="1ESnxz">
+                  <node concept="2ZqYGZ" id="WgjoVd680y" role="1ESnxz">
                     <ref role="2ZqYFj" node="3T8tWljQ2C7" resolve="type" />
                   </node>
                   <node concept="ZpONE" id="3T8tWljQ6I2" role="1_9fRO">
@@ -273,11 +273,11 @@
                         <ref role="2ZqYFj" node="3T8tWljQ2Cj" resolve="smart" />
                       </node>
                       <node concept="2qmXGp" id="3T8tWljQ6Nm" role="1_9fRO">
-                        <node concept="2ZqYGZ" id="3T8tWljQ6NJ" role="1ESnxz">
+                        <node concept="2ZqYGZ" id="WgjoVd680q" role="1ESnxz">
                           <ref role="2ZqYFj" node="3T8tWljQ2C7" resolve="type" />
                         </node>
                         <node concept="2qmXGp" id="3T8tWljQ6MS" role="1_9fRO">
-                          <node concept="2ZqYGZ" id="3T8tWljQ6N8" role="1ESnxz">
+                          <node concept="2ZqYGZ" id="WgjoVd680i" role="1ESnxz">
                             <ref role="2ZqYFj" node="3T8tWljQ1YG" resolve="deployedTo" />
                           </node>
                           <node concept="ZpONE" id="3T8tWljQ6MJ" role="1_9fRO">
@@ -293,7 +293,7 @@
                         <ref role="2ZqYFj" node="3T8tWljQ2Cj" resolve="smart" />
                       </node>
                       <node concept="2qmXGp" id="3T8tWljQ6Tq" role="1_9fRO">
-                        <node concept="2ZqYGZ" id="3T8tWljQ6U7" role="1ESnxz">
+                        <node concept="2ZqYGZ" id="WgjoVd680E" role="1ESnxz">
                           <ref role="2ZqYFj" node="3T8tWljQ2C7" resolve="type" />
                         </node>
                         <node concept="2qmXGp" id="3T8tWljQ6S7" role="1_9fRO">
@@ -391,44 +391,122 @@
           </node>
         </node>
       </node>
-      <node concept="UH0sd" id="3T8tWljQ2AC" role="2vwUiP">
+      <node concept="UH0sd" id="WgjoVd52EB" role="2vwUiP">
         <property role="2vxgol" value="true" />
-        <property role="TrG5h" value="DeviceNode" />
-        <node concept="UH0sd" id="3T8tWljQ2C7" role="2vwUiP">
-          <property role="TrG5h" value="type" />
-          <node concept="3E5GGL" id="3T8tWljQ2C9" role="2vBoQc" />
-          <node concept="UH0sd" id="3T8tWljQ2Cj" role="2vwUiP">
-            <property role="TrG5h" value="smart" />
-            <node concept="1z9TsT" id="3T8tWljQ2Cz" role="lGtFl">
-              <node concept="OjmMv" id="3T8tWljQ2C$" role="1w35rA">
-                <node concept="19SGf9" id="3T8tWljQ2C_" role="OjmMu">
-                  <node concept="19SUe$" id="3T8tWljQ2CA" role="19SJt6">
-                    <property role="19SUeA" value="Has a microcontroller embedded and can use a bus" />
-                  </node>
+        <property role="TrG5h" value="ECU" />
+        <node concept="2vxcI6" id="WgjoVd52FI" role="2vxcI2">
+          <ref role="2vxcI7" node="3T8tWljQ2AC" resolve="DeviceNode" />
+        </node>
+        <node concept="2vxuzR" id="WgjoVd52I0" role="2vwUiP">
+          <node concept="LdX3K" id="WgjoVd53wl" role="3WnoGb">
+            <node concept="2qmXGp" id="WgjoVd52IB" role="1_9fRO">
+              <node concept="2ZqYGZ" id="WgjoVd52IY" role="1ESnxz">
+                <ref role="2ZqYFj" node="3T8tWljQ2Cj" resolve="smart" />
+              </node>
+              <node concept="2qmXGp" id="WgjoVd52Id" role="1_9fRO">
+                <node concept="2ZqYGZ" id="WgjoVd52Ir" role="1ESnxz">
+                  <ref role="2ZqYFj" node="3T8tWljQ2C7" resolve="type" />
+                </node>
+                <node concept="2Zoh0E" id="WgjoVd52I6" role="1_9fRO" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1z9TsT" id="WgjoVd680M" role="lGtFl">
+          <node concept="OjmMv" id="WgjoVd680N" role="1w35rA">
+            <node concept="19SGf9" id="WgjoVd680O" role="OjmMu">
+              <node concept="19SUe$" id="WgjoVd680P" role="19SJt6">
+                <property role="19SUeA" value="Specific set of types for automotive domain" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="UH0sd" id="7oGBC4$WaHx" role="2vwUiP">
+        <property role="2vxgol" value="true" />
+        <property role="TrG5h" value="Switch" />
+        <node concept="2vxcI6" id="7oGBC4$WaHH" role="2vxcI2">
+          <ref role="2vxcI7" node="3T8tWljQ2AC" resolve="DeviceNode" />
+        </node>
+      </node>
+      <node concept="UH0sd" id="WgjoVd52LU" role="2vwUiP">
+        <property role="2vxgol" value="true" />
+        <property role="TrG5h" value="Motor" />
+        <node concept="2vxcI6" id="WgjoVd52LV" role="2vxcI2">
+          <ref role="2vxcI7" node="3T8tWljQ2AC" resolve="DeviceNode" />
+        </node>
+      </node>
+      <node concept="UH0sd" id="WgjoVd52Nd" role="2vwUiP">
+        <property role="2vxgol" value="true" />
+        <property role="TrG5h" value="Inline" />
+        <node concept="2vxcI6" id="WgjoVd52Ne" role="2vxcI2">
+          <ref role="2vxcI7" node="3T8tWljQ2AC" resolve="DeviceNode" />
+        </node>
+        <node concept="UH0sd" id="WgjoVd52Oy" role="2vwUiP">
+          <property role="2vxgol" value="true" />
+          <property role="TrG5h" value="Pin" />
+          <node concept="2vxcI6" id="WgjoVd52Oz" role="2vxcI2">
+            <ref role="2vxcI7" node="3T8tWljQ2AC" resolve="DeviceNode" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="UzEYP" id="WgjoVd52XW" role="UzTCv" />
+    <node concept="UH0sd" id="3T8tWljQ2AC" role="UzTCv">
+      <property role="2vxgol" value="true" />
+      <property role="TrG5h" value="DeviceNode" />
+      <node concept="2vxuzR" id="WgjoVd53sI" role="2vwUiP">
+        <node concept="LkG4F" id="WgjoVd53sJ" role="3WnoGb">
+          <node concept="2BPB98" id="WgjoVd53sK" role="3TlMhJ">
+            <node concept="vgzv4" id="WgjoVd53sL" role="1_9fRO">
+              <node concept="ZpONE" id="WgjoVd53uA" role="3TlMhJ">
+                <ref role="ZpOSt" node="3T8tWljQ2AC" resolve="DeviceNode" />
+              </node>
+              <node concept="ZpONE" id="WgjoVd53tV" role="3TlMhI">
+                <ref role="ZpOSt" node="3T8tWljQ2mJ" resolve="DeviceNodeTopology" />
+              </node>
+            </node>
+          </node>
+          <node concept="2qmXGp" id="WgjoVd53sO" role="3TlMhI">
+            <node concept="KfJVP" id="WgjoVd53sP" role="1ESnxz" />
+            <node concept="2Zoh0E" id="WgjoVd53sQ" role="1_9fRO" />
+          </node>
+        </node>
+      </node>
+      <node concept="UH0sd" id="3T8tWljQ2C7" role="2vwUiP">
+        <property role="TrG5h" value="type" />
+        <node concept="3E5GGL" id="3T8tWljQ2C9" role="2vBoQc" />
+        <node concept="UH0sd" id="3T8tWljQ2Cj" role="2vwUiP">
+          <property role="TrG5h" value="smart" />
+          <node concept="1z9TsT" id="3T8tWljQ2Cz" role="lGtFl">
+            <node concept="OjmMv" id="3T8tWljQ2C$" role="1w35rA">
+              <node concept="19SGf9" id="3T8tWljQ2C_" role="OjmMu">
+                <node concept="19SUe$" id="3T8tWljQ2CA" role="19SJt6">
+                  <property role="19SUeA" value="Has a microcontroller embedded and can use a bus" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="UH0sd" id="3T8tWljQ2Co" role="2vwUiP">
-            <property role="TrG5h" value="electr" />
-            <node concept="1z9TsT" id="3T8tWljQ2CF" role="lGtFl">
-              <node concept="OjmMv" id="3T8tWljQ2CG" role="1w35rA">
-                <node concept="19SGf9" id="3T8tWljQ2CH" role="OjmMu">
-                  <node concept="19SUe$" id="3T8tWljQ2CI" role="19SJt6">
-                    <property role="19SUeA" value="Can contain functional devices by no microcontroller and can't use a bus" />
-                  </node>
+        </node>
+        <node concept="UH0sd" id="3T8tWljQ2Co" role="2vwUiP">
+          <property role="TrG5h" value="electr" />
+          <node concept="1z9TsT" id="3T8tWljQ2CF" role="lGtFl">
+            <node concept="OjmMv" id="3T8tWljQ2CG" role="1w35rA">
+              <node concept="19SGf9" id="3T8tWljQ2CH" role="OjmMu">
+                <node concept="19SUe$" id="3T8tWljQ2CI" role="19SJt6">
+                  <property role="19SUeA" value="Can contain functional devices by no microcontroller and can't use a bus" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="UH0sd" id="3T8tWljQ2Cv" role="2vwUiP">
-            <property role="TrG5h" value="power" />
-            <node concept="1z9TsT" id="3T8tWljQ2CN" role="lGtFl">
-              <node concept="OjmMv" id="3T8tWljQ2CO" role="1w35rA">
-                <node concept="19SGf9" id="3T8tWljQ2CP" role="OjmMu">
-                  <node concept="19SUe$" id="3T8tWljQ2CQ" role="19SJt6">
-                    <property role="19SUeA" value="A power device that has no real functionality" />
-                  </node>
+        </node>
+        <node concept="UH0sd" id="3T8tWljQ2Cv" role="2vwUiP">
+          <property role="TrG5h" value="power" />
+          <node concept="1z9TsT" id="3T8tWljQ2CN" role="lGtFl">
+            <node concept="OjmMv" id="3T8tWljQ2CO" role="1w35rA">
+              <node concept="19SGf9" id="3T8tWljQ2CP" role="OjmMu">
+                <node concept="19SUe$" id="3T8tWljQ2CQ" role="19SJt6">
+                  <property role="19SUeA" value="A power device that has no real functionality" />
                 </node>
               </node>
             </node>
@@ -436,6 +514,7 @@
         </node>
       </node>
     </node>
+    <node concept="UzEYP" id="WgjoVd5380" role="UzTCv" />
     <node concept="UzEYP" id="3T8tWljQ2uA" role="UzTCv" />
     <node concept="UH0sd" id="3T8tWljQ2QO" role="UzTCv">
       <property role="2vxgol" value="true" />

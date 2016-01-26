@@ -38,6 +38,8 @@
         <reference id="7694989595706234370" name="fa" index="gFST6" />
       </concept>
       <concept id="8674886736249155476" name="org.clafer.architecture.structure.SmartDeviceType" flags="ng" index="kwSKi" />
+      <concept id="8674886736249155477" name="org.clafer.architecture.structure.PowerDeviceType" flags="ng" index="kwSKj" />
+      <concept id="8674886736248617496" name="org.clafer.architecture.structure.ElectrDeviceType" flags="ng" index="kIXAu" />
       <concept id="4835973625147048739" name="org.clafer.architecture.structure.DeviceNode" flags="ng" index="2l49t0" />
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$">
         <child id="3144535651319522708" name="deployedTo" index="2rO0sn" />
@@ -58,6 +60,7 @@
       <concept id="2835231858185744727" name="org.clafer.architecture.structure.ArchParens" flags="ng" index="1kkfkd" />
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FAArchitecture" flags="ng" index="1u8h5F" />
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
+      <concept id="8119098109027610108" name="org.clafer.architecture.structure.Inline" flags="ng" index="3Hzz_a" />
       <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
       </concept>
@@ -65,6 +68,7 @@
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IDevice" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
+      <concept id="663277625447331269" name="org.clafer.architecture.structure.ECU" flags="ng" index="1XtdET" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -115,8 +119,27 @@
     </node>
     <node concept="UzEYP" id="g6kGtGv6N5" role="UzTCv" />
     <node concept="2l49t0" id="g6kGtGv6Q1" role="UzTCv">
-      <property role="TrG5h" value="deviceNode" />
+      <property role="TrG5h" value="deviceNodeSmart" />
       <node concept="kwSKi" id="g6kGtGv6Q2" role="kIXCp" />
+    </node>
+    <node concept="2l49t0" id="WgjoVd2$8M" role="UzTCv">
+      <property role="TrG5h" value="deviceNodeElectric" />
+      <node concept="kIXAu" id="WgjoVd2$aG" role="kIXCp" />
+    </node>
+    <node concept="2l49t0" id="WgjoVd2$9m" role="UzTCv">
+      <property role="TrG5h" value="deviceNodePower" />
+      <node concept="kwSKj" id="WgjoVd6gSY" role="kIXCp" />
+    </node>
+    <node concept="UzEYP" id="WgjoVd3seU" role="UzTCv" />
+    <node concept="3Hzz_a" id="WgjoVd3sg9" role="UzTCv">
+      <property role="TrG5h" value="inline" />
+      <node concept="kwSKj" id="WgjoVd3sga" role="kIXCp" />
+    </node>
+    <node concept="UzEYP" id="WgjoVd2$aJ" role="UzTCv" />
+    <node concept="UzEYP" id="WgjoVd51GR" role="UzTCv" />
+    <node concept="1XtdET" id="WgjoVd51Ic" role="UzTCv">
+      <property role="TrG5h" value="ecu" />
+      <node concept="kwSKi" id="WgjoVd51Id" role="kIXCp" />
     </node>
     <node concept="1uNGeH" id="g6kGtGv6QS" role="UzTCv">
       <property role="TrG5h" value="hwDemo" />
@@ -147,14 +170,14 @@
       <node concept="2mZLT$" id="g6kGtGtWJO" role="2mZOl8">
         <property role="TrG5h" value="afunction" />
         <node concept="3Jak$y" id="WgjoVd2dCG" role="2rO0sn">
-          <ref role="ZpOSt" node="g6kGtGv6Q1" resolve="deviceNode" />
+          <ref role="ZpOSt" node="g6kGtGv6Q1" resolve="deviceNodeSmart" />
         </node>
       </node>
       <node concept="2mZLT$" id="7$28d_YKByI" role="2mZOl8">
         <property role="TrG5h" value="afunction2" />
         <node concept="1kkfkd" id="WgjoVd2cS3" role="2rO0sn">
           <node concept="3Jak$y" id="WgjoVd2d4U" role="1_9fRO">
-            <ref role="ZpOSt" node="g6kGtGv6Q1" resolve="deviceNode" />
+            <ref role="ZpOSt" node="g6kGtGv6Q1" resolve="deviceNodeSmart" />
           </node>
         </node>
       </node>
