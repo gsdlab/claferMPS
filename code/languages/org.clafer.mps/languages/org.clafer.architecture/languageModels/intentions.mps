@@ -268,7 +268,7 @@
               <node concept="2Sf5sV" id="$OrRLOqMz_" role="2Oq$k0" />
               <node concept="1mIQ4w" id="$OrRLOqMzA" role="2OqNvi">
                 <node concept="chp4Y" id="$OrRLOqMzB" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:$OrRLOo_6A" resolve="IHasNotSuperNode" />
+                  <ref role="cht4Q" to="ddau:$OrRLOo_6A" resolve="IHaveNotSuperNode" />
                 </node>
               </node>
             </node>
@@ -521,9 +521,9 @@
   </node>
   <node concept="3dkpOd" id="50FM0hz_4RS">
     <property role="3GE5qa" value="AddQuality" />
-    <property role="TrG5h" value="IHasQualityAttributes_addQuality" />
+    <property role="TrG5h" value="IHaveQualityAttributes_addQuality" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="ddau:50FM0hzFYbT" resolve="IHasQualityAttributes" />
+    <ref role="2ZfgGC" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     <node concept="2S6ZIM" id="50FM0hz_4RT" role="2ZfVej">
       <node concept="3clFbS" id="50FM0hz_4RU" role="2VODD2">
         <node concept="3SKdUt" id="6mpz4vWbVqj" role="3cqZAp">
@@ -535,7 +535,7 @@
           <node concept="3cpWs3" id="6mpz4vWbUAl" role="3clFbG">
             <node concept="3cpWs3" id="50FM0hzAzeE" role="3uHU7B">
               <node concept="Xl_RD" id="50FM0hz_a$v" role="3uHU7B">
-                <property role="Xl_RC" value="Add Quality Atribute - " />
+                <property role="Xl_RC" value="Add " />
               </node>
               <node concept="2OqwBi" id="6mpz4vWbUkM" role="3uHU7w">
                 <node concept="2OqwBi" id="6mpz4vWbTRs" role="2Oq$k0">
@@ -599,7 +599,7 @@
               <node concept="2OqwBi" id="6mpz4vWdGNf" role="2Oq$k0">
                 <node concept="2Sf5sV" id="6mpz4vWdGKu" role="2Oq$k0" />
                 <node concept="2qgKlT" id="6mpz4vWdGQW" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:6mpz4vWcxwE" resolve="getTableQAttributes" />
+                  <ref role="37wK5l" to="f5o0:2HpWhZy4$QW" resolve="getTableQAttributes" />
                 </node>
               </node>
               <node concept="1z4cxt" id="6mpz4vWdLvX" role="2OqNvi">
@@ -749,7 +749,7 @@
             <node concept="2OqwBi" id="6mpz4vWcVEV" role="2Oq$k0">
               <node concept="2Sf5sV" id="6mpz4vWcVvk" role="2Oq$k0" />
               <node concept="2qgKlT" id="6mpz4vWcVRG" role="2OqNvi">
-                <ref role="37wK5l" to="f5o0:6mpz4vWcxwE" resolve="getTableQAttributes" />
+                <ref role="37wK5l" to="f5o0:2HpWhZy4$QW" resolve="getTableQAttributes" />
               </node>
             </node>
             <node concept="2es0OD" id="6mpz4vWdDNI" role="2OqNvi">
@@ -848,7 +848,7 @@
       <node concept="3clFbS" id="7ZQ7wlxn2e7" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxn2Hh" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxn2Hg" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality MUX" />
+            <property role="Xl_RC" value="MUX" />
           </node>
         </node>
       </node>
@@ -883,7 +883,7 @@
       <node concept="3clFbS" id="7ZQ7wlxryc7" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxr$9g" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxr$9f" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality Num" />
+            <property role="Xl_RC" value="Num" />
           </node>
         </node>
       </node>
@@ -988,7 +988,7 @@
       <node concept="3clFbS" id="4kWdVQTp6U$" role="2VODD2">
         <node concept="3clFbF" id="4kWdVQTp7lF" role="3cqZAp">
           <node concept="Xl_RD" id="4kWdVQTp7lE" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality XOR" />
+            <property role="Xl_RC" value="XOR" />
           </node>
         </node>
       </node>
@@ -1065,7 +1065,7 @@
                   <node concept="2Sf5sV" id="WgjoVd3sCZ" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="WgjoVd3sD0" role="2OqNvi">
                     <node concept="chp4Y" id="WgjoVd3sD1" role="cj9EA">
-                      <ref role="cht4Q" to="ddau:5hA9WCIjVny" resolve="IHasNotDeviceType" />
+                      <ref role="cht4Q" to="ddau:5hA9WCIjVny" resolve="IHaveNotDeviceType" />
                     </node>
                   </node>
                 </node>

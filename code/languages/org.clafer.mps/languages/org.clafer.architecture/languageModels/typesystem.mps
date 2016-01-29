@@ -1237,7 +1237,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="1iqBiKUljYJ">
-    <property role="TrG5h" value="check_IHasQualityAttributes" />
+    <property role="TrG5h" value="check_IHaveQualityAttributes" />
     <property role="3GE5qa" value="QualityModule" />
     <node concept="3clFbS" id="1iqBiKUljYK" role="18ibNy">
       <node concept="3clFbF" id="1iqBiKUlkfE" role="3cqZAp">
@@ -1354,7 +1354,7 @@
     </node>
     <node concept="1YaCAy" id="1iqBiKUljYM" role="1YuTPh">
       <property role="TrG5h" value="node" />
-      <ref role="1YaFvo" to="ddau:50FM0hzFYbT" resolve="IHasQualityAttributes" />
+      <ref role="1YaFvo" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     </node>
   </node>
   <node concept="18kY7G" id="5EXaBxYa60U">

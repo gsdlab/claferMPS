@@ -4028,7 +4028,7 @@
               <node concept="2OqwBi" id="6kt45HTkQ9O" role="2Oq$k0">
                 <node concept="2OqwBi" id="6kt45HTkONP" role="2Oq$k0">
                   <node concept="3B5_sB" id="6kt45HTkOjQ" role="2Oq$k0">
-                    <ref role="3B5MYn" to="ddau:50FM0hzFYbT" resolve="IHasQualityAttributes" />
+                    <ref role="3B5MYn" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
                   </node>
                   <node concept="1rGIog" id="6kt45HTkP9h" role="2OqNvi" />
                 </node>
@@ -4551,7 +4551,7 @@
   </node>
   <node concept="1M2fIO" id="1iqBiKUiuge">
     <property role="3GE5qa" value="Interfaces" />
-    <ref role="1M2myG" to="ddau:50FM0hzFYbT" resolve="IHasQualityAttributes" />
+    <ref role="1M2myG" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
   </node>
   <node concept="1M2fIO" id="1iqBiKUiysd">
     <property role="3GE5qa" value="QualityModule" />
@@ -4563,11 +4563,11 @@
           <node concept="3clFbF" id="1iqBiKUlg4q" role="3cqZAp">
             <node concept="2OqwBi" id="1iqBiKUiKz0" role="3clFbG">
               <node concept="1PxgMI" id="1iqBiKUiKc5" role="2Oq$k0">
-                <ref role="1PxNhF" to="ddau:50FM0hzFYbT" resolve="IHasQualityAttributes" />
+                <ref role="1PxNhF" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
                 <node concept="21POm0" id="1iqBiKUiAli" role="1PxMeX" />
               </node>
               <node concept="2qgKlT" id="1iqBiKUiKJX" role="2OqNvi">
-                <ref role="37wK5l" to="f5o0:6mpz4vWcxwE" resolve="getTableQAttributes" />
+                <ref role="37wK5l" to="f5o0:2HpWhZy4$QW" resolve="getTableQAttributes" />
               </node>
             </node>
           </node>
