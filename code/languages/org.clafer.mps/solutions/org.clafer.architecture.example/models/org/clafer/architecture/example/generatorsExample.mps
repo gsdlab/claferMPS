@@ -9,7 +9,6 @@
   </languages>
   <imports>
     <import index="t4ow" ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.example.QualityAttributes)" />
-    <import index="2d54" ref="r:cca2eaf7-4e60-4e4f-bcd8-dd944ccc7324(org.clafer.architecture.baseConcepts)" implicit="true" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -140,10 +139,12 @@
       <property role="TrG5h" value="deviceNodeSmart" />
       <node concept="kwSKi" id="WgjoVd6S45" role="kIXCp" />
     </node>
+    <node concept="UzEYP" id="1th$N_eUgHS" role="UzTCv" />
     <node concept="2l49t0" id="WgjoVd2$8M" role="UzTCv">
       <property role="TrG5h" value="deviceNodeElectric" />
       <node concept="kIXAu" id="WgjoVd2$aG" role="kIXCp" />
     </node>
+    <node concept="UzEYP" id="1th$N_eUgJ3" role="UzTCv" />
     <node concept="2l49t0" id="WgjoVd2$9m" role="UzTCv">
       <property role="TrG5h" value="deviceNodePower" />
       <node concept="kwSKj" id="WgjoVd6gSY" role="kIXCp" />
@@ -175,6 +176,7 @@
         <ref role="3HSg1l" node="WgjoVd2$9m" resolve="deviceNodePower" />
       </node>
     </node>
+    <node concept="UzEYP" id="1th$N_eUgAW" role="UzTCv" />
     <node concept="2l49t0" id="2HpWhZyaFNX" role="UzTCv">
       <property role="TrG5h" value="deviceNodePoser3" />
       <node concept="33KLpJ" id="2HpWhZyaFNY" role="33KLpg">
@@ -202,7 +204,6 @@
       </node>
     </node>
     <node concept="UzEYP" id="2HpWhZy3BDD" role="UzTCv" />
-    <node concept="UzEYP" id="2HpWhZy3BEv" role="UzTCv" />
     <node concept="3Hzz_a" id="WgjoVd3sg9" role="UzTCv">
       <property role="TrG5h" value="inline" />
       <node concept="kwSKj" id="WgjoVd3sga" role="kIXCp" />
@@ -227,12 +228,12 @@
         </node>
       </node>
     </node>
-    <node concept="UzEYP" id="WgjoVd2$aJ" role="UzTCv" />
     <node concept="UzEYP" id="WgjoVd51GR" role="UzTCv" />
     <node concept="1XtdET" id="WgjoVd51Ic" role="UzTCv">
       <property role="TrG5h" value="ecu" />
       <node concept="kwSKi" id="WgjoVd51Id" role="kIXCp" />
     </node>
+    <node concept="UzEYP" id="1th$N_eUgGI" role="UzTCv" />
     <node concept="1uNGeH" id="g6kGtGv6QS" role="UzTCv">
       <property role="TrG5h" value="hwDemo" />
       <node concept="36Bm0V" id="WgjoVd2qHd" role="2mZOl8">
@@ -289,9 +290,6 @@
         <ref role="3HSg1l" node="3T8tWlk9Spj" resolve="superArch2" />
       </node>
     </node>
-    <node concept="3GEVxB" id="7$28d_YV7lA" role="UzTCp">
-      <ref role="3GEb4d" to="2d54:3T8tWljPWR5" resolve="ARCHITECTURE__EAST_ADL" />
-    </node>
   </node>
   <node concept="UzPwm" id="3T8tWljOhji">
     <property role="TrG5h" value="TestModel1" />
@@ -329,14 +327,14 @@
         <ref role="3HSg1l" node="3T8tWljOvJ0" resolve="superArch" />
       </node>
     </node>
-    <node concept="3GEVxB" id="7$28d_YD_hU" role="UzTCp">
-      <ref role="3GEb4d" to="2d54:3T8tWljPWR5" resolve="ARCHITECTURE__EAST_ADL" />
-    </node>
     <node concept="3GEVxB" id="3T8tWlkaeZk" role="UzTCp">
       <ref role="3GEb4d" node="3T8tWlk9Spi" resolve="TestModel2" />
     </node>
-    <node concept="3GEVxB" id="7$28d_YywkK" role="UzTCp">
+    <node concept="3GEVxB" id="1th$N_eQKTB" role="UzTCp">
       <ref role="3GEb4d" node="7$28d_YywjR" resolve="TestModel3" />
+    </node>
+    <node concept="3GEVxB" id="1th$N_eRfeL" role="UzTCp">
+      <ref role="3GEb4d" node="1th$N_eQKTj" resolve="TestModel4" />
     </node>
   </node>
   <node concept="UzPwm" id="7$28d_YywjR">
@@ -371,6 +369,46 @@
       <property role="TrG5h" value="arch2" />
       <node concept="3HSg1M" id="7$28d_Yywk4" role="gT77A">
         <ref role="3HSg1l" node="7$28d_YywjS" resolve="superArch2" />
+      </node>
+    </node>
+    <node concept="3GEVxB" id="1th$N_eQKTH" role="UzTCp">
+      <ref role="3GEb4d" node="1th$N_eQKTj" resolve="TestModel4" />
+    </node>
+  </node>
+  <node concept="UzPwm" id="1th$N_eQKTj">
+    <property role="TrG5h" value="TestModel4" />
+    <node concept="UzEYP" id="1th$N_eQKTk" role="UzTCv" />
+    <node concept="UzEYP" id="1th$N_eQKTl" role="UzTCv" />
+    <node concept="gXKv3" id="1th$N_eQKTm" role="UzTCv">
+      <property role="TrG5h" value="superArch" />
+      <node concept="1z9TsT" id="1th$N_eQKTn" role="lGtFl">
+        <node concept="OjmMv" id="1th$N_eQKTo" role="1w35rA">
+          <node concept="19SGf9" id="1th$N_eQKTp" role="OjmMu">
+            <node concept="19SUe$" id="1th$N_eQKTq" role="19SJt6">
+              <property role="19SUeA" value="=========================================== TEST MODEL 4 ==============================================" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="UzEYP" id="1th$N_eQKTr" role="UzTCv" />
+    <node concept="gXKv3" id="1th$N_eQKTs" role="UzTCv">
+      <property role="TrG5h" value="arch_default" />
+      <node concept="gXKv3" id="1th$N_eQKTt" role="2mZOl8">
+        <property role="TrG5h" value="arch_child" />
+        <node concept="3HSg1M" id="1th$N_eQKTu" role="gT77A">
+          <ref role="3HSg1l" node="1th$N_eQKTm" resolve="superArch" />
+        </node>
+        <node concept="1u8h5F" id="1th$N_eQKTv" role="2mZOl8">
+          <property role="TrG5h" value="faArchitecture" />
+        </node>
+      </node>
+    </node>
+    <node concept="UzEYP" id="1th$N_eQKTw" role="UzTCv" />
+    <node concept="gXKv3" id="1th$N_eQKTx" role="UzTCv">
+      <property role="TrG5h" value="arch" />
+      <node concept="3HSg1M" id="1th$N_eQKTy" role="gT77A">
+        <ref role="3HSg1l" node="1th$N_eQKTm" resolve="superArch" />
       </node>
     </node>
   </node>
