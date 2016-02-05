@@ -66,6 +66,7 @@
       <concept id="2835231858185744727" name="org.clafer.architecture.structure.ArchParens" flags="ng" index="1kkfkd" />
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FAArchitecture" flags="ng" index="1u8h5F" />
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
+      <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
       <concept id="8119098109027610108" name="org.clafer.architecture.structure.Inline" flags="ng" index="3Hzz_a" />
       <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
@@ -234,6 +235,13 @@
       <node concept="kwSKi" id="WgjoVd51Id" role="kIXCp" />
     </node>
     <node concept="UzEYP" id="1th$N_eUgGI" role="UzTCv" />
+    <node concept="3yR_K9" id="2QVp5ERSC4h" role="UzTCv">
+      <property role="TrG5h" value="system" />
+      <node concept="gXKv3" id="2QVp5ERSC5B" role="2mZOl8">
+        <property role="TrG5h" value="systemArch" />
+      </node>
+    </node>
+    <node concept="UzEYP" id="2QVp5ERSC33" role="UzTCv" />
     <node concept="1uNGeH" id="g6kGtGv6QS" role="UzTCv">
       <property role="TrG5h" value="hwDemo" />
       <node concept="36Bm0V" id="WgjoVd2qHd" role="2mZOl8">
