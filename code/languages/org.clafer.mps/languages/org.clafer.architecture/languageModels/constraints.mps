@@ -857,10 +857,10 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="3_X0pUT7EIW" role="3uHU7w">
-                    <node concept="otxO1" id="3_X0pUT7EIX" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="3_X0pUT7EIY" role="2OqNvi">
-                      <node concept="chp4Y" id="3_X0pUT7EIZ" role="2Zo12j">
+                  <node concept="2OqwBi" id="6h3hNMjMmo" role="3uHU7w">
+                    <node concept="otxO1" id="6h3hNMjMmp" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="6h3hNMjMmq" role="2OqNvi">
+                      <node concept="chp4Y" id="6h3hNMmZGn" role="2Zo12j">
                         <ref role="cht4Q" to="ddau:2toL5DMUBtT" resolve="ArchLogicalExpr" />
                       </node>
                     </node>
@@ -4703,6 +4703,36 @@
                     <property role="TrG5h" value="it" />
                     <node concept="2jxLKc" id="bgYpXHsGbI" role="1tU5fm" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6h3hNMr1dd">
+    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <ref role="1M2myG" to="ddau:2toL5DMUByY" resolve="ArchLogicalAND" />
+    <node concept="nKS2y" id="6h3hNMr1dk" role="1MLUbF">
+      <node concept="3clFbS" id="6h3hNMr1dl" role="2VODD2">
+        <node concept="3clFbF" id="6h3hNMr1eq" role="3cqZAp">
+          <node concept="3fqX7Q" id="6h3hNMr22n" role="3clFbG">
+            <node concept="2OqwBi" id="6h3hNMr22p" role="3fr31v">
+              <node concept="2OqwBi" id="6h3hNMr22q" role="2Oq$k0">
+                <node concept="nLn13" id="6h3hNMr22r" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="6h3hNMr22s" role="2OqNvi">
+                  <node concept="1xMEDy" id="6h3hNMr22t" role="1xVPHs">
+                    <node concept="chp4Y" id="6h3hNMr22u" role="ri$Ld">
+                      <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="6h3hNMr22v" role="1xVPHs" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="6h3hNMr22w" role="2OqNvi">
+                <node concept="chp4Y" id="6h3hNMr22x" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:1QRywDjgzUJ" resolve="FAConnector" />
                 </node>
               </node>
             </node>

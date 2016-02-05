@@ -50,7 +50,7 @@
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
-      <concept id="5776930868210688761" name="org.clafer.architecture.structure.IHasQualityAttributes" flags="ng" index="Nx2FX">
+      <concept id="5776930868210688761" name="org.clafer.architecture.structure.IHaveQualityAttributes" flags="ng" index="Nx2FX">
         <child id="4851172649685075330" name="qualities" index="33KLpg" />
       </concept>
       <concept id="4851172649685075389" name="org.clafer.architecture.structure.Quality" flags="ng" index="33KLpJ">
@@ -1037,27 +1037,37 @@
             <property role="TrG5h" value="facTest" />
             <ref role="2wMEbl" node="4B66YapUD6_" resolve="afTest2" />
             <ref role="2wMEbG" node="3KrTRUBHumN" resolve="afTest" />
-            <node concept="1kl$yP" id="3_X0pUT8DMR" role="34um8E">
-              <node concept="1kkfkd" id="3_X0pUT8DNo" role="3TlMhJ">
-                <node concept="1lGFN$" id="3_X0pUT8DOu" role="1_9fRO">
-                  <node concept="3Jak$y" id="3_X0pUT8DP2" role="3TlMhJ">
-                    <ref role="ZpOSt" node="4B66Yaq1vaH" resolve="ldConnector" />
-                  </node>
-                  <node concept="3Jak$y" id="3_X0pUT8DNQ" role="3TlMhI">
-                    <ref role="ZpOSt" node="4B66Yaq3IxA" resolve="lBus" />
-                  </node>
-                </node>
+            <node concept="1kl$yP" id="6h3hNMr6Sh" role="34um8E">
+              <node concept="3Jak$y" id="6h3hNMr6St" role="3TlMhJ">
+                <ref role="ZpOSt" node="4B66Yaq3IxA" resolve="lBus" />
               </node>
-              <node concept="1lGFN$" id="3_X0pUT8DMi" role="3TlMhI">
-                <node concept="3Jak$y" id="3_X0pUT8DMu" role="3TlMhJ">
-                  <ref role="ZpOSt" node="4B66Yaq3IxA" resolve="lBus" />
-                </node>
-                <node concept="3Jak$y" id="3_X0pUT8vWm" role="3TlMhI">
-                  <ref role="ZpOSt" node="4B66Yaq1vaH" resolve="ldConnector" />
-                </node>
+              <node concept="3Jak$y" id="6h3hNMr6S9" role="3TlMhI">
+                <ref role="ZpOSt" node="4B66Yaq3IxA" resolve="lBus" />
               </node>
             </node>
           </node>
+          <node concept="1eXri_" id="17kXjyZ6WuE" role="2mZOl8">
+            <property role="TrG5h" value="faTest" />
+            <ref role="2wMEbG" node="3KrTRUBHumN" resolve="afTest" />
+            <ref role="2wMEbl" node="5UcaHciSns4" resolve="PinchDetection" />
+            <node concept="3Jak$y" id="6h3hNMtq$1" role="34um8E">
+              <ref role="ZpOSt" node="4B66Yaq3IxA" resolve="lBus" />
+            </node>
+          </node>
+          <node concept="1eXri_" id="6h3hNMfOua" role="2mZOl8">
+            <property role="TrG5h" value="faTest2" />
+            <ref role="2wMEbG" node="3KrTRUBHumN" resolve="afTest" />
+            <ref role="2wMEbl" node="4B66YapUD6_" resolve="afTest2" />
+          </node>
+          <node concept="1eXri_" id="6h3hNMptPy" role="2mZOl8">
+            <property role="TrG5h" value="faTest2" />
+            <ref role="2wMEbG" node="5UcaHciSns4" resolve="PinchDetection" />
+            <ref role="2wMEbl" node="5UcaHciSnsa" resolve="PositionSensor" />
+            <node concept="3Jak$y" id="6h3hNMqGHE" role="34um8E">
+              <ref role="ZpOSt" node="4B66Yaq3IxA" resolve="lBus" />
+            </node>
+          </node>
+          <node concept="UzEYP" id="17kXjyZ6XNc" role="2mZOl8" />
         </node>
         <node concept="UzEYP" id="1wmiO1APVWJ" role="2mZOl8" />
         <node concept="gqqVs" id="4z6NPpC0mDj" role="lGtFl">
