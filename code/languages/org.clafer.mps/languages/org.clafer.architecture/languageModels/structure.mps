@@ -101,10 +101,8 @@
     <node concept="PrWs8" id="4IooPifUJdQ" role="PzmwI">
       <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
-    <node concept="1TJgyj" id="4IooPifSg5Y" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="deployedTo" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="6PK7EUlNulu" role="PzmwI">
+      <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flST3m">
@@ -155,11 +153,8 @@
     <node concept="PrWs8" id="2l5qjD1KpOO" role="PzmwI">
       <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
     </node>
-    <node concept="1TJgyj" id="2IzCCeKsUmk" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="deployedTo" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="6PK7EUlNtxd" role="PzmwI">
+      <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
     </node>
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
@@ -1070,6 +1065,17 @@
     <property role="1pbfSe" value="1162383879" />
     <property role="3GE5qa" value="Interfaces.IDevice" />
     <property role="TrG5h" value="IHasFixedDeviceType" />
+  </node>
+  <node concept="PlHQZ" id="6PK7EUlNtky">
+    <property role="1pbfSe" value="54391760" />
+    <property role="3GE5qa" value="Interfaces" />
+    <property role="TrG5h" value="IHaveDeployment" />
+    <node concept="1TJgyj" id="6PK7EUlNtxk" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="deployedTo" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
   </node>
 </model>
 

@@ -40,9 +40,7 @@
       <concept id="8674886736249155477" name="org.clafer.architecture.structure.PowerDeviceType" flags="ng" index="kwSKj" />
       <concept id="8674886736248617496" name="org.clafer.architecture.structure.ElectrDeviceType" flags="ng" index="kIXAu" />
       <concept id="4835973625147048739" name="org.clafer.architecture.structure.DeviceNode" flags="ng" index="2l49t0" />
-      <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$">
-        <child id="3144535651319522708" name="deployedTo" index="2rO0sn" />
-      </concept>
+      <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$" />
       <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
         <child id="8834907397218843623" name="groupCard" index="2gadUg" />
@@ -61,9 +59,8 @@
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FAConnector" flags="ng" index="1eXri_">
         <reference id="7590219002335427874" name="dest" index="2wMEbl" />
         <reference id="7590219002335427867" name="src" index="2wMEbG" />
-        <child id="5447212964146905470" name="deployedTo" index="34um8E" />
       </concept>
-      <concept id="2835231858185744727" name="org.clafer.architecture.structure.ArchParens" flags="ng" index="1kkfkd" />
+      <concept id="2835231858186161391" name="org.clafer.architecture.structure.ArchLogicalOR" flags="ng" index="1kl$yP" />
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FAArchitecture" flags="ng" index="1u8h5F" />
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
@@ -72,6 +69,9 @@
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
       </concept>
       <concept id="2260668491394108193" name="org.clafer.architecture.structure.ArchRef" flags="ng" index="3Jak$y" />
+      <concept id="7885836682712175906" name="org.clafer.architecture.structure.IHaveDeployment" flags="ng" index="3SJsIc">
+        <child id="7885836682712176724" name="deployedTo" index="3SJsrU" />
+      </concept>
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IDevice" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
@@ -86,11 +86,12 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
-      <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
-        <child id="7254843406768839760" name="expression" index="1_9fRO" />
-      </concept>
       <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="8860443239512128052" name="org.clafer.expr.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128108" name="org.clafer.expr.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
@@ -268,27 +269,24 @@
     <node concept="UzEYP" id="3T8tWlk9Spp" role="UzTCv" />
     <node concept="1u8h5F" id="7$28d_YKByg" role="UzTCv">
       <property role="TrG5h" value="faDemo" />
-      <node concept="2mZLT$" id="g6kGtGtWJO" role="2mZOl8">
+      <node concept="2mZLT$" id="6PK7EUlUIK5" role="2mZOl8">
         <property role="TrG5h" value="afunction" />
-        <node concept="3Jak$y" id="WgjoVd2dCG" role="2rO0sn">
-          <ref role="ZpOSt" node="g6kGtGv6Q1" resolve="deviceNodeSmart" />
-        </node>
-      </node>
-      <node concept="2mZLT$" id="7$28d_YKByI" role="2mZOl8">
-        <property role="TrG5h" value="afunction2" />
-        <node concept="1kkfkd" id="WgjoVd2cS3" role="2rO0sn">
-          <node concept="3Jak$y" id="WgjoVd2d4U" role="1_9fRO">
-            <ref role="ZpOSt" node="g6kGtGv6Q1" resolve="deviceNodeSmart" />
+        <node concept="1kl$yP" id="6PK7EUlUO31" role="3SJsrU">
+          <node concept="3Jak$y" id="6PK7EUlUO3d" role="3TlMhJ">
+            <ref role="ZpOSt" node="2HpWhZy3BHS" resolve="deviceNodePoser2" />
+          </node>
+          <node concept="3Jak$y" id="6PK7EUlUO2T" role="3TlMhI">
+            <ref role="ZpOSt" node="WgjoVd2$8M" resolve="deviceNodeElectric" />
           </node>
         </node>
       </node>
-      <node concept="1eXri_" id="g6kGtGtWJW" role="2mZOl8">
+      <node concept="2mZLT$" id="6PK7EUlUIKp" role="2mZOl8">
+        <property role="TrG5h" value="afunction2" />
+      </node>
+      <node concept="1eXri_" id="6PK7EUlUIKJ" role="2mZOl8">
         <property role="TrG5h" value="faConnector" />
-        <ref role="2wMEbG" node="g6kGtGtWJO" resolve="afunction" />
-        <ref role="2wMEbl" node="7$28d_YKByI" resolve="afunction2" />
-        <node concept="3Jak$y" id="WgjoVd2qHu" role="34um8E">
-          <ref role="ZpOSt" node="WgjoVd2qHr" resolve="dataConnector" />
-        </node>
+        <ref role="2wMEbl" node="6PK7EUlUIKp" resolve="afunction2" />
+        <ref role="2wMEbG" node="6PK7EUlUIK5" resolve="afunction" />
       </node>
     </node>
     <node concept="UzEYP" id="7$28d_YKBy0" role="UzTCv" />
