@@ -205,7 +205,7 @@
       <ref role="PrY4T" node="23T79tC4AhE" resolve="IPowerDevice" />
     </node>
     <node concept="PrWs8" id="3f7bmGhwmiz" role="PzmwI">
-      <ref role="PrY4T" node="3f7bmGhwmis" resolve="IHasFixedDeviceType" />
+      <ref role="PrY4T" node="3f7bmGhwmis" resolve="IHaveFixedDeviceType" />
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8IRX">
@@ -321,7 +321,7 @@
     <property role="1pbfSe" value="2104829249" />
     <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
     <node concept="PrWs8" id="3f7bmGhwmiB" role="PzmwI">
-      <ref role="PrY4T" node="3f7bmGhwmis" resolve="IHasFixedDeviceType" />
+      <ref role="PrY4T" node="3f7bmGhwmis" resolve="IHaveFixedDeviceType" />
     </node>
   </node>
   <node concept="AxPO7" id="$OrRLOoabn">
@@ -1064,7 +1064,7 @@
   <node concept="PlHQZ" id="3f7bmGhwmis">
     <property role="1pbfSe" value="1162383879" />
     <property role="3GE5qa" value="Interfaces.IDevice" />
-    <property role="TrG5h" value="IHasFixedDeviceType" />
+    <property role="TrG5h" value="IHaveFixedDeviceType" />
   </node>
   <node concept="PlHQZ" id="6PK7EUlNtky">
     <property role="1pbfSe" value="54391760" />
