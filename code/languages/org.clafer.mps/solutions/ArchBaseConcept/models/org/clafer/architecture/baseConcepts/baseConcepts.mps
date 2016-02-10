@@ -250,7 +250,7 @@
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="4NBd3iZk1Jg" role="2K4itM">
             <node concept="ZpTZE" id="4NBd3iZk1Jh" role="3J4IUC">
-              <ref role="ZpTZD" node="4NBd3iZk1KO" resolve="DataConntector" />
+              <ref role="ZpTZD" node="4NBd3iZk1KO" resolve="DataConnector" />
             </node>
           </node>
           <node concept="3Edj9i" id="4NBd3iZk1Ji" role="2vBZf8" />
@@ -259,7 +259,7 @@
               <node concept="2BPB98" id="4NBd3iZk1Jl" role="3TlMhJ">
                 <node concept="LkG4F" id="4NBd3iZk1Jm" role="1_9fRO">
                   <node concept="ZpONE" id="4NBd3iZk1Jn" role="3TlMhJ">
-                    <ref role="ZpOSt" node="4NBd3iZk1Lb" resolve="BusConector" />
+                    <ref role="ZpOSt" node="4NBd3iZk1Lb" resolve="BusConnector" />
                   </node>
                   <node concept="2Zoh0E" id="4NBd3iZk1Jo" role="3TlMhI" />
                 </node>
@@ -561,7 +561,7 @@
       </node>
       <node concept="UH0sd" id="4NBd3iZk1KO" role="2vwUiP">
         <property role="2vxgol" value="true" />
-        <property role="TrG5h" value="DataConntector" />
+        <property role="TrG5h" value="DataConnector" />
         <node concept="2vxcI6" id="4NBd3iZk1KP" role="2vxcI2">
           <ref role="2vxcI7" node="4NBd3iZk1Kv" resolve="HardwareConnector" />
         </node>
@@ -592,7 +592,7 @@
         <property role="2vxgol" value="true" />
         <property role="TrG5h" value="DiscreteWireConnector" />
         <node concept="2vxcI6" id="4NBd3iZk1L0" role="2vxcI2">
-          <ref role="2vxcI7" node="4NBd3iZk1KO" resolve="DataConntector" />
+          <ref role="2vxcI7" node="4NBd3iZk1KO" resolve="DataConnector" />
         </node>
         <node concept="UH0sd" id="4NBd3iZk1L1" role="2vwUiP">
           <property role="TrG5h" value="sender" />
@@ -626,9 +626,9 @@
       </node>
       <node concept="UH0sd" id="4NBd3iZk1Lb" role="2vwUiP">
         <property role="2vxgol" value="true" />
-        <property role="TrG5h" value="BusConector" />
+        <property role="TrG5h" value="BusConnector" />
         <node concept="2vxcI6" id="4NBd3iZk1Lc" role="2vxcI2">
-          <ref role="2vxcI7" node="4NBd3iZk1KO" resolve="DataConntector" />
+          <ref role="2vxcI7" node="4NBd3iZk1KO" resolve="DataConnector" />
         </node>
         <node concept="UH0sd" id="4NBd3iZk1Ld" role="2vwUiP">
           <property role="TrG5h" value="connects" />
@@ -786,7 +786,7 @@
               <property role="TrG5h" value="lb" />
             </node>
             <node concept="ZpTZE" id="4NBd3iZk1Ma" role="2YxkIx">
-              <ref role="ZpTZD" node="4NBd3iZk1Lb" resolve="BusConector" />
+              <ref role="ZpTZD" node="4NBd3iZk1Lb" resolve="BusConnector" />
             </node>
             <node concept="LkG4F" id="4NBd3iZk1Mb" role="2YxkHD">
               <node concept="2qmXGp" id="4NBd3iZk1Mc" role="3TlMhJ">
@@ -808,7 +808,7 @@
               <property role="TrG5h" value="lb" />
             </node>
             <node concept="ZpTZE" id="4NBd3iZk1Mj" role="2YxkIx">
-              <ref role="ZpTZD" node="4NBd3iZk1Lb" resolve="BusConector" />
+              <ref role="ZpTZD" node="4NBd3iZk1Lb" resolve="BusConnector" />
             </node>
             <node concept="LkG4F" id="4NBd3iZk1Mk" role="2YxkHD">
               <node concept="2qmXGp" id="4NBd3iZk1Ml" role="3TlMhJ">

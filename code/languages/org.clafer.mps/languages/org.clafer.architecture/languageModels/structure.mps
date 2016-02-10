@@ -480,9 +480,17 @@
       <property role="1uS6qv" value="Inline" />
       <property role="1uS6qo" value="Inline" />
     </node>
+    <node concept="M4N5e" id="p2aW3Fp4H5" role="M5hS2">
+      <property role="1uS6qo" value="Motor" />
+      <property role="1uS6qv" value="Motor" />
+    </node>
     <node concept="M4N5e" id="7$28d_YJWPh" role="M5hS2">
       <property role="1uS6qv" value="PhysicalWire" />
       <property role="1uS6qo" value="PhysicalWire" />
+    </node>
+    <node concept="M4N5e" id="p2aW3Fr6lL" role="M5hS2">
+      <property role="1uS6qv" value="PhysicalBus" />
+      <property role="1uS6qo" value="PhysicalBus" />
     </node>
     <node concept="M4N5e" id="4aL7gvpy3uk" role="M5hS2">
       <property role="1uS6qv" value="Pin" />
@@ -491,6 +499,10 @@
     <node concept="M4N5e" id="7$28d_YJWNn" role="M5hS2">
       <property role="1uS6qv" value="PowerTopology" />
       <property role="1uS6qo" value="PowerTopology" />
+    </node>
+    <node concept="M4N5e" id="p2aW3Fp4Ip" role="M5hS2">
+      <property role="1uS6qv" value="Switch" />
+      <property role="1uS6qo" value="Switch" />
     </node>
     <node concept="M4N5e" id="7$28d_YJWy0" role="M5hS2">
       <property role="1uS6qv" value="System" />

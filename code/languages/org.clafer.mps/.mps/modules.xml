@@ -11,7 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/solutions/pluginSolution/org.clafer.core.pluginSolution.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/ArchBaseConcept/ArchBaseConcept.msd" folder="org.clafer.architecture" />
-      <modulePath path="$PROJECT_DIR$/solutions/ArchBaseConcept/org.clafer.architecture.baseConcepts.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ArchBaseConcept/org.clafer.architecture.baseConcepts.msd" folder="org.clafer.architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.NECSIS/ca.uwaterloo.gsd.NECSIS.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.PowerWindowSystem/ca.uwaterloo.gsd.PowerWindowSystem.msd" folder="examples" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.example/org.clafer.architecture.example.msd" folder="examples" />
