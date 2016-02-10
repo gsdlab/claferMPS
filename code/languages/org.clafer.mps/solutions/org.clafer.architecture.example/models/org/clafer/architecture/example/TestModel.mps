@@ -41,8 +41,8 @@
       <concept id="8674886736249155477" name="org.clafer.architecture.structure.PowerDeviceType" flags="ng" index="kwSKj" />
       <concept id="8674886736248617496" name="org.clafer.architecture.structure.ElectrDeviceType" flags="ng" index="kIXAu" />
       <concept id="4835973625147048739" name="org.clafer.architecture.structure.DeviceNode" flags="ng" index="2l49t0" />
-      <concept id="4835973625144817188" name="org.clafer.architecture.structure.FDevice" flags="ng" index="2mXI97" />
-      <concept id="4835973625144396295" name="org.clafer.architecture.structure.AFunction" flags="ng" index="2mZLT$" />
+      <concept id="4835973625144817188" name="org.clafer.architecture.structure.FunctionalDevice" flags="ng" index="2mXI97" />
+      <concept id="4835973625144396295" name="org.clafer.architecture.structure.AnalysisFunction" flags="ng" index="2mZLT$" />
       <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
@@ -72,14 +72,14 @@
       <concept id="1318120347112283919" name="org.clafer.architecture.structure.DiscreteWire" flags="ng" index="36BnxR">
         <child id="2375961715026402461" name="connects" index="18UC0a" />
       </concept>
-      <concept id="2141331924789116591" name="org.clafer.architecture.structure.FAConnector" flags="ng" index="1eXri_">
+      <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
         <reference id="7590219002335427874" name="dest" index="2wMEbl" />
         <reference id="7590219002335427867" name="src" index="2wMEbG" />
       </concept>
       <concept id="2835231858185744727" name="org.clafer.architecture.structure.ArchParens" flags="ng" index="1kkfkd" />
       <concept id="2835231858186161391" name="org.clafer.architecture.structure.ArchLogicalOR" flags="ng" index="1kl$yP" />
       <concept id="2835231858183796926" name="org.clafer.architecture.structure.ArchLogicalAND" flags="ng" index="1lGFN$" />
-      <concept id="8817732347957866929" name="org.clafer.architecture.structure.FAArchitecture" flags="ng" index="1u8h5F" />
+      <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysisArchitecture" flags="ng" index="1u8h5F" />
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
@@ -1030,9 +1030,6 @@
             <ref role="2wMEbG" node="6PK7EUlRga_" resolve="afTest" />
             <ref role="2wMEbl" node="6PK7EUlRgdZ" resolve="afTest2" />
           </node>
-          <node concept="UzEYP" id="6PK7EUlRgel" role="2mZOl8" />
-          <node concept="UzEYP" id="6PK7EUlRgbd" role="2mZOl8" />
-          <node concept="UzEYP" id="17kXjyZ6XNc" role="2mZOl8" />
         </node>
         <node concept="UzEYP" id="1wmiO1APVWJ" role="2mZOl8" />
         <node concept="gqqVs" id="4z6NPpC0mDj" role="lGtFl">
@@ -1139,6 +1136,16 @@
               <node concept="3Jak$y" id="23T79tC7FX2" role="3TlMhI">
                 <ref role="ZpOSt" node="7xzoSpGV1CO" resolve="electrDN" />
               </node>
+            </node>
+          </node>
+          <node concept="UzEYP" id="p2aW3FuXMZ" role="2mZOl8" />
+        </node>
+      </node>
+      <node concept="1z9TsT" id="p2aW3FuVcO" role="lGtFl">
+        <node concept="OjmMv" id="p2aW3FuVcP" role="1w35rA">
+          <node concept="19SGf9" id="p2aW3FuVcQ" role="OjmMu">
+            <node concept="19SUe$" id="p2aW3FuVcR" role="19SJt6">
+              <property role="19SUeA" value="============================================ Communication Topology =====================================" />
             </node>
           </node>
         </node>

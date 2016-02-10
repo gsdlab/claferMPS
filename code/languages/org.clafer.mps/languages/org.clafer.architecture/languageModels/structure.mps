@@ -15,7 +15,6 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
-        <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
@@ -73,10 +72,10 @@
     </node>
   </node>
   <node concept="1TIwiD" id="1QRywDjgzUJ">
-    <property role="TrG5h" value="FAConnector" />
+    <property role="TrG5h" value="FunctionConnector" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="FAConnector" />
+    <property role="34LRSv" value="Function Connector" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="1pbfSe" value="1895418041" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
@@ -84,13 +83,13 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="src" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flSWC7" resolve="AFunction" />
+      <ref role="20lvS9" node="4csP6flSWC7" resolve="AnalysisFunction" />
     </node>
     <node concept="1TJgyj" id="6_lRZv9BROy" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="dest" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flSWC7" resolve="AFunction" />
+      <ref role="20lvS9" node="4csP6flSWC7" resolve="AnalysisFunction" />
     </node>
     <node concept="PrWs8" id="1tfNdgy1sjr" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
@@ -146,7 +145,7 @@
   </node>
   <node concept="1TIwiD" id="4csP6flSWC7">
     <property role="3GE5qa" value="FunctionalArchitecture" />
-    <property role="TrG5h" value="AFunction" />
+    <property role="TrG5h" value="AnalysisFunction" />
     <property role="34LRSv" value="Analysis Function" />
     <property role="1pbfSe" value="419470954" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
@@ -159,11 +158,11 @@
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
     <property role="3GE5qa" value="FunctionalArchitecture" />
-    <property role="TrG5h" value="FDevice" />
+    <property role="TrG5h" value="FunctionalDevice" />
     <property role="34LRSv" value="Functional Device" />
     <property role="MwhBj" value="${module}/icons/gear.png" />
     <property role="1pbfSe" value="419891847" />
-    <ref role="1TJDcQ" node="4csP6flSWC7" resolve="AFunction" />
+    <ref role="1TJDcQ" node="4csP6flSWC7" resolve="AnalysisFunction" />
     <node concept="PrWs8" id="5UcaHciRxOn" role="PzmwI">
       <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
     </node>
@@ -250,7 +249,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fa" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7DuSdC$vZ6L" resolve="FAArchitecture" />
+      <ref role="20lvS9" node="7DuSdC$vZ6L" resolve="FunctionalAnalysisArchitecture" />
     </node>
     <node concept="1TJgyj" id="6Fa64hUppo4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -391,128 +390,6 @@
     <property role="3GE5qa" value="Interfaces" />
     <property role="1pbfSe" value="961852933" />
   </node>
-  <node concept="AxPO7" id="4aL7gvppFpB">
-    <property role="TrG5h" value="idiomsNames" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <property role="PDuV0" value="true" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="4aL7gvpy3xu" role="M5hS2">
-      <property role="1uS6qo" value="AnalysisFunction" />
-      <property role="1uS6qv" value="AFunction" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvppFpC" role="M5hS2">
-      <property role="1uS6qv" value="Architecture" />
-      <property role="1uS6qo" value="Architecture" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWN1" role="M5hS2">
-      <property role="1uS6qv" value="BusConnector" />
-      <property role="1uS6qo" value="BusConnector" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWO6" role="M5hS2">
-      <property role="1uS6qv" value="CommunicationImpl" />
-      <property role="1uS6qo" value="CommunicationImpl" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWM5" role="M5hS2">
-      <property role="1uS6qv" value="CommunicationTopology" />
-      <property role="1uS6qo" value="CommunicationTopology" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWMo" role="M5hS2">
-      <property role="1uS6qv" value="DataConnector" />
-      <property role="1uS6qo" value="DataConnector" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWyp" role="M5hS2">
-      <property role="1uS6qv" value="Deployment" />
-      <property role="1uS6qo" value="Deployment" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvpvE_L" role="M5hS2">
-      <property role="1uS6qv" value="DeviceNodeTopology" />
-      <property role="1uS6qo" value="DeviceNodeTopology" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWz6" role="M5hS2">
-      <property role="1uS6qv" value="DeviceNode" />
-      <property role="1uS6qo" value="DeviceNode" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWPF" role="M5hS2">
-      <property role="1uS6qv" value="DiscreteWire" />
-      <property role="1uS6qo" value="DiscreteWire" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWMG" role="M5hS2">
-      <property role="1uS6qv" value="DiscreteWireConnector" />
-      <property role="1uS6qo" value="DiscreteWireConnector" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvpy3u9" role="M5hS2">
-      <property role="1uS6qv" value="ECU" />
-      <property role="1uS6qo" value="ECU" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvpy3Kc" role="M5hS2">
-      <property role="1uS6qo" value="FunctionConnector" />
-      <property role="1uS6qv" value="FAConnector" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWyB" role="M5hS2">
-      <property role="1uS6qo" value="FunctionalAnalysisArchitecture" />
-      <property role="1uS6qv" value="FAArchitecture" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvpy3xJ" role="M5hS2">
-      <property role="1uS6qo" value="FunctionalDevice" />
-      <property role="1uS6qv" value="FDevice" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvpy3wL" role="M5hS2">
-      <property role="1uS6qv" value="Feature" />
-      <property role="1uS6qo" value="Feature" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWyc" role="M5hS2">
-      <property role="1uS6qv" value="FeatureModel" />
-      <property role="1uS6qo" value="FeatureModel" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWyQ" role="M5hS2">
-      <property role="1uS6qv" value="HardwareTopology" />
-      <property role="1uS6qo" value="HardwareTopology" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWzn" role="M5hS2">
-      <property role="1uS6qv" value="HardwareConnector" />
-      <property role="1uS6qo" value="HardwareConnector" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWNI" role="M5hS2">
-      <property role="1uS6qv" value="Implementation" />
-      <property role="1uS6qo" value="Implementation" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvpy3ue" role="M5hS2">
-      <property role="1uS6qv" value="Inline" />
-      <property role="1uS6qo" value="Inline" />
-    </node>
-    <node concept="M4N5e" id="p2aW3Fp4H5" role="M5hS2">
-      <property role="1uS6qo" value="Motor" />
-      <property role="1uS6qv" value="Motor" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWPh" role="M5hS2">
-      <property role="1uS6qv" value="PhysicalWire" />
-      <property role="1uS6qo" value="PhysicalWire" />
-    </node>
-    <node concept="M4N5e" id="p2aW3Fr6lL" role="M5hS2">
-      <property role="1uS6qv" value="PhysicalBus" />
-      <property role="1uS6qo" value="PhysicalBus" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvpy3uk" role="M5hS2">
-      <property role="1uS6qv" value="Pin" />
-      <property role="1uS6qo" value="Pin" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWNn" role="M5hS2">
-      <property role="1uS6qv" value="PowerTopology" />
-      <property role="1uS6qo" value="PowerTopology" />
-    </node>
-    <node concept="M4N5e" id="p2aW3Fp4Ip" role="M5hS2">
-      <property role="1uS6qv" value="Switch" />
-      <property role="1uS6qo" value="Switch" />
-    </node>
-    <node concept="M4N5e" id="7$28d_YJWy0" role="M5hS2">
-      <property role="1uS6qv" value="System" />
-      <property role="1uS6qo" value="System" />
-    </node>
-    <node concept="M4N5e" id="4aL7gvpy6zy" role="M5hS2">
-      <property role="1uS6qv" value="WireConnector" />
-      <property role="1uS6qo" value="WireConnector" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="2l5qjD1IiLz">
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="IFunctionalAnalysisNode" />
@@ -575,7 +452,7 @@
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
   <node concept="1TIwiD" id="7DuSdC$vZ6L">
-    <property role="TrG5h" value="FAArchitecture" />
+    <property role="TrG5h" value="FunctionalAnalysisArchitecture" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="34LRSv" value="FAArchitecture" />
     <property role="1pbfSe" value="1629564277" />
