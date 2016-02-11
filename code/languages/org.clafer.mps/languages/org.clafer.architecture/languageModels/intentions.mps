@@ -520,7 +520,7 @@
     </node>
   </node>
   <node concept="3dkpOd" id="50FM0hz_4RS">
-    <property role="3GE5qa" value="AddQuality" />
+    <property role="3GE5qa" value="Interfaces" />
     <property role="TrG5h" value="IHaveQualityAttributes_addQuality" />
     <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
@@ -1016,14 +1016,14 @@
   </node>
   <node concept="2S6QgY" id="WgjoVd3shc">
     <property role="3GE5qa" value="Interfaces.IDevice" />
-    <property role="TrG5h" value="addDeviceType" />
+    <property role="TrG5h" value="addNodeType" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="ddau:5hA9WCIjVnK" resolve="IDevice" />
+    <ref role="2ZfgGC" to="ddau:5hA9WCIjVnK" resolve="IHaveType" />
     <node concept="2S6ZIM" id="WgjoVd3shd" role="2ZfVej">
       <node concept="3clFbS" id="WgjoVd3she" role="2VODD2">
         <node concept="3clFbF" id="WgjoVd3sjf" role="3cqZAp">
           <node concept="Xl_RD" id="WgjoVd3sje" role="3clFbG">
-            <property role="Xl_RC" value="Add Device Type" />
+            <property role="Xl_RC" value="Add Type" />
           </node>
         </node>
       </node>
@@ -1054,7 +1054,7 @@
                 <node concept="2Sf5sV" id="WgjoVd3Q3f" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="WgjoVd3Qc3" role="2OqNvi">
                   <node concept="chp4Y" id="WgjoVd3Qfv" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:3f7bmGhwmis" resolve="IHasFixedDeviceType" />
+                    <ref role="cht4Q" to="ddau:3f7bmGhwmis" resolve="IHaveFixedDeviceType" />
                   </node>
                 </node>
               </node>

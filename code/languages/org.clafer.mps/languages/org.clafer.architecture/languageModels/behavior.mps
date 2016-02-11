@@ -3111,6 +3111,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1wJvPhFn__0">
+    <property role="3GE5qa" value="Interfaces" />
     <ref role="13h7C2" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     <node concept="13i0hz" id="2HpWhZy4$QW" role="13h7CS">
       <property role="13i0iv" value="true" />
@@ -3200,8 +3201,8 @@
     </node>
   </node>
   <node concept="13h7C7" id="1a3IgB18KVy">
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
-    <ref role="13h7C2" to="ddau:5hA9WCIkW89" resolve="DeviceTypeExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr" />
+    <ref role="13h7C2" to="ddau:5hA9WCIkW89" resolve="NodeTypeExpr" />
     <node concept="13i0hz" id="3WlRoWfPVrU" role="13h7CS">
       <property role="TrG5h" value="getTarget" />
       <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
@@ -3218,8 +3219,8 @@
     </node>
   </node>
   <node concept="13h7C7" id="EXzEoUsgMA">
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
-    <ref role="13h7C2" to="ddau:EXzEoUsgG2" resolve="DeviceTypeDotTarget" />
+    <property role="3GE5qa" value="NodeTypeExpr" />
+    <ref role="13h7C2" to="ddau:EXzEoUsgG2" resolve="NodeTypeDotTarget" />
     <node concept="13i0hz" id="EXzEoUsgMD" role="13h7CS">
       <property role="TrG5h" value="getTarget" />
       <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
@@ -3237,9 +3238,14 @@
   </node>
   <node concept="13h7C7" id="EXzEoUuibm">
     <property role="3GE5qa" value="Interfaces.IDevice" />
-    <ref role="13h7C2" to="ddau:5hA9WCIjVnK" resolve="IDevice" />
+    <ref role="13h7C2" to="ddau:5hA9WCIjVnK" resolve="IHaveType" />
     <node concept="13hLZK" id="EXzEoUuibn" role="13h7CW">
       <node concept="3clFbS" id="EXzEoUuibo" role="2VODD2">
+        <node concept="3SKdUt" id="2G_jlDGpSUw" role="3cqZAp">
+          <node concept="3SKdUq" id="2G_jlDGpSUy" role="3SKWNk">
+            <property role="3SKdUp" value="DeviceNode" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="7xzoSpGT1wj" role="3cqZAp">
           <node concept="3clFbS" id="7xzoSpGT1wk" role="3clFbx">
             <node concept="3clFbJ" id="3EgEWBTIzmy" role="3cqZAp">
@@ -3291,7 +3297,7 @@
                 <node concept="13iPFW" id="7xzoSpGT1Cw" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="7xzoSpGT1Cx" role="2OqNvi">
                   <node concept="chp4Y" id="7xzoSpGT1Cy" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:5hA9WCIjVny" resolve="IHasNotDeviceType" />
+                    <ref role="cht4Q" to="ddau:5hA9WCIjVny" resolve="IHaveNotDeviceType" />
                   </node>
                 </node>
               </node>
@@ -3300,7 +3306,7 @@
               <node concept="13iPFW" id="WgjoVd3to6" role="2Oq$k0" />
               <node concept="1mIQ4w" id="WgjoVd3to7" role="2OqNvi">
                 <node concept="chp4Y" id="WgjoVd3QrQ" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:3f7bmGhwmis" resolve="IHasFixedDeviceType" />
+                  <ref role="cht4Q" to="ddau:3f7bmGhwmis" resolve="IHaveFixedDeviceType" />
                 </node>
               </node>
             </node>

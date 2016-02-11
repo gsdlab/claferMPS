@@ -91,9 +91,11 @@
       <concept id="7885836682712175906" name="org.clafer.architecture.structure.IHaveDeployment" flags="ng" index="3SJsIc">
         <child id="7885836682712176724" name="deployedTo" index="3SJsrU" />
       </concept>
-      <concept id="6081592096124286448" name="org.clafer.architecture.structure.IDevice" flags="ng" index="1Uap8U">
+      <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
+      <concept id="6081592096124551691" name="org.clafer.architecture.structure.ElectrDeviceExpr" flags="ng" index="1Udun1" />
+      <concept id="6081592096124551689" name="org.clafer.architecture.structure.NodeTypeExpr" flags="ng" index="1Udun3" />
       <concept id="663277625447331269" name="org.clafer.architecture.structure.ECU" flags="ng" index="1XtdET" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -157,6 +159,9 @@
       <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="6300420630909714393" name="org.clafer.core.structure.Constraint" flags="ng" index="2vxuzR">
+        <child id="4988923775218203830" name="expr" index="3WnoGb" />
+      </concept>
       <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
         <child id="5675649033537919505" name="targetType" index="3J4IUC" />
       </concept>
@@ -169,6 +174,7 @@
         <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
+      <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
       </concept>
@@ -265,6 +271,8 @@
           </node>
           <node concept="1uNHS9" id="3URpncZ8sVJ" role="2mZOl8">
             <property role="TrG5h" value="dnTopology" />
+            <node concept="UzEYP" id="2G_jlDGq097" role="2mZOl8" />
+            <node concept="UzEYP" id="2G_jlDGq0ak" role="2mZOl8" />
             <node concept="gqqVs" id="4z6NPpC0mM7" role="lGtFl">
               <property role="gqqTZ" value="178.00030517578125" />
               <property role="gqqTW" value="12.0" />
@@ -274,6 +282,7 @@
             </node>
             <node concept="2l49t0" id="3f7bmGhxqc3" role="2mZOl8">
               <property role="TrG5h" value="smartDN" />
+              <node concept="UzEYP" id="2G_jlDG$np4" role="2mZOl8" />
               <node concept="kwSKi" id="3f7bmGhxqcg" role="kIXCp" />
               <node concept="33KLpJ" id="1wmiO1AQlAN" role="33KLpg">
                 <property role="TrG5h" value="cost" />
@@ -283,6 +292,15 @@
                 </node>
                 <node concept="3TlMh9" id="1wmiO1AQlAW" role="33KLot">
                   <property role="2hmy$m" value="10" />
+                </node>
+              </node>
+              <node concept="2vxuzR" id="2G_jlDGssML" role="2mZOl8">
+                <node concept="2qmXGp" id="2G_jlDG$nol" role="3WnoGb">
+                  <node concept="1Udun1" id="2G_jlDG$noH" role="1ESnxz" />
+                  <node concept="2qmXGp" id="2G_jlDG$nnU" role="1_9fRO">
+                    <node concept="1Udun3" id="2G_jlDG$no8" role="1ESnxz" />
+                    <node concept="2Zoh0E" id="2G_jlDGssMU" role="1_9fRO" />
+                  </node>
                 </node>
               </node>
             </node>

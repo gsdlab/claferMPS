@@ -174,7 +174,7 @@
     <property role="1pbfSe" value="422123398" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="23T79tC3_81" role="PzmwI">
-      <ref role="PrY4T" node="5hA9WCIjVnK" resolve="IDevice" />
+      <ref role="PrY4T" node="5hA9WCIjVnK" resolve="IHaveType" />
     </node>
   </node>
   <node concept="1TIwiD" id="72GPbqt8AHL">
@@ -740,6 +740,7 @@
   <node concept="PlHQZ" id="50FM0hzFYbT">
     <property role="TrG5h" value="IHaveQualityAttributes" />
     <property role="1pbfSe" value="1277449475" />
+    <property role="3GE5qa" value="Interfaces" />
     <node concept="1TJgyj" id="4diOXa0$sm2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="qualities" />
@@ -864,18 +865,18 @@
   <node concept="PlHQZ" id="5hA9WCIjVnK">
     <property role="1pbfSe" value="2102010438" />
     <property role="3GE5qa" value="Interfaces.IDevice" />
-    <property role="TrG5h" value="IDevice" />
+    <property role="TrG5h" value="IHaveType" />
     <node concept="1TJgyj" id="7xzoSpGQbAv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="EXzEoUui47" resolve="DeviceType" />
+      <ref role="20lvS9" node="EXzEoUui47" resolve="NodeType" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW89">
     <property role="1pbfSe" value="2101745197" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
-    <property role="TrG5h" value="DeviceTypeExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="TrG5h" value="NodeTypeExpr" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="type" />
@@ -886,24 +887,33 @@
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8a">
     <property role="1pbfSe" value="2101745196" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
     <property role="TrG5h" value="PowerDeviceExpr" />
     <property role="34LRSv" value="power" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceTypeDotTarget" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
+    <node concept="PrWs8" id="2G_jlDGrdDi" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGrdpl" resolve="IDeviceExpr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8b">
     <property role="1pbfSe" value="2101745195" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
     <property role="TrG5h" value="ElectrDeviceExpr" />
     <property role="34LRSv" value="electr" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceTypeDotTarget" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
+    <node concept="PrWs8" id="2G_jlDGrdDk" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGrdpl" resolve="IDeviceExpr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8c">
     <property role="1pbfSe" value="2101745194" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
     <property role="TrG5h" value="SmartDeviceExpr" />
     <property role="34LRSv" value="smart" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="DeviceTypeDotTarget" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
+    <node concept="PrWs8" id="2G_jlDGrdOt" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGrdpl" resolve="IDeviceExpr" />
+    </node>
   </node>
   <node concept="PlHQZ" id="23T79tC4AhE">
     <property role="1pbfSe" value="1995734783" />
@@ -912,8 +922,8 @@
   </node>
   <node concept="1TIwiD" id="EXzEoUsgG2">
     <property role="1pbfSe" value="1160681896" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypeExpr" />
-    <property role="TrG5h" value="DeviceTypeDotTarget" />
+    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="TrG5h" value="NodeTypeDotTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -924,7 +934,7 @@
   <node concept="1TIwiD" id="EXzEoUui47">
     <property role="1pbfSe" value="1161211821" />
     <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
-    <property role="TrG5h" value="DeviceType" />
+    <property role="TrG5h" value="NodeType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -934,21 +944,30 @@
     <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
     <property role="TrG5h" value="ElectrDeviceType" />
     <property role="34LRSv" value="electric" />
-    <ref role="1TJDcQ" node="EXzEoUui47" resolve="DeviceType" />
+    <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
+    <node concept="PrWs8" id="2G_jlDGpToh" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7xzoSpGSeYk">
     <property role="1pbfSe" value="448507110" />
     <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
     <property role="TrG5h" value="SmartDeviceType" />
     <property role="34LRSv" value="smart" />
-    <ref role="1TJDcQ" node="EXzEoUui47" resolve="DeviceType" />
+    <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
+    <node concept="PrWs8" id="2G_jlDGpToo" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7xzoSpGSeYl">
     <property role="1pbfSe" value="448507109" />
     <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
     <property role="TrG5h" value="PowerDeviceType" />
     <property role="34LRSv" value="power" />
-    <ref role="1TJDcQ" node="EXzEoUui47" resolve="DeviceType" />
+    <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
+    <node concept="PrWs8" id="2G_jlDGpTom" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3f7bmGhwmis">
     <property role="1pbfSe" value="1162383879" />
@@ -965,6 +984,51 @@
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="2G_jlDGpToa">
+    <property role="1pbfSe" value="1752374428" />
+    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <property role="TrG5h" value="IDeviceType" />
+  </node>
+  <node concept="1TIwiD" id="2G_jlDGrcPw">
+    <property role="1pbfSe" value="1752032582" />
+    <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
+    <property role="TrG5h" value="CAN_TypeExpr" />
+    <property role="34LRSv" value="CAN" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
+    <node concept="PrWs8" id="2G_jlDGtqqu" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IPhysicalBusExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2G_jlDGrcPH">
+    <property role="1pbfSe" value="1752032569" />
+    <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
+    <property role="TrG5h" value="LIN_TypeExpr" />
+    <property role="34LRSv" value="LIN" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
+    <node concept="PrWs8" id="2G_jlDGuzQC" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IPhysicalBusExpr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2G_jlDGrcPU">
+    <property role="1pbfSe" value="1752032556" />
+    <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
+    <property role="TrG5h" value="FlexRay_TypeExpr" />
+    <property role="34LRSv" value="FlexRay" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
+    <node concept="PrWs8" id="2G_jlDGuz$z" role="PzmwI">
+      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IPhysicalBusExpr" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2G_jlDGrdpl">
+    <property role="1pbfSe" value="1752030289" />
+    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
+    <property role="TrG5h" value="IDeviceExpr" />
+  </node>
+  <node concept="PlHQZ" id="2G_jlDGrdTH">
+    <property role="1pbfSe" value="1752028217" />
+    <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
+    <property role="TrG5h" value="IPhysicalBusExpr" />
   </node>
 </model>
 
