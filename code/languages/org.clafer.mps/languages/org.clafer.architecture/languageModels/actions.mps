@@ -675,9 +675,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="7DuSdC$w0ni" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:7DuSdC$vZ6L" resolve="FAArchitecture" />
+      <ref role="3UNGvu" to="ddau:7DuSdC$vZ6L" resolve="FunctionalAnalysisArchitecture" />
       <node concept="tYCnQ" id="7DuSdC$w0nj" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:7DuSdC$vZ6L" resolve="FAArchitecture" />
+        <ref role="uz4UX" to="ddau:7DuSdC$vZ6L" resolve="FunctionalAnalysisArchitecture" />
         <node concept="Cmt7Y" id="7DuSdC$w0nk" role="uz6Si">
           <node concept="Cnhdc" id="7DuSdC$w0nl" role="Cncma">
             <node concept="3clFbS" id="7DuSdC$w0nm" role="2VODD2">
@@ -706,9 +706,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="4xcaXO71$DS" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:4csP6flSWC7" resolve="AFunction" />
+      <ref role="3UNGvu" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
       <node concept="tYCnQ" id="4xcaXO71$DT" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:4csP6flSWC7" resolve="AFunction" />
+        <ref role="uz4UX" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
         <node concept="Cmt7Y" id="4xcaXO71$DU" role="uz6Si">
           <node concept="Cnhdc" id="4xcaXO71$DV" role="Cncma">
             <node concept="3clFbS" id="4xcaXO71$DW" role="2VODD2">
@@ -1098,7 +1098,7 @@
                   </node>
                   <node concept="2OqwBi" id="4IooPifUNDo" role="37vLTJ">
                     <node concept="1PxgMI" id="4IooPifUNwi" role="2Oq$k0">
-                      <ref role="1PxNhF" to="ddau:4csP6flSWC7" resolve="AFunction" />
+                      <ref role="1PxNhF" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
                       <node concept="2OqwBi" id="4IooPifUOF$" role="1PxMeX">
                         <node concept="Cj7Ep" id="4IooPifUNhW" role="2Oq$k0" />
                         <node concept="2Xjw5R" id="4IooPifUOVa" role="2OqNvi">
@@ -1142,7 +1142,7 @@
               </node>
               <node concept="1mIQ4w" id="4IooPifUQTD" role="2OqNvi">
                 <node concept="chp4Y" id="4IooPifUR4X" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:4csP6flSWC7" resolve="AFunction" />
+                  <ref role="cht4Q" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
                 </node>
               </node>
             </node>
@@ -1151,9 +1151,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="2IzCCeKqIEE" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:4csP6flSWC7" resolve="AFunction" />
+      <ref role="3UNGvu" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
       <node concept="tYCnQ" id="2IzCCeKqIEI" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:4csP6flSWC7" resolve="AFunction" />
+        <ref role="uz4UX" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
         <node concept="Cmt7Y" id="2IzCCeKqIEK" role="uz6Si">
           <node concept="Cnhdc" id="2IzCCeKqIEL" role="Cncma">
             <node concept="3clFbS" id="2IzCCeKqIEM" role="2VODD2">
@@ -1189,9 +1189,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="4IooPifUz8_" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:1QRywDjgzUJ" resolve="FAConnector" />
+      <ref role="3UNGvu" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
       <node concept="tYCnQ" id="4IooPifUz8A" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:1QRywDjgzUJ" resolve="FAConnector" />
+        <ref role="uz4UX" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
         <node concept="Cmt7Y" id="4IooPifUz8B" role="uz6Si">
           <node concept="Cnhdc" id="4IooPifUz8C" role="Cncma">
             <node concept="3clFbS" id="4IooPifUz8D" role="2VODD2">
@@ -1360,16 +1360,6 @@
           </node>
           <node concept="3clFbH" id="57FaIEVAqXc" role="3cqZAp" />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="37WguZ" id="3_rlKvvotqw">
-    <property role="3GE5qa" value="QualityModule" />
-    <property role="TrG5h" value="addAncestorQualities" />
-    <node concept="37WvkG" id="3_rlKvvotqx" role="37WGs$">
-      <ref role="37XkoT" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
-      <node concept="37Y9Zx" id="3_rlKvvotqy" role="37ZfLb">
-        <node concept="3clFbS" id="3_rlKvvotqz" role="2VODD2" />
       </node>
     </node>
   </node>
@@ -1753,7 +1743,7 @@
                     </node>
                     <node concept="1mIQ4w" id="2QVp5ERR1b9" role="2OqNvi">
                       <node concept="chp4Y" id="2QVp5ERR1ba" role="cj9EA">
-                        <ref role="cht4Q" to="ddau:1QRywDjgzUJ" resolve="FAConnector" />
+                        <ref role="cht4Q" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
                       </node>
                     </node>
                   </node>
