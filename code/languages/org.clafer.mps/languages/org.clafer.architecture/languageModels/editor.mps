@@ -5620,6 +5620,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="50FM0hzzaxj">
+    <property role="3GE5qa" value="textEditors.QualityModule" />
     <ref role="1XX52x" to="ddau:50FM0hzzawM" resolve="QualityTemp" />
     <node concept="3F1sOY" id="50FM0hzBeBf" role="2wV5jI">
       <ref role="1NtTu8" to="ddau:50FM0hzBeB2" />
