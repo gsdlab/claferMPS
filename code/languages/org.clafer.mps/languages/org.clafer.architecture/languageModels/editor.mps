@@ -185,10 +185,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY">
-        <property id="16410578721444372" name="customizeEmptyCell" index="2ru_X1" />
-        <child id="16410578721629643" name="emptyCellModel" index="2ruayu" />
-      </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
         <reference id="1173177718857" name="elementActionMap" index="APP_o" />
         <child id="1182233390675" name="filter" index="12AuX0" />
@@ -932,13 +929,25 @@
     <property role="3GE5qa" value="components" />
     <ref role="1XX52x" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="3F1sOY" id="72GPbqtkhA5" role="2wV5jI">
-      <property role="2ru_X1" value="true" />
       <ref role="1NtTu8" to="ddau:6Fa64hUbAAy" />
-      <node concept="3EZMnI" id="4PWtdZTtXrH" role="2ruayu">
-        <node concept="VPM3Z" id="4PWtdZTtXrI" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+      <node concept="pkWqt" id="72GPbqtkhSI" role="pqm2j">
+        <node concept="3clFbS" id="72GPbqtkhSJ" role="2VODD2">
+          <node concept="3clFbF" id="72GPbqtki2T" role="3cqZAp">
+            <node concept="2OqwBi" id="2D$aMdfSKB5" role="3clFbG">
+              <node concept="2OqwBi" id="6Fa64hUcrVF" role="2Oq$k0">
+                <node concept="pncrf" id="6Fa64hUcrOw" role="2Oq$k0" />
+                <node concept="Bykcj" id="2D$aMdfSKB2" role="2OqNvi">
+                  <node concept="1aIX9F" id="2D$aMdfSKB3" role="1xVPHs">
+                    <node concept="26LbJo" id="2D$aMdfSKB4" role="1aIX9E">
+                      <ref role="26LbJp" to="ddau:6Fa64hUbAAy" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3GX2aA" id="2D$aMdfSKB6" role="2OqNvi" />
+            </node>
+          </node>
         </node>
-        <node concept="l2Vlx" id="4PWtdZTtXrJ" role="2iSdaV" />
       </node>
     </node>
   </node>
@@ -6698,15 +6707,27 @@
     <property role="TrG5h" value="ArchGroupCard" />
     <ref role="1XX52x" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="3F1sOY" id="5tJ_MV8WM2K" role="2wV5jI">
-      <property role="2ru_X1" value="true" />
       <ref role="1NtTu8" to="ddau:7ErTnvEGNJB" />
-      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
       <ref role="1ERwB7" node="7ErTnvEP6Ft" resolve="ArchElement_removeGroupCardinality" />
-      <node concept="3EZMnI" id="4PWtdZTtXrE" role="2ruayu">
-        <node concept="VPM3Z" id="4PWtdZTtXrF" role="3F10Kt">
-          <property role="VOm3f" value="false" />
+      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+      <node concept="pkWqt" id="4kWdVQToPNw" role="pqm2j">
+        <node concept="3clFbS" id="4kWdVQToPNx" role="2VODD2">
+          <node concept="3clFbF" id="7ErTnvEJDQS" role="3cqZAp">
+            <node concept="2OqwBi" id="7ErTnvEJExh" role="3clFbG">
+              <node concept="2OqwBi" id="7ErTnvEJDWF" role="2Oq$k0">
+                <node concept="pncrf" id="7ErTnvEJDQR" role="2Oq$k0" />
+                <node concept="Bykcj" id="7ErTnvEJEoh" role="2OqNvi">
+                  <node concept="1aIX9F" id="7ErTnvEJEoj" role="1xVPHs">
+                    <node concept="26LbJo" id="7ErTnvEJEtn" role="1aIX9E">
+                      <ref role="26LbJp" to="ddau:7ErTnvEGNJB" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3GX2aA" id="7ErTnvEJEDx" role="2OqNvi" />
+            </node>
+          </node>
         </node>
-        <node concept="l2Vlx" id="4PWtdZTtXrG" role="2iSdaV" />
       </node>
     </node>
   </node>
