@@ -1030,5 +1030,12 @@
     <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
     <property role="TrG5h" value="IPhysicalBusExpr" />
   </node>
+  <node concept="1TIwiD" id="703nGRhCNvb">
+    <property role="1pbfSe" value="1101436568" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityThisExpr" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="mecy:6Ig5vvkWgnt" resolve="ThisExpr" />
+  </node>
 </model>
 
