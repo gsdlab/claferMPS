@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.example.QualityAttributes)">
+<model ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.example.Preferences)">
   <persistence version="9" />
   <languages>
     <use id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core" version="0" />
@@ -24,6 +24,9 @@
       <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
+      <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
+        <child id="8271111493164032678" name="constants" index="3tuoqM" />
+      </concept>
       <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
       <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityTableElementRef" flags="ng" index="3Ev5JQ">
         <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
@@ -33,6 +36,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd" />
     </language>
   </registry>
   <node concept="slzsT" id="H$98wxz$iD">
@@ -175,6 +181,15 @@
       <node concept="3Ev5JQ" id="1wmiO1AQl49" role="3A1vRL">
         <ref role="3Ev5JR" node="1wmiO1AQl45" resolve="warrantyCost" />
       </node>
+    </node>
+  </node>
+  <node concept="3tocZL" id="7b8T1iJGcgf">
+    <property role="TrG5h" value="Preferences" />
+    <node concept="UH0sd" id="7b8T1iJHTMV" role="3tuoqM">
+      <property role="TrG5h" value="asd" />
+    </node>
+    <node concept="UH0sd" id="7b8T1iJHVV4" role="3tuoqM">
+      <property role="TrG5h" value="asd" />
     </node>
   </node>
 </model>

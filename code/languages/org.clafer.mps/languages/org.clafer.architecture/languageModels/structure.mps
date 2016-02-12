@@ -1037,5 +1037,20 @@
     <property role="34LRSv" value="this" />
     <ref role="1TJDcQ" to="mecy:6Ig5vvkWgnt" resolve="ThisExpr" />
   </node>
+  <node concept="1TIwiD" id="7b8T1iJE2J_">
+    <property role="1pbfSe" value="577835001" />
+    <property role="TrG5h" value="Preferences" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7b8T1iJGmaA" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constants" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
+    </node>
+    <node concept="PrWs8" id="7b8T1iJE2Sf" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
+  </node>
 </model>
 

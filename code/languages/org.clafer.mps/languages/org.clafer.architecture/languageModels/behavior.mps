@@ -3315,5 +3315,55 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="7b8T1iJE2SG">
+    <ref role="13h7C2" to="ddau:7b8T1iJE2J_" resolve="Preferences" />
+    <node concept="13i0hz" id="7b8T1iJE31y" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getParentPopup" />
+      <ref role="13i0hy" to="hwgx:1uL8CIsKxiy" resolve="getParentPopup" />
+      <node concept="3Tm1VV" id="7b8T1iJE31z" role="1B3o_S" />
+      <node concept="3clFbS" id="7b8T1iJE31$" role="3clF47">
+        <node concept="3clFbF" id="7b8T1iJE31_" role="3cqZAp">
+          <node concept="10Nm6u" id="7b8T1iJE31A" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="17QB3L" id="7b8T1iJE31B" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7b8T1iJE31C" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSortOrder" />
+      <ref role="13i0hy" to="hwgx:1uL8CIs6rGR" resolve="getSortOrder" />
+      <node concept="3Tm1VV" id="7b8T1iJE31D" role="1B3o_S" />
+      <node concept="3clFbS" id="7b8T1iJE31E" role="3clF47">
+        <node concept="3clFbF" id="7b8T1iJE31F" role="3cqZAp">
+          <node concept="3cmrfG" id="7b8T1iJE31G" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="7b8T1iJE31H" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7b8T1iJE32o" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getIDEDisplayString" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="hwgx:IviauXb0g" resolve="getIDEDisplayString" />
+      <node concept="3Tm1VV" id="7b8T1iJE32p" role="1B3o_S" />
+      <node concept="3clFbS" id="7b8T1iJE32q" role="3clF47">
+        <node concept="3clFbF" id="7b8T1iJE32r" role="3cqZAp">
+          <node concept="Xl_RD" id="7b8T1iJE32s" role="3clFbG">
+            <property role="Xl_RC" value="Preferences" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7b8T1iJE32t" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="7b8T1iJE2SH" role="13h7CW">
+      <node concept="3clFbS" id="7b8T1iJE2SI" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
