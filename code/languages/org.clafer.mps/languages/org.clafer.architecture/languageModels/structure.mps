@@ -1059,5 +1059,40 @@
     <property role="TrG5h" value="ConstantExpr" />
     <ref role="1TJDcQ" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
   </node>
+  <node concept="1TIwiD" id="xdMRpnv7Gw">
+    <property role="1pbfSe" value="1607091862" />
+    <property role="3GE5qa" value="Preferences" />
+    <property role="TrG5h" value="Constant" />
+    <ref role="1TJDcQ" node="xdMRpnvdAm" resolve="ConstantElement" />
+    <node concept="1TJgyj" id="xdMRpnvcQq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="xdMRpnCHBZ" role="PzmwI">
+      <ref role="PrY4T" to="mecy:xdMRpnCdR0" resolve="IPrimitiveClaferType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="xdMRpnvdAm">
+    <property role="1pbfSe" value="1607116044" />
+    <property role="3GE5qa" value="Preferences" />
+    <property role="TrG5h" value="ConstantElement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+  </node>
+  <node concept="1TIwiD" id="xdMRpnxjZW">
+    <property role="1pbfSe" value="1607666546" />
+    <property role="3GE5qa" value="Preferences" />
+    <property role="TrG5h" value="ConstantsGroup" />
+    <ref role="1TJDcQ" node="xdMRpnvdAm" resolve="ConstantElement" />
+    <node concept="1TJgyj" id="xdMRpnxk0c" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="children" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="xdMRpnvdAm" resolve="ConstantElement" />
+    </node>
+  </node>
 </model>
 

@@ -27,6 +27,12 @@
       <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
         <child id="8271111493164032678" name="constants" index="3tuoqM" />
       </concept>
+      <concept id="598358034644499232" name="org.clafer.architecture.structure.Constant" flags="ng" index="1vcr1m">
+        <child id="598358034644520346" name="value" index="1vcgrG" />
+      </concept>
+      <concept id="598358034645073916" name="org.clafer.architecture.structure.ConstantGroup" flags="ng" index="1vMfia">
+        <child id="598358034645073932" name="children" index="1vM8HU" />
+      </concept>
       <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
       <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityTableElementRef" flags="ng" index="3Ev5JQ">
         <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
@@ -37,8 +43,11 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
-      <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd" />
+    <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
+      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
   </registry>
   <node concept="slzsT" id="H$98wxz$iD">
@@ -185,11 +194,17 @@
   </node>
   <node concept="3tocZL" id="7b8T1iJGcgf">
     <property role="TrG5h" value="Preferences" />
-    <node concept="UH0sd" id="7b8T1iJHTMV" role="3tuoqM">
+    <node concept="1vcr1m" id="xdMRpnwon6" role="3tuoqM">
       <property role="TrG5h" value="Constant1" />
+      <node concept="3TlMh9" id="xdMRpnxjWd" role="1vcgrG">
+        <property role="2hmy$m" value="5" />
+      </node>
     </node>
-    <node concept="UH0sd" id="7b8T1iJHVV4" role="3tuoqM">
-      <property role="TrG5h" value="Contsant2" />
+    <node concept="1vMfia" id="xdMRpn$5jv" role="3tuoqM">
+      <property role="TrG5h" value="test" />
+      <node concept="1vMfia" id="xdMRpn$5jD" role="1vM8HU">
+        <property role="TrG5h" value="testInner" />
+      </node>
     </node>
   </node>
 </model>

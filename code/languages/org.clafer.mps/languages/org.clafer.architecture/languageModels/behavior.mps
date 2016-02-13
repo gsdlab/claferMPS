@@ -3392,5 +3392,33 @@
       <node concept="3clFbS" id="7b8T1iJE2SI" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="xdMRpn$aPs">
+    <property role="3GE5qa" value="Preferences" />
+    <ref role="13h7C2" to="ddau:xdMRpnxjZW" resolve="ConstantGroup" />
+    <node concept="13i0hz" id="xdMRpn$aPU" role="13h7CS">
+      <property role="TrG5h" value="getClaferScope" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="f5p9:72GPbqtdfLI" resolve="getClaferScope" />
+      <node concept="3clFbS" id="xdMRpn$aPW" role="3clF47">
+        <node concept="3clFbF" id="xdMRpn$aQ9" role="3cqZAp">
+          <node concept="2OqwBi" id="xdMRpn$aUM" role="3clFbG">
+            <node concept="13iPFW" id="xdMRpn$aQ8" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="xdMRpn$bdr" role="2OqNvi">
+              <ref role="3TtcxE" to="ddau:xdMRpnxk0c" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="xdMRpn$aQ2" role="3clF45">
+        <node concept="3Tqbb2" id="xdMRpn$aQ3" role="A3Ik2">
+          <ref role="ehGHo" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="xdMRpn$aQ4" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="xdMRpn$aPt" role="13h7CW">
+      <node concept="3clFbS" id="xdMRpn$aPu" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
