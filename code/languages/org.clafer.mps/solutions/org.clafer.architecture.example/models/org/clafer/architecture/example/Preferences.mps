@@ -186,10 +186,10 @@
   <node concept="3tocZL" id="7b8T1iJGcgf">
     <property role="TrG5h" value="Preferences" />
     <node concept="UH0sd" id="7b8T1iJHTMV" role="3tuoqM">
-      <property role="TrG5h" value="asd" />
+      <property role="TrG5h" value="Constant1" />
     </node>
     <node concept="UH0sd" id="7b8T1iJHVV4" role="3tuoqM">
-      <property role="TrG5h" value="asd" />
+      <property role="TrG5h" value="Contsant2" />
     </node>
   </node>
 </model>

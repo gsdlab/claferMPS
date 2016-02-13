@@ -6,7 +6,6 @@
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
-    <import index="3fny" ref="r:540d349c-81ff-410c-8f3c-04485d1ff1d6(org.clafer.architecture.baseConcepts.baseConcepts)" />
     <import index="t4ow" ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.example.Preferences)" />
   </imports>
   <registry>
@@ -3172,7 +3171,6 @@
           </node>
         </node>
       </node>
-      <node concept="UzEYP" id="7otgDTemvwj" role="2mZOl8" />
       <node concept="2l49t0" id="7otgDTemvwW" role="2mZOl8">
         <property role="TrG5h" value="PassengerDoorLockMotorAssembly" />
         <node concept="kIXAu" id="7otgDTemvxk" role="kIXCp" />
@@ -3217,7 +3215,6 @@
           </node>
         </node>
       </node>
-      <node concept="UzEYP" id="7otgDTemvyK" role="2mZOl8" />
       <node concept="2l49t0" id="7otgDTemvzZ" role="2mZOl8">
         <property role="TrG5h" value="RearRightPassengerDoorLockMotorAssembly" />
         <node concept="kIXAu" id="7otgDTemv$0" role="kIXCp" />
