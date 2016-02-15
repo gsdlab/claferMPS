@@ -2753,8 +2753,8 @@
                   <node concept="2OqwBi" id="19aTRzkRQO$" role="3uHU7w">
                     <node concept="otxO1" id="19aTRzkRQO_" role="2Oq$k0" />
                     <node concept="2Zo12i" id="19aTRzkRQOA" role="2OqNvi">
-                      <node concept="chp4Y" id="19aTRzkRRdy" role="2Zo12j">
-                        <ref role="cht4Q" to="ddau:19aTRzkPSlW" resolve="DataConnector" />
+                      <node concept="chp4Y" id="1T6YVZdABCx" role="2Zo12j">
+                        <ref role="cht4Q" to="ddau:19aTRzkPQU0" resolve="HardwareConnector" />
                       </node>
                     </node>
                   </node>
@@ -3391,28 +3391,28 @@
         <node concept="3clFbJ" id="1XvwwfKxg6S" role="3cqZAp">
           <node concept="3clFbS" id="1XvwwfKxg6T" role="3clFbx">
             <node concept="3cpWs6" id="1XvwwfKxhLw" role="3cqZAp">
-              <node concept="22lmx$" id="2toL5DMUupu" role="3cqZAk">
-                <node concept="2OqwBi" id="2toL5DMUuDc" role="3uHU7w">
-                  <node concept="otxO1" id="2toL5DMUuwJ" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="2toL5DMUuTD" role="2OqNvi">
-                    <node concept="chp4Y" id="2toL5DN23$D" role="2Zo12j">
+              <node concept="22lmx$" id="1T6YVZdAGUx" role="3cqZAk">
+                <node concept="2OqwBi" id="1T6YVZdAGUy" role="3uHU7w">
+                  <node concept="otxO1" id="1T6YVZdAGUz" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="1T6YVZdAGU$" role="2OqNvi">
+                    <node concept="chp4Y" id="1T6YVZdAGU_" role="2Zo12j">
                       <ref role="cht4Q" to="ddau:2toL5DN235n" resolve="ArchParens" />
                     </node>
                   </node>
                 </node>
-                <node concept="22lmx$" id="1XvwwfK$KpT" role="3uHU7B">
-                  <node concept="2OqwBi" id="1XvwwfKxiBt" role="3uHU7B">
-                    <node concept="otxO1" id="1XvwwfKxhVU" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="1XvwwfKxiQP" role="2OqNvi">
-                      <node concept="chp4Y" id="1XvwwfKyqc0" role="2Zo12j">
+                <node concept="22lmx$" id="1T6YVZdAGUA" role="3uHU7B">
+                  <node concept="2OqwBi" id="1T6YVZdAGUB" role="3uHU7B">
+                    <node concept="otxO1" id="1T6YVZdAGUC" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="1T6YVZdAGUD" role="2OqNvi">
+                      <node concept="chp4Y" id="1T6YVZdAGUE" role="2Zo12j">
                         <ref role="cht4Q" to="ddau:1XvwwfKtGGx" resolve="ArchRef" />
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="1XvwwfK$K_C" role="3uHU7w">
-                    <node concept="otxO1" id="1XvwwfK$Kwt" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="1XvwwfK$KPV" role="2OqNvi">
-                      <node concept="chp4Y" id="2toL5DN238K" role="2Zo12j">
+                  <node concept="2OqwBi" id="1T6YVZdAGUF" role="3uHU7w">
+                    <node concept="otxO1" id="1T6YVZdAGUG" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="1T6YVZdAGUH" role="2OqNvi">
+                      <node concept="chp4Y" id="1T6YVZdAGUI" role="2Zo12j">
                         <ref role="cht4Q" to="ddau:2toL5DMUBtT" resolve="ArchLogicalExpr" />
                       </node>
                     </node>
@@ -3909,7 +3909,7 @@
       <node concept="3clFbS" id="50FM0hzx8b5" role="2VODD2">
         <node concept="3SKdUt" id="7ErTnvEVZC2" role="3cqZAp">
           <node concept="3SKdUq" id="7ErTnvEVZC4" role="3SKWNk">
-            <property role="3SKdUp" value="Connector" />
+            <property role="3SKdUp" value="Connector/Gateway/RealizedBy" />
           </node>
         </node>
         <node concept="3clFbJ" id="50FM0hzx8h4" role="3cqZAp">
@@ -3945,20 +3945,29 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="50FM0hzx8CM" role="3clFbw">
-            <node concept="3clFbC" id="50FM0hzx8hl" role="3uHU7B">
-              <node concept="oXsJc" id="50FM0hzx8hn" role="3uHU7B" />
-              <node concept="28GBK8" id="50FM0hzx8hm" role="3uHU7w">
-                <ref role="28GBKb" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-                <ref role="28H3Ia" to="ddau:5OLu9WxSgwO" />
+          <node concept="22lmx$" id="1T6YVZd_nX0" role="3clFbw">
+            <node concept="22lmx$" id="50FM0hzx8CM" role="3uHU7B">
+              <node concept="3clFbC" id="50FM0hzx8hl" role="3uHU7B">
+                <node concept="oXsJc" id="50FM0hzx8hn" role="3uHU7B" />
+                <node concept="28GBK8" id="50FM0hzx8hm" role="3uHU7w">
+                  <ref role="28GBKb" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                  <ref role="28H3Ia" to="ddau:5OLu9WxSgwO" />
+                </node>
+              </node>
+              <node concept="3clFbC" id="50FM0hzx8GC" role="3uHU7w">
+                <node concept="oXsJc" id="50FM0hzx8GE" role="3uHU7B" />
+                <node concept="28GBK8" id="50FM0hzx8GD" role="3uHU7w">
+                  <ref role="28GBKb" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                  <ref role="28H3Ia" to="ddau:5OLu9WxUqZ1" />
+                </node>
               </node>
             </node>
-            <node concept="3clFbC" id="50FM0hzx8GC" role="3uHU7w">
-              <node concept="28GBK8" id="50FM0hzx8GD" role="3uHU7w">
+            <node concept="3clFbC" id="1T6YVZd_orL" role="3uHU7w">
+              <node concept="oXsJc" id="1T6YVZd_oj4" role="3uHU7B" />
+              <node concept="28GBK8" id="1T6YVZd_o1y" role="3uHU7w">
+                <ref role="28H3Ia" to="ddau:1T6YVZd_nx0" />
                 <ref role="28GBKb" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-                <ref role="28H3Ia" to="ddau:5OLu9WxUqZ1" />
               </node>
-              <node concept="oXsJc" id="50FM0hzx8GE" role="3uHU7B" />
             </node>
           </node>
         </node>

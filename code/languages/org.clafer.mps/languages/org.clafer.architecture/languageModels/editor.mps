@@ -4380,6 +4380,7 @@
       </node>
       <node concept="3F0A7n" id="6yDAYyfKAJs" role="3EZMnx">
         <ref role="1NtTu8" to="ddau:$OrRLOoafo" resolve="type" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
       </node>
       <node concept="PMmxH" id="6yDAYyfK_ZB" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
@@ -5472,6 +5473,12 @@
       <node concept="3F1sOY" id="5OLu9WxSfmT" role="3EZMnx">
         <property role="1$x2rV" value="realization" />
         <ref role="1NtTu8" to="ddau:5OLu9WxSgwO" />
+      </node>
+      <node concept="3F0ifn" id="1T6YVZd_nAf" role="3EZMnx">
+        <property role="3F0ifm" value="realized by" />
+      </node>
+      <node concept="3F1sOY" id="1T6YVZd_nEj" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:1T6YVZd_nx0" />
       </node>
       <node concept="3EZMnI" id="5OLu9WxU_ib" role="3EZMnx">
         <node concept="VPM3Z" id="5OLu9WxU_id" role="3F10Kt">
