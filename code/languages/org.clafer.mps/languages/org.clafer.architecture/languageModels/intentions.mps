@@ -1025,7 +1025,7 @@
       <node concept="3clFbS" id="WgjoVd3she" role="2VODD2">
         <node concept="3clFbF" id="WgjoVd3sjf" role="3cqZAp">
           <node concept="Xl_RD" id="WgjoVd3sje" role="3clFbG">
-            <property role="Xl_RC" value="Add Type" />
+            <property role="Xl_RC" value="Add Device Type" />
           </node>
         </node>
       </node>

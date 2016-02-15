@@ -108,6 +108,7 @@
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
+        <property id="6300420630909718843" name="isAbstract" index="2vxgol" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
       <concept id="7389562969670798191" name="org.clafer.core.structure.XorCard" flags="ng" index="3E5GGL" />
@@ -3300,6 +3301,10 @@
           </node>
         </node>
       </node>
+      <node concept="UzEYP" id="1T6YVZdklgJ" role="2mZOl8" />
+      <node concept="2l49t0" id="1T6YVZdtbcv" role="2mZOl8">
+        <node concept="kwSKi" id="1T6YVZdtbjJ" role="kIXCp" />
+      </node>
       <node concept="UzEYP" id="7otgDTemv_y" role="2mZOl8" />
       <node concept="2l49t0" id="7otgDTemvDg" role="2mZOl8">
         <property role="TrG5h" value="RearLeftChildLockSwitch" />
@@ -3343,6 +3348,13 @@
           <node concept="3TlMh9" id="7otgDTemvDx" role="33KLot">
             <property role="2hmy$m" value="16" />
           </node>
+        </node>
+        <node concept="UH0sd" id="1T6YVZdjnsi" role="2mZOl8">
+          <property role="TrG5h" value="test" />
+          <property role="2vxgol" value="true" />
+        </node>
+        <node concept="UH0sd" id="1T6YVZdjnsn" role="2mZOl8">
+          <property role="TrG5h" value="s" />
         </node>
       </node>
       <node concept="UzEYP" id="7otgDTemvAt" role="2mZOl8" />
