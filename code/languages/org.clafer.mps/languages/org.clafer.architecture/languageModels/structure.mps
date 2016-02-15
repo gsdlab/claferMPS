@@ -755,6 +755,10 @@
     <property role="R4oN_" value="define quality attributes" />
     <property role="3GE5qa" value="QualityModule" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1T6YVZdbieB" role="1TKVEl">
+      <property role="TrG5h" value="visible" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6kt45HTj4nJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tuples" />

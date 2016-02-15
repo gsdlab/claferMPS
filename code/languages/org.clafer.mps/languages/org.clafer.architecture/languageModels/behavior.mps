@@ -1118,15 +1118,10 @@
             <node concept="2I9FWS" id="6mpz4vWcDqQ" role="1tU5fm">
               <ref role="2I9WkF" to="ddau:6kt45HTiMty" resolve="QualityModule" />
             </node>
-            <node concept="2OqwBi" id="6mpz4vWcDqR" role="33vP2m">
-              <node concept="2OqwBi" id="6mpz4vWcDqS" role="2Oq$k0">
-                <node concept="37vLTw" id="6mpz4vWcOEl" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6mpz4vWcOgQ" resolve="node" />
-                </node>
-                <node concept="I4A8Y" id="6mpz4vWcDqT" role="2OqNvi" />
-              </node>
-              <node concept="3lApI0" id="6mpz4vWcDqU" role="2OqNvi">
-                <ref role="3lApI3" to="ddau:6kt45HTiMty" resolve="QualityModule" />
+            <node concept="2OqwBi" id="1T6YVZddSh2" role="33vP2m">
+              <node concept="13iPFW" id="1T6YVZddRY1" role="2Oq$k0" />
+              <node concept="2qgKlT" id="1T6YVZddSK6" role="2OqNvi">
+                <ref role="37wK5l" node="1T6YVZddqd$" resolve="getQualityModules" />
               </node>
             </node>
           </node>
@@ -2396,6 +2391,21 @@
         <ref role="2I9WkF" to="ddau:6kt45HTiMty" resolve="QualityModule" />
       </node>
     </node>
+    <node concept="13i0hz" id="1T6YVZde0zE" role="13h7CS">
+      <property role="TrG5h" value="isVisible" />
+      <node concept="3Tm1VV" id="1T6YVZde0zF" role="1B3o_S" />
+      <node concept="3clFbS" id="1T6YVZde0zG" role="3clF47">
+        <node concept="3cpWs6" id="1T6YVZde0WH" role="3cqZAp">
+          <node concept="2OqwBi" id="1T6YVZde0MF" role="3cqZAk">
+            <node concept="13iPFW" id="1T6YVZde0Hq" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1T6YVZde0W6" role="2OqNvi">
+              <ref role="3TsBF5" to="ddau:1T6YVZdbieB" resolve="visible" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1T6YVZde0Hn" role="3clF45" />
+    </node>
     <node concept="13i0hz" id="5EXaBxYdRw1" role="13h7CS">
       <property role="TrG5h" value="getImportedQAModules" />
       <property role="2Ki8OM" value="false" />
@@ -3147,6 +3157,26 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1T6YVZddqd$" role="13h7CS">
+      <property role="TrG5h" value="getQualityModules" />
+      <node concept="3Tm1VV" id="1T6YVZddqd_" role="1B3o_S" />
+      <node concept="3clFbS" id="1T6YVZddqdA" role="3clF47">
+        <node concept="3cpWs6" id="1T6YVZddsaN" role="3cqZAp">
+          <node concept="2OqwBi" id="1T6YVZddsb2" role="3cqZAk">
+            <node concept="2OqwBi" id="1T6YVZddsb3" role="2Oq$k0">
+              <node concept="13iPFW" id="1T6YVZddsiv" role="2Oq$k0" />
+              <node concept="I4A8Y" id="1T6YVZddsb5" role="2OqNvi" />
+            </node>
+            <node concept="3lApI0" id="1T6YVZddsb6" role="2OqNvi">
+              <ref role="3lApI3" to="ddau:6kt45HTiMty" resolve="QualityModule" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="1T6YVZddZJ6" role="3clF45">
+        <ref role="2I9WkF" to="ddau:6kt45HTiMty" resolve="QualityModule" />
+      </node>
+    </node>
     <node concept="13hLZK" id="1wJvPhFn__1" role="13h7CW">
       <node concept="3clFbS" id="1wJvPhFn__2" role="2VODD2" />
     </node>
@@ -3394,7 +3424,7 @@
   </node>
   <node concept="13h7C7" id="xdMRpn$aPs">
     <property role="3GE5qa" value="Preferences" />
-    <ref role="13h7C2" to="ddau:xdMRpnxjZW" resolve="ConstantGroup" />
+    <ref role="13h7C2" to="ddau:xdMRpnxjZW" resolve="ConstantsGroup" />
     <node concept="13i0hz" id="xdMRpn$aPU" role="13h7CS">
       <property role="TrG5h" value="getClaferScope" />
       <property role="2Ki8OM" value="false" />
