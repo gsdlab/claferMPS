@@ -10,6 +10,7 @@
     <import index="ywuy" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd9(org.clafer.expr.behavior)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -844,6 +845,67 @@
         <node concept="lc7rE" id="7ErTnvEW5qV" role="3cqZAp">
           <node concept="la8eA" id="7ErTnvEW5qW" role="lcghm">
             <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3iBNEMrdDPe">
+    <property role="3GE5qa" value="expr.clafer" />
+    <ref role="WuzLi" to="mj1k:3WlRoWdWNWR" resolve="SetCardinalityExpression" />
+    <node concept="11bSqf" id="3iBNEMrdDPf" role="11c4hB">
+      <node concept="3clFbS" id="3iBNEMrdDPg" role="2VODD2">
+        <node concept="lc7rE" id="3iBNEMrdDQ8" role="3cqZAp">
+          <node concept="la8eA" id="3iBNEMrdDQm" role="lcghm">
+            <property role="lacIc" value="#(" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="3iBNEMrdDRv" role="3cqZAp">
+          <node concept="l9hG8" id="3iBNEMrdDRN" role="lcghm">
+            <node concept="2OqwBi" id="3iBNEMrdDVh" role="lb14g">
+              <node concept="117lpO" id="3iBNEMrdDSz" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3iBNEMrdE1_" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1k:6iIoqg1yDLg" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="3iBNEMrdDQO" role="3cqZAp">
+          <node concept="la8eA" id="3iBNEMrdDQP" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3iBNEMrdF96">
+    <property role="3GE5qa" value="expr.clafer.goals" />
+    <ref role="WuzLi" to="mj1k:3WlRoWe5nwB" resolve="GoalExpression" />
+    <node concept="11bSqf" id="3iBNEMrdF97" role="11c4hB">
+      <node concept="3clFbS" id="3iBNEMrdF98" role="2VODD2">
+        <node concept="lc7rE" id="3iBNEMrdF9q" role="3cqZAp">
+          <node concept="l9hG8" id="3iBNEMrdF9C" role="lcghm">
+            <node concept="2OqwBi" id="3iBNEMrdFdt" role="lb14g">
+              <node concept="117lpO" id="3iBNEMrdFao" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3iBNEMrdFt4" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="3iBNEMrdFuU" role="3cqZAp">
+          <node concept="la8eA" id="3iBNEMrdF_h" role="lcghm">
+            <property role="lacIc" value=" " />
+          </node>
+        </node>
+        <node concept="lc7rE" id="3iBNEMrdFw0" role="3cqZAp">
+          <node concept="l9hG8" id="3iBNEMrdFw1" role="lcghm">
+            <node concept="2OqwBi" id="3iBNEMrdFw2" role="lb14g">
+              <node concept="117lpO" id="3iBNEMrdFw3" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3iBNEMrdFIP" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1k:6iIoqg1yDLg" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
