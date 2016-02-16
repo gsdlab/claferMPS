@@ -3302,9 +3302,6 @@
         </node>
       </node>
       <node concept="UzEYP" id="1T6YVZdklgJ" role="2mZOl8" />
-      <node concept="2l49t0" id="1T6YVZdtbcv" role="2mZOl8">
-        <node concept="kwSKi" id="1T6YVZdtbjJ" role="kIXCp" />
-      </node>
       <node concept="UzEYP" id="7otgDTemv_y" role="2mZOl8" />
       <node concept="2l49t0" id="7otgDTemvDg" role="2mZOl8">
         <property role="TrG5h" value="RearLeftChildLockSwitch" />

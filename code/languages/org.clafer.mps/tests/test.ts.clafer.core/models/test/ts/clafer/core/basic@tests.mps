@@ -362,15 +362,14 @@
         </node>
         <node concept="UH0sd" id="3WlRoWeC6O$" role="UzTCv">
           <property role="TrG5h" value="C10" />
-          <node concept="2vxhU1" id="3WlRoWeC6R4" role="2vBoQc">
-            <property role="uIOVW" value="0" />
-            <property role="uIOVY" value="-1" />
-          </node>
           <node concept="UH0sd" id="3WlRoWeEBTr" role="2vwUiP">
             <property role="TrG5h" value="C11" />
           </node>
           <node concept="UH0sd" id="3WlRoWeEBTw" role="2vwUiP">
             <property role="TrG5h" value="C12" />
+          </node>
+          <node concept="3Edjpn" id="3iBNEMrctLx" role="2vBoQc">
+            <property role="3Edjpk" value="1" />
           </node>
         </node>
         <node concept="UH0sd" id="3WlRoWeC62S" role="UzTCv">

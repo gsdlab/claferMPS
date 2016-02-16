@@ -86,6 +86,7 @@
       <concept id="6300420630909716911" name="org.clafer.core.structure.RangeCardinality" flags="ng" index="2vxhU1">
         <property id="9220590295543795961" name="min" index="uIOVW" />
         <property id="9220590295543795963" name="max" index="uIOVY" />
+        <property id="4487968718073694674" name="maxString" index="1H$nSn" />
       </concept>
       <concept id="6300420630909714375" name="org.clafer.core.structure.Goal" flags="ng" index="2vxuzD">
         <child id="2851923306471141996" name="expr" index="ZiEdf" />
@@ -132,6 +133,9 @@
       <concept id="7389562969670486691" name="org.clafer.core.structure.StarCard" flags="ng" index="3E6wFX" />
       <concept id="7389562969672659109" name="org.clafer.core.structure.PlusCard" flags="ng" index="3Edj3V" />
       <concept id="7389562969672659468" name="org.clafer.core.structure.QuestionMarkCard" flags="ng" index="3Edj9i" />
+      <concept id="7389562969672660489" name="org.clafer.core.structure.NumberCard" flags="ng" index="3Edjpn">
+        <property id="7389562969672660490" name="number" index="3Edjpk" />
+      </concept>
       <concept id="7389562969672672893" name="org.clafer.core.structure.OrCard" flags="ng" index="3Edmoz" />
       <concept id="7389562969672673066" name="org.clafer.core.structure.MuxCard" flags="ng" index="3EdmtO" />
     </language>
@@ -186,7 +190,8 @@
       </node>
       <node concept="2vxhU1" id="4fqVouxuXu8" role="2vBZf8">
         <property role="uIOVW" value="1" />
-        <property role="uIOVY" value="2" />
+        <property role="uIOVY" value="3" />
+        <property role="1H$nSn" value="3" />
       </node>
     </node>
     <node concept="UzEYP" id="5Rg5_Rc3dCS" role="UzTCv" />
@@ -281,7 +286,8 @@
       </node>
       <node concept="2vxhU1" id="3WlRoWetElQ" role="2vBZf8">
         <property role="uIOVW" value="0" />
-        <property role="uIOVY" value="2" />
+        <property role="uIOVY" value="5" />
+        <property role="1H$nSn" value="5" />
       </node>
       <node concept="3Edmoz" id="6qd05UcLhmm" role="2vBoQc" />
       <node concept="1z9TsT" id="3WlRoWevays" role="lGtFl">
@@ -392,9 +398,8 @@
           <ref role="ZpTZD" node="5QP5yNVcRfc" resolve="Device" />
         </node>
       </node>
-      <node concept="2vxhU1" id="5QP5yNVcUvD" role="2vBZf8">
-        <property role="uIOVW" value="2" />
-        <property role="uIOVY" value="4" />
+      <node concept="3Edjpn" id="3iBNEMrct03" role="2vBZf8">
+        <property role="3Edjpk" value="2" />
       </node>
     </node>
     <node concept="UzEYP" id="5Rg5_Rc2YzZ" role="UzTCv" />
@@ -1073,10 +1078,6 @@
         <node concept="2vxcI6" id="3WlRoWevl94" role="2vxcI2">
           <ref role="2vxcI7" node="3WlRoWevkA$" resolve="display" />
         </node>
-        <node concept="2vxhU1" id="3WlRoWevl96" role="2vBZf8">
-          <property role="uIOVW" value="1" />
-          <property role="uIOVY" value="2" />
-        </node>
         <node concept="2vxuzR" id="3WlRoWevl98" role="2vwUiP">
           <node concept="LcOQU" id="3WlRoWevl9o" role="3WnoGb">
             <node concept="2qmXGp" id="1QRywDj1Ouw" role="1_9fRO">
@@ -1112,6 +1113,9 @@
               <ref role="ZpOSt" node="3WlRoWevjHZ" resolve="cache" />
             </node>
           </node>
+        </node>
+        <node concept="3Edjpn" id="3iBNEMrcteu" role="2vBZf8">
+          <property role="3Edjpk" value="1" />
         </node>
       </node>
       <node concept="UzEYP" id="1QRywDj4NSb" role="2vwUiP" />
