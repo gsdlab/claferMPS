@@ -361,6 +361,9 @@
     <node concept="PrWs8" id="$OrRLOu554" role="PzmwI">
       <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
+    <node concept="PrWs8" id="32wpDnehaVc" role="PzmwI">
+      <ref role="PrY4T" node="32wpDneh2zd" resolve="IHaveNotSuperClafer" />
+    </node>
     <node concept="1TJgyj" id="$OrRLOvD_w" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="refToDevice" />
@@ -522,11 +525,8 @@
     <property role="34LRSv" value="Discrete Wire Connector" />
     <property role="1pbfSe" value="417174256" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="DataConnector" />
-    <node concept="1TJgyj" id="5OLu9WxD38X" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="realizedBy" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <node concept="PrWs8" id="32wpDnej1bf" role="PzmwI">
+      <ref role="PrY4T" node="32wpDnej1aX" resolve="IHaveRealization" />
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSoJ">
@@ -541,16 +541,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
-    <node concept="1TJgyj" id="1T6YVZd_nx0" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="realizedBy" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
-    </node>
     <node concept="1TJgyj" id="5OLu9WxUqZ1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="gateway" />
       <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="32wpDnensNz" role="PzmwI">
+      <ref role="PrY4T" node="32wpDnej1aX" resolve="IHaveRealization" />
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSt3">
@@ -703,13 +700,6 @@
       <ref role="PrY4T" node="2toL5DN39dr" resolve="IArchExpr" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2toL5DMUByY">
-    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
-    <property role="TrG5h" value="ArchLogicalAND" />
-    <property role="34LRSv" value="AND" />
-    <property role="1pbfSe" value="1706869480" />
-    <ref role="1TJDcQ" node="2toL5DMUBtT" resolve="ArchLogicalExpr" />
-  </node>
   <node concept="1TIwiD" id="2toL5DN235n">
     <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <property role="TrG5h" value="ArchParens" />
@@ -727,9 +717,9 @@
   </node>
   <node concept="1TIwiD" id="2toL5DN3CNJ">
     <property role="3GE5qa" value="Wiring.CommunicationTopology" />
-    <property role="TrG5h" value="ArchLogicalOR" />
-    <property role="34LRSv" value="OR" />
+    <property role="TrG5h" value="ArchLogicalComma" />
     <property role="1pbfSe" value="1704505015" />
+    <property role="34LRSv" value="," />
     <ref role="1TJDcQ" node="2toL5DMUBtT" resolve="ArchLogicalExpr" />
   </node>
   <node concept="1TIwiD" id="50FM0hzzawM">
@@ -1102,6 +1092,22 @@
       <property role="20kJfa" value="children" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="xdMRpnvdAm" resolve="ConstantElement" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="32wpDneh2zd">
+    <property role="1pbfSe" value="18575518" />
+    <property role="3GE5qa" value="Interfaces" />
+    <property role="TrG5h" value="IHaveNotSuperClafer" />
+  </node>
+  <node concept="PlHQZ" id="32wpDnej1aX">
+    <property role="1pbfSe" value="18056878" />
+    <property role="3GE5qa" value="Interfaces" />
+    <property role="TrG5h" value="IHaveRealization" />
+    <node concept="1TJgyj" id="32wpDnej1b7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="realizedBy" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>

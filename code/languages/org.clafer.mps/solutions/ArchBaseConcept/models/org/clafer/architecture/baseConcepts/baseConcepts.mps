@@ -843,20 +843,17 @@
         <node concept="2vxcI6" id="4NBd3iZk1Mv" role="2vxcI2">
           <ref role="2vxcI7" node="4NBd3iZk1M0" resolve="PhysicalWire" />
         </node>
-        <node concept="UH0sd" id="4NBd3iZk1Mw" role="2vwUiP">
-          <property role="TrG5h" value="sender" />
-          <node concept="2K4itw" id="4NBd3iZk1Mx" role="2K4itM">
-            <node concept="ZpTZE" id="4NBd3iZk1My" role="3J4IUC">
+        <node concept="UH0sd" id="32wpDneq85n" role="2vwUiP">
+          <property role="TrG5h" value="connects" />
+          <node concept="2K4itw" id="32wpDneq85o" role="2K4itM">
+            <node concept="ZpTZE" id="32wpDneq85p" role="3J4IUC">
               <ref role="ZpTZD" node="4NBd3iZk1Kc" resolve="DeviceNode" />
             </node>
           </node>
-        </node>
-        <node concept="UH0sd" id="4NBd3iZk1Mz" role="2vwUiP">
-          <property role="TrG5h" value="receiver" />
-          <node concept="2K4itw" id="4NBd3iZk1M$" role="2K4itM">
-            <node concept="ZpTZE" id="4NBd3iZk1M_" role="3J4IUC">
-              <ref role="ZpTZD" node="4NBd3iZk1Kc" resolve="DeviceNode" />
-            </node>
+          <node concept="2vxhU1" id="32wpDneq85q" role="2vBZf8">
+            <property role="uIOVW" value="2" />
+            <property role="uIOVY" value="-1" />
+            <property role="1H$nSn" value="*" />
           </node>
         </node>
         <node concept="2vxuzR" id="4NBd3iZk1MA" role="2vwUiP">

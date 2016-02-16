@@ -1936,13 +1936,6 @@
       <node concept="3clFbS" id="4B66Yaq3XHC" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="4B66Yaq5Ul5">
-    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
-    <ref role="13h7C2" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
-    <node concept="13hLZK" id="4B66Yaq5Ul6" role="13h7CW">
-      <node concept="3clFbS" id="4B66Yaq5Ul7" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="4B66Yaq63Xu">
     <property role="3GE5qa" value="Implementation" />
     <ref role="13h7C2" to="ddau:19aTRzkPTWf" resolve="DiscreteWire" />
@@ -1969,8 +1962,8 @@
               <node concept="37vLTw" id="4B66Yaq5Ura" role="2Oq$k0">
                 <ref role="3cqZAo" node="4B66Yaq5Us7" resolve="rNode" />
               </node>
-              <node concept="3TrEf2" id="4B66Yaq67g9" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:5OLu9WxD38X" />
+              <node concept="3TrEf2" id="32wpDnejWA0" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:32wpDnej1b7" />
               </node>
             </node>
           </node>
