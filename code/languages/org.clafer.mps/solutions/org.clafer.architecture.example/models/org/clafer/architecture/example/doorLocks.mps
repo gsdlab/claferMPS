@@ -108,7 +108,6 @@
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
-        <property id="6300420630909718843" name="isAbstract" index="2vxgol" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
       <concept id="7389562969670798191" name="org.clafer.core.structure.XorCard" flags="ng" index="3E5GGL" />
@@ -3302,7 +3301,6 @@
         </node>
       </node>
       <node concept="UzEYP" id="1T6YVZdklgJ" role="2mZOl8" />
-      <node concept="UzEYP" id="7otgDTemv_y" role="2mZOl8" />
       <node concept="2l49t0" id="7otgDTemvDg" role="2mZOl8">
         <property role="TrG5h" value="RearLeftChildLockSwitch" />
         <node concept="kIXAu" id="7otgDTemvDh" role="kIXCp" />
@@ -3345,13 +3343,6 @@
           <node concept="3TlMh9" id="7otgDTemvDx" role="33KLot">
             <property role="2hmy$m" value="16" />
           </node>
-        </node>
-        <node concept="UH0sd" id="1T6YVZdjnsi" role="2mZOl8">
-          <property role="TrG5h" value="test" />
-          <property role="2vxgol" value="true" />
-        </node>
-        <node concept="UH0sd" id="1T6YVZdjnsn" role="2mZOl8">
-          <property role="TrG5h" value="s" />
         </node>
       </node>
       <node concept="UzEYP" id="7otgDTemvAt" role="2mZOl8" />
@@ -3475,7 +3466,6 @@
           <node concept="UzEYP" id="703nGRhCzws" role="2mZOl8" />
           <node concept="2l49t0" id="703nGRhCzxn" role="2mZOl8">
             <property role="TrG5h" value="PassLockPowerSwitch" />
-            <node concept="UzEYP" id="703nGRhCzzS" role="2mZOl8" />
             <node concept="33KLpJ" id="703nGRhCzxv" role="33KLpg">
               <property role="TrG5h" value="cost" />
               <ref role="33KLov" to="t4ow:1wmiO1AQkV2" resolve="cost" />
@@ -3558,7 +3548,6 @@
           <property role="TrG5h" value="CentralLockSwitchDN" />
           <node concept="2l49t0" id="703nGRhCzGN" role="2mZOl8">
             <property role="TrG5h" value="CenterLockPowerSwitch" />
-            <node concept="UzEYP" id="703nGRhCzGV" role="2mZOl8" />
             <node concept="33KLpJ" id="703nGRhCzGW" role="33KLpg">
               <property role="TrG5h" value="cost" />
               <ref role="33KLov" to="t4ow:1wmiO1AQkV2" resolve="cost" />
@@ -3821,7 +3810,6 @@
         </node>
       </node>
       <node concept="UzEYP" id="7otgDTemvFp" role="2mZOl8" />
-      <node concept="UzEYP" id="703nGRhCzZV" role="2mZOl8" />
       <node concept="1uNHS9" id="703nGRhC$8q" role="2mZOl8">
         <property role="TrG5h" value="RemoteKeyAccessDN" />
         <property role="gTlvz" value="true" />
@@ -3839,7 +3827,6 @@
         </node>
       </node>
       <node concept="UzEYP" id="703nGRhC$m2" role="2mZOl8" />
-      <node concept="UzEYP" id="703nGRhC$qO" role="2mZOl8" />
       <node concept="1uNHS9" id="703nGRhC$$r" role="2mZOl8">
         <property role="TrG5h" value="PassiveKeyEntryDN" />
         <property role="gTlvz" value="true" />
@@ -4118,7 +4105,6 @@
             </node>
           </node>
         </node>
-        <node concept="UzEYP" id="703nGRhC$Xp" role="2mZOl8" />
         <node concept="UzEYP" id="703nGRhC_3O" role="2mZOl8" />
         <node concept="2l49t0" id="703nGRhC_7_" role="2mZOl8">
           <property role="gTlvz" value="true" />
