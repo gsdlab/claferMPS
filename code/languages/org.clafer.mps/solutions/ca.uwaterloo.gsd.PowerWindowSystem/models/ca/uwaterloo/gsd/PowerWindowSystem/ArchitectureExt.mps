@@ -759,12 +759,6 @@
     <node concept="UzEYP" id="3KrTRUBT58I" role="UzTCv" />
     <node concept="UzEYP" id="3KrTRUBRtkZ" role="UzTCv" />
     <node concept="UzEYP" id="3KrTRUBRtl$" role="UzTCv" />
-    <node concept="3GEVxB" id="44ORmASVJeM" role="UzTCp">
-      <ref role="3GEb4d" node="72GPbqtfjuJ" resolve="AutomotiveConcepts" />
-    </node>
-    <node concept="3GEVxB" id="44ORmASVJeR" role="UzTCp">
-      <ref role="3GEb4d" node="72GPbqtfjtI" resolve="EAST_ADL" />
-    </node>
   </node>
   <node concept="UzPwm" id="1Rl2DKhZhfV">
     <property role="TrG5h" value="S02_System_Architecture" />
@@ -1011,12 +1005,6 @@
     <node concept="UzEYP" id="2l5qjD1Kqiv" role="UzTCv" />
     <node concept="UzEYP" id="yF2aJfUJcy" role="UzTCv" />
     <node concept="UzEYP" id="72GPbqtfksG" role="UzTCv" />
-    <node concept="3GEVxB" id="2DGtvxQX2pP" role="UzTCp">
-      <ref role="3GEb4d" node="72GPbqtfjuJ" resolve="AutomotiveConcepts" />
-    </node>
-    <node concept="3GEVxB" id="44ORmASVdsc" role="UzTCp">
-      <ref role="3GEb4d" node="72GPbqtfjtI" resolve="EAST_ADL" />
-    </node>
   </node>
 </model>
 
