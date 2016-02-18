@@ -1010,7 +1010,7 @@
           <node concept="UH0sd" id="WgjoVcYiO6" role="2vwUiP">
             <property role="TrG5h" value="_hardwareTopoly_" />
             <node concept="2vxcI6" id="WgjoVcYiOb" role="2vxcI2">
-              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareTopology" />
+              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareArchitecture" />
             </node>
           </node>
           <node concept="UH0sd" id="WgjoVcYiWe" role="2vwUiP">
@@ -1111,7 +1111,7 @@
           <node concept="UH0sd" id="WgjoVd0_WT" role="2vwUiP">
             <property role="TrG5h" value="_hardwareTopoly_" />
             <node concept="2vxcI6" id="WgjoVd0_WU" role="2vxcI2">
-              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareTopology" />
+              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareArchitecture" />
             </node>
           </node>
           <node concept="UH0sd" id="WgjoVd0A8a" role="2vwUiP">
@@ -1229,7 +1229,7 @@
           <node concept="UH0sd" id="WgjoVd2r7K" role="2vwUiP">
             <property role="TrG5h" value="_hardwareTopology_" />
             <node concept="2vxcI6" id="WgjoVd2r7T" role="2vxcI2">
-              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareTopology" />
+              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareArchitecture" />
             </node>
             <node concept="UH0sd" id="WgjoVd2r83" role="2vwUiP">
               <property role="TrG5h" value="_DeviceNodeTopology_" />
@@ -1974,7 +1974,7 @@
           <node concept="UH0sd" id="32wpDnel9x4" role="2vwUiP">
             <property role="TrG5h" value="_hardwareTopoly_" />
             <node concept="2vxcI6" id="32wpDnel9x5" role="2vxcI2">
-              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareTopology" />
+              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareArchitecture" />
             </node>
             <node concept="UH0sd" id="32wpDnel9Pt" role="2vwUiP">
               <property role="TrG5h" value="_comTopology_" />
@@ -2091,7 +2091,7 @@
           <node concept="UH0sd" id="32wpDnenupz" role="2vwUiP">
             <property role="TrG5h" value="_hardwareTopoly_" />
             <node concept="2vxcI6" id="32wpDnenup$" role="2vxcI2">
-              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareTopology" />
+              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareArchitecture" />
             </node>
             <node concept="UH0sd" id="32wpDnenup_" role="2vwUiP">
               <property role="TrG5h" value="_comTopology_" />
@@ -2265,7 +2265,7 @@
           <node concept="UH0sd" id="32wpDneoK8b" role="2vwUiP">
             <property role="TrG5h" value="_hardwareTopoly_" />
             <node concept="2vxcI6" id="32wpDneoK8c" role="2vxcI2">
-              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareTopology" />
+              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareArchitecture" />
             </node>
             <node concept="UH0sd" id="32wpDneoK8d" role="2vwUiP">
               <property role="TrG5h" value="_comTopology_" />
@@ -2486,7 +2486,7 @@
           <node concept="UH0sd" id="32wpDneq6dz" role="2vwUiP">
             <property role="TrG5h" value="_hardwareTopoly_" />
             <node concept="2vxcI6" id="32wpDneq6d$" role="2vxcI2">
-              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareTopology" />
+              <ref role="2vxcI7" to="3fny:4NBd3iZk1JR" resolve="HardwareArchitecture" />
             </node>
             <node concept="UH0sd" id="32wpDneq6d_" role="2vwUiP">
               <property role="TrG5h" value="_comTopology_" />

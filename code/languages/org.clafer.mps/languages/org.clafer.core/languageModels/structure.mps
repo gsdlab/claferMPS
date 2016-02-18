@@ -9,10 +9,12 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -140,6 +142,9 @@
     </node>
     <node concept="PrWs8" id="6UYHEHnP3x_" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+    <node concept="PrWs8" id="3g3ywkm8v3G" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
   </node>
   <node concept="1TIwiD" id="5tJ_MV8UBZ7">
@@ -412,6 +417,22 @@
   <node concept="PlHQZ" id="xdMRpnCdR0">
     <property role="1pbfSe" value="1609476406" />
     <property role="TrG5h" value="IPrimitiveClaferType" />
+  </node>
+  <node concept="1TIwiD" id="4T$tNxuh$bc">
+    <property role="1pbfSe" value="1398097404" />
+    <property role="TrG5h" value="ClaferSingleLineComment" />
+    <property role="R4oN_" value="single-line comment" />
+    <property role="34LRSv" value="//" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5vlcUuJ5JXN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="commentPart" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:5vlcUuJ5uOV" resolve="CommentPart" />
+    </node>
+    <node concept="PrWs8" id="4T$tNxuh$bC" role="PzmwI">
+      <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
+    </node>
   </node>
 </model>
 

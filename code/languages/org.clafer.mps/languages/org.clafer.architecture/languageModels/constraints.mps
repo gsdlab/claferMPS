@@ -1508,7 +1508,7 @@
                         <node concept="otxO1" id="7DuSdC$$XEc" role="2Oq$k0" />
                         <node concept="2Zo12i" id="7DuSdC$$XEd" role="2OqNvi">
                           <node concept="chp4Y" id="7DuSdC$$XV6" role="2Zo12j">
-                            <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+                            <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
                           </node>
                         </node>
                       </node>
@@ -2142,7 +2142,7 @@
   </node>
   <node concept="1M2fIO" id="7DuSdC$$2is">
     <property role="3GE5qa" value="" />
-    <ref role="1M2myG" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+    <ref role="1M2myG" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
     <node concept="nKS2y" id="7DuSdC$$2iD" role="1MLUbF">
       <node concept="3clFbS" id="7DuSdC$$2iE" role="2VODD2">
         <node concept="3clFbF" id="7DuSdC$$2n_" role="3cqZAp">
@@ -2160,7 +2160,7 @@
                 <node concept="nLn13" id="7DuSdC$$2n$" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="7DuSdC$$2Hz" role="2OqNvi">
                   <node concept="chp4Y" id="7DuSdC$$2N5" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
                   </node>
                 </node>
               </node>
@@ -2212,7 +2212,7 @@
                           <node concept="otxO1" id="19aTRzkPa3U" role="2Oq$k0" />
                           <node concept="2Zo12i" id="19aTRzkPa3V" role="2OqNvi">
                             <node concept="chp4Y" id="19aTRzkPadX" role="2Zo12j">
-                              <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+                              <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
                             </node>
                           </node>
                         </node>
@@ -2334,7 +2334,7 @@
                 <node concept="nLn13" id="7DuSdC$$4fH" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="7DuSdC$$4fI" role="2OqNvi">
                   <node concept="chp4Y" id="19aTRzkNHGH" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
                   </node>
                 </node>
               </node>
@@ -2542,7 +2542,7 @@
                 <node concept="nLn13" id="5OLu9WxY8Yv" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="5OLu9WxY8Yw" role="2OqNvi">
                   <node concept="chp4Y" id="5OLu9WxY8Yx" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
                   </node>
                 </node>
               </node>
@@ -2704,7 +2704,7 @@
               <node concept="nLn13" id="19aTRzkRPhh" role="2Oq$k0" />
               <node concept="1mIQ4w" id="19aTRzkRP$O" role="2OqNvi">
                 <node concept="chp4Y" id="19aTRzkRPEm" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+                  <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
                 </node>
               </node>
             </node>
@@ -3894,7 +3894,7 @@
                 <node concept="nLn13" id="50FM0hzwyNY" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="50FM0hzwz9X" role="2OqNvi">
                   <node concept="chp4Y" id="50FM0hzwzfv" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareTopology" />
+                    <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
                   </node>
                 </node>
               </node>

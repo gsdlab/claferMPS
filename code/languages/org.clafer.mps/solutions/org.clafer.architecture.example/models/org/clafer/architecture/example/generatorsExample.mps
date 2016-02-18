@@ -88,7 +88,7 @@
       <concept id="2835231858185744727" name="org.clafer.architecture.structure.ArchParens" flags="ng" index="1kkfkd" />
       <concept id="2835231858186161391" name="org.clafer.architecture.structure.ArchLogicalComma" flags="ng" index="1kl$yP" />
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysisArchitecture" flags="ng" index="1u8h5F" />
-      <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareTopology" flags="ng" index="1uNGeH" />
+      <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareArchitecture" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
@@ -704,6 +704,8 @@
       </node>
     </node>
     <node concept="UzEYP" id="1th$N_eQKTr" role="UzTCv" />
+    <node concept="UzEYP" id="4T$tNxupg1B" role="UzTCv" />
+    <node concept="UzEYP" id="4T$tNxupg28" role="UzTCv" />
     <node concept="gXKv3" id="1th$N_eQKTs" role="UzTCv">
       <property role="TrG5h" value="arch_default" />
       <node concept="gXKv3" id="1th$N_eQKTt" role="2mZOl8">

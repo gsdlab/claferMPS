@@ -130,7 +130,7 @@
             <property role="TrG5h" value="ht" />
             <node concept="2K4itw" id="4NBd3iZk1Iw" role="2K4itM">
               <node concept="ZpTZE" id="4NBd3iZk1Ix" role="3J4IUC">
-                <ref role="ZpTZD" node="4NBd3iZk1JR" resolve="HardwareTopology" />
+                <ref role="ZpTZD" node="4NBd3iZk1JR" resolve="HardwareArchitecture" />
               </node>
             </node>
           </node>
@@ -348,13 +348,13 @@
     </node>
     <node concept="UH0sd" id="4NBd3iZk1JR" role="UzTCv">
       <property role="2vxgol" value="true" />
-      <property role="TrG5h" value="HardwareTopology" />
+      <property role="TrG5h" value="HardwareArchitecture" />
       <node concept="2vxuzR" id="4NBd3iZk1JS" role="2vwUiP">
         <node concept="LkG4F" id="4NBd3iZk1JT" role="3WnoGb">
           <node concept="2BPB98" id="4NBd3iZk1JU" role="3TlMhJ">
             <node concept="vgzv4" id="4NBd3iZk1JV" role="1_9fRO">
               <node concept="ZpONE" id="4NBd3iZk1JW" role="3TlMhJ">
-                <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareTopology" />
+                <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareArchitecture" />
               </node>
               <node concept="ZpONE" id="4NBd3iZk1JX" role="3TlMhI">
                 <ref role="ZpOSt" node="4NBd3iZk1Iq" resolve="Architecture" />
@@ -380,7 +380,7 @@
                 <ref role="ZpOSt" node="4NBd3iZk1K2" resolve="DeviceNodeTopology" />
               </node>
               <node concept="ZpONE" id="4NBd3iZk1K8" role="3TlMhI">
-                <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareTopology" />
+                <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareArchitecture" />
               </node>
             </node>
           </node>
@@ -549,7 +549,7 @@
                 <ref role="ZpOSt" node="4NBd3iZk1KE" resolve="CommunicationTopology" />
               </node>
               <node concept="ZpONE" id="4NBd3iZk1KK" role="3TlMhI">
-                <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareTopology" />
+                <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareArchitecture" />
               </node>
             </node>
           </node>
@@ -679,7 +679,7 @@
                 <ref role="ZpOSt" node="4NBd3iZk1Lq" resolve="PowerTopology" />
               </node>
               <node concept="ZpONE" id="4NBd3iZk1Lw" role="3TlMhI">
-                <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareTopology" />
+                <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareArchitecture" />
               </node>
             </node>
           </node>

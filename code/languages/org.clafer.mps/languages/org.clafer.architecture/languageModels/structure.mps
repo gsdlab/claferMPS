@@ -118,6 +118,9 @@
     <node concept="PrWs8" id="6LOryU0rqHo" role="PzmwI">
       <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     </node>
+    <node concept="PrWs8" id="3g3ywkm6Xbv" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
     <node concept="1TJgyj" id="4csP6flST4F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -255,7 +258,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ht" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7DuSdC$$2dR" resolve="HardwareTopology" />
+      <ref role="20lvS9" node="7DuSdC$$2dR" resolve="HardwareArchitecture" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Fa64hUfhY7">
@@ -468,9 +471,9 @@
     </node>
   </node>
   <node concept="1TIwiD" id="7DuSdC$$2dR">
-    <property role="TrG5h" value="HardwareTopology" />
+    <property role="TrG5h" value="HardwareArchitecture" />
     <property role="3GE5qa" value="" />
-    <property role="34LRSv" value="Hardware Topology" />
+    <property role="34LRSv" value="Hardware Architecture" />
     <property role="1pbfSe" value="1628502959" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
