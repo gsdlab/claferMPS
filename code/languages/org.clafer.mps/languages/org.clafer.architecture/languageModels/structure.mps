@@ -872,7 +872,7 @@
     <node concept="1TJgyj" id="7xzoSpGQbAv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="EXzEoUui47" resolve="NodeType" />
     </node>
   </node>

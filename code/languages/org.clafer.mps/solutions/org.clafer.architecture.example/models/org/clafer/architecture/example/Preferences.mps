@@ -22,6 +22,7 @@
         <child id="4132992774366472950" name="qualityRef" index="3A1vRL" />
       </concept>
       <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
+        <property id="2181707870707196839" name="visible" index="3jqXwo" />
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
       <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
@@ -55,6 +56,7 @@
   </registry>
   <node concept="slzsT" id="H$98wxz$iD">
     <property role="TrG5h" value="QATable" />
+    <property role="3jqXwo" value="true" />
     <node concept="sklqP" id="5RLJ9guqKTN" role="sklmO">
       <node concept="3EozPd" id="5RLJ9guqKU3" role="sklvC">
         <property role="TrG5h" value="totalMass" />

@@ -1032,16 +1032,16 @@
     </node>
     <node concept="2Sbjvc" id="WgjoVd3shf" role="2ZfgGD">
       <node concept="3clFbS" id="WgjoVd3shg" role="2VODD2">
-        <node concept="3clFbF" id="3EgEWBTIzxA" role="3cqZAp">
-          <node concept="2OqwBi" id="3EgEWBTIzxB" role="3clFbG">
-            <node concept="2OqwBi" id="3EgEWBTIzxC" role="2Oq$k0">
-              <node concept="2Sf5sV" id="WgjoVd3tgh" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3EgEWBTIzxE" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:7xzoSpGQbAv" />
+        <node concept="3clFbF" id="5mM0w5ba$yg" role="3cqZAp">
+          <node concept="2OqwBi" id="5mM0w5ba$ZS" role="3clFbG">
+            <node concept="2OqwBi" id="5mM0w5ba$$1" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5mM0w5ba$ye" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5mM0w5ba$Dh" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:7xzoSpGQbAv" />
               </node>
             </node>
-            <node concept="zfrQC" id="3EgEWBTIzxF" role="2OqNvi">
-              <ref role="1A9B2P" to="ddau:7xzoSpGSeYk" resolve="SmartDeviceType" />
+            <node concept="WFELt" id="5mM0w5ba_Hq" role="2OqNvi">
+              <ref role="1A0vxQ" to="ddau:7xzoSpGSeYk" resolve="SmartDeviceType" />
             </node>
           </node>
         </node>

@@ -189,6 +189,9 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="4124388153790980106" name="jetbrains.mps.lang.smodel.structure.Reference_GetTargetOperation" flags="nn" index="2ZHEkA" />
       <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
@@ -3273,16 +3276,16 @@
           <node concept="3clFbS" id="7xzoSpGT1wk" role="3clFbx">
             <node concept="3clFbJ" id="3EgEWBTIzmy" role="3cqZAp">
               <node concept="3clFbS" id="3EgEWBTIzm$" role="3clFbx">
-                <node concept="3clFbF" id="7xzoSpGT1Dt" role="3cqZAp">
-                  <node concept="2OqwBi" id="7xzoSpGT1MF" role="3clFbG">
-                    <node concept="2OqwBi" id="7xzoSpGT1EB" role="2Oq$k0">
-                      <node concept="13iPFW" id="7xzoSpGT1Ds" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="7xzoSpGT1Je" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ddau:7xzoSpGQbAv" />
+                <node concept="3clFbF" id="5mM0w5bayoO" role="3cqZAp">
+                  <node concept="2OqwBi" id="5mM0w5bazxa" role="3clFbG">
+                    <node concept="2OqwBi" id="5mM0w5bayqW" role="2Oq$k0">
+                      <node concept="13iPFW" id="5mM0w5bayoM" role="2Oq$k0" />
+                      <node concept="3Tsc0h" id="5mM0w5baytp" role="2OqNvi">
+                        <ref role="3TtcxE" to="ddau:7xzoSpGQbAv" />
                       </node>
                     </node>
-                    <node concept="zfrQC" id="7xzoSpGT1Q4" role="2OqNvi">
-                      <ref role="1A9B2P" to="ddau:7xzoSpGSeYl" resolve="PowerDeviceType" />
+                    <node concept="WFELt" id="5mM0w5ba$ey" role="2OqNvi">
+                      <ref role="1A0vxQ" to="ddau:7xzoSpGSeYl" resolve="PowerDeviceType" />
                     </node>
                   </node>
                 </node>
@@ -3297,19 +3300,20 @@
               </node>
               <node concept="9aQIb" id="WgjoVd3Qta" role="9aQIa">
                 <node concept="3clFbS" id="WgjoVd3Qtb" role="9aQI4">
-                  <node concept="3clFbF" id="WgjoVd3Qut" role="3cqZAp">
-                    <node concept="2OqwBi" id="WgjoVd3Quu" role="3clFbG">
-                      <node concept="2OqwBi" id="WgjoVd3Quv" role="2Oq$k0">
-                        <node concept="13iPFW" id="WgjoVd3Quw" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="WgjoVd3Qux" role="2OqNvi">
-                          <ref role="3Tt5mk" to="ddau:7xzoSpGQbAv" />
+                  <node concept="3clFbF" id="5mM0w5ba$hX" role="3cqZAp">
+                    <node concept="2OqwBi" id="5mM0w5ba$hY" role="3clFbG">
+                      <node concept="2OqwBi" id="5mM0w5ba$hZ" role="2Oq$k0">
+                        <node concept="13iPFW" id="5mM0w5ba$i0" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="5mM0w5ba$i1" role="2OqNvi">
+                          <ref role="3TtcxE" to="ddau:7xzoSpGQbAv" />
                         </node>
                       </node>
-                      <node concept="zfrQC" id="WgjoVd3Quy" role="2OqNvi">
-                        <ref role="1A9B2P" to="ddau:7xzoSpGSeYk" resolve="SmartDeviceType" />
+                      <node concept="WFELt" id="5mM0w5ba$i2" role="2OqNvi">
+                        <ref role="1A0vxQ" to="ddau:7xzoSpGSeYk" resolve="SmartDeviceType" />
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbH" id="5mM0w5ba$hi" role="3cqZAp" />
                 </node>
               </node>
             </node>
