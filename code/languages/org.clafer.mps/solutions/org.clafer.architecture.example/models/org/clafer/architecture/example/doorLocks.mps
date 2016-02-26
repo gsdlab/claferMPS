@@ -34,6 +34,7 @@
       </concept>
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysisArchitecture" flags="ng" index="1u8h5F" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
+      <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
@@ -3150,6 +3151,15 @@
           </node>
         </node>
       </node>
+      <node concept="UzEYP" id="4sgzeLqMgEn" role="2mZOl8" />
+      <node concept="3HzFZ7" id="4sgzeLqMju9" role="2mZOl8">
+        <property role="TrG5h" value="dsf" />
+        <node concept="kIXAu" id="4sgzeLqMj_n" role="kIXCp" />
+        <node concept="kwSKi" id="4sgzeLqMj_t" role="kIXCp" />
+      </node>
+      <node concept="UzEYP" id="4sgzeLqMgLu" role="2mZOl8" />
+      <node concept="UzEYP" id="4sgzeLqMgSA" role="2mZOl8" />
+      <node concept="UzEYP" id="4sgzeLqMgZJ" role="2mZOl8" />
       <node concept="2l49t0" id="7otgDTemvwW" role="2mZOl8">
         <property role="TrG5h" value="PassengerDoorLockMotorAssembly" />
         <node concept="kIXAu" id="7otgDTemvxk" role="kIXCp" />
