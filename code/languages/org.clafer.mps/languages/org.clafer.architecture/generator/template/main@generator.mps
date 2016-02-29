@@ -283,6 +283,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
       <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
@@ -574,7 +581,7 @@
                       <node concept="3clFbF" id="1th$N_eTU$T" role="3cqZAp">
                         <node concept="2OqwBi" id="1th$N_eTUEI" role="3clFbG">
                           <node concept="30H73N" id="1th$N_eTU$S" role="2Oq$k0" />
-                          <node concept="3TrcHB" id="1th$N_eTURe" role="2OqNvi">
+                          <node concept="3TrcHB" id="1jKsuqUKnjc" role="2OqNvi">
                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
@@ -936,11 +943,15 @@
   <node concept="jVnub" id="g6kGtGuBXU">
     <property role="TrG5h" value="switch_attributes" />
     <property role="3GE5qa" value="templates" />
-    <node concept="3aamgX" id="WgjoVd2qO_" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
-      <node concept="j$656" id="WgjoVd2qOL" role="1lVwrX">
-        <ref role="v9R2y" node="WgjoVd2qOJ" resolve="case_DeviceNode" />
+    <node concept="1X3_iC" id="1jKsuqUKaMu" role="lGtFl">
+      <property role="3V$3am" value="reductionMappingRule" />
+      <property role="3V$3ak" value="b401a680-8325-4110-8fd3-84331ff25bef/1112730859144/1167340453568" />
+      <node concept="3aamgX" id="WgjoVd2qO_" role="8Wnug">
+        <property role="36QftV" value="true" />
+        <ref role="30HIoZ" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+        <node concept="j$656" id="WgjoVd2qOL" role="1lVwrX">
+          <ref role="v9R2y" node="WgjoVd2qOJ" resolve="case_DeviceNode" />
+        </node>
       </node>
     </node>
     <node concept="3aamgX" id="WgjoVd0_OX" role="3aUrZf">
