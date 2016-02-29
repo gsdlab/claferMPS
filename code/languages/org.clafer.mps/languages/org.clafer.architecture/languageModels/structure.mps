@@ -902,7 +902,7 @@
     <property role="1pbfSe" value="2101745195" />
     <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
     <property role="TrG5h" value="ElectrDeviceExpr" />
-    <property role="34LRSv" value="electronic" />
+    <property role="34LRSv" value="electr" />
     <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
     <node concept="PrWs8" id="2G_jlDGrdDk" role="PzmwI">
       <ref role="PrY4T" node="2G_jlDGrdpl" resolve="IDeviceExpr" />
@@ -946,7 +946,7 @@
     <property role="1pbfSe" value="449045090" />
     <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
     <property role="TrG5h" value="ElectrDeviceType" />
-    <property role="34LRSv" value="electronic" />
+    <property role="34LRSv" value="electr" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
     <node concept="PrWs8" id="2G_jlDGpToh" role="PzmwI">
       <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />

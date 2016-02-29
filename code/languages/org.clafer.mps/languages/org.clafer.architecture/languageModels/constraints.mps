@@ -277,6 +277,7 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1180964022718" name="jetbrains.mps.baseLanguage.collections.structure.ConcatOperation" flags="nn" index="3QWeyG" />
     </language>
   </registry>
@@ -1907,23 +1908,26 @@
                       <node concept="3clFbS" id="3URpncZwiVz" role="1bW5cS">
                         <node concept="3clFbF" id="3URpncZwndt" role="3cqZAp">
                           <node concept="3fqX7Q" id="3URpncZyN1n" role="3clFbG">
-                            <node concept="2OqwBi" id="7xzoSpGU39h" role="3fr31v">
-                              <node concept="2OqwBi" id="3URpncZyN1q" role="2Oq$k0">
-                                <node concept="1PxgMI" id="3URpncZyN1r" role="2Oq$k0">
-                                  <ref role="1PxNhF" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
-                                  <node concept="37vLTw" id="3URpncZyN1s" role="1PxMeX">
-                                    <ref role="3cqZAo" node="3URpncZwiV$" resolve="it" />
+                            <node concept="2OqwBi" id="4sgzeLqOQ0L" role="3fr31v">
+                              <node concept="2OqwBi" id="7xzoSpGU39h" role="2Oq$k0">
+                                <node concept="2OqwBi" id="3URpncZyN1q" role="2Oq$k0">
+                                  <node concept="1PxgMI" id="3URpncZyN1r" role="2Oq$k0">
+                                    <ref role="1PxNhF" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+                                    <node concept="37vLTw" id="3URpncZyN1s" role="1PxMeX">
+                                      <ref role="3cqZAo" node="3URpncZwiV$" resolve="it" />
+                                    </node>
+                                  </node>
+                                  <node concept="3Tsc0h" id="4sgzeLqONkr" role="2OqNvi">
+                                    <ref role="3TtcxE" to="ddau:7xzoSpGQbAv" />
                                   </node>
                                 </node>
-                                <node concept="3TrEf2" id="7xzoSpGU2y4" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="ddau:7xzoSpGQbAv" />
+                                <node concept="v3k3i" id="4sgzeLqOP8K" role="2OqNvi">
+                                  <node concept="chp4Y" id="4sgzeLqOPzp" role="v3oSu">
+                                    <ref role="cht4Q" to="ddau:7xzoSpGSeYl" resolve="PowerDeviceType" />
+                                  </node>
                                 </node>
                               </node>
-                              <node concept="1mIQ4w" id="7xzoSpGU3BM" role="2OqNvi">
-                                <node concept="chp4Y" id="7xzoSpGU41Q" role="cj9EA">
-                                  <ref role="cht4Q" to="ddau:7xzoSpGSeYl" resolve="PowerDeviceType" />
-                                </node>
-                              </node>
+                              <node concept="3GX2aA" id="4sgzeLqOQwV" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
