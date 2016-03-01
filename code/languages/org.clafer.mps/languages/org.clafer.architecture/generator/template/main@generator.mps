@@ -2566,12 +2566,6 @@
       </node>
     </node>
   </node>
-  <node concept="13MO4I" id="4sgzeLqNvZn">
-    <property role="TrG5h" value="case_ElectrDeviceType" />
-    <property role="3GE5qa" value="templates" />
-    <ref role="3gUMe" to="ddau:7xzoSpGQbCo" resolve="ElectrDeviceType" />
-    <node concept="2VYdi" id="4sgzeLqNvZo" role="13RCb5" />
-  </node>
   <node concept="13MO4I" id="4sgzeLqMkMK">
     <property role="3GE5qa" value="templates" />
     <property role="TrG5h" value="reduce_NodeType" />
@@ -2749,17 +2743,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="jVnub" id="4sgzeLqNvY5">
-    <property role="3GE5qa" value="templates" />
-    <property role="TrG5h" value="switch_nodeType" />
-    <node concept="3aamgX" id="4sgzeLqNvY6" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="ddau:7xzoSpGQbCo" resolve="ElectrDeviceType" />
-      <node concept="j$656" id="4sgzeLqNvZp" role="1lVwrX">
-        <ref role="v9R2y" node="4sgzeLqNvZn" resolve="case_ElectrDeviceType" />
       </node>
     </node>
   </node>

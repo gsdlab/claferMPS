@@ -6314,29 +6314,9 @@
   <node concept="24kQdi" id="1a3IgB190fa">
     <property role="3GE5qa" value="textEditors.DeviceNodes.DeviceTypeExpr" />
     <ref role="1XX52x" to="ddau:5hA9WCIkW89" resolve="NodeTypeExpr" />
-    <node concept="3F0ifn" id="EXzEoUp7vg" role="2wV5jI">
-      <property role="3F0ifm" value="type" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="23T79tC3dBq">
-    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
-    <ref role="1XX52x" to="ddau:5hA9WCIkW8c" resolve="SmartDeviceExpr" />
-    <node concept="3F0ifn" id="23T79tC3dBs" role="2wV5jI">
-      <property role="3F0ifm" value="smart" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="23T79tC3dBR">
-    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
-    <ref role="1XX52x" to="ddau:5hA9WCIkW8a" resolve="PowerDeviceExpr" />
-    <node concept="3F0ifn" id="23T79tC3dBT" role="2wV5jI">
-      <property role="3F0ifm" value="power" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="23T79tC2m4j">
-    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
-    <ref role="1XX52x" to="ddau:5hA9WCIkW8b" resolve="ElectrDeviceExpr" />
-    <node concept="3F0ifn" id="23T79tC2m4l" role="2wV5jI">
-      <property role="3F0ifm" value="electronic" />
+    <node concept="PMmxH" id="1jKsuqUUWIa" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
     </node>
   </node>
   <node concept="PKFIW" id="4zMtg5MUy4e">
@@ -7329,6 +7309,20 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1jKsuqULYJ2">
+    <property role="3GE5qa" value="NodeTypeExpr" />
+    <ref role="1XX52x" to="ddau:1jKsuqULYIy" resolve="DeployedToExpr" />
+    <node concept="PMmxH" id="1jKsuqUVum4" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1jKsuqUUxaU">
+    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
+    <ref role="1XX52x" to="ddau:2G_jlDGrdpl" resolve="IDeviceExpr" />
+    <node concept="PMmxH" id="1jKsuqUUxy1" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

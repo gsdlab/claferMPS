@@ -82,5 +82,18 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="1jKsuqUM2g5">
+    <property role="3GE5qa" value="NodeTypeExpr" />
+    <ref role="WuzLi" to="ddau:1jKsuqULYIy" resolve="DeployedToExpr" />
+    <node concept="11bSqf" id="1jKsuqUM2g6" role="11c4hB">
+      <node concept="3clFbS" id="1jKsuqUM2g7" role="2VODD2">
+        <node concept="lc7rE" id="1jKsuqUM2gs" role="3cqZAp">
+          <node concept="la8eA" id="1jKsuqUM2gG" role="lcghm">
+            <property role="lacIc" value="deployedTo" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
