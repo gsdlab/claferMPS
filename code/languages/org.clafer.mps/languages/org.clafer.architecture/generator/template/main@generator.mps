@@ -820,7 +820,7 @@
   </node>
   <node concept="13MO4I" id="g6kGtGuA_k">
     <property role="3GE5qa" value="templates" />
-    <property role="TrG5h" value="case_FAConector" />
+    <property role="TrG5h" value="case_FAConnector" />
     <ref role="3gUMe" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
     <node concept="UzPwm" id="g6kGtGuBY9" role="13RCb5">
       <property role="TrG5h" value="_module_" />
@@ -954,6 +954,13 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="Myy5NEB6vo" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ddau:19aTRzkPTSF" resolve="PowerConnector" />
+      <node concept="j$656" id="Myy5NEB6Fg" role="1lVwrX">
+        <ref role="v9R2y" node="Myy5NEB6Fe" resolve="case_PowerConnector" />
+      </node>
+    </node>
     <node concept="3aamgX" id="WgjoVd0_OX" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
@@ -1000,7 +1007,7 @@
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
       <node concept="j$656" id="g6kGtGuC1m" role="1lVwrX">
-        <ref role="v9R2y" node="g6kGtGuA_k" resolve="case_FAConector" />
+        <ref role="v9R2y" node="g6kGtGuA_k" resolve="case_FAConnector" />
       </node>
     </node>
     <node concept="3aamgX" id="p2aW3FuVt$" role="3aUrZf">
@@ -2742,6 +2749,127 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="Myy5NEB6Fe">
+    <property role="TrG5h" value="case_PowerConnector" />
+    <property role="3GE5qa" value="templates" />
+    <ref role="3gUMe" to="ddau:19aTRzkPTSF" resolve="PowerConnector" />
+    <node concept="UzPwm" id="Myy5NEB6FL" role="13RCb5">
+      <property role="TrG5h" value="_module_" />
+      <node concept="3GEVxB" id="Myy5NEB6FM" role="UzTCp">
+        <ref role="3GEb4d" to="3fny:4NBd3iZk1In" resolve="EAST_ADL" />
+      </node>
+      <node concept="UH0sd" id="Myy5NEB6FN" role="UzTCv">
+        <property role="TrG5h" value="_comTopology_" />
+        <node concept="2vxcI6" id="Myy5NEB6FO" role="2vxcI2">
+          <ref role="2vxcI7" to="3fny:4NBd3iZk1KE" resolve="CommunicationTopology" />
+        </node>
+        <node concept="UH0sd" id="Myy5NEB6FP" role="2vwUiP">
+          <property role="TrG5h" value="_dataConnector_" />
+          <node concept="2vxcI6" id="Myy5NEB6FQ" role="2vxcI2">
+            <ref role="2vxcI7" to="3fny:4NBd3iZk1KO" resolve="DataConnector" />
+          </node>
+        </node>
+      </node>
+      <node concept="UzEYP" id="Myy5NEB6Qf" role="UzTCv" />
+      <node concept="UH0sd" id="Myy5NEB8Xf" role="UzTCv">
+        <property role="TrG5h" value="_deviceNodeTopology_" />
+        <node concept="2vxcI6" id="Myy5NEB95G" role="2vxcI2">
+          <ref role="2vxcI7" to="3fny:4NBd3iZk1K2" resolve="DeviceNodeTopology" />
+        </node>
+        <node concept="UH0sd" id="Myy5NEB9pA" role="2vwUiP">
+          <property role="TrG5h" value="_deviceNode_" />
+          <node concept="2vxcI6" id="Myy5NEB9pD" role="2vxcI2">
+            <ref role="2vxcI7" to="3fny:4NBd3iZk1Kc" resolve="DeviceNode" />
+          </node>
+        </node>
+        <node concept="UH0sd" id="Myy5NEB9pF" role="2vwUiP">
+          <property role="TrG5h" value="_deviceNode2_" />
+          <node concept="2vxcI6" id="Myy5NEB9pG" role="2vxcI2">
+            <ref role="2vxcI7" to="3fny:4NBd3iZk1Kc" resolve="DeviceNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="UzEYP" id="Myy5NEB7dT" role="UzTCv" />
+      <node concept="UH0sd" id="Myy5NEB7vc" role="UzTCv">
+        <property role="TrG5h" value="_PowerTopology_" />
+        <node concept="2vxcI6" id="Myy5NEB7BR" role="2vxcI2">
+          <ref role="2vxcI7" to="3fny:4NBd3iZk1Lq" resolve="PowerTopology" />
+        </node>
+        <node concept="UH0sd" id="Myy5NEB7R3" role="2vwUiP">
+          <property role="TrG5h" value="_powerConnector_" />
+          <node concept="2vxcI6" id="Myy5NEB7R6" role="2vxcI2">
+            <ref role="2vxcI7" to="3fny:4NBd3iZk1L$" resolve="PowerConnector" />
+          </node>
+          <node concept="2vxuzR" id="Myy5NEB86r" role="2vwUiP">
+            <node concept="2EHzL6" id="Myy5NEB86s" role="3WnoGb">
+              <node concept="3TlM44" id="Myy5NEB86t" role="3TlMhJ">
+                <node concept="ZpONE" id="Myy5NEB86u" role="3TlMhJ">
+                  <ref role="ZpOSt" node="Myy5NEB9pF" resolve="_deviceNode2_" />
+                  <node concept="1ZhdrF" id="Myy5NEB86v" role="lGtFl">
+                    <property role="P3scX" value="137e622e-709a-48af-8f85-420e945711de/2851923306472496585/2851923306472496958" />
+                    <property role="2qtEX8" value="clafer" />
+                    <node concept="3$xsQk" id="Myy5NEB86w" role="3$ytzL">
+                      <node concept="3clFbS" id="Myy5NEB86x" role="2VODD2">
+                        <node concept="3clFbF" id="Myy5NEB86y" role="3cqZAp">
+                          <node concept="2OqwBi" id="Myy5NEB86z" role="3clFbG">
+                            <node concept="1PxgMI" id="Myy5NEB86$" role="2Oq$k0">
+                              <ref role="1PxNhF" to="ddau:19aTRzkPTSF" resolve="PowerConnector" />
+                              <node concept="30H73N" id="Myy5NEB86_" role="1PxMeX" />
+                            </node>
+                            <node concept="3TrEf2" id="Myy5NECrP2" role="2OqNvi">
+                              <ref role="3Tt5mk" to="ddau:Myy5NEB5Ur" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qmXGp" id="Myy5NEB86B" role="3TlMhI">
+                  <node concept="2ZqYGZ" id="Myy5NEB86C" role="1ESnxz">
+                    <ref role="2ZqYFj" to="3fny:Myy5NEB86d" resolve="receiver" />
+                  </node>
+                  <node concept="2Zoh0E" id="Myy5NEB86D" role="1_9fRO" />
+                </node>
+              </node>
+              <node concept="3TlM44" id="Myy5NEB86E" role="3TlMhI">
+                <node concept="ZpONE" id="Myy5NEB86F" role="3TlMhJ">
+                  <ref role="ZpOSt" node="Myy5NEB9pA" resolve="_deviceNode_" />
+                  <node concept="1ZhdrF" id="Myy5NEB86G" role="lGtFl">
+                    <property role="P3scX" value="137e622e-709a-48af-8f85-420e945711de/2851923306472496585/2851923306472496958" />
+                    <property role="2qtEX8" value="clafer" />
+                    <node concept="3$xsQk" id="Myy5NEB86H" role="3$ytzL">
+                      <node concept="3clFbS" id="Myy5NEB86I" role="2VODD2">
+                        <node concept="3clFbF" id="Myy5NEB86J" role="3cqZAp">
+                          <node concept="2OqwBi" id="Myy5NEB86K" role="3clFbG">
+                            <node concept="1PxgMI" id="Myy5NEB86L" role="2Oq$k0">
+                              <ref role="1PxNhF" to="ddau:19aTRzkPTSF" resolve="PowerConnector" />
+                              <node concept="30H73N" id="Myy5NECrbo" role="1PxMeX" />
+                            </node>
+                            <node concept="3TrEf2" id="Myy5NECrw8" role="2OqNvi">
+                              <ref role="3Tt5mk" to="ddau:Myy5NEB5Us" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qmXGp" id="Myy5NEB86O" role="3TlMhI">
+                  <node concept="2ZqYGZ" id="Myy5NEB86P" role="1ESnxz">
+                    <ref role="2ZqYFj" to="3fny:Myy5NEB85X" resolve="sender" />
+                  </node>
+                  <node concept="2Zoh0E" id="Myy5NEB86Q" role="1_9fRO" />
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="Myy5NEB86R" role="lGtFl" />
+          </node>
+          <node concept="UzEYP" id="Myy5NEB7R8" role="2vwUiP" />
         </node>
       </node>
     </node>

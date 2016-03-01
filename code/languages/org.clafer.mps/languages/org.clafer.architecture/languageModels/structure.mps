@@ -587,6 +587,18 @@
     <property role="34LRSv" value="Power Connector" />
     <property role="1pbfSe" value="417167965" />
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
+    <node concept="1TJgyj" id="Myy5NEB5Us" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="src" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
+    </node>
+    <node concept="1TJgyj" id="Myy5NEB5Ur" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="dest" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPTWb">
     <property role="3GE5qa" value="Implementation" />

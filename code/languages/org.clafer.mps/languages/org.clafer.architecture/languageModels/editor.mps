@@ -7361,5 +7361,48 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
+  <node concept="24kQdi" id="Myy5NEB37l">
+    <property role="3GE5qa" value="Wiring.PowerTopology" />
+    <ref role="1XX52x" to="ddau:19aTRzkPTSF" resolve="PowerConnector" />
+    <node concept="3EZMnI" id="Myy5NEB394" role="2wV5jI">
+      <node concept="PMmxH" id="Myy5NEB395" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
+      <node concept="PMmxH" id="Myy5NEB396" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
+      </node>
+      <node concept="PMmxH" id="Myy5NEB397" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
+      </node>
+      <node concept="3F0ifn" id="Myy5NEB398" role="3EZMnx">
+        <property role="3F0ifm" value="from" />
+      </node>
+      <node concept="1iCGBv" id="Myy5NEB399" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:Myy5NEB5Us" />
+        <node concept="1sVBvm" id="Myy5NEB39a" role="1sWHZn">
+          <node concept="3F0A7n" id="Myy5NEB39b" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="Myy5NEB39c" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+      <node concept="1iCGBv" id="Myy5NEB39d" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:Myy5NEB5Ur" />
+        <node concept="1sVBvm" id="Myy5NEB39e" role="1sWHZn">
+          <node concept="3F0A7n" id="Myy5NEB39f" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="Myy5NEB39v" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
+      </node>
+      <node concept="l2Vlx" id="Myy5NEB39w" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -695,19 +695,35 @@
         <node concept="2vxcI6" id="4NBd3iZk1L_" role="2vxcI2">
           <ref role="2vxcI7" node="4NBd3iZk1Kv" resolve="HardwareConnector" />
         </node>
+        <node concept="UH0sd" id="Myy5NEB85X" role="2vwUiP">
+          <property role="TrG5h" value="sender" />
+          <node concept="2K4itw" id="Myy5NEB861" role="2K4itM">
+            <node concept="ZpTZE" id="Myy5NEB863" role="3J4IUC">
+              <ref role="ZpTZD" node="4NBd3iZk1Kc" resolve="DeviceNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="UH0sd" id="Myy5NEB86d" role="2vwUiP">
+          <property role="TrG5h" value="receiver" />
+          <node concept="2K4itw" id="Myy5NEB86k" role="2K4itM">
+            <node concept="ZpTZE" id="Myy5NEB86m" role="3J4IUC">
+              <ref role="ZpTZD" node="4NBd3iZk1Kc" resolve="DeviceNode" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="UH0sd" id="4NBd3iZk1LA" role="2vwUiP">
         <property role="2vxgol" value="true" />
         <property role="TrG5h" value="LoadPowerConnector" />
         <node concept="2vxcI6" id="4NBd3iZk1LB" role="2vxcI2">
-          <ref role="2vxcI7" node="4NBd3iZk1Kv" resolve="HardwareConnector" />
+          <ref role="2vxcI7" node="4NBd3iZk1L$" resolve="PowerConnector" />
         </node>
       </node>
       <node concept="UH0sd" id="4NBd3iZk1LC" role="2vwUiP">
         <property role="2vxgol" value="true" />
         <property role="TrG5h" value="DevicePowerConnector" />
         <node concept="2vxcI6" id="4NBd3iZk1LD" role="2vxcI2">
-          <ref role="2vxcI7" node="4NBd3iZk1Kv" resolve="HardwareConnector" />
+          <ref role="2vxcI7" node="4NBd3iZk1L$" resolve="PowerConnector" />
         </node>
       </node>
     </node>
