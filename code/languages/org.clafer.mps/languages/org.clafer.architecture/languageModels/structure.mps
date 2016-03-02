@@ -528,8 +528,17 @@
     <property role="34LRSv" value="Discrete Wire Connector" />
     <property role="1pbfSe" value="417174256" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="DataConnector" />
-    <node concept="PrWs8" id="32wpDnej1bf" role="PzmwI">
-      <ref role="PrY4T" node="32wpDnej1aX" resolve="IHaveRealization" />
+    <node concept="1TJgyj" id="Myy5NECyW8" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="src" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
+    </node>
+    <node concept="1TJgyj" id="Myy5NECyWa" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="dest" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSoJ">

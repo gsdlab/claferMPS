@@ -961,6 +961,13 @@
         <ref role="v9R2y" node="Myy5NEB6Fe" resolve="case_PowerConnector" />
       </node>
     </node>
+    <node concept="3aamgX" id="Myy5NECy2n" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
+      <node concept="j$656" id="Myy5NECy2J" role="1lVwrX">
+        <ref role="v9R2y" node="Myy5NECy2H" resolve="case_DiscreteWireConnector" />
+      </node>
+    </node>
     <node concept="3aamgX" id="WgjoVd0_OX" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
@@ -2872,6 +2879,120 @@
           <node concept="UzEYP" id="Myy5NEB7R8" role="2vwUiP" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13MO4I" id="Myy5NECy2H">
+    <property role="TrG5h" value="case_DiscreteWireConnector" />
+    <property role="3GE5qa" value="templates" />
+    <ref role="3gUMe" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
+    <node concept="UzPwm" id="Myy5NECy2M" role="13RCb5">
+      <property role="TrG5h" value="_module_" />
+      <node concept="3GEVxB" id="Myy5NECy2N" role="UzTCp">
+        <ref role="3GEb4d" to="3fny:4NBd3iZk1In" resolve="EAST_ADL" />
+      </node>
+      <node concept="UH0sd" id="Myy5NECy2O" role="UzTCv">
+        <property role="TrG5h" value="_comTopology_" />
+        <node concept="2vxcI6" id="Myy5NECy2P" role="2vxcI2">
+          <ref role="2vxcI7" to="3fny:4NBd3iZk1KE" resolve="CommunicationTopology" />
+        </node>
+        <node concept="UH0sd" id="Myy5NECy2Q" role="2vwUiP">
+          <property role="TrG5h" value="_dataConnector_" />
+          <node concept="2vxcI6" id="Myy5NECy2R" role="2vxcI2">
+            <ref role="2vxcI7" to="3fny:4NBd3iZk1KO" resolve="DataConnector" />
+          </node>
+        </node>
+        <node concept="UH0sd" id="Myy5NECydd" role="2vwUiP">
+          <property role="TrG5h" value="_discreteWireConnector_" />
+          <node concept="2vxcI6" id="Myy5NECydi" role="2vxcI2">
+            <ref role="2vxcI7" to="3fny:4NBd3iZk1KZ" resolve="DiscreteWireConnector" />
+          </node>
+          <node concept="2vxuzR" id="Myy5NECydA" role="2vwUiP">
+            <node concept="2EHzL6" id="Myy5NECydB" role="3WnoGb">
+              <node concept="3TlM44" id="Myy5NECydC" role="3TlMhJ">
+                <node concept="ZpONE" id="Myy5NECydD" role="3TlMhJ">
+                  <ref role="ZpOSt" node="Myy5NECy2X" resolve="_deviceNode2_" />
+                  <node concept="1ZhdrF" id="Myy5NECydE" role="lGtFl">
+                    <property role="P3scX" value="137e622e-709a-48af-8f85-420e945711de/2851923306472496585/2851923306472496958" />
+                    <property role="2qtEX8" value="clafer" />
+                    <node concept="3$xsQk" id="Myy5NECydF" role="3$ytzL">
+                      <node concept="3clFbS" id="Myy5NECydG" role="2VODD2">
+                        <node concept="3clFbF" id="Myy5NECydH" role="3cqZAp">
+                          <node concept="2OqwBi" id="Myy5NECydI" role="3clFbG">
+                            <node concept="1PxgMI" id="Myy5NECydJ" role="2Oq$k0">
+                              <ref role="1PxNhF" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
+                              <node concept="30H73N" id="Myy5NECydK" role="1PxMeX" />
+                            </node>
+                            <node concept="3TrEf2" id="Myy5NEDLws" role="2OqNvi">
+                              <ref role="3Tt5mk" to="ddau:Myy5NECyWa" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qmXGp" id="Myy5NECydM" role="3TlMhI">
+                  <node concept="2ZqYGZ" id="Myy5NEDKEV" role="1ESnxz">
+                    <ref role="2ZqYFj" to="3fny:4NBd3iZk1L4" resolve="reciever" />
+                  </node>
+                  <node concept="2Zoh0E" id="Myy5NEDKAs" role="1_9fRO" />
+                </node>
+              </node>
+              <node concept="3TlM44" id="Myy5NECydP" role="3TlMhI">
+                <node concept="ZpONE" id="Myy5NECydQ" role="3TlMhJ">
+                  <ref role="ZpOSt" node="Myy5NECy2V" resolve="_deviceNode_" />
+                  <node concept="1ZhdrF" id="Myy5NECydR" role="lGtFl">
+                    <property role="P3scX" value="137e622e-709a-48af-8f85-420e945711de/2851923306472496585/2851923306472496958" />
+                    <property role="2qtEX8" value="clafer" />
+                    <node concept="3$xsQk" id="Myy5NECydS" role="3$ytzL">
+                      <node concept="3clFbS" id="Myy5NECydT" role="2VODD2">
+                        <node concept="3clFbF" id="Myy5NECydU" role="3cqZAp">
+                          <node concept="2OqwBi" id="Myy5NECydV" role="3clFbG">
+                            <node concept="1PxgMI" id="Myy5NECydW" role="2Oq$k0">
+                              <ref role="1PxNhF" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
+                              <node concept="30H73N" id="Myy5NECydX" role="1PxMeX" />
+                            </node>
+                            <node concept="3TrEf2" id="Myy5NEDLam" role="2OqNvi">
+                              <ref role="3Tt5mk" to="ddau:Myy5NECyW8" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qmXGp" id="Myy5NECydZ" role="3TlMhI">
+                  <node concept="2ZqYGZ" id="Myy5NEDKNT" role="1ESnxz">
+                    <ref role="2ZqYFj" to="3fny:4NBd3iZk1L1" resolve="sender" />
+                  </node>
+                  <node concept="2Zoh0E" id="Myy5NEDKJq" role="1_9fRO" />
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="Myy5NECye2" role="lGtFl" />
+          </node>
+        </node>
+      </node>
+      <node concept="UzEYP" id="Myy5NECy2S" role="UzTCv" />
+      <node concept="UH0sd" id="Myy5NECy2T" role="UzTCv">
+        <property role="TrG5h" value="_deviceNodeTopology_" />
+        <node concept="2vxcI6" id="Myy5NECy2U" role="2vxcI2">
+          <ref role="2vxcI7" to="3fny:4NBd3iZk1K2" resolve="DeviceNodeTopology" />
+        </node>
+        <node concept="UH0sd" id="Myy5NECy2V" role="2vwUiP">
+          <property role="TrG5h" value="_deviceNode_" />
+          <node concept="2vxcI6" id="Myy5NECy2W" role="2vxcI2">
+            <ref role="2vxcI7" to="3fny:4NBd3iZk1Kc" resolve="DeviceNode" />
+          </node>
+        </node>
+        <node concept="UH0sd" id="Myy5NECy2X" role="2vwUiP">
+          <property role="TrG5h" value="_deviceNode2_" />
+          <node concept="2vxcI6" id="Myy5NECy2Y" role="2vxcI2">
+            <ref role="2vxcI7" to="3fny:4NBd3iZk1Kc" resolve="DeviceNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="UzEYP" id="Myy5NECy2Z" role="UzTCv" />
     </node>
   </node>
 </model>
