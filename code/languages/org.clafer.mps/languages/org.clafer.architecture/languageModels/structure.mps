@@ -259,41 +259,6 @@
       <ref role="PrY4T" node="znlrM84$1s" resolve="IFragment" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6Fa64hUiAr6">
-    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
-    <property role="TrG5h" value="WireConnector" />
-    <property role="34LRSv" value="Wire Connector" />
-    <property role="1pbfSe" value="451641590" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="1TJgyj" id="6Ct43dp5uyE" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="connectorType" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6Ct43dp5mD9" resolve="WireConnectorType" />
-    </node>
-    <node concept="1TJgyj" id="$OrRLOo9Xc" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
-    </node>
-    <node concept="1TJgyj" id="$OrRLOo9Xg" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
-    </node>
-    <node concept="1TJgyi" id="$OrRLOoafo" role="1TKVEl">
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="$OrRLOoabn" resolve="WireConnectorTypeEnum" />
-    </node>
-    <node concept="PrWs8" id="$OrRLOqE6b" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
-    </node>
-    <node concept="PrWs8" id="1tfNdgy1sjw" role="PzmwI">
-      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="znlrM84$1s">
     <property role="TrG5h" value="IFragment" />
     <property role="3GE5qa" value="Interfaces" />
@@ -312,24 +277,6 @@
     <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
     <node concept="PrWs8" id="3f7bmGhwmiB" role="PzmwI">
       <ref role="PrY4T" node="3f7bmGhwmis" resolve="IHaveFixedDeviceType" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="$OrRLOoabn">
-    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
-    <property role="TrG5h" value="WireConnectorTypeEnum" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="$OrRLOoabo" role="M5hS2">
-      <property role="1uS6qv" value="discrete" />
-      <property role="1uS6qo" value="Discrete" />
-    </node>
-    <node concept="M4N5e" id="$OrRLOoacC" role="M5hS2">
-      <property role="1uS6qv" value="analog" />
-      <property role="1uS6qo" value="Analog" />
-    </node>
-    <node concept="M4N5e" id="$OrRLOoacF" role="M5hS2">
-      <property role="1uS6qo" value="Power" />
-      <property role="1uS6qv" value="power" />
     </node>
   </node>
   <node concept="PlHQZ" id="$OrRLOo_6A">
@@ -383,48 +330,6 @@
     <property role="TrG5h" value="IConnector" />
     <property role="3GE5qa" value="Interfaces" />
     <property role="1pbfSe" value="961852933" />
-  </node>
-  <node concept="1TIwiD" id="6Ct43dp5mp_">
-    <property role="TrG5h" value="PowerWC" />
-    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
-    <property role="MwhBj" value="${module}/icons/powerWireConnector.png" />
-    <property role="34LRSv" value="power" />
-    <property role="1pbfSe" value="1020103016" />
-    <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
-  </node>
-  <node concept="1TIwiD" id="6Ct43dp5mD9">
-    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
-    <property role="TrG5h" value="WireConnectorType" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="1020102020" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="6Ct43dp5mDa">
-    <property role="TrG5h" value="DiscreteWC" />
-    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
-    <property role="34LRSv" value="discrete" />
-    <property role="1pbfSe" value="1020102019" />
-    <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
-  </node>
-  <node concept="1TIwiD" id="6Ct43dp5mDb">
-    <property role="TrG5h" value="AnalogWC" />
-    <property role="3GE5qa" value="WireConnector" />
-    <property role="34LRSv" value="Analog" />
-    <property role="1pbfSe" value="1020102018" />
-    <ref role="1TJDcQ" node="6Ct43dp5mD9" resolve="WireConnectorType" />
-  </node>
-  <node concept="1TIwiD" id="4IooPifShRJ">
-    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
-    <property role="TrG5h" value="WireConnectorRef" />
-    <property role="1pbfSe" value="612794045" />
-    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
-    <node concept="1TJgyj" id="4IooPifSiIT" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="connector" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6Fa64hUiAr6" resolve="WireConnector" />
-    </node>
   </node>
   <node concept="1TIwiD" id="12rnRvMfu2B">
     <property role="3GE5qa" value="FeatureModel" />

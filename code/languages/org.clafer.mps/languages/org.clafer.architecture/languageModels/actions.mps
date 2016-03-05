@@ -226,46 +226,6 @@
   </registry>
   <node concept="3UOs0u" id="4csP6flV3Hy">
     <property role="TrG5h" value="AddContent" />
-    <node concept="3UNGvq" id="4IooPifSw3D" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:4IooPifShRJ" resolve="WireConnectorRef" />
-      <node concept="tYCnQ" id="4IooPifSw4p" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:4IooPifShRJ" resolve="WireConnectorRef" />
-        <node concept="Cmt7Y" id="4IooPifSw4t" role="uz6Si">
-          <node concept="Cnhdc" id="4IooPifSw4u" role="Cncma">
-            <node concept="3clFbS" id="4IooPifSw4v" role="2VODD2">
-              <node concept="3clFbF" id="4IooPifSw63" role="3cqZAp">
-                <node concept="2OqwBi" id="4IooPifSw64" role="3clFbG">
-                  <node concept="2OqwBi" id="4IooPifSw65" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4IooPifSw66" role="2Oq$k0">
-                      <node concept="Cj7Ep" id="4IooPifSw67" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="4IooPifSw68" role="2OqNvi">
-                        <node concept="1xMEDy" id="4IooPifSw69" role="1xVPHs">
-                          <node concept="chp4Y" id="4IooPifSw6a" role="ri$Ld">
-                            <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="4IooPifSw6b" role="2OqNvi">
-                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
-                    </node>
-                  </node>
-                  <node concept="WFELt" id="4IooPifSw6c" role="2OqNvi">
-                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2h1dTh" id="4IooPifSw58" role="Cn2iK">
-            <property role="2h1i$Z" value="{" />
-          </node>
-          <node concept="2h1dTh" id="4xcaXO71us8" role="Cn6ar">
-            <property role="2h1i$Z" value="Add Content" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3UNGvq" id="5OLu9WxXhlZ" role="3UOs0v">
       <ref role="3UNGvu" to="ddau:1XvwwfKtGGx" resolve="ArchRef" />
       <node concept="tYCnQ" id="5OLu9WxXhm0" role="_1QTJ">
@@ -644,9 +604,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="19aTRzkPg88" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:7DuSdC$$3Vj" resolve="DeviceNodeTopology" />
+      <ref role="3UNGvu" to="ddau:7DuSdC$$3Vj" resolve="DeviceNodeClassification" />
       <node concept="tYCnQ" id="19aTRzkPg89" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:7DuSdC$$3Vj" resolve="DeviceNodeTopology" />
+        <ref role="uz4UX" to="ddau:7DuSdC$$3Vj" resolve="DeviceNodeClassification" />
         <node concept="Cmt7Y" id="19aTRzkPg8a" role="uz6Si">
           <node concept="Cnhdc" id="19aTRzkPg8b" role="Cncma">
             <node concept="3clFbS" id="19aTRzkPg8c" role="2VODD2">
@@ -675,9 +635,9 @@
       </node>
     </node>
     <node concept="3UNGvq" id="7DuSdC$w0ni" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:7DuSdC$vZ6L" resolve="FunctionalAnalysisArchitecture" />
+      <ref role="3UNGvu" to="ddau:7DuSdC$vZ6L" resolve="FunctionalAnalysis" />
       <node concept="tYCnQ" id="7DuSdC$w0nj" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:7DuSdC$vZ6L" resolve="FunctionalAnalysisArchitecture" />
+        <ref role="uz4UX" to="ddau:7DuSdC$vZ6L" resolve="FunctionalAnalysis" />
         <node concept="Cmt7Y" id="7DuSdC$w0nk" role="uz6Si">
           <node concept="Cnhdc" id="7DuSdC$w0nl" role="Cncma">
             <node concept="3clFbS" id="7DuSdC$w0nm" role="2VODD2">
@@ -837,9 +797,9 @@
       <property role="3V$3am" value="actionsBuilder" />
       <property role="3V$3ak" value="aee9cad2-acd4-4608-aef2-0004f6a1cdbd/1138079416598/1138079416599" />
       <node concept="3UNGvq" id="19aTRzkShDY" role="8Wnug">
-        <ref role="3UNGvu" to="ddau:19aTRzkPSlW" resolve="DataConnector" />
+        <ref role="3UNGvu" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
         <node concept="tYCnQ" id="19aTRzkShDZ" role="_1QTJ">
-          <ref role="uz4UX" to="ddau:19aTRzkPSlW" resolve="DataConnector" />
+          <ref role="uz4UX" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
           <node concept="Cmt7Y" id="19aTRzkShE0" role="uz6Si">
             <node concept="Cnhdc" id="19aTRzkShE1" role="Cncma">
               <node concept="3clFbS" id="19aTRzkShE2" role="2VODD2">

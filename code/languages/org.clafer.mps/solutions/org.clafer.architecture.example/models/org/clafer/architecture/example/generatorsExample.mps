@@ -31,12 +31,6 @@
       </concept>
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
-      <concept id="7694989595704452806" name="org.clafer.architecture.structure.WireConnector" flags="ng" index="gw7U2">
-        <property id="663277625449423832" name="type" index="1XlcM$" />
-        <reference id="663277625449422672" name="target" index="1Xlf0G" />
-        <reference id="663277625449422668" name="source" index="1Xlf0K" />
-        <child id="7646285555068954794" name="connectorType" index="N2fyp" />
-      </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
         <reference id="7694989595706234372" name="ht" index="gFST0" />
@@ -54,7 +48,6 @@
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
-      <concept id="7646285555068922442" name="org.clafer.architecture.structure.DiscreteWC" flags="ng" index="N27DT" />
       <concept id="5776930868210688761" name="org.clafer.architecture.structure.IHaveQualityAttributes" flags="ng" index="Nx2FX">
         <child id="4851172649685075330" name="qualities" index="33KLpg" />
       </concept>
@@ -68,7 +61,7 @@
         <child id="6715281144249649204" name="connects" index="1WO72F" />
         <child id="6715281144250216385" name="gateway" index="1WQdtu" />
       </concept>
-      <concept id="1318120347112277372" name="org.clafer.architecture.structure.DataConnector" flags="ng" index="36Bm84" />
+      <concept id="1318120347112277372" name="org.clafer.architecture.structure.HardwareDataConnector" flags="ng" index="36Bm84" />
       <concept id="1318120347112277400" name="org.clafer.architecture.structure.DiscreteWireConnector" flags="ng" index="36Bmbw" />
       <concept id="1318120347112283915" name="org.clafer.architecture.structure.Implementation" flags="ng" index="36BnxN" />
       <concept id="1318120347112283916" name="org.clafer.architecture.structure.CommunicationImpl" flags="ng" index="36BnxO" />
@@ -87,9 +80,9 @@
       </concept>
       <concept id="2835231858185744727" name="org.clafer.architecture.structure.ArchParens" flags="ng" index="1kkfkd" />
       <concept id="2835231858186161391" name="org.clafer.architecture.structure.ArchLogicalComma" flags="ng" index="1kl$yP" />
-      <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysisArchitecture" flags="ng" index="1u8h5F" />
+      <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareArchitecture" flags="ng" index="1uNGeH" />
-      <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
+      <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
       <concept id="8119098109027610108" name="org.clafer.architecture.structure.Inline" flags="ng" index="3Hzz_a" />
@@ -285,36 +278,6 @@
       <node concept="3HzFZ7" id="1T6YVZd$U3r" role="2mZOl8">
         <property role="TrG5h" value="electronicSwitch" />
         <node concept="kIXAu" id="1T6YVZd$U3X" role="kIXCp" />
-      </node>
-      <node concept="UzEYP" id="1T6YVZdxoDy" role="2mZOl8" />
-      <node concept="gw7U2" id="1T6YVZd$U53" role="2mZOl8">
-        <property role="TrG5h" value="discreteWireConnector" />
-        <ref role="1Xlf0K" node="1T6YVZdxoCk" resolve="PowerDNode" />
-        <ref role="1Xlf0G" node="1T6YVZdxoCo" resolve="electronicDNode" />
-        <node concept="N27DT" id="1T6YVZd$U54" role="N2fyp" />
-        <node concept="1z9TsT" id="1T6YVZd_nbt" role="lGtFl">
-          <node concept="OjmMv" id="1T6YVZd_nbu" role="1w35rA">
-            <node concept="19SGf9" id="1T6YVZd_nbv" role="OjmMu">
-              <node concept="19SUe$" id="1T6YVZd_nbw" role="19SJt6">
-                <property role="19SUeA" value="???????????" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="gw7U2" id="1T6YVZd_kVa" role="2mZOl8">
-        <property role="TrG5h" value="analogWireConnector" />
-        <property role="1XlcM$" value="analog" />
-        <ref role="1Xlf0K" node="1T6YVZdxoCk" resolve="PowerDNode" />
-        <ref role="1Xlf0G" node="1T6YVZdxoCo" resolve="electronicDNode" />
-        <node concept="N27DT" id="1T6YVZd_kVb" role="N2fyp" />
-      </node>
-      <node concept="gw7U2" id="1T6YVZd_kVJ" role="2mZOl8">
-        <property role="TrG5h" value="powerWireConnector" />
-        <property role="1XlcM$" value="power" />
-        <ref role="1Xlf0K" node="1T6YVZdxoCk" resolve="PowerDNode" />
-        <ref role="1Xlf0G" node="1T6YVZdxoCo" resolve="electronicDNode" />
-        <node concept="N27DT" id="1T6YVZd_kVK" role="N2fyp" />
       </node>
       <node concept="UzEYP" id="1T6YVZd_nb_" role="2mZOl8" />
     </node>

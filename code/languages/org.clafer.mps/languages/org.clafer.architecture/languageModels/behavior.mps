@@ -1602,27 +1602,6 @@
       <node concept="3clFbS" id="$OrRLOgbqD" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="6Ct43dp5uz5">
-    <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
-    <ref role="13h7C2" to="ddau:6Fa64hUiAr6" resolve="WireConnector" />
-    <node concept="13hLZK" id="6Ct43dp5uz6" role="13h7CW">
-      <node concept="3clFbS" id="6Ct43dp5uz7" role="2VODD2">
-        <node concept="3clFbF" id="6Ct43dp5uEf" role="3cqZAp">
-          <node concept="2OqwBi" id="6Ct43dp5_FP" role="3clFbG">
-            <node concept="2OqwBi" id="6Ct43dp5uIR" role="2Oq$k0">
-              <node concept="13iPFW" id="6Ct43dp5uEe" role="2Oq$k0" />
-              <node concept="3TrEf2" id="6Ct43dp5ydN" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:6Ct43dp5uyE" />
-              </node>
-            </node>
-            <node concept="zfrQC" id="6Ct43dp5_Ng" role="2OqNvi">
-              <ref role="1A9B2P" to="ddau:6Ct43dp5mDa" resolve="DiscreteWC" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="13h7C7" id="5OLu9WxucWp">
     <property role="3GE5qa" value="Wiring.CommunicationTopology" />
     <ref role="13h7C2" to="ddau:4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
@@ -1632,7 +1611,7 @@
   </node>
   <node concept="13h7C7" id="4B66Yaq2KPL">
     <property role="3GE5qa" value="Wiring.CommunicationTopology" />
-    <ref role="13h7C2" to="ddau:19aTRzkPSlW" resolve="DataConnector" />
+    <ref role="13h7C2" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
     <node concept="13hLZK" id="4B66Yaq2KPM" role="13h7CW">
       <node concept="3clFbS" id="4B66Yaq2KPN" role="2VODD2" />
     </node>

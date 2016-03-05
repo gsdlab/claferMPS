@@ -29,12 +29,6 @@
       </concept>
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
-      <concept id="7694989595704452806" name="org.clafer.architecture.structure.WireConnector" flags="ng" index="gw7U2">
-        <property id="663277625449423832" name="type" index="1XlcM$" />
-        <reference id="663277625449422672" name="target" index="1Xlf0G" />
-        <reference id="663277625449422668" name="source" index="1Xlf0K" />
-        <child id="7646285555068954794" name="connectorType" index="N2fyp" />
-      </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
         <reference id="7694989595706234372" name="ht" index="gFST0" />
@@ -48,14 +42,13 @@
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
-      <concept id="7646285555068921445" name="org.clafer.architecture.structure.PowerWC" flags="ng" index="N27pm" />
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
         <reference id="7590219002335427874" name="dest" index="2wMEbl" />
         <reference id="7590219002335427867" name="src" index="2wMEbG" />
       </concept>
-      <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysisArchitecture" flags="ng" index="1u8h5F" />
+      <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareArchitecture" flags="ng" index="1uNGeH" />
-      <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
+      <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
       <concept id="8119098109027610108" name="org.clafer.architecture.structure.Inline" flags="ng" index="3Hzz_a" />
       <concept id="8119098109027610109" name="org.clafer.architecture.structure.Pin" flags="ng" index="3Hzz_b" />
@@ -476,72 +469,6 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="1uNHS9" id="3KrTRUBTu11" role="UzTCv">
       <property role="TrG5h" value="WinSubSysLoadPwrDT" />
-      <node concept="gw7U2" id="1Mid6XjetUn" role="2mZOl8">
-        <property role="TrG5h" value="lpToDriver" />
-        <property role="1XlcM$" value="power" />
-        <property role="gTlvz" value="true" />
-        <ref role="1Xlf0G" node="3iBNEMr9IG0" resolve="MotorDriver" />
-        <ref role="1Xlf0K" node="3iBNEMr9IK1" resolve="LoadPwr" />
-        <node concept="gqqVs" id="1Mid6Xjl_Fs" role="lGtFl">
-          <property role="gqqTZ" value="12.000100135803223" />
-          <property role="gqqTW" value="452.0" />
-          <property role="gqqTX" value="132.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-        <node concept="2VclpC" id="6Ct43dp3FM6" role="lGtFl">
-          <node concept="2VclrF" id="6Ct43dp3FM7" role="2Vcluh">
-            <property role="2Vclpx" value="200.0001983642578" />
-            <property role="2Vclpz" value="37.0" />
-          </node>
-          <node concept="2VclrF" id="44ORmASWj63" role="2Vcluh">
-            <property role="2Vclpx" value="200.0001983642578" />
-            <property role="2Vclpz" value="113.0" />
-          </node>
-        </node>
-        <node concept="N27pm" id="6Ct43dp6ypi" role="N2fyp" />
-      </node>
-      <node concept="gw7U2" id="1Mid6XjetVI" role="2mZOl8">
-        <property role="TrG5h" value="DriverToMotor" />
-        <property role="gTlvz" value="true" />
-        <property role="1XlcM$" value="power" />
-        <ref role="1Xlf0K" node="3iBNEMr9IG0" resolve="MotorDriver" />
-        <ref role="1Xlf0G" node="3iBNEMr9IEw" resolve="WinMotor" />
-        <node concept="gqqVs" id="1Mid6Xjl_Ft" role="lGtFl">
-          <property role="gqqTZ" value="12.000100135803223" />
-          <property role="gqqTW" value="562.0" />
-          <property role="gqqTX" value="162.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-        <node concept="2VclpC" id="6Ct43dp3FMn" role="lGtFl">
-          <node concept="2VclrF" id="6Ct43dp3FMo" role="2Vcluh">
-            <property role="2Vclpx" value="898.0003662109375" />
-            <property role="2Vclpz" value="113.0" />
-          </node>
-          <node concept="2VclrF" id="44ORmASWj64" role="2Vcluh">
-            <property role="2Vclpx" value="898.0003662109375" />
-            <property role="2Vclpz" value="37.0" />
-          </node>
-        </node>
-        <node concept="N27pm" id="6Ct43dp6yqy" role="N2fyp" />
-      </node>
-      <node concept="gw7U2" id="1Mid6XjetVQ" role="2mZOl8">
-        <property role="TrG5h" value="lpToMotor" />
-        <property role="1XlcM$" value="power" />
-        <property role="gTlvz" value="true" />
-        <ref role="1Xlf0K" node="3iBNEMr9IK1" resolve="LoadPwr" />
-        <ref role="1Xlf0G" node="3iBNEMr9IEw" resolve="WinMotor" />
-        <node concept="gqqVs" id="1Mid6Xjl_Fu" role="lGtFl">
-          <property role="gqqTZ" value="12.000100135803223" />
-          <property role="gqqTW" value="232.0" />
-          <property role="gqqTX" value="122.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-        <node concept="N27pm" id="6Ct43dp6yrc" role="N2fyp" />
-        <node concept="2VclpC" id="2nqawvIvzM4" role="lGtFl" />
-      </node>
     </node>
     <node concept="UzEYP" id="7_UebHXPzjM" role="UzTCv" />
     <node concept="UzEYP" id="$OrRLOs9v7" role="UzTCv" />

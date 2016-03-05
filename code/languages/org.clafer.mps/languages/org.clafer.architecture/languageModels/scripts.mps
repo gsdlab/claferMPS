@@ -99,9 +99,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
-        <reference id="1139880128956" name="concept" index="1A9B2P" />
-      </concept>
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -144,31 +141,6 @@
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
-  <node concept="_UgoZ" id="6Ct43dp5IP$">
-    <property role="TrG5h" value="ArchitectueMigratePower" />
-    <property role="_Wzho" value="Architecture: Migrate Power" />
-    <node concept="_XfAh" id="6Ct43dp5IP_" role="_YvDr">
-      <property role="_XH9r" value="PowerConnector" />
-      <ref role="_XDHR" to="ddau:6Fa64hUiAr6" resolve="WireConnector" />
-      <node concept="_ZGcI" id="6Ct43dp5IPA" role="_XPhp">
-        <node concept="3clFbS" id="6Ct43dp5IPB" role="2VODD2">
-          <node concept="3clFbF" id="6Ct43dp5ITS" role="3cqZAp">
-            <node concept="2OqwBi" id="6Ct43dp5Kcw" role="3clFbG">
-              <node concept="2OqwBi" id="6Ct43dp5IYu" role="2Oq$k0">
-                <node concept="_YI3z" id="6Ct43dp5ITR" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6Ct43dp5JK_" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ddau:6Ct43dp5uyE" />
-                </node>
-              </node>
-              <node concept="zfrQC" id="6Ct43dp5Ksl" role="2OqNvi">
-                <ref role="1A9B2P" to="ddau:6Ct43dp5mp_" resolve="PowerWC" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="_UgoZ" id="6tUgmTZR7O8">
     <property role="_Wzho" value="Architecture: Migrate FDevice quality attributes" />
     <property role="TrG5h" value="ArchitectureMigrateFDeviceQA" />
