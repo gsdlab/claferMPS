@@ -83,24 +83,21 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="src" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flSWC7" resolve="AnalysisFunction" />
+      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
     </node>
     <node concept="1TJgyj" id="6_lRZv9BROy" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="dest" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flSWC7" resolve="AnalysisFunction" />
+      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
     </node>
     <node concept="PrWs8" id="1tfNdgy1sjr" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
     </node>
-    <node concept="PrWs8" id="2l5qjD1Ij0u" role="PzmwI">
-      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
-    </node>
     <node concept="PrWs8" id="4IooPifUJdQ" role="PzmwI">
       <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
-    <node concept="PrWs8" id="6PK7EUlNulu" role="PzmwI">
+    <node concept="PrWs8" id="6tUgmTZN8Kq" role="PzmwI">
       <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
     </node>
   </node>
@@ -151,13 +148,7 @@
     <property role="TrG5h" value="AnalysisFunction" />
     <property role="34LRSv" value="Analysis Function" />
     <property role="1pbfSe" value="419470954" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="PrWs8" id="2l5qjD1KpOO" role="PzmwI">
-      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
-    </node>
-    <node concept="PrWs8" id="6PK7EUlNtxd" role="PzmwI">
-      <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
-    </node>
+    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FAComponent" />
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
     <property role="3GE5qa" value="FunctionalArchitecture" />
@@ -165,10 +156,7 @@
     <property role="34LRSv" value="Functional Device" />
     <property role="MwhBj" value="${module}/icons/gear.png" />
     <property role="1pbfSe" value="419891847" />
-    <ref role="1TJDcQ" node="4csP6flSWC7" resolve="AnalysisFunction" />
-    <node concept="PrWs8" id="5UcaHciRxOn" role="PzmwI">
-      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
-    </node>
+    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FAComponent" />
   </node>
   <node concept="1TIwiD" id="4csP6fm34cz">
     <property role="TrG5h" value="DeviceNode" />
@@ -396,11 +384,6 @@
     <property role="3GE5qa" value="Interfaces" />
     <property role="1pbfSe" value="961852933" />
   </node>
-  <node concept="PlHQZ" id="2l5qjD1IiLz">
-    <property role="3GE5qa" value="FunctionalArchitecture" />
-    <property role="TrG5h" value="IFunctionalAnalysisNode" />
-    <property role="1pbfSe" value="1727960477" />
-  </node>
   <node concept="1TIwiD" id="6Ct43dp5mp_">
     <property role="TrG5h" value="PowerWC" />
     <property role="3GE5qa" value="AutomobileConcepts.WireConnector" />
@@ -465,9 +448,6 @@
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="5UcaHciOGUw" role="PzmwI">
       <ref role="PrY4T" node="znlrM84$1s" resolve="IFragment" />
-    </node>
-    <node concept="PrWs8" id="5UcaHciOGWM" role="PzmwI">
-      <ref role="PrY4T" node="2l5qjD1IiLz" resolve="IFunctionalAnalysisNode" />
     </node>
   </node>
   <node concept="1TIwiD" id="7DuSdC$$2dR">
@@ -1144,6 +1124,17 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1jKsuqULYIz" role="PzmwI">
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tUgmTZL8lp">
+    <property role="1pbfSe" value="415316281" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="FAComponent" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <node concept="PrWs8" id="6tUgmTZN8L3" role="PzmwI">
+      <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
     </node>
   </node>
 </model>
