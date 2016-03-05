@@ -129,7 +129,7 @@
             <property role="TrG5h" value="fa" />
             <node concept="2K4itw" id="4NBd3iZk1It" role="2K4itM">
               <node concept="ZpTZE" id="4NBd3iZk1Iu" role="3J4IUC">
-                <ref role="ZpTZD" node="4NBd3iZk1IM" resolve="FunctionalAnalysisArchitecture" />
+                <ref role="ZpTZD" node="4NBd3iZk1IM" resolve="FunctionalAnalysis" />
               </node>
             </node>
           </node>
@@ -179,13 +179,13 @@
     <node concept="UzEYP" id="4NBd3iZk1IL" role="UzTCv" />
     <node concept="UH0sd" id="4NBd3iZk1IM" role="UzTCv">
       <property role="2vxgol" value="true" />
-      <property role="TrG5h" value="FunctionalAnalysisArchitecture" />
+      <property role="TrG5h" value="FunctionalAnalysis" />
       <node concept="2vxuzR" id="4NBd3iZk1IN" role="2vwUiP">
         <node concept="LkG4F" id="4NBd3iZk1IO" role="3WnoGb">
           <node concept="2BPB98" id="4NBd3iZk1IP" role="3TlMhJ">
             <node concept="vgzv4" id="4NBd3iZk1IQ" role="1_9fRO">
               <node concept="ZpONE" id="4NBd3iZk1IR" role="3TlMhJ">
-                <ref role="ZpOSt" node="4NBd3iZk1IM" resolve="FunctionalAnalysisArchitecture" />
+                <ref role="ZpOSt" node="4NBd3iZk1IM" resolve="FunctionalAnalysis" />
               </node>
               <node concept="ZpONE" id="4NBd3iZk1IS" role="3TlMhI">
                 <ref role="ZpOSt" node="4NBd3iZk1Iq" resolve="Architecture" />
@@ -257,7 +257,7 @@
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="4NBd3iZk1Jg" role="2K4itM">
             <node concept="ZpTZE" id="4NBd3iZk1Jh" role="3J4IUC">
-              <ref role="ZpTZD" node="4NBd3iZk1KO" resolve="DataConnector" />
+              <ref role="ZpTZD" node="4NBd3iZk1KO" resolve="HardwareDataConnector" />
             </node>
           </node>
           <node concept="3Edj9i" id="4NBd3iZk1Ji" role="2vBZf8" />
@@ -378,13 +378,13 @@
     <node concept="UzEYP" id="4NBd3iZk1K1" role="UzTCv" />
     <node concept="UH0sd" id="4NBd3iZk1K2" role="UzTCv">
       <property role="2vxgol" value="true" />
-      <property role="TrG5h" value="DeviceNodeTopology" />
+      <property role="TrG5h" value="DeviceNodeClassification" />
       <node concept="2vxuzR" id="4NBd3iZk1K3" role="2vwUiP">
         <node concept="LkG4F" id="4NBd3iZk1K4" role="3WnoGb">
           <node concept="2BPB98" id="4NBd3iZk1K5" role="3TlMhJ">
             <node concept="vgzv4" id="4NBd3iZk1K6" role="1_9fRO">
               <node concept="ZpONE" id="4NBd3iZk1K7" role="3TlMhJ">
-                <ref role="ZpOSt" node="4NBd3iZk1K2" resolve="DeviceNodeTopology" />
+                <ref role="ZpOSt" node="4NBd3iZk1K2" resolve="DeviceNodeClassification" />
               </node>
               <node concept="ZpONE" id="4NBd3iZk1K8" role="3TlMhI">
                 <ref role="ZpOSt" node="4NBd3iZk1JR" resolve="HardwareArchitecture" />
@@ -469,7 +469,7 @@
                 <ref role="ZpOSt" node="4NBd3iZk1Kc" resolve="DeviceNode" />
               </node>
               <node concept="ZpONE" id="WgjoVd53tV" role="3TlMhI">
-                <ref role="ZpOSt" node="4NBd3iZk1K2" resolve="DeviceNodeTopology" />
+                <ref role="ZpOSt" node="4NBd3iZk1K2" resolve="DeviceNodeClassification" />
               </node>
             </node>
           </node>
@@ -568,7 +568,7 @@
       </node>
       <node concept="UH0sd" id="4NBd3iZk1KO" role="2vwUiP">
         <property role="2vxgol" value="true" />
-        <property role="TrG5h" value="DataConnector" />
+        <property role="TrG5h" value="HardwareDataConnector" />
         <node concept="2vxcI6" id="4NBd3iZk1KP" role="2vxcI2">
           <ref role="2vxcI7" node="4NBd3iZk1Kv" resolve="HardwareConnector" />
         </node>
@@ -599,7 +599,7 @@
         <property role="2vxgol" value="true" />
         <property role="TrG5h" value="DiscreteWireConnector" />
         <node concept="2vxcI6" id="4NBd3iZk1L0" role="2vxcI2">
-          <ref role="2vxcI7" node="4NBd3iZk1KO" resolve="DataConnector" />
+          <ref role="2vxcI7" node="4NBd3iZk1KO" resolve="HardwareDataConnector" />
         </node>
         <node concept="UH0sd" id="4NBd3iZk1L1" role="2vwUiP">
           <property role="TrG5h" value="sender" />
@@ -639,7 +639,7 @@
         <property role="2vxgol" value="true" />
         <property role="TrG5h" value="BusConnector" />
         <node concept="2vxcI6" id="4NBd3iZk1Lc" role="2vxcI2">
-          <ref role="2vxcI7" node="4NBd3iZk1KO" resolve="DataConnector" />
+          <ref role="2vxcI7" node="4NBd3iZk1KO" resolve="HardwareDataConnector" />
         </node>
         <node concept="UH0sd" id="4NBd3iZk1Ld" role="2vwUiP">
           <property role="TrG5h" value="connects" />
