@@ -346,7 +346,7 @@
     </node>
   </node>
   <node concept="2S6QgY" id="5OLu9WxUqZr">
-    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="CommunicationTopology" />
     <property role="TrG5h" value="AddGateway" />
     <ref role="2ZfgGC" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
     <node concept="2S6ZIM" id="5OLu9WxUqZs" role="2ZfVej">

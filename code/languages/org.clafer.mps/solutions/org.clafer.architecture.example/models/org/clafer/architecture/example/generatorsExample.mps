@@ -55,24 +55,16 @@
         <reference id="4851172649685075405" name="tElement" index="33KLov" />
         <child id="4851172649685075407" name="value" index="33KLot" />
       </concept>
-      <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommunicationTopology" flags="ng" index="36Bm0V" />
+      <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277980" name="org.clafer.architecture.structure.PowerTopology" flags="ng" index="36Bm2$" />
       <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
         <child id="6715281144249649204" name="connects" index="1WO72F" />
-        <child id="6715281144250216385" name="gateway" index="1WQdtu" />
       </concept>
       <concept id="1318120347112277372" name="org.clafer.architecture.structure.HardwareDataConnector" flags="ng" index="36Bm84" />
-      <concept id="1318120347112277400" name="org.clafer.architecture.structure.DiscreteWireConnector" flags="ng" index="36Bmbw" />
-      <concept id="1318120347112283915" name="org.clafer.architecture.structure.Implementation" flags="ng" index="36BnxN" />
-      <concept id="1318120347112283916" name="org.clafer.architecture.structure.CommunicationImpl" flags="ng" index="36BnxO" />
-      <concept id="1318120347112283917" name="org.clafer.architecture.structure.PhysicalWire" flags="ng" index="36BnxP" />
-      <concept id="1318120347112283918" name="org.clafer.architecture.structure.PhysicalBus" flags="ng" index="36BnxQ">
-        <property id="4519192296743328828" name="type" index="1Dz_f" />
-        <child id="4142469013473272795" name="connectedNodes" index="20ny95" />
-      </concept>
-      <concept id="1318120347112283919" name="org.clafer.architecture.structure.DiscreteWire" flags="ng" index="36BnxR">
-        <child id="2375961715026402461" name="connects" index="18UC0a" />
-      </concept>
+      <concept id="1318120347112277400" name="org.clafer.architecture.structure.DiscreteDataConnector" flags="ng" index="36Bmbw" />
+      <concept id="1318120347112279768" name="org.clafer.architecture.structure.DevicePowerConnector" flags="ng" index="36BmAw" />
+      <concept id="1318120347112278873" name="org.clafer.architecture.structure.LoadPowerConnector" flags="ng" index="36BmKx" />
+      <concept id="1318120347112283691" name="org.clafer.architecture.structure.PowerConnector" flags="ng" index="36Bn_j" />
       <concept id="1318120347112271488" name="org.clafer.architecture.structure.HardwareConnector" flags="ng" index="36BoBS" />
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
         <reference id="7590219002335427874" name="dest" index="2wMEbl" />
@@ -85,6 +77,11 @@
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
+      <concept id="7477098530663790629" name="org.clafer.architecture.structure.AnalogDataConnector" flags="ng" index="3D38lq" />
+      <concept id="7477098530663630792" name="org.clafer.architecture.structure.Connector" flags="ng" index="3D3JER">
+        <reference id="7477098530663630796" name="target" index="3D3JEN" />
+        <reference id="7477098530663630793" name="source" index="3D3JEQ" />
+      </concept>
       <concept id="8119098109027610108" name="org.clafer.architecture.structure.Inline" flags="ng" index="3Hzz_a" />
       <concept id="8119098109027610109" name="org.clafer.architecture.structure.Pin" flags="ng" index="3Hzz_b" />
       <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
@@ -107,9 +104,6 @@
         <child id="663277625451387232" name="refToDevice" index="1XiJos" />
       </concept>
       <concept id="663277625447331269" name="org.clafer.architecture.structure.ECU" flags="ng" index="1XtdET" />
-      <concept id="3503913303691498173" name="org.clafer.architecture.structure.IHaveRealization" flags="ng" index="3YV7gC">
-        <child id="3503913303691498183" name="realizedBy" index="3YV7hi" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -285,6 +279,23 @@
       <property role="TrG5h" value="powerTopology" />
       <node concept="36BoBS" id="1T6YVZdABjq" role="2mZOl8">
         <property role="TrG5h" value="hwConnector" />
+        <ref role="3D3JEQ" node="1T6YVZdxohd" resolve="Feature" />
+        <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
+      </node>
+      <node concept="36BmKx" id="2XrN4Lurhli" role="2mZOl8">
+        <property role="TrG5h" value="lpConnector" />
+        <ref role="3D3JEQ" node="2XrN4Lurhk_" resolve="aDataConnector" />
+        <ref role="3D3JEN" node="3T8tWljOvJ6" resolve="arch" />
+      </node>
+      <node concept="36Bn_j" id="2XrN4Lurhlq" role="2mZOl8">
+        <property role="TrG5h" value="pConnector" />
+        <ref role="3D3JEQ" node="6PK7EUlUIK5" resolve="afunction" />
+        <ref role="3D3JEN" node="3T8tWlk9Spq" resolve="arch2" />
+      </node>
+      <node concept="36BmAw" id="2XrN4Lurhl$" role="2mZOl8">
+        <property role="TrG5h" value="dpConnector" />
+        <ref role="3D3JEQ" node="1T6YVZdxor8" resolve="aFunction" />
+        <ref role="3D3JEN" node="6PK7EUlUIKp" resolve="afunction2" />
       </node>
     </node>
     <node concept="UzEYP" id="1T6YVZd_ndS" role="UzTCv" />
@@ -294,111 +305,46 @@
         <property role="TrG5h" value="comTopology" />
         <node concept="36BoBS" id="1T6YVZdAGi2" role="2mZOl8">
           <property role="TrG5h" value="hwConnector2" />
+          <ref role="3D3JEN" node="1T6YVZdxoCk" resolve="PowerDNode" />
+          <ref role="3D3JEQ" node="1T6YVZd$U2v" resolve="Switch" />
         </node>
         <node concept="UzEYP" id="1T6YVZdAGiH" role="2mZOl8" />
         <node concept="36Bm84" id="1T6YVZdABgF" role="2mZOl8">
           <property role="TrG5h" value="dataConnector" />
+          <ref role="3D3JEQ" node="1T6YVZd$U2v" resolve="Switch" />
+          <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
         </node>
-        <node concept="UzEYP" id="32wpDnej29q" role="2mZOl8" />
-        <node concept="36Bmbw" id="32wpDnel9q1" role="2mZOl8">
+        <node concept="UzEYP" id="2XrN4Lup$8d" role="2mZOl8" />
+        <node concept="36Bmbw" id="2XrN4Lup$8S" role="2mZOl8">
           <property role="TrG5h" value="dwConnector" />
-          <node concept="1kl$yP" id="32wpDnemnUa" role="3YV7hi">
-            <node concept="3Jak$y" id="32wpDnemnUm" role="3TlMhJ">
-              <ref role="ZpOSt" node="32wpDnegX6l" resolve="dWire" />
+          <ref role="3D3JEQ" node="6PK7EUlUIKp" resolve="afunction2" />
+          <ref role="3D3JEN" node="1T6YVZdxor8" resolve="aFunction" />
+        </node>
+        <node concept="3D38lq" id="2XrN4Lurhk_" role="2mZOl8">
+          <property role="TrG5h" value="aDataConnector" />
+          <ref role="3D3JEQ" node="6PK7EUlUIKp" resolve="afunction2" />
+          <ref role="3D3JEN" node="1th$N_eQKTx" resolve="arch" />
+        </node>
+        <node concept="36BmAw" id="2XrN4Lurhl1" role="2mZOl8">
+          <property role="TrG5h" value="dDateConnector" />
+          <ref role="3D3JEQ" node="6PK7EUlUIKp" resolve="afunction2" />
+          <ref role="3D3JEN" node="1th$N_eQKTx" resolve="arch" />
+        </node>
+        <node concept="36Bm5n" id="2XrN4LupDxL" role="2mZOl8">
+          <property role="TrG5h" value="busConnector" />
+          <node concept="1kl$yP" id="2XrN4LupDy7" role="1WO72F">
+            <node concept="3Jak$y" id="2XrN4LupDy8" role="3TlMhJ">
+              <ref role="ZpOSt" node="1T6YVZd$U2v" resolve="Switch" />
             </node>
-            <node concept="3Jak$y" id="32wpDnel9qq" role="3TlMhI">
-              <ref role="ZpOSt" node="32wpDnegX6l" resolve="dWire" />
+            <node concept="3Jak$y" id="2XrN4LupDy9" role="3TlMhI">
+              <ref role="ZpOSt" node="1T6YVZdxoCk" resolve="PowerDNode" />
             </node>
           </node>
         </node>
         <node concept="UzEYP" id="32wpDnekjhi" role="2mZOl8" />
-        <node concept="36Bm5n" id="32wpDneoJBf" role="2mZOl8">
-          <property role="TrG5h" value="busConnector" />
-          <node concept="1kl$yP" id="32wpDneoJBR" role="1WO72F">
-            <node concept="3Jak$y" id="32wpDneoJC3" role="3TlMhJ">
-              <ref role="ZpOSt" node="1T6YVZd$U2v" resolve="Switch" />
-            </node>
-            <node concept="3Jak$y" id="32wpDneoJBD" role="3TlMhI">
-              <ref role="ZpOSt" node="1T6YVZdxoCk" resolve="PowerDNode" />
-            </node>
-          </node>
-          <node concept="1kl$yP" id="32wpDneoJCv" role="3YV7hi">
-            <node concept="3Jak$y" id="32wpDneoJCF" role="3TlMhJ">
-              <ref role="ZpOSt" node="1T6YVZdxoCo" resolve="electronicDNode" />
-            </node>
-            <node concept="3Jak$y" id="32wpDneoJCn" role="3TlMhI">
-              <ref role="ZpOSt" node="1T6YVZdxoCW" resolve="ecu" />
-            </node>
-          </node>
-          <node concept="1kl$yP" id="32wpDneoJDq" role="1WQdtu">
-            <node concept="3Jak$y" id="32wpDneoJDA" role="3TlMhJ">
-              <ref role="ZpOSt" node="1T6YVZdxoCW" resolve="ecu" />
-            </node>
-            <node concept="3Jak$y" id="32wpDneoJD1" role="3TlMhI">
-              <ref role="ZpOSt" node="1T6YVZdxoCk" resolve="PowerDNode" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="UzEYP" id="32wpDnegHZk" role="UzTCv" />
-    <node concept="36BnxN" id="32wpDnegWoG" role="UzTCv">
-      <property role="TrG5h" value="implementation" />
-      <node concept="36BnxO" id="32wpDnegWsJ" role="2mZOl8">
-        <property role="TrG5h" value="comImpl" />
-        <node concept="36BnxP" id="32wpDnegWsP" role="2mZOl8">
-          <property role="TrG5h" value="phWire" />
-        </node>
-        <node concept="UzEYP" id="32wpDnegWsS" role="2mZOl8" />
-        <node concept="36BnxQ" id="32wpDnegWsZ" role="2mZOl8">
-          <property role="TrG5h" value="CANphBus" />
-          <node concept="1kl$yP" id="32wpDnegWtf" role="20ny95">
-            <node concept="3Jak$y" id="32wpDnegWtr" role="3TlMhJ">
-              <ref role="ZpOSt" node="1T6YVZdxoHg" resolve="definedReference" />
-            </node>
-            <node concept="3Jak$y" id="32wpDnegWt7" role="3TlMhI">
-              <ref role="ZpOSt" node="1T6YVZdxoCe" resolve="dNode" />
-            </node>
-          </node>
-        </node>
-        <node concept="36BnxQ" id="32wpDneq6ai" role="2mZOl8">
-          <property role="TrG5h" value="FlexRayphBus" />
-          <property role="1Dz_f" value="FlexRay" />
-          <node concept="1kl$yP" id="32wpDneq6aj" role="20ny95">
-            <node concept="3Jak$y" id="32wpDneq6ak" role="3TlMhJ">
-              <ref role="ZpOSt" node="1T6YVZdxoHg" resolve="definedReference" />
-            </node>
-            <node concept="3Jak$y" id="32wpDneq6al" role="3TlMhI">
-              <ref role="ZpOSt" node="1T6YVZdxoCe" resolve="dNode" />
-            </node>
-          </node>
-        </node>
-        <node concept="36BnxQ" id="32wpDneq6aQ" role="2mZOl8">
-          <property role="TrG5h" value="LINphBus" />
-          <property role="1Dz_f" value="LIN" />
-          <node concept="1kl$yP" id="32wpDneq6aR" role="20ny95">
-            <node concept="3Jak$y" id="32wpDneq6aS" role="3TlMhJ">
-              <ref role="ZpOSt" node="1T6YVZdxoHg" resolve="definedReference" />
-            </node>
-            <node concept="3Jak$y" id="32wpDneq6aT" role="3TlMhI">
-              <ref role="ZpOSt" node="1T6YVZdxoCe" resolve="dNode" />
-            </node>
-          </node>
-        </node>
-        <node concept="UzEYP" id="32wpDnegX64" role="2mZOl8" />
-        <node concept="36BnxR" id="32wpDnegX6l" role="2mZOl8">
-          <property role="TrG5h" value="dWire" />
-          <node concept="1kl$yP" id="32wpDnegX6E" role="18UC0a">
-            <node concept="3Jak$y" id="32wpDnegX7f" role="3TlMhJ">
-              <ref role="ZpOSt" node="1T6YVZd$U2v" resolve="Switch" />
-            </node>
-            <node concept="3Jak$y" id="32wpDnegX6y" role="3TlMhI">
-              <ref role="ZpOSt" node="1T6YVZdxoCk" resolve="PowerDNode" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="UzEYP" id="32wpDnegWq1" role="UzTCv" />
     <node concept="UzEYP" id="32wpDnegWrm" role="UzTCv" />
     <node concept="UzEYP" id="1T6YVZdxoBc" role="UzTCv" />

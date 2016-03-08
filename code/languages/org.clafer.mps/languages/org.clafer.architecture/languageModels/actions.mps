@@ -266,46 +266,6 @@
         </node>
       </node>
     </node>
-    <node concept="3UNGvq" id="4xcaXO6VEv6" role="3UOs0v">
-      <ref role="3UNGvu" to="ddau:4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
-      <node concept="tYCnQ" id="4xcaXO6VEv7" role="_1QTJ">
-        <ref role="uz4UX" to="ddau:4xcaXO6V3hL" resolve="LogicalDataConnectorRef" />
-        <node concept="Cmt7Y" id="4xcaXO6VEv8" role="uz6Si">
-          <node concept="Cnhdc" id="4xcaXO6VEv9" role="Cncma">
-            <node concept="3clFbS" id="4xcaXO6VEva" role="2VODD2">
-              <node concept="3clFbF" id="4xcaXO6VEvb" role="3cqZAp">
-                <node concept="2OqwBi" id="4xcaXO6VEvc" role="3clFbG">
-                  <node concept="2OqwBi" id="4xcaXO6VEvd" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4xcaXO6VEve" role="2Oq$k0">
-                      <node concept="Cj7Ep" id="4xcaXO6VEvf" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="4xcaXO6VEvg" role="2OqNvi">
-                        <node concept="1xMEDy" id="4xcaXO6VEvh" role="1xVPHs">
-                          <node concept="chp4Y" id="4xcaXO6VEvi" role="ri$Ld">
-                            <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3Tsc0h" id="4xcaXO6VEvj" role="2OqNvi">
-                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
-                    </node>
-                  </node>
-                  <node concept="WFELt" id="4xcaXO6VEvk" role="2OqNvi">
-                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2h1dTh" id="4xcaXO6VEvl" role="Cn2iK">
-            <property role="2h1i$Z" value="{" />
-          </node>
-          <node concept="2h1dTh" id="4xcaXO71uuK" role="Cn6ar">
-            <property role="2h1i$Z" value="Add Content" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3UNGvq" id="7DuSdC$x0Zh" role="3UOs0v">
       <ref role="3UNGvu" to="ddau:$OrRLOvZKp" resolve="DeviceNodesRef" />
       <node concept="tYCnQ" id="7DuSdC$x0Zi" role="_1QTJ">
@@ -832,9 +792,9 @@
       <property role="3V$3am" value="actionsBuilder" />
       <property role="3V$3ak" value="aee9cad2-acd4-4608-aef2-0004f6a1cdbd/1138079416598/1138079416599" />
       <node concept="3UNGvq" id="19aTRzkShXC" role="8Wnug">
-        <ref role="3UNGvu" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
+        <ref role="3UNGvu" to="ddau:19aTRzkPSmo" resolve="DiscreteDataConnector" />
         <node concept="tYCnQ" id="19aTRzkShXD" role="_1QTJ">
-          <ref role="uz4UX" to="ddau:19aTRzkPSmo" resolve="DiscreteWireConnector" />
+          <ref role="uz4UX" to="ddau:19aTRzkPSmo" resolve="DiscreteDataConnector" />
           <node concept="Cmt7Y" id="19aTRzkShXE" role="uz6Si">
             <node concept="Cnhdc" id="19aTRzkShXF" role="Cncma">
               <node concept="3clFbS" id="19aTRzkShXG" role="2VODD2">
@@ -1336,7 +1296,7 @@
     </node>
   </node>
   <node concept="3UOs0u" id="5OLu9WxIM_Q">
-    <property role="3GE5qa" value="Wiring.CommunicationTopology" />
+    <property role="3GE5qa" value="CommunicationTopology" />
     <property role="TrG5h" value="makeArchBinaryOperator" />
     <node concept="3UNGvq" id="556bwyCeDWV" role="3UOs0v">
       <ref role="3UNGvu" to="ddau:2toL5DN39dr" resolve="IArchExpr" />

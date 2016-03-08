@@ -469,6 +469,7 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="1uNHS9" id="3KrTRUBTu11" role="UzTCv">
       <property role="TrG5h" value="WinSubSysLoadPwrDT" />
+      <node concept="UzEYP" id="6v3ZnYeKZWP" role="2mZOl8" />
     </node>
     <node concept="UzEYP" id="7_UebHXPzjM" role="UzTCv" />
     <node concept="UzEYP" id="$OrRLOs9v7" role="UzTCv" />
