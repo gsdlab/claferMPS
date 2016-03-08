@@ -17,7 +17,6 @@
     <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -168,12 +167,8 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
-      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
-        <reference id="1171323947160" name="concept" index="2SmgA8" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
@@ -182,7 +177,6 @@
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -1573,84 +1567,6 @@
     <node concept="1YaCAy" id="1jKsuqUM28y" role="1YuTPh">
       <property role="TrG5h" value="deployedToExpr" />
       <ref role="1YaFvo" to="ddau:1jKsuqULYIy" resolve="DeployedToExpr" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="4B66Yaq6ii6">
-    <property role="TrG5h" value="check_DiscreteWire" />
-    <property role="3GE5qa" value="Implementation" />
-    <node concept="3clFbS" id="4B66Yaq6ii7" role="18ibNy">
-      <node concept="1X3_iC" id="2D$aMdfSKP9" role="lGtFl">
-        <property role="3V$3am" value="statement" />
-        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-        <node concept="2Mj0R9" id="4B66Yaq6iH$" role="8Wnug">
-          <node concept="Xl_RD" id="4B66Yaq6iH_" role="2MkJ7o">
-            <property role="Xl_RC" value="The node has to be a realization of a Logical Discrete Wire" />
-          </node>
-          <node concept="1YBJjd" id="4B66Yaq6jia" role="2OEOjV">
-            <ref role="1YBMHb" node="4B66Yaq6ii9" resolve="dWire" />
-          </node>
-          <node concept="2OqwBi" id="4B66Yaq6iHB" role="2MkoU_">
-            <node concept="2OqwBi" id="4B66Yaq6iHC" role="2Oq$k0">
-              <node concept="2OqwBi" id="4B66Yaq6iHD" role="2Oq$k0">
-                <node concept="2OqwBi" id="4B66Yaq6iHE" role="2Oq$k0">
-                  <node concept="2OqwBi" id="4B66Yaq6iHF" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4B66Yaq6iHG" role="2Oq$k0">
-                      <node concept="1YBJjd" id="4B66Yaq6iQt" role="2Oq$k0">
-                        <ref role="1YBMHb" node="4B66Yaq6ii9" resolve="dWire" />
-                      </node>
-                      <node concept="2Xjw5R" id="4B66Yaq6iHI" role="2OqNvi">
-                        <node concept="1xMEDy" id="4B66Yaq6iHJ" role="1xVPHs">
-                          <node concept="chp4Y" id="4B66Yaq6iHK" role="ri$Ld">
-                            <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-                          </node>
-                        </node>
-                        <node concept="1xIGOp" id="4B66Yaq6iHL" role="1xVPHs" />
-                      </node>
-                    </node>
-                    <node concept="I4A8Y" id="4B66Yaq6iHM" role="2OqNvi" />
-                  </node>
-                  <node concept="2SmgA7" id="4B66Yaq6iHN" role="2OqNvi">
-                    <ref role="2SmgA8" to="ddau:19aTRzkPSmo" resolve="DiscreteDataConnector" />
-                  </node>
-                </node>
-                <node concept="ANE8D" id="4B66Yaq6iHO" role="2OqNvi" />
-              </node>
-              <node concept="1z4cxt" id="4B66Yaq6iHP" role="2OqNvi">
-                <node concept="1bVj0M" id="4B66Yaq6iHQ" role="23t8la">
-                  <node concept="3clFbS" id="4B66Yaq6iHR" role="1bW5cS">
-                    <node concept="9aQIb" id="4B66Yaq6iHS" role="3cqZAp">
-                      <node concept="3clFbS" id="4B66Yaq6iHT" role="9aQI4">
-                        <node concept="3clFbF" id="4B66Yaq6iHU" role="3cqZAp">
-                          <node concept="2OqwBi" id="4B66Yaq6iHV" role="3clFbG">
-                            <node concept="1YBJjd" id="4B66Yaq6iXf" role="2Oq$k0">
-                              <ref role="1YBMHb" node="4B66Yaq6ii9" resolve="dWire" />
-                            </node>
-                            <node concept="2qgKlT" id="4B66Yaq6iHX" role="2OqNvi">
-                              <ref role="37wK5l" to="f5o0:4B66Yaq5UqZ" resolve="realize" />
-                              <node concept="37vLTw" id="4B66Yaq6iHY" role="37wK5m">
-                                <ref role="3cqZAo" node="4B66Yaq6iHZ" resolve="it" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="Rh6nW" id="4B66Yaq6iHZ" role="1bW2Oz">
-                    <property role="TrG5h" value="it" />
-                    <node concept="2jxLKc" id="4B66Yaq6iI0" role="1tU5fm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3x8VRR" id="4B66Yaq6iI1" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="4B66Yaq6ii9" role="1YuTPh">
-      <property role="TrG5h" value="dWire" />
-      <ref role="1YaFvo" to="ddau:19aTRzkPTWf" resolve="DiscreteWire" />
     </node>
   </node>
 </model>
