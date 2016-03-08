@@ -448,7 +448,7 @@
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
   </node>
   <node concept="AxPO7" id="3URpncZ4sjK">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="BusTypeEnum" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
@@ -790,42 +790,28 @@
   <node concept="1TIwiD" id="2G_jlDGrcPw">
     <property role="1pbfSe" value="1752032582" />
     <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
-    <property role="TrG5h" value="CAN_TypeExpr" />
-    <property role="34LRSv" value="CAN" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
-    <node concept="PrWs8" id="2G_jlDGtqqu" role="PzmwI">
-      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IBusExpr" />
-    </node>
+    <property role="TrG5h" value="LowSpeedCAN_TypeExpr" />
+    <property role="34LRSv" value="LowSpeedCAN" />
+    <ref role="1TJDcQ" node="2XrN4LuATXF" resolve="BusExpr" />
   </node>
   <node concept="1TIwiD" id="2G_jlDGrcPH">
     <property role="1pbfSe" value="1752032569" />
     <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="LIN_TypeExpr" />
     <property role="34LRSv" value="LIN" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
-    <node concept="PrWs8" id="2G_jlDGuzQC" role="PzmwI">
-      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IBusExpr" />
-    </node>
+    <ref role="1TJDcQ" node="2XrN4LuATXF" resolve="BusExpr" />
   </node>
   <node concept="1TIwiD" id="2G_jlDGrcPU">
     <property role="1pbfSe" value="1752032556" />
     <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="FlexRay_TypeExpr" />
     <property role="34LRSv" value="FlexRay" />
-    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
-    <node concept="PrWs8" id="2G_jlDGuz$z" role="PzmwI">
-      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IBusExpr" />
-    </node>
+    <ref role="1TJDcQ" node="2XrN4LuATXF" resolve="BusExpr" />
   </node>
   <node concept="PlHQZ" id="2G_jlDGrdpl">
     <property role="1pbfSe" value="1752030289" />
     <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
     <property role="TrG5h" value="IDeviceExpr" />
-  </node>
-  <node concept="PlHQZ" id="2G_jlDGrdTH">
-    <property role="1pbfSe" value="1752028217" />
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
-    <property role="TrG5h" value="IBusExpr" />
   </node>
   <node concept="1TIwiD" id="703nGRhCNvb">
     <property role="1pbfSe" value="1101436568" />
@@ -970,6 +956,21 @@
     <property role="TrG5h" value="AnalogDataConnector" />
     <property role="34LRSv" value="Analog Data Connector" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
+  </node>
+  <node concept="1TIwiD" id="2XrN4LuAS5Z">
+    <property role="1pbfSe" value="1913172533" />
+    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="TrG5h" value="HighSpeedCAN_TypeExpr" />
+    <property role="34LRSv" value="HighSpeedCAN" />
+    <ref role="1TJDcQ" node="2XrN4LuATXF" resolve="BusExpr" />
+  </node>
+  <node concept="1TIwiD" id="2XrN4LuATXF">
+    <property role="1pbfSe" value="1913164873" />
+    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="BusExpr" />
+    <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
   </node>
 </model>
 

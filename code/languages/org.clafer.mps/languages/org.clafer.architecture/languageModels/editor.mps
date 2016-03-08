@@ -6352,27 +6352,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="2G_jlDGywRH">
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
-    <ref role="1XX52x" to="ddau:2G_jlDGrcPw" resolve="CAN_TypeExpr" />
-    <node concept="3F0ifn" id="2G_jlDGzDTB" role="2wV5jI">
-      <property role="3F0ifm" value="CAN" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2G_jlDGywSg">
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
-    <ref role="1XX52x" to="ddau:2G_jlDGrcPU" resolve="FlexRay_TypeExpr" />
-    <node concept="3F0ifn" id="2G_jlDGzDTz" role="2wV5jI">
-      <property role="3F0ifm" value="FlexRay" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="2G_jlDGywSN">
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
-    <ref role="1XX52x" to="ddau:2G_jlDGrcPH" resolve="LIN_TypeExpr" />
-    <node concept="3F0ifn" id="2G_jlDGzDTu" role="2wV5jI">
-      <property role="3F0ifm" value="LIN" />
-    </node>
-  </node>
   <node concept="325Ffw" id="7otgDTeg3HX">
     <property role="3GE5qa" value="actionMaps" />
     <property role="TrG5h" value="Quality_addContent" />
@@ -6961,6 +6940,13 @@
     </node>
     <node concept="PMmxH" id="6v3ZnYeNgH_" role="6VMZX">
       <ref role="PMmxG" node="1T6YVZd85oj" resolve="ArchInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2XrN4LuAUl5">
+    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <ref role="1XX52x" to="ddau:2XrN4LuATXF" resolve="BusExpr" />
+    <node concept="PMmxH" id="2XrN4LuAUlC" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>
