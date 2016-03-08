@@ -850,8 +850,8 @@
                             <ref role="1PxNhF" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
                             <node concept="30H73N" id="g6kGtGuTas" role="1PxMeX" />
                           </node>
-                          <node concept="3TrEf2" id="g6kGtGuTCA" role="2OqNvi">
-                            <ref role="3Tt5mk" to="ddau:6_lRZv9BROy" />
+                          <node concept="3TrEf2" id="2XrN4LuuoOp" role="2OqNvi">
+                            <ref role="3Tt5mk" to="ddau:6v3ZnYeNgvc" />
                           </node>
                         </node>
                       </node>
@@ -880,8 +880,8 @@
                             <ref role="1PxNhF" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
                             <node concept="30H73N" id="g6kGtGuCo5" role="1PxMeX" />
                           </node>
-                          <node concept="3TrEf2" id="g6kGtGuSH1" role="2OqNvi">
-                            <ref role="3Tt5mk" to="ddau:6_lRZv9BROr" />
+                          <node concept="3TrEf2" id="2XrN4Luupb$" role="2OqNvi">
+                            <ref role="3Tt5mk" to="ddau:6v3ZnYeNgv9" />
                           </node>
                         </node>
                       </node>
@@ -953,18 +953,11 @@
         <ref role="v9R2y" node="2XrN4Lun4nO" resolve="case_PowerConnector" />
       </node>
     </node>
-    <node concept="3aamgX" id="2XrN4Lun4mP" role="3aUrZf">
+    <node concept="3aamgX" id="g6kGtGuBXX" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="ddau:6v3ZnYeNgv8" resolve="Connector" />
-      <node concept="j$656" id="2XrN4Lun4mQ" role="1lVwrX">
-        <ref role="v9R2y" node="Myy5NECy2H" resolve="case_Connector" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="WgjoVd0_OX" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
-      <node concept="j$656" id="WgjoVd0_P7" role="1lVwrX">
-        <ref role="v9R2y" node="WgjoVd0_P5" resolve="case_IHaveDeployment" />
+      <ref role="30HIoZ" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+      <node concept="j$656" id="g6kGtGuC1m" role="1lVwrX">
+        <ref role="v9R2y" node="g6kGtGuA_k" resolve="case_FAConnector" />
       </node>
     </node>
     <node concept="3aamgX" id="32wpDnenuky" role="3aUrZf">
@@ -974,6 +967,13 @@
         <ref role="v9R2y" node="32wpDnenukM" resolve="case_BusConnector" />
       </node>
     </node>
+    <node concept="3aamgX" id="2XrN4Lun4mP" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="ddau:6v3ZnYeNgv8" resolve="Connector" />
+      <node concept="j$656" id="2XrN4Lun4mQ" role="1lVwrX">
+        <ref role="v9R2y" node="Myy5NECy2H" resolve="case_Connector" />
+      </node>
+    </node>
     <node concept="3aamgX" id="g6kGtGvcIZ" role="3aUrZf">
       <property role="36QftV" value="true" />
       <ref role="30HIoZ" to="ddau:6Fa64hUc88i" resolve="Deployment" />
@@ -981,11 +981,11 @@
         <ref role="v9R2y" node="g6kGtGvd63" resolve="case_Deployment" />
       </node>
     </node>
-    <node concept="3aamgX" id="g6kGtGuBXX" role="3aUrZf">
+    <node concept="3aamgX" id="WgjoVd0_OX" role="3aUrZf">
       <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-      <node concept="j$656" id="g6kGtGuC1m" role="1lVwrX">
-        <ref role="v9R2y" node="g6kGtGuA_k" resolve="case_FAConnector" />
+      <ref role="30HIoZ" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
+      <node concept="j$656" id="WgjoVd0_P7" role="1lVwrX">
+        <ref role="v9R2y" node="WgjoVd0_P5" resolve="case_IHaveDeployment" />
       </node>
     </node>
     <node concept="b5Tf3" id="g6kGtGuBXZ" role="jxRDz" />

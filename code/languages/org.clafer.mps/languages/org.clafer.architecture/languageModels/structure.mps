@@ -78,25 +78,7 @@
     <property role="34LRSv" value="Function Connector" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="1pbfSe" value="1895418041" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="1TJgyj" id="6_lRZv9BROr" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="src" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
-    </node>
-    <node concept="1TJgyj" id="6_lRZv9BROy" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="dest" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
-    </node>
-    <node concept="PrWs8" id="1tfNdgy1sjr" role="PzmwI">
-      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
-    </node>
-    <node concept="PrWs8" id="4IooPifUJdQ" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
-    </node>
+    <ref role="1TJDcQ" node="6v3ZnYeNgv8" resolve="Connector" />
     <node concept="PrWs8" id="6tUgmTZN8Kq" role="PzmwI">
       <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
     </node>
@@ -465,65 +447,8 @@
     <property role="1pbfSe" value="417167965" />
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
   </node>
-  <node concept="1TIwiD" id="19aTRzkPTWb">
-    <property role="3GE5qa" value="Implementation" />
-    <property role="TrG5h" value="Implementation" />
-    <property role="34LRSv" value="Implementation" />
-    <property role="1pbfSe" value="417167741" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-  </node>
-  <node concept="1TIwiD" id="19aTRzkPTWc">
-    <property role="3GE5qa" value="Implementation" />
-    <property role="TrG5h" value="CommunicationImpl" />
-    <property role="34LRSv" value="CommunicationImpl" />
-    <property role="1pbfSe" value="417167740" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-  </node>
-  <node concept="1TIwiD" id="19aTRzkPTWd">
-    <property role="3GE5qa" value="Implementation" />
-    <property role="TrG5h" value="PhysicalWire" />
-    <property role="34LRSv" value="Physical Wire" />
-    <property role="1pbfSe" value="417167739" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-  </node>
-  <node concept="1TIwiD" id="19aTRzkPTWe">
-    <property role="3GE5qa" value="Implementation" />
-    <property role="TrG5h" value="PhysicalBus" />
-    <property role="34LRSv" value="Physical Bus" />
-    <property role="1pbfSe" value="417167738" />
-    <ref role="1TJDcQ" node="19aTRzkPTWd" resolve="PhysicalWire" />
-    <node concept="1TJgyi" id="3URpncZ4lKW" role="1TKVEl">
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="3URpncZ4sjK" resolve="BusTypeEnum" />
-    </node>
-    <node concept="1TJgyj" id="3_X0pUT8Mfr" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="connectedNodes" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="19aTRzkPTWf">
-    <property role="3GE5qa" value="Implementation" />
-    <property role="TrG5h" value="DiscreteWire" />
-    <property role="34LRSv" value="Discrete Wire" />
-    <property role="1pbfSe" value="417167737" />
-    <ref role="1TJDcQ" node="19aTRzkPTWd" resolve="PhysicalWire" />
-    <node concept="PrWs8" id="3KrTRUBK_Hd" role="PzmwI">
-      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
-    </node>
-    <node concept="PrWs8" id="3KrTRUBK_Hi" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
-    </node>
-    <node concept="1TJgyj" id="23T79tC4TMt" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="connects" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
-    </node>
-  </node>
   <node concept="AxPO7" id="3URpncZ4sjK">
-    <property role="3GE5qa" value="Implementation" />
+    <property role="3GE5qa" value="" />
     <property role="TrG5h" value="BusTypeEnum" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
@@ -864,32 +789,32 @@
   </node>
   <node concept="1TIwiD" id="2G_jlDGrcPw">
     <property role="1pbfSe" value="1752032582" />
-    <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="CAN_TypeExpr" />
     <property role="34LRSv" value="CAN" />
     <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
     <node concept="PrWs8" id="2G_jlDGtqqu" role="PzmwI">
-      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IPhysicalBusExpr" />
+      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IBusExpr" />
     </node>
   </node>
   <node concept="1TIwiD" id="2G_jlDGrcPH">
     <property role="1pbfSe" value="1752032569" />
-    <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="LIN_TypeExpr" />
     <property role="34LRSv" value="LIN" />
     <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
     <node concept="PrWs8" id="2G_jlDGuzQC" role="PzmwI">
-      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IPhysicalBusExpr" />
+      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IBusExpr" />
     </node>
   </node>
   <node concept="1TIwiD" id="2G_jlDGrcPU">
     <property role="1pbfSe" value="1752032556" />
-    <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="FlexRay_TypeExpr" />
     <property role="34LRSv" value="FlexRay" />
     <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
     <node concept="PrWs8" id="2G_jlDGuz$z" role="PzmwI">
-      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IPhysicalBusExpr" />
+      <ref role="PrY4T" node="2G_jlDGrdTH" resolve="IBusExpr" />
     </node>
   </node>
   <node concept="PlHQZ" id="2G_jlDGrdpl">
@@ -899,8 +824,8 @@
   </node>
   <node concept="PlHQZ" id="2G_jlDGrdTH">
     <property role="1pbfSe" value="1752028217" />
-    <property role="3GE5qa" value="NodeTypeExpr.PhysicalBusTypeExpr" />
-    <property role="TrG5h" value="IPhysicalBusExpr" />
+    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="TrG5h" value="IBusExpr" />
   </node>
   <node concept="1TIwiD" id="703nGRhCNvb">
     <property role="1pbfSe" value="1101436568" />
@@ -1045,6 +970,63 @@
     <property role="TrG5h" value="AnalogDataConnector" />
     <property role="34LRSv" value="Analog Data Connector" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
+  </node>
+  <node concept="1TIwiD" id="19aTRzkPTWd">
+    <property role="3GE5qa" value="Implementation" />
+    <property role="TrG5h" value="PhysicalWire" />
+    <property role="34LRSv" value="Physical Wire" />
+    <property role="1pbfSe" value="417167739" />
+    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+  </node>
+  <node concept="1TIwiD" id="19aTRzkPTWe">
+    <property role="3GE5qa" value="Implementation" />
+    <property role="TrG5h" value="PhysicalBus" />
+    <property role="34LRSv" value="Physical Bus" />
+    <property role="1pbfSe" value="417167738" />
+    <ref role="1TJDcQ" node="19aTRzkPTWd" resolve="PhysicalWire" />
+    <node concept="1TJgyi" id="3URpncZ4lKW" role="1TKVEl">
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="3URpncZ4sjK" resolve="BusTypeEnum" />
+    </node>
+    <node concept="1TJgyj" id="3_X0pUT8Mfr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="connectedNodes" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="19aTRzkPTWb">
+    <property role="3GE5qa" value="Implementation" />
+    <property role="TrG5h" value="Implementation" />
+    <property role="34LRSv" value="Implementation" />
+    <property role="1pbfSe" value="417167741" />
+    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+  </node>
+  <node concept="1TIwiD" id="19aTRzkPTWf">
+    <property role="3GE5qa" value="Implementation" />
+    <property role="TrG5h" value="DiscreteWire" />
+    <property role="34LRSv" value="Discrete Wire" />
+    <property role="1pbfSe" value="417167737" />
+    <ref role="1TJDcQ" node="19aTRzkPTWd" resolve="PhysicalWire" />
+    <node concept="PrWs8" id="3KrTRUBK_Hd" role="PzmwI">
+      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
+    </node>
+    <node concept="PrWs8" id="3KrTRUBK_Hi" role="PzmwI">
+      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
+    </node>
+    <node concept="1TJgyj" id="23T79tC4TMt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="connects" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="19aTRzkPTWc">
+    <property role="3GE5qa" value="Implementation" />
+    <property role="TrG5h" value="CommunicationImpl" />
+    <property role="34LRSv" value="CommunicationImpl" />
+    <property role="1pbfSe" value="417167740" />
+    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
 </model>
 

@@ -202,10 +202,10 @@
       <node concept="2mXI97" id="1T6YVZdxorr" role="2mZOl8">
         <property role="TrG5h" value="fDevice2" />
       </node>
-      <node concept="1eXri_" id="1T6YVZdxorm" role="2mZOl8">
+      <node concept="1eXri_" id="2XrN4Luxls3" role="2mZOl8">
         <property role="TrG5h" value="fConnector" />
-        <ref role="2wMEbG" node="1T6YVZdxore" resolve="fDevice" />
-        <ref role="2wMEbl" node="1T6YVZdxorr" resolve="fDevice2" />
+        <ref role="3D3JEQ" node="1T6YVZdxore" resolve="fDevice" />
+        <ref role="3D3JEN" node="2XrN4Lux4QL" resolve="importedAFUnction" />
       </node>
     </node>
     <node concept="UzEYP" id="1T6YVZdxf1j" role="UzTCv" />
@@ -279,23 +279,23 @@
       <property role="TrG5h" value="powerTopology" />
       <node concept="36BoBS" id="1T6YVZdABjq" role="2mZOl8">
         <property role="TrG5h" value="hwConnector" />
-        <ref role="3D3JEQ" node="1T6YVZdxohd" resolve="Feature" />
+        <ref role="3D3JEQ" node="1T6YVZd$U2Y" resolve="smartSwitch" />
         <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
       </node>
       <node concept="36BmKx" id="2XrN4Lurhli" role="2mZOl8">
         <property role="TrG5h" value="lpConnector" />
-        <ref role="3D3JEQ" node="2XrN4Lurhk_" resolve="aDataConnector" />
-        <ref role="3D3JEN" node="3T8tWljOvJ6" resolve="arch" />
+        <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
+        <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
       </node>
       <node concept="36Bn_j" id="2XrN4Lurhlq" role="2mZOl8">
         <property role="TrG5h" value="pConnector" />
-        <ref role="3D3JEQ" node="6PK7EUlUIK5" resolve="afunction" />
-        <ref role="3D3JEN" node="3T8tWlk9Spq" resolve="arch2" />
+        <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
+        <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
       </node>
       <node concept="36BmAw" id="2XrN4Lurhl$" role="2mZOl8">
         <property role="TrG5h" value="dpConnector" />
-        <ref role="3D3JEQ" node="1T6YVZdxor8" resolve="aFunction" />
-        <ref role="3D3JEN" node="6PK7EUlUIKp" resolve="afunction2" />
+        <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
+        <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
       </node>
     </node>
     <node concept="UzEYP" id="1T6YVZd_ndS" role="UzTCv" />
@@ -317,18 +317,18 @@
         <node concept="UzEYP" id="2XrN4Lup$8d" role="2mZOl8" />
         <node concept="36Bmbw" id="2XrN4Lup$8S" role="2mZOl8">
           <property role="TrG5h" value="dwConnector" />
-          <ref role="3D3JEQ" node="6PK7EUlUIKp" resolve="afunction2" />
-          <ref role="3D3JEN" node="1T6YVZdxor8" resolve="aFunction" />
+          <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
+          <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
         </node>
         <node concept="3D38lq" id="2XrN4Lurhk_" role="2mZOl8">
           <property role="TrG5h" value="aDataConnector" />
-          <ref role="3D3JEQ" node="6PK7EUlUIKp" resolve="afunction2" />
-          <ref role="3D3JEN" node="1th$N_eQKTx" resolve="arch" />
+          <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
+          <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
         </node>
         <node concept="36BmAw" id="2XrN4Lurhl1" role="2mZOl8">
           <property role="TrG5h" value="dDateConnector" />
-          <ref role="3D3JEQ" node="6PK7EUlUIKp" resolve="afunction2" />
-          <ref role="3D3JEN" node="1th$N_eQKTx" resolve="arch" />
+          <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
+          <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
         </node>
         <node concept="36Bm5n" id="2XrN4LupDxL" role="2mZOl8">
           <property role="TrG5h" value="busConnector" />
@@ -349,6 +349,9 @@
     <node concept="UzEYP" id="32wpDnegWrm" role="UzTCv" />
     <node concept="UzEYP" id="1T6YVZdxoBc" role="UzTCv" />
     <node concept="UzEYP" id="1T6YVZdxf1w" role="UzTCv" />
+    <node concept="3GEVxB" id="2XrN4Lux4QO" role="UzTCp">
+      <ref role="3GEb4d" node="1th$N_eQKTj" resolve="TestModel4" />
+    </node>
   </node>
   <node concept="UzPwm" id="3T8tWljOhji">
     <property role="TrG5h" value="TestModel1" />
@@ -641,6 +644,9 @@
         </node>
         <node concept="1u8h5F" id="1th$N_eQKTv" role="2mZOl8">
           <property role="TrG5h" value="faArchitecture" />
+          <node concept="2mZLT$" id="2XrN4Lux4QL" role="2mZOl8">
+            <property role="TrG5h" value="importedAFUnction" />
+          </node>
         </node>
       </node>
       <node concept="2vxuzR" id="1jKsuqUK9L_" role="2mZOl8">
