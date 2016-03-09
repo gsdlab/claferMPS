@@ -196,6 +196,14 @@
         <ref role="3Ev5JR" node="1wmiO1AQl45" resolve="warrantyCost" />
       </node>
     </node>
+    <node concept="sklqP" id="5ipUCoi8tju" role="sklmO">
+      <node concept="3EozPd" id="5ipUCoi8tkT" role="sklvC">
+        <property role="TrG5h" value="latency" />
+      </node>
+      <node concept="sjk9b" id="5ipUCoi8tkz" role="skltt">
+        <ref role="sjk9f" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
+      </node>
+    </node>
   </node>
   <node concept="3tocZL" id="7b8T1iJGcgf">
     <property role="TrG5h" value="Preferences" />

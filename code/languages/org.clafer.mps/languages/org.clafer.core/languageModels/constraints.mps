@@ -15,6 +15,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="q5uw" ref="r:0b784ab1-23fb-426b-b1a5-548466796576(org.clafer.core.typesystem)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -116,6 +117,9 @@
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
@@ -455,26 +459,8 @@
     <ref role="1M2myG" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
     <node concept="1N5Pfh" id="2uk4icoWPZr" role="1Mr941">
       <ref role="1N5Vy1" to="mecy:2uk4icoWPWY" />
-      <node concept="1MUpDS" id="2uk4icoWPZu" role="1N6uqs">
-        <node concept="3clFbS" id="2uk4icoWPZv" role="2VODD2">
-          <node concept="3clFbF" id="2uk4icoWQLs" role="3cqZAp">
-            <node concept="2OqwBi" id="2uk4icoWRm9" role="3clFbG">
-              <node concept="2OqwBi" id="2uk4icoWQOl" role="2Oq$k0">
-                <node concept="21POm0" id="2uk4icoWQLr" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="2uk4icoWR12" role="2OqNvi">
-                  <node concept="1xMEDy" id="2uk4icoWR14" role="1xVPHs">
-                    <node concept="chp4Y" id="2uk4icoWR2X" role="ri$Ld">
-                      <ref role="cht4Q" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2qgKlT" id="2uk4icoWSbB" role="2OqNvi">
-                <ref role="37wK5l" to="f5p9:4kWdVQTfzYb" resolve="allReferencableClafers" />
-              </node>
-            </node>
-          </node>
-        </node>
+      <node concept="1dDu$B" id="5ipUCoiwHHc" role="1N6uqs">
+        <ref role="1dDu$A" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
       </node>
     </node>
   </node>

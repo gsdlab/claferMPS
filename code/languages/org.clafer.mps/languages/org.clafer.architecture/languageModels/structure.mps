@@ -100,6 +100,9 @@
     <node concept="PrWs8" id="3g3ywkm6Xbv" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
+    <node concept="PrWs8" id="5ipUCoiwI5d" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="4csP6flST4F" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="contents" />
@@ -403,8 +406,8 @@
     <node concept="1TJgyj" id="5OLu9WxSgwO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="connects" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
     </node>
     <node concept="1TJgyj" id="5OLu9WxUqZ1" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -476,15 +479,6 @@
     <property role="R5$K2" value="false" />
     <property role="1pbfSe" value="1629291112" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
-  </node>
-  <node concept="1TIwiD" id="1XvwwfKtGGx">
-    <property role="3GE5qa" value="CommunicationTopology.LogicalExressions" />
-    <property role="TrG5h" value="ArchRef" />
-    <property role="1pbfSe" value="265702692" />
-    <ref role="1TJDcQ" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
-    <node concept="PrWs8" id="WgjoVd2qOa" role="PzmwI">
-      <ref role="PrY4T" node="2toL5DN39dr" resolve="IArchExpr" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2toL5DMUBtT">
     <property role="3GE5qa" value="CommunicationTopology.LogicalExressions" />
@@ -778,8 +772,8 @@
     <node concept="1TJgyj" id="6PK7EUlNtxk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="deployedTo" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
     </node>
   </node>
   <node concept="PlHQZ" id="2G_jlDGpToa">

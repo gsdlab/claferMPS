@@ -62,6 +62,7 @@
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
@@ -471,6 +472,9 @@
       </concept>
       <concept id="4254343767716913574" name="de.itemis.mps.editor.diagram.structure.CellModel_Compartment" flags="ng" index="3S8TqV" />
     </language>
+    <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
+      <concept id="767145758118872824" name="jetbrains.mps.lang.actions.structure.NF_Node_InsertNewNextSiblingOperation" flags="nn" index="2DeJnS" />
+    </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
       <concept id="1925286362805506099" name="de.slisson.mps.tables.structure.RowShadeColor" flags="lg" index="bmIQc" />
       <concept id="1925286362805485372" name="de.slisson.mps.tables.structure.RowBorderBottomWidthStyleItem" flags="lg" index="bmOa3" />
@@ -561,6 +565,9 @@
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1139858892567" name="jetbrains.mps.lang.smodel.structure.Node_InsertNewNextSiblingOperation" flags="nn" index="1$SAou">
+        <reference id="1139858951584" name="concept" index="1$SOMD" />
       </concept>
       <concept id="1144195091934" name="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" flags="nn" index="1BlSNk">
         <reference id="1144195362400" name="conceptOfParent" index="1BmUXE" />
@@ -685,8 +692,11 @@
           <property role="3F0ifm" value="deployed to" />
           <ref role="1ERwB7" node="4IooPifWqxb" resolve="FAConnector_removeDeployment" />
         </node>
-        <node concept="3F1sOY" id="4IooPifTJbC" role="3EZMnx">
+        <node concept="3F2HdR" id="5QLkobVNCCm" role="3EZMnx">
+          <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="ddau:6PK7EUlNtxk" />
+          <ref role="34QXea" node="5ipUCoiPHAz" resolve="ArchElement_newLine" />
+          <node concept="l2Vlx" id="5QLkobVNCCo" role="2czzBx" />
         </node>
         <node concept="l2Vlx" id="4IooPifTJb5" role="2iSdaV" />
         <node concept="pkWqt" id="4IooPifTJbJ" role="pqm2j">
@@ -4263,7 +4273,7 @@
   </node>
   <node concept="24kQdi" id="2IzCCeKm54T">
     <property role="3GE5qa" value="textEditors.FunctionalArchitecture" />
-    <ref role="1XX52x" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
+    <ref role="1XX52x" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
     <node concept="3EZMnI" id="2IzCCeKmhcf" role="2wV5jI">
       <node concept="PMmxH" id="7ErTnvEO1wE" role="3EZMnx">
         <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
@@ -4285,8 +4295,11 @@
           <property role="3F0ifm" value="deployed to" />
           <ref role="1ERwB7" node="4IooPifVa9q" resolve="AFunction_removeDeployment" />
         </node>
-        <node concept="3F1sOY" id="2IzCCeKuaFF" role="3EZMnx">
+        <node concept="3F2HdR" id="5QLkobVNIek" role="3EZMnx">
+          <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="ddau:6PK7EUlNtxk" />
+          <ref role="34QXea" node="5ipUCoiPHAz" resolve="ArchElement_newLine" />
+          <node concept="l2Vlx" id="5QLkobVNIem" role="2czzBx" />
         </node>
         <node concept="l2Vlx" id="2IzCCeKpWgI" role="2iSdaV" />
         <node concept="pkWqt" id="3_X0pUT7$Rc" role="pqm2j">
@@ -5025,9 +5038,11 @@
       <node concept="3F0ifn" id="5OLu9WxSfmS" role="3EZMnx">
         <property role="3F0ifm" value="connects" />
       </node>
-      <node concept="3F1sOY" id="5OLu9WxSfmT" role="3EZMnx">
-        <property role="1$x2rV" value="realization" />
+      <node concept="3F2HdR" id="5ipUCoiLBS8" role="3EZMnx">
+        <property role="2czwfO" value="," />
         <ref role="1NtTu8" to="ddau:5OLu9WxSgwO" />
+        <ref role="34QXea" node="5ipUCoiPHAz" resolve="ArchElement_newLine" />
+        <node concept="l2Vlx" id="5ipUCoiLBSa" role="2czzBx" />
       </node>
       <node concept="3EZMnI" id="5OLu9WxU_ib" role="3EZMnx">
         <node concept="VPM3Z" id="5OLu9WxU_id" role="3F10Kt">
@@ -6947,6 +6962,29 @@
     <ref role="1XX52x" to="ddau:2XrN4LuATXF" resolve="BusExpr" />
     <node concept="PMmxH" id="2XrN4LuAUlC" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="325Ffw" id="5ipUCoiPHAz">
+    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="TrG5h" value="ArchElement_newLine" />
+    <ref role="1chiOs" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="2PxR9H" id="5ipUCoiPHAT" role="2QnnpI">
+      <node concept="2Py5lD" id="5ipUCoiPHAU" role="2PyaAO">
+        <property role="2PWKIB" value="ctrl" />
+        <property role="2PWKIS" value="VK_ENTER" />
+      </node>
+      <node concept="2PzhpH" id="5ipUCoiPHAV" role="2PL9iG">
+        <node concept="3clFbS" id="5ipUCoiPHAW" role="2VODD2">
+          <node concept="3clFbF" id="5ipUCoiPHIl" role="3cqZAp">
+            <node concept="2OqwBi" id="5ipUCoiPIFk" role="3clFbG">
+              <node concept="0GJ7k" id="5ipUCoiPI$Y" role="2Oq$k0" />
+              <node concept="2DeJnS" id="5ipUCoiPJ02" role="2OqNvi">
+                <ref role="1$SOMD" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

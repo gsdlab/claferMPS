@@ -77,6 +77,9 @@
     <node concept="PrWs8" id="6s8egifgElZ" role="PzmwI">
       <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
+    <node concept="PrWs8" id="5ipUCoiwdoU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="PlHQZ" id="bl22kSmCpX">
     <property role="TrG5h" value="IElement" />
