@@ -409,11 +409,6 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
     </node>
-    <node concept="1TJgyj" id="5OLu9WxUqZ1" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="gateway" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
-    </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSt3">
     <property role="3GE5qa" value="CommunicationTopology" />

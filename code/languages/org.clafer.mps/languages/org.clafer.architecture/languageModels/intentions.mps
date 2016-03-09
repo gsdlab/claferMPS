@@ -10,7 +10,6 @@
   <imports>
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
-    <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -339,37 +338,6 @@
             </node>
             <node concept="WFELt" id="2nqawvIusvr" role="2OqNvi">
               <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="5OLu9WxUqZr">
-    <property role="3GE5qa" value="CommunicationTopology" />
-    <property role="TrG5h" value="AddGateway" />
-    <ref role="2ZfgGC" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-    <node concept="2S6ZIM" id="5OLu9WxUqZs" role="2ZfVej">
-      <node concept="3clFbS" id="5OLu9WxUqZt" role="2VODD2">
-        <node concept="3clFbF" id="5OLu9WxUrdY" role="3cqZAp">
-          <node concept="Xl_RD" id="5OLu9WxUrdX" role="3clFbG">
-            <property role="Xl_RC" value="Add Gateway" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="5OLu9WxUqZu" role="2ZfgGD">
-      <node concept="3clFbS" id="5OLu9WxUqZv" role="2VODD2">
-        <node concept="3clFbF" id="5OLu9WxUrEx" role="3cqZAp">
-          <node concept="2OqwBi" id="5OLu9WxUt8w" role="3clFbG">
-            <node concept="2OqwBi" id="5OLu9WxUrJT" role="2Oq$k0">
-              <node concept="2Sf5sV" id="5OLu9WxUrEw" role="2Oq$k0" />
-              <node concept="3TrEf2" id="5OLu9WxUsD6" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:5OLu9WxUqZ1" />
-              </node>
-            </node>
-            <node concept="zfrQC" id="5OLu9WxUtrQ" role="2OqNvi">
-              <ref role="1A9B2P" to="mj1k:7FQByU3CrCM" resolve="Expression" />
             </node>
           </node>
         </node>

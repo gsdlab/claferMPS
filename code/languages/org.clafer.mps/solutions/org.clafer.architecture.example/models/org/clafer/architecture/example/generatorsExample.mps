@@ -111,11 +111,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853935960" name="anchorTag" index="1K8rD$" />
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-        <property id="779128492853699361" name="side" index="1Kfyot" />
-      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
       <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
@@ -206,7 +201,7 @@
     <node concept="1u8h5F" id="1T6YVZdxf2J" role="UzTCv">
       <property role="TrG5h" value="faArch" />
       <node concept="2mZLT$" id="1T6YVZdxor8" role="2mZOl8">
-        <property role="TrG5h" value="aFunc_tion" />
+        <property role="TrG5h" value="aFunction" />
         <node concept="33KLpJ" id="5ipUCoi95Zt" role="33KLpg">
           <property role="TrG5h" value="latency" />
           <ref role="33KLov" to="t4ow:5ipUCoi8tkT" resolve="latency" />
@@ -229,11 +224,6 @@
       </node>
       <node concept="2mXI97" id="1T6YVZdxore" role="2mZOl8">
         <property role="TrG5h" value="fDevice" />
-        <node concept="1KehLL" id="5QLkobVQ4EI" role="lGtFl">
-          <property role="1K8rM7" value="DND_property_name" />
-          <property role="1K8rD$" value="default_RTransform" />
-          <property role="1Kfyot" value="right" />
-        </node>
       </node>
       <node concept="2mZLT$" id="5QLkobVPY7e" role="2mZOl8">
         <property role="TrG5h" value="s" />
@@ -248,9 +238,6 @@
         <property role="TrG5h" value="fConnector" />
         <ref role="3D3JEQ" node="1T6YVZdxore" resolve="fDevice" />
         <ref role="3D3JEN" node="2XrN4Lux4QL" resolve="importedAFUnction" />
-        <node concept="ZpONE" id="5QLkobVQ1gI" role="3SJsrU">
-          <ref role="ZpOSt" node="1T6YVZdABgF" resolve="dataConnector" />
-        </node>
       </node>
       <node concept="UzEYP" id="5ipUCoijoLw" role="2mZOl8" />
     </node>

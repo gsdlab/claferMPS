@@ -690,7 +690,7 @@
         </node>
         <node concept="3F0ifn" id="4IooPifTJbm" role="3EZMnx">
           <property role="3F0ifm" value="deployed to" />
-          <ref role="1ERwB7" node="4IooPifWqxb" resolve="FAConnector_removeDeployment" />
+          <ref role="1ERwB7" node="4IooPifVa9q" resolve="IHaveDeployment_removeDeployment" />
         </node>
         <node concept="3F2HdR" id="5QLkobVNCCm" role="3EZMnx">
           <property role="2czwfO" value="," />
@@ -4293,7 +4293,7 @@
         </node>
         <node concept="3F0ifn" id="2IzCCeKpWh9" role="3EZMnx">
           <property role="3F0ifm" value="deployed to" />
-          <ref role="1ERwB7" node="4IooPifVa9q" resolve="AFunction_removeDeployment" />
+          <ref role="1ERwB7" node="4IooPifVa9q" resolve="IHaveDeployment_removeDeployment" />
         </node>
         <node concept="3F2HdR" id="5QLkobVNIek" role="3EZMnx">
           <property role="2czwfO" value="," />
@@ -4481,21 +4481,21 @@
   </node>
   <node concept="1h_SRR" id="4IooPifVa9q">
     <property role="3GE5qa" value="actionMaps" />
-    <property role="TrG5h" value="AFunction_removeDeployment" />
-    <ref role="1h_SK9" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
+    <property role="TrG5h" value="IHaveDeployment_removeDeployment" />
+    <ref role="1h_SK9" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
     <node concept="1hA7zw" id="4IooPifVaLg" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="4IooPifVaLh" role="1hA7z_">
         <node concept="3clFbS" id="4IooPifVaLi" role="2VODD2">
           <node concept="3clFbF" id="4IooPifWnUO" role="3cqZAp">
-            <node concept="37vLTI" id="4IooPifWpPZ" role="3clFbG">
-              <node concept="10Nm6u" id="4IooPifWpSo" role="37vLTx" />
-              <node concept="2OqwBi" id="4IooPifWokQ" role="37vLTJ">
+            <node concept="2OqwBi" id="5QLkobVQ_6l" role="3clFbG">
+              <node concept="2OqwBi" id="4IooPifWokQ" role="2Oq$k0">
                 <node concept="0IXxy" id="4IooPifWnUM" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6PK7EUlPDoK" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ddau:6PK7EUlNtxk" />
+                <node concept="3Tsc0h" id="5QLkobVQ$aD" role="2OqNvi">
+                  <ref role="3TtcxE" to="ddau:6PK7EUlNtxk" />
                 </node>
               </node>
+              <node concept="2Kehj3" id="5QLkobVQC5a" role="2OqNvi" />
             </node>
           </node>
           <node concept="3clFbF" id="4IooPifWZ4e" role="3cqZAp">
@@ -4509,41 +4509,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1h_SRR" id="4IooPifWqxb">
-    <property role="3GE5qa" value="actionMaps" />
-    <property role="TrG5h" value="FAConnector_removeDeployment" />
-    <ref role="1h_SK9" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-    <node concept="1hA7zw" id="4IooPifWqxf" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
-      <node concept="1hAIg9" id="4IooPifWqxg" role="1hA7z_">
-        <node concept="3clFbS" id="4IooPifWqxh" role="2VODD2">
-          <node concept="3clFbF" id="4IooPifWqCE" role="3cqZAp">
-            <node concept="37vLTI" id="4IooPifWrlC" role="3clFbG">
-              <node concept="10Nm6u" id="4IooPifWrmV" role="37vLTx" />
-              <node concept="2OqwBi" id="4IooPifWqHC" role="37vLTJ">
-                <node concept="0IXxy" id="4IooPifWqCD" role="2Oq$k0" />
-                <node concept="3TrEf2" id="6PK7EUlPEb7" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ddau:6PK7EUlNtxk" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4IooPifYExL" role="3cqZAp">
-            <node concept="2OqwBi" id="4IooPifYExM" role="3clFbG">
-              <node concept="0IXxy" id="4IooPifYExN" role="2Oq$k0" />
-              <node concept="1OKiuA" id="4IooPifYExO" role="2OqNvi">
-                <node concept="1Q80Hx" id="4IooPifYExP" role="lBI5i" />
-                <node concept="2B6iha" id="4IooPifZL_E" role="lGT1i">
-                  <property role="1lyBwo" value="lastEditable" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="4IooPifYEx6" role="3cqZAp" />
         </node>
       </node>
     </node>
@@ -5043,43 +5008,6 @@
         <ref role="1NtTu8" to="ddau:5OLu9WxSgwO" />
         <ref role="34QXea" node="5ipUCoiPHAz" resolve="ArchElement_newLine" />
         <node concept="l2Vlx" id="5ipUCoiLBSa" role="2czzBx" />
-      </node>
-      <node concept="3EZMnI" id="5OLu9WxU_ib" role="3EZMnx">
-        <node concept="VPM3Z" id="5OLu9WxU_id" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="pVoyu" id="50FM0hzJktZ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="50FM0hzJku0" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="3F0ifn" id="5OLu9WxU_is" role="3EZMnx">
-          <property role="3F0ifm" value="gateway" />
-        </node>
-        <node concept="3F1sOY" id="5OLu9WxU_jQ" role="3EZMnx">
-          <ref role="1NtTu8" to="ddau:5OLu9WxUqZ1" />
-        </node>
-        <node concept="l2Vlx" id="5OLu9WxU_ig" role="2iSdaV" />
-        <node concept="pkWqt" id="50FM0hzJkz8" role="pqm2j">
-          <node concept="3clFbS" id="50FM0hzJkz9" role="2VODD2">
-            <node concept="3clFbF" id="50FM0hzJk_T" role="3cqZAp">
-              <node concept="2OqwBi" id="2D$aMdfSKBk" role="3clFbG">
-                <node concept="2OqwBi" id="5OLu9WxVfgo" role="2Oq$k0">
-                  <node concept="pncrf" id="5OLu9WxVf7f" role="2Oq$k0" />
-                  <node concept="Bykcj" id="2D$aMdfSKBh" role="2OqNvi">
-                    <node concept="1aIX9F" id="2D$aMdfSKBi" role="1xVPHs">
-                      <node concept="26LbJo" id="2D$aMdfSKBj" role="1aIX9E">
-                        <ref role="26LbJp" to="ddau:5OLu9WxUqZ1" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3GX2aA" id="2D$aMdfSKBl" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="PMmxH" id="5OLu9WxSfmU" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
