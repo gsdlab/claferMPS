@@ -437,5 +437,22 @@
       <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5H6GWMWSP$M">
+    <property role="1pbfSe" value="405409022" />
+    <property role="TrG5h" value="enumerator" />
+    <property role="34LRSv" value="enum" />
+    <ref role="1TJDcQ" node="4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="1TJgyj" id="5H6GWMWSP$O" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5H6GWMWSP$N" resolve="enumMember" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5H6GWMWSP$N">
+    <property role="1pbfSe" value="405409023" />
+    <property role="TrG5h" value="enumMember" />
+    <ref role="1TJDcQ" node="4Z9rElrxgzk" resolve="BaseClafer" />
+  </node>
 </model>
 
