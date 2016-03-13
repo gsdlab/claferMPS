@@ -59,6 +59,9 @@
       </concept>
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277980" name="org.clafer.architecture.structure.PowerTopology" flags="ng" index="36Bm2$" />
+      <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
+        <child id="6715281144249649204" name="connects" index="1WO72F" />
+      </concept>
       <concept id="1318120347112277372" name="org.clafer.architecture.structure.HardwareDataConnector" flags="ng" index="36Bm84" />
       <concept id="1318120347112277400" name="org.clafer.architecture.structure.DiscreteDataConnector" flags="ng" index="36Bmbw" />
       <concept id="1318120347112279768" name="org.clafer.architecture.structure.DevicePowerConnector" flags="ng" index="36BmAw" />
@@ -72,6 +75,12 @@
       <concept id="2835231858185744727" name="org.clafer.architecture.structure.ArchParens" flags="ng" index="1kkfkd" />
       <concept id="2835231858186161391" name="org.clafer.architecture.structure.ArchLogicalComma" flags="ng" index="1kl$yP" />
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
+      <concept id="6663788808724501982" name="org.clafer.architecture.structure.IHaveArchType" flags="ng" index="3uhtP3">
+        <child id="6663788808724501985" name="type" index="3uhtPW" />
+      </concept>
+      <concept id="6663788808723353478" name="org.clafer.architecture.structure.BusType" flags="ng" index="3ulOsr">
+        <property id="6663788808723353481" name="type" index="3ulOsk" />
+      </concept>
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareArchitecture" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
@@ -369,7 +378,21 @@
           <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
           <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
         </node>
-        <node concept="UzEYP" id="5ipUCoiPHxx" role="2mZOl8" />
+        <node concept="UzEYP" id="5LUy9Q2cBnO" role="2mZOl8" />
+        <node concept="UzEYP" id="5LUy9Q2ejpm" role="2mZOl8" />
+        <node concept="36Bm5n" id="5LUy9Q2hn0H" role="2mZOl8">
+          <property role="TrG5h" value="sd" />
+          <node concept="3ulOsr" id="5H6GWMWR2PA" role="3uhtPW" />
+          <node concept="3ulOsr" id="5H6GWMWSAT2" role="3uhtPW">
+            <property role="3ulOsk" value="LIN" />
+          </node>
+          <node concept="ZpONE" id="5LUy9Q2hn10" role="1WO72F">
+            <ref role="ZpOSt" node="1T6YVZdxoCk" resolve="PowerDNode" />
+          </node>
+          <node concept="ZpONE" id="5LUy9Q2hn1a" role="1WO72F">
+            <ref role="ZpOSt" node="1T6YVZdxoCk" resolve="PowerDNode" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="UzEYP" id="32wpDnegHZk" role="UzTCv" />
@@ -599,21 +622,7 @@
       </node>
       <node concept="2mZLT$" id="6PK7EUlY_0i" role="2mZOl8">
         <property role="TrG5h" value="afunction3" />
-        <node concept="1kl$yP" id="6PK7EUlYDA4" role="3SJsrU">
-          <node concept="3Jak$y" id="6PK7EUlYDAA" role="3TlMhJ">
-            <ref role="ZpOSt" node="WgjoVd2$9m" resolve="deviceNodePower" />
-          </node>
-          <node concept="1kkfkd" id="6PK7EUlYD_8" role="3TlMhI">
-            <node concept="1kl$yP" id="6PK7EUlYD_s" role="1_9fRO">
-              <node concept="3Jak$y" id="6PK7EUlYD_G" role="3TlMhJ">
-                <ref role="ZpOSt" node="2HpWhZy3BHS" resolve="deviceNodePoser2" />
-              </node>
-              <node concept="3Jak$y" id="6PK7EUlYD_i" role="3TlMhI">
-                <ref role="ZpOSt" node="WgjoVd2$8M" resolve="deviceNodeElectric" />
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="ZpONE" id="5LUy9Q2cBmE" role="3SJsrU" />
       </node>
       <node concept="1eXri_" id="6PK7EUlUIKJ" role="2mZOl8">
         <property role="TrG5h" value="faConnector" />

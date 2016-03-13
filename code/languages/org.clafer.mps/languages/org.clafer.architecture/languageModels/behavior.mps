@@ -3318,5 +3318,29 @@
       <node concept="3clFbS" id="5ipUCoiyxk5" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="5LUy9Q2lZGA">
+    <property role="3GE5qa" value="CommunicationTopology" />
+    <ref role="13h7C2" to="ddau:5LUy9Q2bsY6" resolve="BusType" />
+    <node concept="13i0hz" id="5H6GWMWQIGF" role="13h7CS">
+      <property role="TrG5h" value="getPresentation" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3clFbS" id="5H6GWMWQIGH" role="3clF47">
+        <node concept="3cpWs6" id="5H6GWMWQIGR" role="3cqZAp">
+          <node concept="2OqwBi" id="5H6GWMWQIJ6" role="3cqZAk">
+            <node concept="13iPFW" id="5H6GWMWQIH4" role="2Oq$k0" />
+            <node concept="3TrcHB" id="5H6GWMWQIMO" role="2OqNvi">
+              <ref role="3TsBF5" to="ddau:5LUy9Q2bsY9" resolve="type" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5H6GWMWQIGN" role="3clF45" />
+      <node concept="3Tm1VV" id="5H6GWMWQIGO" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="5LUy9Q2lZGB" role="13h7CW">
+      <node concept="3clFbS" id="5LUy9Q2lZGC" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

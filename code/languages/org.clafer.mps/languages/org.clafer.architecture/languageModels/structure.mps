@@ -399,15 +399,14 @@
     <property role="34LRSv" value="BusConnector" />
     <property role="1pbfSe" value="417174105" />
     <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
-    <node concept="1TJgyi" id="6v3ZnYeNUS5" role="1TKVEl">
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="3URpncZ4sjK" resolve="BusTypeEnum" />
-    </node>
     <node concept="1TJgyj" id="5OLu9WxSgwO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="connects" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
+    </node>
+    <node concept="PrWs8" id="5LUy9Q2fPnv" role="PzmwI">
+      <ref role="PrY4T" node="5LUy9Q2fPnu" resolve="IHaveArchType" />
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSt3">
@@ -960,6 +959,30 @@
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="BusExpr" />
     <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="5LUy9Q2bsY6">
+    <property role="1pbfSe" value="559392733" />
+    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="TrG5h" value="BusType" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5LUy9Q2bsY9" role="1TKVEl">
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="3URpncZ4sjK" resolve="BusTypeEnum" />
+    </node>
+    <node concept="PrWs8" id="5LUy9Q2dTbS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5LUy9Q2fPnu">
+    <property role="1pbfSe" value="558244229" />
+    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="TrG5h" value="IHaveArchType" />
+    <node concept="1TJgyj" id="5LUy9Q2fPnx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5LUy9Q2bsY6" resolve="BusType" />
+    </node>
   </node>
 </model>
 

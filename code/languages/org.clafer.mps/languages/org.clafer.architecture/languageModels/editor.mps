@@ -67,6 +67,7 @@
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+        <child id="1233141163694" name="separatorStyle" index="sWeuL" />
         <child id="4601216887035799527" name="usesFoldingCondition" index="1p_IA6" />
         <child id="6046489571270834038" name="foldedCellModel" index="3EmGlc" />
       </concept>
@@ -81,6 +82,7 @@
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
+      <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -4641,8 +4643,9 @@
       </node>
       <node concept="3F2HdR" id="5mM0w5bay1m" role="3EZMnx">
         <property role="1cu_pB" value="0" />
+        <property role="2czwfO" value="/" />
         <ref role="1NtTu8" to="ddau:7xzoSpGQbAv" />
-        <ref role="APP_o" node="5mM0w5benWn" resolve="NodeType_Actions" />
+        <ref role="APP_o" node="4IooPig5MFb" resolve="ArchElement_removeNode" />
         <node concept="l2Vlx" id="5mM0w5bay1o" role="2czzBx" />
         <node concept="pkWqt" id="5mM0w5bay8l" role="pqm2j">
           <node concept="3clFbS" id="5mM0w5bay8m" role="2VODD2">
@@ -4990,9 +4993,19 @@
       <node concept="PMmxH" id="5OLu9WxSfmP" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
       </node>
-      <node concept="3F0A7n" id="6v3ZnYeNUWj" role="3EZMnx">
-        <ref role="1NtTu8" to="ddau:6v3ZnYeNUS5" resolve="type" />
-        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
+      <node concept="3F2HdR" id="5LUy9Q2burP" role="3EZMnx">
+        <property role="2czwfO" value="/" />
+        <ref role="APP_o" node="4IooPig5MFb" resolve="ArchElement_removeNode" />
+        <ref role="1NtTu8" to="ddau:5LUy9Q2fPnx" />
+        <node concept="l2Vlx" id="5LUy9Q2burR" role="2czzBx" />
+        <node concept="tppnM" id="5LUy9Q2f4lM" role="sWeuL">
+          <node concept="11L4FC" id="5LUy9Q2f4lO" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="5LUy9Q2hJnO" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
       </node>
       <node concept="PMmxH" id="5OLu9WxSfmQ" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
@@ -6760,24 +6773,6 @@
       <node concept="2iRkQZ" id="1T6YVZd85Ii" role="2iSdaV" />
     </node>
   </node>
-  <node concept="1h_SRR" id="5mM0w5benWn">
-    <property role="3GE5qa" value="Interfaces.IDevice" />
-    <property role="TrG5h" value="NodeType_Actions" />
-    <ref role="1h_SK9" to="ddau:EXzEoUui47" resolve="NodeType" />
-    <node concept="1hA7zw" id="5mM0w5benWo" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
-      <node concept="1hAIg9" id="5mM0w5benWp" role="1hA7z_">
-        <node concept="3clFbS" id="5mM0w5benWq" role="2VODD2">
-          <node concept="3clFbF" id="5mM0w5bi6Pc" role="3cqZAp">
-            <node concept="2OqwBi" id="5mM0w5bi6Qp" role="3clFbG">
-              <node concept="0IXxy" id="5mM0w5bi6Pb" role="2Oq$k0" />
-              <node concept="1PgB_6" id="5mM0w5bi6Xc" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="5mM0w5bye9d">
     <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
     <ref role="1XX52x" to="ddau:EXzEoUui47" resolve="NodeType" />
@@ -6912,6 +6907,18 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5LUy9Q2bsYz">
+    <property role="3GE5qa" value="CommunicationTopology" />
+    <ref role="1XX52x" to="ddau:5LUy9Q2bsY6" resolve="BusType" />
+    <node concept="3F0A7n" id="5LUy9Q2cDd3" role="2wV5jI">
+      <ref role="1NtTu8" to="ddau:5LUy9Q2bsY9" resolve="type" />
+      <ref role="1ERwB7" node="4IooPig5MFb" resolve="ArchElement_removeNode" />
+      <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
+      <node concept="VPxyj" id="5LUy9Q2ft0p" role="3F10Kt">
+        <property role="VOm3f" value="false" />
       </node>
     </node>
   </node>
