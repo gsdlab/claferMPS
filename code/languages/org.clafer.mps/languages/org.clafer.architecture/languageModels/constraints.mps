@@ -4330,5 +4330,29 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6BXeK5CiH6T">
+    <property role="3GE5qa" value="QualityModule" />
+    <ref role="1M2myG" to="ddau:57FaIEV_R4s" resolve="QualityTableElementRef" />
+    <node concept="EnEH3" id="6BXeK5CiH6U" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="6BXeK5CiH6X" role="EtsB7">
+        <node concept="3clFbS" id="6BXeK5CiH6Y" role="2VODD2">
+          <node concept="3clFbF" id="6BXeK5CiH89" role="3cqZAp">
+            <node concept="2OqwBi" id="6BXeK5CiHDF" role="3clFbG">
+              <node concept="2OqwBi" id="6BXeK5CiHdU" role="2Oq$k0">
+                <node concept="EsrRn" id="6BXeK5CiH88" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6BXeK5CiHpy" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:57FaIEV_R4t" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6BXeK5CiHRn" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

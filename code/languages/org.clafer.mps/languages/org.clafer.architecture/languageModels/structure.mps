@@ -123,10 +123,6 @@
       <property role="TrG5h" value="isOptional" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="4diOXa0yQd0" role="1TKVEl">
-      <property role="TrG5h" value="hasQualityAttributes" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4csP6flSWC7">
     <property role="3GE5qa" value="FunctionalArchitecture" />
@@ -396,7 +392,7 @@
   <node concept="1TIwiD" id="19aTRzkPSoJ">
     <property role="3GE5qa" value="CommunicationTopology" />
     <property role="TrG5h" value="BusConnector" />
-    <property role="34LRSv" value="BusConnector" />
+    <property role="34LRSv" value="Bus Connector" />
     <property role="1pbfSe" value="417174105" />
     <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
     <node concept="1TJgyj" id="5OLu9WxSgwO" role="1TKVEi">
@@ -597,12 +593,6 @@
     <property role="3GE5qa" value="QualityModule" />
     <property role="TrG5h" value="QualityTableElement" />
     <ref role="1TJDcQ" node="57FaIEV_R4r" resolve="QTElement" />
-    <node concept="PrWs8" id="57FaIEVyhuR" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="57FaIEV$24e" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="57FaIEV_R4r">
     <property role="1pbfSe" value="226663429" />
@@ -610,7 +600,10 @@
     <property role="TrG5h" value="QTElement" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="PrWs8" id="6BXeK5CiAYY" role="PzmwI">
+      <ref role="PrY4T" to="mecy:xdMRpnCdR0" resolve="IPrimitiveClaferType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="57FaIEV_R4s">
     <property role="1pbfSe" value="226663430" />
@@ -640,6 +633,9 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6BXeK5CkZwm" role="PzmwI">
+      <ref role="PrY4T" to="mecy:xdMRpnCdR0" resolve="IPrimitiveClaferType" />
     </node>
   </node>
   <node concept="PlHQZ" id="5hA9WCIjVny">
@@ -980,7 +976,7 @@
     <node concept="1TJgyj" id="5LUy9Q2fPnx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5LUy9Q2bsY6" resolve="BusType" />
     </node>
   </node>

@@ -200,6 +200,9 @@
       <node concept="3EozPd" id="5ipUCoi8tkT" role="sklvC">
         <property role="TrG5h" value="latency" />
       </node>
+      <node concept="3EozPd" id="6BXeK5CiNLq" role="sklvC">
+        <property role="TrG5h" value="baseLatency" />
+      </node>
       <node concept="sjk9b" id="5ipUCoi8tkz" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
       </node>
