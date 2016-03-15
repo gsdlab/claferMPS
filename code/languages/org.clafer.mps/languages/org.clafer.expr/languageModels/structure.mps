@@ -878,7 +878,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="type" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7FQByU3CrCQ" resolve="Type" />
+      <ref role="20lvS9" node="7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="6Ig5vvl5lUu" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

@@ -476,8 +476,8 @@
           <node concept="2YxkJd" id="6v3ZnYePK_$" role="2YxkJa">
             <property role="TrG5h" value="e" />
           </node>
-          <node concept="ZpTZE" id="6v3ZnYePKAd" role="2YxkIx">
-            <ref role="ZpTZD" node="6v3ZnYePK1g" resolve="endpoint" />
+          <node concept="ZpONE" id="dW_p57ONZr" role="2YxkIx">
+            <ref role="ZpOSt" node="6v3ZnYePK1g" resolve="endpoint" />
           </node>
           <node concept="3TlM44" id="5H6GWMWUAlj" role="2YxkHD">
             <node concept="ZpONE" id="5H6GWMWUAlN" role="3TlMhJ">
@@ -525,6 +525,36 @@
         <node concept="3Edjpn" id="6v3ZnYePLbt" role="2vBZf8">
           <property role="3Edjpk" value="2" />
         </node>
+      </node>
+      <node concept="2vxuzR" id="dW_p57OMol" role="2vwUiP">
+        <node concept="2Yxk73" id="dW_p57OMo_" role="3WnoGb">
+          <property role="LBO1G" value="all" />
+          <node concept="2YxkJd" id="dW_p57OMoA" role="2YxkJa">
+            <property role="TrG5h" value="e" />
+          </node>
+          <node concept="2qmXGp" id="dW_p57ONYt" role="2YxkIx">
+            <node concept="2ZqYGZ" id="dW_p57ONZd" role="1ESnxz">
+              <ref role="2ZqYFj" node="6v3ZnYePK1g" resolve="endpoint" />
+            </node>
+            <node concept="2Zoh0E" id="dW_p57ONXP" role="1_9fRO" />
+          </node>
+          <node concept="3TlM44" id="dW_p57OO1d" role="2YxkHD">
+            <node concept="ZpONE" id="dW_p57OO1U" role="3TlMhJ">
+              <ref role="ZpOSt" node="5H6GWMWU_L9" resolve="SmartDeviceNode" />
+            </node>
+            <node concept="2qmXGp" id="dW_p57OO0i" role="3TlMhI">
+              <node concept="2ZqYGZ" id="dW_p57OO0L" role="1ESnxz">
+                <ref role="2ZqYFj" node="5H6GWMWUAee" resolve="type" />
+              </node>
+              <node concept="2Yzyl$" id="dW_p57ONZZ" role="1_9fRO">
+                <ref role="2YzykK" node="dW_p57OMoA" resolve="e" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2vxcI6" id="dW_p57ONYS" role="2vxcI2">
+        <ref role="2vxcI7" node="6v3ZnYePJUg" resolve="HardwareDataConnector" />
       </node>
     </node>
     <node concept="UzEYP" id="6v3ZnYePKEO" role="UzTCv" />
