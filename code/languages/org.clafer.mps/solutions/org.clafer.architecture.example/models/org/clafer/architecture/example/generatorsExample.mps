@@ -683,6 +683,27 @@
           <property role="TrG5h" value="faArchitecture" />
           <node concept="2mZLT$" id="2XrN4Lux4QL" role="2mZOl8">
             <property role="TrG5h" value="importedAFUnction" />
+            <node concept="33KLpJ" id="dW_p57jStF" role="33KLpg">
+              <property role="TrG5h" value="latency" />
+              <ref role="33KLov" to="t4ow:5ipUCoi8tkT" resolve="latency" />
+              <node concept="2K4itw" id="dW_p57jStG" role="2K4itM">
+                <node concept="3TlMh2" id="dW_p57jStH" role="3J4IUC" />
+              </node>
+              <node concept="3TlMh9" id="dW_p57l7XW" role="33KLot">
+                <property role="2hmy$m" value="4" />
+              </node>
+            </node>
+            <node concept="33KLpJ" id="dW_p57l7Y1" role="33KLpg">
+              <property role="TrG5h" value="baseLatency" />
+              <ref role="33KLov" to="t4ow:6BXeK5CiNLq" resolve="baseLatency" />
+              <node concept="2K4itw" id="dW_p57l7Y2" role="2K4itM">
+                <node concept="3TlMh2" id="dW_p57l7Y3" role="3J4IUC" />
+              </node>
+              <node concept="2qmXGp" id="dW_p57lzlu" role="33KLot">
+                <node concept="2IdTD4" id="dW_p57lzmd" role="1ESnxz" />
+                <node concept="2xC6$6" id="dW_p57lzln" role="1_9fRO" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
