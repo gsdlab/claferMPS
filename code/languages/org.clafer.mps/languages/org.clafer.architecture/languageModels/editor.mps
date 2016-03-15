@@ -4686,6 +4686,14 @@
             </node>
           </node>
         </node>
+        <node concept="tppnM" id="dW_p57GKEF" role="sWeuL">
+          <node concept="11L4FC" id="dW_p57GKJ5" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="dW_p57GKJd" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
       </node>
       <node concept="PMmxH" id="7DuSdC$_H6e" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
@@ -5004,6 +5012,21 @@
           </node>
           <node concept="11LMrY" id="5LUy9Q2hJnO" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="pkWqt" id="dW_p57n9Rt" role="pqm2j">
+          <node concept="3clFbS" id="dW_p57n9Ru" role="2VODD2">
+            <node concept="3clFbF" id="dW_p57naxD" role="3cqZAp">
+              <node concept="2OqwBi" id="dW_p57nc2B" role="3clFbG">
+                <node concept="2OqwBi" id="dW_p57naEu" role="2Oq$k0">
+                  <node concept="pncrf" id="dW_p57naxC" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="dW_p57nb2G" role="2OqNvi">
+                    <ref role="3TtcxE" to="ddau:5LUy9Q2fPnx" />
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="dW_p57neh8" role="2OqNvi" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -6827,13 +6850,6 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
-  <node concept="24kQdi" id="1jKsuqUUxaU">
-    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
-    <ref role="1XX52x" to="ddau:2G_jlDGrdpl" resolve="IDeviceExpr" />
-    <node concept="PMmxH" id="1jKsuqUUxy1" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
   <node concept="24kQdi" id="6v3ZnYeNgAg">
     <property role="3GE5qa" value="Connectors" />
     <ref role="1XX52x" to="ddau:6v3ZnYeNgv8" resolve="Connector" />
@@ -6882,7 +6898,7 @@
   </node>
   <node concept="24kQdi" id="2XrN4LuAUl5">
     <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
-    <ref role="1XX52x" to="ddau:2XrN4LuATXF" resolve="BusExpr" />
+    <ref role="1XX52x" to="ddau:2XrN4LuATXF" resolve="BusTypeExpr" />
     <node concept="PMmxH" id="2XrN4LuAUlC" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
@@ -6920,6 +6936,13 @@
       <node concept="VPxyj" id="5LUy9Q2ft0p" role="3F10Kt">
         <property role="VOm3f" value="false" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="dW_p57nZ4R">
+    <property role="3GE5qa" value="NodeTypeExpr" />
+    <ref role="1XX52x" to="ddau:EXzEoUsgG2" resolve="NodeTypeDotTarget" />
+    <node concept="PMmxH" id="dW_p57nZ5e" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

@@ -926,5 +926,36 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="dW_p57nep7">
+    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="TrG5h" value="BusConnector_addType" />
+    <ref role="2ZfgGC" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+    <node concept="2S6ZIM" id="dW_p57nep8" role="2ZfVej">
+      <node concept="3clFbS" id="dW_p57nep9" role="2VODD2">
+        <node concept="3clFbF" id="dW_p57neq$" role="3cqZAp">
+          <node concept="Xl_RD" id="dW_p57neqz" role="3clFbG">
+            <property role="Xl_RC" value="Add Type" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="dW_p57nepa" role="2ZfgGD">
+      <node concept="3clFbS" id="dW_p57nepb" role="2VODD2">
+        <node concept="3clFbF" id="dW_p57ney_" role="3cqZAp">
+          <node concept="2OqwBi" id="dW_p57nf$N" role="3clFbG">
+            <node concept="2OqwBi" id="dW_p57neDq" role="2Oq$k0">
+              <node concept="2Sf5sV" id="dW_p57neyz" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="dW_p57neV0" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:5LUy9Q2fPnx" />
+              </node>
+            </node>
+            <node concept="WFELt" id="dW_p57ngo$" role="2OqNvi">
+              <ref role="1A0vxQ" to="ddau:5LUy9Q2bsY6" resolve="BusType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

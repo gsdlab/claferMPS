@@ -1521,7 +1521,7 @@
                   <node concept="2ShNRf" id="5ipUCoi9nbf" role="37vLTx">
                     <node concept="3zrR0B" id="5ipUCoi9nbd" role="2ShVmc">
                       <node concept="3Tqbb2" id="5ipUCoi9nbe" role="3zrR0E">
-                        <ref role="ehGHo" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
+                        <ref role="ehGHo" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
                       </node>
                     </node>
                   </node>
@@ -1560,7 +1560,10 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="dW_p57$dCE" role="3cqZAp" />
           <node concept="3clFbH" id="5ipUCoi9o4Q" role="3cqZAp" />
+          <node concept="3clFbH" id="dW_p57zttr" role="3cqZAp" />
+          <node concept="3clFbH" id="dW_p57ymVu" role="3cqZAp" />
           <node concept="3clFbF" id="5ipUCoi9o9a" role="3cqZAp">
             <node concept="2OqwBi" id="5ipUCoi9oUC" role="3clFbG">
               <node concept="2OqwBi" id="5ipUCoi9oDT" role="2Oq$k0">

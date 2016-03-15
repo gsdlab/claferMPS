@@ -1871,6 +1871,45 @@
       <property role="TrG5h" value="getClaferScope" />
       <ref role="13i0hy" node="72GPbqtdfLI" resolve="getClaferScope" />
       <node concept="3clFbS" id="72GPbqtcSs0" role="3clF47">
+        <node concept="3clFbF" id="dW_p57CfGJ" role="3cqZAp">
+          <node concept="BsUDl" id="dW_p57CfGI" role="3clFbG">
+            <ref role="37wK5l" node="dW_p57C51q" resolve="claferScope" />
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="72GPbqtdhsY" role="3clF45">
+        <node concept="3Tqbb2" id="72GPbqtdhsZ" role="A3Ik2">
+          <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="72GPbqtdht0" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="dW_p57CfHn" role="13h7CS">
+      <property role="TrG5h" value="getClaferScope" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" node="dW_p57_0PH" resolve="getClaferScope" />
+      <node concept="3clFbS" id="dW_p57CfHp" role="3clF47">
+        <node concept="3clFbF" id="dW_p57Cm9L" role="3cqZAp">
+          <node concept="BsUDl" id="dW_p57Cm9K" role="3clFbG">
+            <ref role="37wK5l" node="dW_p57C51q" resolve="claferScope" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="dW_p57Ck0r" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="dW_p57Ck0s" role="1tU5fm" />
+      </node>
+      <node concept="A3Dl8" id="dW_p57Ck0t" role="3clF45">
+        <node concept="3Tqbb2" id="dW_p57Ck0u" role="A3Ik2">
+          <ref role="ehGHo" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="dW_p57Ck0v" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="dW_p57C51q" role="13h7CS">
+      <property role="TrG5h" value="claferScope" />
+      <node concept="3Tm6S6" id="dW_p57Cf$3" role="1B3o_S" />
+      <node concept="3clFbS" id="dW_p57C51s" role="3clF47">
         <node concept="3clFbJ" id="72GPbqtcSZo" role="3cqZAp">
           <node concept="3clFbS" id="72GPbqtcSZp" role="3clFbx">
             <node concept="3cpWs6" id="72GPbqtbfdn" role="3cqZAp">
@@ -1930,12 +1969,11 @@
           </node>
         </node>
       </node>
-      <node concept="A3Dl8" id="72GPbqtdhsY" role="3clF45">
-        <node concept="3Tqbb2" id="72GPbqtdhsZ" role="A3Ik2">
+      <node concept="A3Dl8" id="dW_p57Cf$7" role="3clF45">
+        <node concept="3Tqbb2" id="dW_p57Cf$8" role="A3Ik2">
           <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
         </node>
       </node>
-      <node concept="3Tm1VV" id="72GPbqtdht0" role="1B3o_S" />
     </node>
     <node concept="13hLZK" id="5tJ_MV8WhRK" role="13h7CW">
       <node concept="3clFbS" id="5tJ_MV8WhRL" role="2VODD2" />
@@ -2162,6 +2200,25 @@
         <node concept="3clFbF" id="72GPbqtdfP$" role="3cqZAp">
           <node concept="10Nm6u" id="72GPbqtdfPz" role="3clFbG" />
         </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="dW_p57_0PH" role="13h7CS">
+      <property role="TrG5h" value="getClaferScope" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="dW_p57_0PI" role="1B3o_S" />
+      <node concept="A3Dl8" id="dW_p57_0PJ" role="3clF45">
+        <node concept="3Tqbb2" id="dW_p57_0PK" role="A3Ik2">
+          <ref role="ehGHo" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="dW_p57_0PL" role="3clF47">
+        <node concept="3clFbF" id="dW_p57_0PM" role="3cqZAp">
+          <node concept="10Nm6u" id="dW_p57_0PN" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="dW_p57_0Vf" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="H_c77" id="dW_p57_0Ve" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="4Z9rElryOLr" role="13h7CS">
