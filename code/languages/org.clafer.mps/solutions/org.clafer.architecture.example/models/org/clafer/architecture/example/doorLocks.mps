@@ -28,12 +28,13 @@
         <reference id="4851172649685075405" name="tElement" index="33KLov" />
         <child id="4851172649685075407" name="value" index="33KLot" />
       </concept>
+      <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommTopology" flags="ng" index="36Bm0V" />
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
         <reference id="7590219002335427874" name="dest" index="2wMEbl" />
         <reference id="7590219002335427867" name="src" index="2wMEbG" />
       </concept>
-      <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysisArchitecture" flags="ng" index="1u8h5F" />
-      <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeTopology" flags="ng" index="1uNHS9" />
+      <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
+      <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
       <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
@@ -4428,6 +4429,10 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="UzEYP" id="3WJnaafhN$x" role="UzTCv" />
+    <node concept="36Bm0V" id="3WJnaafhNO0" role="UzTCv">
+      <property role="TrG5h" value="cp" />
     </node>
     <node concept="UzEYP" id="7otgDTdW3wY" role="UzTCv" />
   </node>

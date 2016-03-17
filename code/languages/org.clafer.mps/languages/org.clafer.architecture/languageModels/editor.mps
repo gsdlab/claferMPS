@@ -666,7 +666,7 @@
         <property role="3F0ifm" value="from" />
       </node>
       <node concept="1iCGBv" id="6_lRZv9BRP2" role="3EZMnx">
-        <ref role="1NtTu8" to="ddau:6v3ZnYeNgv9" />
+        <ref role="1NtTu8" to="ddau:3WJnaafipxM" />
         <node concept="1sVBvm" id="6_lRZv9BRP4" role="1sWHZn">
           <node concept="3F0A7n" id="6_lRZv9BRPo" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -678,7 +678,7 @@
         <property role="3F0ifm" value="to" />
       </node>
       <node concept="1iCGBv" id="6_lRZv9BRPV" role="3EZMnx">
-        <ref role="1NtTu8" to="ddau:6v3ZnYeNgvc" />
+        <ref role="1NtTu8" to="ddau:3WJnaafipyc" />
         <node concept="1sVBvm" id="6_lRZv9BRPX" role="1sWHZn">
           <node concept="3F0A7n" id="6_lRZv9BRQl" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -1628,8 +1628,8 @@
         <node concept="23hSZX" id="6_lRZv9BiNG" role="ljJml">
           <node concept="2OqwBi" id="6_lRZv9BiT0" role="23hSWE">
             <node concept="1Pxb5l" id="6_lRZv9BiNY" role="2Oq$k0" />
-            <node concept="3TrEf2" id="2XrN4LuumYY" role="2OqNvi">
-              <ref role="3Tt5mk" to="ddau:6v3ZnYeNgv9" />
+            <node concept="3TrEf2" id="3WJnaafjBbk" role="2OqNvi">
+              <ref role="3Tt5mk" to="ddau:3WJnaafipxM" />
             </node>
           </node>
         </node>
@@ -1661,8 +1661,8 @@
               <node concept="2OqwBi" id="4fqVouxtcCe" role="3uHU7B">
                 <node concept="2OqwBi" id="4fqVouxtbMi" role="2Oq$k0">
                   <node concept="1Pxb5l" id="4fqVouxtbD9" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="2XrN4Luunn6" role="2OqNvi">
-                    <ref role="3Tt5mk" to="ddau:6v3ZnYeNgv9" />
+                  <node concept="3TrEf2" id="3WJnaafjBjN" role="2OqNvi">
+                    <ref role="3Tt5mk" to="ddau:3WJnaafipxM" />
                   </node>
                 </node>
                 <node concept="2Xjw5R" id="4fqVouxtdqP" role="2OqNvi">
@@ -1723,8 +1723,8 @@
         <node concept="23hSZX" id="6_lRZv9BjEd" role="ljJml">
           <node concept="2OqwBi" id="6_lRZv9BjJx" role="23hSWE">
             <node concept="1Pxb5l" id="6_lRZv9BjEv" role="2Oq$k0" />
-            <node concept="3TrEf2" id="2XrN4LuunKR" role="2OqNvi">
-              <ref role="3Tt5mk" to="ddau:6v3ZnYeNgvc" />
+            <node concept="3TrEf2" id="3WJnaafjBIw" role="2OqNvi">
+              <ref role="3Tt5mk" to="ddau:3WJnaafipyc" />
             </node>
           </node>
         </node>
@@ -1750,8 +1750,8 @@
       </node>
       <node concept="2OqwBi" id="2l2PNBEExQs" role="1i7NIZ">
         <node concept="1Pxb5l" id="2l2PNBEExId" role="2Oq$k0" />
-        <node concept="3TrEf2" id="2XrN4Luuo8Z" role="2OqNvi">
-          <ref role="3Tt5mk" to="ddau:6v3ZnYeNgvc" />
+        <node concept="3TrEf2" id="3WJnaafjBPX" role="2OqNvi">
+          <ref role="3Tt5mk" to="ddau:3WJnaafipyc" />
         </node>
       </node>
     </node>
@@ -3290,8 +3290,8 @@
                     <node concept="37vLTw" id="1wmiO1AGE2E" role="2Oq$k0">
                       <ref role="3cqZAo" node="2l2PNBEz9gu" resolve="conn" />
                     </node>
-                    <node concept="3TrEf2" id="2XrN4LuuXJK" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ddau:6v3ZnYeNgv9" />
+                    <node concept="3TrEf2" id="3WJnaafjA_s" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ddau:3WJnaafipxM" />
                     </node>
                   </node>
                 </node>
@@ -3311,8 +3311,8 @@
                     <node concept="37vLTw" id="1wmiO1AGE2N" role="2Oq$k0">
                       <ref role="3cqZAo" node="2l2PNBEz9gu" resolve="conn" />
                     </node>
-                    <node concept="3TrEf2" id="2XrN4LuuY9a" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ddau:6v3ZnYeNgvc" />
+                    <node concept="3TrEf2" id="3WJnaafjAdA" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ddau:3WJnaafipyc" />
                     </node>
                   </node>
                 </node>
@@ -6870,10 +6870,12 @@
         <property role="3F0ifm" value="connects" />
       </node>
       <node concept="1iCGBv" id="6v3ZnYeNgAn" role="3EZMnx">
+        <property role="1$x2rV" value="no bus" />
         <ref role="1NtTu8" to="ddau:6v3ZnYeNgv9" />
         <node concept="1sVBvm" id="6v3ZnYeNgAo" role="1sWHZn">
           <node concept="3F0A7n" id="6v3ZnYeNgAp" role="2wV5jI">
             <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="no bus" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
@@ -6882,10 +6884,12 @@
         <property role="3F0ifm" value="and" />
       </node>
       <node concept="1iCGBv" id="6v3ZnYeNgAr" role="3EZMnx">
+        <property role="1$x2rV" value="no bus" />
         <ref role="1NtTu8" to="ddau:6v3ZnYeNgvc" />
         <node concept="1sVBvm" id="6v3ZnYeNgAs" role="1sWHZn">
           <node concept="3F0A7n" id="6v3ZnYeNgAt" role="2wV5jI">
             <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="no bus" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
@@ -6946,6 +6950,235 @@
     <ref role="1XX52x" to="ddau:EXzEoUsgG2" resolve="NodeTypeDotTarget" />
     <node concept="PMmxH" id="dW_p57nZ5e" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3WJnaafd3Pf">
+    <property role="3GE5qa" value="Connectors" />
+    <ref role="1XX52x" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+    <node concept="3EZMnI" id="3WJnaafd3Ph" role="2wV5jI">
+      <node concept="PMmxH" id="3WJnaafd3Pi" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafd3Pj" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafd3Pk" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
+      </node>
+      <node concept="3F0ifn" id="3WJnaafd3Pl" role="3EZMnx">
+        <property role="3F0ifm" value="connects" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafd3Pm" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafd3OM" />
+        <node concept="1sVBvm" id="3WJnaafd3Pn" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafd3Po" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3WJnaafd3Pp" role="3EZMnx">
+        <property role="3F0ifm" value="and" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafd3Pq" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafd3OO" />
+        <node concept="1sVBvm" id="3WJnaafd3Pr" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafd3Ps" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="3WJnaafd3Pt" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
+      </node>
+      <node concept="l2Vlx" id="3WJnaafd3Pu" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3WJnaafpiYQ">
+    <property role="3GE5qa" value="CommunicationTopology" />
+    <ref role="1XX52x" to="ddau:6v3ZnYeNRw_" resolve="AnalogDataConnector" />
+    <node concept="3EZMnI" id="3WJnaafpiYS" role="2wV5jI">
+      <node concept="PMmxH" id="3WJnaafpiYT" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafpiYU" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafpiYV" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
+      </node>
+      <node concept="3F0ifn" id="3WJnaafpiYW" role="3EZMnx">
+        <property role="3F0ifm" value="connects" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafpiYX" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafhyWX" />
+        <node concept="1sVBvm" id="3WJnaafpiYY" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafpiYZ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3WJnaafpiZ0" role="3EZMnx">
+        <property role="3F0ifm" value="and" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafpiZ1" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafhyWY" />
+        <node concept="1sVBvm" id="3WJnaafpiZ2" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafpiZ3" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="3WJnaafpiZ4" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
+      </node>
+      <node concept="l2Vlx" id="3WJnaafpiZ5" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="3WJnaafpiZI" role="6VMZX">
+      <ref role="PMmxG" node="1T6YVZd85oj" resolve="ArchInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3WJnaafpj09">
+    <property role="3GE5qa" value="CommunicationTopology" />
+    <ref role="1XX52x" to="ddau:19aTRzkPSmo" resolve="DiscreteDataConnector" />
+    <node concept="3EZMnI" id="3WJnaafpj0b" role="2wV5jI">
+      <node concept="PMmxH" id="3WJnaafpj0c" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj0d" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj0e" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
+      </node>
+      <node concept="3F0ifn" id="3WJnaafpj0f" role="3EZMnx">
+        <property role="3F0ifm" value="connects" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafpj0g" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafhyWX" />
+        <node concept="1sVBvm" id="3WJnaafpj0h" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafpj0i" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="no bus" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3WJnaafpj0j" role="3EZMnx">
+        <property role="3F0ifm" value="and" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafpj0k" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafhyWY" />
+        <node concept="1sVBvm" id="3WJnaafpj0l" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafpj0m" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="no bus" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj0n" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
+      </node>
+      <node concept="l2Vlx" id="3WJnaafpj0o" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="3WJnaafpj11" role="6VMZX">
+      <ref role="PMmxG" node="1T6YVZd85oj" resolve="ArchInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3WJnaafpj1s">
+    <property role="3GE5qa" value="PowerTopology" />
+    <ref role="1XX52x" to="ddau:19aTRzkPSVo" resolve="DevicePowerConnector" />
+    <node concept="3EZMnI" id="3WJnaafpj1u" role="2wV5jI">
+      <node concept="PMmxH" id="3WJnaafpj1v" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj1w" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj1x" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
+      </node>
+      <node concept="3F0ifn" id="3WJnaafpj1y" role="3EZMnx">
+        <property role="3F0ifm" value="connects" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafpj1z" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafhyWX" />
+        <node concept="1sVBvm" id="3WJnaafpj1$" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafpj1_" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3WJnaafpj1A" role="3EZMnx">
+        <property role="3F0ifm" value="and" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafpj1B" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafhyWY" />
+        <node concept="1sVBvm" id="3WJnaafpj1C" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafpj1D" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj1E" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
+      </node>
+      <node concept="l2Vlx" id="3WJnaafpj1F" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="3WJnaafpj2k" role="6VMZX">
+      <ref role="PMmxG" node="1T6YVZd85oj" resolve="ArchInspector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3WJnaafpj2J">
+    <property role="3GE5qa" value="PowerTopology" />
+    <ref role="1XX52x" to="ddau:19aTRzkPSHp" resolve="LoadPowerConnector" />
+    <node concept="3EZMnI" id="3WJnaafpj2L" role="2wV5jI">
+      <node concept="PMmxH" id="3WJnaafpj2M" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj2N" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO44bo" resolve="DNOptional" />
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj2O" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO47xg" resolve="DNDefinition" />
+      </node>
+      <node concept="3F0ifn" id="3WJnaafpj2P" role="3EZMnx">
+        <property role="3F0ifm" value="connects" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafpj2Q" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafhyWX" />
+        <node concept="1sVBvm" id="3WJnaafpj2R" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafpj2S" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3WJnaafpj2T" role="3EZMnx">
+        <property role="3F0ifm" value="and" />
+      </node>
+      <node concept="1iCGBv" id="3WJnaafpj2U" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:3WJnaafhyWY" />
+        <node concept="1sVBvm" id="3WJnaafpj2V" role="1sWHZn">
+          <node concept="3F0A7n" id="3WJnaafpj2W" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="3WJnaafpj2X" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO2K80" resolve="DNBody" />
+      </node>
+      <node concept="l2Vlx" id="3WJnaafpj2Y" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="3WJnaafpj3B" role="6VMZX">
+      <ref role="PMmxG" node="1T6YVZd85oj" resolve="ArchInspector" />
     </node>
   </node>
 </model>

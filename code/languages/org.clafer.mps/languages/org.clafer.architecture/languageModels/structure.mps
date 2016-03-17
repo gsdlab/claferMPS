@@ -78,7 +78,19 @@
     <property role="34LRSv" value="Function Connector" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="1pbfSe" value="1895418041" />
-    <ref role="1TJDcQ" node="6v3ZnYeNgv8" resolve="Connector" />
+    <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
+    <node concept="1TJgyj" id="3WJnaafipxM" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="source" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
+    </node>
+    <node concept="1TJgyj" id="3WJnaafipyc" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
+    </node>
     <node concept="PrWs8" id="6tUgmTZN8Kq" role="PzmwI">
       <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
     </node>
@@ -308,9 +320,24 @@
     <property role="1pbfSe" value="854349146" />
   </node>
   <node concept="PlHQZ" id="1tfNdgy1e$L">
-    <property role="TrG5h" value="IConnector" />
+    <property role="TrG5h" value="IHardwareConnector" />
     <property role="3GE5qa" value="Interfaces" />
     <property role="1pbfSe" value="961852933" />
+    <node concept="1TJgyj" id="3WJnaafhyWX" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="source" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
+    </node>
+    <node concept="1TJgyj" id="3WJnaafhyWY" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
+    </node>
+    <node concept="PrWs8" id="3WJnaafhyWV" role="PrDN$">
+      <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="12rnRvMfu2B">
     <property role="3GE5qa" value="FeatureModel" />
@@ -373,13 +400,20 @@
     <property role="TrG5h" value="HardwareConnector" />
     <property role="34LRSv" value="Hardware Connector" />
     <property role="1pbfSe" value="417180168" />
-    <ref role="1TJDcQ" node="6v3ZnYeNgv8" resolve="Connector" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
+    <node concept="PrWs8" id="3WJnaafnuZT" role="PzmwI">
+      <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSlW">
     <property role="3GE5qa" value="CommunicationTopology" />
     <property role="TrG5h" value="HardwareDataConnector" />
     <property role="34LRSv" value="Hardware Data Connector" />
     <property role="1pbfSe" value="417174284" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSmo">
@@ -388,13 +422,16 @@
     <property role="34LRSv" value="Discrete Data Connector" />
     <property role="1pbfSe" value="417174256" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
+    <node concept="PrWs8" id="3WJnaafh_tD" role="PzmwI">
+      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IHardwareConnector" />
+    </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSoJ">
     <property role="3GE5qa" value="CommunicationTopology" />
     <property role="TrG5h" value="BusConnector" />
     <property role="34LRSv" value="Bus Connector" />
     <property role="1pbfSe" value="417174105" />
-    <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
+    <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
     <node concept="1TJgyj" id="5OLu9WxSgwO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="connects" />
@@ -438,7 +475,15 @@
     <property role="TrG5h" value="PowerConnector" />
     <property role="34LRSv" value="Power Connector" />
     <property role="1pbfSe" value="417167965" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
+    <node concept="PrWs8" id="3WJnaafhC7h" role="PzmwI">
+      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IHardwareConnector" />
+    </node>
+    <node concept="PrWs8" id="3WJnaafpj3J" role="PzmwI">
+      <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
+    </node>
   </node>
   <node concept="AxPO7" id="3URpncZ4sjK">
     <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
@@ -892,10 +937,8 @@
     <property role="3GE5qa" value="Connectors" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="Base Connector" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="PrWs8" id="6v3ZnYeNguU" role="PzmwI">
-      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IConnector" />
-    </node>
     <node concept="PrWs8" id="6v3ZnYeNgv2" role="PzmwI">
       <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
@@ -926,6 +969,9 @@
     <property role="TrG5h" value="AnalogDataConnector" />
     <property role="34LRSv" value="Analog Data Connector" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
+    <node concept="PrWs8" id="3WJnaafh_mN" role="PzmwI">
+      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IHardwareConnector" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2XrN4LuAS5Z">
     <property role="1pbfSe" value="1913172533" />
@@ -965,6 +1011,29 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5LUy9Q2bsY6" resolve="BusType" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3WJnaafd3OJ">
+    <property role="1pbfSe" value="832333359" />
+    <property role="3GE5qa" value="Connectors" />
+    <property role="TrG5h" value="LogicalBusBridge" />
+    <property role="34LRSv" value="Logical Bus Bridge" />
+    <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
+    <node concept="1TJgyj" id="3WJnaafd3OM" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="sourceBus" />
+      <ref role="20lvS9" node="19aTRzkPSoJ" resolve="BusConnector" />
+    </node>
+    <node concept="1TJgyj" id="3WJnaafd3OO" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="targetBus" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="19aTRzkPSoJ" resolve="BusConnector" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3WJnaafhyWS">
+    <property role="1pbfSe" value="831157286" />
+    <property role="TrG5h" value="IAbstractVisibleInQATable" />
   </node>
 </model>
 

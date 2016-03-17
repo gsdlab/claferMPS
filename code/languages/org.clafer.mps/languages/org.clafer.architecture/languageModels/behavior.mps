@@ -41,7 +41,6 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -438,7 +437,7 @@
           <node concept="3cpWsn" id="1tfNdgy3HT2" role="3cpWs9">
             <property role="TrG5h" value="childrenNodes" />
             <node concept="2I9FWS" id="1tfNdgy3HSX" role="1tU5fm">
-              <ref role="2I9WkF" to="ddau:1tfNdgy1e$L" resolve="IConnector" />
+              <ref role="2I9WkF" to="ddau:6v3ZnYeNguT" resolve="BaseConnector" />
             </node>
             <node concept="2OqwBi" id="1tfNdgy3JOv" role="33vP2m">
               <node concept="2OqwBi" id="1tfNdgy3IPm" role="2Oq$k0">
@@ -449,8 +448,8 @@
                   </node>
                 </node>
                 <node concept="v3k3i" id="1tfNdgy3J_0" role="2OqNvi">
-                  <node concept="chp4Y" id="1tfNdgy3JBN" role="v3oSu">
-                    <ref role="cht4Q" to="ddau:1tfNdgy1e$L" resolve="IConnector" />
+                  <node concept="chp4Y" id="3WJnaafhvcz" role="v3oSu">
+                    <ref role="cht4Q" to="ddau:6v3ZnYeNguT" resolve="BaseConnector" />
                   </node>
                 </node>
               </node>
@@ -587,7 +586,7 @@
           <node concept="3cpWsn" id="1tfNdgy3R5v" role="1Duv9x">
             <property role="TrG5h" value="child" />
             <node concept="3Tqbb2" id="1tfNdgy3RfO" role="1tU5fm">
-              <ref role="ehGHo" to="ddau:1tfNdgy1e$L" resolve="IConnector" />
+              <ref role="ehGHo" to="ddau:6v3ZnYeNguT" resolve="BaseConnector" />
             </node>
           </node>
           <node concept="37vLTw" id="1tfNdgy3Ryx" role="1DdaDG">
@@ -3479,25 +3478,13 @@
                     <node concept="1bVj0M" id="6BXeK5CcKik" role="23t8la">
                       <node concept="3clFbS" id="6BXeK5CcKil" role="1bW5cS">
                         <node concept="3clFbF" id="6BXeK5CcKlc" role="3cqZAp">
-                          <node concept="22lmx$" id="6BXeK5CcKBA" role="3clFbG">
-                            <node concept="2OqwBi" id="6BXeK5CcKKb" role="3uHU7w">
-                              <node concept="37vLTw" id="6BXeK5CcKFG" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6BXeK5CcKim" resolve="it" />
-                              </node>
-                              <node concept="1mIQ4w" id="6BXeK5CcKR5" role="2OqNvi">
-                                <node concept="chp4Y" id="6BXeK5CcKVy" role="cj9EA">
-                                  <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-                                </node>
-                              </node>
+                          <node concept="2OqwBi" id="6BXeK5CcKoV" role="3clFbG">
+                            <node concept="37vLTw" id="6BXeK5CcKlb" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6BXeK5CcKim" resolve="it" />
                             </node>
-                            <node concept="2OqwBi" id="6BXeK5CcKoV" role="3uHU7B">
-                              <node concept="37vLTw" id="6BXeK5CcKlb" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6BXeK5CcKim" resolve="it" />
-                              </node>
-                              <node concept="1mIQ4w" id="6BXeK5CcKuh" role="2OqNvi">
-                                <node concept="chp4Y" id="6BXeK5CcKxQ" role="cj9EA">
-                                  <ref role="cht4Q" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
-                                </node>
+                            <node concept="1mIQ4w" id="6BXeK5CcKuh" role="2OqNvi">
+                              <node concept="chp4Y" id="6BXeK5CcKxQ" role="cj9EA">
+                                <ref role="cht4Q" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
                               </node>
                             </node>
                           </node>
@@ -3557,25 +3544,13 @@
                     <node concept="1bVj0M" id="6BXeK5Cd55Q" role="23t8la">
                       <node concept="3clFbS" id="6BXeK5Cd55R" role="1bW5cS">
                         <node concept="3clFbF" id="6BXeK5Cd55S" role="3cqZAp">
-                          <node concept="22lmx$" id="6BXeK5Cd55T" role="3clFbG">
-                            <node concept="2OqwBi" id="6BXeK5Cd55U" role="3uHU7w">
-                              <node concept="37vLTw" id="6BXeK5Cd55V" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6BXeK5Cd562" resolve="it" />
-                              </node>
-                              <node concept="1mIQ4w" id="6BXeK5Cd55W" role="2OqNvi">
-                                <node concept="chp4Y" id="6BXeK5Cd55X" role="cj9EA">
-                                  <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-                                </node>
-                              </node>
+                          <node concept="2OqwBi" id="6BXeK5Cd55Y" role="3clFbG">
+                            <node concept="37vLTw" id="6BXeK5Cd55Z" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6BXeK5Cd562" resolve="it" />
                             </node>
-                            <node concept="2OqwBi" id="6BXeK5Cd55Y" role="3uHU7B">
-                              <node concept="37vLTw" id="6BXeK5Cd55Z" role="2Oq$k0">
-                                <ref role="3cqZAo" node="6BXeK5Cd562" resolve="it" />
-                              </node>
-                              <node concept="1mIQ4w" id="6BXeK5Cd560" role="2OqNvi">
-                                <node concept="chp4Y" id="6BXeK5Cd561" role="cj9EA">
-                                  <ref role="cht4Q" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
-                                </node>
+                            <node concept="1mIQ4w" id="6BXeK5Cd560" role="2OqNvi">
+                              <node concept="chp4Y" id="6BXeK5Cd561" role="cj9EA">
+                                <ref role="cht4Q" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
                               </node>
                             </node>
                           </node>

@@ -207,6 +207,14 @@
         <ref role="sjk9f" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
       </node>
     </node>
+    <node concept="sklqP" id="dW_p57sk_G" role="sklmO">
+      <node concept="3EozPd" id="dW_p57skC6" role="sklvC">
+        <property role="TrG5h" value="latency" />
+      </node>
+      <node concept="sjk9b" id="dW_p57skBH" role="skltt">
+        <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+      </node>
+    </node>
   </node>
   <node concept="3tocZL" id="7b8T1iJGcgf">
     <property role="TrG5h" value="Preferences" />
