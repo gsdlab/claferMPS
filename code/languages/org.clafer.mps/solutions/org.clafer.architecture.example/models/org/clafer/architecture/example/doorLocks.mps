@@ -36,6 +36,9 @@
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
       <concept id="8119098109027576689" name="org.clafer.architecture.structure.Switch" flags="ng" index="3HzFZ7" />
+      <concept id="7885836682712175906" name="org.clafer.architecture.structure.IHaveDeployment" flags="ng" index="3SJsIc">
+        <child id="7885836682712176724" name="deployedTo" index="3SJsrU" />
+      </concept>
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
@@ -112,11 +115,17 @@
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
+      <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
+        <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
+      </concept>
       <concept id="7389562969670798191" name="org.clafer.core.structure.XorCard" flags="ng" index="3E5GGL" />
     </language>
   </registry>
   <node concept="UzPwm" id="5RLJ9guqKSD">
     <property role="TrG5h" value="DoorLockFA" />
+    <node concept="2l49t0" id="1Z9B1UhN4LW" role="UzTCv">
+      <property role="TrG5h" value="dsad" />
+    </node>
     <node concept="1u8h5F" id="5RLJ9guqKUw" role="UzTCv">
       <property role="TrG5h" value="DoorLockFAArchitecture" />
       <node concept="UzEYP" id="5RLJ9guvE4w" role="2mZOl8" />
@@ -193,7 +202,18 @@
         <ref role="2wMEbl" node="5RLJ9guqKV5" resolve="DoorLockControl" />
       </node>
       <node concept="UzEYP" id="5RLJ9gutNx9" role="2mZOl8" />
+      <node concept="2mZLT$" id="1Z9B1UhN4uN" role="2mZOl8">
+        <property role="TrG5h" value="sd" />
+        <node concept="ZpONE" id="1Z9B1UhN4ZL" role="3SJsrU">
+          <ref role="ZpOSt" node="1Z9B1UhN4LW" resolve="dsad" />
+        </node>
+      </node>
       <node concept="UzEYP" id="5RLJ9gutNpK" role="2mZOl8" />
+      <node concept="2mXI97" id="1Z9B1UhN5a$" role="2mZOl8">
+        <property role="TrG5h" value="ads" />
+        <node concept="ZpONE" id="1Z9B1UhN5fT" role="3SJsrU" />
+      </node>
+      <node concept="UzEYP" id="1Z9B1UhN55i" role="2mZOl8" />
       <node concept="2mXI97" id="5RLJ9guvDUL" role="2mZOl8">
         <property role="TrG5h" value="DriverDoorLockSensor" />
       </node>

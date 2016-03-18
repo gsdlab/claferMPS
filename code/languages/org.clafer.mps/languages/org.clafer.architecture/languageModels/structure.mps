@@ -63,14 +63,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="PlHQZ" id="4Z9rElroRnZ">
-    <property role="TrG5h" value="IArchitectureElement" />
-    <property role="3GE5qa" value="Interfaces" />
-    <property role="1pbfSe" value="1423121244" />
-    <node concept="PrWs8" id="4Z9rElroRo0" role="PrDN$">
-      <ref role="PrY4T" to="mecy:bl22kSmCpX" resolve="IElement" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1QRywDjgzUJ">
     <property role="TrG5h" value="FunctionConnector" />
     <property role="R5$K7" value="false" />
@@ -103,9 +95,6 @@
     <property role="1pbfSe" value="419456313" />
     <property role="34LRSv" value="ArchElement" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
-    <node concept="PrWs8" id="4csP6flST3Q" role="PzmwI">
-      <ref role="PrY4T" node="4Z9rElroRnZ" resolve="IArchitectureElement" />
-    </node>
     <node concept="PrWs8" id="6LOryU0rqHo" role="PzmwI">
       <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     </node>
@@ -153,7 +142,7 @@
   </node>
   <node concept="1TIwiD" id="4csP6fm34cz">
     <property role="TrG5h" value="DeviceNode" />
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification" />
     <property role="34LRSv" value="Device Node" />
     <property role="1pbfSe" value="422123398" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
@@ -226,7 +215,7 @@
   <node concept="1TIwiD" id="6Fa64hUc88i">
     <property role="TrG5h" value="Deployment" />
     <property role="34LRSv" value="Deployment" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="HardwareArchitecture" />
     <property role="1pbfSe" value="453338538" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="6Fa64hUppo2" role="1TKVEi">
@@ -247,20 +236,7 @@
     <property role="3GE5qa" value="" />
     <property role="34LRSv" value="Architecture" />
     <property role="1pbfSe" value="452511797" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="PrWs8" id="3KrTRUBR2G1" role="PzmwI">
-      <ref role="PrY4T" node="znlrM84$1s" resolve="IFragment" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="znlrM84$1s">
-    <property role="TrG5h" value="IFragment" />
-    <property role="3GE5qa" value="Interfaces" />
-    <property role="1pbfSe" value="1863739880" />
-  </node>
-  <node concept="PlHQZ" id="znlrM86iBa">
-    <property role="TrG5h" value="IDontHaveChildrenNodes" />
-    <property role="3GE5qa" value="Interfaces" />
-    <property role="1pbfSe" value="1863286906" />
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="$OrRLOgbn5">
     <property role="3GE5qa" value="AutomobileConcepts" />
@@ -274,7 +250,7 @@
   </node>
   <node concept="PlHQZ" id="$OrRLOo_6A">
     <property role="TrG5h" value="IHaveNotSuperNode" />
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="" />
     <property role="1pbfSe" value="2107031842" />
   </node>
   <node concept="1TIwiD" id="$OrRLOu4Y2">
@@ -283,9 +259,6 @@
     <property role="34LRSv" value="Reference" />
     <property role="1pbfSe" value="2108473086" />
     <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
-    <node concept="PrWs8" id="$OrRLOu54Z" role="PzmwI">
-      <ref role="PrY4T" node="znlrM86iBa" resolve="IDontHaveChildrenNodes" />
-    </node>
     <node concept="PrWs8" id="3EgEWBTGyP5" role="PzmwI">
       <ref role="PrY4T" node="5hA9WCIjVny" resolve="IHaveNotDeviceType" />
     </node>
@@ -293,7 +266,7 @@
       <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
     <node concept="PrWs8" id="32wpDnehaVc" role="PzmwI">
-      <ref role="PrY4T" node="32wpDneh2zd" resolve="IHaveNotSuperClafer" />
+      <ref role="PrY4T" node="32wpDneh2zd" resolve="IHaveNotMetaClafer" />
     </node>
     <node concept="1TJgyj" id="$OrRLOvD_w" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -303,7 +276,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="$OrRLOvZKp">
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification" />
     <property role="TrG5h" value="DeviceNodesRef" />
     <property role="1pbfSe" value="2108976021" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
@@ -316,12 +289,12 @@
   </node>
   <node concept="PlHQZ" id="6_lRZv9_Blz">
     <property role="TrG5h" value="DontShowAsBox" />
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="" />
     <property role="1pbfSe" value="854349146" />
   </node>
   <node concept="PlHQZ" id="1tfNdgy1e$L">
     <property role="TrG5h" value="IHardwareConnector" />
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="1pbfSe" value="961852933" />
     <node concept="1TJgyj" id="3WJnaafhyWX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -344,59 +317,38 @@
     <property role="TrG5h" value="FeatureModel" />
     <property role="34LRSv" value="Feature Model" />
     <property role="1pbfSe" value="47792158" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="12rnRvMhgdY">
     <property role="TrG5h" value="System" />
     <property role="3GE5qa" value="" />
     <property role="34LRSv" value="System" />
     <property role="1pbfSe" value="48259829" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="7DuSdC$vZ6L">
     <property role="TrG5h" value="FunctionalAnalysis" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="34LRSv" value="Functional Analysis" />
     <property role="1pbfSe" value="1629564277" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="PrWs8" id="5UcaHciOGUw" role="PzmwI">
-      <ref role="PrY4T" node="znlrM84$1s" resolve="IFragment" />
-    </node>
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="7DuSdC$$2dR">
     <property role="TrG5h" value="HardwareArchitecture" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="HardwareArchitecture" />
     <property role="34LRSv" value="Hardware Architecture" />
     <property role="1pbfSe" value="1628502959" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
   <node concept="1TIwiD" id="7DuSdC$$3Vj">
     <property role="TrG5h" value="DeviceNodeClassification" />
-    <property role="3GE5qa" value="DeviceNodes" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification" />
     <property role="34LRSv" value="Device Node Classification" />
     <property role="1pbfSe" value="1628495955" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-  </node>
-  <node concept="AxPO7" id="7DuSdC$_GOc">
-    <property role="3GE5qa" value="DeviceNodes" />
-    <property role="TrG5h" value="DeviceNodeTypeEnum" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="7DuSdC$_GOd" role="M5hS2">
-      <property role="1uS6qo" value="smart" />
-      <property role="1uS6qv" value="smart" />
-    </node>
-    <node concept="M4N5e" id="7DuSdC$_GQ4" role="M5hS2">
-      <property role="1uS6qo" value="electr" />
-      <property role="1uS6qv" value="electr" />
-    </node>
-    <node concept="M4N5e" id="7DuSdC$_GS2" role="M5hS2">
-      <property role="1uS6qo" value="power" />
-      <property role="1uS6qv" value="power" />
-    </node>
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPQU0">
-    <property role="3GE5qa" value="PowerTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
     <property role="TrG5h" value="HardwareConnector" />
     <property role="34LRSv" value="Hardware Connector" />
     <property role="1pbfSe" value="417180168" />
@@ -408,7 +360,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSlW">
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="HardwareDataConnector" />
     <property role="34LRSv" value="Hardware Data Connector" />
     <property role="1pbfSe" value="417174284" />
@@ -417,7 +369,7 @@
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSmo">
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="DiscreteDataConnector" />
     <property role="34LRSv" value="Discrete Data Connector" />
     <property role="1pbfSe" value="417174256" />
@@ -427,7 +379,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSoJ">
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="BusConnector" />
     <property role="34LRSv" value="Bus Connector" />
     <property role="1pbfSe" value="417174105" />
@@ -443,35 +395,35 @@
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSt3">
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="CommTopology" />
     <property role="34LRSv" value="Communication Topology" />
     <property role="1pbfSe" value="417173829" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSvs">
-    <property role="3GE5qa" value="PowerTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
     <property role="TrG5h" value="PowerTopology" />
     <property role="34LRSv" value="Power Topology" />
     <property role="1pbfSe" value="417173676" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSHp">
-    <property role="3GE5qa" value="PowerTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
     <property role="TrG5h" value="LoadPowerConnector" />
     <property role="34LRSv" value="Load Power Connector" />
     <property role="1pbfSe" value="417172783" />
     <ref role="1TJDcQ" node="19aTRzkPTSF" resolve="PowerConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSVo">
-    <property role="3GE5qa" value="PowerTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
     <property role="TrG5h" value="DevicePowerConnector" />
     <property role="34LRSv" value="Device Power Connector" />
     <property role="1pbfSe" value="417171888" />
     <ref role="1TJDcQ" node="19aTRzkPTSF" resolve="PowerConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPTSF">
-    <property role="3GE5qa" value="PowerTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
     <property role="TrG5h" value="PowerConnector" />
     <property role="34LRSv" value="Power Connector" />
     <property role="1pbfSe" value="417167965" />
@@ -486,7 +438,7 @@
     </node>
   </node>
   <node concept="AxPO7" id="3URpncZ4sjK">
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="BusTypeEnum" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
@@ -507,62 +459,10 @@
       <property role="1uS6qo" value="LIN" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7DuSdC$x1MY">
-    <property role="3GE5qa" value="DeviceNodes" />
-    <property role="TrG5h" value="DNRef" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="1629291112" />
-    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
-  </node>
-  <node concept="1TIwiD" id="2toL5DMUBtT">
-    <property role="3GE5qa" value="CommunicationTopology.LogicalExressions" />
-    <property role="TrG5h" value="ArchLogicalExpr" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="1706869805" />
-    <ref role="1TJDcQ" to="mj1k:ORookitlp1" resolve="UnionCommaExpression" />
-    <node concept="PrWs8" id="WgjoVd0JVu" role="PzmwI">
-      <ref role="PrY4T" node="2toL5DN39dr" resolve="IArchExpr" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2toL5DN235n">
-    <property role="3GE5qa" value="CommunicationTopology.LogicalExressions" />
-    <property role="TrG5h" value="ArchParens" />
-    <property role="34LRSv" value="(" />
-    <property role="1pbfSe" value="1704921679" />
-    <ref role="1TJDcQ" to="mj1k:4ZVDCZCbtj7" resolve="ParensExpression" />
-    <node concept="PrWs8" id="2toL5DN3aPs" role="PzmwI">
-      <ref role="PrY4T" node="2toL5DN39dr" resolve="IArchExpr" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="2toL5DN39dr">
-    <property role="3GE5qa" value="CommunicationTopology.LogicalExressions" />
-    <property role="TrG5h" value="IArchExpr" />
-    <property role="1pbfSe" value="1704634443" />
-  </node>
-  <node concept="1TIwiD" id="2toL5DN3CNJ">
-    <property role="3GE5qa" value="CommunicationTopology.LogicalExressions" />
-    <property role="TrG5h" value="ArchLogicalComma" />
-    <property role="1pbfSe" value="1704505015" />
-    <property role="34LRSv" value="," />
-    <ref role="1TJDcQ" node="2toL5DMUBtT" resolve="ArchLogicalExpr" />
-  </node>
-  <node concept="1TIwiD" id="50FM0hzzawM">
-    <property role="TrG5h" value="QualityTemp" />
-    <property role="1pbfSe" value="1279758282" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="50FM0hzBeB2" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="50FM0hzFYbT">
     <property role="TrG5h" value="IHaveQualityAttributes" />
     <property role="1pbfSe" value="1277449475" />
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="QualityModule" />
     <node concept="1TJgyj" id="4diOXa0$sm2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="qualities" />
@@ -685,12 +585,12 @@
   </node>
   <node concept="PlHQZ" id="5hA9WCIjVny">
     <property role="1pbfSe" value="2102010452" />
-    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="IHaveNotDeviceType" />
   </node>
   <node concept="PlHQZ" id="5hA9WCIjVnK">
     <property role="1pbfSe" value="2102010438" />
-    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="IHaveType" />
     <node concept="1TJgyj" id="7xzoSpGQbAv" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -701,7 +601,7 @@
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW89">
     <property role="1pbfSe" value="2101745197" />
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <property role="TrG5h" value="NodeTypeExpr" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
@@ -713,33 +613,33 @@
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8a">
     <property role="1pbfSe" value="2101745196" />
-    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.DeviceTypeExpr" />
     <property role="TrG5h" value="PowerDeviceExpr" />
     <property role="34LRSv" value="power" />
     <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8b">
     <property role="1pbfSe" value="2101745195" />
-    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.DeviceTypeExpr" />
     <property role="TrG5h" value="ElectrDeviceExpr" />
     <property role="34LRSv" value="electr" />
     <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
   </node>
   <node concept="1TIwiD" id="5hA9WCIkW8c">
     <property role="1pbfSe" value="2101745194" />
-    <property role="3GE5qa" value="NodeTypeExpr.DeviceTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.DeviceTypeExpr" />
     <property role="TrG5h" value="SmartDeviceExpr" />
     <property role="34LRSv" value="smart" />
     <ref role="1TJDcQ" node="EXzEoUsgG2" resolve="NodeTypeDotTarget" />
   </node>
   <node concept="PlHQZ" id="23T79tC4AhE">
     <property role="1pbfSe" value="1995734783" />
-    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="IPowerDevice" />
   </node>
   <node concept="1TIwiD" id="EXzEoUsgG2">
     <property role="1pbfSe" value="1160681896" />
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <property role="TrG5h" value="NodeTypeDotTarget" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -750,7 +650,7 @@
   </node>
   <node concept="1TIwiD" id="EXzEoUui47">
     <property role="1pbfSe" value="1161211821" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="NodeType" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
@@ -758,7 +658,7 @@
   </node>
   <node concept="1TIwiD" id="7xzoSpGQbCo">
     <property role="1pbfSe" value="449045090" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="ElectrDeviceType" />
     <property role="34LRSv" value="electr" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
@@ -768,7 +668,7 @@
   </node>
   <node concept="1TIwiD" id="7xzoSpGSeYk">
     <property role="1pbfSe" value="448507110" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="SmartDeviceType" />
     <property role="34LRSv" value="smart" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
@@ -778,7 +678,7 @@
   </node>
   <node concept="1TIwiD" id="7xzoSpGSeYl">
     <property role="1pbfSe" value="448507109" />
-    <property role="3GE5qa" value="DeviceNodes.DeviceTypes" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="PowerDeviceType" />
     <property role="34LRSv" value="power" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
@@ -788,12 +688,12 @@
   </node>
   <node concept="PlHQZ" id="3f7bmGhwmis">
     <property role="1pbfSe" value="1162383879" />
-    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="IHaveFixedDeviceType" />
   </node>
   <node concept="PlHQZ" id="6PK7EUlNtky">
     <property role="1pbfSe" value="54391760" />
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="IHaveDeployment" />
     <node concept="1TJgyj" id="6PK7EUlNtxk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -804,26 +704,26 @@
   </node>
   <node concept="PlHQZ" id="2G_jlDGpToa">
     <property role="1pbfSe" value="1752374428" />
-    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="IDeviceType" />
   </node>
   <node concept="1TIwiD" id="2G_jlDGrcPw">
     <property role="1pbfSe" value="1752032582" />
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="LowSpeedCAN_TypeExpr" />
     <property role="34LRSv" value="LowSpeedCAN" />
     <ref role="1TJDcQ" node="2XrN4LuATXF" resolve="BusTypeExpr" />
   </node>
   <node concept="1TIwiD" id="2G_jlDGrcPH">
     <property role="1pbfSe" value="1752032569" />
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="LIN_TypeExpr" />
     <property role="34LRSv" value="LIN" />
     <ref role="1TJDcQ" node="2XrN4LuATXF" resolve="BusTypeExpr" />
   </node>
   <node concept="1TIwiD" id="2G_jlDGrcPU">
     <property role="1pbfSe" value="1752032556" />
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="FlexRay_TypeExpr" />
     <property role="34LRSv" value="FlexRay" />
     <ref role="1TJDcQ" node="2XrN4LuATXF" resolve="BusTypeExpr" />
@@ -894,23 +794,12 @@
   </node>
   <node concept="PlHQZ" id="32wpDneh2zd">
     <property role="1pbfSe" value="18575518" />
-    <property role="3GE5qa" value="Interfaces" />
-    <property role="TrG5h" value="IHaveNotSuperClafer" />
-  </node>
-  <node concept="PlHQZ" id="32wpDnej1aX">
-    <property role="1pbfSe" value="18056878" />
-    <property role="3GE5qa" value="Interfaces" />
-    <property role="TrG5h" value="IHaveRealization" />
-    <node concept="1TJgyj" id="32wpDnej1b7" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="realizedBy" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
-    </node>
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="IHaveNotMetaClafer" />
   </node>
   <node concept="1TIwiD" id="1jKsuqULYIy">
     <property role="1pbfSe" value="810001016" />
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <property role="TrG5h" value="DeployedToExpr" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
@@ -934,7 +823,7 @@
   <node concept="1TIwiD" id="6v3ZnYeNguT">
     <property role="1pbfSe" value="158268104" />
     <property role="TrG5h" value="BaseConnector" />
-    <property role="3GE5qa" value="Connectors" />
+    <property role="3GE5qa" value="" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="Base Connector" />
@@ -943,29 +832,9 @@
       <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6v3ZnYeNgv8">
-    <property role="1pbfSe" value="158268089" />
-    <property role="3GE5qa" value="Connectors" />
-    <property role="TrG5h" value="Connector" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
-    <node concept="1TJgyj" id="6v3ZnYeNgv9" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
-    </node>
-    <node concept="1TJgyj" id="6v3ZnYeNgvc" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6v3ZnYeNRw_">
     <property role="1pbfSe" value="158108252" />
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="AnalogDataConnector" />
     <property role="34LRSv" value="Analog Data Connector" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
@@ -975,14 +844,14 @@
   </node>
   <node concept="1TIwiD" id="2XrN4LuAS5Z">
     <property role="1pbfSe" value="1913172533" />
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.BusTypeExpr" />
     <property role="TrG5h" value="HighSpeedCAN_TypeExpr" />
     <property role="34LRSv" value="HighSpeedCAN" />
     <ref role="1TJDcQ" node="2XrN4LuATXF" resolve="BusTypeExpr" />
   </node>
   <node concept="1TIwiD" id="2XrN4LuATXF">
     <property role="1pbfSe" value="1913164873" />
-    <property role="3GE5qa" value="NodeTypeExpr.BusTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr.BusTypeExpr" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="TrG5h" value="BusTypeExpr" />
@@ -990,7 +859,7 @@
   </node>
   <node concept="1TIwiD" id="5LUy9Q2bsY6">
     <property role="1pbfSe" value="559392733" />
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="BusType" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5LUy9Q2bsY9" role="1TKVEl">
@@ -1003,7 +872,7 @@
   </node>
   <node concept="PlHQZ" id="5LUy9Q2fPnu">
     <property role="1pbfSe" value="558244229" />
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="IHaveArchType" />
     <node concept="1TJgyj" id="5LUy9Q2fPnx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -1014,7 +883,7 @@
   </node>
   <node concept="1TIwiD" id="3WJnaafd3OJ">
     <property role="1pbfSe" value="832333359" />
-    <property role="3GE5qa" value="Connectors" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="LogicalBusBridge" />
     <property role="34LRSv" value="Logical Bus Bridge" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
@@ -1034,6 +903,14 @@
   <node concept="PlHQZ" id="3WJnaafhyWS">
     <property role="1pbfSe" value="831157286" />
     <property role="TrG5h" value="IAbstractVisibleInQATable" />
+    <property role="3GE5qa" value="QualityModule" />
+  </node>
+  <node concept="1TIwiD" id="1Z9B1UhMN__">
+    <property role="1pbfSe" value="1315646077" />
+    <property role="TrG5h" value="BaseFragment" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
   </node>
 </model>
 

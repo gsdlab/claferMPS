@@ -1005,7 +1005,7 @@
   </node>
   <node concept="13MO4I" id="g6kGtGvd63">
     <property role="TrG5h" value="case_Deployment" />
-    <property role="3GE5qa" value="templates" />
+    <property role="3GE5qa" value="HardwareArchitecture" />
     <ref role="3gUMe" to="ddau:6Fa64hUc88i" resolve="Deployment" />
     <node concept="UzPwm" id="WgjoVcYiNk" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />
@@ -1103,7 +1103,7 @@
   </node>
   <node concept="13MO4I" id="WgjoVd0_P5">
     <property role="TrG5h" value="case_IHaveDeployment" />
-    <property role="3GE5qa" value="templates" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
     <ref role="3gUMe" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
     <node concept="UzPwm" id="WgjoVd0_WL" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />
@@ -1300,7 +1300,7 @@
   </node>
   <node concept="13MO4I" id="WgjoVd2qOJ">
     <property role="TrG5h" value="case_DeviceNode" />
-    <property role="3GE5qa" value="templates" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification" />
     <ref role="3gUMe" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
     <node concept="UzPwm" id="1af1aZKh0I1" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />
@@ -2247,7 +2247,7 @@
     </node>
   </node>
   <node concept="13MO4I" id="4sgzeLqMkMK">
-    <property role="3GE5qa" value="templates" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <property role="TrG5h" value="reduce_NodeType" />
     <ref role="3gUMe" to="ddau:EXzEoUui47" resolve="NodeType" />
     <node concept="UzPwm" id="4sgzeLqMrl8" role="13RCb5">
@@ -2266,7 +2266,7 @@
   </node>
   <node concept="13MO4I" id="Myy5NECy2H">
     <property role="TrG5h" value="case_IHardwareConnector" />
-    <property role="3GE5qa" value="templates" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <ref role="3gUMe" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
     <node concept="UzPwm" id="Myy5NECy2M" role="13RCb5">
       <property role="TrG5h" value="_module_" />
@@ -2351,7 +2351,7 @@
   </node>
   <node concept="13MO4I" id="2XrN4Lun4nO">
     <property role="TrG5h" value="case_PowerConnector" />
-    <property role="3GE5qa" value="templates" />
+    <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
     <ref role="3gUMe" to="ddau:19aTRzkPTSF" resolve="PowerConnector" />
     <node concept="UzPwm" id="2XrN4Lun4t_" role="13RCb5">
       <property role="TrG5h" value="_module_" />
@@ -2442,7 +2442,7 @@
   </node>
   <node concept="13MO4I" id="3WJnaafd9bK">
     <property role="TrG5h" value="case_LogicalBusBridge" />
-    <property role="3GE5qa" value="templates" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <ref role="3gUMe" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
     <node concept="UzPwm" id="3WJnaafd9lX" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />

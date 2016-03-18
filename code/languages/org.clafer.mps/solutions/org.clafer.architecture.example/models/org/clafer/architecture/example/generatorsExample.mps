@@ -53,6 +53,10 @@
       <concept id="5776930868210688761" name="org.clafer.architecture.structure.IHaveQualityAttributes" flags="ng" index="Nx2FX">
         <child id="4851172649685075330" name="qualities" index="33KLpg" />
       </concept>
+      <concept id="1679786397508364593" name="org.clafer.architecture.structure.IHardwareConnector" flags="ng" index="PiMn_">
+        <reference id="4552959601553059646" name="target" index="2Kqnes" />
+        <reference id="4552959601553059645" name="source" index="2Kqnev" />
+      </concept>
       <concept id="4851172649685075389" name="org.clafer.architecture.structure.Quality" flags="ng" index="33KLpJ">
         <reference id="4851172649685075405" name="tElement" index="33KLov" />
         <child id="4851172649685075407" name="value" index="33KLot" />
@@ -66,13 +70,12 @@
       <concept id="1318120347112277400" name="org.clafer.architecture.structure.DiscreteDataConnector" flags="ng" index="36Bmbw" />
       <concept id="1318120347112279768" name="org.clafer.architecture.structure.DevicePowerConnector" flags="ng" index="36BmAw" />
       <concept id="1318120347112278873" name="org.clafer.architecture.structure.LoadPowerConnector" flags="ng" index="36BmKx" />
-      <concept id="1318120347112283691" name="org.clafer.architecture.structure.PowerConnector" flags="ng" index="36Bn_j" />
-      <concept id="1318120347112271488" name="org.clafer.architecture.structure.HardwareConnector" flags="ng" index="36BoBS" />
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
         <reference id="7590219002335427874" name="dest" index="2wMEbl" />
         <reference id="7590219002335427867" name="src" index="2wMEbG" />
+        <reference id="4552959601553283212" name="target" index="2KpGgI" />
+        <reference id="4552959601553283186" name="source" index="2KpGjg" />
       </concept>
-      <concept id="2835231858185744727" name="org.clafer.architecture.structure.ArchParens" flags="ng" index="1kkfkd" />
       <concept id="2835231858186161391" name="org.clafer.architecture.structure.ArchLogicalComma" flags="ng" index="1kl$yP" />
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
       <concept id="6663788808724501982" name="org.clafer.architecture.structure.IHaveArchType" flags="ng" index="3uhtP3">
@@ -86,10 +89,6 @@
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
       <concept id="7477098530663790629" name="org.clafer.architecture.structure.AnalogDataConnector" flags="ng" index="3D38lq" />
-      <concept id="7477098530663630792" name="org.clafer.architecture.structure.Connector" flags="ng" index="3D3JER">
-        <reference id="7477098530663630796" name="target" index="3D3JEN" />
-        <reference id="7477098530663630793" name="source" index="3D3JEQ" />
-      </concept>
       <concept id="8119098109027610108" name="org.clafer.architecture.structure.Inline" flags="ng" index="3Hzz_a" />
       <concept id="8119098109027610109" name="org.clafer.architecture.structure.Pin" flags="ng" index="3Hzz_b" />
       <concept id="8119098109027610107" name="org.clafer.architecture.structure.Motor" flags="ng" index="3Hzz_d" />
@@ -218,8 +217,8 @@
             <node concept="3TlMh2" id="5ipUCoi95Zv" role="3J4IUC" />
           </node>
           <node concept="2qmXGp" id="5ipUCoi9xw4" role="33KLot">
-            <node concept="2ZqYGZ" id="5ipUCoi9D7W" role="1ESnxz">
-              <ref role="2ZqYFj" node="5ipUCoi95Zt" resolve="latency" />
+            <node concept="2ZqYGZ" id="1Z9B1Ui0oap" role="1ESnxz">
+              <ref role="2ZqYFj" to="t4ow:5ipUCoi8tkT" resolve="latency" />
             </node>
             <node concept="2xC6$6" id="5ipUCoi9xvN" role="1_9fRO" />
           </node>
@@ -240,13 +239,14 @@
       <node concept="2mXI97" id="1T6YVZdxorr" role="2mZOl8">
         <property role="TrG5h" value="fDevice2" />
         <node concept="3HSg1M" id="5QLkobVPDhr" role="gT77A">
-          <ref role="3HSg1l" node="6PK7EUlUIK5" resolve="afunction" />
+          <ref role="3HSg1l" node="1T6YVZdxore" resolve="fDevice" />
         </node>
       </node>
-      <node concept="1eXri_" id="2XrN4Luxls3" role="2mZOl8">
-        <property role="TrG5h" value="fConnector" />
-        <ref role="3D3JEQ" node="1T6YVZdxore" resolve="fDevice" />
-        <ref role="3D3JEN" node="2XrN4Lux4QL" resolve="importedAFUnction" />
+      <node concept="UzEYP" id="1Z9B1Ui0o7T" role="2mZOl8" />
+      <node concept="1eXri_" id="1Z9B1Ui0o9l" role="2mZOl8">
+        <property role="TrG5h" value="fconnector" />
+        <ref role="2KpGjg" node="1T6YVZdxor8" resolve="aFunction" />
+        <ref role="2KpGgI" node="6PK7EUlUIK5" resolve="afunction" />
       </node>
       <node concept="UzEYP" id="5ipUCoijoLw" role="2mZOl8" />
     </node>
@@ -276,7 +276,10 @@
         <property role="TrG5h" value="ecu" />
         <node concept="kwSKi" id="1T6YVZdxoCX" role="kIXCp" />
       </node>
-      <node concept="UzEYP" id="1T6YVZdxoEp" role="2mZOl8" />
+      <node concept="1XtdET" id="1Z9B1Ui4CFa" role="2mZOl8">
+        <property role="TrG5h" value="ecu2" />
+        <node concept="kwSKi" id="1Z9B1Ui4CFb" role="kIXCp" />
+      </node>
       <node concept="3Hzz_d" id="1T6YVZdxoDl" role="2mZOl8">
         <property role="TrG5h" value="motor" />
         <node concept="2vxuzR" id="5ipUCoi9xIu" role="2mZOl8">
@@ -325,25 +328,15 @@
     </node>
     <node concept="36Bm2$" id="1T6YVZdABid" role="UzTCv">
       <property role="TrG5h" value="powerTopology" />
-      <node concept="36BoBS" id="1T6YVZdABjq" role="2mZOl8">
-        <property role="TrG5h" value="hwConnector" />
-        <ref role="3D3JEQ" node="1T6YVZd$U2Y" resolve="smartSwitch" />
-        <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
-      </node>
-      <node concept="36BmKx" id="2XrN4Lurhli" role="2mZOl8">
-        <property role="TrG5h" value="lpConnector" />
-        <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
-        <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
-      </node>
-      <node concept="36Bn_j" id="2XrN4Lurhlq" role="2mZOl8">
-        <property role="TrG5h" value="pConnector" />
-        <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
-        <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
-      </node>
-      <node concept="36BmAw" id="2XrN4Lurhl$" role="2mZOl8">
+      <node concept="36BmAw" id="1Z9B1Ui0odD" role="2mZOl8">
         <property role="TrG5h" value="dpConnector" />
-        <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
-        <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
+        <ref role="2Kqnev" node="1T6YVZdxoCk" resolve="PowerDNode" />
+        <ref role="2Kqnes" node="1T6YVZdxoCe" resolve="dNode" />
+      </node>
+      <node concept="36BmKx" id="1Z9B1Ui0odJ" role="2mZOl8">
+        <property role="TrG5h" value="lpConnector" />
+        <ref role="2Kqnev" node="1T6YVZd$U2v" resolve="Switch" />
+        <ref role="2Kqnes" node="1T6YVZdxoHg" resolve="definedReference" />
       </node>
     </node>
     <node concept="UzEYP" id="1T6YVZd_ndS" role="UzTCv" />
@@ -351,35 +344,18 @@
       <property role="TrG5h" value="hwTopology" />
       <node concept="36Bm0V" id="1T6YVZd_noW" role="2mZOl8">
         <property role="TrG5h" value="comTopology" />
-        <node concept="36BoBS" id="1T6YVZdAGi2" role="2mZOl8">
-          <property role="TrG5h" value="hwConnector2" />
-          <ref role="3D3JEN" node="1T6YVZdxoCk" resolve="PowerDNode" />
-          <ref role="3D3JEQ" node="1T6YVZd$U2v" resolve="Switch" />
-        </node>
-        <node concept="UzEYP" id="1T6YVZdAGiH" role="2mZOl8" />
-        <node concept="36Bm84" id="1T6YVZdABgF" role="2mZOl8">
-          <property role="TrG5h" value="dataConnector" />
-          <ref role="3D3JEQ" node="1T6YVZd$U2v" resolve="Switch" />
-          <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
-        </node>
         <node concept="UzEYP" id="2XrN4Lup$8d" role="2mZOl8" />
-        <node concept="36Bmbw" id="2XrN4Lup$8S" role="2mZOl8">
-          <property role="TrG5h" value="dwConnector" />
-          <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
-          <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
+        <node concept="3D38lq" id="1Z9B1Ui0ofp" role="2mZOl8">
+          <property role="TrG5h" value="adConnector" />
+          <ref role="2Kqnev" node="1T6YVZdxoCk" resolve="PowerDNode" />
+          <ref role="2Kqnes" node="1T6YVZd$U2v" resolve="Switch" />
         </node>
-        <node concept="3D38lq" id="2XrN4Lurhk_" role="2mZOl8">
-          <property role="TrG5h" value="aDataConnector" />
-          <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
-          <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
+        <node concept="36Bmbw" id="1Z9B1Ui0ogi" role="2mZOl8">
+          <property role="TrG5h" value="ddConnector" />
+          <ref role="2Kqnev" node="1T6YVZdxoHg" resolve="definedReference" />
+          <ref role="2Kqnes" node="1T6YVZdxoCW" resolve="ecu" />
         </node>
-        <node concept="36BmAw" id="2XrN4Lurhl1" role="2mZOl8">
-          <property role="TrG5h" value="dDateConnector" />
-          <ref role="3D3JEQ" node="1T6YVZdxoCk" resolve="PowerDNode" />
-          <ref role="3D3JEN" node="1T6YVZd$U2v" resolve="Switch" />
-        </node>
-        <node concept="UzEYP" id="5LUy9Q2cBnO" role="2mZOl8" />
-        <node concept="UzEYP" id="5LUy9Q2ejpm" role="2mZOl8" />
+        <node concept="UzEYP" id="1Z9B1Ui0ogK" role="2mZOl8" />
         <node concept="36Bm5n" id="5LUy9Q2hn0H" role="2mZOl8">
           <property role="TrG5h" value="sd" />
           <node concept="3ulOsr" id="5H6GWMWR2PA" role="3uhtPW" />
@@ -628,21 +604,6 @@
         <property role="TrG5h" value="faConnector" />
         <ref role="2wMEbG" node="6PK7EUlUIK5" resolve="afunction" />
         <ref role="2wMEbl" node="6PK7EUlUIKp" resolve="afunction2" />
-        <node concept="1kl$yP" id="6PK7EUlYIq3" role="3SJsrU">
-          <node concept="3Jak$y" id="6PK7EUlYIrL" role="3TlMhJ">
-            <ref role="ZpOSt" node="WgjoVd2qHr" resolve="dataConnector" />
-          </node>
-          <node concept="1kkfkd" id="6PK7EUlYIq5" role="3TlMhI">
-            <node concept="1kl$yP" id="6PK7EUlYIq6" role="1_9fRO">
-              <node concept="3Jak$y" id="6PK7EUlYIrg" role="3TlMhJ">
-                <ref role="ZpOSt" node="WgjoVd2qHr" resolve="dataConnector" />
-              </node>
-              <node concept="3Jak$y" id="6PK7EUlYIqI" role="3TlMhI">
-                <ref role="ZpOSt" node="WgjoVd2qHr" resolve="dataConnector" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node concept="UzEYP" id="7$28d_YKBy0" role="UzTCv" />
@@ -726,6 +687,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="UzEYP" id="1Z9B1UhO968" role="UzTCv" />
+    <node concept="36Bm0V" id="1Z9B1UhO97j" role="UzTCv">
+      <property role="TrG5h" value="ef" />
+      <node concept="UzEYP" id="1Z9B1UhO97V" role="2mZOl8" />
     </node>
     <node concept="UzEYP" id="1th$N_eQKTw" role="UzTCv" />
     <node concept="gXKv3" id="1th$N_eQKTx" role="UzTCv">

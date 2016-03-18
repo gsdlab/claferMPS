@@ -545,7 +545,7 @@
   </node>
   <node concept="1YbPZF" id="EXzEoUqGbf">
     <property role="TrG5h" value="typeof_DeviceTypeExpr" />
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <node concept="3clFbS" id="EXzEoUqGbg" role="18ibNy">
       <node concept="3cpWs8" id="3WlRoWfRikw" role="3cqZAp">
         <node concept="3cpWsn" id="3WlRoWfRikx" role="3cpWs9">
@@ -723,7 +723,7 @@
   </node>
   <node concept="1YbPZF" id="EXzEoUtD2W">
     <property role="TrG5h" value="typeof_DeviceType" />
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <node concept="3clFbS" id="EXzEoUtD2X" role="18ibNy">
       <node concept="1Z5TYs" id="3kEjc_WIG$x" role="3cqZAp">
         <node concept="mw_s8" id="3kEjc_WIG$$" role="1ZfhK$">
@@ -749,7 +749,7 @@
   </node>
   <node concept="18kY7G" id="1iqBiKUljYJ">
     <property role="TrG5h" value="check_IHaveQualityAttributes" />
-    <property role="3GE5qa" value="Interfaces" />
+    <property role="3GE5qa" value="QualityModule" />
     <node concept="3clFbS" id="1iqBiKUljYK" role="18ibNy">
       <node concept="3clFbF" id="1iqBiKUlkfE" role="3cqZAp">
         <node concept="2OqwBi" id="1iqBiKUlkIq" role="3clFbG">
@@ -1288,7 +1288,7 @@
   </node>
   <node concept="18kY7G" id="5mM0w5bixR2">
     <property role="TrG5h" value="check_IHaveType" />
-    <property role="3GE5qa" value="Interfaces.IDevice" />
+    <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
     <node concept="3clFbS" id="5mM0w5bixR3" role="18ibNy">
       <node concept="3clFbJ" id="5mM0w5bizRC" role="3cqZAp">
         <node concept="3clFbS" id="5mM0w5bizRE" role="3clFbx">
@@ -1428,7 +1428,7 @@
   </node>
   <node concept="1YbPZF" id="1jKsuqUM28v">
     <property role="TrG5h" value="typeof_DeployedToExpr" />
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <node concept="3clFbS" id="1jKsuqUM28w" role="18ibNy">
       <node concept="3cpWs8" id="1jKsuqUM28G" role="3cqZAp">
         <node concept="3cpWsn" id="1jKsuqUM28H" role="3cpWs9">
@@ -1681,7 +1681,7 @@
   </node>
   <node concept="18kY7G" id="5ipUCoiPsTc">
     <property role="TrG5h" value="check_BusConnector" />
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <node concept="3clFbS" id="5ipUCoiPsTd" role="18ibNy">
       <node concept="2Mj0R9" id="5ipUCoiPsTF" role="3cqZAp">
         <node concept="2d3UOw" id="5ipUCoiP$vh" role="2MkoU_">
@@ -1715,7 +1715,7 @@
   </node>
   <node concept="18kY7G" id="5H6GWMWQ$wD">
     <property role="TrG5h" value="check_IHaveArchType" />
-    <property role="3GE5qa" value="CommunicationTopology" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <node concept="3clFbS" id="5H6GWMWQ$wE" role="18ibNy">
       <node concept="3clFbJ" id="5H6GWMWQ$wK" role="3cqZAp">
         <node concept="3clFbS" id="5H6GWMWQ$wL" role="3clFbx">

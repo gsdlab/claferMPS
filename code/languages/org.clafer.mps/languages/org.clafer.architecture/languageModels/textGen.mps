@@ -52,7 +52,7 @@
     </language>
   </registry>
   <node concept="WtQ9Q" id="1T6YVZd4eJ8">
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <ref role="WuzLi" to="ddau:5hA9WCIkW89" resolve="NodeTypeExpr" />
     <node concept="11bSqf" id="1T6YVZd4eJ9" role="11c4hB">
       <node concept="3clFbS" id="1T6YVZd4eJa" role="2VODD2">
@@ -65,7 +65,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1T6YVZd6htJ">
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <ref role="WuzLi" to="ddau:EXzEoUsgG2" resolve="NodeTypeDotTarget" />
     <node concept="11bSqf" id="1T6YVZd6htK" role="11c4hB">
       <node concept="3clFbS" id="1T6YVZd6htL" role="2VODD2">
@@ -83,7 +83,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="1jKsuqUM2g5">
-    <property role="3GE5qa" value="NodeTypeExpr" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
     <ref role="WuzLi" to="ddau:1jKsuqULYIy" resolve="DeployedToExpr" />
     <node concept="11bSqf" id="1jKsuqUM2g6" role="11c4hB">
       <node concept="3clFbS" id="1jKsuqUM2g7" role="2VODD2">
