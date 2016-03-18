@@ -1987,11 +1987,11 @@
           <property role="3F0ifm" value="to" />
           <ref role="1ERwB7" node="58TXiBDGcd$" resolve="RefToDevice_removeNode" />
         </node>
-        <node concept="VPM3Z" id="58TXiBDE02B" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
         <node concept="3F1sOY" id="58TXiBDBwpL" role="3EZMnx">
           <ref role="1NtTu8" to="ddau:$OrRLOvD_w" />
+        </node>
+        <node concept="VPM3Z" id="58TXiBDE02B" role="3F10Kt">
+          <property role="VOm3f" value="false" />
         </node>
         <node concept="2iRfu4" id="58TXiBDE02E" role="2iSdaV" />
         <node concept="pkWqt" id="58TXiBDE0ME" role="pqm2j">
@@ -2018,6 +2018,9 @@
         <ref role="PMmxG" node="$OrRLO2K80" resolve="ArchBody" />
       </node>
       <node concept="l2Vlx" id="58TXiBDBqeM" role="2iSdaV" />
+    </node>
+    <node concept="PMmxH" id="1Z9B1Ui78Up" role="6VMZX">
+      <ref role="PMmxG" node="1T6YVZd85oj" resolve="ArchInspector" />
     </node>
   </node>
   <node concept="1h_SRR" id="58TXiBDGcd$">
