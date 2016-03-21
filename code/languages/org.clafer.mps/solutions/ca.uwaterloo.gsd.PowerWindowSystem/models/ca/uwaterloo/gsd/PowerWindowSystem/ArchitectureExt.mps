@@ -43,8 +43,8 @@
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
-        <reference id="7590219002335427874" name="dest" index="2wMEbl" />
-        <reference id="7590219002335427867" name="src" index="2wMEbG" />
+        <reference id="4552959601553283212" name="target" index="2KpGgI" />
+        <reference id="4552959601553283186" name="source" index="2KpGjg" />
       </concept>
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareArchitecture" flags="ng" index="1uNGeH" />
@@ -794,13 +794,13 @@
         <node concept="1u8h5F" id="3KrTRUBR0WO" role="2mZOl8">
           <property role="TrG5h" value="DWinSubSysFA" />
           <node concept="3HSg1M" id="3KrTRUBR0WT" role="gT77A">
-            <ref role="3HSg1l" node="3KrTRUBR0WO" resolve="DWinSubSysFA" />
+            <ref role="3HSg1l" node="3KrTRUBRsYl" resolve="DWinSubSysFA" />
           </node>
         </node>
         <node concept="1u8h5F" id="3KrTRUBR1bj" role="2mZOl8">
           <property role="TrG5h" value="PWinSubSysFA" />
           <node concept="3HSg1M" id="3KrTRUBR1bq" role="gT77A">
-            <ref role="3HSg1l" node="3KrTRUBR1bj" resolve="PWinSubSysFA" />
+            <ref role="3HSg1l" node="3KrTRUBRsZj" resolve="PWinSubSysFA" />
           </node>
         </node>
         <node concept="37mRI7" id="4KwamREIrxY" role="lGtFl">
@@ -904,10 +904,10 @@
       <node concept="2mXI97" id="3KrTRUBRt02" role="2mZOl8">
         <property role="TrG5h" value="DWinSwitch" />
       </node>
-      <node concept="1eXri_" id="3KrTRUBRt08" role="2mZOl8">
+      <node concept="1eXri_" id="2LboCN8tk5Q" role="2mZOl8">
         <property role="TrG5h" value="dWinReq" />
-        <ref role="2wMEbl" node="72GPbqtfkDE" resolve="WinArbiter" />
-        <ref role="2wMEbG" node="3KrTRUBRt02" resolve="DWinSwitch" />
+        <ref role="2KpGjg" node="72GPbqtfkDE" resolve="WinArbiter" />
+        <ref role="2KpGgI" node="3KrTRUBRt02" resolve="DWinSwitch" />
       </node>
       <node concept="3HSg1M" id="3KrTRUBRth$" role="gT77A">
         <ref role="3HSg1l" node="3KrTRUBRsrt" resolve="WinSubSystemFA" />
@@ -1012,25 +1012,24 @@
       <node concept="2mZLT$" id="72GPbqtfkDE" role="2mZOl8">
         <property role="TrG5h" value="WinArbiter" />
       </node>
-      <node concept="UzEYP" id="5uE4MZJkOeM" role="2mZOl8" />
-      <node concept="1eXri_" id="4fqVouxx7hH" role="2mZOl8">
+      <node concept="1eXri_" id="2LboCN8tjwX" role="2mZOl8">
         <property role="TrG5h" value="localWinReq" />
-        <ref role="2wMEbG" node="72GPbqtfkDE" resolve="WinArbiter" />
-        <ref role="2wMEbl" node="72GPbqtfpAV" resolve="WinCtr" />
+        <ref role="2KpGjg" node="72GPbqtfkDE" resolve="WinArbiter" />
+        <ref role="2KpGgI" node="72GPbqtfpAV" resolve="WinCtr" />
       </node>
-      <node concept="UzEYP" id="58VfwRbpQrO" role="2mZOl8" />
-      <node concept="1eXri_" id="72GPbqtfpAz" role="2mZOl8">
+      <node concept="1eXri_" id="2LboCN8tj_1" role="2mZOl8">
         <property role="TrG5h" value="localWinReq" />
-        <ref role="2wMEbG" node="72GPbqtfkD_" resolve="WinSwitch" />
-        <ref role="2wMEbl" node="72GPbqtfkDE" resolve="WinArbiter" />
+        <ref role="2KpGjg" node="72GPbqtfkD_" resolve="WinSwitch" />
+        <ref role="2KpGgI" node="72GPbqtfkDE" resolve="WinArbiter" />
       </node>
       <node concept="2mZLT$" id="72GPbqtfpAV" role="2mZOl8">
         <property role="TrG5h" value="WinCtr" />
       </node>
-      <node concept="1eXri_" id="4fqVouxx7kh" role="2mZOl8">
+      <node concept="UzEYP" id="2LboCN8tjD1" role="2mZOl8" />
+      <node concept="1eXri_" id="2LboCN8tjH5" role="2mZOl8">
         <property role="TrG5h" value="winCmd" />
-        <ref role="2wMEbl" node="72GPbqtf_Hf" resolve="WinMotor" />
-        <ref role="2wMEbG" node="72GPbqtfpAV" resolve="WinCtr" />
+        <ref role="2KpGjg" node="72GPbqtf_Hf" resolve="WinMotor" />
+        <ref role="2KpGgI" node="72GPbqtfpAV" resolve="WinCtr" />
       </node>
       <node concept="2mXI97" id="72GPbqtf_Hf" role="2mZOl8">
         <property role="TrG5h" value="WinMotor" />
@@ -1044,15 +1043,15 @@
         <node concept="2mXI97" id="72GPbqtfCdS" role="2mZOl8">
           <property role="TrG5h" value="PositionSensor" />
         </node>
-        <node concept="1eXri_" id="72GPbqtfCe0" role="2mZOl8">
+        <node concept="1eXri_" id="2LboCN8tjLK" role="2mZOl8">
           <property role="TrG5h" value="position" />
-          <ref role="2wMEbG" node="72GPbqtfCdS" resolve="PositionSensor" />
-          <ref role="2wMEbl" node="72GPbqtfCdN" resolve="PinchDetection" />
+          <ref role="2KpGjg" node="72GPbqtfCdS" resolve="PositionSensor" />
+          <ref role="2KpGgI" node="72GPbqtfCdN" resolve="PinchDetection" />
         </node>
-        <node concept="1eXri_" id="2MI1RzCaQzX" role="2mZOl8">
+        <node concept="1eXri_" id="2LboCN8tjMG" role="2mZOl8">
           <property role="TrG5h" value="object" />
-          <ref role="2wMEbG" node="72GPbqtfCdN" resolve="PinchDetection" />
-          <ref role="2wMEbl" node="72GPbqtfpAV" resolve="WinCtr" />
+          <ref role="2KpGjg" node="72GPbqtfCdN" resolve="PinchDetection" />
+          <ref role="2KpGgI" node="72GPbqtfpAV" resolve="WinCtr" />
         </node>
         <node concept="37mRI7" id="4KwamREIryx" role="lGtFl">
           <node concept="37mRIm" id="4KwamREIryy" role="37mRID">
@@ -1226,11 +1225,10 @@
       <node concept="2mXI97" id="44ORmASWi3B" role="2mZOl8">
         <property role="TrG5h" value="currentSensor" />
       </node>
-      <node concept="UzEYP" id="2l2PNBEFTIt" role="2mZOl8" />
-      <node concept="1eXri_" id="44ORmASWicl" role="2mZOl8">
+      <node concept="1eXri_" id="2LboCN8tjPl" role="2mZOl8">
         <property role="TrG5h" value="current" />
-        <ref role="2wMEbG" node="44ORmASWi3B" resolve="currentSensor" />
-        <ref role="2wMEbl" node="72GPbqtfpAV" resolve="WinCtr" />
+        <ref role="2KpGjg" node="44ORmASWi3B" resolve="currentSensor" />
+        <ref role="2KpGgI" node="72GPbqtfpAV" resolve="WinCtr" />
       </node>
       <node concept="37mRI7" id="4KwamREIryq" role="lGtFl">
         <node concept="37mRIm" id="4KwamREIryr" role="37mRID">

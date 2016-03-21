@@ -44,7 +44,6 @@
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AnalysisFunction" flags="ng" index="2mZLT$" />
       <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
-        <child id="8834907397218843623" name="groupCard" index="2gadUg" />
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
@@ -66,17 +65,13 @@
       <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
         <child id="6715281144249649204" name="connects" index="1WO72F" />
       </concept>
-      <concept id="1318120347112277372" name="org.clafer.architecture.structure.HardwareDataConnector" flags="ng" index="36Bm84" />
       <concept id="1318120347112277400" name="org.clafer.architecture.structure.DiscreteDataConnector" flags="ng" index="36Bmbw" />
       <concept id="1318120347112279768" name="org.clafer.architecture.structure.DevicePowerConnector" flags="ng" index="36BmAw" />
       <concept id="1318120347112278873" name="org.clafer.architecture.structure.LoadPowerConnector" flags="ng" index="36BmKx" />
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
-        <reference id="7590219002335427874" name="dest" index="2wMEbl" />
-        <reference id="7590219002335427867" name="src" index="2wMEbG" />
         <reference id="4552959601553283212" name="target" index="2KpGgI" />
         <reference id="4552959601553283186" name="source" index="2KpGjg" />
       </concept>
-      <concept id="2835231858186161391" name="org.clafer.architecture.structure.ArchLogicalComma" flags="ng" index="1kl$yP" />
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
       <concept id="6663788808724501982" name="org.clafer.architecture.structure.IHaveArchType" flags="ng" index="3uhtP3">
         <child id="6663788808724501985" name="type" index="3uhtPW" />
@@ -96,10 +91,6 @@
       <concept id="8119098109029358023" name="org.clafer.architecture.structure.Feature" flags="ng" index="3H$kPL" />
       <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
-      </concept>
-      <concept id="2260668491394108193" name="org.clafer.architecture.structure.ArchRef" flags="ng" index="3Jak$y" />
-      <concept id="7885836682712175906" name="org.clafer.architecture.structure.IHaveDeployment" flags="ng" index="3SJsIc">
-        <child id="7885836682712176724" name="deployedTo" index="3SJsrU" />
       </concept>
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
@@ -141,10 +132,6 @@
       <concept id="7750719112881254547" name="org.clafer.expr.structure.QuantifiedVarRef" flags="ng" index="2Yzyl$">
         <reference id="7750719112881254599" name="var" index="2YzykK" />
       </concept>
-      <concept id="8860443239512128052" name="org.clafer.expr.structure.BinaryExpression" flags="ng" index="3TlMgq">
-        <child id="8860443239512128064" name="left" index="3TlMhI" />
-        <child id="8860443239512128065" name="right" index="3TlMhJ" />
-      </concept>
       <concept id="8860443239512128108" name="org.clafer.expr.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
@@ -167,13 +154,9 @@
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
       </concept>
-      <concept id="2851923306472509129" name="org.clafer.core.structure.ClaferType" flags="ng" index="ZpTZE">
-        <reference id="2851923306472509130" name="clafer" index="ZpTZD" />
-      </concept>
       <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
         <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
       </concept>
-      <concept id="7389562969673556519" name="org.clafer.core.structure.OptionCard" flags="ng" index="3Eie9T" />
     </language>
   </registry>
   <node concept="UzPwm" id="7$28d_YywjR">
@@ -246,7 +229,7 @@
       <node concept="1eXri_" id="1Z9B1Ui0o9l" role="2mZOl8">
         <property role="TrG5h" value="fconnector" />
         <ref role="2KpGjg" node="1T6YVZdxor8" resolve="aFunction" />
-        <ref role="2KpGgI" node="6PK7EUlUIK5" resolve="afunction" />
+        <ref role="2KpGgI" node="1T6YVZdxor8" resolve="aFunction" />
       </node>
       <node concept="UzEYP" id="5ipUCoijoLw" role="2mZOl8" />
     </node>
@@ -443,8 +426,8 @@
     </node>
     <node concept="gYDDm" id="g6kGtGv6OS" role="UzTCv">
       <property role="TrG5h" value="deployment" />
-      <ref role="gFST0" node="g6kGtGv6QS" resolve="hwDemo" />
-      <ref role="gFST6" node="7$28d_YKByg" resolve="faDemo" />
+      <ref role="gFST6" node="1T6YVZdxf2J" resolve="faArch" />
+      <ref role="gFST0" node="1T6YVZdxf2d" resolve="hwTopology" />
     </node>
     <node concept="UzEYP" id="g6kGtGv6N5" role="UzTCv" />
     <node concept="2l49t0" id="g6kGtGv6Q1" role="UzTCv">
@@ -552,67 +535,6 @@
         <property role="TrG5h" value="systemArch" />
       </node>
     </node>
-    <node concept="UzEYP" id="2QVp5ERSC33" role="UzTCv" />
-    <node concept="1uNGeH" id="g6kGtGv6QS" role="UzTCv">
-      <property role="TrG5h" value="hwDemo" />
-      <node concept="36Bm0V" id="WgjoVd2qHd" role="2mZOl8">
-        <property role="TrG5h" value="comTopolgy" />
-        <node concept="36Bm84" id="WgjoVd2qHr" role="2mZOl8">
-          <property role="TrG5h" value="dataConnector" />
-        </node>
-      </node>
-    </node>
-    <node concept="UzEYP" id="g6kGtGv6PC" role="UzTCv" />
-    <node concept="gXKv3" id="3T8tWlk9Spl" role="UzTCv">
-      <property role="TrG5h" value="arch_default2" />
-      <node concept="gXKv3" id="3T8tWlk9Spm" role="2mZOl8">
-        <property role="TrG5h" value="arch_child" />
-        <node concept="3HSg1M" id="3T8tWlk9Spn" role="gT77A">
-          <ref role="3HSg1l" node="3T8tWlk9Spj" resolve="superArch2" />
-        </node>
-        <node concept="1u8h5F" id="3T8tWlk9Spo" role="2mZOl8">
-          <property role="TrG5h" value="faArchitecture" />
-        </node>
-      </node>
-      <node concept="3Eie9T" id="g6kGtGtVU5" role="2gadUg" />
-    </node>
-    <node concept="UzEYP" id="3T8tWlk9Spp" role="UzTCv" />
-    <node concept="1u8h5F" id="7$28d_YKByg" role="UzTCv">
-      <property role="TrG5h" value="faDemo" />
-      <node concept="2mZLT$" id="6PK7EUlUIK5" role="2mZOl8">
-        <property role="TrG5h" value="afunction" />
-        <node concept="1kl$yP" id="6PK7EUlUO31" role="3SJsrU">
-          <node concept="3Jak$y" id="6PK7EUlUO3d" role="3TlMhJ">
-            <ref role="ZpOSt" node="2HpWhZy3BHS" resolve="deviceNodePoser2" />
-          </node>
-          <node concept="3Jak$y" id="6PK7EUlUO2T" role="3TlMhI">
-            <ref role="ZpOSt" node="WgjoVd2$8M" resolve="deviceNodeElectric" />
-          </node>
-        </node>
-      </node>
-      <node concept="2mZLT$" id="6PK7EUlUIKp" role="2mZOl8">
-        <property role="TrG5h" value="afunction2" />
-        <node concept="3Jak$y" id="6PK7EUlY_03" role="3SJsrU">
-          <ref role="ZpOSt" node="WgjoVd2$8M" resolve="deviceNodeElectric" />
-        </node>
-      </node>
-      <node concept="2mZLT$" id="6PK7EUlY_0i" role="2mZOl8">
-        <property role="TrG5h" value="afunction3" />
-        <node concept="ZpONE" id="5LUy9Q2cBmE" role="3SJsrU" />
-      </node>
-      <node concept="1eXri_" id="6PK7EUlUIKJ" role="2mZOl8">
-        <property role="TrG5h" value="faConnector" />
-        <ref role="2wMEbG" node="6PK7EUlUIK5" resolve="afunction" />
-        <ref role="2wMEbl" node="6PK7EUlUIKp" resolve="afunction2" />
-      </node>
-    </node>
-    <node concept="UzEYP" id="7$28d_YKBy0" role="UzTCv" />
-    <node concept="gXKv3" id="3T8tWlk9Spq" role="UzTCv">
-      <property role="TrG5h" value="arch2" />
-      <node concept="3HSg1M" id="3T8tWlk9Spr" role="gT77A">
-        <ref role="3HSg1l" node="7$28d_YywjS" resolve="superArch2" />
-      </node>
-    </node>
   </node>
   <node concept="UzPwm" id="1th$N_eQKTj">
     <property role="TrG5h" value="TestModel4" />
@@ -638,7 +560,7 @@
       <node concept="gXKv3" id="1th$N_eQKTt" role="2mZOl8">
         <property role="TrG5h" value="arch_child" />
         <node concept="3HSg1M" id="1th$N_eQKTu" role="gT77A">
-          <ref role="3HSg1l" node="3T8tWljOvJ0" resolve="superArch" />
+          <ref role="3HSg1l" node="1th$N_eQKTm" resolve="superArch" />
         </node>
         <node concept="1u8h5F" id="1th$N_eQKTv" role="2mZOl8">
           <property role="TrG5h" value="faArchitecture" />
@@ -677,8 +599,8 @@
           <node concept="2YxkJd" id="1jKsuqUK9Md" role="2YxkJa">
             <property role="TrG5h" value="s" />
           </node>
-          <node concept="ZpTZE" id="1jKsuqUK9MA" role="2YxkIx">
-            <ref role="ZpTZD" node="1th$N_eQKTt" resolve="arch_child" />
+          <node concept="ZpONE" id="2LboCN8sJEs" role="2YxkIx">
+            <ref role="ZpOSt" node="1th$N_eQKTt" resolve="arch_child" />
           </node>
           <node concept="LdX3K" id="1jKsuqUK9No" role="2YxkHD">
             <node concept="2Yzyl$" id="1jKsuqUK9NO" role="1_9fRO">
@@ -697,7 +619,7 @@
     <node concept="gXKv3" id="1th$N_eQKTx" role="UzTCv">
       <property role="TrG5h" value="arch" />
       <node concept="3HSg1M" id="1th$N_eQKTy" role="gT77A">
-        <ref role="3HSg1l" node="3T8tWljOvJ0" resolve="superArch" />
+        <ref role="3HSg1l" node="1th$N_eQKTm" resolve="superArch" />
       </node>
     </node>
   </node>
