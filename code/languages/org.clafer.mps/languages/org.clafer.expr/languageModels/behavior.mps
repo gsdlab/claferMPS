@@ -9932,58 +9932,6 @@
       <node concept="3clFbS" id="6PmbVhXRQHJ" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="1X9RDux22Qx">
-    <property role="3GE5qa" value="commenting" />
-    <ref role="13h7C2" to="mj1k:1X9RDux22HN" resolve="CommentedContent" />
-    <node concept="13hLZK" id="1X9RDux22Rn" role="13h7CW">
-      <node concept="3clFbS" id="1X9RDux22Ro" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="1X9RDuxdmDi" role="13h7CS">
-      <property role="TrG5h" value="isStaticallyEvaluatable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="3ilck8Kr3zN" resolve="isStaticallyEvaluatable" />
-      <node concept="3Tm1VV" id="1X9RDuxdmDj" role="1B3o_S" />
-      <node concept="3clFbS" id="1X9RDuxdmDo" role="3clF47">
-        <node concept="3cpWs6" id="1X9RDuxdn7f" role="3cqZAp">
-          <node concept="3clFbT" id="1X9RDuxdn7o" role="3cqZAk">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="1X9RDuxdmDp" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="1X9RDuxdn7I" role="13h7CS">
-      <property role="TrG5h" value="isDotCapable" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="66WTx3vdu2E" resolve="isDotCapable" />
-      <node concept="3Tm1VV" id="1X9RDuxdn7J" role="1B3o_S" />
-      <node concept="3clFbS" id="1X9RDuxdn85" role="3clF47">
-        <node concept="3cpWs6" id="1X9RDuxdnAi" role="3cqZAp">
-          <node concept="3clFbT" id="1X9RDuxdnAB" role="3cqZAk">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="1X9RDuxdn86" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="1X9RDuxdnAX" role="13h7CS">
-      <property role="TrG5h" value="isLValue" />
-      <property role="13i0it" value="false" />
-      <property role="13i0iv" value="false" />
-      <ref role="13i0hy" node="6iIoqg1yDKH" resolve="isLValue" />
-      <node concept="3Tm1VV" id="1X9RDuxdnAY" role="1B3o_S" />
-      <node concept="3clFbS" id="1X9RDuxdnB_" role="3clF47">
-        <node concept="3cpWs6" id="1X9RDuxdo68" role="3cqZAp">
-          <node concept="3clFbT" id="1X9RDuxdo6h" role="3cqZAk">
-            <property role="3clFbU" value="false" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="1X9RDuxdnBA" role="3clF45" />
-    </node>
-  </node>
   <node concept="13h7C7" id="1Jcbkuz76Q2">
     <property role="3GE5qa" value="QuantExpr" />
     <ref role="13h7C2" to="mj1k:6Ig5vvl5lgO" resolve="QuantifiedExpression" />

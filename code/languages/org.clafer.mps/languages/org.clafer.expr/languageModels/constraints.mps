@@ -529,10 +529,6 @@
     <property role="3GE5qa" value="types" />
     <ref role="1M2myG" to="mj1k:6Q7bJ$$mwOp" resolve="VoidType" />
   </node>
-  <node concept="1M2fIO" id="1X9RDux22Rp">
-    <property role="3GE5qa" value="commenting" />
-    <ref role="1M2myG" to="mj1k:1X9RDux22HN" resolve="CommentedContent" />
-  </node>
   <node concept="1M2fIO" id="6Ig5vvl7CzU">
     <property role="3GE5qa" value="QuantExpr" />
     <ref role="1M2myG" to="mj1k:6Ig5vvl7z2j" resolve="QuantifiedVarRef" />

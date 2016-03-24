@@ -311,6 +311,9 @@
     <node concept="PrWs8" id="3WJnaafhyWV" role="PrDN$">
       <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
     </node>
+    <node concept="PrWs8" id="1ub0KooHLhE" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="12rnRvMfu2B">
     <property role="3GE5qa" value="FeatureModel" />
@@ -413,6 +416,7 @@
     <property role="TrG5h" value="LoadPowerConnector" />
     <property role="34LRSv" value="Load Power Connector" />
     <property role="1pbfSe" value="417172783" />
+    <property role="MwhBj" value="${module}/icons/device_power_connector.png" />
     <ref role="1TJDcQ" node="19aTRzkPTSF" resolve="PowerConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSVo">
@@ -420,6 +424,7 @@
     <property role="TrG5h" value="DevicePowerConnector" />
     <property role="34LRSv" value="Device Power Connector" />
     <property role="1pbfSe" value="417171888" />
+    <property role="MwhBj" value="${module}/icons/load_power_connector.png" />
     <ref role="1TJDcQ" node="19aTRzkPTSF" resolve="PowerConnector" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPTSF">

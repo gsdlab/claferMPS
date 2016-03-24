@@ -674,21 +674,6 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1X9RDux22HN">
-    <property role="3GE5qa" value="commenting" />
-    <property role="TrG5h" value="CommentedContent" />
-    <property role="1pbfSe" value="1068365302" />
-    <ref role="1TJDcQ" node="7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="1X9RDux22HP" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="content" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    </node>
-    <node concept="PrWs8" id="1X9RDuxfGht" role="PzmwI">
-      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2uk4icoP2p1">
     <property role="3GE5qa" value="literals" />
     <property role="TrG5h" value="StringLiteral" />

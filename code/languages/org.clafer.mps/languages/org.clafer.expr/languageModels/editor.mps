@@ -2862,52 +2862,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="1X9RDux22Qr">
-    <property role="3GE5qa" value="commenting" />
-    <ref role="1XX52x" to="mj1k:1X9RDux22HN" resolve="CommentedContent" />
-    <node concept="3EZMnI" id="1X9RDux22Qs" role="2wV5jI">
-      <node concept="l2Vlx" id="1X9RDux22Qt" role="2iSdaV" />
-      <node concept="3F0ifn" id="1X9RDux22Qu" role="3EZMnx">
-        <property role="3F0ifm" value="/*" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhncU" resolve="CodeComment" />
-        <ref role="1ERwB7" node="3w$uTwNVsQI" resolve="CommentedContent_Actions" />
-      </node>
-      <node concept="3F1sOY" id="1X9RDux22Qv" role="3EZMnx">
-        <ref role="1NtTu8" to="mj1k:1X9RDux22HP" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhncU" resolve="CodeComment" />
-      </node>
-      <node concept="3F0ifn" id="1X9RDux22Qw" role="3EZMnx">
-        <property role="3F0ifm" value="*/" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dhncU" resolve="CodeComment" />
-        <ref role="1ERwB7" node="3w$uTwNVsQI" resolve="CommentedContent_Actions" />
-      </node>
-    </node>
-  </node>
-  <node concept="1h_SRR" id="3w$uTwNVsQI">
-    <property role="3GE5qa" value="commenting" />
-    <property role="TrG5h" value="CommentedContent_Actions" />
-    <ref role="1h_SK9" to="mj1k:1X9RDux22HN" resolve="CommentedContent" />
-    <node concept="1hA7zw" id="3w$uTwNVuqd" role="1h_SK8">
-      <property role="1hAc7j" value="backspace_action_id" />
-      <node concept="1hAIg9" id="3w$uTwNVuqe" role="1hA7z_">
-        <node concept="3clFbS" id="3w$uTwNV$s5" role="2VODD2">
-          <node concept="3clFbF" id="3w$uTwNVLPY" role="3cqZAp">
-            <node concept="2OqwBi" id="3w$uTwNVM1l" role="3clFbG">
-              <node concept="0IXxy" id="3w$uTwNVLPX" role="2Oq$k0" />
-              <node concept="1P9Npp" id="3w$uTwNW2RD" role="2OqNvi">
-                <node concept="2OqwBi" id="3w$uTwNW2VN" role="1P9ThW">
-                  <node concept="0IXxy" id="3w$uTwNW2Sn" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="3w$uTwNW3_6" role="2OqNvi">
-                    <ref role="3Tt5mk" to="mj1k:1X9RDux22HP" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="2uk4icoP2pp">
     <property role="3GE5qa" value="literals" />
     <ref role="1XX52x" to="mj1k:2uk4icoP2p1" resolve="StringLiteral" />
