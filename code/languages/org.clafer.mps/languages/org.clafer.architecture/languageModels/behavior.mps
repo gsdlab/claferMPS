@@ -578,8 +578,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1ODLWyih4U_" role="3cqZAp" />
-            <node concept="3clFbH" id="1ODLWyih4Vx" role="3cqZAp" />
           </node>
           <node concept="3cpWsn" id="1tfNdgy3R5v" role="1Duv9x">
             <property role="TrG5h" value="child" />
