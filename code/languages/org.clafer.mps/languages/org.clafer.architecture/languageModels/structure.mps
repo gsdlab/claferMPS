@@ -300,13 +300,13 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
     </node>
     <node concept="1TJgyj" id="3WJnaafhyWY" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
+      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
     </node>
     <node concept="PrWs8" id="3WJnaafhyWV" role="PrDN$">
       <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
@@ -376,6 +376,7 @@
     <property role="TrG5h" value="DiscreteDataConnector" />
     <property role="34LRSv" value="Discrete Data Connector" />
     <property role="1pbfSe" value="417174256" />
+    <property role="MwhBj" value="${module}/icons/discrete_data_connector.png" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
     <node concept="PrWs8" id="3WJnaafh_tD" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IHardwareConnector" />
