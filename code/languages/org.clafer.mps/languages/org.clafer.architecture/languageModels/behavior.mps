@@ -15,6 +15,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
+    <import index="a1ev" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.color(JDK/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -73,6 +74,9 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -3822,6 +3826,38 @@
     </node>
     <node concept="13hLZK" id="1ODLWyioder" role="13h7CW">
       <node concept="3clFbS" id="1ODLWyiodes" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="GHdWIb0Pr">
+    <ref role="13h7C2" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="13i0hz" id="GHdWIb0Pu" role="13h7CS">
+      <property role="TrG5h" value="getBackgroundColor" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="GHdWIb0Pv" role="1B3o_S" />
+      <node concept="3clFbS" id="GHdWIb0Pw" role="3clF47">
+        <node concept="3clFbF" id="GHdWIbOPT" role="3cqZAp">
+          <node concept="10Nm6u" id="GHdWIbOPS" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10Q1$e" id="GHdWIbOPN" role="3clF45">
+        <node concept="10Oyi0" id="GHdWIcgpb" role="10Q1$1" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="GHdWIbOR0" role="13h7CS">
+      <property role="TrG5h" value="getStrokeColor" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="GHdWIbOR1" role="1B3o_S" />
+      <node concept="3clFbS" id="GHdWIbOR2" role="3clF47">
+        <node concept="3clFbF" id="GHdWIbOR3" role="3cqZAp">
+          <node concept="10Nm6u" id="GHdWIbOR4" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="10Q1$e" id="GHdWIbOR5" role="3clF45">
+        <node concept="10Oyi0" id="GHdWIcgpm" role="10Q1$1" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="GHdWIb0Ps" role="13h7CW">
+      <node concept="3clFbS" id="GHdWIb0Pt" role="2VODD2" />
     </node>
   </node>
 </model>

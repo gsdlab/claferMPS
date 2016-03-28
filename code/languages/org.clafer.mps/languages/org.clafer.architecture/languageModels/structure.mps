@@ -341,7 +341,7 @@
     <property role="3GE5qa" value="HardwareArchitecture" />
     <property role="34LRSv" value="Hardware Architecture" />
     <property role="1pbfSe" value="1628502959" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="7DuSdC$$3Vj">
     <property role="TrG5h" value="DeviceNodeClassification" />
