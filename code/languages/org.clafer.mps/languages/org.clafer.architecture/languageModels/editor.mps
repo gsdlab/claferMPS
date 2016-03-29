@@ -420,6 +420,12 @@
       </concept>
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
+    <language id="a0ab8c10-c118-4755-ba27-3853435cf524" name="de.itemis.mps.tooltips">
+      <concept id="9185659875393567715" name="de.itemis.mps.tooltips.structure.CellModel_Tooltip" flags="ng" index="1j7BWu">
+        <child id="9185659875393569181" name="anchor" index="1j7Clw" />
+        <child id="9185659875393569179" name="tooltip" index="1j7ClA" />
+      </concept>
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -4561,8 +4567,19 @@
           </node>
         </node>
       </node>
-      <node concept="PMmxH" id="7DuSdC$_H6e" role="3EZMnx">
-        <ref role="PMmxG" node="$OrRLO47xg" resolve="ArchDefinition" />
+      <node concept="1j7BWu" id="3NiPeHKlXi0" role="3EZMnx">
+        <node concept="3F0ifn" id="3NiPeHKlXmT" role="1j7ClA">
+          <property role="3F0ifm" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed\n do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+          <node concept="VechU" id="3NiPeHKmo26" role="3F10Kt">
+            <property role="Vb096" value="black" />
+          </node>
+        </node>
+        <node concept="PMmxH" id="7DuSdC$_H6e" role="1j7Clw">
+          <ref role="PMmxG" node="$OrRLO47xg" resolve="ArchDefinition" />
+        </node>
+        <node concept="VSNWy" id="3NiPeHKmnV5" role="3F10Kt">
+          <property role="1lJzqX" value="18" />
+        </node>
       </node>
       <node concept="PMmxH" id="2HpWhZy3BPM" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO45o7" resolve="ArchSuperNode" />
