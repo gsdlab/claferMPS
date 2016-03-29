@@ -29,6 +29,10 @@
       </concept>
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
+      <concept id="2290533540603574629" name="org.clafer.architecture.structure.BaseFragment" flags="ng" index="2e0ElV">
+        <property id="4382799495044010590" name="showConLabelsNearSources" index="1j3GqP" />
+        <property id="4382799495044010588" name="showConLabels" index="1j3GqR" />
+      </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
         <reference id="7694989595706234372" name="ht" index="gFST0" />
@@ -469,6 +473,8 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="1uNHS9" id="3KrTRUBTu11" role="UzTCv">
       <property role="TrG5h" value="WinSubSysLoadPwrDT" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="UzEYP" id="6v3ZnYeKZWP" role="2mZOl8" />
     </node>
     <node concept="UzEYP" id="7_UebHXPzjM" role="UzTCv" />
@@ -483,6 +489,8 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="3yDFZg" id="3KrTRUBR0Uy" role="UzTCv">
       <property role="TrG5h" value="PowerWindowSystemFM" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="3H$kPL" id="3KrTRUBR0UH" role="2mZOl8">
         <property role="TrG5h" value="manualUpDown" />
       </node>
@@ -509,8 +517,12 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="1uNGeH" id="3KrTRUBTtJ5" role="UzTCv">
       <property role="TrG5h" value="PWinSubSysHT" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="1uNHS9" id="3KrTRUBTl1p" role="2mZOl8">
         <property role="TrG5h" value="PWinSubSysDN" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="3Hzz_a" id="3iBNEMr9IWE" role="2mZOl8">
           <property role="TrG5h" value="DoorInline" />
           <node concept="kwSKj" id="3iBNEMr9IWF" role="kIXCp" />
@@ -565,8 +577,12 @@
     <node concept="UzEYP" id="1Rl2DKhZAp5" role="UzTCv" />
     <node concept="1uNGeH" id="3KrTRUBTt42" role="UzTCv">
       <property role="TrG5h" value="DWinSubSysHT" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="1uNHS9" id="3KrTRUBTt7s" role="2mZOl8">
         <property role="TrG5h" value="DWinSubSysDN" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="3Hzz_a" id="3iBNEMr9IOi" role="2mZOl8">
           <property role="TrG5h" value="DoorInline" />
           <node concept="kwSKj" id="3iBNEMr9IOj" role="kIXCp" />
@@ -657,8 +673,12 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="1uNGeH" id="3KrTRUBTtv0" role="UzTCv">
       <property role="TrG5h" value="WinSubSysHT" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="1uNHS9" id="3KrTRUBTdBB" role="2mZOl8">
         <property role="TrG5h" value="WinSubSysDN" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="3HzFZ7" id="3iBNEMr9IB_" role="2mZOl8">
           <property role="TrG5h" value="WinSwitch" />
         </node>
@@ -789,16 +809,24 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="gXKv3" id="3KrTRUBR0Wa" role="UzTCv">
       <property role="TrG5h" value="WinSysArch" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="1u8h5F" id="3KrTRUBR0WI" role="2mZOl8">
         <property role="TrG5h" value="WinSysFA" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="1u8h5F" id="3KrTRUBR0WO" role="2mZOl8">
           <property role="TrG5h" value="DWinSubSysFA" />
+          <property role="1j3GqR" value="true" />
+          <property role="1j3GqP" value="false" />
           <node concept="3HSg1M" id="3KrTRUBR0WT" role="gT77A">
             <ref role="3HSg1l" node="3KrTRUBRsYl" resolve="DWinSubSysFA" />
           </node>
         </node>
         <node concept="1u8h5F" id="3KrTRUBR1bj" role="2mZOl8">
           <property role="TrG5h" value="PWinSubSysFA" />
+          <property role="1j3GqR" value="true" />
+          <property role="1j3GqP" value="false" />
           <node concept="3HSg1M" id="3KrTRUBR1bq" role="gT77A">
             <ref role="3HSg1l" node="3KrTRUBRsZj" resolve="PWinSubSysFA" />
           </node>
@@ -828,6 +856,8 @@
       </node>
       <node concept="gXKv3" id="3KrTRUBRkFy" role="2mZOl8">
         <property role="TrG5h" value="WinSysDpl" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
       </node>
       <node concept="37mRI7" id="4KwamREIrxV" role="lGtFl">
         <node concept="37mRIm" id="4KwamREIrxW" role="37mRID">
@@ -901,6 +931,8 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="1u8h5F" id="3KrTRUBRsZj" role="UzTCv">
       <property role="TrG5h" value="PWinSubSysFA" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="2mXI97" id="3KrTRUBRt02" role="2mZOl8">
         <property role="TrG5h" value="DWinSwitch" />
       </node>
@@ -991,6 +1023,8 @@
     <property role="3GE5qa" value="ArchitectureExt" />
     <node concept="1u8h5F" id="3KrTRUBRsYl" role="UzTCv">
       <property role="TrG5h" value="DWinSubSysFA" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="3HSg1M" id="3KrTRUBRsYz" role="gT77A">
         <ref role="3HSg1l" node="3KrTRUBRsrt" resolve="WinSubSystemFA" />
       </node>
@@ -1006,6 +1040,8 @@
     <node concept="UzEYP" id="6Fa64hUjnsR" role="UzTCv" />
     <node concept="1u8h5F" id="3KrTRUBRsrt" role="UzTCv">
       <property role="TrG5h" value="WinSubSystemFA" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="2mXI97" id="72GPbqtfkD_" role="2mZOl8">
         <property role="TrG5h" value="WinSwitch" />
       </node>
@@ -1037,6 +1073,8 @@
       <node concept="1u8h5F" id="3KrTRUBRsEK" role="2mZOl8">
         <property role="TrG5h" value="pinchDtc" />
         <property role="gTlvz" value="true" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="2mZLT$" id="72GPbqtfCdN" role="2mZOl8">
           <property role="TrG5h" value="PinchDetection" />
         </node>

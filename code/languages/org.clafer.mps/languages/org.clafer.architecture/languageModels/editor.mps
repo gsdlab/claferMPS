@@ -6730,7 +6730,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="3NiPeHJTuAz" role="3EZMnx">
-          <property role="3F0ifm" value="Show Connector Labels in Center" />
+          <property role="3F0ifm" value="Show Connectors' Labels in Center" />
         </node>
         <node concept="27S6Sx" id="3NiPeHJRfX3" role="3EZMnx">
           <ref role="1NtTu8" to="ddau:3NiPeHJR19s" resolve="showConLabels" />
@@ -6761,7 +6761,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="3NiPeHJYcCk" role="3EZMnx">
-          <property role="3F0ifm" value="Show Connector Labels near Sources" />
+          <property role="3F0ifm" value="Show Connectors' Labels near Sources" />
         </node>
         <node concept="27S6Sx" id="3NiPeHJYcCl" role="3EZMnx">
           <ref role="1NtTu8" to="ddau:3NiPeHJR19u" resolve="showConLabelsNearSources" />

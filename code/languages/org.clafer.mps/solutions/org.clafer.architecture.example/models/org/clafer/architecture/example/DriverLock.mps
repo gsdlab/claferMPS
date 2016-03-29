@@ -42,6 +42,10 @@
       </concept>
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
+      <concept id="2290533540603574629" name="org.clafer.architecture.structure.BaseFragment" flags="ng" index="2e0ElV">
+        <property id="4382799495044010590" name="showConLabelsNearSources" index="1j3GqP" />
+        <property id="4382799495044010588" name="showConLabels" index="1j3GqR" />
+      </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
         <reference id="7694989595706234372" name="ht" index="gFST0" />
@@ -230,8 +234,12 @@
     <property role="TrG5h" value="DriverWinSysHA" />
     <node concept="1uNGeH" id="3xlsXfnjfQP" role="UzTCv">
       <property role="TrG5h" value="DriverWinSysHA" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="1uNHS9" id="tUesvvBE4" role="2mZOl8">
         <property role="TrG5h" value="DriverWinSysDN" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="2l49t0" id="tUesvvBE5" role="2mZOl8">
           <property role="TrG5h" value="Switch" />
           <node concept="kwSKi" id="tUesvvBE6" role="kIXCp" />
@@ -756,6 +764,8 @@
       </node>
       <node concept="36Bm0V" id="3vJfEX4VNSD" role="2mZOl8">
         <property role="TrG5h" value="DriverWinSysCT" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="36Bmbw" id="3WJnaafvQ8C" role="2mZOl8">
           <property role="TrG5h" value="switchMotorDisc" />
           <ref role="2Kqnes" node="tUesvvBE5" resolve="Switch" />
@@ -1286,6 +1296,8 @@
       </node>
       <node concept="36Bm2$" id="tUesvsjFD" role="2mZOl8">
         <property role="TrG5h" value="DriverWinSysPT" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="36BmAw" id="3WJnaafwLAr" role="2mZOl8">
           <property role="gTlvz" value="true" />
           <property role="TrG5h" value="motorInlineDP" />
@@ -1418,8 +1430,12 @@
         </node>
         <node concept="36Bm2$" id="tUesvsjSg" role="2mZOl8">
           <property role="TrG5h" value="LoadPowerPT" />
+          <property role="1j3GqR" value="true" />
+          <property role="1j3GqP" value="false" />
           <node concept="36Bm2$" id="tUesvsjSR" role="2mZOl8">
             <property role="TrG5h" value="MotorIsDriver" />
+            <property role="1j3GqR" value="true" />
+            <property role="1j3GqP" value="false" />
             <node concept="37mRI7" id="E6Nn7M7Nsp" role="lGtFl">
               <node concept="37mRIm" id="E6Nn7M7Nsq" role="37mRID">
                 <property role="37mO49" value="8418853687213629" />
@@ -1565,6 +1581,8 @@
           </node>
           <node concept="36Bm2$" id="tUesvsjTg" role="2mZOl8">
             <property role="TrG5h" value="SwitchIsDriver" />
+            <property role="1j3GqR" value="true" />
+            <property role="1j3GqP" value="false" />
             <node concept="37mRI7" id="E6Nn7M7Nsw" role="lGtFl">
               <node concept="37mRIm" id="E6Nn7M7Nsx" role="37mRID">
                 <property role="37mO49" value="8418853687213657" />
@@ -1780,6 +1798,8 @@
           </node>
           <node concept="36Bm2$" id="tUesvskc_" role="2mZOl8">
             <property role="TrG5h" value="DoorModuleIsDriver" />
+            <property role="1j3GqR" value="true" />
+            <property role="1j3GqP" value="false" />
             <node concept="37mRI7" id="E6Nn7M7NsD" role="lGtFl">
               <node concept="37mRIm" id="E6Nn7M7NsE" role="37mRID">
                 <property role="37mO49" value="8418853687214898" />
@@ -1995,6 +2015,8 @@
           </node>
           <node concept="36Bm2$" id="tUesvskdt" role="2mZOl8">
             <property role="TrG5h" value="BCMIsDriver" />
+            <property role="1j3GqR" value="true" />
+            <property role="1j3GqP" value="false" />
             <node concept="37mRI7" id="E6Nn7M7NsM" role="lGtFl">
               <node concept="37mRIm" id="E6Nn7M7NsN" role="37mRID">
                 <property role="37mO49" value="8418853687214958" />
@@ -2462,6 +2484,8 @@
     <property role="TrG5h" value="DriverWinSysFM" />
     <node concept="3yDFZg" id="3xlsXfnjfhW" role="UzTCv">
       <property role="TrG5h" value="DriverWinSysFM" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="3H$kPL" id="3xlsXfnjfi1" role="2mZOl8">
         <property role="TrG5h" value="basic" />
       </node>
@@ -2488,6 +2512,8 @@
     </node>
     <node concept="1u8h5F" id="3vJfEX4VMha" role="UzTCv">
       <property role="TrG5h" value="DriverWinSysFAA" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="2mXI97" id="3vJfEX4VMkL" role="2mZOl8">
         <property role="TrG5h" value="WinSwitch" />
         <node concept="ZpONE" id="3vJfEX4VMkT" role="3SJsrU">
@@ -2689,6 +2715,8 @@
       <node concept="1u8h5F" id="3vJfEX4VM_h" role="2mZOl8">
         <property role="TrG5h" value="PinchDetectionFA" />
         <property role="gTlvz" value="true" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="2mZLT$" id="3vJfEX4VMAh" role="2mZOl8">
           <property role="TrG5h" value="PinchDetection" />
           <node concept="33KLpJ" id="3vJfEX4VMAk" role="33KLpg">
@@ -2942,22 +2970,32 @@
     <property role="TrG5h" value="DriverWinSys" />
     <node concept="3yR_K9" id="2LW9dx58hUM" role="UzTCv">
       <property role="TrG5h" value="DriverWinSys" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="3yDFZg" id="2LW9dx58hUR" role="2mZOl8">
         <property role="TrG5h" value="DWinSysFM" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="3HSg1M" id="2LW9dx58hV4" role="gT77A">
           <ref role="3HSg1l" node="3xlsXfnjfhW" resolve="DriverWinSysFM" />
         </node>
       </node>
       <node concept="gXKv3" id="2LW9dx58i3V" role="2mZOl8">
         <property role="TrG5h" value="DWinSysArch" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="1u8h5F" id="2LW9dx58i47" role="2mZOl8">
           <property role="TrG5h" value="DWinSysFA" />
+          <property role="1j3GqR" value="true" />
+          <property role="1j3GqP" value="false" />
           <node concept="3HSg1M" id="2LW9dx58i4x" role="gT77A">
             <ref role="3HSg1l" node="3vJfEX4VMha" resolve="DriverWinSysFAA" />
           </node>
         </node>
         <node concept="1uNGeH" id="2LW9dx58i4B" role="2mZOl8">
           <property role="TrG5h" value="DWinSysHA" />
+          <property role="1j3GqR" value="true" />
+          <property role="1j3GqP" value="false" />
           <node concept="3HSg1M" id="2LW9dx58i4G" role="gT77A">
             <ref role="3HSg1l" node="3xlsXfnjfQP" resolve="DriverWinSysHA" />
           </node>
@@ -3188,12 +3226,20 @@
     <node concept="1CU$1Q" id="4QpcWAP3NQv" role="UzTCp" />
     <node concept="3yR_K9" id="4QpcWAP3QAp" role="UzTCv">
       <property role="TrG5h" value="Car" />
+      <property role="1j3GqR" value="true" />
+      <property role="1j3GqP" value="false" />
       <node concept="gXKv3" id="4QpcWAP3QAy" role="2mZOl8">
         <property role="TrG5h" value="CarArchitecture" />
+        <property role="1j3GqR" value="true" />
+        <property role="1j3GqP" value="false" />
         <node concept="1uNGeH" id="4QpcWAP3QAG" role="2mZOl8">
           <property role="TrG5h" value="CarHA" />
+          <property role="1j3GqR" value="true" />
+          <property role="1j3GqP" value="false" />
           <node concept="1uNHS9" id="4QpcWAP3QAM" role="2mZOl8">
             <property role="TrG5h" value="CarDN" />
+            <property role="1j3GqR" value="true" />
+            <property role="1j3GqP" value="false" />
             <node concept="2l49t0" id="4QpcWAP3QAV" role="2mZOl8">
               <property role="TrG5h" value="BCM" />
               <node concept="kwSKi" id="4QpcWAP3QAY" role="kIXCp" />
