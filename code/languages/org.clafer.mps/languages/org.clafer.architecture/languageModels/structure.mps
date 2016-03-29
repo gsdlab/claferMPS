@@ -314,6 +314,9 @@
     <node concept="PrWs8" id="1ub0KooHLhE" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3NiPeHJQWUV" role="PrDN$">
+      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
+    </node>
   </node>
   <node concept="1TIwiD" id="12rnRvMfu2B">
     <property role="3GE5qa" value="FeatureModel" />
@@ -924,6 +927,14 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <node concept="1TJgyi" id="3NiPeHJR19s" role="1TKVEl">
+      <property role="TrG5h" value="showConLabels" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3NiPeHJR19u" role="1TKVEl">
+      <property role="TrG5h" value="showConLabelsNearSources" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 
