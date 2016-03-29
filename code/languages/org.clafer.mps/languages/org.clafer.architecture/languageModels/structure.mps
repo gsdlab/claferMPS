@@ -341,6 +341,7 @@
     <property role="3GE5qa" value="HardwareArchitecture" />
     <property role="34LRSv" value="Hardware Architecture" />
     <property role="1pbfSe" value="1628502959" />
+    <property role="MwhBj" value="${module}/icons/hardwareArchitecture.png" />
     <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="7DuSdC$$3Vj">
@@ -348,6 +349,7 @@
     <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification" />
     <property role="34LRSv" value="Device Node Classification" />
     <property role="1pbfSe" value="1628495955" />
+    <property role="MwhBj" value="${module}/icons/gear.png" />
     <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPQU0">
@@ -410,6 +412,7 @@
     <property role="TrG5h" value="PowerTopology" />
     <property role="34LRSv" value="Power Topology" />
     <property role="1pbfSe" value="417173676" />
+    <property role="MwhBj" value="${module}/icons/powerTopology.png" />
     <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSHp">
@@ -846,6 +849,7 @@
     <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="AnalogDataConnector" />
     <property role="34LRSv" value="Analog Data Connector" />
+    <property role="MwhBj" value="${module}/icons/analog_data_connector.png" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
     <node concept="PrWs8" id="3WJnaafh_mN" role="PzmwI">
       <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IHardwareConnector" />
