@@ -439,6 +439,7 @@
       </concept>
       <concept id="3155126767690989914" name="de.itemis.mps.editor.diagram.structure.Content_GenericBoxQuery" flags="ng" index="ahg9e">
         <child id="6554619383004026644" name="editorComponent" index="23bJyd" />
+        <child id="339189006513544402" name="navigationTargets" index="2Kg1p8" />
         <child id="5126420796713997777" name="shape" index="3Uta5s" />
       </concept>
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
@@ -481,6 +482,7 @@
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
+        <child id="1019014873656210396" name="navigationTargets" index="3zeBtW" />
         <child id="6160055369549989399" name="allowScaling" index="3RJMYJ" />
       </concept>
       <concept id="6237710625713831199" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramConnector" flags="ng" index="2ZMJ7s" />
@@ -3142,6 +3144,7 @@
           </node>
         </node>
         <node concept="ahg9e" id="1tfNdgy4ien" role="aCds2">
+          <node concept="37u81S" id="3NiPeHKjIAm" role="2Kg1p8" />
           <node concept="238au4" id="1tfNdgy4iep" role="23bJyd">
             <node concept="3EZMnI" id="399d13s$_E6" role="2wV5jI">
               <node concept="2iRfu4" id="399d13s$_E7" role="2iSdaV" />
@@ -3169,7 +3172,7 @@
                 <node concept="2OqwBi" id="1tfNdgy4iU8" role="3clFbG">
                   <node concept="23r2z0" id="1tfNdgy4iPA" role="2Oq$k0" />
                   <node concept="2qgKlT" id="1tfNdgy4jlr" role="2OqNvi">
-                    <ref role="37wK5l" to="f5o0:1tfNdgy3q9H" resolve="ConnectorsExternalReferences" />
+                    <ref role="37wK5l" to="f5o0:1tfNdgy3q9H" resolve="ConnectorsExternalEndpoints" />
                   </node>
                 </node>
               </node>
@@ -9312,6 +9315,17 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="2OqwBi" id="3NiPeHKlv_p" role="3zeBtW">
+        <node concept="2OqwBi" id="3NiPeHKl2EU" role="2Oq$k0">
+          <node concept="1Pxb5l" id="3NiPeHKkByo" role="2Oq$k0" />
+          <node concept="3TrEf2" id="3NiPeHKl3zo" role="2OqNvi">
+            <ref role="3Tt5mk" to="ddau:$OrRLOvD_w" />
+          </node>
+        </node>
+        <node concept="3TrEf2" id="3NiPeHKlvYe" role="2OqNvi">
+          <ref role="3Tt5mk" to="ddau:$OrRLOwoAf" />
         </node>
       </node>
     </node>
