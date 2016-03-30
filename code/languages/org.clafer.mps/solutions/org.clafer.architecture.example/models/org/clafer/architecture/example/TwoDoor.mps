@@ -17,6 +17,7 @@
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="2290533540603574629" name="org.clafer.architecture.structure.BaseFragment" flags="ng" index="2e0ElV">
+        <property id="7139025269056541768" name="connLabelsPosition" index="nHvRw" />
         <property id="4382799495044010590" name="showConLabelsNearSources" index="1j3GqP" />
         <property id="4382799495044010588" name="showConLabels" index="1j3GqR" />
       </concept>
@@ -215,18 +216,22 @@
       <property role="TrG5h" value="Car" />
       <property role="1j3GqR" value="true" />
       <property role="1j3GqP" value="false" />
+      <property role="nHvRw" value="source" />
       <node concept="gXKv3" id="4QpcWAP3QAy" role="2mZOl8">
         <property role="TrG5h" value="CarArchitecture" />
         <property role="1j3GqR" value="true" />
         <property role="1j3GqP" value="false" />
+        <property role="nHvRw" value="source" />
         <node concept="1uNGeH" id="4QpcWAP3QAG" role="2mZOl8">
           <property role="TrG5h" value="CarHA" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="1uNHS9" id="4QpcWAP3QAM" role="2mZOl8">
             <property role="TrG5h" value="CarDN" />
             <property role="1j3GqR" value="true" />
             <property role="1j3GqP" value="false" />
+            <property role="nHvRw" value="source" />
             <node concept="37mRI7" id="E6Nn7M7NvI" role="lGtFl">
               <node concept="37mRIm" id="E6Nn7M7NvJ" role="37mRID">
                 <property role="37mO49" value="5591557353776310715" />
@@ -587,6 +592,7 @@
       <property role="TrG5h" value="WinSysCT" />
       <property role="1j3GqR" value="true" />
       <property role="1j3GqP" value="false" />
+      <property role="nHvRw" value="source" />
       <node concept="36Bmbw" id="3WJnaafvQ8E" role="2mZOl8">
         <property role="TrG5h" value="switchMotorDisc" />
         <ref role="2Kqnes" node="6laenAv7S7" resolve="Motor" />
@@ -1608,6 +1614,7 @@
       <property role="TrG5h" value="WinSysDN" />
       <property role="1j3GqR" value="true" />
       <property role="1j3GqP" value="false" />
+      <property role="nHvRw" value="source" />
       <node concept="2l49t0" id="6laenAv7RH" role="2mZOl8">
         <property role="TrG5h" value="Switch" />
         <node concept="kwSKi" id="6laenAv7RI" role="kIXCp" />
@@ -2055,6 +2062,7 @@
       <property role="TrG5h" value="WinSysFAA" />
       <property role="1j3GqR" value="true" />
       <property role="1j3GqP" value="false" />
+      <property role="nHvRw" value="source" />
       <node concept="2mXI97" id="3vJfEX4VMkL" role="2mZOl8">
         <property role="TrG5h" value="WinSwitch" />
         <node concept="ZpONE" id="bIGVXW7$GF" role="3SJsrU">
@@ -2398,6 +2406,7 @@
         <property role="gTlvz" value="true" />
         <property role="1j3GqR" value="true" />
         <property role="1j3GqP" value="false" />
+        <property role="nHvRw" value="source" />
         <node concept="2mZLT$" id="3vJfEX4VMAh" role="2mZOl8">
           <property role="TrG5h" value="PinchDetection" />
           <node concept="33KLpJ" id="3vJfEX4VMAk" role="33KLpg">
@@ -2940,6 +2949,7 @@
       <property role="TrG5h" value="WinSysPT" />
       <property role="1j3GqR" value="true" />
       <property role="1j3GqP" value="false" />
+      <property role="nHvRw" value="source" />
       <node concept="36BmAw" id="3WJnaafwLAs" role="2mZOl8">
         <property role="gTlvz" value="true" />
         <property role="TrG5h" value="motorInlineDP" />
@@ -3248,10 +3258,12 @@
         <property role="TrG5h" value="LoadPowerPT" />
         <property role="1j3GqR" value="true" />
         <property role="1j3GqP" value="false" />
+        <property role="nHvRw" value="source" />
         <node concept="36Bm2$" id="tUesvsjSR" role="2mZOl8">
           <property role="TrG5h" value="MotorIsDriver" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="37mRI7" id="E6Nn7M7Nsp" role="lGtFl">
             <node concept="37mRIm" id="E6Nn7M7Nsq" role="37mRID">
               <property role="37mO49" value="8418853687213629" />
@@ -3455,6 +3467,7 @@
           <property role="TrG5h" value="SwitchIsDriver" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="37mRI7" id="E6Nn7M7Nsw" role="lGtFl">
             <node concept="37mRIm" id="E6Nn7M7Nsx" role="37mRID">
               <property role="37mO49" value="8418853687213657" />
@@ -3756,6 +3769,7 @@
           <property role="TrG5h" value="DoorModuleIsDriver" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="37mRI7" id="E6Nn7M7NsD" role="lGtFl">
             <node concept="37mRIm" id="E6Nn7M7NsE" role="37mRID">
               <property role="37mO49" value="8418853687214898" />
@@ -4057,6 +4071,7 @@
           <property role="TrG5h" value="BCMIsDriver" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="UzEYP" id="bIGVXW7L4r" role="2mZOl8" />
           <node concept="37mRI7" id="E6Nn7M7NsM" role="lGtFl">
             <node concept="37mRIm" id="E6Nn7M7NsN" role="37mRID">
@@ -4480,6 +4495,7 @@
       <property role="TrG5h" value="WinSysFM" />
       <property role="1j3GqR" value="true" />
       <property role="1j3GqP" value="false" />
+      <property role="nHvRw" value="source" />
       <node concept="3H$kPL" id="3xlsXfnjfi1" role="2mZOl8">
         <property role="TrG5h" value="basic" />
       </node>
@@ -4499,10 +4515,12 @@
       <property role="TrG5h" value="DriverWinSys" />
       <property role="1j3GqR" value="true" />
       <property role="1j3GqP" value="false" />
+      <property role="nHvRw" value="source" />
       <node concept="3yDFZg" id="2LW9dx58hUR" role="2mZOl8">
         <property role="TrG5h" value="DWinSysFM" />
         <property role="1j3GqR" value="true" />
         <property role="1j3GqP" value="false" />
+        <property role="nHvRw" value="source" />
         <node concept="3HSg1M" id="2LW9dx58hV4" role="gT77A">
           <ref role="3HSg1l" node="3xlsXfnjfhW" resolve="WinSysFM" />
         </node>
@@ -4511,10 +4529,12 @@
         <property role="TrG5h" value="DWinSysArch" />
         <property role="1j3GqR" value="true" />
         <property role="1j3GqP" value="false" />
+        <property role="nHvRw" value="source" />
         <node concept="1u8h5F" id="2LW9dx58i47" role="2mZOl8">
           <property role="TrG5h" value="DWinSysFA" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="3HSg1M" id="2LW9dx58i4x" role="gT77A">
             <ref role="3HSg1l" node="3vJfEX4VMha" resolve="WinSysFAA" />
           </node>
@@ -4701,10 +4721,12 @@
           <property role="TrG5h" value="DWinSysHA" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="1uNHS9" id="bIGVXW7xZ3" role="2mZOl8">
             <property role="TrG5h" value="DWinSysDN" />
             <property role="1j3GqR" value="true" />
             <property role="1j3GqP" value="false" />
+            <property role="nHvRw" value="source" />
             <node concept="3HSg1M" id="bIGVXW7xZ6" role="gT77A">
               <ref role="3HSg1l" node="6laenAv7RG" resolve="WinSysDN" />
             </node>
@@ -4848,6 +4870,7 @@
             <property role="TrG5h" value="DWinSysPT" />
             <property role="1j3GqR" value="true" />
             <property role="1j3GqP" value="false" />
+            <property role="nHvRw" value="source" />
             <node concept="3HSg1M" id="bIGVXW7xZh" role="gT77A">
               <ref role="3HSg1l" node="tUesvsjFD" resolve="WinSysPT" />
             </node>
@@ -5126,6 +5149,7 @@
             <property role="TrG5h" value="DWinSysCT" />
             <property role="1j3GqR" value="true" />
             <property role="1j3GqP" value="false" />
+            <property role="nHvRw" value="source" />
             <node concept="3HSg1M" id="bIGVXW7xZw" role="gT77A">
               <ref role="3HSg1l" node="3vJfEX4VNSD" resolve="WinSysCT" />
             </node>
@@ -5624,10 +5648,12 @@
       <property role="TrG5h" value="FrontPassWinSys" />
       <property role="1j3GqR" value="true" />
       <property role="1j3GqP" value="false" />
+      <property role="nHvRw" value="source" />
       <node concept="3yDFZg" id="6laenAvatn" role="2mZOl8">
         <property role="TrG5h" value="FPWinSysFM" />
         <property role="1j3GqR" value="true" />
         <property role="1j3GqP" value="false" />
+        <property role="nHvRw" value="source" />
         <node concept="3HSg1M" id="6laenAvatq" role="gT77A">
           <ref role="3HSg1l" node="3xlsXfnjfhW" resolve="WinSysFM" />
         </node>
@@ -5697,10 +5723,12 @@
         <property role="TrG5h" value="FPWinSysArch" />
         <property role="1j3GqR" value="true" />
         <property role="1j3GqP" value="false" />
+        <property role="nHvRw" value="source" />
         <node concept="1u8h5F" id="6laenAvatC" role="2mZOl8">
           <property role="TrG5h" value="FPWinSysFAA" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="3HSg1M" id="6laenAvatF" role="gT77A">
             <ref role="3HSg1l" node="3vJfEX4VMha" resolve="WinSysFAA" />
           </node>
@@ -6016,10 +6044,12 @@
           <property role="TrG5h" value="FPWinSysHA" />
           <property role="1j3GqR" value="true" />
           <property role="1j3GqP" value="false" />
+          <property role="nHvRw" value="source" />
           <node concept="1uNHS9" id="bIGVXW7xLI" role="2mZOl8">
             <property role="TrG5h" value="FPWinSysDN" />
             <property role="1j3GqR" value="true" />
             <property role="1j3GqP" value="false" />
+            <property role="nHvRw" value="source" />
             <node concept="3HSg1M" id="bIGVXW7xLL" role="gT77A">
               <ref role="3HSg1l" node="6laenAv7RG" resolve="WinSysDN" />
             </node>
@@ -6166,6 +6196,7 @@
             <property role="TrG5h" value="FPWinSysCT" />
             <property role="1j3GqR" value="true" />
             <property role="1j3GqP" value="false" />
+            <property role="nHvRw" value="source" />
             <node concept="3HSg1M" id="bIGVXW7xMo" role="gT77A">
               <ref role="3HSg1l" node="3vJfEX4VNSD" resolve="WinSysCT" />
             </node>
@@ -6783,6 +6814,7 @@
             <property role="TrG5h" value="FPWinSysPT" />
             <property role="1j3GqR" value="true" />
             <property role="1j3GqP" value="false" />
+            <property role="nHvRw" value="source" />
             <node concept="3HSg1M" id="bIGVXW7xMB" role="gT77A">
               <ref role="3HSg1l" node="tUesvsjFD" resolve="WinSysPT" />
             </node>

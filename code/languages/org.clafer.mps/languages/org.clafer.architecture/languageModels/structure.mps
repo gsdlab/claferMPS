@@ -14,6 +14,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -57,6 +58,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -930,10 +932,33 @@
     <node concept="1TJgyi" id="3NiPeHJR19s" role="1TKVEl">
       <property role="TrG5h" value="showConLabels" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="6ciUqxODLhc" role="lGtFl" />
     </node>
     <node concept="1TJgyi" id="3NiPeHJR19u" role="1TKVEl">
       <property role="TrG5h" value="showConLabelsNearSources" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="asaX9" id="6ciUqxODLhe" role="lGtFl" />
+    </node>
+    <node concept="1TJgyi" id="6ciUqxODLh8" role="1TKVEl">
+      <property role="TrG5h" value="connLabelsPosition" />
+      <ref role="AX2Wp" node="6ciUqxODLi0" resolve="LabelPosition" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="6ciUqxODLi0">
+    <property role="TrG5h" value="LabelPosition" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="6ciUqxODLi1" role="M5hS2">
+      <property role="1uS6qo" value="hidden" />
+      <property role="1uS6qv" value="hidden" />
+    </node>
+    <node concept="M4N5e" id="6ciUqxODLi2" role="M5hS2">
+      <property role="1uS6qo" value="center" />
+      <property role="1uS6qv" value="center" />
+    </node>
+    <node concept="M4N5e" id="6ciUqxODLih" role="M5hS2">
+      <property role="1uS6qo" value="source" />
+      <property role="1uS6qv" value="source" />
     </node>
   </node>
 </model>

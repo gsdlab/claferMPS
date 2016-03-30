@@ -50,9 +50,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -89,6 +86,12 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
+        <child id="1138662048170" name="value" index="tz02z" />
+      </concept>
+      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
+        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
+      </concept>
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -351,19 +354,21 @@
     <property role="_Wzho" value="Architecture: Migrate Connectors" />
     <property role="TrG5h" value="ArchitectureMigrateConnectors" />
     <node concept="_XfAh" id="3NiPeHK4MPK" role="_YvDr">
-      <property role="_XH9r" value="Architecture: Migrate Connector Labels" />
+      <property role="_XH9r" value="Architecture: Migrate Connectors' Labels" />
       <ref role="_XDHR" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
       <node concept="_ZGcI" id="3NiPeHK4MPL" role="_XPhp">
         <node concept="3clFbS" id="3NiPeHK4MPM" role="2VODD2">
           <node concept="3clFbF" id="3NiPeHK4PgG" role="3cqZAp">
-            <node concept="37vLTI" id="3NiPeHK4PK0" role="3clFbG">
-              <node concept="3clFbT" id="3NiPeHK4PKy" role="37vLTx">
-                <property role="3clFbU" value="true" />
-              </node>
-              <node concept="2OqwBi" id="3NiPeHK4Plz" role="37vLTJ">
+            <node concept="2OqwBi" id="6ciUqxOFe7A" role="3clFbG">
+              <node concept="2OqwBi" id="3NiPeHK4Plz" role="2Oq$k0">
                 <node concept="_YI3z" id="3NiPeHK4PgE" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3NiPeHK4Py0" role="2OqNvi">
-                  <ref role="3TsBF5" to="ddau:3NiPeHJR19s" resolve="showConLabels" />
+                <node concept="3TrcHB" id="6ciUqxOFdS5" role="2OqNvi">
+                  <ref role="3TsBF5" to="ddau:6ciUqxODLh8" resolve="connLabelsPosition" />
+                </node>
+              </node>
+              <node concept="tyxLq" id="6ciUqxOFeie" role="2OqNvi">
+                <node concept="uoxfO" id="6ciUqxOFeiG" role="tz02z">
+                  <ref role="uo_Cq" to="ddau:6ciUqxODLi1" />
                 </node>
               </node>
             </node>
