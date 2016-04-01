@@ -2088,6 +2088,7 @@
     <node concept="3EZMnI" id="5H6GWMWSQmg" role="2wV5jI">
       <node concept="3F0ifn" id="5H6GWMWSQmn" role="3EZMnx">
         <property role="3F0ifm" value="enum" />
+        <ref role="1k5W1q" to="tpc5:2NgG6tkHXk9" resolve="KeyWord" />
       </node>
       <node concept="2iRfu4" id="5H6GWMWSQmj" role="2iSdaV" />
       <node concept="3F0A7n" id="5H6GWMWSQmx" role="3EZMnx">
