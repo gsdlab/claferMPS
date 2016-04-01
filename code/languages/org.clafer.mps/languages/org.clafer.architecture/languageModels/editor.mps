@@ -9549,5 +9549,33 @@
       <node concept="3clFbS" id="399d13snrn7" role="2VODD2" />
     </node>
   </node>
+  <node concept="24kQdi" id="2fHaKcU0drW">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="1XX52x" to="ddau:2fHaKcTZRlA" resolve="DeloymentOf" />
+    <node concept="3EZMnI" id="2fHaKcU0dsd" role="2wV5jI">
+      <node concept="3F0ifn" id="2fHaKcU0dsq" role="3EZMnx">
+        <property role="3F0ifm" value="deployment of &lt;" />
+        <node concept="11LMrY" id="2fHaKcU4gBG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="2fHaKcU0dsA" role="3EZMnx">
+        <ref role="1NtTu8" to="mecy:2uk4icoWPWY" />
+        <node concept="1sVBvm" id="2fHaKcU0dsC" role="1sWHZn">
+          <node concept="3F0A7n" id="2fHaKcU0dsU" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2fHaKcU0dt9" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="11L4FC" id="2fHaKcU4gD3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="2fHaKcU0dsg" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

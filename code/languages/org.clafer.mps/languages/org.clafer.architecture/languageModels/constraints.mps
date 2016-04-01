@@ -14,6 +14,7 @@
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -50,6 +51,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -126,6 +130,7 @@
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="6738154313879680265" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childNode" flags="nn" index="2H4GUG" />
       <concept id="7855321458717464197" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="Um2eU" />
+      <concept id="5676632058862809931" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="in" index="13QW63" />
       <concept id="1163200368514" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSetHandler" flags="in" index="3k9gUc" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1163202640154" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_newReferentNode" flags="nn" index="3khVwk" />
@@ -3798,6 +3803,60 @@
           </node>
           <node concept="3clFbH" id="3NiPeHK04mh" role="3cqZAp" />
           <node concept="3clFbH" id="3NiPeHK04np" role="3cqZAp" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2fHaKcTZRm2">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="1M2myG" to="ddau:2fHaKcTZRlA" resolve="DeploymentOf" />
+    <node concept="1N5Pfh" id="2fHaKcTZVGT" role="1Mr941">
+      <ref role="1N5Vy1" to="mecy:2uk4icoWPWY" />
+      <node concept="13QW63" id="2fHaKcU2m1Q" role="1N6uqs">
+        <node concept="3clFbS" id="2fHaKcU2m1R" role="2VODD2">
+          <node concept="3clFbF" id="5ipUCoiw8y7" role="3cqZAp">
+            <node concept="2YIFZM" id="5ipUCoiw8CL" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="2fHaKcU0d5h" role="37wK5m">
+                <node concept="2OqwBi" id="5ipUCoiwkHa" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2fHaKcU0aFz" role="2Oq$k0">
+                    <node concept="21POm0" id="2fHaKcU2mfw" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="2fHaKcU0aUe" role="2OqNvi">
+                      <node concept="1xMEDy" id="2fHaKcU0aUg" role="1xVPHs">
+                        <node concept="chp4Y" id="2fHaKcU0aWl" role="ri$Ld">
+                          <ref role="cht4Q" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
+                        </node>
+                      </node>
+                      <node concept="1xIGOp" id="2fHaKcU2mqe" role="1xVPHs" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5ipUCoiwkY0" role="2OqNvi">
+                    <ref role="37wK5l" to="f5p9:4kWdVQTfzYb" resolve="allReferencableClafers" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="2fHaKcU0dhk" role="2OqNvi">
+                  <node concept="chp4Y" id="2fHaKcU0dm$" role="v3oSu">
+                    <ref role="cht4Q" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="nKS2y" id="2fHaKcTZRm6" role="1MLUbF">
+      <node concept="3clFbS" id="2fHaKcTZRm7" role="2VODD2">
+        <node concept="3clFbF" id="2fHaKcU9IMw" role="3cqZAp">
+          <node concept="2OqwBi" id="2fHaKcU9IPs" role="3clFbG">
+            <node concept="nLn13" id="2fHaKcU9IMu" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="2fHaKcU9IUY" role="2OqNvi">
+              <node concept="chp4Y" id="2fHaKcU9IYq" role="cj9EA">
+                <ref role="cht4Q" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

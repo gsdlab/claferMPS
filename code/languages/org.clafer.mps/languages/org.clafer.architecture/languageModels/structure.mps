@@ -961,5 +961,12 @@
       <property role="1uS6qv" value="source" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2fHaKcTZRlA">
+    <property role="1pbfSe" value="1575788649" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="DeploymentOf" />
+    <property role="34LRSv" value="deployment of" />
+    <ref role="1TJDcQ" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
+  </node>
 </model>
 
