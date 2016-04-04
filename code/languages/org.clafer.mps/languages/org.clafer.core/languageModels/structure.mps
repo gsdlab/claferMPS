@@ -448,11 +448,18 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="5H6GWMWSP$N" resolve="enumMember" />
     </node>
+    <node concept="PrWs8" id="1TKBT2MCW2M" role="PzmwI">
+      <ref role="PrY4T" node="1TKBT2MCJhr" resolve="DontGenerateFullPath" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5H6GWMWSP$N">
     <property role="1pbfSe" value="405409023" />
     <property role="TrG5h" value="enumMember" />
     <ref role="1TJDcQ" node="4Z9rElrxgzk" resolve="BaseClafer" />
+  </node>
+  <node concept="PlHQZ" id="1TKBT2MCJhr">
+    <property role="1pbfSe" value="787246101" />
+    <property role="TrG5h" value="DontGenerateFullPath" />
   </node>
 </model>
 
