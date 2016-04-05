@@ -8,6 +8,7 @@
   <imports>
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -44,6 +45,12 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -90,6 +97,28 @@
         <node concept="lc7rE" id="1jKsuqUM2gs" role="3cqZAp">
           <node concept="la8eA" id="1jKsuqUM2gG" role="lcghm">
             <property role="lacIc" value="deployedTo" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="7irZwUoby1s">
+    <ref role="WuzLi" to="ddau:7irZwUo26tP" resolve="ArchElementRefExpr" />
+    <node concept="11bSqf" id="7irZwUoby1t" role="11c4hB">
+      <node concept="3clFbS" id="7irZwUoby1u" role="2VODD2">
+        <node concept="lc7rE" id="7irZwUoby2w" role="3cqZAp">
+          <node concept="l9hG8" id="7irZwUoby2O" role="lcghm">
+            <node concept="2OqwBi" id="7irZwUobymN" role="lb14g">
+              <node concept="2OqwBi" id="7irZwUoby6x" role="2Oq$k0">
+                <node concept="117lpO" id="7irZwUoby3A" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7irZwUobycU" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:7irZwUo26An" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7irZwUobCmF" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

@@ -9551,7 +9551,7 @@
   </node>
   <node concept="24kQdi" id="2fHaKcU0drW">
     <property role="3GE5qa" value="FunctionalArchitecture" />
-    <ref role="1XX52x" to="ddau:2fHaKcTZRlA" resolve="DeloymentOf" />
+    <ref role="1XX52x" to="ddau:2fHaKcTZRlA" resolve="DeploymentOf" />
     <node concept="3EZMnI" id="2fHaKcU0dsd" role="2wV5jI">
       <node concept="3F0ifn" id="2fHaKcU0dsq" role="3EZMnx">
         <property role="3F0ifm" value="deployment of &lt;" />
@@ -9575,6 +9575,21 @@
         </node>
       </node>
       <node concept="2iRfu4" id="2fHaKcU0dsg" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7irZwUo26AM">
+    <ref role="1XX52x" to="ddau:7irZwUo26tP" resolve="ArchElementRefExpr" />
+    <node concept="1iCGBv" id="7irZwUo26AU" role="2wV5jI">
+      <ref role="1NtTu8" to="ddau:7irZwUo26An" />
+      <node concept="1sVBvm" id="7irZwUo26AW" role="1sWHZn">
+        <node concept="3F0A7n" id="7irZwUo2a44" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
+        </node>
+      </node>
+      <node concept="Vb9p2" id="7irZwUochE7" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
     </node>
   </node>
 </model>
