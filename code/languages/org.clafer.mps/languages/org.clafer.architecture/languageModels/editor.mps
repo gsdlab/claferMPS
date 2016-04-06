@@ -101,6 +101,7 @@
         <property id="168363875802087287" name="showInUI" index="2gpH_U" />
         <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
+      <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz" />
       <concept id="1136916919141" name="jetbrains.mps.lang.editor.structure.CellKeyMapItem" flags="lg" index="2PxR9H">
         <property id="1141091278922" name="caretPolicy" index="2IlM53" />
@@ -6323,6 +6324,24 @@
       </node>
       <node concept="3F0ifn" id="xdMRpnGFnT" role="3EZMnx" />
       <node concept="3F0ifn" id="xdMRpnGFrf" role="3EZMnx" />
+      <node concept="3EZMnI" id="7qZ9vSVxl56" role="3EZMnx">
+        <node concept="VPM3Z" id="7qZ9vSVxl58" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3EZMnI" id="7qZ9vSVxlag" role="3EZMnx">
+          <node concept="VPM3Z" id="7qZ9vSVxlai" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="3F0ifn" id="7qZ9vSVxlak" role="3EZMnx">
+            <property role="3F0ifm" value="Generate quality attributes " />
+          </node>
+          <node concept="27S6Sx" id="7qZ9vSVxlkl" role="3EZMnx">
+            <ref role="1NtTu8" to="ddau:7qZ9vSVxkAK" resolve="generateQA" />
+          </node>
+          <node concept="2iRfu4" id="7qZ9vSVxlal" role="2iSdaV" />
+        </node>
+        <node concept="2EHx9g" id="7qZ9vSVxlos" role="2iSdaV" />
+      </node>
       <node concept="3EZMnI" id="7b8T1iJGlXO" role="3EZMnx">
         <node concept="VPM3Z" id="7b8T1iJGlXQ" role="3F10Kt">
           <property role="VOm3f" value="false" />

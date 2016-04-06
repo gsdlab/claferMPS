@@ -758,6 +758,10 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="Preferences" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7qZ9vSVxkAK" role="1TKVEl">
+      <property role="TrG5h" value="generateQA" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="7b8T1iJGmaA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="constants" />
