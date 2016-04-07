@@ -339,6 +339,7 @@
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
@@ -601,6 +602,7 @@
       <node concept="1Koe21" id="kJhXrYilYR" role="1lVwrX">
         <node concept="UzPwm" id="kJhXrYilYS" role="1Koe22">
           <property role="TrG5h" value="_claferModel_" />
+          <property role="3wNgFz" value="0" />
           <node concept="3GEVxB" id="kJhXrYilYT" role="UzTCp">
             <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
           </node>
@@ -672,6 +674,7 @@
       <node concept="1Koe21" id="kJhXrYfiWD" role="1lVwrX">
         <node concept="UzPwm" id="kJhXrYfiWJ" role="1Koe22">
           <property role="TrG5h" value="_claferModel_" />
+          <property role="3wNgFz" value="0" />
           <node concept="3GEVxB" id="kJhXrYfiWK" role="UzTCp">
             <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
           </node>
@@ -749,6 +752,7 @@
       <node concept="1Koe21" id="6ciUqxOVJoN" role="1lVwrX">
         <node concept="UzPwm" id="6ciUqxOVJoT" role="1Koe22">
           <property role="TrG5h" value="_claferModel_" />
+          <property role="3wNgFz" value="0" />
           <node concept="3GEVxB" id="6ciUqxOVJoU" role="UzTCp">
             <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
           </node>
@@ -766,6 +770,7 @@
       <node concept="1Koe21" id="6ciUqxOVJGD" role="1lVwrX">
         <node concept="UzPwm" id="6ciUqxOVJGE" role="1Koe22">
           <property role="TrG5h" value="_claferModel_" />
+          <property role="3wNgFz" value="0" />
           <node concept="3GEVxB" id="6ciUqxOVJGF" role="UzTCp">
             <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
           </node>
@@ -783,6 +788,7 @@
       <node concept="1Koe21" id="6ciUqxOVJHl" role="1lVwrX">
         <node concept="UzPwm" id="6ciUqxOVJHm" role="1Koe22">
           <property role="TrG5h" value="_claferModel_" />
+          <property role="3wNgFz" value="0" />
           <node concept="3GEVxB" id="6ciUqxOVJHn" role="UzTCp">
             <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
           </node>
@@ -810,6 +816,7 @@
     <ref role="3gUMe" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="UzPwm" id="3T8tWljOiTS" role="13RCb5">
       <property role="TrG5h" value="_module_" />
+      <property role="3wNgFz" value="0" />
       <node concept="UH0sd" id="3T8tWljOvQy" role="UzTCv">
         <property role="TrG5h" value="_superClafer_" />
         <node concept="UH0sd" id="2NSDVxFTL1g" role="2vwUiP">
@@ -1301,6 +1308,7 @@
     <ref role="3gUMe" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
     <node concept="UzPwm" id="g6kGtGuBY9" role="13RCb5">
       <property role="TrG5h" value="_module_" />
+      <property role="3wNgFz" value="0" />
       <node concept="3GEVxB" id="2XrN4LunayX" role="UzTCp">
         <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
       </node>
@@ -1468,6 +1476,7 @@
     <ref role="3gUMe" to="ddau:6Fa64hUc88i" resolve="Deployment" />
     <node concept="UzPwm" id="WgjoVcYiNk" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />
+      <property role="3wNgFz" value="0" />
       <node concept="UH0sd" id="WgjoVcYiWe" role="UzTCv">
         <property role="TrG5h" value="_Deployment_" />
         <node concept="2vxcI6" id="WgjoVcYiWl" role="2vxcI2">
@@ -1566,6 +1575,7 @@
     <ref role="3gUMe" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
     <node concept="UzPwm" id="WgjoVd0_WL" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />
+      <property role="3wNgFz" value="0" />
       <node concept="3GEVxB" id="2XrN4Lunc5z" role="UzTCp">
         <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
       </node>
@@ -1752,6 +1762,7 @@
     <ref role="3gUMe" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
     <node concept="UzPwm" id="1af1aZKh0I1" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />
+      <property role="3wNgFz" value="0" />
       <node concept="3GEVxB" id="1af1aZKh0I2" role="UzTCp">
         <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
       </node>
@@ -2477,6 +2488,7 @@
     <ref role="3gUMe" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
     <node concept="UzPwm" id="32wpDnenupt" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />
+      <property role="3wNgFz" value="0" />
       <node concept="3GEVxB" id="2XrN4Lumqv3" role="UzTCp">
         <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
       </node>
@@ -2674,6 +2686,7 @@
     <ref role="3gUMe" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
     <node concept="UzPwm" id="Myy5NECy2M" role="13RCb5">
       <property role="TrG5h" value="_module_" />
+      <property role="3wNgFz" value="0" />
       <node concept="3GEVxB" id="2XrN4Lun3dt" role="UzTCp">
         <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
       </node>
@@ -2759,6 +2772,7 @@
     <ref role="3gUMe" to="ddau:19aTRzkPTSF" resolve="PowerConnector" />
     <node concept="UzPwm" id="2XrN4Lun4t_" role="13RCb5">
       <property role="TrG5h" value="_module_" />
+      <property role="3wNgFz" value="0" />
       <node concept="3GEVxB" id="2XrN4Lun4tA" role="UzTCp">
         <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
       </node>
@@ -2850,6 +2864,7 @@
     <ref role="3gUMe" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
     <node concept="UzPwm" id="3WJnaafd9lX" role="13RCb5">
       <property role="TrG5h" value="_claferModel_" />
+      <property role="3wNgFz" value="0" />
       <node concept="3GEVxB" id="3WJnaafd9lY" role="UzTCp">
         <ref role="3GEb4d" to="3fny:6v3ZnYePIPN" resolve="EAST_ADL" />
       </node>

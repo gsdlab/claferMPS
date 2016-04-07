@@ -59,6 +59,10 @@
     <property role="MwhBj" value="${module}/icons/clafer.png" />
     <property role="1pbfSe" value="992958552" />
     <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <node concept="1TJgyi" id="1b24ZrM3L$l" role="1TKVEl">
+      <property role="TrG5h" value="textGenPriority" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="bl22kSmD8W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="imports" />
