@@ -102,6 +102,7 @@
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
@@ -112,6 +113,7 @@
   </registry>
   <node concept="UzPwm" id="1ub0KooEDeU">
     <property role="TrG5h" value="Feature_Model" />
+    <property role="3wNgFz" value="0" />
     <node concept="3yDFZg" id="1ub0KooEDeV" role="UzTCv">
       <property role="TrG5h" value="fModel" />
       <property role="1j3GqR" value="true" />
@@ -127,6 +129,7 @@
   </node>
   <node concept="UzPwm" id="1ub0KooEDfn">
     <property role="TrG5h" value="FA_Architecture" />
+    <property role="3wNgFz" value="0" />
     <node concept="1u8h5F" id="1ub0KooEDfo" role="UzTCv">
       <property role="TrG5h" value="faArchitecture" />
       <property role="1j3GqR" value="false" />
@@ -395,6 +398,7 @@
   </node>
   <node concept="UzPwm" id="1ub0KooEDqM">
     <property role="TrG5h" value="Communication_Topology" />
+    <property role="3wNgFz" value="0" />
     <node concept="36Bm0V" id="1ub0KooEDqN" role="UzTCv">
       <property role="TrG5h" value="comTopology" />
       <property role="1j3GqR" value="true" />
@@ -748,6 +752,7 @@
   </node>
   <node concept="UzPwm" id="1ub0KooEDqY">
     <property role="TrG5h" value="Device_Node_Classification" />
+    <property role="3wNgFz" value="0" />
     <node concept="1uNHS9" id="1ub0KooEDqZ" role="UzTCv">
       <property role="TrG5h" value="dnClass" />
       <property role="1j3GqR" value="true" />
@@ -815,6 +820,7 @@
   </node>
   <node concept="UzPwm" id="1ub0KooEDIs">
     <property role="TrG5h" value="Power_Topology" />
+    <property role="3wNgFz" value="0" />
     <node concept="3GEVxB" id="1ub0KooEDIt" role="UzTCp">
       <ref role="3GEb4d" node="1ub0KooEDqY" resolve="Device_Node_Classification" />
     </node>

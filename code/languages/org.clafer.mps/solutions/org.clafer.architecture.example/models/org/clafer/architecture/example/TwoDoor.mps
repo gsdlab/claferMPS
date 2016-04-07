@@ -192,6 +192,7 @@
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
@@ -211,6 +212,7 @@
   <node concept="UzPwm" id="4QpcWAP3NQu">
     <property role="TrG5h" value="Car" />
     <property role="3GE5qa" value="Environment" />
+    <property role="3wNgFz" value="0" />
     <node concept="1CU$1Q" id="4QpcWAP3NQv" role="UzTCp" />
     <node concept="3yR_K9" id="4QpcWAP3QAp" role="UzTCv">
       <property role="TrG5h" value="Car" />
@@ -588,6 +590,7 @@
   <node concept="UzPwm" id="bIGVXW7vlK">
     <property role="3GE5qa" value="GeneralizedArchitecture" />
     <property role="TrG5h" value="WinSysCT" />
+    <property role="3wNgFz" value="0" />
     <node concept="36Bm0V" id="3vJfEX4VNSD" role="UzTCv">
       <property role="TrG5h" value="WinSysCT" />
       <property role="1j3GqR" value="true" />
@@ -1610,6 +1613,7 @@
   <node concept="UzPwm" id="bIGVXW7v7y">
     <property role="3GE5qa" value="GeneralizedArchitecture" />
     <property role="TrG5h" value="WinSysDN" />
+    <property role="3wNgFz" value="0" />
     <node concept="1uNHS9" id="6laenAv7RG" role="UzTCv">
       <property role="TrG5h" value="WinSysDN" />
       <property role="1j3GqR" value="true" />
@@ -2058,6 +2062,7 @@
   <node concept="UzPwm" id="3xlsXfnjfk2">
     <property role="TrG5h" value="WinSysFAA" />
     <property role="3GE5qa" value="GeneralizedArchitecture" />
+    <property role="3wNgFz" value="0" />
     <node concept="1u8h5F" id="3vJfEX4VMha" role="UzTCv">
       <property role="TrG5h" value="WinSysFAA" />
       <property role="1j3GqR" value="true" />
@@ -2945,6 +2950,7 @@
   <node concept="UzPwm" id="bIGVXW7vfW">
     <property role="3GE5qa" value="GeneralizedArchitecture" />
     <property role="TrG5h" value="WinSysPT" />
+    <property role="3wNgFz" value="0" />
     <node concept="36Bm2$" id="tUesvsjFD" role="UzTCv">
       <property role="TrG5h" value="WinSysPT" />
       <property role="1j3GqR" value="true" />
@@ -4491,6 +4497,7 @@
   <node concept="UzPwm" id="3xlsXfnjfhV">
     <property role="TrG5h" value="WinSysFM" />
     <property role="3GE5qa" value="GeneralizedArchitecture" />
+    <property role="3wNgFz" value="0" />
     <node concept="3yDFZg" id="3xlsXfnjfhW" role="UzTCv">
       <property role="TrG5h" value="WinSysFM" />
       <property role="1j3GqR" value="true" />
@@ -4511,6 +4518,7 @@
   </node>
   <node concept="UzPwm" id="2LW9dx58hUL">
     <property role="TrG5h" value="DriverWinSys" />
+    <property role="3wNgFz" value="0" />
     <node concept="3yR_K9" id="2LW9dx58hUM" role="UzTCv">
       <property role="TrG5h" value="DriverWinSys" />
       <property role="1j3GqR" value="true" />
@@ -5626,6 +5634,7 @@
   </node>
   <node concept="UzPwm" id="6laenAvasE">
     <property role="TrG5h" value="FrontPassWinSys" />
+    <property role="3wNgFz" value="0" />
     <node concept="3GEVxB" id="6laenAvasF" role="UzTCp">
       <ref role="3GEb4d" node="3xlsXfnjfhV" resolve="WinSysFM" />
     </node>

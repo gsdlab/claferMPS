@@ -149,6 +149,7 @@
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
@@ -166,6 +167,7 @@
   </registry>
   <node concept="UzPwm" id="7$28d_YywjR">
     <property role="TrG5h" value="TestModel3" />
+    <property role="3wNgFz" value="0" />
     <node concept="3yR_K9" id="1T6YVZdxbH6" role="UzTCv">
       <property role="TrG5h" value="system" />
       <property role="1j3GqR" value="true" />
@@ -394,6 +396,7 @@
   </node>
   <node concept="UzPwm" id="3T8tWljOhji">
     <property role="TrG5h" value="TestModel1" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="7$28d_Yymi$" role="UzTCv" />
     <node concept="UzEYP" id="7$28d_YymiJ" role="UzTCv" />
     <node concept="gXKv3" id="3T8tWljOvJ0" role="UzTCv">
@@ -455,6 +458,7 @@
   </node>
   <node concept="UzPwm" id="3T8tWlk9Spi">
     <property role="TrG5h" value="TestModel2" />
+    <property role="3wNgFz" value="0" />
     <node concept="gXKv3" id="3T8tWlk9Spj" role="UzTCv">
       <property role="TrG5h" value="superArch2" />
       <property role="gTlvz" value="true" />
@@ -591,6 +595,7 @@
   </node>
   <node concept="UzPwm" id="1th$N_eQKTj">
     <property role="TrG5h" value="TestModel4" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1th$N_eQKTk" role="UzTCv" />
     <node concept="UzEYP" id="1th$N_eQKTl" role="UzTCv" />
     <node concept="gXKv3" id="1th$N_eQKTm" role="UzTCv">

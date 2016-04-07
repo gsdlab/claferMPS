@@ -140,6 +140,7 @@
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
@@ -165,6 +166,7 @@
   </registry>
   <node concept="UzPwm" id="1Rl2DKhZHoU">
     <property role="TrG5h" value="S22_Func_Dsgn_Hw_Window_System" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZHso" role="UzTCv" />
     <node concept="UzEYP" id="1Rl2DKhZHsq" role="UzTCv" />
     <node concept="UzEYP" id="1Rl2DKhZIal" role="UzTCv" />
@@ -189,6 +191,7 @@
   </node>
   <node concept="UzPwm" id="72GPbqtfjtI">
     <property role="TrG5h" value="EAST_ADL" />
+    <property role="3wNgFz" value="1000" />
     <node concept="UzEYP" id="72GPbqtfjtJ" role="UzTCv" />
     <node concept="UzEYP" id="72GPbqtfjtK" role="UzTCv" />
     <node concept="UH0sd" id="72GPbqtfjtL" role="UzTCv">
@@ -318,6 +321,7 @@
   </node>
   <node concept="UzPwm" id="72GPbqtfjuJ">
     <property role="TrG5h" value="AutomotiveConcepts" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="72GPbqtfjuK" role="UzTCv" />
     <node concept="UH0sd" id="72GPbqtfjuL" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -472,6 +476,7 @@
   <node concept="UzPwm" id="1Rl2DKhZG9t">
     <property role="TrG5h" value="S13_Func_Dsgn_Dt_Generic_Window_LoadPwr" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="1uNHS9" id="3KrTRUBTu11" role="UzTCv">
       <property role="TrG5h" value="WinSubSysLoadPwrDT" />
       <property role="1j3GqR" value="true" />
@@ -489,6 +494,7 @@
   <node concept="UzPwm" id="7oGBC4$W904">
     <property role="TrG5h" value="S01_Technical_Feature_Model" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="3yDFZg" id="3KrTRUBR0Uy" role="UzTCv">
       <property role="TrG5h" value="PowerWindowSystemFM" />
       <property role="1j3GqR" value="true" />
@@ -518,6 +524,7 @@
   <node concept="UzPwm" id="1Rl2DKhZAS9">
     <property role="TrG5h" value="S09_Func_Dsgn_Dn_Passenger_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="1uNGeH" id="3KrTRUBTtJ5" role="UzTCv">
       <property role="TrG5h" value="PWinSubSysHT" />
       <property role="1j3GqR" value="true" />
@@ -579,6 +586,7 @@
   <node concept="UzPwm" id="1Rl2DKhZAfA">
     <property role="TrG5h" value="S08_Func_Dsgn_Dn_Driver_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZAp5" role="UzTCv" />
     <node concept="1uNGeH" id="3KrTRUBTt42" role="UzTCv">
       <property role="TrG5h" value="DWinSubSysHT" />
@@ -645,6 +653,7 @@
   <node concept="UzPwm" id="1Rl2DKhZC6p">
     <property role="TrG5h" value="S10_Func_Dsgn_Dpl_Generic_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="gYDDm" id="3KrTRUBTt_q" role="UzTCv">
       <property role="TrG5h" value="WinSubSysDpl" />
       <ref role="gFST6" node="3KrTRUBRsYl" resolve="DWinSubSysFA" />
@@ -660,6 +669,7 @@
   <node concept="UzPwm" id="1Rl2DKhZDgd">
     <property role="TrG5h" value="S12_Func_Dsgn_Dpl_Passenger_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="gYDDm" id="3KrTRUBTtMW" role="UzTCv">
       <property role="TrG5h" value="PWinSubSysDpl" />
       <ref role="gFST6" node="3KrTRUBRsZj" resolve="PWinSubSysFA" />
@@ -678,6 +688,7 @@
   <node concept="UzPwm" id="1Rl2DKhZ_rH">
     <property role="TrG5h" value="S07_Func_Dsgn_Dn_Generic_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="1uNGeH" id="3KrTRUBTtv0" role="UzTCv">
       <property role="TrG5h" value="WinSubSysHT" />
       <property role="1j3GqR" value="true" />
@@ -816,6 +827,7 @@
   <node concept="UzPwm" id="1Rl2DKhZhfV">
     <property role="TrG5h" value="S02_System_Architecture" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="gXKv3" id="3KrTRUBR0Wa" role="UzTCv">
       <property role="TrG5h" value="WinSysArch" />
       <property role="1j3GqR" value="true" />
@@ -923,6 +935,7 @@
   <node concept="UzPwm" id="1Rl2DKhZD6w">
     <property role="TrG5h" value="S11_Func_Dsgn_Dpl_Driver_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZE5U" role="UzTCv" />
     <node concept="gYDDm" id="3KrTRUBTt_N" role="UzTCv">
       <property role="TrG5h" value="DWinSubSysDpl" />
@@ -943,6 +956,7 @@
   <node concept="UzPwm" id="72GPbqtfjya">
     <property role="TrG5h" value="S06_Func_Analysis_Passenger_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="1u8h5F" id="3KrTRUBRsZj" role="UzTCv">
       <property role="TrG5h" value="PWinSubSysFA" />
       <property role="1j3GqR" value="true" />
@@ -1036,6 +1050,7 @@
   <node concept="UzPwm" id="72GPbqtfjy1">
     <property role="TrG5h" value="S05_Func_Analysis_Driver_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="1u8h5F" id="3KrTRUBRsYl" role="UzTCv">
       <property role="TrG5h" value="DWinSubSysFA" />
       <property role="1j3GqR" value="true" />
@@ -1053,6 +1068,7 @@
   <node concept="UzPwm" id="72GPbqtfjwX">
     <property role="TrG5h" value="S03_Func_Analysis_Generic_Window" />
     <property role="3GE5qa" value="ArchitectureExt" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="6Fa64hUjnsR" role="UzTCv" />
     <node concept="1u8h5F" id="3KrTRUBRsrt" role="UzTCv">
       <property role="TrG5h" value="WinSubSystemFA" />

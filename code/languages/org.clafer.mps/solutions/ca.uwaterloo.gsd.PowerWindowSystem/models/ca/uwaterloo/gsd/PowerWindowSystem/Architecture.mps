@@ -67,6 +67,7 @@
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
@@ -94,6 +95,7 @@
   </registry>
   <node concept="UzPwm" id="1Rl2DKhZHoU">
     <property role="TrG5h" value="S22_Func_Dsgn_Hw_Window_System" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZHso" role="UzTCv" />
     <node concept="UzEYP" id="1Rl2DKhZHsq" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef8z3" role="UzTCv">
@@ -172,6 +174,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZG9t">
     <property role="TrG5h" value="S13_Func_Dsgn_Dt_Generic_Window_LoadPwr" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZG9K" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDefbCh" role="UzTCv">
       <property role="TrG5h" value="WinSubSysLoadPwrDT" />
@@ -448,6 +451,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZDgd">
     <property role="TrG5h" value="S12_Func_Dsgn_Dpl_Passenger_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZDLl" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef9Zs" role="UzTCv">
       <property role="TrG5h" value="PWinSubSysDpl" />
@@ -497,6 +501,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZD6w">
     <property role="TrG5h" value="S11_Func_Dsgn_Dpl_Driver_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZE5U" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef9K8" role="UzTCv">
       <property role="TrG5h" value="DWinSubSysDpl" />
@@ -546,6 +551,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZC6p">
     <property role="TrG5h" value="S10_Func_Dsgn_Dpl_Generic_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZC6R" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef8Ka" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -586,6 +592,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZAS9">
     <property role="TrG5h" value="S09_Func_Dsgn_Dn_Passenger_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZASs" role="UzTCv" />
     <node concept="UH0sd" id="2pSCLMHYc4R" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -662,6 +669,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZAfA">
     <property role="TrG5h" value="S08_Func_Dsgn_Dn_Driver_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZAp3" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$Wc3E" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -730,6 +738,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZ_rH">
     <property role="TrG5h" value="S07_Func_Dsgn_Dn_Generic_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZ_Y8" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$Wb9K" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -842,6 +851,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZ$VG">
     <property role="TrG5h" value="S06_Func_Analysis_Passenger_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZ$VZ" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W9WF" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -897,6 +907,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZzeW">
     <property role="TrG5h" value="S05_Func_Analysis_Driver_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZzLY" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W9TP" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -919,6 +930,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZy6D">
     <property role="TrG5h" value="S03_Func_Analysis_Generic_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZy6W" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W9_N" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -1098,6 +1110,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZhfV">
     <property role="TrG5h" value="S02_System_Architecture" />
+    <property role="3wNgFz" value="0" />
     <node concept="UH0sd" id="7oGBC4$W9xI" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="WinSysArch" />
@@ -1285,6 +1298,7 @@
   </node>
   <node concept="UzPwm" id="7oGBC4$W904">
     <property role="TrG5h" value="S01_Technical_Feature_Model" />
+    <property role="3wNgFz" value="0" />
     <node concept="3GEVxB" id="7oGBC4$W905" role="UzTCp">
       <ref role="3GEb4d" node="2FleQ6d99Ti" resolve="AutomotiveConcepts" />
     </node>
@@ -1327,6 +1341,7 @@
   </node>
   <node concept="UzPwm" id="7oGBC4$RZYL">
     <property role="TrG5h" value="EAST_ADL" />
+    <property role="3wNgFz" value="1000" />
     <node concept="UzEYP" id="7oGBC4$SatT" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W8qY" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -1463,6 +1478,7 @@
   </node>
   <node concept="UzPwm" id="2FleQ6d99Ti">
     <property role="TrG5h" value="AutomotiveConcepts" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="2FleQ6d9pfK" role="UzTCv" />
     <node concept="UH0sd" id="1Rl2DKhZwrj" role="UzTCv">
       <property role="2vxgol" value="true" />

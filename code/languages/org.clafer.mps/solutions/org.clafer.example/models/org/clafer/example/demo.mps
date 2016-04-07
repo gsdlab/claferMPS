@@ -86,6 +86,7 @@
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
@@ -118,6 +119,7 @@
   </registry>
   <node concept="UzPwm" id="bl22kSotJv">
     <property role="TrG5h" value="M1" />
+    <property role="3wNgFz" value="0" />
     <node concept="UH0sd" id="ORookilKg9" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="N" />
@@ -528,6 +530,7 @@
   </node>
   <node concept="UzPwm" id="6MOJxHINvX$">
     <property role="TrG5h" value="M2" />
+    <property role="3wNgFz" value="0" />
     <node concept="UH0sd" id="6MOJxHINBAR" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="Person" />
