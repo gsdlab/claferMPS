@@ -4503,5 +4503,24 @@
       <node concept="3clFbS" id="2fHaKcU6nnY" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="1b24ZrMcSXV">
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
+    <ref role="13h7C2" to="ddau:1b24ZrMcSWM" resolve="DeployedFromExpr" />
+    <node concept="13i0hz" id="1b24ZrMcSY4" role="13h7CS">
+      <property role="TrG5h" value="getTarget" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <node concept="3clFbS" id="1b24ZrMcSY6" role="3clF47">
+        <node concept="3clFbF" id="1b24ZrMcT9S" role="3cqZAp">
+          <node concept="10Nm6u" id="1b24ZrMcT9R" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1b24ZrMcT9N" role="3clF45" />
+      <node concept="3Tm1VV" id="1b24ZrMcT9O" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="1b24ZrMcSXW" role="13h7CW">
+      <node concept="3clFbS" id="1b24ZrMcSXX" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

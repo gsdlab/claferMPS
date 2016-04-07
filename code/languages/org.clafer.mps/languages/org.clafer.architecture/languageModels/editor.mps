@@ -9894,5 +9894,12 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1b24ZrMcSXj">
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
+    <ref role="1XX52x" to="ddau:1b24ZrMcSWM" resolve="DeployedFromExpr" />
+    <node concept="PMmxH" id="1b24ZrMcSXx" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 

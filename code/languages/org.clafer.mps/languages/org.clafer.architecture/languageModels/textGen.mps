@@ -124,5 +124,18 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="1b24ZrMcUOB">
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
+    <ref role="WuzLi" to="ddau:1b24ZrMcSWM" resolve="DeployedFromExpr" />
+    <node concept="11bSqf" id="1b24ZrMcUOC" role="11c4hB">
+      <node concept="3clFbS" id="1b24ZrMcUOD" role="2VODD2">
+        <node concept="lc7rE" id="1b24ZrMcUOV" role="3cqZAp">
+          <node concept="la8eA" id="1b24ZrMcUQy" role="lcghm">
+            <property role="lacIc" value="deployedFrom" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

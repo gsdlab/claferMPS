@@ -986,5 +986,15 @@
       <ref role="PrY4T" to="mecy:1TKBT2MCJhr" resolve="DontGenerateFullPath" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1b24ZrMcSWM">
+    <property role="1pbfSe" value="83206952" />
+    <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
+    <property role="TrG5h" value="DeployedFromExpr" />
+    <property role="34LRSv" value="deployedFrom" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1b24ZrMcSWT" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
 </model>
 

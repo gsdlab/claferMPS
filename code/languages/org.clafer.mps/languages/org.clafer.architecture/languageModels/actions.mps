@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -63,6 +64,10 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -293,6 +298,68 @@
             <property role="2h1i$Z" value="{" />
           </node>
           <node concept="2h1dTh" id="4xcaXO71uN5" role="Cn6ar">
+            <property role="2h1i$Z" value="Add Content" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UNGvq" id="1b24ZrMefyB" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+      <node concept="tYCnQ" id="1b24ZrMefyC" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+        <node concept="Cmt7Y" id="1b24ZrMefyD" role="uz6Si">
+          <node concept="Cnhdc" id="1b24ZrMefyE" role="Cncma">
+            <node concept="3clFbS" id="1b24ZrMefyF" role="2VODD2">
+              <node concept="3clFbF" id="1b24ZrMefyG" role="3cqZAp">
+                <node concept="2OqwBi" id="1b24ZrMefyH" role="3clFbG">
+                  <node concept="2OqwBi" id="1b24ZrMefyI" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="1b24ZrMefyJ" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1b24ZrMefyK" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                    </node>
+                  </node>
+                  <node concept="WFELt" id="1b24ZrMefyL" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="1b24ZrMefyM" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="1b24ZrMefyN" role="Cn6ar">
+            <property role="2h1i$Z" value="Add Content" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UNGvq" id="1b24ZrMef8_" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+      <node concept="tYCnQ" id="1b24ZrMef8A" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+        <node concept="Cmt7Y" id="1b24ZrMef8B" role="uz6Si">
+          <node concept="Cnhdc" id="1b24ZrMef8C" role="Cncma">
+            <node concept="3clFbS" id="1b24ZrMef8D" role="2VODD2">
+              <node concept="3clFbF" id="1b24ZrMef8E" role="3cqZAp">
+                <node concept="2OqwBi" id="1b24ZrMef8F" role="3clFbG">
+                  <node concept="2OqwBi" id="1b24ZrMef8G" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="1b24ZrMef8H" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1b24ZrMef8I" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                    </node>
+                  </node>
+                  <node concept="WFELt" id="1b24ZrMef8J" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="1b24ZrMef8K" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="1b24ZrMef8L" role="Cn6ar">
             <property role="2h1i$Z" value="Add Content" />
           </node>
         </node>
@@ -644,11 +711,20 @@
       <node concept="3kRJcU" id="5QLkobVPYtx" role="3kShCk">
         <node concept="3clFbS" id="5QLkobVPYty" role="2VODD2">
           <node concept="3clFbF" id="5QLkobVPYuB" role="3cqZAp">
-            <node concept="2OqwBi" id="5QLkobVPYyD" role="3clFbG">
-              <node concept="Cj7Ep" id="5QLkobVPYuA" role="2Oq$k0" />
-              <node concept="1BlSNk" id="5QLkobVPYCl" role="2OqNvi">
-                <ref role="1BmUXE" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
-                <ref role="1Bn3mz" to="ddau:6PK7EUlNtxk" />
+            <node concept="22lmx$" id="1b24ZrMeiNU" role="3clFbG">
+              <node concept="2OqwBi" id="1b24ZrMeiTx" role="3uHU7w">
+                <node concept="Cj7Ep" id="1b24ZrMeiPD" role="2Oq$k0" />
+                <node concept="1BlSNk" id="1b24ZrMej4o" role="2OqNvi">
+                  <ref role="1BmUXE" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                  <ref role="1Bn3mz" to="ddau:5OLu9WxSgwO" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5QLkobVPYyD" role="3uHU7B">
+                <node concept="Cj7Ep" id="5QLkobVPYuA" role="2Oq$k0" />
+                <node concept="1BlSNk" id="5QLkobVPYCl" role="2OqNvi">
+                  <ref role="1BmUXE" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
+                  <ref role="1Bn3mz" to="ddau:6PK7EUlNtxk" />
+                </node>
               </node>
             </node>
           </node>
@@ -824,37 +900,64 @@
         </node>
       </node>
     </node>
-    <node concept="1X3_iC" id="36JEQKk7fwv" role="lGtFl">
-      <property role="3V$3am" value="actionsBuilder" />
-      <property role="3V$3ak" value="aee9cad2-acd4-4608-aef2-0004f6a1cdbd/1138079416598/1138079416599" />
-      <node concept="3UNGvq" id="19aTRzkShXC" role="8Wnug">
-        <ref role="3UNGvu" to="ddau:19aTRzkPSmo" resolve="DiscreteDataConnector" />
-        <node concept="tYCnQ" id="19aTRzkShXD" role="_1QTJ">
-          <ref role="uz4UX" to="ddau:19aTRzkPSmo" resolve="DiscreteDataConnector" />
-          <node concept="Cmt7Y" id="19aTRzkShXE" role="uz6Si">
-            <node concept="Cnhdc" id="19aTRzkShXF" role="Cncma">
-              <node concept="3clFbS" id="19aTRzkShXG" role="2VODD2">
-                <node concept="3clFbF" id="19aTRzkShXH" role="3cqZAp">
-                  <node concept="2OqwBi" id="19aTRzkShXI" role="3clFbG">
-                    <node concept="2OqwBi" id="19aTRzkShXJ" role="2Oq$k0">
-                      <node concept="Cj7Ep" id="19aTRzkShXK" role="2Oq$k0" />
-                      <node concept="3Tsc0h" id="19aTRzkShXL" role="2OqNvi">
-                        <ref role="3TtcxE" to="ddau:4csP6flST4F" />
-                      </node>
+    <node concept="3UNGvq" id="1b24ZrMefYT" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:6v3ZnYeNRw_" resolve="AnalogDataConnector" />
+      <node concept="tYCnQ" id="1b24ZrMefYU" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:6v3ZnYeNRw_" resolve="AnalogDataConnector" />
+        <node concept="Cmt7Y" id="1b24ZrMefYV" role="uz6Si">
+          <node concept="Cnhdc" id="1b24ZrMefYW" role="Cncma">
+            <node concept="3clFbS" id="1b24ZrMefYX" role="2VODD2">
+              <node concept="3clFbF" id="1b24ZrMefYY" role="3cqZAp">
+                <node concept="2OqwBi" id="1b24ZrMefYZ" role="3clFbG">
+                  <node concept="2OqwBi" id="1b24ZrMefZ0" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="1b24ZrMefZ1" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1b24ZrMefZ2" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
                     </node>
-                    <node concept="WFELt" id="19aTRzkShXM" role="2OqNvi">
-                      <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
-                    </node>
+                  </node>
+                  <node concept="WFELt" id="1b24ZrMefZ3" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="2h1dTh" id="19aTRzkShXN" role="Cn2iK">
-              <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="1b24ZrMefZ4" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="1b24ZrMefZ5" role="Cn6ar">
+            <property role="2h1i$Z" value="Add Content" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UNGvq" id="19aTRzkShXC" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:19aTRzkPSmo" resolve="DiscreteDataConnector" />
+      <node concept="tYCnQ" id="19aTRzkShXD" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:19aTRzkPSmo" resolve="DiscreteDataConnector" />
+        <node concept="Cmt7Y" id="19aTRzkShXE" role="uz6Si">
+          <node concept="Cnhdc" id="19aTRzkShXF" role="Cncma">
+            <node concept="3clFbS" id="19aTRzkShXG" role="2VODD2">
+              <node concept="3clFbF" id="19aTRzkShXH" role="3cqZAp">
+                <node concept="2OqwBi" id="19aTRzkShXI" role="3clFbG">
+                  <node concept="2OqwBi" id="19aTRzkShXJ" role="2Oq$k0">
+                    <node concept="Cj7Ep" id="19aTRzkShXK" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="19aTRzkShXL" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                    </node>
+                  </node>
+                  <node concept="WFELt" id="19aTRzkShXM" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="2h1dTh" id="4xcaXO71v9r" role="Cn6ar">
-              <property role="2h1i$Z" value="Add Content" />
-            </node>
+          </node>
+          <node concept="2h1dTh" id="19aTRzkShXN" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="4xcaXO71v9r" role="Cn6ar">
+            <property role="2h1i$Z" value="Add Content" />
           </node>
         </node>
       </node>
