@@ -344,7 +344,6 @@
         <property role="TrG5h" value="PowerDeviceNode" />
       </node>
     </node>
-    <node concept="UzEYP" id="6v3ZnYePJhG" role="UzTCv" />
     <node concept="UzEYP" id="6v3ZnYePJjb" role="UzTCv" />
     <node concept="UH0sd" id="6v3ZnYePJmf" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -559,7 +558,6 @@
         <ref role="2vxcI7" node="6v3ZnYePJUg" resolve="HardwareDataConnector" />
       </node>
     </node>
-    <node concept="UzEYP" id="6v3ZnYePKEO" role="UzTCv" />
     <node concept="UzEYP" id="2XrN4Luq31F" role="UzTCv" />
     <node concept="g8znO" id="2XrN4Luq374" role="UzTCv">
       <node concept="3SKdUq" id="2XrN4Luq376" role="3SKWNk">
@@ -606,9 +604,6 @@
         <property role="3SKdUp" value="End Automotive Concepts" />
       </node>
     </node>
-    <node concept="UzEYP" id="2XrN4Luq39O" role="UzTCv" />
-    <node concept="UzEYP" id="6v3ZnYePKIh" role="UzTCv" />
-    <node concept="UzEYP" id="6v3ZnYePKLK" role="UzTCv" />
   </node>
 </model>
 
