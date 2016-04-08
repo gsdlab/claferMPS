@@ -255,11 +255,6 @@
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
     </language>
-    <language id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext">
-      <concept id="4985013377831073945" name="com.mbeddr.core.debug.blext.structure.InjectDebuggingInformationDebugger" flags="ng" index="B7EJo">
-        <property id="4985013377831074174" name="active" index="B7ECZ" />
-      </concept>
-    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
         <property id="1167245565795" name="severity" index="35gtTG" />
@@ -9319,9 +9314,6 @@
     <node concept="13hLZK" id="66uzewbvZuO" role="13h7CW">
       <node concept="3clFbS" id="66uzewbvZuP" role="2VODD2" />
     </node>
-  </node>
-  <node concept="B7EJo" id="FOUz5rTSj_">
-    <property role="B7ECZ" value="true" />
   </node>
   <node concept="13h7C7" id="4NFs2i9z1Kz">
     <ref role="13h7C2" to="mj1k:4NFs2i9z1Fs" resolve="IIncompleteParenthesis" />
