@@ -246,6 +246,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -307,8 +308,16 @@
             <node concept="Xl_RD" id="Myy5NE_Drz" role="2MkJ7o">
               <property role="Xl_RC" value="No deployment expected" />
             </node>
-            <node concept="1YBJjd" id="5QLkobVTqJM" role="2OEOjV">
-              <ref role="1YBMHb" node="4xcaXO71KUO" resolve="faConnector" />
+            <node concept="2OqwBi" id="6rKDqtxH_y5" role="2OEOjV">
+              <node concept="2OqwBi" id="6rKDqtxH$q9" role="2Oq$k0">
+                <node concept="1YBJjd" id="5QLkobVTqJM" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4xcaXO71KUO" resolve="faConnector" />
+                </node>
+                <node concept="3Tsc0h" id="6rKDqtxH$If" role="2OqNvi">
+                  <ref role="3TtcxE" to="ddau:6PK7EUlNtxk" />
+                </node>
+              </node>
+              <node concept="1uHKPH" id="6rKDqtxHAzp" role="2OqNvi" />
             </node>
           </node>
           <node concept="3clFbH" id="Myy5NE_CYI" role="3cqZAp" />
