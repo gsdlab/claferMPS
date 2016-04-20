@@ -695,6 +695,49 @@
   </node>
   <node concept="13h7C7" id="5tJ_MV8WhRJ">
     <ref role="13h7C2" to="mecy:bl22kSogWC" resolve="Clafer" />
+    <node concept="13i0hz" id="1IZzExQxh0G" role="13h7CS">
+      <property role="TrG5h" value="getTopLevelClafer" />
+      <node concept="3Tm1VV" id="1IZzExQxh0H" role="1B3o_S" />
+      <node concept="3clFbS" id="1IZzExQxh0I" role="3clF47">
+        <node concept="3clFbJ" id="1IZzExQxl67" role="3cqZAp">
+          <node concept="3clFbS" id="1IZzExQxl68" role="3clFbx">
+            <node concept="3cpWs6" id="1IZzExQxlyk" role="3cqZAp">
+              <node concept="13iPFW" id="1IZzExQxlyx" role="3cqZAk" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1IZzExQxlbl" role="3clFbw">
+            <node concept="13iPFW" id="1IZzExQxl6j" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1IZzExQxlvY" role="2OqNvi">
+              <ref role="37wK5l" node="4Z9rElqVMbP" resolve="isTopLevel" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="1IZzExQxl_2" role="9aQIa">
+            <node concept="3clFbS" id="1IZzExQxl_3" role="9aQI4">
+              <node concept="3cpWs6" id="1IZzExQxlBy" role="3cqZAp">
+                <node concept="2OqwBi" id="1IZzExQxm5x" role="3cqZAk">
+                  <node concept="2OqwBi" id="1IZzExQxlIK" role="2Oq$k0">
+                    <node concept="13iPFW" id="1IZzExQxlEd" role="2Oq$k0" />
+                    <node concept="2Xjw5R" id="1IZzExQxlVE" role="2OqNvi">
+                      <node concept="1xMEDy" id="1IZzExQxlVG" role="1xVPHs">
+                        <node concept="chp4Y" id="1IZzExQxlYv" role="ri$Ld">
+                          <ref role="cht4Q" to="mecy:bl22kSogWC" resolve="Clafer" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="1IZzExQxmtg" role="2OqNvi">
+                    <ref role="37wK5l" node="1IZzExQxh0G" resolve="getTopLevelClafer" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1IZzExQxl64" role="3clF45">
+        <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
+      </node>
+    </node>
     <node concept="13i0hz" id="1JcbkuzdZvM" role="13h7CS">
       <property role="TrG5h" value="ownedConstraints" />
       <node concept="3Tm1VV" id="1JcbkuzdZvN" role="1B3o_S" />
