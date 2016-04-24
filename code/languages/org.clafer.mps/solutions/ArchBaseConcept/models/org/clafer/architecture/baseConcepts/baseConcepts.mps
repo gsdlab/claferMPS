@@ -134,22 +134,6 @@
     <node concept="UH0sd" id="6v3ZnYePISy" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="Deployment" />
-      <node concept="UH0sd" id="2XrN4Lun72o" role="2vwUiP">
-        <property role="TrG5h" value="fa" />
-        <node concept="2K4itw" id="2XrN4Lun72s" role="2K4itM">
-          <node concept="ZpTZE" id="2XrN4Lun72u" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePIQm" resolve="FunctionalAnalysis" />
-          </node>
-        </node>
-      </node>
-      <node concept="UH0sd" id="2XrN4Lun72C" role="2vwUiP">
-        <property role="TrG5h" value="ht" />
-        <node concept="2K4itw" id="2XrN4Lun72J" role="2K4itM">
-          <node concept="ZpTZE" id="2XrN4Lun72L" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePIQE" resolve="HardwareArchitecture" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="UzEYP" id="6v3ZnYePISP" role="UzTCv" />
     <node concept="UH0sd" id="6v3ZnYePITx" role="UzTCv">

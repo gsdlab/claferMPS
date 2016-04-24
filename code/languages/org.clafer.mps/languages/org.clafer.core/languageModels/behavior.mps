@@ -1120,6 +1120,53 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1akC2iGAXaZ" role="13h7CS">
+      <property role="TrG5h" value="hasSuperClafer" />
+      <node concept="3Tm1VV" id="1akC2iGAXb0" role="1B3o_S" />
+      <node concept="10P_77" id="1akC2iGB0If" role="3clF45" />
+      <node concept="3clFbS" id="1akC2iGAXb2" role="3clF47">
+        <node concept="3clFbF" id="1akC2iGB0IG" role="3cqZAp">
+          <node concept="2OqwBi" id="1akC2iGB0XF" role="3clFbG">
+            <node concept="BsUDl" id="1akC2iGB0IF" role="2Oq$k0">
+              <ref role="37wK5l" node="1akC2iGAj$t" resolve="allSuperClafers" />
+            </node>
+            <node concept="3JPx81" id="1akC2iGB1OL" role="2OqNvi">
+              <node concept="37vLTw" id="1akC2iGB1Q9" role="25WWJ7">
+                <ref role="3cqZAo" node="1akC2iGB0Ij" resolve="clafer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1akC2iGB0Ij" role="3clF46">
+        <property role="TrG5h" value="clafer" />
+        <node concept="3Tqbb2" id="1akC2iGB0Ii" role="1tU5fm">
+          <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4V3XbAxN52J" role="13h7CS">
+      <property role="TrG5h" value="superClafer" />
+      <node concept="3Tm1VV" id="4V3XbAxN52K" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4V3XbAxN5V0" role="3clF45">
+        <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
+      </node>
+      <node concept="3clFbS" id="4V3XbAxN52M" role="3clF47">
+        <node concept="3clFbF" id="4V3XbAxN52N" role="3cqZAp">
+          <node concept="2OqwBi" id="4V3XbAxN5AB" role="3clFbG">
+            <node concept="2OqwBi" id="4V3XbAxN52Q" role="2Oq$k0">
+              <node concept="13iPFW" id="4V3XbAxN52R" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4V3XbAxN52S" role="2OqNvi">
+                <ref role="3Tt5mk" to="mecy:5tJ_MV8UPMG" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="4V3XbAxN5Qz" role="2OqNvi">
+              <ref role="3Tt5mk" to="mecy:5tJ_MV8UPMD" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="1akC2iGAj$t" role="13h7CS">
       <property role="TrG5h" value="allSuperClafers" />
       <node concept="3Tm1VV" id="1akC2iGAj$u" role="1B3o_S" />
@@ -1352,53 +1399,6 @@
       </node>
       <node concept="3Tm1VV" id="6BTUndBMhe9" role="1B3o_S" />
     </node>
-    <node concept="13i0hz" id="1akC2iGAXaZ" role="13h7CS">
-      <property role="TrG5h" value="hasSuperClafer" />
-      <node concept="3Tm1VV" id="1akC2iGAXb0" role="1B3o_S" />
-      <node concept="10P_77" id="1akC2iGB0If" role="3clF45" />
-      <node concept="3clFbS" id="1akC2iGAXb2" role="3clF47">
-        <node concept="3clFbF" id="1akC2iGB0IG" role="3cqZAp">
-          <node concept="2OqwBi" id="1akC2iGB0XF" role="3clFbG">
-            <node concept="BsUDl" id="1akC2iGB0IF" role="2Oq$k0">
-              <ref role="37wK5l" node="1akC2iGAj$t" resolve="allSuperClafers" />
-            </node>
-            <node concept="3JPx81" id="1akC2iGB1OL" role="2OqNvi">
-              <node concept="37vLTw" id="1akC2iGB1Q9" role="25WWJ7">
-                <ref role="3cqZAo" node="1akC2iGB0Ij" resolve="clafer" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="1akC2iGB0Ij" role="3clF46">
-        <property role="TrG5h" value="clafer" />
-        <node concept="3Tqbb2" id="1akC2iGB0Ii" role="1tU5fm">
-          <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="4V3XbAxN52J" role="13h7CS">
-      <property role="TrG5h" value="superClafer" />
-      <node concept="3Tm1VV" id="4V3XbAxN52K" role="1B3o_S" />
-      <node concept="3Tqbb2" id="4V3XbAxN5V0" role="3clF45">
-        <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
-      </node>
-      <node concept="3clFbS" id="4V3XbAxN52M" role="3clF47">
-        <node concept="3clFbF" id="4V3XbAxN52N" role="3cqZAp">
-          <node concept="2OqwBi" id="4V3XbAxN5AB" role="3clFbG">
-            <node concept="2OqwBi" id="4V3XbAxN52Q" role="2Oq$k0">
-              <node concept="13iPFW" id="4V3XbAxN52R" role="2Oq$k0" />
-              <node concept="3TrEf2" id="4V3XbAxN52S" role="2OqNvi">
-                <ref role="3Tt5mk" to="mecy:5tJ_MV8UPMG" />
-              </node>
-            </node>
-            <node concept="3TrEf2" id="4V3XbAxN5Qz" role="2OqNvi">
-              <ref role="3Tt5mk" to="mecy:5tJ_MV8UPMD" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="13i0hz" id="4Z9rElr$awl" role="13h7CS">
       <property role="TrG5h" value="effectiveSuperClafer" />
       <ref role="13i0hy" node="4Z9rElr$2gr" resolve="effectiveSuperClafer" />
@@ -1472,7 +1472,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="4V3XbAxN1$H" role="3clF47">
-        <node concept="3clFbH" id="1QRywDj8JO9" role="3cqZAp" />
         <node concept="3clFbJ" id="4V3XbAxN1QN" role="3cqZAp">
           <node concept="3clFbS" id="4V3XbAxN1QO" role="3clFbx">
             <node concept="3cpWs6" id="4V3XbAxN3ss" role="3cqZAp">

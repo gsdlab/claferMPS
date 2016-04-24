@@ -137,5 +137,31 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="2ejvBnQ8WW$">
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
+    <ref role="WuzLi" to="ddau:5vC4lYRiFha" resolve="DeploymentFAExpr" />
+    <node concept="11bSqf" id="2ejvBnQ8WW_" role="11c4hB">
+      <node concept="3clFbS" id="2ejvBnQ8WWA" role="2VODD2">
+        <node concept="lc7rE" id="2ejvBnQ8XxP" role="3cqZAp">
+          <node concept="la8eA" id="2ejvBnQ8Xy3" role="lcghm">
+            <property role="lacIc" value="fa" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2ejvBnQbbPl">
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
+    <ref role="WuzLi" to="ddau:2ejvBnQb9h8" resolve="DeploymentHAExpr" />
+    <node concept="11bSqf" id="2ejvBnQbbPm" role="11c4hB">
+      <node concept="3clFbS" id="2ejvBnQbbPn" role="2VODD2">
+        <node concept="lc7rE" id="2ejvBnQbbPY" role="3cqZAp">
+          <node concept="la8eA" id="2ejvBnQbbPZ" role="lcghm">
+            <property role="lacIc" value="ha" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

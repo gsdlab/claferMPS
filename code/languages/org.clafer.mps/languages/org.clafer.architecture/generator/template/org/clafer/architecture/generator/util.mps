@@ -533,7 +533,7 @@
           <node concept="9aQIb" id="4NBd3iZt1Gb" role="9aQIa">
             <node concept="3clFbS" id="4NBd3iZt1Gc" role="9aQI4">
               <node concept="34ab3g" id="4NBd3iZq3An" role="3cqZAp">
-                <property role="35gtTG" value="error" />
+                <property role="35gtTG" value="warn" />
                 <node concept="3cpWs3" id="4NBd3iZq3Ex" role="34bqiv">
                   <node concept="37vLTw" id="4NBd3iZq3Gd" role="3uHU7w">
                     <ref role="3cqZAo" node="7$28d_YsbBL" resolve="moduleName" />
@@ -682,7 +682,7 @@
                 </node>
                 <node concept="1mIQ4w" id="32wpDnehaP2" role="2OqNvi">
                   <node concept="chp4Y" id="32wpDnehaRA" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:32wpDneh2zd" resolve="IHaveNotSuperClafer" />
+                    <ref role="cht4Q" to="ddau:32wpDneh2zd" resolve="IHaveNotMetaClafer" />
                   </node>
                 </node>
               </node>
@@ -952,7 +952,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6PK7EUlXhCx" role="jymVt" />
-    <node concept="2tJIrI" id="6PK7EUlYLRV" role="jymVt" />
     <node concept="3Tm1VV" id="3T8tWlk9fMN" role="1B3o_S" />
   </node>
 </model>

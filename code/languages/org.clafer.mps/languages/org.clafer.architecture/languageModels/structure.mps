@@ -217,7 +217,7 @@
   <node concept="1TIwiD" id="6Fa64hUc88i">
     <property role="TrG5h" value="Deployment" />
     <property role="34LRSv" value="Deployment" />
-    <property role="3GE5qa" value="HardwareArchitecture" />
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
     <property role="1pbfSe" value="453338538" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="6Fa64hUppo2" role="1TKVEi">
@@ -228,7 +228,7 @@
     </node>
     <node concept="1TJgyj" id="6Fa64hUppo4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="ht" />
+      <property role="20kJfa" value="ha" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7DuSdC$$2dR" resolve="HardwareArchitecture" />
     </node>
@@ -995,6 +995,40 @@
     <node concept="PrWs8" id="1b24ZrMcSWT" role="PzmwI">
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1IZzExQyV$f">
+    <property role="1pbfSe" value="1840560201" />
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
+    <property role="TrG5h" value="Deploy" />
+    <property role="34LRSv" value="Deploy" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="1TJgyj" id="1IZzExQz2Ap" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="haElements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
+    </node>
+    <node concept="PrWs8" id="1IZzExQ_oro" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="1IZzExQD58w" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="faElement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5vC4lYRiFha">
+    <property role="1pbfSe" value="254985641" />
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
+    <property role="TrG5h" value="DeploymentFAExpr" />
+    <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
+  </node>
+  <node concept="1TIwiD" id="2ejvBnQb9h8">
+    <property role="1pbfSe" value="432018109" />
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
+    <property role="TrG5h" value="DeploymentHAExpr" />
+    <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
   </node>
 </model>
 

@@ -847,7 +847,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="6Fa64hUoamX">
-    <property role="3GE5qa" value="HardwareArchitecture" />
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
     <ref role="1XX52x" to="ddau:6Fa64hUc88i" resolve="Deployment" />
     <node concept="3EZMnI" id="6Fa64hUoaAm" role="2wV5jI">
       <node concept="PMmxH" id="7ErTnvEO28m" role="3EZMnx">
@@ -3931,7 +3931,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4jIombYkEfy">
-    <property role="3GE5qa" value="HardwareArchitecture" />
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
     <ref role="1XX52x" to="ddau:6Fa64hUc88i" resolve="Deployment" />
     <node concept="2aJ2om" id="4jIombYkEf$" role="CpUAK">
       <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
@@ -6763,7 +6763,6 @@
   <node concept="325Ffw" id="5ipUCoiPHAz">
     <property role="3GE5qa" value="actionMaps" />
     <property role="TrG5h" value="ArchElement_newLine" />
-    <ref role="1chiOs" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="2PxR9H" id="5ipUCoiPHAT" role="2QnnpI">
       <node concept="2Py5lD" id="5ipUCoiPHAU" role="2PyaAO">
         <property role="2PWKIB" value="ctrl" />
@@ -9902,6 +9901,35 @@
     <ref role="1XX52x" to="ddau:1b24ZrMcSWM" resolve="DeployedFromExpr" />
     <node concept="PMmxH" id="1b24ZrMcSXx" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1IZzExQz2AY">
+    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
+    <ref role="1XX52x" to="ddau:1IZzExQyV$f" resolve="Deploy" />
+    <node concept="3EZMnI" id="1IZzExQz2BB" role="2wV5jI">
+      <node concept="3F0ifn" id="1IZzExQz2BD" role="3EZMnx">
+        <property role="3F0ifm" value="Deploy" />
+      </node>
+      <node concept="1iCGBv" id="1IZzExQD5aH" role="3EZMnx">
+        <property role="1$x2rV" value="no FA" />
+        <ref role="1NtTu8" to="ddau:1IZzExQD58w" />
+        <node concept="1sVBvm" id="1IZzExQD5aJ" role="1sWHZn">
+          <node concept="3F0A7n" id="1IZzExQD5bF" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1IZzExQz2Cn" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+      <node concept="3F2HdR" id="1IZzExQz2CM" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="ddau:1IZzExQz2Ap" />
+        <ref role="34QXea" node="5ipUCoiPHAz" resolve="ArchElement_newLine" />
+        <node concept="l2Vlx" id="1IZzExQz2CO" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="1IZzExQz2BE" role="2iSdaV" />
     </node>
   </node>
 </model>
