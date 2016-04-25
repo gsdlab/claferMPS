@@ -883,7 +883,7 @@
     <property role="1pbfSe" value="559392733" />
     <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="TrG5h" value="BusType" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyi" id="5LUy9Q2bsY9" role="1TKVEl">
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="3URpncZ4sjK" resolve="BusTypeEnum" />

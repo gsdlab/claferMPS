@@ -108,6 +108,8 @@
         <child id="1158701448518" name="setupFunction" index="37ZfLb" />
       </concept>
       <concept id="1158701162220" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction" flags="in" index="37Y9Zx" />
+      <concept id="1154465102724" name="jetbrains.mps.lang.actions.structure.NodeSubstitutePreconditionFunction" flags="in" index="3buRE8" />
+      <concept id="1154465273778" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_parentNode" flags="nn" index="3bvxqY" />
       <concept id="1154622616118" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstitutePreconditionFunction" flags="in" index="3kRJcU" />
       <concept id="5584396657084912703" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" flags="nn" index="1r4Lsj" />
       <concept id="5584396657084920670" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_EnclosingNode" flags="nn" index="1r4N1M" />
@@ -117,6 +119,7 @@
       <concept id="1112058030570" name="jetbrains.mps.lang.actions.structure.NodeSubstituteActionsBuilder" flags="ig" index="3FOIzC">
         <reference id="1112058088712" name="applicableConcept" index="3FOWKa" />
         <child id="1177324142645" name="part" index="tZc4B" />
+        <child id="1154465386371" name="precondition" index="3bvWUf" />
       </concept>
       <concept id="1138079221458" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" flags="ig" index="3UNGvq">
         <reference id="1138079221462" name="applicableConcept" index="3UNGvu" />
@@ -1514,6 +1517,20 @@
                 <node concept="3HcIyF" id="5LUy9Q2dNmF" role="3clFbG">
                   <ref role="3HcIyG" to="ddau:3URpncZ4sjK" resolve="BusTypeEnum" />
                   <node concept="3HdYuk" id="5LUy9Q2dNpc" role="3Hdvt7" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3buRE8" id="4O6kAt6gEZc" role="3bvWUf">
+        <node concept="3clFbS" id="4O6kAt6gEZd" role="2VODD2">
+          <node concept="3clFbF" id="4O6kAt6gF59" role="3cqZAp">
+            <node concept="2OqwBi" id="4O6kAt6gF6U" role="3clFbG">
+              <node concept="3bvxqY" id="4O6kAt6gF58" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="4O6kAt6gFb7" role="2OqNvi">
+                <node concept="chp4Y" id="4O6kAt6gFdd" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
                 </node>
               </node>
             </node>

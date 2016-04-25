@@ -953,15 +953,14 @@
                     <node concept="37vLTw" id="1IZzExQx3L9" role="2Oq$k0">
                       <ref role="3cqZAo" node="1IZzExQwQth" resolve="topLevelClafer" />
                     </node>
-                    <node concept="2qgKlT" id="1IZzExQx3WL" role="2OqNvi">
-                      <ref role="37wK5l" to="f5p9:4Z9rElryOLr" resolve="allNonRedefinedChildren" />
+                    <node concept="2qgKlT" id="4O6kAt69XDF" role="2OqNvi">
+                      <ref role="37wK5l" to="f5p9:2ejvBnQp2sq" resolve="allDescendants" />
                     </node>
                   </node>
                   <node concept="ANE8D" id="1IZzExQx4Kb" role="2OqNvi" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1IZzExQy5F7" role="3cqZAp" />
             <node concept="3clFbJ" id="1IZzExQy5Nk" role="3cqZAp">
               <node concept="3clFbS" id="1IZzExQy5Nm" role="3clFbx">
                 <node concept="3clFbF" id="7weVfxlvHa5" role="3cqZAp">
