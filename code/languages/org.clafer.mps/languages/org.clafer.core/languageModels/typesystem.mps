@@ -1105,7 +1105,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="3WlRoWfNGwj">
-    <property role="TrG5h" value="typeof_RefExpr" />
+    <property role="TrG5h" value="typeof_DrefExpr" />
     <property role="3GE5qa" value="expr" />
     <node concept="3clFbS" id="3WlRoWfNGwk" role="18ibNy">
       <node concept="3cpWs8" id="3SHz3PXXoA3" role="3cqZAp">
@@ -1196,7 +1196,7 @@
     </node>
     <node concept="1YaCAy" id="3WlRoWfNGwm" role="1YuTPh">
       <property role="TrG5h" value="re" />
-      <ref role="1YaFvo" to="mecy:3WlRoWfNEG9" resolve="RefExpr" />
+      <ref role="1YaFvo" to="mecy:3WlRoWfNEG9" resolve="DrefExpr" />
     </node>
   </node>
   <node concept="1YbPZF" id="3WlRoWfPCkZ">

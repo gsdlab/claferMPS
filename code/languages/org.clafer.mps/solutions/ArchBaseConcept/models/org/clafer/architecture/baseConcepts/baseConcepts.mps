@@ -62,6 +62,7 @@
         <child id="5675649033537919505" name="targetType" index="3J4IUC" />
       </concept>
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
+      <concept id="4545783005415648009" name="org.clafer.core.structure.DrefExpr" flags="ng" index="KQRq6" />
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
         <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
@@ -251,31 +252,40 @@
         <node concept="2vxuzR" id="6v3ZnYePJe2" role="2vwUiP">
           <node concept="LkG4F" id="6v3ZnYePLto" role="3WnoGb">
             <node concept="2BPB98" id="6v3ZnYePLuU" role="3TlMhJ">
-              <node concept="2qmXGp" id="6v3ZnYePLxF" role="1_9fRO">
-                <node concept="2ZqYGZ" id="6v3ZnYePLyC" role="1ESnxz">
-                  <ref role="2ZqYFj" node="6v3ZnYePK1g" resolve="endpoint" />
-                </node>
-                <node concept="ZpONE" id="6v3ZnYePLwF" role="1_9fRO">
-                  <ref role="ZpOSt" node="6v3ZnYePJ9X" resolve="deployedTo" />
+              <node concept="2qmXGp" id="4O6kAt65YtE" role="1_9fRO">
+                <node concept="KQRq6" id="4O6kAt65YuA" role="1ESnxz" />
+                <node concept="2qmXGp" id="6v3ZnYePLxF" role="1_9fRO">
+                  <node concept="2ZqYGZ" id="6v3ZnYePLyC" role="1ESnxz">
+                    <ref role="2ZqYFj" node="6v3ZnYePK1g" resolve="endpoint" />
+                  </node>
+                  <node concept="ZpONE" id="6v3ZnYePLwF" role="1_9fRO">
+                    <ref role="ZpOSt" node="6v3ZnYePJ9X" resolve="deployedTo" />
+                  </node>
                 </node>
               </node>
             </node>
             <node concept="2BPB98" id="6v3ZnYePLnK" role="3TlMhI">
               <node concept="vgzv4" id="6v3ZnYePLpu" role="1_9fRO">
-                <node concept="2qmXGp" id="6v3ZnYePLqK" role="3TlMhJ">
-                  <node concept="2ZqYGZ" id="6v3ZnYePLrj" role="1ESnxz">
-                    <ref role="2ZqYFj" node="6v3ZnYePIW2" resolve="deployedTo" />
-                  </node>
-                  <node concept="ZpONE" id="6v3ZnYePLqc" role="1_9fRO">
-                    <ref role="ZpOSt" node="6v3ZnYePJ9l" resolve="receiver" />
+                <node concept="2qmXGp" id="4O6kAt65Ys3" role="3TlMhJ">
+                  <node concept="KQRq6" id="4O6kAt65YsM" role="1ESnxz" />
+                  <node concept="2qmXGp" id="6v3ZnYePLqK" role="1_9fRO">
+                    <node concept="2ZqYGZ" id="6v3ZnYePLrj" role="1ESnxz">
+                      <ref role="2ZqYFj" node="6v3ZnYePIW2" resolve="deployedTo" />
+                    </node>
+                    <node concept="ZpONE" id="6v3ZnYePLqc" role="1_9fRO">
+                      <ref role="ZpOSt" node="6v3ZnYePJ9l" resolve="receiver" />
+                    </node>
                   </node>
                 </node>
-                <node concept="2qmXGp" id="6v3ZnYePLo6" role="3TlMhI">
-                  <node concept="2ZqYGZ" id="6v3ZnYePLoq" role="1ESnxz">
-                    <ref role="2ZqYFj" node="6v3ZnYePIW2" resolve="deployedTo" />
-                  </node>
-                  <node concept="ZpONE" id="6v3ZnYePLnW" role="1_9fRO">
-                    <ref role="ZpOSt" node="6v3ZnYePJ8Z" resolve="sender" />
+                <node concept="2qmXGp" id="4O6kAt65Yr4" role="3TlMhI">
+                  <node concept="KQRq6" id="4O6kAt65YrI" role="1ESnxz" />
+                  <node concept="2qmXGp" id="6v3ZnYePLo6" role="1_9fRO">
+                    <node concept="2ZqYGZ" id="6v3ZnYePLoq" role="1ESnxz">
+                      <ref role="2ZqYFj" node="6v3ZnYePIW2" resolve="deployedTo" />
+                    </node>
+                    <node concept="ZpONE" id="6v3ZnYePLnW" role="1_9fRO">
+                      <ref role="ZpOSt" node="6v3ZnYePJ8Z" resolve="sender" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -293,20 +303,26 @@
           </node>
           <node concept="2BPB98" id="6v3ZnYePL_S" role="3TlMhI">
             <node concept="3TlM44" id="6v3ZnYePLBC" role="1_9fRO">
-              <node concept="2qmXGp" id="6v3ZnYePLCV" role="3TlMhJ">
-                <node concept="2ZqYGZ" id="6v3ZnYePLDv" role="1ESnxz">
-                  <ref role="2ZqYFj" node="6v3ZnYePIW2" resolve="deployedTo" />
-                </node>
-                <node concept="ZpONE" id="6v3ZnYePLCn" role="1_9fRO">
-                  <ref role="ZpOSt" node="6v3ZnYePJ9l" resolve="receiver" />
+              <node concept="2qmXGp" id="4O6kAt65Ywv" role="3TlMhJ">
+                <node concept="KQRq6" id="4O6kAt65Yx5" role="1ESnxz" />
+                <node concept="2qmXGp" id="6v3ZnYePLCV" role="1_9fRO">
+                  <node concept="2ZqYGZ" id="6v3ZnYePLDv" role="1ESnxz">
+                    <ref role="2ZqYFj" node="6v3ZnYePIW2" resolve="deployedTo" />
+                  </node>
+                  <node concept="ZpONE" id="6v3ZnYePLCn" role="1_9fRO">
+                    <ref role="ZpOSt" node="6v3ZnYePJ9l" resolve="receiver" />
+                  </node>
                 </node>
               </node>
-              <node concept="2qmXGp" id="6v3ZnYePLAe" role="3TlMhI">
-                <node concept="2ZqYGZ" id="6v3ZnYePLAy" role="1ESnxz">
-                  <ref role="2ZqYFj" node="6v3ZnYePIW2" resolve="deployedTo" />
-                </node>
-                <node concept="ZpONE" id="6v3ZnYePLA4" role="1_9fRO">
-                  <ref role="ZpOSt" node="6v3ZnYePJ8Z" resolve="sender" />
+              <node concept="2qmXGp" id="4O6kAt65Yvx" role="3TlMhI">
+                <node concept="KQRq6" id="4O6kAt65Yw2" role="1ESnxz" />
+                <node concept="2qmXGp" id="6v3ZnYePLAe" role="1_9fRO">
+                  <node concept="2ZqYGZ" id="6v3ZnYePLAy" role="1ESnxz">
+                    <ref role="2ZqYFj" node="6v3ZnYePIW2" resolve="deployedTo" />
+                  </node>
+                  <node concept="ZpONE" id="6v3ZnYePLA4" role="1_9fRO">
+                    <ref role="ZpOSt" node="6v3ZnYePJ8Z" resolve="sender" />
+                  </node>
                 </node>
               </node>
             </node>
