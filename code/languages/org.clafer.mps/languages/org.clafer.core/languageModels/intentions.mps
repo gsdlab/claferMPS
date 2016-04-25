@@ -143,7 +143,7 @@
       <node concept="3clFbS" id="4kWdVQTp6U$" role="2VODD2">
         <node concept="3clFbF" id="4kWdVQTp7lF" role="3cqZAp">
           <node concept="Xl_RD" id="4kWdVQTp7lE" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality XOR" />
+            <property role="Xl_RC" value="Xor (Exactly One Of)" />
           </node>
         </node>
       </node>
@@ -208,7 +208,7 @@
       <node concept="3clFbS" id="7ZQ7wlxmA$g" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxmChS" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxmChR" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality or" />
+            <property role="Xl_RC" value="Or (at Least One Of)" />
           </node>
         </node>
       </node>
@@ -243,7 +243,7 @@
       <node concept="3clFbS" id="7ZQ7wlxn2e7" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxn2Hh" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxn2Hg" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality MUX" />
+            <property role="Xl_RC" value="Mux (at Most One Of)" />
           </node>
         </node>
       </node>
@@ -278,7 +278,7 @@
       <node concept="3clFbS" id="7ZQ7wlxncJu" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxneQR" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxneQQ" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality OPT" />
+            <property role="Xl_RC" value="Opt (Any Number Of)" />
           </node>
         </node>
       </node>
@@ -313,7 +313,7 @@
       <node concept="3clFbS" id="7ZQ7wlxryc7" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxr$9g" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxr$9f" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality Num" />
+            <property role="Xl_RC" value="Num (a Specific Number Of)" />
           </node>
         </node>
       </node>

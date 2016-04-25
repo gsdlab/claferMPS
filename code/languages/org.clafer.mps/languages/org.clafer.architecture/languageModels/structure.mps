@@ -260,6 +260,7 @@
     <property role="TrG5h" value="RefToDevice" />
     <property role="34LRSv" value="Reference" />
     <property role="1pbfSe" value="2108473086" />
+    <property role="R4oN_" value="Reference to Device Node" />
     <ref role="1TJDcQ" node="4csP6fm34cz" resolve="DeviceNode" />
     <node concept="PrWs8" id="3EgEWBTGyP5" role="PzmwI">
       <ref role="PrY4T" node="5hA9WCIjVny" resolve="IHaveNotDeviceType" />
