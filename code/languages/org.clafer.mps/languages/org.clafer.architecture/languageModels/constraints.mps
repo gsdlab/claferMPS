@@ -4725,5 +4725,77 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6oTHSFINJfv">
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
+    <ref role="1M2myG" to="ddau:6oTHSFINJek" resolve="BusExpr" />
+    <node concept="nKS2y" id="6oTHSFINJfz" role="1MLUbF">
+      <node concept="3clFbS" id="6oTHSFINJf$" role="2VODD2">
+        <node concept="3cpWs8" id="6oTHSFINJjd" role="3cqZAp">
+          <node concept="3cpWsn" id="6oTHSFINJje" role="3cpWs9">
+            <property role="TrG5h" value="leftOfDotExpression" />
+            <node concept="3Tqbb2" id="6oTHSFINJjf" role="1tU5fm">
+              <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+            </node>
+            <node concept="2OqwBi" id="6oTHSFINJjg" role="33vP2m">
+              <node concept="1PxgMI" id="6oTHSFINJjh" role="2Oq$k0">
+                <ref role="1PxNhF" to="mj1k:40tXLnqhyKc" resolve="GenericDotExpression" />
+                <node concept="nLn13" id="6oTHSFINJji" role="1PxMeX" />
+              </node>
+              <node concept="3TrEf2" id="6oTHSFINJjj" role="2OqNvi">
+                <ref role="3Tt5mk" to="mj1k:6iIoqg1yDLg" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6oTHSFINJjk" role="3cqZAp">
+          <node concept="3cpWsn" id="6oTHSFINJjl" role="3cpWs9">
+            <property role="TrG5h" value="leftExprType" />
+            <node concept="3Tqbb2" id="6oTHSFINJjm" role="1tU5fm" />
+            <node concept="2OqwBi" id="6oTHSFINJjn" role="33vP2m">
+              <node concept="37vLTw" id="6oTHSFINJjo" role="2Oq$k0">
+                <ref role="3cqZAo" node="6oTHSFINJje" resolve="leftOfDotExpression" />
+              </node>
+              <node concept="3JvlWi" id="6oTHSFINJjp" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6oTHSFINJjq" role="3cqZAp" />
+        <node concept="3cpWs6" id="6oTHSFINJjr" role="3cqZAp">
+          <node concept="1Wc70l" id="6oTHSFINJjs" role="3cqZAk">
+            <node concept="2OqwBi" id="6oTHSFINJjt" role="3uHU7B">
+              <node concept="37vLTw" id="6oTHSFINJju" role="2Oq$k0">
+                <ref role="3cqZAo" node="6oTHSFINJjl" resolve="leftExprType" />
+              </node>
+              <node concept="1mIQ4w" id="6oTHSFINJjv" role="2OqNvi">
+                <node concept="chp4Y" id="6oTHSFINJjw" role="cj9EA">
+                  <ref role="cht4Q" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
+                </node>
+              </node>
+            </node>
+            <node concept="1eOMI4" id="6oTHSFINJjx" role="3uHU7w">
+              <node concept="2OqwBi" id="6oTHSFINJjy" role="1eOMHV">
+                <node concept="2OqwBi" id="6oTHSFINJjz" role="2Oq$k0">
+                  <node concept="1PxgMI" id="6oTHSFINJj$" role="2Oq$k0">
+                    <ref role="1PxNhF" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
+                    <node concept="37vLTw" id="6oTHSFINJj_" role="1PxMeX">
+                      <ref role="3cqZAo" node="6oTHSFINJjl" resolve="leftExprType" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="6oTHSFINJjA" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mecy:2uk4icoWSVa" />
+                  </node>
+                </node>
+                <node concept="1mIQ4w" id="6oTHSFINJjB" role="2OqNvi">
+                  <node concept="chp4Y" id="6oTHSFINJn_" role="cj9EA">
+                    <ref role="cht4Q" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

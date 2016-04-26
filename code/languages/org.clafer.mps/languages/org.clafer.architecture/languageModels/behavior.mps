@@ -5357,5 +5357,24 @@
       <node concept="3clFbS" id="1IZzExQ_n1r" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="6oTHSFINJEA">
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
+    <ref role="13h7C2" to="ddau:6oTHSFINJek" resolve="BusExpr" />
+    <node concept="13hLZK" id="6oTHSFINJEB" role="13h7CW">
+      <node concept="3clFbS" id="6oTHSFINJEC" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6oTHSFINJEO" role="13h7CS">
+      <property role="TrG5h" value="getTarget" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <node concept="3clFbS" id="6oTHSFINJEQ" role="3clF47">
+        <node concept="3clFbF" id="6oTHSFINJFp" role="3cqZAp">
+          <node concept="10Nm6u" id="6oTHSFINJFo" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="6oTHSFINJFi" role="3clF45" />
+      <node concept="3Tm1VV" id="6oTHSFINJFj" role="1B3o_S" />
+    </node>
+  </node>
 </model>
 

@@ -756,6 +756,7 @@
         </node>
       </node>
       <node concept="3EZMnI" id="4IooPifTJb0" role="3EZMnx">
+        <ref role="34QXea" node="5ipUCoiPHAz" resolve="ArchElement_newLine" />
         <node concept="VPM3Z" id="4IooPifTJb2" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
@@ -6772,7 +6773,17 @@
         <node concept="3clFbS" id="5ipUCoiPHAW" role="2VODD2">
           <node concept="3clFbF" id="5ipUCoiPHIl" role="3cqZAp">
             <node concept="2OqwBi" id="5ipUCoiPIFk" role="3clFbG">
-              <node concept="0GJ7k" id="5ipUCoiPI$Y" role="2Oq$k0" />
+              <node concept="2OqwBi" id="6oTHSFINhKd" role="2Oq$k0">
+                <node concept="0GJ7k" id="5ipUCoiPI$Y" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="6oTHSFINhOE" role="2OqNvi">
+                  <node concept="1xMEDy" id="6oTHSFINhOG" role="1xVPHs">
+                    <node concept="chp4Y" id="6oTHSFINhQ8" role="ri$Ld">
+                      <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="6oTHSFINhRm" role="1xVPHs" />
+                </node>
+              </node>
               <node concept="2DeJnS" id="5ipUCoiPJ02" role="2OqNvi">
                 <ref role="1$SOMD" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
               </node>
@@ -9930,6 +9941,13 @@
         <node concept="l2Vlx" id="1IZzExQz2CO" role="2czzBx" />
       </node>
       <node concept="l2Vlx" id="1IZzExQz2BE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6oTHSFINJeK">
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
+    <ref role="1XX52x" to="ddau:6oTHSFINJek" resolve="BusExpr" />
+    <node concept="PMmxH" id="6oTHSFINJf4" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

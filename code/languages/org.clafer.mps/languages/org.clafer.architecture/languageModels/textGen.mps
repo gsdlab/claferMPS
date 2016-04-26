@@ -163,5 +163,18 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6oTHSFINMSc">
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
+    <ref role="WuzLi" to="ddau:6oTHSFINJek" resolve="BusExpr" />
+    <node concept="11bSqf" id="6oTHSFINMSd" role="11c4hB">
+      <node concept="3clFbS" id="6oTHSFINMSe" role="2VODD2">
+        <node concept="lc7rE" id="6oTHSFINMS$" role="3cqZAp">
+          <node concept="la8eA" id="6oTHSFINMSO" role="lcghm">
+            <property role="lacIc" value="bus" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

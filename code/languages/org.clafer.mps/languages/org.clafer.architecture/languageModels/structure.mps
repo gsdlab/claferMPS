@@ -1031,5 +1031,15 @@
     <property role="TrG5h" value="DeploymentHAExpr" />
     <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
   </node>
+  <node concept="1TIwiD" id="6oTHSFINJek">
+    <property role="1pbfSe" value="1426631454" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
+    <property role="TrG5h" value="BusExpr" />
+    <property role="34LRSv" value="bus" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6oTHSFINJel" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
 </model>
 
