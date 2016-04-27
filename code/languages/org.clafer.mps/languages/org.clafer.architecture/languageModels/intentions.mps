@@ -611,7 +611,6 @@
   <node concept="2S6QgY" id="7ZQ7wlxn2e5">
     <property role="TrG5h" value="makeGCardMux" />
     <property role="3GE5qa" value="GroupCard" />
-    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="2S6ZIM" id="7ZQ7wlxn2e6" role="2ZfVej">
       <node concept="3clFbS" id="7ZQ7wlxn2e7" role="2VODD2">
@@ -646,7 +645,6 @@
   <node concept="2S6QgY" id="7ZQ7wlxryc5">
     <property role="TrG5h" value="makeGCardNum" />
     <property role="3GE5qa" value="GroupCard" />
-    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="2S6ZIM" id="7ZQ7wlxryc6" role="2ZfVej">
       <node concept="3clFbS" id="7ZQ7wlxryc7" role="2VODD2">
@@ -681,7 +679,6 @@
   <node concept="2S6QgY" id="7ZQ7wlxncJs">
     <property role="TrG5h" value="makeGCardOpt" />
     <property role="3GE5qa" value="GroupCard" />
-    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="2S6ZIM" id="7ZQ7wlxncJt" role="2ZfVej">
       <node concept="3clFbS" id="7ZQ7wlxncJu" role="2VODD2">
@@ -716,7 +713,6 @@
   <node concept="2S6QgY" id="7ZQ7wlxmA$e">
     <property role="TrG5h" value="makeGCardOr" />
     <property role="3GE5qa" value="GroupCard" />
-    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="2S6ZIM" id="7ZQ7wlxmA$f" role="2ZfVej">
       <node concept="3clFbS" id="7ZQ7wlxmA$g" role="2VODD2">
@@ -751,7 +747,6 @@
   <node concept="2S6QgY" id="4kWdVQTp6Uy">
     <property role="TrG5h" value="makeGCardXor" />
     <property role="3GE5qa" value="GroupCard" />
-    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
     <node concept="2S6ZIM" id="4kWdVQTp6Uz" role="2ZfVej">
       <node concept="3clFbS" id="4kWdVQTp6U$" role="2VODD2">
