@@ -26,6 +26,7 @@
       <concept id="952337070380373569" name="org.clafer.expr.structure.UnionCommaExpression" flags="ng" index="vgzv4" />
       <concept id="5763383285156533447" name="org.clafer.expr.structure.ParensExpression" flags="ng" index="2BPB98" />
       <concept id="4545783005389369785" name="org.clafer.expr.structure.EquivalenceExpression" flags="ng" index="La6KQ" />
+      <concept id="4545783005387853877" name="org.clafer.expr.structure.NoQuant" flags="ng" index="LcOQU" />
       <concept id="4545783005389986980" name="org.clafer.expr.structure.InExpression" flags="ng" index="LkG4F" />
       <concept id="7750719112880673844" name="org.clafer.expr.structure.QuantifiedExpression" flags="ng" index="2Yxk73">
         <property id="4545783005394410979" name="quant" index="LBO1G" />
@@ -295,12 +296,6 @@
       </node>
       <node concept="2vxuzR" id="6v3ZnYePJf3" role="2vwUiP">
         <node concept="La6KQ" id="6v3ZnYePLFr" role="3WnoGb">
-          <node concept="2qmXGp" id="6v3ZnYePLH1" role="3TlMhJ">
-            <node concept="2ZqYGZ" id="6v3ZnYePLHm" role="1ESnxz">
-              <ref role="2ZqYFj" node="6v3ZnYePJ9X" resolve="deployedTo" />
-            </node>
-            <node concept="2Zoh0E" id="6v3ZnYePLGQ" role="1_9fRO" />
-          </node>
           <node concept="2BPB98" id="6v3ZnYePL_S" role="3TlMhI">
             <node concept="3TlM44" id="6v3ZnYePLBC" role="1_9fRO">
               <node concept="2qmXGp" id="4O6kAt65Ywv" role="3TlMhJ">
@@ -325,6 +320,14 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="LcOQU" id="2OfqAZWhhQv" role="3TlMhJ">
+            <node concept="2qmXGp" id="6v3ZnYePLH1" role="1_9fRO">
+              <node concept="2ZqYGZ" id="6v3ZnYePLHm" role="1ESnxz">
+                <ref role="2ZqYFj" node="6v3ZnYePJ9X" resolve="deployedTo" />
+              </node>
+              <node concept="2Zoh0E" id="6v3ZnYePLGQ" role="1_9fRO" />
             </node>
           </node>
         </node>
