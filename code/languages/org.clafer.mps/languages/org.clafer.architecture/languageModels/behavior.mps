@@ -1013,7 +1013,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="dW_p57_nYI" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="dW_p57_iDr" role="3clF46">
         <property role="TrG5h" value="model" />

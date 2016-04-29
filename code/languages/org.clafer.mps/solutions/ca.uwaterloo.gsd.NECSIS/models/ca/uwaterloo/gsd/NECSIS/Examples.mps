@@ -65,6 +65,7 @@
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="3246930885570548101" name="isGenerated" index="3hCzJE" />
         <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
@@ -92,6 +93,7 @@
   <node concept="UzPwm" id="2FleQ6d99Ti">
     <property role="TrG5h" value="AutomotiveConcepts" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="UzEYP" id="2FleQ6d9pfK" role="UzTCv" />
     <node concept="UH0sd" id="1Rl2DKhZwrj" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -258,6 +260,7 @@
   <node concept="UzPwm" id="7oGBC4$RZYL">
     <property role="TrG5h" value="EAST_ADL" />
     <property role="3wNgFz" value="1000" />
+    <property role="3hCzJE" value="true" />
     <node concept="UzEYP" id="7oGBC4$SatT" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W8qY" role="UzTCv">
       <property role="2vxgol" value="true" />

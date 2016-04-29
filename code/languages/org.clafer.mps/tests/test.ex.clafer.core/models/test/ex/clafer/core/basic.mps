@@ -104,6 +104,7 @@
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="3246930885570548101" name="isGenerated" index="3hCzJE" />
         <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
@@ -144,6 +145,7 @@
   <node concept="UzPwm" id="2uk4icnJ7pB">
     <property role="TrG5h" value="BasicStructures" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="UH0sd" id="2uk4icnJ7r7" role="UzTCv">
       <property role="TrG5h" value="C1" />
       <node concept="1z9TsT" id="3WlRoWetE3O" role="lGtFl">
@@ -373,6 +375,7 @@
   <node concept="UzPwm" id="3WlRoWetE4A">
     <property role="TrG5h" value="Constraints" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="UH0sd" id="5QP5yNVcRfc" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="Device" />
@@ -824,6 +827,7 @@
   <node concept="UzPwm" id="3WlRoWevjye">
     <property role="TrG5h" value="TelematicsModel" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="UH0sd" id="3WlRoWevjFe" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="options" />
@@ -1420,6 +1424,7 @@
   <node concept="UzPwm" id="6Ig5vvla9jr">
     <property role="TrG5h" value="Goals" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="UH0sd" id="26jKd0X3oW2" role="UzTCv">
       <property role="TrG5h" value="Person" />
       <property role="2vxgol" value="true" />

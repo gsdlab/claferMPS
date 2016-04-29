@@ -49,7 +49,7 @@
       </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
-        <reference id="7694989595706234372" name="ht" index="gFST0" />
+        <reference id="7694989595706234372" name="ha" index="gFST0" />
         <reference id="7694989595706234370" name="fa" index="gFST6" />
       </concept>
       <concept id="8674886736249155476" name="org.clafer.architecture.structure.SmartDeviceType" flags="ng" index="kwSKi" />
@@ -216,6 +216,7 @@
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="3246930885570548101" name="isGenerated" index="3hCzJE" />
         <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
@@ -236,6 +237,7 @@
   <node concept="UzPwm" id="3xlsXfnjfQO">
     <property role="TrG5h" value="DriverWinSysHA" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="1uNGeH" id="3xlsXfnjfQP" role="UzTCv">
       <property role="TrG5h" value="DriverWinSysHA" />
       <property role="1j3GqR" value="true" />
@@ -2824,6 +2826,7 @@
   <node concept="UzPwm" id="3xlsXfnjfhV">
     <property role="TrG5h" value="DriverWinSysFM" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="3yDFZg" id="3xlsXfnjfhW" role="UzTCv">
       <property role="TrG5h" value="DriverWinSysFM" />
       <property role="1j3GqR" value="true" />
@@ -2845,6 +2848,7 @@
   <node concept="UzPwm" id="3xlsXfnjfk2">
     <property role="TrG5h" value="DriverWinSysFAA" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="3GEVxB" id="3xlsXfnjfG1" role="UzTCp">
       <ref role="3GEb4d" node="3xlsXfnjfhV" resolve="DriverWinSysFM" />
     </node>
@@ -3182,6 +3186,7 @@
   <node concept="UzPwm" id="tUesvsl6D">
     <property role="TrG5h" value="DriverWinSysDpl" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="3GEVxB" id="tUesvsl6E" role="UzTCp">
       <ref role="3GEb4d" node="3xlsXfnjfk2" resolve="DriverWinSysFAA" />
     </node>
@@ -3316,6 +3321,7 @@
   <node concept="UzPwm" id="2LW9dx58hUL">
     <property role="TrG5h" value="DriverWinSys" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="3yR_K9" id="2LW9dx58hUM" role="UzTCv">
       <property role="TrG5h" value="DriverWinSys" />
       <property role="1j3GqR" value="true" />
@@ -3577,6 +3583,7 @@
     <property role="TrG5h" value="Car" />
     <property role="3GE5qa" value="Environment" />
     <property role="3wNgFz" value="0" />
+    <property role="3hCzJE" value="true" />
     <node concept="1CU$1Q" id="4QpcWAP3NQv" role="UzTCp" />
     <node concept="3yR_K9" id="4QpcWAP3QAp" role="UzTCv">
       <property role="TrG5h" value="Car" />

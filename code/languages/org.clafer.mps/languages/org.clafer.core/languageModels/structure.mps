@@ -63,9 +63,19 @@
       <property role="TrG5h" value="textGenPriority" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="2OfqAZWFl65" role="1TKVEl">
+      <property role="TrG5h" value="generatesText" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="bl22kSmD8W" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="imports" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
+    </node>
+    <node concept="1TJgyj" id="2OfqAZWRkAl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="utilityModels" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
     </node>
