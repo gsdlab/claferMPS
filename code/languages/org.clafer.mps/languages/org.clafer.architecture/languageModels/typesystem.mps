@@ -2305,7 +2305,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="3ezTVQYbYGh">
-    <property role="TrG5h" value="check_FunctionalDevice" />
+    <property role="TrG5h" value="check_Deploy" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <node concept="3clFbS" id="3ezTVQYbYGi" role="18ibNy">
       <node concept="3cpWs8" id="3ezTVQYbYR0" role="3cqZAp">
@@ -2316,10 +2316,26 @@
           </node>
           <node concept="2OqwBi" id="3ezTVQYbYYs" role="33vP2m">
             <node concept="1YBJjd" id="3ezTVQYbYRA" role="2Oq$k0">
-              <ref role="1YBMHb" node="3ezTVQYbYGk" resolve="functionalDevice" />
+              <ref role="1YBMHb" node="3ezTVQYbYGk" resolve="deploy" />
             </node>
-            <node concept="3Tsc0h" id="3ezTVQYbZqX" role="2OqNvi">
-              <ref role="3TtcxE" to="ddau:6PK7EUlNtxk" />
+            <node concept="3Tsc0h" id="2OfqAZWirc4" role="2OqNvi">
+              <ref role="3TtcxE" to="ddau:1IZzExQz2Ap" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="2OfqAZWiry5" role="3cqZAp">
+        <node concept="3cpWsn" id="2OfqAZWiry8" role="3cpWs9">
+          <property role="TrG5h" value="faElement" />
+          <node concept="3Tqbb2" id="2OfqAZWiry3" role="1tU5fm">
+            <ref role="ehGHo" to="ddau:4csP6flST3m" resolve="ArchElement" />
+          </node>
+          <node concept="2OqwBi" id="2OfqAZWirHe" role="33vP2m">
+            <node concept="1YBJjd" id="2OfqAZWirCD" role="2Oq$k0">
+              <ref role="1YBMHb" node="3ezTVQYbYGk" resolve="deploy" />
+            </node>
+            <node concept="3TrEf2" id="2OfqAZWis6F" role="2OqNvi">
+              <ref role="3Tt5mk" to="ddau:1IZzExQD58w" />
             </node>
           </node>
         </node>
@@ -2364,8 +2380,8 @@
                   </node>
                   <node concept="3cpWs3" id="3ezTVQYciZV" role="3uHU7B">
                     <node concept="2OqwBi" id="3ezTVQYci9L" role="3uHU7B">
-                      <node concept="1YBJjd" id="3ezTVQYci2W" role="2Oq$k0">
-                        <ref role="1YBMHb" node="3ezTVQYbYGk" resolve="functionalDevice" />
+                      <node concept="37vLTw" id="2OfqAZWiWZa" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2OfqAZWiry8" resolve="faElement" />
                       </node>
                       <node concept="3TrcHB" id="3ezTVQYciG$" role="2OqNvi">
                         <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -2377,7 +2393,7 @@
                   </node>
                 </node>
                 <node concept="1YBJjd" id="3ezTVQYeQjb" role="2OEOjV">
-                  <ref role="1YBMHb" node="3ezTVQYbYGk" resolve="functionalDevice" />
+                  <ref role="1YBMHb" node="3ezTVQYbYGk" resolve="deploy" />
                 </node>
               </node>
               <node concept="3clFbH" id="3ezTVQYca8J" role="3cqZAp" />
@@ -2458,8 +2474,8 @@
                                       </node>
                                       <node concept="3cpWs3" id="3ezTVQYe72P" role="3uHU7B">
                                         <node concept="2OqwBi" id="3ezTVQYe72Q" role="3uHU7B">
-                                          <node concept="1YBJjd" id="3ezTVQYe72R" role="2Oq$k0">
-                                            <ref role="1YBMHb" node="3ezTVQYbYGk" resolve="functionalDevice" />
+                                          <node concept="37vLTw" id="2OfqAZWiXgf" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="2OfqAZWiry8" resolve="faElement" />
                                           </node>
                                           <node concept="3TrcHB" id="3ezTVQYe72S" role="2OqNvi">
                                             <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -2520,17 +2536,29 @@
           <node concept="3clFbH" id="3ezTVQYc2bA" role="3cqZAp" />
           <node concept="3clFbH" id="3ezTVQYc2bH" role="3cqZAp" />
         </node>
-        <node concept="2OqwBi" id="3ezTVQYc099" role="3clFbw">
-          <node concept="37vLTw" id="3ezTVQYbZ_K" role="2Oq$k0">
-            <ref role="3cqZAo" node="3ezTVQYbYR3" resolve="deployment" />
+        <node concept="1Wc70l" id="2OfqAZWitNK" role="3clFbw">
+          <node concept="2OqwBi" id="2OfqAZWiuiE" role="3uHU7w">
+            <node concept="37vLTw" id="2OfqAZWiucw" role="2Oq$k0">
+              <ref role="3cqZAo" node="2OfqAZWiry8" resolve="faElement" />
+            </node>
+            <node concept="1mIQ4w" id="2OfqAZWiuDV" role="2OqNvi">
+              <node concept="chp4Y" id="2OfqAZWiuG7" role="cj9EA">
+                <ref role="cht4Q" to="ddau:4csP6flUzo$" resolve="FunctionalDevice" />
+              </node>
+            </node>
           </node>
-          <node concept="3GX2aA" id="3ezTVQYc2aQ" role="2OqNvi" />
+          <node concept="2OqwBi" id="3ezTVQYc099" role="3uHU7B">
+            <node concept="37vLTw" id="3ezTVQYbZ_K" role="2Oq$k0">
+              <ref role="3cqZAo" node="3ezTVQYbYR3" resolve="deployment" />
+            </node>
+            <node concept="3GX2aA" id="3ezTVQYc2aQ" role="2OqNvi" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="3ezTVQYbYGk" role="1YuTPh">
-      <property role="TrG5h" value="functionalDevice" />
-      <ref role="1YaFvo" to="ddau:4csP6flUzo$" resolve="FunctionalDevice" />
+      <property role="TrG5h" value="deploy" />
+      <ref role="1YaFvo" to="ddau:1IZzExQyV$f" resolve="Deploy" />
     </node>
   </node>
   <node concept="1YbPZF" id="6oTHSFINJIp">
