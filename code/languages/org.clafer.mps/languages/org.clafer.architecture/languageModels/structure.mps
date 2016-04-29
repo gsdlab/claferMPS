@@ -299,17 +299,31 @@
     <property role="TrG5h" value="IHardwareConnector" />
     <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <property role="1pbfSe" value="961852933" />
+    <node concept="1TJgyj" id="2OfqAZXo7Z4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sourceExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="2OfqAZXo7Zb" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="3WJnaafhyWX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
+      <node concept="asaX9" id="2OfqAZXo7Zk" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3WJnaafhyWY" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
+      <node concept="asaX9" id="2OfqAZXoiZ8" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="3WJnaafhyWV" role="PrDN$">
       <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
