@@ -2795,8 +2795,13 @@
             <node concept="Xl_RD" id="2OfqAZXp4G7" role="2MkJ7o">
               <property role="Xl_RC" value="Target must be a Device Node" />
             </node>
-            <node concept="1YBJjd" id="2OfqAZXp4Mo" role="2OEOjV">
-              <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
+            <node concept="2OqwBi" id="2OfqAZXspUp" role="2OEOjV">
+              <node concept="1YBJjd" id="2OfqAZXp4Mo" role="2Oq$k0">
+                <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
+              </node>
+              <node concept="3TrEf2" id="2OfqAZXsq55" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:2OfqAZXo7Zb" />
+              </node>
             </node>
           </node>
         </node>
@@ -2834,8 +2839,13 @@
             <node concept="Xl_RD" id="2OfqAZXp4QF" role="2MkJ7o">
               <property role="Xl_RC" value="Source must be a Device Node" />
             </node>
-            <node concept="1YBJjd" id="2OfqAZXp4QG" role="2OEOjV">
-              <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
+            <node concept="2OqwBi" id="2OfqAZXsq8m" role="2OEOjV">
+              <node concept="1YBJjd" id="2OfqAZXp4QG" role="2Oq$k0">
+                <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
+              </node>
+              <node concept="3TrEf2" id="2OfqAZXsqj5" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:2OfqAZXo7Z4" />
+              </node>
             </node>
           </node>
         </node>
