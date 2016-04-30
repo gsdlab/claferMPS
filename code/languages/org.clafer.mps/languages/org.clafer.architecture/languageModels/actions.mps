@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -64,10 +63,6 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -714,20 +709,11 @@
       <node concept="3kRJcU" id="5QLkobVPYtx" role="3kShCk">
         <node concept="3clFbS" id="5QLkobVPYty" role="2VODD2">
           <node concept="3clFbF" id="5QLkobVPYuB" role="3cqZAp">
-            <node concept="22lmx$" id="1b24ZrMeiNU" role="3clFbG">
-              <node concept="2OqwBi" id="1b24ZrMeiTx" role="3uHU7w">
-                <node concept="Cj7Ep" id="1b24ZrMeiPD" role="2Oq$k0" />
-                <node concept="1BlSNk" id="1b24ZrMej4o" role="2OqNvi">
-                  <ref role="1BmUXE" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-                  <ref role="1Bn3mz" to="ddau:5OLu9WxSgwO" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="5QLkobVPYyD" role="3uHU7B">
-                <node concept="Cj7Ep" id="5QLkobVPYuA" role="2Oq$k0" />
-                <node concept="1BlSNk" id="5QLkobVPYCl" role="2OqNvi">
-                  <ref role="1BmUXE" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
-                  <ref role="1Bn3mz" to="ddau:6PK7EUlNtxk" />
-                </node>
+            <node concept="2OqwBi" id="5QLkobVPYyD" role="3clFbG">
+              <node concept="Cj7Ep" id="5QLkobVPYuA" role="2Oq$k0" />
+              <node concept="1BlSNk" id="5QLkobVPYCl" role="2OqNvi">
+                <ref role="1BmUXE" to="ddau:6PK7EUlNtky" resolve="IHaveDeployment" />
+                <ref role="1Bn3mz" to="ddau:6PK7EUlNtxk" />
               </node>
             </node>
           </node>

@@ -427,10 +427,16 @@
     <property role="34LRSv" value="Bus Connector" />
     <property role="1pbfSe" value="417174105" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
+    <node concept="1TJgyj" id="17N04apiQ_e" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="connectsExpr" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="5OLu9WxSgwO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="connects" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
     </node>
     <node concept="PrWs8" id="5LUy9Q2fPnv" role="PzmwI">

@@ -33,6 +33,9 @@
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -101,6 +104,12 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
+        <child id="1144226360166" name="iterable" index="1DdaDG" />
+      </concept>
+      <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
+        <child id="1144230900587" name="variable" index="1Duv9x" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -1604,6 +1613,52 @@
     <property role="TrG5h" value="check_BusConnector" />
     <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <node concept="3clFbS" id="5ipUCoiPsTd" role="18ibNy">
+      <node concept="1DcWWT" id="17N04apnOcK" role="3cqZAp">
+        <node concept="3clFbS" id="17N04apnOcM" role="2LFqv$">
+          <node concept="2Mj0R9" id="17N04apnQmu" role="3cqZAp">
+            <node concept="2OqwBi" id="17N04apnQmv" role="2MkoU_">
+              <node concept="1mIQ4w" id="17N04apnQmz" role="2OqNvi">
+                <node concept="chp4Y" id="17N04apnQm$" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="17N04apnRcA" role="2Oq$k0">
+                <node concept="1YBJjd" id="17N04apnR2e" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5ipUCoiPsTf" resolve="busConnector" />
+                </node>
+                <node concept="2qgKlT" id="17N04apnW16" role="2OqNvi">
+                  <ref role="37wK5l" to="f5o0:17N04apiQmF" resolve="getTarget" />
+                  <node concept="37vLTw" id="17N04apnWbD" role="37wK5m">
+                    <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="17N04apnQm_" role="2MkJ7o">
+              <property role="Xl_RC" value="Target must be a Device Node" />
+            </node>
+            <node concept="37vLTw" id="17N04apptCl" role="2OEOjV">
+              <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="17N04apnOcL" role="3cqZAp" />
+        </node>
+        <node concept="3cpWsn" id="17N04apnOcN" role="1Duv9x">
+          <property role="TrG5h" value="endpointExpr" />
+          <node concept="3Tqbb2" id="17N04apnOkn" role="1tU5fm">
+            <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+          </node>
+        </node>
+        <node concept="2OqwBi" id="17N04apnOEM" role="1DdaDG">
+          <node concept="1YBJjd" id="17N04apnOrq" role="2Oq$k0">
+            <ref role="1YBMHb" node="5ipUCoiPsTf" resolve="busConnector" />
+          </node>
+          <node concept="3Tsc0h" id="17N04apnPQt" role="2OqNvi">
+            <ref role="3TtcxE" to="ddau:17N04apiQ_e" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="17N04apnMPE" role="3cqZAp" />
       <node concept="2Mj0R9" id="5ipUCoiPsTF" role="3cqZAp">
         <node concept="2d3UOw" id="5ipUCoiP$vh" role="2MkoU_">
           <node concept="3cmrfG" id="5ipUCoiP$yh" role="3uHU7w">
@@ -1614,8 +1669,8 @@
               <node concept="1YBJjd" id="5ipUCoiPsU7" role="2Oq$k0">
                 <ref role="1YBMHb" node="5ipUCoiPsTf" resolve="busConnector" />
               </node>
-              <node concept="3Tsc0h" id="5ipUCoiPtoU" role="2OqNvi">
-                <ref role="3TtcxE" to="ddau:5OLu9WxSgwO" />
+              <node concept="3Tsc0h" id="17N04apjq$d" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:17N04apiQ_e" />
               </node>
             </node>
             <node concept="34oBXx" id="5ipUCoiPyjB" role="2OqNvi" />
@@ -2861,6 +2916,8 @@
           <node concept="3x8VRR" id="2OfqAZXrZGa" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbH" id="17N04apnMm6" role="3cqZAp" />
+      <node concept="3clFbH" id="17N04apnMs_" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="2OfqAZXp3Ue" role="1YuTPh">
       <property role="TrG5h" value="iHardwareConnector" />
