@@ -952,12 +952,29 @@
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="sourceBus" />
       <ref role="20lvS9" node="19aTRzkPSoJ" resolve="BusConnector" />
+      <node concept="asaX9" id="17N04appB6v" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3WJnaafd3OO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="targetBus" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="19aTRzkPSoJ" resolve="BusConnector" />
+      <node concept="asaX9" id="17N04appB6x" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="17N04appB6m" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sourceBusExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="17N04appB6q" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetBusExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="17N04appB8v" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="3WJnaafhyWS">

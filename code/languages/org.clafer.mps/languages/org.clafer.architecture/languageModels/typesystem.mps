@@ -3021,5 +3021,119 @@
       <ref role="1YaFvo" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
     </node>
   </node>
+  <node concept="18kY7G" id="17N04appQXn">
+    <property role="TrG5h" value="check_LogicalBusBridge" />
+    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
+    <node concept="3clFbS" id="17N04appQXo" role="18ibNy">
+      <node concept="3clFbJ" id="17N04appQYk" role="3cqZAp">
+        <node concept="3clFbS" id="17N04appQYl" role="3clFbx">
+          <node concept="2Mj0R9" id="17N04appQYm" role="3cqZAp">
+            <node concept="2OqwBi" id="17N04appQYn" role="2MkoU_">
+              <node concept="2OqwBi" id="17N04appQYo" role="2Oq$k0">
+                <node concept="1YBJjd" id="17N04appRdE" role="2Oq$k0">
+                  <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
+                </node>
+                <node concept="2qgKlT" id="17N04appXU2" role="2OqNvi">
+                  <ref role="37wK5l" to="f5o0:17N04appBEW" resolve="getTarget" />
+                  <node concept="2OqwBi" id="17N04apq24L" role="37wK5m">
+                    <node concept="1YBJjd" id="17N04apq24M" role="2Oq$k0">
+                      <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
+                    </node>
+                    <node concept="3TrEf2" id="17N04apq24N" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ddau:17N04appB6m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="17N04appQYr" role="2OqNvi">
+                <node concept="chp4Y" id="17N04appRFm" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="17N04appQYt" role="2MkJ7o">
+              <property role="Xl_RC" value="Target must be a Bus Connector" />
+            </node>
+            <node concept="2OqwBi" id="17N04appQYu" role="2OEOjV">
+              <node concept="1YBJjd" id="17N04appRLb" role="2Oq$k0">
+                <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
+              </node>
+              <node concept="3TrEf2" id="17N04apq3w5" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:17N04appB6m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="17N04appQYx" role="3clFbw">
+          <node concept="2OqwBi" id="17N04appQYy" role="2Oq$k0">
+            <node concept="1YBJjd" id="17N04appRat" role="2Oq$k0">
+              <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
+            </node>
+            <node concept="3TrEf2" id="17N04apq12z" role="2OqNvi">
+              <ref role="3Tt5mk" to="ddau:17N04appB6m" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="17N04appQY_" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="17N04appQYA" role="3cqZAp" />
+      <node concept="3clFbJ" id="17N04appQYB" role="3cqZAp">
+        <node concept="3clFbS" id="17N04appQYC" role="3clFbx">
+          <node concept="2Mj0R9" id="17N04appQYD" role="3cqZAp">
+            <node concept="2OqwBi" id="17N04appQYE" role="2MkoU_">
+              <node concept="2OqwBi" id="17N04appQYF" role="2Oq$k0">
+                <node concept="1YBJjd" id="17N04appRtY" role="2Oq$k0">
+                  <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
+                </node>
+                <node concept="2qgKlT" id="17N04apq2uv" role="2OqNvi">
+                  <ref role="37wK5l" to="f5o0:17N04appBEW" resolve="getTarget" />
+                  <node concept="2OqwBi" id="17N04apq2uw" role="37wK5m">
+                    <node concept="1YBJjd" id="17N04apq2ux" role="2Oq$k0">
+                      <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
+                    </node>
+                    <node concept="3TrEf2" id="17N04apq2PI" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ddau:17N04appB6q" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="17N04appQYI" role="2OqNvi">
+                <node concept="chp4Y" id="17N04appR_x" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="17N04appQYK" role="2MkJ7o">
+              <property role="Xl_RC" value="Target must be a Bus Connector" />
+            </node>
+            <node concept="2OqwBi" id="17N04appQYL" role="2OEOjV">
+              <node concept="1YBJjd" id="17N04appRT2" role="2Oq$k0">
+                <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
+              </node>
+              <node concept="3TrEf2" id="17N04apq3cQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:17N04appB6q" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="17N04appQYO" role="3clFbw">
+          <node concept="2OqwBi" id="17N04appQYP" role="2Oq$k0">
+            <node concept="1YBJjd" id="17N04appRlP" role="2Oq$k0">
+              <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
+            </node>
+            <node concept="3TrEf2" id="17N04apq2sb" role="2OqNvi">
+              <ref role="3Tt5mk" to="ddau:17N04appB6q" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="17N04appQYS" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="17N04appQYT" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="17N04appQXq" role="1YuTPh">
+      <property role="TrG5h" value="logicalBusBridge" />
+      <ref role="1YaFvo" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+    </node>
+  </node>
 </model>
 

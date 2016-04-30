@@ -7019,26 +7019,14 @@
       <node concept="3F0ifn" id="3WJnaafd3Pl" role="3EZMnx">
         <property role="3F0ifm" value="connects" />
       </node>
-      <node concept="1iCGBv" id="3WJnaafd3Pm" role="3EZMnx">
-        <ref role="1NtTu8" to="ddau:3WJnaafd3OM" />
-        <node concept="1sVBvm" id="3WJnaafd3Pn" role="1sWHZn">
-          <node concept="3F0A7n" id="3WJnaafd3Po" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="17N04appB7v" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:17N04appB6m" />
       </node>
       <node concept="3F0ifn" id="3WJnaafd3Pp" role="3EZMnx">
         <property role="3F0ifm" value="and" />
       </node>
-      <node concept="1iCGBv" id="3WJnaafd3Pq" role="3EZMnx">
-        <ref role="1NtTu8" to="ddau:3WJnaafd3OO" />
-        <node concept="1sVBvm" id="3WJnaafd3Pr" role="1sWHZn">
-          <node concept="3F0A7n" id="3WJnaafd3Ps" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="17N04appB8l" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:17N04appB6q" />
       </node>
       <node concept="PMmxH" id="3WJnaafd3Pt" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="ArchBody" />
