@@ -2,7 +2,7 @@
 <model ref="r:e7cbadc8-4b6d-4ada-94ee-6f4039ec73e4(ca.uwaterloo.gsd.PowerWindowSystem.ArchitectureExt)">
   <persistence version="9" />
   <languages>
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="0" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
@@ -36,7 +36,7 @@
       </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
-        <reference id="7694989595706234372" name="ht" index="gFST0" />
+        <reference id="7694989595706234372" name="ha" index="gFST0" />
         <reference id="7694989595706234370" name="fa" index="gFST6" />
       </concept>
       <concept id="8674886736249155477" name="org.clafer.architecture.structure.PowerDeviceType" flags="ng" index="kwSKj" />
@@ -50,6 +50,8 @@
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
         <reference id="4552959601553283212" name="target" index="2KpGgI" />
         <reference id="4552959601553283186" name="source" index="2KpGjg" />
+        <child id="1293377804022658520" name="sourceExpr" index="28Pzmq" />
+        <child id="1293377804022658528" name="targetExpr" index="28Pzmy" />
       </concept>
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareArchitecture" flags="ng" index="1uNGeH" />
@@ -969,6 +971,12 @@
         <property role="TrG5h" value="dWinReq" />
         <ref role="2KpGjg" node="72GPbqtfkDE" resolve="WinArbiter" />
         <ref role="2KpGgI" node="3KrTRUBRt02" resolve="DWinSwitch" />
+        <node concept="ZpONE" id="17N04ap_KdI" role="28Pzmq">
+          <ref role="ZpOSt" node="72GPbqtfkDE" resolve="WinArbiter" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_KdJ" role="28Pzmy">
+          <ref role="ZpOSt" node="3KrTRUBRt02" resolve="DWinSwitch" />
+        </node>
       </node>
       <node concept="3HSg1M" id="3KrTRUBRth$" role="gT77A">
         <ref role="3HSg1l" node="3KrTRUBRsrt" resolve="WinSubSystemFA" />
@@ -1085,11 +1093,23 @@
         <property role="TrG5h" value="localWinReq" />
         <ref role="2KpGjg" node="72GPbqtfkDE" resolve="WinArbiter" />
         <ref role="2KpGgI" node="72GPbqtfpAV" resolve="WinCtr" />
+        <node concept="ZpONE" id="17N04ap_Kdy" role="28Pzmq">
+          <ref role="ZpOSt" node="72GPbqtfkDE" resolve="WinArbiter" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_Kdz" role="28Pzmy">
+          <ref role="ZpOSt" node="72GPbqtfpAV" resolve="WinCtr" />
+        </node>
       </node>
       <node concept="1eXri_" id="2LboCN8tj_1" role="2mZOl8">
         <property role="TrG5h" value="localWinReq" />
         <ref role="2KpGjg" node="72GPbqtfkD_" resolve="WinSwitch" />
         <ref role="2KpGgI" node="72GPbqtfkDE" resolve="WinArbiter" />
+        <node concept="ZpONE" id="17N04ap_Kd$" role="28Pzmq">
+          <ref role="ZpOSt" node="72GPbqtfkD_" resolve="WinSwitch" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_Kd_" role="28Pzmy">
+          <ref role="ZpOSt" node="72GPbqtfkDE" resolve="WinArbiter" />
+        </node>
       </node>
       <node concept="2mZLT$" id="72GPbqtfpAV" role="2mZOl8">
         <property role="TrG5h" value="WinCtr" />
@@ -1099,6 +1119,12 @@
         <property role="TrG5h" value="winCmd" />
         <ref role="2KpGjg" node="72GPbqtf_Hf" resolve="WinMotor" />
         <ref role="2KpGgI" node="72GPbqtfpAV" resolve="WinCtr" />
+        <node concept="ZpONE" id="17N04ap_KdA" role="28Pzmq">
+          <ref role="ZpOSt" node="72GPbqtf_Hf" resolve="WinMotor" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_KdB" role="28Pzmy">
+          <ref role="ZpOSt" node="72GPbqtfpAV" resolve="WinCtr" />
+        </node>
       </node>
       <node concept="2mXI97" id="72GPbqtf_Hf" role="2mZOl8">
         <property role="TrG5h" value="WinMotor" />
@@ -1119,11 +1145,23 @@
           <property role="TrG5h" value="position" />
           <ref role="2KpGjg" node="72GPbqtfCdS" resolve="PositionSensor" />
           <ref role="2KpGgI" node="72GPbqtfCdN" resolve="PinchDetection" />
+          <node concept="ZpONE" id="17N04ap_KdC" role="28Pzmq">
+            <ref role="ZpOSt" node="72GPbqtfCdS" resolve="PositionSensor" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_KdD" role="28Pzmy">
+            <ref role="ZpOSt" node="72GPbqtfCdN" resolve="PinchDetection" />
+          </node>
         </node>
         <node concept="1eXri_" id="2LboCN8tjMG" role="2mZOl8">
           <property role="TrG5h" value="object" />
           <ref role="2KpGjg" node="72GPbqtfCdN" resolve="PinchDetection" />
           <ref role="2KpGgI" node="72GPbqtfpAV" resolve="WinCtr" />
+          <node concept="ZpONE" id="17N04ap_KdE" role="28Pzmq">
+            <ref role="ZpOSt" node="72GPbqtfCdN" resolve="PinchDetection" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_KdF" role="28Pzmy">
+            <ref role="ZpOSt" node="72GPbqtfpAV" resolve="WinCtr" />
+          </node>
         </node>
         <node concept="37mRI7" id="4KwamREIryx" role="lGtFl">
           <node concept="37mRIm" id="4KwamREIryy" role="37mRID">
@@ -1301,6 +1339,12 @@
         <property role="TrG5h" value="current" />
         <ref role="2KpGjg" node="44ORmASWi3B" resolve="currentSensor" />
         <ref role="2KpGgI" node="72GPbqtfpAV" resolve="WinCtr" />
+        <node concept="ZpONE" id="17N04ap_KdG" role="28Pzmq">
+          <ref role="ZpOSt" node="44ORmASWi3B" resolve="currentSensor" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_KdH" role="28Pzmy">
+          <ref role="ZpOSt" node="72GPbqtfpAV" resolve="WinCtr" />
+        </node>
       </node>
       <node concept="37mRI7" id="4KwamREIryq" role="lGtFl">
         <node concept="37mRIm" id="4KwamREIryr" role="37mRID">

@@ -2,7 +2,7 @@
 <model ref="r:aaee1a89-4ee2-4aef-8ae7-415bab1e1bb1(org.clafer.architecture.example.DriverLock)">
   <persistence version="9" />
   <languages>
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="0" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="1" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
@@ -49,7 +49,7 @@
       </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
-        <reference id="7694989595706234372" name="ht" index="gFST0" />
+        <reference id="7694989595706234372" name="ha" index="gFST0" />
         <reference id="7694989595706234370" name="fa" index="gFST6" />
       </concept>
       <concept id="8674886736249155476" name="org.clafer.architecture.structure.SmartDeviceType" flags="ng" index="kwSKi" />
@@ -83,6 +83,8 @@
       <concept id="1679786397508364593" name="org.clafer.architecture.structure.IHardwareConnector" flags="ng" index="PiMn_">
         <reference id="4552959601553059646" name="target" index="2Kqnes" />
         <reference id="4552959601553059645" name="source" index="2Kqnev" />
+        <child id="3246930885582290891" name="targetExpr" index="3grLm$" />
+        <child id="3246930885582290884" name="sourceExpr" index="3grLmF" />
       </concept>
       <concept id="4851172649685075389" name="org.clafer.architecture.structure.Quality" flags="ng" index="33KLpJ">
         <reference id="4851172649685075405" name="tElement" index="33KLov" />
@@ -91,7 +93,7 @@
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277980" name="org.clafer.architecture.structure.PowerTopology" flags="ng" index="36Bm2$" />
       <concept id="1318120347112277551" name="org.clafer.architecture.structure.BusConnector" flags="ng" index="36Bm5n">
-        <child id="6715281144249649204" name="connects" index="1WO72F" />
+        <child id="1293377804025162062" name="connectsExpr" index="28I6$c" />
       </concept>
       <concept id="1318120347112277400" name="org.clafer.architecture.structure.DiscreteDataConnector" flags="ng" index="36Bmbw" />
       <concept id="1318120347112279768" name="org.clafer.architecture.structure.DevicePowerConnector" flags="ng" index="36BmAw" />
@@ -101,6 +103,8 @@
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
         <reference id="4552959601553283212" name="target" index="2KpGgI" />
         <reference id="4552959601553283186" name="source" index="2KpGjg" />
+        <child id="1293377804022658520" name="sourceExpr" index="28Pzmq" />
+        <child id="1293377804022658528" name="targetExpr" index="28Pzmy" />
       </concept>
       <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
         <child id="8271111493164032678" name="constants" index="3tuoqM" />
@@ -787,6 +791,12 @@
               <property role="2hmy$m" value="40" />
             </node>
           </node>
+          <node concept="ZpONE" id="17N04ap_Kar" role="3grLmF">
+            <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kas" role="3grLm$">
+            <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
+          </node>
         </node>
         <node concept="36Bmbw" id="3WJnaafvQ8H" role="2mZOl8">
           <property role="TrG5h" value="switchBCMDisc" />
@@ -801,6 +811,12 @@
             <node concept="3TlMh9" id="3vJfEX4VO0k" role="33KLot">
               <property role="2hmy$m" value="85" />
             </node>
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kat" role="3grLmF">
+            <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kau" role="3grLm$">
+            <ref role="ZpOSt" node="E6Nn7M7M3S" resolve="BCM" />
           </node>
         </node>
         <node concept="36Bmbw" id="3WJnaafvQ8z" role="2mZOl8">
@@ -817,6 +833,12 @@
               <property role="2hmy$m" value="25" />
             </node>
           </node>
+          <node concept="ZpONE" id="17N04ap_Kav" role="3grLmF">
+            <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kaw" role="3grLm$">
+            <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
+          </node>
         </node>
         <node concept="36Bmbw" id="3WJnaafvQ8D" role="2mZOl8">
           <property role="TrG5h" value="motorBCMDisc" />
@@ -831,6 +853,12 @@
             <node concept="3TlMh9" id="3vJfEX4VO0K" role="33KLot">
               <property role="2hmy$m" value="85" />
             </node>
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kax" role="3grLmF">
+            <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kay" role="3grLm$">
+            <ref role="ZpOSt" node="E6Nn7M7M3S" resolve="BCM" />
           </node>
         </node>
         <node concept="36Bmbw" id="3WJnaafvQ8_" role="2mZOl8">
@@ -847,21 +875,15 @@
               <property role="2hmy$m" value="35" />
             </node>
           </node>
+          <node concept="ZpONE" id="17N04ap_Kaz" role="3grLmF">
+            <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_Ka$" role="3grLm$">
+            <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
+          </node>
         </node>
         <node concept="36Bm5n" id="3vJfEX4VNWZ" role="2mZOl8">
           <property role="TrG5h" value="localLowSpeedBus" />
-          <node concept="ZpONE" id="3vJfEX4VNX6" role="1WO72F">
-            <ref role="ZpOSt" node="E6Nn7M7M3S" resolve="BCM" />
-          </node>
-          <node concept="ZpONE" id="3vJfEX4VNXg" role="1WO72F">
-            <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
-          </node>
-          <node concept="ZpONE" id="3vJfEX4VNXs" role="1WO72F">
-            <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
-          </node>
-          <node concept="ZpONE" id="3vJfEX4VNXE" role="1WO72F">
-            <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
-          </node>
           <node concept="33KLpJ" id="7Ed3$$lck$9" role="33KLpg">
             <property role="TrG5h" value="length" />
             <ref role="33KLov" node="tUesvv$8f" resolve="length" />
@@ -889,6 +911,18 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="ZpONE" id="3vJfEX4VNX6" role="28I6$c">
+            <ref role="ZpOSt" node="E6Nn7M7M3S" resolve="BCM" />
+          </node>
+          <node concept="ZpONE" id="3vJfEX4VNXg" role="28I6$c">
+            <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
+          </node>
+          <node concept="ZpONE" id="3vJfEX4VNXs" role="28I6$c">
+            <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
+          </node>
+          <node concept="ZpONE" id="3vJfEX4VNXE" role="28I6$c">
+            <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
           </node>
         </node>
         <node concept="UzEYP" id="1Z9B1UhOquO" role="2mZOl8" />
@@ -1425,6 +1459,12 @@
               <property role="2hmy$m" value="45" />
             </node>
           </node>
+          <node concept="ZpONE" id="17N04ap_Ka_" role="3grLmF">
+            <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_KaA" role="3grLm$">
+            <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
+          </node>
         </node>
         <node concept="36BmAw" id="3WJnaafwLAu" role="2mZOl8">
           <property role="gTlvz" value="true" />
@@ -1440,6 +1480,12 @@
             <node concept="3TlMh9" id="3vJfEX4VNN7" role="33KLot">
               <property role="2hmy$m" value="45" />
             </node>
+          </node>
+          <node concept="ZpONE" id="17N04ap_KaB" role="3grLmF">
+            <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_KaC" role="3grLm$">
+            <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
           </node>
         </node>
         <node concept="36BmAw" id="3WJnaafwLAt" role="2mZOl8">
@@ -1457,6 +1503,12 @@
               <property role="2hmy$m" value="35" />
             </node>
           </node>
+          <node concept="ZpONE" id="17N04ap_KaD" role="3grLmF">
+            <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_KaE" role="3grLm$">
+            <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
+          </node>
         </node>
         <node concept="36BmAw" id="3WJnaafwLAo" role="2mZOl8">
           <property role="gTlvz" value="true" />
@@ -1472,6 +1524,12 @@
             <node concept="3TlMh9" id="3vJfEX4VNOi" role="33KLot">
               <property role="2hmy$m" value="40" />
             </node>
+          </node>
+          <node concept="ZpONE" id="17N04ap_KaF" role="3grLmF">
+            <ref role="ZpOSt" node="6laenAv7kb" resolve="EC" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_KaG" role="3grLm$">
+            <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
           </node>
         </node>
         <node concept="2vxuzR" id="3vJfEX4VNuy" role="2mZOl8">
@@ -1715,6 +1773,12 @@
                   <property role="2hmy$m" value="45" />
                 </node>
               </node>
+              <node concept="ZpONE" id="17N04ap_KaH" role="3grLmF">
+                <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaI" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
+              </node>
             </node>
             <node concept="36BmKx" id="3WJnaafxoj8" role="2mZOl8">
               <property role="gTlvz" value="false" />
@@ -1730,6 +1794,12 @@
                 <node concept="3TlMh9" id="3vJfEX4VNK0" role="33KLot">
                   <property role="2hmy$m" value="40" />
                 </node>
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaJ" role="3grLmF">
+                <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaK" role="3grLm$">
+                <ref role="ZpOSt" node="6laenAv7kb" resolve="EC" />
               </node>
             </node>
           </node>
@@ -1957,6 +2027,12 @@
                   <property role="2hmy$m" value="40" />
                 </node>
               </node>
+              <node concept="ZpONE" id="17N04ap_KaL" role="3grLmF">
+                <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaM" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
+              </node>
             </node>
             <node concept="36BmKx" id="3WJnaafxojd" role="2mZOl8">
               <property role="gTlvz" value="false" />
@@ -1973,6 +2049,12 @@
                   <property role="2hmy$m" value="45" />
                 </node>
               </node>
+              <node concept="ZpONE" id="17N04ap_KaN" role="3grLmF">
+                <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaO" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
+              </node>
             </node>
             <node concept="36BmKx" id="3WJnaafxojf" role="2mZOl8">
               <property role="gTlvz" value="false" />
@@ -1988,6 +2070,12 @@
                 <node concept="3TlMh9" id="3vJfEX4VNKe" role="33KLot">
                   <property role="2hmy$m" value="40" />
                 </node>
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaP" role="3grLmF">
+                <ref role="ZpOSt" node="6laenAv7kb" resolve="EC" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaQ" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
               </node>
             </node>
           </node>
@@ -2223,6 +2311,12 @@
                   <property role="2hmy$m" value="30" />
                 </node>
               </node>
+              <node concept="ZpONE" id="17N04ap_KaR" role="3grLmF">
+                <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaS" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
+              </node>
             </node>
             <node concept="36BmKx" id="3WJnaafxoiZ" role="2mZOl8">
               <property role="gTlvz" value="false" />
@@ -2239,6 +2333,12 @@
                   <property role="2hmy$m" value="35" />
                 </node>
               </node>
+              <node concept="ZpONE" id="17N04ap_KaT" role="3grLmF">
+                <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaU" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
+              </node>
             </node>
             <node concept="36BmKx" id="3WJnaafxojb" role="2mZOl8">
               <property role="gTlvz" value="false" />
@@ -2254,6 +2354,12 @@
                 <node concept="3TlMh9" id="3vJfEX4VNL9" role="33KLot">
                   <property role="2hmy$m" value="40" />
                 </node>
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaV" role="3grLmF">
+                <ref role="ZpOSt" node="6laenAv7kb" resolve="EC" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaW" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
               </node>
             </node>
           </node>
@@ -2417,6 +2523,12 @@
                   <property role="2hmy$m" value="45" />
                 </node>
               </node>
+              <node concept="ZpONE" id="17N04ap_KaX" role="3grLmF">
+                <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaY" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
+              </node>
             </node>
             <node concept="36BmKx" id="3WJnaafxojg" role="2mZOl8">
               <property role="gTlvz" value="false" />
@@ -2432,6 +2544,12 @@
                 <node concept="3TlMh9" id="3vJfEX4VNKs" role="33KLot">
                   <property role="2hmy$m" value="40" />
                 </node>
+              </node>
+              <node concept="ZpONE" id="17N04ap_KaZ" role="3grLmF">
+                <ref role="ZpOSt" node="E6Nn7M7M3S" resolve="BCM" />
+              </node>
+              <node concept="ZpONE" id="17N04ap_Kb0" role="3grLm$">
+                <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
               </node>
             </node>
           </node>
@@ -3010,6 +3128,12 @@
             <property role="2hmy$m" value="1" />
           </node>
         </node>
+        <node concept="ZpONE" id="17N04ap_Kb1" role="28Pzmq">
+          <ref role="ZpOSt" node="3vJfEX4VMkL" resolve="WinSwitch" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_Kb2" role="28Pzmy">
+          <ref role="ZpOSt" node="3vJfEX4VMlF" resolve="WinArbiter" />
+        </node>
       </node>
       <node concept="1eXri_" id="3WJnaafvd7Y" role="2mZOl8">
         <property role="TrG5h" value="winReq" />
@@ -3024,6 +3148,12 @@
           <node concept="3TlMh9" id="3vJfEX4VMu9" role="33KLot">
             <property role="2hmy$m" value="1" />
           </node>
+        </node>
+        <node concept="ZpONE" id="17N04ap_Kb3" role="28Pzmq">
+          <ref role="ZpOSt" node="3vJfEX4VMlF" resolve="WinArbiter" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_Kb4" role="28Pzmy">
+          <ref role="ZpOSt" node="3vJfEX4VMnl" resolve="WinControl" />
         </node>
       </node>
       <node concept="1eXri_" id="3WJnaafvd7W" role="2mZOl8">
@@ -3040,6 +3170,12 @@
             <property role="2hmy$m" value="2" />
           </node>
         </node>
+        <node concept="ZpONE" id="17N04ap_Kb5" role="28Pzmq">
+          <ref role="ZpOSt" node="3vJfEX4VMnl" resolve="WinControl" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_Kb6" role="28Pzmy">
+          <ref role="ZpOSt" node="3vJfEX4VMp5" resolve="WinMotor" />
+        </node>
       </node>
       <node concept="1eXri_" id="3WJnaafvd7Q" role="2mZOl8">
         <property role="TrG5h" value="current" />
@@ -3054,6 +3190,12 @@
           <node concept="3TlMh9" id="3vJfEX4VMxD" role="33KLot">
             <property role="2hmy$m" value="1" />
           </node>
+        </node>
+        <node concept="ZpONE" id="17N04ap_Kb7" role="28Pzmq">
+          <ref role="ZpOSt" node="3vJfEX4VMql" resolve="CurrentSensor" />
+        </node>
+        <node concept="ZpONE" id="17N04ap_Kb8" role="28Pzmy">
+          <ref role="ZpOSt" node="3vJfEX4VMnl" resolve="WinControl" />
         </node>
       </node>
       <node concept="UzEYP" id="3vJfEX4VMxI" role="2mZOl8" />
@@ -3127,6 +3269,12 @@
               <property role="2hmy$m" value="1" />
             </node>
           </node>
+          <node concept="ZpONE" id="17N04ap_Kb9" role="28Pzmq">
+            <ref role="ZpOSt" node="3vJfEX4VMAD" resolve="PositionSensor" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kba" role="28Pzmy">
+            <ref role="ZpOSt" node="3vJfEX4VMAh" resolve="PinchDetection" />
+          </node>
         </node>
         <node concept="1eXri_" id="3WJnaafvd7S" role="2mZOl8">
           <property role="TrG5h" value="object" />
@@ -3141,6 +3289,12 @@
             <node concept="3TlMh9" id="3vJfEX4VMCl" role="33KLot">
               <property role="2hmy$m" value="2" />
             </node>
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kbb" role="28Pzmq">
+            <ref role="ZpOSt" node="3vJfEX4VMAh" resolve="PinchDetection" />
+          </node>
+          <node concept="ZpONE" id="17N04ap_Kbc" role="28Pzmy">
+            <ref role="ZpOSt" node="3vJfEX4VMnl" resolve="WinControl" />
           </node>
         </node>
       </node>
