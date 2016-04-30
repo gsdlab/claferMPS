@@ -73,17 +73,31 @@
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="1pbfSe" value="1895418041" />
     <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
+    <node concept="1TJgyj" id="17N04ap9jno" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sourceExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="17N04ap9jnw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="3WJnaafipxM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
+      <node concept="asaX9" id="17N04ap9jns" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3WJnaafipyc" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
+      <node concept="asaX9" id="17N04ap9jnu" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="6tUgmTZN8Kq" role="PzmwI">
       <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
@@ -333,6 +347,9 @@
     </node>
     <node concept="PrWs8" id="3NiPeHJQWUV" role="PrDN$">
       <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
+    </node>
+    <node concept="PrWs8" id="17N04ape6NV" role="PrDN$">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="12rnRvMfu2B">

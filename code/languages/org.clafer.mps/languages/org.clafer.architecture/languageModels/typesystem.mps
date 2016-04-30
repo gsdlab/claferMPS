@@ -2867,5 +2867,102 @@
       <ref role="1YaFvo" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
     </node>
   </node>
+  <node concept="18kY7G" id="17N04ap9Phy">
+    <property role="TrG5h" value="check_FunctionConnector" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <node concept="3clFbS" id="17N04ap9Phz" role="18ibNy">
+      <node concept="3clFbJ" id="17N04ap9PhD" role="3cqZAp">
+        <node concept="3clFbS" id="17N04ap9PhE" role="3clFbx">
+          <node concept="2Mj0R9" id="17N04ap9PhF" role="3cqZAp">
+            <node concept="2OqwBi" id="17N04ap9PhG" role="2MkoU_">
+              <node concept="2OqwBi" id="17N04ap9PhH" role="2Oq$k0">
+                <node concept="1YBJjd" id="17N04ap9PYw" role="2Oq$k0">
+                  <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
+                </node>
+                <node concept="2qgKlT" id="17N04ap9PhJ" role="2OqNvi">
+                  <ref role="37wK5l" to="f5o0:17N04ap9KHc" resolve="getTargetNode" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="17N04ap9PhK" role="2OqNvi">
+                <node concept="chp4Y" id="17N04ap9Qgq" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="17N04ap9PhM" role="2MkJ7o">
+              <property role="Xl_RC" value="Target must be a functional device or analysis function" />
+            </node>
+            <node concept="2OqwBi" id="17N04ap9PhN" role="2OEOjV">
+              <node concept="1YBJjd" id="17N04apbU_E" role="2Oq$k0">
+                <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
+              </node>
+              <node concept="3TrEf2" id="17N04apbVeV" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:17N04ap9jnw" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="17N04ap9PhQ" role="3clFbw">
+          <node concept="2OqwBi" id="17N04ap9PhR" role="2Oq$k0">
+            <node concept="1YBJjd" id="17N04ap9PQO" role="2Oq$k0">
+              <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
+            </node>
+            <node concept="2qgKlT" id="17N04ap9PhT" role="2OqNvi">
+              <ref role="37wK5l" to="f5o0:17N04ap9KHc" resolve="getTargetNode" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="17N04ap9PhU" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="17N04ap9PhV" role="3cqZAp" />
+      <node concept="3clFbJ" id="17N04ap9PhW" role="3cqZAp">
+        <node concept="3clFbS" id="17N04ap9PhX" role="3clFbx">
+          <node concept="2Mj0R9" id="17N04ap9PhY" role="3cqZAp">
+            <node concept="2OqwBi" id="17N04ap9PhZ" role="2MkoU_">
+              <node concept="2OqwBi" id="17N04ap9Pi0" role="2Oq$k0">
+                <node concept="1YBJjd" id="17N04ap9Q9j" role="2Oq$k0">
+                  <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
+                </node>
+                <node concept="2qgKlT" id="17N04ap9Pi2" role="2OqNvi">
+                  <ref role="37wK5l" to="f5o0:17N04ap9KHl" resolve="getSourceNode" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="17N04ap9Pi3" role="2OqNvi">
+                <node concept="chp4Y" id="17N04ap9Qlz" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="17N04ap9Pi5" role="2MkJ7o">
+              <property role="Xl_RC" value="Source must be a functional device or analysis function" />
+            </node>
+            <node concept="2OqwBi" id="17N04ap9Pi6" role="2OEOjV">
+              <node concept="1YBJjd" id="17N04apbVlg" role="2Oq$k0">
+                <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
+              </node>
+              <node concept="3TrEf2" id="17N04apbVx9" role="2OqNvi">
+                <ref role="3Tt5mk" to="ddau:17N04ap9jno" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="17N04ap9Pi9" role="3clFbw">
+          <node concept="2OqwBi" id="17N04ap9Pia" role="2Oq$k0">
+            <node concept="1YBJjd" id="17N04ap9Q1F" role="2Oq$k0">
+              <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
+            </node>
+            <node concept="2qgKlT" id="17N04ap9Pic" role="2OqNvi">
+              <ref role="37wK5l" to="f5o0:17N04ap9KHl" resolve="getSourceNode" />
+            </node>
+          </node>
+          <node concept="3x8VRR" id="17N04ap9Pid" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="17N04ap9Ph_" role="1YuTPh">
+      <property role="TrG5h" value="functionConnector" />
+      <ref role="1YaFvo" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+    </node>
+  </node>
 </model>
 
