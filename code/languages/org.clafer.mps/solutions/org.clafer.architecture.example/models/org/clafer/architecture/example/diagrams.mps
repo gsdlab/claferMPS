@@ -19,6 +19,7 @@
         <property id="7139025269056541768" name="connLabelsPosition" index="nHvRw" />
         <property id="4382799495044010590" name="showConLabelsNearSources" index="1j3GqP" />
         <property id="4382799495044010588" name="showConLabels" index="1j3GqR" />
+        <child id="1525516600048852957" name="fragmentRefs" index="3LX2qu" />
       </concept>
       <concept id="8674886736249155476" name="org.clafer.architecture.structure.SmartDeviceType" flags="ng" index="kwSKi" />
       <concept id="8674886736249155477" name="org.clafer.architecture.structure.PowerDeviceType" flags="ng" index="kwSKj" />
@@ -28,6 +29,7 @@
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AnalysisFunction" flags="ng" index="2mZLT$" />
       <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
         <property id="7694989595702677415" name="isOptional" index="gTlvz" />
+        <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
       <concept id="1679786397508364593" name="org.clafer.architecture.structure.IHardwareConnector" flags="ng" index="PiMn_">
@@ -51,10 +53,18 @@
         <child id="1293377804022658528" name="targetExpr" index="28Pzmy" />
       </concept>
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
+      <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareArchitecture" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
       <concept id="7477098530663790629" name="org.clafer.architecture.structure.AnalogDataConnector" flags="ng" index="3D38lq" />
       <concept id="8119098109029358023" name="org.clafer.architecture.structure.Feature" flags="ng" index="3H$kPL" />
+      <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
+        <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
+      </concept>
+      <concept id="1525516600051621603" name="org.clafer.architecture.structure.CTFragmentRef" flags="ng" index="3K8Auw" />
+      <concept id="1525516600048852831" name="org.clafer.architecture.structure.FragmentRef" flags="ng" index="3LX2os">
+        <child id="1525516600049751577" name="baseFragment" index="3LLIXq" />
+      </concept>
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
@@ -474,7 +484,10 @@
       </node>
       <node concept="36Bm5n" id="17N04apr_rw" role="2mZOl8">
         <property role="TrG5h" value="busConnector2" />
-        <node concept="ZpONE" id="17N04apr_s7" role="28I6$c">
+        <node concept="ZpONE" id="7Ij6CMqkAvX" role="28I6$c">
+          <ref role="ZpOSt" node="1ub0KooEDro" resolve="electrDNode" />
+        </node>
+        <node concept="ZpONE" id="7Ij6CMqkAwb" role="28I6$c">
           <ref role="ZpOSt" node="1ub0KooEDro" resolve="electrDNode" />
         </node>
         <node concept="2qmXGp" id="17N04apr_ry" role="28I6$c">
@@ -1094,6 +1107,7 @@
         </node>
       </node>
     </node>
+    <node concept="UzEYP" id="7Ij6CMq7zHr" role="UzTCv" />
     <node concept="UzEYP" id="1ub0KooEDry" role="UzTCv" />
   </node>
   <node concept="UzPwm" id="1ub0KooEDIs">
@@ -1262,6 +1276,34 @@
     <node concept="UzEYP" id="1ub0KooJY9X" role="UzTCv" />
     <node concept="UzEYP" id="1ub0KooJYe2" role="UzTCv" />
     <node concept="UzEYP" id="1ub0KooJYaA" role="UzTCv" />
+  </node>
+  <node concept="UzPwm" id="7Ij6CMq9gIw">
+    <property role="3wNgFz" value="0" />
+    <property role="TrG5h" value="HWArchitecture" />
+    <node concept="3GEVxB" id="7Ij6CMq9gIQ" role="UzTCp">
+      <ref role="3GEb4d" node="1ub0KooEDqM" resolve="Communication_Topology" />
+    </node>
+    <node concept="3GEVxB" id="7Ij6CMq9gIV" role="UzTCp">
+      <ref role="3GEb4d" node="1ub0KooEDqY" resolve="Device_Node_Classification" />
+    </node>
+    <node concept="3GEVxB" id="7Ij6CMq9gJ3" role="UzTCp">
+      <ref role="3GEb4d" node="1ub0KooEDIs" resolve="Power_Topology" />
+    </node>
+    <node concept="1uNGeH" id="7Ij6CMq9gJ8" role="UzTCv">
+      <property role="TrG5h" value="hwArchitecture" />
+      <node concept="3K8Auw" id="7Ij6CMq9gJd" role="3LX2qu">
+        <node concept="ZpONE" id="7Ij6CMq9gJf" role="3LLIXq">
+          <ref role="ZpOSt" node="1ub0KooEDqN" resolve="comTopology" />
+        </node>
+      </node>
+      <node concept="3HSg1M" id="7Ij6CMqk7T9" role="gT77A">
+        <ref role="3HSg1l" node="7Ij6CMqk7Ts" resolve="hw" />
+      </node>
+    </node>
+    <node concept="UzEYP" id="7Ij6CMqk7Tb" role="UzTCv" />
+    <node concept="1uNGeH" id="7Ij6CMqk7Ts" role="UzTCv">
+      <property role="TrG5h" value="hw" />
+    </node>
   </node>
 </model>
 

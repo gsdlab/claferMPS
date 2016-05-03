@@ -11,11 +11,11 @@
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
+    <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
     <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" implicit="true" />
-    <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
@@ -48,6 +48,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -1616,29 +1619,25 @@
       <node concept="1DcWWT" id="17N04apnOcK" role="3cqZAp">
         <node concept="3clFbS" id="17N04apnOcM" role="2LFqv$">
           <node concept="2Mj0R9" id="17N04apnQmu" role="3cqZAp">
-            <node concept="2OqwBi" id="17N04apnQmv" role="2MkoU_">
-              <node concept="1mIQ4w" id="17N04apnQmz" role="2OqNvi">
-                <node concept="chp4Y" id="17N04apnQm$" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="17N04apnRcA" role="2Oq$k0">
-                <node concept="1YBJjd" id="17N04apnR2e" role="2Oq$k0">
-                  <ref role="1YBMHb" node="5ipUCoiPsTf" resolve="busConnector" />
-                </node>
-                <node concept="2qgKlT" id="17N04apnW16" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:17N04apiQmF" resolve="getTarget" />
-                  <node concept="37vLTw" id="17N04apnWbD" role="37wK5m">
-                    <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="Xl_RD" id="17N04apnQm_" role="2MkJ7o">
               <property role="Xl_RC" value="Target must be a Device Node" />
             </node>
             <node concept="37vLTw" id="17N04apptCl" role="2OEOjV">
               <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
+            </node>
+            <node concept="2OqwBi" id="7Ij6CMq5Foc" role="2MkoU_">
+              <node concept="2YIFZM" id="7Ij6CMq5FiX" role="2Oq$k0">
+                <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
+                <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+                <node concept="37vLTw" id="7Ij6CMq5Fk9" role="37wK5m">
+                  <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="7Ij6CMq5FBz" role="2OqNvi">
+                <node concept="chp4Y" id="7Ij6CMq5FCe" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3clFbH" id="17N04apnOcL" role="3cqZAp" />

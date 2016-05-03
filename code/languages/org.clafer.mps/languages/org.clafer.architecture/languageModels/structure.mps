@@ -438,6 +438,7 @@
       <property role="20kJfa" value="connects" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
+      <node concept="asaX9" id="7Ij6CMq2qlJ" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="5LUy9Q2fPnv" role="PzmwI">
       <ref role="PrY4T" node="5LUy9Q2fPnu" resolve="IHaveArchType" />

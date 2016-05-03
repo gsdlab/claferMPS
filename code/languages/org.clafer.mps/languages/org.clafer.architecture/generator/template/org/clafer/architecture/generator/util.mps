@@ -225,7 +225,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="3T8tWlk9fMM">
-    <property role="TrG5h" value="ArchitectureUtil" />
+    <property role="TrG5h" value="ArchGenUtil" />
     <node concept="2tJIrI" id="7$28d_YsbmS" role="jymVt" />
     <node concept="2tJIrI" id="7$28d_Ysbpk" role="jymVt" />
     <node concept="2YIFZL" id="7$28d_YRFxN" role="jymVt">
@@ -568,7 +568,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4NBd3iZlSIK" role="jymVt" />
-    <node concept="2tJIrI" id="7$28d_Yw89u" role="jymVt" />
     <node concept="2YIFZL" id="7$28d_YWxAw" role="jymVt">
       <property role="TrG5h" value="getConceptClafer" />
       <property role="od$2w" value="false" />
