@@ -233,7 +233,7 @@
     <property role="34LRSv" value="Deployment" />
     <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
     <property role="1pbfSe" value="453338538" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
     <node concept="1TJgyj" id="6Fa64hUppo2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fa" />
@@ -988,6 +988,12 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <node concept="1TJgyj" id="1kFIkf$RTZt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fragmentRefs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1kFIkf$RTXv" resolve="FragmentRef" />
+    </node>
     <node concept="1TJgyi" id="3NiPeHJR19s" role="1TKVEl">
       <property role="TrG5h" value="showConLabels" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -1094,6 +1100,78 @@
     <node concept="PrWs8" id="6oTHSFINJel" role="PzmwI">
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1kFIkf$RTXv">
+    <property role="1pbfSe" value="99919710" />
+    <property role="TrG5h" value="FragmentRef" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1kFIkf$YCDw" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="1kFIkf_jtjh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1kFIkf$Vlop" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseFragment" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1kFIkf$VlaP">
+    <property role="1pbfSe" value="99021832" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="DNFragmentRef" />
+    <property role="R4oN_" value="Device Node Reference" />
+    <property role="34LRSv" value="dn" />
+    <ref role="1TJDcQ" node="1kFIkf$RTXv" resolve="FragmentRef" />
+  </node>
+  <node concept="1TIwiD" id="1kFIkf_2tV4">
+    <property role="1pbfSe" value="97150969" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="PTFragmentRef" />
+    <property role="34LRSv" value="pt" />
+    <property role="R4oN_" value="Power Topology Reference" />
+    <ref role="1TJDcQ" node="1kFIkf$RTXv" resolve="FragmentRef" />
+  </node>
+  <node concept="1TIwiD" id="1kFIkf_2tVz">
+    <property role="1pbfSe" value="97150938" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="CTFragmentRef" />
+    <property role="34LRSv" value="ct" />
+    <property role="R4oN_" value="Communication Topology Reference" />
+    <ref role="1TJDcQ" node="1kFIkf$RTXv" resolve="FragmentRef" />
+  </node>
+  <node concept="1TIwiD" id="1kFIkf_9FX9">
+    <property role="1pbfSe" value="95258484" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="FragmentRefExpr" />
+    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1kFIkf_edvs" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragmentRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1kFIkf$RTXv" resolve="FragmentRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1kFIkf_$bJ8">
+    <property role="1pbfSe" value="88312565" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="FAFragmentRef" />
+    <property role="34LRSv" value="fa" />
+    <property role="R4oN_" value="Functional Analysis Architecture Reference" />
+    <ref role="1TJDcQ" node="1kFIkf$RTXv" resolve="FragmentRef" />
+  </node>
+  <node concept="1TIwiD" id="1kFIkf_$bJf">
+    <property role="1pbfSe" value="88312558" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="HAFragmentRef" />
+    <property role="34LRSv" value="ha" />
+    <property role="R4oN_" value="Hardware Architecture Reference" />
+    <ref role="1TJDcQ" node="1kFIkf$RTXv" resolve="FragmentRef" />
   </node>
 </model>
 

@@ -16,6 +16,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -72,6 +73,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -206,6 +210,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
@@ -1206,6 +1211,358 @@
     </node>
     <node concept="1SWQZ3" id="6ciUqxOF8TF" role="lGtFl">
       <property role="1SWRpm" value="Connectors' Labels" />
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1kFIkf_2qAa">
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="addDNFragmentRef" />
+    <ref role="2ZfgGC" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="2S6ZIM" id="1kFIkf_2qAb" role="2ZfVej">
+      <node concept="3clFbS" id="1kFIkf_2qAc" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2qD3" role="3cqZAp">
+          <node concept="Xl_RD" id="1kFIkf_2qD2" role="3clFbG">
+            <property role="Xl_RC" value="Add Device Node Classification Reference" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1kFIkf_2qAd" role="2ZfgGD">
+      <node concept="3clFbS" id="1kFIkf_2qAe" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2vDh" role="3cqZAp">
+          <node concept="2OqwBi" id="1kFIkf_2wC9" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_2vOr" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1kFIkf_2vDg" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1kFIkf_2w3s" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:1kFIkf$RTZt" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1kFIkf_2yjX" role="2OqNvi">
+              <ref role="1A0vxQ" to="ddau:1kFIkf$VlaP" resolve="DNFragmentRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="1kFIkf_2qZO" role="lGtFl">
+      <property role="1SWRpm" value="Fragment References" />
+    </node>
+    <node concept="2SaL7w" id="1kFIkf_2qZT" role="2ZfVeh">
+      <node concept="3clFbS" id="1kFIkf_2qZU" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2r12" role="3cqZAp">
+          <node concept="1Wc70l" id="1kFIkf_2B7e" role="3clFbG">
+            <node concept="1eOMI4" id="1kFIkf_2AWQ" role="3uHU7B">
+              <node concept="22lmx$" id="1kFIkf_2sPF" role="1eOMHV">
+                <node concept="2OqwBi" id="1kFIkf_2t5X" role="3uHU7w">
+                  <node concept="2Sf5sV" id="1kFIkf_2sW1" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="1kFIkf_2toD" role="2OqNvi">
+                    <node concept="chp4Y" id="1kFIkf_2tvh" role="cj9EA">
+                      <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="22lmx$" id="1kFIkf_2rE8" role="3uHU7B">
+                  <node concept="2OqwBi" id="1kFIkf_2r7_" role="3uHU7B">
+                    <node concept="2Sf5sV" id="1kFIkf_2r11" role="2Oq$k0" />
+                    <node concept="1mIQ4w" id="1kFIkf_2rx9" role="2OqNvi">
+                      <node concept="chp4Y" id="1kFIkf_2r$k" role="cj9EA">
+                        <ref role="cht4Q" to="ddau:19aTRzkPSvs" resolve="PowerTopology" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1kFIkf_2rQL" role="3uHU7w">
+                    <node concept="2Sf5sV" id="1kFIkf_2rIy" role="2Oq$k0" />
+                    <node concept="1mIQ4w" id="1kFIkf_2sDe" role="2OqNvi">
+                      <node concept="chp4Y" id="1kFIkf_2sI8" role="cj9EA">
+                        <ref role="cht4Q" to="ddau:19aTRzkPSt3" resolve="CommTopology" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1kFIkf_2Bfs" role="3uHU7w">
+              <node concept="2OqwBi" id="1kFIkf_2Bft" role="2Oq$k0">
+                <node concept="2OqwBi" id="1kFIkf_2Bfu" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="1kFIkf_2Bfv" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1kFIkf_$cQ$" role="2OqNvi">
+                    <ref role="37wK5l" to="f5o0:1kFIkf_2pmn" resolve="getFragmentRefs" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="1kFIkf_2Bfx" role="2OqNvi">
+                  <node concept="chp4Y" id="1kFIkf_2Bpw" role="v3oSu">
+                    <ref role="cht4Q" to="ddau:1kFIkf$VlaP" resolve="DNFragmentRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1v1jN8" id="1kFIkf_2Bfz" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1kFIkf_2tWY">
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="addPTFragmentRef" />
+    <ref role="2ZfgGC" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="2S6ZIM" id="1kFIkf_2tWZ" role="2ZfVej">
+      <node concept="3clFbS" id="1kFIkf_2tX0" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2tX1" role="3cqZAp">
+          <node concept="Xl_RD" id="1kFIkf_2tX2" role="3clFbG">
+            <property role="Xl_RC" value="Add Power Topology Reference" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1kFIkf_2tX3" role="2ZfgGD">
+      <node concept="3clFbS" id="1kFIkf_2tX4" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2ypl" role="3cqZAp">
+          <node concept="2OqwBi" id="1kFIkf_2ypm" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_2ypn" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1kFIkf_2ypo" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1kFIkf_2ypp" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:1kFIkf$RTZt" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1kFIkf_2ypq" role="2OqNvi">
+              <ref role="1A0vxQ" to="ddau:1kFIkf_2tV4" resolve="PTFragmentRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="1kFIkf_2tX5" role="lGtFl">
+      <property role="1SWRpm" value="Fragment References" />
+    </node>
+    <node concept="2SaL7w" id="1kFIkf_2tX6" role="2ZfVeh">
+      <node concept="3clFbS" id="1kFIkf_2tX7" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2tX8" role="3cqZAp">
+          <node concept="1Wc70l" id="1kFIkf_2BCQ" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_2tXa" role="3uHU7B">
+              <node concept="2Sf5sV" id="1kFIkf_2tXb" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1kFIkf_2tXc" role="2OqNvi">
+                <node concept="chp4Y" id="1kFIkf_2tXd" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1kFIkf_2BHV" role="3uHU7w">
+              <node concept="2OqwBi" id="1kFIkf_2BHW" role="2Oq$k0">
+                <node concept="2OqwBi" id="1kFIkf_2BHX" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="1kFIkf_2BHY" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1kFIkf_$cZa" role="2OqNvi">
+                    <ref role="37wK5l" to="f5o0:1kFIkf_2pmn" resolve="getFragmentRefs" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="1kFIkf_2BI0" role="2OqNvi">
+                  <node concept="chp4Y" id="1kFIkf_2BOx" role="v3oSu">
+                    <ref role="cht4Q" to="ddau:1kFIkf_2tV4" resolve="PTFragmentRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1v1jN8" id="1kFIkf_2BI2" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1kFIkf_2y_h">
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="addCTFragmentRef" />
+    <ref role="2ZfgGC" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="2S6ZIM" id="1kFIkf_2y_i" role="2ZfVej">
+      <node concept="3clFbS" id="1kFIkf_2y_j" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2y_k" role="3cqZAp">
+          <node concept="Xl_RD" id="1kFIkf_2y_l" role="3clFbG">
+            <property role="Xl_RC" value="Add Communication Topology Reference" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1kFIkf_2y_m" role="2ZfgGD">
+      <node concept="3clFbS" id="1kFIkf_2y_n" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2y_o" role="3cqZAp">
+          <node concept="2OqwBi" id="1kFIkf_2y_p" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_2y_q" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1kFIkf_2y_r" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1kFIkf_2y_s" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:1kFIkf$RTZt" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1kFIkf_2y_t" role="2OqNvi">
+              <ref role="1A0vxQ" to="ddau:1kFIkf_2tVz" resolve="CTFragmentRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="1kFIkf_2y_u" role="lGtFl">
+      <property role="1SWRpm" value="Fragment References" />
+    </node>
+    <node concept="2SaL7w" id="1kFIkf_2y_v" role="2ZfVeh">
+      <node concept="3clFbS" id="1kFIkf_2y_w" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_2y_x" role="3cqZAp">
+          <node concept="1Wc70l" id="1kFIkf_95IE" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_2y_y" role="3uHU7B">
+              <node concept="2Sf5sV" id="1kFIkf_2y_z" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1kFIkf_2y_$" role="2OqNvi">
+                <node concept="chp4Y" id="1kFIkf_2y__" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:7DuSdC$$2dR" resolve="HardwareArchitecture" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1kFIkf_2AiH" role="3uHU7w">
+              <node concept="2OqwBi" id="1kFIkf_2$mL" role="2Oq$k0">
+                <node concept="2OqwBi" id="1kFIkf_2zmU" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="1kFIkf_2zeF" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1kFIkf_$cLE" role="2OqNvi">
+                    <ref role="37wK5l" to="f5o0:1kFIkf_2pmn" resolve="getFragmentRefs" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="1kFIkf_2A5m" role="2OqNvi">
+                  <node concept="chp4Y" id="1kFIkf_2Ab0" role="v3oSu">
+                    <ref role="cht4Q" to="ddau:1kFIkf_2tVz" resolve="CTFragmentRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1v1jN8" id="1kFIkf_2AuT" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1kFIkf_$bJm">
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="addFAFragmentRef" />
+    <ref role="2ZfgGC" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="2S6ZIM" id="1kFIkf_$bJn" role="2ZfVej">
+      <node concept="3clFbS" id="1kFIkf_$bJo" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_$bJp" role="3cqZAp">
+          <node concept="Xl_RD" id="1kFIkf_$bJq" role="3clFbG">
+            <property role="Xl_RC" value="Add Functional Analysis Reference" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1kFIkf_$bJr" role="2ZfgGD">
+      <node concept="3clFbS" id="1kFIkf_$bJs" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_$bJt" role="3cqZAp">
+          <node concept="2OqwBi" id="1kFIkf_$bJu" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_$bJv" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1kFIkf_$bJw" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1kFIkf_$bJx" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:1kFIkf$RTZt" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1kFIkf_$bJy" role="2OqNvi">
+              <ref role="1A0vxQ" to="ddau:1kFIkf_$bJ8" resolve="FAFragmentRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="1kFIkf_$bJz" role="lGtFl">
+      <property role="1SWRpm" value="Fragment References" />
+    </node>
+    <node concept="2SaL7w" id="1kFIkf_$bJ$" role="2ZfVeh">
+      <node concept="3clFbS" id="1kFIkf_$bJ_" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_$bJA" role="3cqZAp">
+          <node concept="1Wc70l" id="1kFIkf_$bJB" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_$bJC" role="3uHU7B">
+              <node concept="2Sf5sV" id="1kFIkf_$bJD" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1kFIkf_$bJE" role="2OqNvi">
+                <node concept="chp4Y" id="1kFIkf_$bS2" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:6Fa64hUc88i" resolve="Deployment" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1kFIkf_$bJG" role="3uHU7w">
+              <node concept="2OqwBi" id="1kFIkf_$bJH" role="2Oq$k0">
+                <node concept="2OqwBi" id="1kFIkf_$bJI" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="1kFIkf_$bJJ" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1kFIkf_$cHw" role="2OqNvi">
+                    <ref role="37wK5l" to="f5o0:1kFIkf_2pmn" resolve="getFragmentRefs" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="1kFIkf_$bJL" role="2OqNvi">
+                  <node concept="chp4Y" id="1kFIkf_$cq6" role="v3oSu">
+                    <ref role="cht4Q" to="ddau:1kFIkf_$bJ8" resolve="FAFragmentRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1v1jN8" id="1kFIkf_$bJN" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1kFIkf_$d64">
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="addHAFragmentRef" />
+    <ref role="2ZfgGC" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="2S6ZIM" id="1kFIkf_$d65" role="2ZfVej">
+      <node concept="3clFbS" id="1kFIkf_$d66" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_$d67" role="3cqZAp">
+          <node concept="Xl_RD" id="1kFIkf_$d68" role="3clFbG">
+            <property role="Xl_RC" value="Add Hardware Architecture Reference" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1kFIkf_$d69" role="2ZfgGD">
+      <node concept="3clFbS" id="1kFIkf_$d6a" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_$d6b" role="3cqZAp">
+          <node concept="2OqwBi" id="1kFIkf_$d6c" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_$d6d" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1kFIkf_$d6e" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1kFIkf_$d6f" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:1kFIkf$RTZt" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1kFIkf_$d6g" role="2OqNvi">
+              <ref role="1A0vxQ" to="ddau:1kFIkf_$bJf" resolve="HAFragmentRef" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1SWQZ3" id="1kFIkf_$d6h" role="lGtFl">
+      <property role="1SWRpm" value="Fragment References" />
+    </node>
+    <node concept="2SaL7w" id="1kFIkf_$d6i" role="2ZfVeh">
+      <node concept="3clFbS" id="1kFIkf_$d6j" role="2VODD2">
+        <node concept="3clFbF" id="1kFIkf_$d6k" role="3cqZAp">
+          <node concept="1Wc70l" id="1kFIkf_$d6l" role="3clFbG">
+            <node concept="2OqwBi" id="1kFIkf_$d6m" role="3uHU7B">
+              <node concept="2Sf5sV" id="1kFIkf_$d6n" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1kFIkf_$d6o" role="2OqNvi">
+                <node concept="chp4Y" id="1kFIkf_$d6p" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:6Fa64hUc88i" resolve="Deployment" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1kFIkf_$d6q" role="3uHU7w">
+              <node concept="2OqwBi" id="1kFIkf_$d6r" role="2Oq$k0">
+                <node concept="2OqwBi" id="1kFIkf_$d6s" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="1kFIkf_$d6t" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1kFIkf_$d6u" role="2OqNvi">
+                    <ref role="37wK5l" to="f5o0:1kFIkf_2pmn" resolve="getFragmentRefs" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="1kFIkf_$d6v" role="2OqNvi">
+                  <node concept="chp4Y" id="1kFIkf_COOf" role="v3oSu">
+                    <ref role="cht4Q" to="ddau:1kFIkf_$bJf" resolve="HAFragmentRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1v1jN8" id="1kFIkf_$d6x" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

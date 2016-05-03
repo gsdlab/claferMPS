@@ -826,7 +826,7 @@
     <ref role="1XX52x" to="ddau:72GPbqtjtj4" resolve="SuperArchElRef" />
     <node concept="3EZMnI" id="72GPbqtjul7" role="2wV5jI">
       <node concept="3F0ifn" id="72GPbqtjule" role="3EZMnx">
-        <property role="3F0ifm" value="of" />
+        <property role="3F0ifm" value="extending" />
       </node>
       <node concept="1iCGBv" id="72GPbqtjulk" role="3EZMnx">
         <ref role="1NtTu8" to="ddau:72GPbqtjtjz" />
@@ -881,6 +881,38 @@
       </node>
       <node concept="PMmxH" id="dW_p57HEVl" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO45o7" resolve="ArchSuperNode" />
+      </node>
+      <node concept="3F2HdR" id="1kFIkf__YS6" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:1kFIkf$RTZt" />
+        <node concept="2iRkQZ" id="1kFIkf__YS7" role="2czzBx" />
+        <node concept="4$FPG" id="1kFIkf__YS8" role="4_6I_">
+          <node concept="3clFbS" id="1kFIkf__YS9" role="2VODD2">
+            <node concept="3clFbF" id="1kFIkf__YSa" role="3cqZAp">
+              <node concept="10Nm6u" id="1kFIkf__YSb" role="3clFbG" />
+            </node>
+          </node>
+        </node>
+        <node concept="pVoyu" id="1kFIkf__YSc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1kFIkf__YSd" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="1kFIkf__YSe" role="pqm2j">
+          <node concept="3clFbS" id="1kFIkf__YSf" role="2VODD2">
+            <node concept="3clFbF" id="1kFIkf__YSg" role="3cqZAp">
+              <node concept="2OqwBi" id="1kFIkf__YSh" role="3clFbG">
+                <node concept="2OqwBi" id="1kFIkf__YSi" role="2Oq$k0">
+                  <node concept="pncrf" id="1kFIkf__YSj" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1kFIkf__YSk" role="2OqNvi">
+                    <ref role="3TtcxE" to="ddau:1kFIkf$RTZt" />
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="1kFIkf__YSl" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="PMmxH" id="5PgN_niJSfV" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO2K80" resolve="ArchBody" />
@@ -10143,6 +10175,91 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1kFIkf$RU8l">
+    <ref role="1XX52x" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="PMmxH" id="1kFIkf$RU8V" role="6VMZX">
+      <ref role="PMmxG" node="1T6YVZd85oj" resolve="ArchInspector" />
+    </node>
+    <node concept="3EZMnI" id="1kFIkf$RU8X" role="2wV5jI">
+      <node concept="PMmxH" id="1kFIkf$RU8Y" role="3EZMnx">
+        <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
+      </node>
+      <node concept="PMmxH" id="1kFIkf$RU8Z" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO44bo" resolve="ArchOptional" />
+      </node>
+      <node concept="PMmxH" id="1kFIkf$RU90" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO47xg" resolve="ArchDefinition" />
+      </node>
+      <node concept="PMmxH" id="1kFIkf$RU91" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO45o7" resolve="ArchSuperNode" />
+      </node>
+      <node concept="3F2HdR" id="1kFIkf$SRfZ" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:1kFIkf$RTZt" />
+        <node concept="2iRkQZ" id="1kFIkf$SRg5" role="2czzBx" />
+        <node concept="4$FPG" id="1kFIkf_1KG1" role="4_6I_">
+          <node concept="3clFbS" id="1kFIkf_1KG2" role="2VODD2">
+            <node concept="3clFbF" id="1kFIkf_1RV6" role="3cqZAp">
+              <node concept="10Nm6u" id="1kFIkf_1RV5" role="3clFbG" />
+            </node>
+          </node>
+        </node>
+        <node concept="pVoyu" id="1kFIkf_5jvz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1kFIkf_6fQm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="1kFIkf_9aeU" role="pqm2j">
+          <node concept="3clFbS" id="1kFIkf_9aeV" role="2VODD2">
+            <node concept="3clFbF" id="1kFIkf_9ajI" role="3cqZAp">
+              <node concept="2OqwBi" id="1kFIkf_9bq6" role="3clFbG">
+                <node concept="2OqwBi" id="1kFIkf_9aqh" role="2Oq$k0">
+                  <node concept="pncrf" id="1kFIkf_9ajH" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1kFIkf_9aFZ" role="2OqNvi">
+                    <ref role="3TtcxE" to="ddau:1kFIkf$RTZt" />
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="1kFIkf_9dCC" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="1kFIkf$RU92" role="3EZMnx">
+        <ref role="PMmxG" node="$OrRLO2K80" resolve="ArchBody" />
+      </node>
+      <node concept="l2Vlx" id="1kFIkf$RU93" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1kFIkf$Um8m">
+    <property role="3GE5qa" value="FragemtRef" />
+    <ref role="1XX52x" to="ddau:1kFIkf$RTXv" resolve="FragmentRef" />
+    <node concept="3EZMnI" id="1kFIkf$Vlbe" role="2wV5jI">
+      <node concept="l2Vlx" id="1kFIkf$Vlbf" role="2iSdaV" />
+      <node concept="PMmxH" id="1kFIkf$Vlbo" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="Veino" id="1kFIkf_6I8n" role="3F10Kt" />
+      </node>
+      <node concept="3F0ifn" id="1kFIkf$Vlo_" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+      </node>
+      <node concept="3F1sOY" id="1kFIkf$VloN" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:1kFIkf$Vlop" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1kFIkf_9H_j">
+    <property role="3GE5qa" value="FragemtRef" />
+    <ref role="1XX52x" to="ddau:1kFIkf_9FX9" resolve="FragmentRefExpr" />
+    <node concept="1iCGBv" id="1kFIkf_iYM7" role="2wV5jI">
+      <ref role="1NtTu8" to="ddau:1kFIkf_edvs" />
+      <node concept="1sVBvm" id="1kFIkf_iYM9" role="1sWHZn">
+        <node concept="PMmxH" id="1kFIkf_jBTH" role="2wV5jI">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
         </node>
       </node>
     </node>
