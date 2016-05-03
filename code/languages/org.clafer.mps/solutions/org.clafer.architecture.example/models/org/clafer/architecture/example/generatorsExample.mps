@@ -2,7 +2,7 @@
 <model ref="r:f32f8e7d-208b-43c9-b69a-1857557a456b(org.clafer.architecture.example.generatorsExample)">
   <persistence version="9" />
   <languages>
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="1" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="2" />
     <use id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
@@ -35,6 +35,7 @@
         <property id="7139025269056541768" name="connLabelsPosition" index="nHvRw" />
         <property id="4382799495044010590" name="showConLabelsNearSources" index="1j3GqP" />
         <property id="4382799495044010588" name="showConLabels" index="1j3GqR" />
+        <child id="1525516600048852957" name="fragmentRefs" index="3LX2qu" />
       </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
@@ -100,6 +101,11 @@
       <concept id="8119098109029358023" name="org.clafer.architecture.structure.Feature" flags="ng" index="3H$kPL" />
       <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
+      </concept>
+      <concept id="1525516600060459976" name="org.clafer.architecture.structure.FAFragmentRef" flags="ng" index="3KIKab" />
+      <concept id="1525516600060459983" name="org.clafer.architecture.structure.HAFragmentRef" flags="ng" index="3KIKac" />
+      <concept id="1525516600048852831" name="org.clafer.architecture.structure.FragmentRef" flags="ng" index="3LX2os">
+        <child id="1525516600049751577" name="baseFragment" index="3LLIXq" />
       </concept>
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
@@ -205,6 +211,16 @@
           <property role="TrG5h" value="deployement" />
           <ref role="gFST0" node="1T6YVZdxf2d" resolve="hwTopology" />
           <ref role="gFST6" node="1T6YVZdxf2J" resolve="faArch" />
+          <node concept="3KIKab" id="7a1NGXfhLgC" role="3LX2qu">
+            <node concept="ZpONE" id="7a1NGXfhLgD" role="3LLIXq">
+              <ref role="ZpOSt" node="1T6YVZdxf2J" resolve="faArch" />
+            </node>
+          </node>
+          <node concept="3KIKac" id="7a1NGXfhLgE" role="3LX2qu">
+            <node concept="ZpONE" id="7a1NGXfhLgF" role="3LLIXq">
+              <ref role="ZpOSt" node="1T6YVZdxf2d" resolve="hwTopology" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -513,6 +529,16 @@
       <property role="TrG5h" value="deployment" />
       <ref role="gFST6" node="1T6YVZdxf2J" resolve="faArch" />
       <ref role="gFST0" node="1T6YVZdxf2d" resolve="hwTopology" />
+      <node concept="3KIKab" id="7a1NGXfhLgG" role="3LX2qu">
+        <node concept="ZpONE" id="7a1NGXfhLgH" role="3LLIXq">
+          <ref role="ZpOSt" node="1T6YVZdxf2J" resolve="faArch" />
+        </node>
+      </node>
+      <node concept="3KIKac" id="7a1NGXfhLgI" role="3LX2qu">
+        <node concept="ZpONE" id="7a1NGXfhLgJ" role="3LLIXq">
+          <ref role="ZpOSt" node="1T6YVZdxf2d" resolve="hwTopology" />
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="g6kGtGv6N5" role="UzTCv" />
     <node concept="2l49t0" id="g6kGtGv6Q1" role="UzTCv">

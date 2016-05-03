@@ -2,7 +2,7 @@
 <model ref="r:0e38b85c-c094-48e4-9a77-31c1f7baad20(org.clafer.architecture.example.TwoDoor)">
   <persistence version="9" />
   <languages>
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="1" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="2" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
@@ -20,6 +20,7 @@
         <property id="7139025269056541768" name="connLabelsPosition" index="nHvRw" />
         <property id="4382799495044010590" name="showConLabelsNearSources" index="1j3GqP" />
         <property id="4382799495044010588" name="showConLabels" index="1j3GqR" />
+        <child id="1525516600048852957" name="fragmentRefs" index="3LX2qu" />
       </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
@@ -99,6 +100,11 @@
       <concept id="8119098109029358023" name="org.clafer.architecture.structure.Feature" flags="ng" index="3H$kPL" />
       <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
+      </concept>
+      <concept id="1525516600060459976" name="org.clafer.architecture.structure.FAFragmentRef" flags="ng" index="3KIKab" />
+      <concept id="1525516600060459983" name="org.clafer.architecture.structure.HAFragmentRef" flags="ng" index="3KIKac" />
+      <concept id="1525516600048852831" name="org.clafer.architecture.structure.FragmentRef" flags="ng" index="3LX2os">
+        <child id="1525516600049751577" name="baseFragment" index="3LLIXq" />
       </concept>
       <concept id="7885836682712175906" name="org.clafer.architecture.structure.IHaveDeployment" flags="ng" index="3SJsIc">
         <child id="7885836682712176724" name="deployedTo" index="3SJsrU" />
@@ -5722,6 +5728,16 @@
               </node>
             </node>
           </node>
+          <node concept="3KIKab" id="7a1NGXfhLgo" role="3LX2qu">
+            <node concept="ZpONE" id="7a1NGXfhLgp" role="3LLIXq">
+              <ref role="ZpOSt" node="2LW9dx58i47" resolve="DWinSysFA" />
+            </node>
+          </node>
+          <node concept="3KIKac" id="7a1NGXfhLgq" role="3LX2qu">
+            <node concept="ZpONE" id="7a1NGXfhLgr" role="3LLIXq">
+              <ref role="ZpOSt" node="2LW9dx58i4B" resolve="DWinSysHA" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="33KLpJ" id="bIGVXW8kOs" role="33KLpg">
@@ -7523,6 +7539,16 @@
                   <ref role="ZpOSt" node="bIGVXW7xLI" resolve="FPWinSysDN" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3KIKab" id="7a1NGXfhLgs" role="3LX2qu">
+            <node concept="ZpONE" id="7a1NGXfhLgt" role="3LLIXq">
+              <ref role="ZpOSt" node="6laenAvatC" resolve="FPWinSysFAA" />
+            </node>
+          </node>
+          <node concept="3KIKac" id="7a1NGXfhLgu" role="3LX2qu">
+            <node concept="ZpONE" id="7a1NGXfhLgv" role="3LLIXq">
+              <ref role="ZpOSt" node="bIGVXW7vss" resolve="FPWinSysHA" />
             </node>
           </node>
         </node>

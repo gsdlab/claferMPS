@@ -2,7 +2,7 @@
 <model ref="r:aaee1a89-4ee2-4aef-8ae7-415bab1e1bb1(org.clafer.architecture.example.DriverLock)">
   <persistence version="9" />
   <languages>
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="1" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="2" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
@@ -46,6 +46,7 @@
         <property id="7139025269056541768" name="connLabelsPosition" index="nHvRw" />
         <property id="4382799495044010590" name="showConLabelsNearSources" index="1j3GqP" />
         <property id="4382799495044010588" name="showConLabels" index="1j3GqR" />
+        <child id="1525516600048852957" name="fragmentRefs" index="3LX2qu" />
       </concept>
       <concept id="7694989595703582599" name="org.clafer.architecture.structure.Architecture" flags="ng" index="gXKv3" />
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm">
@@ -124,6 +125,11 @@
       <concept id="8119098109029358023" name="org.clafer.architecture.structure.Feature" flags="ng" index="3H$kPL" />
       <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
+      </concept>
+      <concept id="1525516600060459976" name="org.clafer.architecture.structure.FAFragmentRef" flags="ng" index="3KIKab" />
+      <concept id="1525516600060459983" name="org.clafer.architecture.structure.HAFragmentRef" flags="ng" index="3KIKac" />
+      <concept id="1525516600048852831" name="org.clafer.architecture.structure.FragmentRef" flags="ng" index="3LX2os">
+        <child id="1525516600049751577" name="baseFragment" index="3LLIXq" />
       </concept>
       <concept id="7885836682712175906" name="org.clafer.architecture.structure.IHaveDeployment" flags="ng" index="3SJsIc">
         <child id="7885836682712176724" name="deployedTo" index="3SJsrU" />
@@ -238,7 +244,7 @@
     </language>
   </registry>
   <node concept="UzPwm" id="3xlsXfnjfQO">
-    <property role="TrG5h" value="DriverWinSysHA" />
+    <property role="TrG5h" value="eDriverWinSysHA" />
     <property role="3wNgFz" value="0" />
     <node concept="1uNGeH" id="3xlsXfnjfQP" role="UzTCv">
       <property role="TrG5h" value="DriverWinSysHA" />
@@ -315,13 +321,13 @@
             <node concept="2BOcij" id="bIGVXW7B3U" role="33KLot">
               <node concept="2qmXGp" id="bIGVXW7B5G" role="3TlMhJ">
                 <node concept="2ZqYGZ" id="bIGVXW7B6g" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvLGA" resolve="ppm" />
+                  <ref role="2ZqYFj" node="tUesvvLrG" resolve="ppm" />
                 </node>
                 <node concept="2xC6$6" id="bIGVXW7B4t" role="1_9fRO" />
               </node>
               <node concept="2qmXGp" id="bIGVXW7B3h" role="3TlMhI">
                 <node concept="2ZqYGZ" id="bIGVXW7B3v" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvLrQ" resolve="replaceCost" />
+                  <ref role="2ZqYFj" node="tUesvvLrz" resolve="replaceCost" />
                 </node>
                 <node concept="2xC6$6" id="bIGVXW7B3a" role="1_9fRO" />
               </node>
@@ -417,13 +423,13 @@
             <node concept="2BOcij" id="bIGVXW7BoZ" role="33KLot">
               <node concept="2qmXGp" id="bIGVXW7Bp0" role="3TlMhJ">
                 <node concept="2ZqYGZ" id="bIGVXW7Bp1" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvL$T" resolve="ppm" />
+                  <ref role="2ZqYFj" node="tUesvvLrG" resolve="ppm" />
                 </node>
                 <node concept="2xC6$6" id="bIGVXW7Bp2" role="1_9fRO" />
               </node>
               <node concept="2qmXGp" id="bIGVXW7Bp3" role="3TlMhI">
                 <node concept="2ZqYGZ" id="bIGVXW7Bp4" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvLtQ" resolve="replaceCost" />
+                  <ref role="2ZqYFj" node="tUesvvLrz" resolve="replaceCost" />
                 </node>
                 <node concept="2xC6$6" id="bIGVXW7Bp5" role="1_9fRO" />
               </node>
@@ -482,13 +488,13 @@
             <node concept="2BOcij" id="bIGVXW7BtU" role="33KLot">
               <node concept="2qmXGp" id="bIGVXW7BtV" role="3TlMhJ">
                 <node concept="2ZqYGZ" id="bIGVXW7BtW" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvLMy" resolve="ppm" />
+                  <ref role="2ZqYFj" node="tUesvvLrG" resolve="ppm" />
                 </node>
                 <node concept="2xC6$6" id="bIGVXW7BtX" role="1_9fRO" />
               </node>
               <node concept="2qmXGp" id="bIGVXW7BtY" role="3TlMhI">
                 <node concept="2ZqYGZ" id="bIGVXW7BtZ" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvLMa" resolve="replaceCost" />
+                  <ref role="2ZqYFj" node="tUesvvLrz" resolve="replaceCost" />
                 </node>
                 <node concept="2xC6$6" id="bIGVXW7Bu0" role="1_9fRO" />
               </node>
@@ -548,13 +554,13 @@
             <node concept="2BOcij" id="bIGVXW7Bxi" role="33KLot">
               <node concept="2qmXGp" id="bIGVXW7Bxj" role="3TlMhJ">
                 <node concept="2ZqYGZ" id="bIGVXW7Bxk" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvLOL" resolve="ppm" />
+                  <ref role="2ZqYFj" node="tUesvvLrG" resolve="ppm" />
                 </node>
                 <node concept="2xC6$6" id="bIGVXW7Bxl" role="1_9fRO" />
               </node>
               <node concept="2qmXGp" id="bIGVXW7Bxm" role="3TlMhI">
                 <node concept="2ZqYGZ" id="bIGVXW7Bxn" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvLMY" resolve="replaceCost" />
+                  <ref role="2ZqYFj" node="tUesvvLrz" resolve="replaceCost" />
                 </node>
                 <node concept="2xC6$6" id="bIGVXW7Bxo" role="1_9fRO" />
               </node>
@@ -645,7 +651,7 @@
           <node concept="2BOciq" id="bIGVXW7AoK" role="33KLot">
             <node concept="2qmXGp" id="bIGVXW7Avf" role="3TlMhJ">
               <node concept="2ZqYGZ" id="bIGVXW7DVp" role="1ESnxz">
-                <ref role="2ZqYFj" node="tUesvvKma" resolve="cost" />
+                <ref role="2ZqYFj" node="tUesvvzFL" resolve="cost" />
               </node>
               <node concept="ZpONE" id="bIGVXW7DjF" role="1_9fRO">
                 <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
@@ -654,7 +660,7 @@
             <node concept="2BOciq" id="bIGVXW7Agl" role="3TlMhI">
               <node concept="2qmXGp" id="bIGVXW7Akt" role="3TlMhJ">
                 <node concept="2ZqYGZ" id="bIGVXW7DKB" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvKlK" resolve="cost" />
+                  <ref role="2ZqYFj" node="tUesvvzFL" resolve="cost" />
                 </node>
                 <node concept="ZpONE" id="bIGVXW7Dcp" role="1_9fRO">
                   <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
@@ -663,7 +669,7 @@
               <node concept="2BOciq" id="bIGVXW7Ac_" role="3TlMhI">
                 <node concept="2qmXGp" id="bIGVXW7Aej" role="3TlMhJ">
                   <node concept="2ZqYGZ" id="bIGVXW7DDr" role="1ESnxz">
-                    <ref role="2ZqYFj" node="tUesvvKnW" resolve="cost" />
+                    <ref role="2ZqYFj" node="tUesvvzFL" resolve="cost" />
                   </node>
                   <node concept="ZpONE" id="bIGVXW7D57" role="1_9fRO">
                     <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
@@ -671,7 +677,7 @@
                 </node>
                 <node concept="2qmXGp" id="bIGVXW7AbZ" role="3TlMhI">
                   <node concept="2ZqYGZ" id="bIGVXW7Dyf" role="1ESnxz">
-                    <ref role="2ZqYFj" node="tUesvvKgl" resolve="cost" />
+                    <ref role="2ZqYFj" node="tUesvvzFL" resolve="cost" />
                   </node>
                   <node concept="ZpONE" id="bIGVXW7CMY" role="1_9fRO">
                     <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
@@ -690,7 +696,7 @@
           <node concept="2BOciq" id="bIGVXW7AN5" role="33KLot">
             <node concept="2qmXGp" id="bIGVXW7AT$" role="3TlMhJ">
               <node concept="2ZqYGZ" id="bIGVXW7DRN" role="1ESnxz">
-                <ref role="2ZqYFj" node="tUesvvKma" resolve="cost" />
+                <ref role="2ZqYFj" node="tUesvvzFL" resolve="cost" />
               </node>
               <node concept="ZpONE" id="bIGVXW7Dnk" role="1_9fRO">
                 <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
@@ -699,7 +705,7 @@
             <node concept="2BOciq" id="bIGVXW7AEE" role="3TlMhI">
               <node concept="2qmXGp" id="bIGVXW7AIM" role="3TlMhJ">
                 <node concept="2ZqYGZ" id="bIGVXW7DOd" role="1ESnxz">
-                  <ref role="2ZqYFj" node="tUesvvBEl" resolve="mass" />
+                  <ref role="2ZqYFj" node="tUesvvzFG" resolve="mass" />
                 </node>
                 <node concept="ZpONE" id="bIGVXW7Dg2" role="1_9fRO">
                   <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
@@ -708,7 +714,7 @@
               <node concept="2BOciq" id="bIGVXW7AAT" role="3TlMhI">
                 <node concept="2qmXGp" id="bIGVXW7ACC" role="3TlMhJ">
                   <node concept="2ZqYGZ" id="bIGVXW7DH1" role="1ESnxz">
-                    <ref role="2ZqYFj" node="tUesvvBEf" resolve="mass" />
+                    <ref role="2ZqYFj" node="tUesvvzFG" resolve="mass" />
                   </node>
                   <node concept="ZpONE" id="bIGVXW7D8K" role="1_9fRO">
                     <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
@@ -716,7 +722,7 @@
                 </node>
                 <node concept="2qmXGp" id="bIGVXW7AAj" role="3TlMhI">
                   <node concept="2ZqYGZ" id="bIGVXW7D_P" role="1ESnxz">
-                    <ref role="2ZqYFj" node="tUesvvBE8" resolve="mass" />
+                    <ref role="2ZqYFj" node="tUesvvzFG" resolve="mass" />
                   </node>
                   <node concept="ZpONE" id="bIGVXW7CQB" role="1_9fRO">
                     <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
@@ -735,7 +741,7 @@
           <node concept="2BOciq" id="bIGVXW7BVP" role="33KLot">
             <node concept="2qmXGp" id="bIGVXW7C2k" role="3TlMhJ">
               <node concept="2ZqYGZ" id="bIGVXW7DYZ" role="1ESnxz">
-                <ref role="2ZqYFj" node="bIGVXW7Bxf" resolve="warrantyCost" />
+                <ref role="2ZqYFj" node="tUesvvzFS" resolve="warrantyCost" />
               </node>
               <node concept="ZpONE" id="bIGVXW7DuA" role="1_9fRO">
                 <ref role="ZpOSt" node="tUesvvBEp" resolve="DoorModule" />
@@ -744,7 +750,7 @@
             <node concept="2BOciq" id="bIGVXW7BNq" role="3TlMhI">
               <node concept="2qmXGp" id="bIGVXW7BRy" role="3TlMhJ">
                 <node concept="2ZqYGZ" id="bIGVXW7E2_" role="1ESnxz">
-                  <ref role="2ZqYFj" node="bIGVXW7BtR" resolve="warrantyCost" />
+                  <ref role="2ZqYFj" node="tUesvvzFS" resolve="warrantyCost" />
                 </node>
                 <node concept="ZpONE" id="bIGVXW7DqX" role="1_9fRO">
                   <ref role="ZpOSt" node="tUesvvBEj" resolve="DoorInline" />
@@ -753,7 +759,7 @@
               <node concept="2BOciq" id="bIGVXW7BJZ" role="3TlMhI">
                 <node concept="2qmXGp" id="bIGVXW7BLo" role="3TlMhJ">
                   <node concept="2ZqYGZ" id="bIGVXW7Edq" role="1ESnxz">
-                    <ref role="2ZqYFj" node="bIGVXW7BoW" resolve="warrantyCost" />
+                    <ref role="2ZqYFj" node="tUesvvzFS" resolve="warrantyCost" />
                   </node>
                   <node concept="ZpONE" id="bIGVXW7E6b" role="1_9fRO">
                     <ref role="ZpOSt" node="tUesvvBEc" resolve="Motor" />
@@ -761,7 +767,7 @@
                 </node>
                 <node concept="2qmXGp" id="bIGVXW7B2a" role="3TlMhI">
                   <node concept="2ZqYGZ" id="bIGVXW7E9O" role="1ESnxz">
-                    <ref role="2ZqYFj" node="bIGVXW7B2o" resolve="warrantyCost" />
+                    <ref role="2ZqYFj" node="tUesvvzFS" resolve="warrantyCost" />
                   </node>
                   <node concept="ZpONE" id="bIGVXW7D1u" role="1_9fRO">
                     <ref role="ZpOSt" node="tUesvvBE5" resolve="Switch" />
@@ -2967,7 +2973,7 @@
       <ref role="3GEb4d" node="3xlsXfnjfhV" resolve="DriverWinSysFM" />
     </node>
     <node concept="3GEVxB" id="2LW9dx58kKa" role="UzTCp">
-      <ref role="3GEb4d" node="3xlsXfnjfQO" resolve="DriverWinSysHA" />
+      <ref role="3GEb4d" node="3xlsXfnjfQO" resolve="eDriverWinSysHA" />
     </node>
     <node concept="3GEVxB" id="4QpcWAP3Q8A" role="UzTCp">
       <ref role="3GEb4d" node="4QpcWAP3NQu" resolve="Car" />
@@ -3340,7 +3346,7 @@
       <ref role="3GEb4d" node="3xlsXfnjfk2" resolve="DriverWinSysFAA" />
     </node>
     <node concept="3GEVxB" id="tUesvsl6J" role="UzTCp">
-      <ref role="3GEb4d" node="3xlsXfnjfQO" resolve="DriverWinSysHA" />
+      <ref role="3GEb4d" node="3xlsXfnjfQO" resolve="eDriverWinSysHA" />
     </node>
     <node concept="gYDDm" id="tUesvsl6P" role="UzTCv">
       <property role="TrG5h" value="DriverWinSysDpl" />
@@ -3465,6 +3471,16 @@
           </node>
         </node>
       </node>
+      <node concept="3KIKab" id="7a1NGXfhLgw" role="3LX2qu">
+        <node concept="ZpONE" id="7a1NGXfhLgx" role="3LLIXq">
+          <ref role="ZpOSt" node="3vJfEX4VMha" resolve="DriverWinSysFAA" />
+        </node>
+      </node>
+      <node concept="3KIKac" id="7a1NGXfhLgy" role="3LX2qu">
+        <node concept="ZpONE" id="7a1NGXfhLgz" role="3LLIXq">
+          <ref role="ZpOSt" node="3xlsXfnjfQP" resolve="DriverWinSysHA" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="UzPwm" id="2LW9dx58hUL">
@@ -3511,6 +3527,16 @@
           <property role="TrG5h" value="DWinSysDpl" />
           <ref role="gFST0" node="2LW9dx58i4B" resolve="DWinSysHA" />
           <ref role="gFST6" node="2LW9dx58i47" resolve="DWinSysFA" />
+          <node concept="3KIKab" id="7a1NGXfhLg$" role="3LX2qu">
+            <node concept="ZpONE" id="7a1NGXfhLg_" role="3LLIXq">
+              <ref role="ZpOSt" node="2LW9dx58i47" resolve="DWinSysFA" />
+            </node>
+          </node>
+          <node concept="3KIKac" id="7a1NGXfhLgA" role="3LX2qu">
+            <node concept="ZpONE" id="7a1NGXfhLgB" role="3LLIXq">
+              <ref role="ZpOSt" node="2LW9dx58i4B" resolve="DWinSysHA" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -3521,7 +3547,7 @@
       <ref role="3GEb4d" node="3xlsXfnjfk2" resolve="DriverWinSysFAA" />
     </node>
     <node concept="3GEVxB" id="2LW9dx58i4o" role="UzTCp">
-      <ref role="3GEb4d" node="3xlsXfnjfQO" resolve="DriverWinSysHA" />
+      <ref role="3GEb4d" node="3xlsXfnjfQO" resolve="eDriverWinSysHA" />
     </node>
     <node concept="3GEVxB" id="6laenAvarx" role="UzTCp">
       <ref role="3GEb4d" node="tUesvsl6D" resolve="DriverWinSysDpl" />
