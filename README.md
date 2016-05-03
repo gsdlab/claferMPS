@@ -1,11 +1,9 @@
 claferMPS
 =========
 
-##### v0.4.2
+##### v0.4.3
 
 Meta-Programming System support for Clafer
-
-Warning: this is a highly experimental and unreleased project. Use at your own risk.
 
 [Clafer](http://clafer.org) is a general-purpose lightweight structural modeling language developed by
 [GSD Lab](http://gsd.uwaterloo.ca/), [University of Waterloo](http://uwaterloo.ca), and
@@ -16,20 +14,28 @@ The main goal of Clafer is to make modeling more accessible to a wider range of 
 Contributors
 ------------
 
-* [Eldar Khalilov](http://gsd.uwaterloo.ca/ekhalilov). Main developer.
-* [Markus Voelter](http://voelter.de/). Main developer.
-* [Michał Antkiewicz](http://gsd.uwaterloo.ca/mantkiew). Requirements, testing, technology transfer.
-* [Krzysztof Czarnecki](http://gsd.uwaterloo.ca/kczarnec). Design of the graphical architecture DSL.
+* [Eldar Khalilov](http://gsd.uwaterloo.ca/ekhalilov), main developer.
+* [Markus Voelter](http://voelter.de/), main developer.
+* [Jordan Ross](http://gsd.uwaterloo.ca/j25ross), requirements, testing.
+* [Michał Antkiewicz](http://gsd.uwaterloo.ca/mantkiew), requirements, testing.
+* [Krzysztof Czarnecki](http://gsd.uwaterloo.ca/kczarnec), design of the Architecture DSL.
 
 Features
 --------
 
-* Support for full Clafer 0.4.2
-   * smart, type-driven editor
-   * export to textual `.cfr` files for downstream processing (instance generation and optimization)
-* A graphical notation for an automotive architecture DSL based on EAST-ADL
-   * editable textual and graphical projections
-   * export to plain Clafer
+ClaferMPS consists of two languages: Clafer and Architecture DSL, which extends Clafer in MPS.
+
+* Clafer 0.4.3
+   * a smart structured editor with autocompletion and many intentions,
+   * type system,
+   * module system,
+   * generator of plain-text Clafer,
+* An Architecture DSL
+   * based on a reference model which is an adaptation of EAST-ADL, including technical feature model, functional analysis architecture, hardware design architecture, and separate functional to hardware architecture deployment specification (details in [technical report](http://gsd.uwaterloo.ca/publications/view/667)),
+   * separate definition of quality attributes,
+   * editable textual and graphical projections,
+   * semantic error checking according to the reference model,
+   * generation of plain Clafer separate for every module with and without the quality attributes.
 
 Planned Features
 ----------------
@@ -39,7 +45,7 @@ Planned Features
 Installation
 ------------
 
-1. [JetBrains Meta Programming System (MPS)](https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+EAP+Download+Page) v3.3 EAP4 (build 142.230).
+1. [JetBrains Meta Programming System (MPS)](https://www.jetbrains.com/mps/download/) v3.3.5 (build 143.1301).
     * *Important*, start and close MPS before proceeding to step 2.
 2. [mbeddr](http://mbeddr.com/)
     * Follow the [instructions](http://mbeddr.com/download.html); however, you may skip "Gcc, Make and Gdb", "Graphviz", "Verification Tools" sections
@@ -60,7 +66,7 @@ Update
     * `cd <target directory>/mbeddr.core`
     * `git pull`
     * `cd code/languages`
-    * `./buildLanguages.sh`  (or `.bat` on Windows)
+    * `./buildLanguages.sh`  (or `.\buildLanguages.bat` on Windows)
 2. to update ClaferMPS, execute
     * `cd <target directory>/claferMPS`
     * `git pull`
@@ -109,7 +115,7 @@ This definition does not make much sense but it illustrates the editing process.
 Expand the solution `ca.uwaterloo.gsd.PowerWindowSystem`. It contains two models:
 
 1. `Architecture` which is a plain Clafer version of the model, and
-2. `ArchitectureExt` which is a version of the model created using the architecture DSL.
+2. `ArchitectureExt` which is a version of the model created using the Architecture DSL.
 
 #### PowerWindowSystem in plain Clafer
 
@@ -117,21 +123,25 @@ Expand the model `Architecture` and inspect modules `EAST-ADL` and `AutomotiveCo
 
 For more information about this model and the EAST-ADL methodology, refer to Alexandr Murashkin's thesis [Automotive Electronic/Electric Architecture Modeling, Design Exploration and Optimization using Clafer](https://uwspace.uwaterloo.ca/handle/10012/8780).
 
+### Using Architecture DSL
+
 #### PowerWindowSystem in Automotive Architecture DSL
 
-Expand the model `ArchitectureExt`. The plain Clafer modules `EAST-ADL` and `AutomotiveConcepts` remain the same because they are a library.
+Expand the model `examples/ca.uwaterloo.gsd.PowerWindowSystem/ArchitectureExt`. The plain Clafer modules `EAST-ADL` and `AutomotiveConcepts` remain the same because they are a library.
 
 The folder `ArchitectureExt` contains modules expressed using the DSL. The DSL provides both textual and graphical syntaxes.
 
-Open `S02_System_Architecture`, right-click on the editor and select `Push Editor Hints` from the context menu.
-Select `Use custom hints` and check `architectureDiagrams`. This will toggle the graphical view.
+Open `S02_System_Architecture`, from the menu `Projection`, toggle `E/E Architecture Diagrams.
 
 Inspect the remaining modules and compare the textual and graphical syntaxes.
 
+### Larger Case Studies
+
+For details about full size power window (single and two door) and door locks case studies, see [technical report](http://gsd.uwaterloo.ca/publications/view/667).
 
 Need help?
 ==========
 
-* Ask Michal Antkiewicz for a demo.
+* Ask Eldar Khalilov or Michal Antkiewicz for a demo.
 * Visit [language's website](http://clafer.org).
 * Report issues to [issue tracker](https://github.com/gsdlab/claferMPS/issues)
