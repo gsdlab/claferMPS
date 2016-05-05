@@ -88,14 +88,14 @@
     <node concept="1TJgyj" id="3WJnaafipxM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
       <node concept="asaX9" id="17N04ap9jns" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3WJnaafipyc" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
       <node concept="asaX9" id="17N04ap9jnu" role="lGtFl" />
     </node>
@@ -328,14 +328,14 @@
     <node concept="1TJgyj" id="3WJnaafhyWX" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
       <node concept="asaX9" id="2OfqAZXo7Zk" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3WJnaafhyWY" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
       <node concept="asaX9" id="2OfqAZXoiZ8" role="lGtFl" />
     </node>
@@ -1126,7 +1126,7 @@
     <property role="1pbfSe" value="99021832" />
     <property role="3GE5qa" value="FragemtRef" />
     <property role="TrG5h" value="DNFragmentRef" />
-    <property role="R4oN_" value="Device Node Reference" />
+    <property role="R4oN_" value="Device Node Classification Reference" />
     <property role="34LRSv" value="dn" />
     <ref role="1TJDcQ" node="1kFIkf$RTXv" resolve="FragmentRef" />
   </node>

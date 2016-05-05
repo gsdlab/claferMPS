@@ -62,6 +62,7 @@
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
       </concept>
       <concept id="1525516600051621603" name="org.clafer.architecture.structure.CTFragmentRef" flags="ng" index="3K8Auw" />
+      <concept id="1525516600049750709" name="org.clafer.architecture.structure.DNFragmentRef" flags="ng" index="3LLIJQ" />
       <concept id="1525516600048852831" name="org.clafer.architecture.structure.FragmentRef" flags="ng" index="3LX2os">
         <child id="1525516600049751577" name="baseFragment" index="3LLIXq" />
       </concept>
@@ -484,10 +485,7 @@
       </node>
       <node concept="36Bm5n" id="17N04apr_rw" role="2mZOl8">
         <property role="TrG5h" value="busConnector2" />
-        <node concept="ZpONE" id="7Ij6CMqkAvX" role="28I6$c">
-          <ref role="ZpOSt" node="1ub0KooEDro" resolve="electrDNode" />
-        </node>
-        <node concept="ZpONE" id="7Ij6CMqkAwb" role="28I6$c">
+        <node concept="ZpONE" id="17N04apr_s7" role="28I6$c">
           <ref role="ZpOSt" node="1ub0KooEDro" resolve="electrDNode" />
         </node>
         <node concept="2qmXGp" id="17N04apr_ry" role="28I6$c">
@@ -1036,6 +1034,11 @@
           </node>
         </node>
       </node>
+      <node concept="3LLIJQ" id="7Ij6CMqLahH" role="3LX2qu">
+        <node concept="ZpONE" id="3KMBoWMK27s" role="3LLIXq">
+          <ref role="ZpOSt" node="1ub0KooEDqZ" resolve="dnClass" />
+        </node>
+      </node>
     </node>
     <node concept="3GEVxB" id="1ub0KooEDsN" role="UzTCp">
       <ref role="3GEb4d" node="1ub0KooEDqY" resolve="Device_Node_Classification" />
@@ -1272,6 +1275,11 @@
           </node>
         </node>
       </node>
+      <node concept="3LLIJQ" id="3KMBoWMKFTP" role="3LX2qu">
+        <node concept="ZpONE" id="3KMBoWMKFTR" role="3LLIXq">
+          <ref role="ZpOSt" node="1ub0KooEDqZ" resolve="dnClass" />
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="1ub0KooJY9X" role="UzTCv" />
     <node concept="UzEYP" id="1ub0KooJYe2" role="UzTCv" />
@@ -1298,6 +1306,15 @@
       </node>
       <node concept="3HSg1M" id="7Ij6CMqk7T9" role="gT77A">
         <ref role="3HSg1l" node="7Ij6CMqk7Ts" resolve="hw" />
+      </node>
+      <node concept="3LLIJQ" id="7Ij6CMqpt5d" role="3LX2qu">
+        <node concept="ZpONE" id="7Ij6CMqpt5q" role="3LLIXq">
+          <ref role="ZpOSt" node="7Ij6CMq9gJ8" resolve="hwArchitecture" />
+        </node>
+      </node>
+      <node concept="36Bm2$" id="3KMBoWMKGb4" role="2mZOl8">
+        <property role="TrG5h" value="ptolp" />
+        <node concept="UzEYP" id="3KMBoWMKGbl" role="2mZOl8" />
       </node>
     </node>
     <node concept="UzEYP" id="7Ij6CMqk7Tb" role="UzTCv" />
