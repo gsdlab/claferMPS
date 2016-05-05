@@ -237,14 +237,16 @@
     <node concept="1TJgyj" id="6Fa64hUppo2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fa" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="7DuSdC$vZ6L" resolve="FunctionalAnalysis" />
+      <node concept="asaX9" id="5YkgXg$0U0a" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="6Fa64hUppo4" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="ha" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="7DuSdC$$2dR" resolve="HardwareArchitecture" />
+      <node concept="asaX9" id="5YkgXg$0U0d" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Fa64hUfhY7">
@@ -1067,8 +1069,21 @@
     <node concept="1TJgyj" id="1IZzExQz2Ap" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="haElements" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
+      <node concept="asaX9" id="5YkgXg$1tUm" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="5YkgXg$1tUs" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="haExpr" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="5YkgXg$1tUY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="faExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="1IZzExQ_oro" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -1076,8 +1091,9 @@
     <node concept="1TJgyj" id="1IZzExQD58w" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="faElement" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
+      <node concept="asaX9" id="5YkgXg$1tUp" role="lGtFl" />
     </node>
   </node>
   <node concept="1TIwiD" id="5vC4lYRiFha">

@@ -122,9 +122,16 @@
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
       <concept id="1196655094767354750" name="org.clafer.architecture.structure.System" flags="ng" index="3yR_K9" />
       <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
+      <concept id="1999473613770307855" name="org.clafer.architecture.structure.Deploy" flags="ng" index="1Hd3uB">
+        <child id="6887204308572823196" name="haExpr" index="1V$pP8" />
+        <child id="6887204308572823230" name="faExpr" index="1V$pPE" />
+      </concept>
       <concept id="8119098109029358023" name="org.clafer.architecture.structure.Feature" flags="ng" index="3H$kPL" />
       <concept id="8119098109030421700" name="org.clafer.architecture.structure.SuperArchElRef" flags="ng" index="3HSg1M">
         <reference id="8119098109030421731" name="superNode" index="3HSg1l" />
+      </concept>
+      <concept id="1525516600053514057" name="org.clafer.architecture.structure.FragmentRefExpr" flags="ng" index="3K3goa">
+        <reference id="1525516600054699996" name="fragmentRef" index="3K4QUv" />
       </concept>
       <concept id="1525516600060459976" name="org.clafer.architecture.structure.FAFragmentRef" flags="ng" index="3KIKab" />
       <concept id="1525516600060459983" name="org.clafer.architecture.structure.HAFragmentRef" flags="ng" index="3KIKac" />
@@ -3448,7 +3455,27 @@
           </node>
         </node>
       </node>
-      <node concept="UzEYP" id="1Z9B1UhYUIA" role="2mZOl8" />
+      <node concept="1Hd3uB" id="5YkgXg$4Irw" role="2mZOl8">
+        <node concept="ZpONE" id="5YkgXg$auZV" role="1V$pP8">
+          <ref role="ZpOSt" node="E6Nn7M7M3S" resolve="BCM" />
+        </node>
+        <node concept="2qmXGp" id="5YkgXg$7Qbu" role="1V$pP8">
+          <node concept="2ZqYGZ" id="5YkgXg$7QbU" role="1ESnxz">
+            <ref role="2ZqYFj" node="3vJfEX4VNSD" resolve="DriverWinSysCT" />
+          </node>
+          <node concept="3K3goa" id="5YkgXg$7Qbc" role="1_9fRO">
+            <ref role="3K4QUv" node="7a1NGXfhLgy" resolve="ha" />
+          </node>
+        </node>
+        <node concept="2qmXGp" id="5YkgXg$4Ita" role="1V$pPE">
+          <node concept="2ZqYGZ" id="5YkgXg$4Its" role="1ESnxz">
+            <ref role="2ZqYFj" node="3vJfEX4VMql" resolve="CurrentSensor" />
+          </node>
+          <node concept="3K3goa" id="5YkgXg$4It4" role="1_9fRO">
+            <ref role="3K4QUv" node="7a1NGXfhLgw" resolve="fa" />
+          </node>
+        </node>
+      </node>
       <node concept="37mRI7" id="399d13rMinC" role="lGtFl">
         <node concept="37mRIm" id="399d13rMinD" role="37mRID">
           <property role="37mO49" value="4059277992831810997" />
