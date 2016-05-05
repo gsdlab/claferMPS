@@ -539,6 +539,104 @@
         </node>
       </node>
     </node>
+    <node concept="3UNGvq" id="5YkgXg$fL4O" role="3UOs0v">
+      <ref role="3UNGvu" to="ddau:5YkgXg$fKio" resolve="FragmentRefDotTarget" />
+      <node concept="tYCnQ" id="5YkgXg$fL4P" role="_1QTJ">
+        <ref role="uz4UX" to="ddau:1kFIkf_9FX9" resolve="FragmentRefExpr" />
+        <node concept="Cmt7Y" id="5YkgXg$fL4Q" role="uz6Si">
+          <node concept="Cnhdc" id="5YkgXg$fL4R" role="Cncma">
+            <node concept="3clFbS" id="5YkgXg$fL4S" role="2VODD2">
+              <node concept="3clFbF" id="5YkgXg$fL4T" role="3cqZAp">
+                <node concept="2OqwBi" id="5YkgXg$fL4U" role="3clFbG">
+                  <node concept="2OqwBi" id="5YkgXg$fL4V" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5YkgXg$fL4W" role="2Oq$k0">
+                      <node concept="Cj7Ep" id="5YkgXg$fL4X" role="2Oq$k0" />
+                      <node concept="2Xjw5R" id="5YkgXg$fL4Y" role="2OqNvi">
+                        <node concept="1xMEDy" id="5YkgXg$fL4Z" role="1xVPHs">
+                          <node concept="chp4Y" id="5YkgXg$fL50" role="ri$Ld">
+                            <ref role="cht4Q" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3Tsc0h" id="5YkgXg$fL51" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                    </node>
+                  </node>
+                  <node concept="WFELt" id="5YkgXg$fL52" role="2OqNvi">
+                    <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2h1dTh" id="5YkgXg$fL53" role="Cn2iK">
+            <property role="2h1i$Z" value="{" />
+          </node>
+          <node concept="2h1dTh" id="5YkgXg$fL54" role="Cn6ar">
+            <property role="2h1i$Z" value="Add Content" />
+          </node>
+        </node>
+      </node>
+      <node concept="3kRJcU" id="5YkgXg$fL55" role="3kShCk">
+        <node concept="3clFbS" id="5YkgXg$fL56" role="2VODD2">
+          <node concept="3clFbF" id="5YkgXg$fL57" role="3cqZAp">
+            <node concept="22lmx$" id="5YkgXg$fL58" role="3clFbG">
+              <node concept="2OqwBi" id="5YkgXg$fL59" role="3uHU7w">
+                <node concept="Cj7Ep" id="5YkgXg$fL5a" role="2Oq$k0" />
+                <node concept="1BlSNk" id="5YkgXg$fL5b" role="2OqNvi">
+                  <ref role="1BmUXE" to="ddau:1kFIkf$RTXv" resolve="FragmentRef" />
+                  <ref role="1Bn3mz" to="ddau:1kFIkf$Vlop" />
+                </node>
+              </node>
+              <node concept="22lmx$" id="5YkgXg$fL5c" role="3uHU7B">
+                <node concept="22lmx$" id="5YkgXg$fL5d" role="3uHU7B">
+                  <node concept="22lmx$" id="5YkgXg$fL5e" role="3uHU7B">
+                    <node concept="22lmx$" id="5YkgXg$fL5f" role="3uHU7B">
+                      <node concept="2OqwBi" id="5YkgXg$fL5g" role="3uHU7B">
+                        <node concept="Cj7Ep" id="5YkgXg$fL5h" role="2Oq$k0" />
+                        <node concept="1BlSNk" id="5YkgXg$fL5i" role="2OqNvi">
+                          <ref role="1BmUXE" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                          <ref role="1Bn3mz" to="ddau:17N04apiQ_e" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="5YkgXg$fL5j" role="3uHU7w">
+                        <node concept="Cj7Ep" id="5YkgXg$fL5k" role="2Oq$k0" />
+                        <node concept="1BlSNk" id="5YkgXg$fL5l" role="2OqNvi">
+                          <ref role="1Bn3mz" to="ddau:17N04ap9jnw" />
+                          <ref role="1BmUXE" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="5YkgXg$fL5m" role="3uHU7w">
+                      <node concept="Cj7Ep" id="5YkgXg$fL5n" role="2Oq$k0" />
+                      <node concept="1BlSNk" id="5YkgXg$fL5o" role="2OqNvi">
+                        <ref role="1BmUXE" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+                        <ref role="1Bn3mz" to="ddau:17N04ap9jno" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="5YkgXg$fL5p" role="3uHU7w">
+                    <node concept="Cj7Ep" id="5YkgXg$fL5q" role="2Oq$k0" />
+                    <node concept="1BlSNk" id="5YkgXg$fL5r" role="2OqNvi">
+                      <ref role="1BmUXE" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
+                      <ref role="1Bn3mz" to="ddau:2OfqAZXo7Z4" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5YkgXg$fL5s" role="3uHU7w">
+                  <node concept="Cj7Ep" id="5YkgXg$fL5t" role="2Oq$k0" />
+                  <node concept="1BlSNk" id="5YkgXg$fL5u" role="2OqNvi">
+                    <ref role="1Bn3mz" to="ddau:2OfqAZXo7Zb" />
+                    <ref role="1BmUXE" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3UNGvq" id="7Ij6CMqjYzF" role="3UOs0v">
       <ref role="3UNGvu" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
       <node concept="tYCnQ" id="7Ij6CMqjYzG" role="_1QTJ">

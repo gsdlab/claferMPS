@@ -1096,18 +1096,6 @@
       <node concept="asaX9" id="5YkgXg$1tUp" role="lGtFl" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5vC4lYRiFha">
-    <property role="1pbfSe" value="254985641" />
-    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
-    <property role="TrG5h" value="DeploymentFAExpr" />
-    <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
-  </node>
-  <node concept="1TIwiD" id="2ejvBnQb9h8">
-    <property role="1pbfSe" value="432018109" />
-    <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
-    <property role="TrG5h" value="DeploymentHAExpr" />
-    <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
-  </node>
   <node concept="1TIwiD" id="6oTHSFINJek">
     <property role="1pbfSe" value="1426631454" />
     <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
@@ -1189,6 +1177,21 @@
     <property role="34LRSv" value="ha" />
     <property role="R4oN_" value="Hardware Architecture Reference" />
     <ref role="1TJDcQ" node="1kFIkf$RTXv" resolve="FragmentRef" />
+  </node>
+  <node concept="1TIwiD" id="5YkgXg$fKio">
+    <property role="1pbfSe" value="2083305364" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="FragmentRefDotTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5YkgXg$fKis" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="5YkgXg$fKiv" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragmentRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1kFIkf$RTXv" resolve="FragmentRef" />
+    </node>
   </node>
 </model>
 

@@ -135,6 +135,7 @@
       </concept>
       <concept id="1525516600060459976" name="org.clafer.architecture.structure.FAFragmentRef" flags="ng" index="3KIKab" />
       <concept id="1525516600060459983" name="org.clafer.architecture.structure.HAFragmentRef" flags="ng" index="3KIKac" />
+      <concept id="1525516600049750709" name="org.clafer.architecture.structure.DNFragmentRef" flags="ng" index="3LLIJQ" />
       <concept id="1525516600048852831" name="org.clafer.architecture.structure.FragmentRef" flags="ng" index="3LX2os">
         <child id="1525516600049751577" name="baseFragment" index="3LLIXq" />
       </concept>
@@ -146,6 +147,9 @@
       </concept>
       <concept id="6081592096124551689" name="org.clafer.architecture.structure.NodeTypeExpr" flags="ng" index="1Udun3" />
       <concept id="6081592096124551692" name="org.clafer.architecture.structure.SmartDeviceExpr" flags="ng" index="1Udun6" />
+      <concept id="6887204308576568472" name="org.clafer.architecture.structure.FragmentRefDotTarget" flags="ng" index="1VEOtc">
+        <reference id="6887204308576568479" name="fragmentRef" index="1VEOtb" />
+      </concept>
       <concept id="663277625451478041" name="org.clafer.architecture.structure.DeviceNodesRef" flags="ng" index="1XiTd_">
         <reference id="663277625451579791" name="dn" index="1XHurN" />
       </concept>
@@ -2947,6 +2951,11 @@
           </node>
         </node>
       </node>
+      <node concept="3LLIJQ" id="5YkgXg$m_ze" role="3LX2qu">
+        <node concept="ZpONE" id="5YkgXg$m_zh" role="3LLIXq">
+          <ref role="ZpOSt" node="tUesvvBE4" resolve="DriverWinSysDN" />
+        </node>
+      </node>
     </node>
     <node concept="3GEVxB" id="tUesvlUOj" role="UzTCp">
       <ref role="3GEb4d" node="4QpcWAP3NQu" resolve="Car" />
@@ -3473,6 +3482,19 @@
           </node>
           <node concept="3K3goa" id="5YkgXg$4It4" role="1_9fRO">
             <ref role="3K4QUv" node="7a1NGXfhLgw" resolve="fa" />
+          </node>
+        </node>
+      </node>
+      <node concept="2vxuzR" id="5YkgXg$i4zP" role="2mZOl8">
+        <node concept="2qmXGp" id="5YkgXg$m$Mm" role="3WnoGb">
+          <node concept="2ZqYGZ" id="5YkgXg$m$NU" role="1ESnxz">
+            <ref role="2ZqYFj" node="3vJfEX4VMql" resolve="CurrentSensor" />
+          </node>
+          <node concept="2qmXGp" id="5YkgXg$m$LR" role="1_9fRO">
+            <node concept="1VEOtc" id="5YkgXg$m$M9" role="1ESnxz">
+              <ref role="1VEOtb" node="7a1NGXfhLgw" resolve="fa" />
+            </node>
+            <node concept="2Zoh0E" id="5YkgXg$i4__" role="1_9fRO" />
           </node>
         </node>
       </node>
