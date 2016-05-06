@@ -1065,7 +1065,7 @@
     <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
     <property role="TrG5h" value="Deploy" />
     <property role="34LRSv" value="Deploy" />
-    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1IZzExQz2Ap" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="haElements" />
@@ -1085,15 +1085,15 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
-    <node concept="PrWs8" id="1IZzExQ_oro" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
     <node concept="1TJgyj" id="1IZzExQD58w" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="faElement" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
       <node concept="asaX9" id="5YkgXg$1tUp" role="lGtFl" />
+    </node>
+    <node concept="PrWs8" id="5YkgXg$x8mO" role="PzmwI">
+      <ref role="PrY4T" to="mecy:bl22kSmCpX" resolve="IElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="6oTHSFINJek">
@@ -1112,7 +1112,7 @@
     <property role="3GE5qa" value="FragemtRef" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="PrWs8" id="1kFIkf$YCDw" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
