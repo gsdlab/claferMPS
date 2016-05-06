@@ -292,6 +292,12 @@
       <property role="20kJfa" value="refToDevice" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="$OrRLOvZKp" resolve="DeviceNodesRef" />
+      <node concept="asaX9" id="5C9iBpnlRQg" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="5C9iBpnhqPw" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="refToDeviceExpr" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="$OrRLOvZKp">
