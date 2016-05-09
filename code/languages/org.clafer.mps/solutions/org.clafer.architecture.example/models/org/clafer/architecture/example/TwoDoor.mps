@@ -2,7 +2,7 @@
 <model ref="r:0e38b85c-c094-48e4-9a77-31c1f7baad20(org.clafer.architecture.example.TwoDoor)">
   <persistence version="9" />
   <languages>
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="2" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="3" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
@@ -114,11 +114,8 @@
       </concept>
       <concept id="6081592096124551689" name="org.clafer.architecture.structure.NodeTypeExpr" flags="ng" index="1Udun3" />
       <concept id="6081592096124551692" name="org.clafer.architecture.structure.SmartDeviceExpr" flags="ng" index="1Udun6" />
-      <concept id="663277625451478041" name="org.clafer.architecture.structure.DeviceNodesRef" flags="ng" index="1XiTd_">
-        <reference id="663277625451579791" name="dn" index="1XHurN" />
-      </concept>
       <concept id="663277625450975106" name="org.clafer.architecture.structure.RefToDevice" flags="ng" index="1Xj23Y">
-        <child id="663277625451387232" name="refToDevice" index="1XiJos" />
+        <child id="6487798610334690656" name="refToDeviceExpr" index="djesm" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1971,14 +1968,14 @@
       </node>
       <node concept="1Xj23Y" id="6laenAv7Tj" role="2mZOl8">
         <property role="TrG5h" value="BCM" />
-        <node concept="1XiTd_" id="6laenAv8da" role="1XiJos">
-          <ref role="1XHurN" node="6laenAv7oV" resolve="BCM" />
+        <node concept="ZpONE" id="yXhLyraybL" role="djesm">
+          <ref role="ZpOSt" node="6laenAv7oV" resolve="BCM" />
         </node>
       </node>
       <node concept="1Xj23Y" id="6laenAv7Tl" role="2mZOl8">
         <property role="TrG5h" value="EC" />
-        <node concept="1XiTd_" id="6laenAv8dU" role="1XiJos">
-          <ref role="1XHurN" node="6laenAv7p4" resolve="ElectricCenter" />
+        <node concept="ZpONE" id="yXhLyraybM" role="djesm">
+          <ref role="ZpOSt" node="6laenAv7p4" resolve="ElectricCenter" />
         </node>
       </node>
       <node concept="37mRI7" id="6laenAv7Tn" role="lGtFl">

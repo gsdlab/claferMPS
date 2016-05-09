@@ -2,7 +2,7 @@
 <model ref="r:f32f8e7d-208b-43c9-b69a-1857557a456b(org.clafer.architecture.example.generatorsExample)">
   <persistence version="9" />
   <languages>
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="2" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="3" />
     <use id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core" version="1" />
     <use id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
@@ -110,11 +110,8 @@
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
-      <concept id="663277625451478041" name="org.clafer.architecture.structure.DeviceNodesRef" flags="ng" index="1XiTd_">
-        <reference id="663277625451579791" name="dn" index="1XHurN" />
-      </concept>
       <concept id="663277625450975106" name="org.clafer.architecture.structure.RefToDevice" flags="ng" index="1Xj23Y">
-        <child id="663277625451387232" name="refToDevice" index="1XiJos" />
+        <child id="6487798610334690656" name="refToDeviceExpr" index="djesm" />
       </concept>
       <concept id="663277625447331269" name="org.clafer.architecture.structure.ECU" flags="ng" index="1XtdET" />
     </language>
@@ -339,8 +336,8 @@
       </node>
       <node concept="1Xj23Y" id="1T6YVZdxoHg" role="2mZOl8">
         <property role="TrG5h" value="definedReference" />
-        <node concept="1XiTd_" id="1T6YVZdxoHG" role="1XiJos">
-          <ref role="1XHurN" node="1T6YVZdxoCk" resolve="PowerDNode" />
+        <node concept="ZpONE" id="yXhLyraybP" role="djesm">
+          <ref role="ZpOSt" node="1T6YVZdxoCk" resolve="PowerDNode" />
         </node>
       </node>
       <node concept="UzEYP" id="1T6YVZd$U1C" role="2mZOl8" />
