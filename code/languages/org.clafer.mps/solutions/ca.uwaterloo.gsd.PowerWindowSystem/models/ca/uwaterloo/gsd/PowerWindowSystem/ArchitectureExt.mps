@@ -143,7 +143,7 @@
         <child id="4988923775218203830" name="expr" index="3WnoGb" />
       </concept>
       <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
-        <child id="5675649033537919505" name="targetType" index="3J4IUC" />
+        <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
@@ -162,9 +162,6 @@
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
-      </concept>
-      <concept id="2851923306472509129" name="org.clafer.core.structure.ClaferType" flags="ng" index="ZpTZE">
-        <reference id="2851923306472509130" name="clafer" index="ZpTZD" />
       </concept>
       <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
         <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
@@ -228,8 +225,8 @@
         <node concept="UH0sd" id="72GPbqtfjtT" role="2vwUiP">
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="72GPbqtfjtU" role="2K4itM">
-            <node concept="ZpTZE" id="72GPbqtfjtV" role="3J4IUC">
-              <ref role="ZpTZD" node="72GPbqtfjuk" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0dq" role="2jwY2M">
+              <ref role="ZpOSt" node="72GPbqtfjuk" resolve="Device" />
             </node>
           </node>
         </node>
@@ -247,24 +244,24 @@
         <node concept="UH0sd" id="72GPbqtfjtZ" role="2vwUiP">
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="72GPbqtfju0" role="2K4itM">
-            <node concept="ZpTZE" id="72GPbqtfju1" role="3J4IUC">
-              <ref role="ZpTZD" node="72GPbqtfjuc" resolve="WireConnector" />
+            <node concept="ZpONE" id="yXhLyrh0jw" role="2jwY2M">
+              <ref role="ZpOSt" node="72GPbqtfjuc" resolve="WireConnector" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="72GPbqtfju2" role="2vwUiP">
           <property role="TrG5h" value="src" />
           <node concept="2K4itw" id="72GPbqtfju3" role="2K4itM">
-            <node concept="ZpTZE" id="72GPbqtfju4" role="3J4IUC">
-              <ref role="ZpTZD" node="72GPbqtfjtS" resolve="AnalysisFunction" />
+            <node concept="ZpONE" id="yXhLyrh0et" role="2jwY2M">
+              <ref role="ZpOSt" node="72GPbqtfjtS" resolve="AnalysisFunction" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="72GPbqtfju5" role="2vwUiP">
           <property role="TrG5h" value="dest" />
           <node concept="2K4itw" id="72GPbqtfju6" role="2K4itM">
-            <node concept="ZpTZE" id="72GPbqtfju7" role="3J4IUC">
-              <ref role="ZpTZD" node="72GPbqtfjtS" resolve="AnalysisFunction" />
+            <node concept="ZpONE" id="yXhLyrh0jj" role="2jwY2M">
+              <ref role="ZpOSt" node="72GPbqtfjtS" resolve="AnalysisFunction" />
             </node>
           </node>
         </node>
@@ -287,16 +284,16 @@
         <node concept="UH0sd" id="72GPbqtfjud" role="2vwUiP">
           <property role="TrG5h" value="src" />
           <node concept="2K4itw" id="72GPbqtfjue" role="2K4itM">
-            <node concept="ZpTZE" id="72GPbqtfjuf" role="3J4IUC">
-              <ref role="ZpTZD" node="72GPbqtfjuk" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0gl" role="2jwY2M">
+              <ref role="ZpOSt" node="72GPbqtfjuk" resolve="Device" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="72GPbqtfjug" role="2vwUiP">
           <property role="TrG5h" value="dest" />
           <node concept="2K4itw" id="72GPbqtfjuh" role="2K4itM">
-            <node concept="ZpTZE" id="72GPbqtfjui" role="3J4IUC">
-              <ref role="ZpTZD" node="72GPbqtfjuk" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0lc" role="2jwY2M">
+              <ref role="ZpOSt" node="72GPbqtfjuk" resolve="Device" />
             </node>
           </node>
         </node>

@@ -148,11 +148,14 @@
       <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="629737693910916321" name="org.clafer.core.structure.TypeExpr" flags="ng" index="2jxDJT">
+        <child id="629737693910916322" name="targetType" index="2jxDJU" />
+      </concept>
       <concept id="6300420630909714393" name="org.clafer.core.structure.Constraint" flags="ng" index="2vxuzR">
         <child id="4988923775218203830" name="expr" index="3WnoGb" />
       </concept>
       <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
-        <child id="5675649033537919505" name="targetType" index="3J4IUC" />
+        <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
@@ -233,7 +236,9 @@
           <property role="TrG5h" value="latency" />
           <ref role="33KLov" to="t4ow:5ipUCoi8tkT" resolve="latency" />
           <node concept="2K4itw" id="5ipUCoi95Zu" role="2K4itM">
-            <node concept="3TlMh2" id="5ipUCoi95Zv" role="3J4IUC" />
+            <node concept="2jxDJT" id="yXhLyrh0gD" role="2jwY2M">
+              <node concept="3TlMh2" id="yXhLyrh0gE" role="2jxDJU" />
+            </node>
           </node>
           <node concept="2qmXGp" id="5ipUCoi9xw4" role="33KLot">
             <node concept="2ZqYGZ" id="1Z9B1Ui0oap" role="1ESnxz">
@@ -555,7 +560,9 @@
         <property role="TrG5h" value="cost" />
         <ref role="33KLov" to="t4ow:1wmiO1AQkV2" resolve="cost" />
         <node concept="2K4itw" id="2HpWhZy3BH5" role="2K4itM">
-          <node concept="3TlMh2" id="2HpWhZy3BH6" role="3J4IUC" />
+          <node concept="2jxDJT" id="yXhLyrh0iZ" role="2jwY2M">
+            <node concept="3TlMh2" id="yXhLyrh0j0" role="2jxDJU" />
+          </node>
         </node>
         <node concept="3TlMh9" id="2HpWhZy3BHd" role="33KLot">
           <property role="2hmy$m" value="10" />
@@ -569,7 +576,9 @@
         <property role="TrG5h" value="replaceCost" />
         <ref role="33KLov" to="t4ow:1wmiO1AQkZ7" resolve="replaceCost" />
         <node concept="2K4itw" id="2HpWhZy4wVb" role="2K4itM">
-          <node concept="3TlMh2" id="2HpWhZy4wVc" role="3J4IUC" />
+          <node concept="2jxDJT" id="yXhLyrh0kT" role="2jwY2M">
+            <node concept="3TlMh2" id="yXhLyrh0kU" role="2jxDJU" />
+          </node>
         </node>
         <node concept="3TlMh9" id="2HpWhZy4wVj" role="33KLot">
           <property role="2hmy$m" value="10" />
@@ -586,7 +595,9 @@
         <property role="TrG5h" value="replaceCost" />
         <ref role="33KLov" to="t4ow:1wmiO1AQkZ7" resolve="replaceCost" />
         <node concept="2K4itw" id="2HpWhZyaFNZ" role="2K4itM">
-          <node concept="3TlMh2" id="2HpWhZyaFO0" role="3J4IUC" />
+          <node concept="2jxDJT" id="yXhLyrh0dr" role="2jwY2M">
+            <node concept="3TlMh2" id="yXhLyrh0ds" role="2jxDJU" />
+          </node>
         </node>
         <node concept="3TlMh9" id="2HpWhZyaFO1" role="33KLot">
           <property role="2hmy$m" value="30" />
@@ -596,7 +607,9 @@
         <property role="TrG5h" value="cost" />
         <ref role="33KLov" to="t4ow:1wmiO1AQkV2" resolve="cost" />
         <node concept="2K4itw" id="2HpWhZyaFW$" role="2K4itM">
-          <node concept="3TlMh2" id="2HpWhZyaFW_" role="3J4IUC" />
+          <node concept="2jxDJT" id="yXhLyrh0ia" role="2jwY2M">
+            <node concept="3TlMh2" id="yXhLyrh0ib" role="2jxDJU" />
+          </node>
         </node>
         <node concept="3TlMh9" id="2HpWhZyaFWM" role="33KLot">
           <property role="2hmy$m" value="10" />
@@ -614,7 +627,9 @@
         <property role="TrG5h" value="cost" />
         <ref role="33KLov" to="t4ow:1wmiO1AQkV2" resolve="cost" />
         <node concept="2K4itw" id="2NSDVxFS_ZG" role="2K4itM">
-          <node concept="3TlMh2" id="2NSDVxFS_ZH" role="3J4IUC" />
+          <node concept="2jxDJT" id="yXhLyrh0ff" role="2jwY2M">
+            <node concept="3TlMh2" id="yXhLyrh0fg" role="2jxDJU" />
+          </node>
         </node>
         <node concept="3TlMh9" id="2NSDVxFS_ZO" role="33KLot">
           <property role="2hmy$m" value="3" />
@@ -624,7 +639,9 @@
         <property role="TrG5h" value="mass" />
         <ref role="33KLov" to="t4ow:1wmiO1AQkSV" resolve="mass" />
         <node concept="2K4itw" id="2NSDVxFS_ZU" role="2K4itM">
-          <node concept="3TlMh2" id="2NSDVxFS_ZV" role="3J4IUC" />
+          <node concept="2jxDJT" id="yXhLyrh0jK" role="2jwY2M">
+            <node concept="3TlMh2" id="yXhLyrh0jL" role="2jxDJU" />
+          </node>
         </node>
         <node concept="3TlMh9" id="2NSDVxFSA08" role="33KLot">
           <property role="2hmy$m" value="4" />
@@ -697,7 +714,9 @@
               <property role="TrG5h" value="latency" />
               <ref role="33KLov" to="t4ow:5ipUCoi8tkT" resolve="latency" />
               <node concept="2K4itw" id="dW_p57jStG" role="2K4itM">
-                <node concept="3TlMh2" id="dW_p57jStH" role="3J4IUC" />
+                <node concept="2jxDJT" id="yXhLyrh0he" role="2jwY2M">
+                  <node concept="3TlMh2" id="yXhLyrh0hf" role="2jxDJU" />
+                </node>
               </node>
               <node concept="3TlMh9" id="dW_p57l7XW" role="33KLot">
                 <property role="2hmy$m" value="4" />
@@ -707,7 +726,9 @@
               <property role="TrG5h" value="baseLatency" />
               <ref role="33KLov" to="t4ow:6BXeK5CiNLq" resolve="baseLatency" />
               <node concept="2K4itw" id="dW_p57l7Y2" role="2K4itM">
-                <node concept="3TlMh2" id="dW_p57l7Y3" role="3J4IUC" />
+                <node concept="2jxDJT" id="yXhLyrh0dO" role="2jwY2M">
+                  <node concept="3TlMh2" id="yXhLyrh0dP" role="2jxDJU" />
+                </node>
               </node>
               <node concept="2qmXGp" id="dW_p57lzlu" role="33KLot">
                 <node concept="2IdTD4" id="dW_p57lzmd" role="1ESnxz" />

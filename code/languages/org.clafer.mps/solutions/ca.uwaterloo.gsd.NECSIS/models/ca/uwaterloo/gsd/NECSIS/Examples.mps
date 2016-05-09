@@ -60,7 +60,7 @@
         <child id="4988923775218203830" name="expr" index="3WnoGb" />
       </concept>
       <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
-        <child id="5675649033537919505" name="targetType" index="3J4IUC" />
+        <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
@@ -79,9 +79,6 @@
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
-      </concept>
-      <concept id="2851923306472509129" name="org.clafer.core.structure.ClaferType" flags="ng" index="ZpTZE">
-        <reference id="2851923306472509130" name="clafer" index="ZpTZD" />
       </concept>
       <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
         <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
@@ -300,8 +297,8 @@
         <node concept="UH0sd" id="2l_ztDefakW" role="2vwUiP">
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="2l_ztDefala" role="2K4itM">
-            <node concept="ZpTZE" id="2l_ztDefalc" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0hL" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
             </node>
           </node>
         </node>
@@ -319,24 +316,24 @@
         <node concept="UH0sd" id="2FleQ6d9pic" role="2vwUiP">
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="2FleQ6d9piz" role="2K4itM">
-            <node concept="ZpTZE" id="2FleQ6d9pi_" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W8O6" resolve="WireConnector" />
+            <node concept="ZpONE" id="yXhLyrh0dD" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W8O6" resolve="WireConnector" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="7oGBC4$W8$U" role="2vwUiP">
           <property role="TrG5h" value="src" />
           <node concept="2K4itw" id="7oGBC4$W8$W" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W8$Y" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W8wg" resolve="AnalysisFunction" />
+            <node concept="ZpONE" id="yXhLyrh0k3" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W8wg" resolve="AnalysisFunction" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="7oGBC4$W8_b" role="2vwUiP">
           <property role="TrG5h" value="dest" />
           <node concept="2K4itw" id="7oGBC4$W8_g" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W8_i" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W8wg" resolve="AnalysisFunction" />
+            <node concept="ZpONE" id="yXhLyrh0ec" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W8wg" resolve="AnalysisFunction" />
             </node>
           </node>
         </node>
@@ -368,16 +365,16 @@
         <node concept="UH0sd" id="7oGBC4$W8YL" role="2vwUiP">
           <property role="TrG5h" value="src" />
           <node concept="2K4itw" id="7oGBC4$W8YN" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W8YP" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0jx" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="7oGBC4$W8Z2" role="2vwUiP">
           <property role="TrG5h" value="dest" />
           <node concept="2K4itw" id="7oGBC4$W8Z7" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W8Z9" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0iN" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
             </node>
           </node>
         </node>

@@ -60,7 +60,7 @@
         <child id="4988923775218203830" name="expr" index="3WnoGb" />
       </concept>
       <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
-        <child id="5675649033537919505" name="targetType" index="3J4IUC" />
+        <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
       <concept id="4545783005415648009" name="org.clafer.core.structure.DrefExpr" flags="ng" index="KQRq6" />
@@ -80,9 +80,6 @@
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
-      </concept>
-      <concept id="2851923306472509129" name="org.clafer.core.structure.ClaferType" flags="ng" index="ZpTZE">
-        <reference id="2851923306472509130" name="clafer" index="ZpTZD" />
       </concept>
       <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
         <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
@@ -149,8 +146,8 @@
       <node concept="UH0sd" id="6v3ZnYePIW2" role="2vwUiP">
         <property role="TrG5h" value="deployedTo" />
         <node concept="2K4itw" id="6v3ZnYePIW8" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePK6W" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePJmf" resolve="DeviceNode" />
+          <node concept="ZpONE" id="yXhLyrh0kr" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePJmf" resolve="DeviceNode" />
           </node>
         </node>
       </node>
@@ -215,24 +212,24 @@
       <node concept="UH0sd" id="6v3ZnYePJ8Z" role="2vwUiP">
         <property role="TrG5h" value="sender" />
         <node concept="2K4itw" id="6v3ZnYePJ95" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePJ9y" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePIUG" resolve="FunctionalAnalysisComponent" />
+          <node concept="ZpONE" id="yXhLyrh0dQ" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePIUG" resolve="FunctionalAnalysisComponent" />
           </node>
         </node>
       </node>
       <node concept="UH0sd" id="6v3ZnYePJ9l" role="2vwUiP">
         <property role="TrG5h" value="receiver" />
         <node concept="2K4itw" id="6v3ZnYePJ9v" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePJ9C" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePIUG" resolve="FunctionalAnalysisComponent" />
+          <node concept="ZpONE" id="yXhLyrh0gA" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePIUG" resolve="FunctionalAnalysisComponent" />
           </node>
         </node>
       </node>
       <node concept="UH0sd" id="6v3ZnYePJ9X" role="2vwUiP">
         <property role="TrG5h" value="deployedTo" />
         <node concept="2K4itw" id="6v3ZnYePJaf" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePLmo" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePJUg" resolve="HardwareDataConnector" />
+          <node concept="ZpONE" id="yXhLyrh0lL" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePJUg" resolve="HardwareDataConnector" />
           </node>
         </node>
         <node concept="3Edj9i" id="6v3ZnYePJai" role="2vBZf8" />
@@ -354,8 +351,8 @@
       <node concept="UH0sd" id="5H6GWMWUAee" role="2vwUiP">
         <property role="TrG5h" value="type" />
         <node concept="2K4itw" id="5H6GWMWUAfF" role="2K4itM">
-          <node concept="ZpTZE" id="5H6GWMWUAfH" role="3J4IUC">
-            <ref role="ZpTZD" node="5H6GWMWU_L7" resolve="DeviceNodeType" />
+          <node concept="ZpONE" id="yXhLyrh0kC" role="2jwY2M">
+            <ref role="ZpOSt" node="5H6GWMWU_L7" resolve="DeviceNodeType" />
           </node>
         </node>
       </node>
@@ -375,16 +372,16 @@
       <node concept="UH0sd" id="6v3ZnYePJEi" role="2vwUiP">
         <property role="TrG5h" value="source" />
         <node concept="2K4itw" id="6v3ZnYePJEo" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePJEr" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePJmf" resolve="DeviceNode" />
+          <node concept="ZpONE" id="yXhLyrh0iY" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePJmf" resolve="DeviceNode" />
           </node>
         </node>
       </node>
       <node concept="UH0sd" id="6v3ZnYePJEE" role="2vwUiP">
         <property role="TrG5h" value="sink" />
         <node concept="2K4itw" id="6v3ZnYePJEQ" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePJET" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePJmf" resolve="DeviceNode" />
+          <node concept="ZpONE" id="yXhLyrh0gw" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePJmf" resolve="DeviceNode" />
           </node>
         </node>
       </node>
@@ -414,8 +411,8 @@
       <node concept="UH0sd" id="6v3ZnYePK1g" role="2vwUiP">
         <property role="TrG5h" value="endpoint" />
         <node concept="2K4itw" id="6v3ZnYePK1m" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePK1p" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePJmf" resolve="DeviceNode" />
+          <node concept="ZpONE" id="yXhLyrh0fM" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePJmf" resolve="DeviceNode" />
           </node>
         </node>
         <node concept="2vxhU1" id="6v3ZnYePK1C" role="2vBZf8">
@@ -427,8 +424,8 @@
       <node concept="UH0sd" id="6v3ZnYePK1Q" role="2vwUiP">
         <property role="TrG5h" value="deployedFrom" />
         <node concept="2K4itw" id="6v3ZnYePK24" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePK27" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePJ6f" resolve="FunctionConnector" />
+          <node concept="ZpONE" id="yXhLyrh0hP" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePJ6f" resolve="FunctionConnector" />
           </node>
         </node>
         <node concept="2vxhU1" id="6v3ZnYePK2m" role="2vBZf8">
@@ -522,8 +519,8 @@
       <node concept="UH0sd" id="6v3ZnYePLbb" role="2vwUiP">
         <property role="TrG5h" value="bus" />
         <node concept="2K4itw" id="6v3ZnYePLbh" role="2K4itM">
-          <node concept="ZpTZE" id="6v3ZnYePLbk" role="3J4IUC">
-            <ref role="ZpTZD" node="6v3ZnYePKrZ" resolve="BusConnector" />
+          <node concept="ZpONE" id="yXhLyrh0l$" role="2jwY2M">
+            <ref role="ZpOSt" node="6v3ZnYePKrZ" resolve="BusConnector" />
           </node>
         </node>
         <node concept="3Edjpn" id="6v3ZnYePLbt" role="2vBZf8">
