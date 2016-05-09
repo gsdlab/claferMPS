@@ -225,6 +225,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1k:7FQByU3CrCQ" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="yXhLyrfEuE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetTypeExpr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    </node>
     <node concept="1TJgyi" id="6DpAcbqjmLR" role="1TKVEl">
       <property role="TrG5h" value="isBag" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -464,6 +470,17 @@
   <node concept="PlHQZ" id="1TKBT2MCJhr">
     <property role="1pbfSe" value="787246101" />
     <property role="TrG5h" value="DontGenerateFullPath" />
+  </node>
+  <node concept="1TIwiD" id="yXhLyreXNx">
+    <property role="1pbfSe" value="1543953415" />
+    <property role="TrG5h" value="TypeExpr" />
+    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="yXhLyreXNy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="targetType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mj1k:7FQByU3CrCQ" resolve="Type" />
+    </node>
   </node>
 </model>
 

@@ -29,11 +29,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853935960" name="anchorTag" index="1K8rD$" />
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-        <property id="779128492853699361" name="side" index="1Kfyot" />
-      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
       <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
@@ -42,6 +37,7 @@
       <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
       </concept>
+      <concept id="4620120465980511009" name="org.clafer.expr.structure.IGenericDotTarget" flags="ng" index="2qmygO" />
       <concept id="4620120465980402700" name="org.clafer.expr.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
@@ -71,6 +67,9 @@
       <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="629737693910916321" name="org.clafer.core.structure.TypeExpr" flags="ng" index="2jxDJT">
+        <child id="629737693910916322" name="targetType" index="2jxDJU" />
+      </concept>
       <concept id="6300420630909770920" name="org.clafer.core.structure.SuperClaferRef" flags="ng" index="2vxcI6">
         <reference id="6300420630909770921" name="superClafer" index="2vxcI7" />
       </concept>
@@ -79,6 +78,7 @@
       </concept>
       <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
         <property id="7663324203601194103" name="isBag" index="2K5fiP" />
+        <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
         <child id="5675649033537919505" name="targetType" index="3J4IUC" />
       </concept>
       <concept id="4545783005407580309" name="org.clafer.core.structure.ClaferInit" flags="ng" index="Kh$Oq">
@@ -244,6 +244,9 @@
       <property role="TrG5h" value="p" />
       <node concept="2K4itw" id="ORookiot8i" role="2K4itM">
         <node concept="3TlMh2" id="ORookiot8k" role="3J4IUC" />
+        <node concept="2jxDJT" id="yXhLyrfTtz" role="2jwY2M">
+          <node concept="3TlMh2" id="yXhLyrfTtx" role="2jxDJU" />
+        </node>
       </node>
       <node concept="Kh$Oq" id="ORookiot8s" role="KmSwm">
         <node concept="vlFh_" id="7ErTnvEW4If" role="Kh$P6">
@@ -301,7 +304,10 @@
       </node>
     </node>
     <node concept="UzEYP" id="ORookisWib" role="UzTCv" />
-    <node concept="UzEYP" id="ORookilKev" role="UzTCv" />
+    <node concept="UH0sd" id="yXhLyrfFsi" role="UzTCv">
+      <property role="TrG5h" value="dsad" />
+      <node concept="2K4itw" id="yXhLyrfFuZ" role="2K4itM" />
+    </node>
     <node concept="UH0sd" id="5Rg5_Rc3474" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="Person" />
@@ -329,13 +335,7 @@
       <node concept="UH0sd" id="5Rg5_Rc34gP" role="2vwUiP">
         <property role="TrG5h" value="age" />
         <node concept="2K4itw" id="5Rg5_Rc34gS" role="2K4itM">
-          <node concept="3TlMh2" id="5Rg5_Rc34gU" role="3J4IUC">
-            <node concept="1KehLL" id="44ORmASU4uj" role="lGtFl">
-              <property role="1K8rM7" value="ALIAS_EDITOR_COMPONENT" />
-              <property role="1K8rD$" value="default_RTransform" />
-              <property role="1Kfyot" value="right" />
-            </node>
-          </node>
+          <node concept="3TlMh2" id="5Rg5_Rc34gU" role="3J4IUC" />
         </node>
         <node concept="2vxuzR" id="12ZezlWUxh$" role="2vwUiP">
           <node concept="3Tl9Jp" id="12ZezlWUxjd" role="3WnoGb">
@@ -385,9 +385,19 @@
         <node concept="ZpTZE" id="$OrRLOlz3y" role="3J4IUC">
           <ref role="ZpTZD" node="3WlRoWey$hd" resolve="Alice" />
         </node>
+        <node concept="ZpONE" id="yXhLyrgD1V" role="2jwY2M">
+          <ref role="ZpOSt" node="3WlRoWey$hd" resolve="Alice" />
+        </node>
+      </node>
+      <node concept="2vxuzR" id="yXhLyrgD66" role="2vwUiP">
+        <node concept="2qmXGp" id="yXhLyrgD74" role="3WnoGb">
+          <node concept="2ZqYGZ" id="yXhLyrgD7$" role="1ESnxz">
+            <ref role="2ZqYFj" node="5Rg5_Rc34gP" resolve="age" />
+          </node>
+          <node concept="2Zoh0E" id="yXhLyrgD6V" role="1_9fRO" />
+        </node>
       </node>
     </node>
-    <node concept="UzEYP" id="12ZezlWUx4N" role="UzTCv" />
     <node concept="2vxuzR" id="1HSD30juE3U" role="UzTCv">
       <node concept="LdX3K" id="1HSD30juE5$" role="3WnoGb">
         <node concept="ZpONE" id="1HSD30jyDku" role="1_9fRO">
@@ -412,6 +422,9 @@
         <node concept="ZpTZE" id="12ZezlWUuRH" role="3J4IUC">
           <ref role="ZpTZD" node="12ZezlWUuJz" resolve="Y" />
         </node>
+        <node concept="ZpONE" id="yXhLyrgDdI" role="2jwY2M">
+          <ref role="ZpOSt" node="12ZezlWUuJz" resolve="Y" />
+        </node>
       </node>
       <node concept="UH0sd" id="12ZezlWUuVV" role="2vwUiP">
         <property role="TrG5h" value="W" />
@@ -419,11 +432,9 @@
       </node>
       <node concept="2vxuzR" id="12ZezlWUvMx" role="2vwUiP">
         <node concept="LdX3K" id="12ZezlWUvPL" role="3WnoGb">
-          <node concept="2qmXGp" id="12ZezlWUvQM" role="1_9fRO">
-            <node concept="2ZqYGZ" id="12ZezlWUvRz" role="1ESnxz">
-              <ref role="2ZqYFj" node="12ZezlWUuPv" resolve="Z" />
-            </node>
-            <node concept="2Zoh0E" id="12ZezlWUvQf" role="1_9fRO" />
+          <node concept="2qmXGp" id="yXhLyrgDe9" role="1_9fRO">
+            <node concept="2qmygO" id="yXhLyrgDea" role="1ESnxz" />
+            <node concept="2Zoh0E" id="yXhLyrgDdx" role="1_9fRO" />
           </node>
         </node>
         <node concept="1z9TsT" id="12ZezlWUvXL" role="lGtFl">
