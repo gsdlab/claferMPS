@@ -1875,6 +1875,70 @@
           </node>
           <node concept="ZpONE" id="yXhLyrh0dI" role="2jwY2M">
             <ref role="ZpOSt" node="3T8tWljOvQy" resolve="_superClafer_" />
+            <node concept="1W57fq" id="1OxX53tiPnI" role="lGtFl">
+              <node concept="3IZrLx" id="1OxX53tiPnR" role="3IZSJc">
+                <node concept="3clFbS" id="1OxX53tiPo0" role="2VODD2">
+                  <node concept="3clFbF" id="1OxX53tiPtv" role="3cqZAp">
+                    <node concept="2OqwBi" id="1OxX53tiRjy" role="3clFbG">
+                      <node concept="2OqwBi" id="1OxX53tiQlk" role="2Oq$k0">
+                        <node concept="1PxgMI" id="1OxX53tiPRU" role="2Oq$k0">
+                          <ref role="1PxNhF" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
+                          <node concept="30H73N" id="1OxX53tiPtu" role="1PxMeX" />
+                        </node>
+                        <node concept="3TrEf2" id="1OxX53tiQX1" role="2OqNvi">
+                          <ref role="3Tt5mk" to="ddau:5C9iBpnhqPw" />
+                        </node>
+                      </node>
+                      <node concept="3x8VRR" id="1OxX53tiRG_" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="gft3U" id="1OxX53tiRLp" role="UU_$l">
+                <node concept="ZpONE" id="1OxX53tiRRB" role="gfFT$">
+                  <ref role="ZpOSt" node="3T8tWljOvQy" resolve="_superClafer_" />
+                  <node concept="1ZhdrF" id="1OxX53tiRRI" role="lGtFl">
+                    <property role="P3scX" value="137e622e-709a-48af-8f85-420e945711de/2851923306472496585/2851923306472496958" />
+                    <property role="2qtEX8" value="clafer" />
+                    <node concept="3$xsQk" id="1OxX53tiRRJ" role="3$ytzL">
+                      <node concept="3clFbS" id="1OxX53tiRRK" role="2VODD2">
+                        <node concept="3cpWs6" id="1OxX53tiRSF" role="3cqZAp">
+                          <node concept="2YIFZM" id="1OxX53tiRSG" role="3cqZAk">
+                            <ref role="1Pybhc" to="1lue:3T8tWlk9fMM" resolve="ArchGenUtil" />
+                            <ref role="37wK5l" to="1lue:7$28d_YWxAw" resolve="getConceptClafer" />
+                            <node concept="2ShNRf" id="1OxX53tiS0h" role="37wK5m">
+                              <node concept="3zrR0B" id="1OxX53tiTRX" role="2ShVmc">
+                                <node concept="3Tqbb2" id="1OxX53tiTRZ" role="3zrR0E">
+                                  <ref role="ehGHo" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="1iwH7S" id="1OxX53tiRSI" role="37wK5m" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="29HgVG" id="1OxX53tiOMt" role="lGtFl">
+              <node concept="3NFfHV" id="1OxX53tiP8M" role="3NFExx">
+                <node concept="3clFbS" id="1OxX53tiP8N" role="2VODD2">
+                  <node concept="3clFbF" id="1OxX53tiPb5" role="3cqZAp">
+                    <node concept="2OqwBi" id="1OxX53tiPb6" role="3clFbG">
+                      <node concept="1PxgMI" id="1OxX53tiPb7" role="2Oq$k0">
+                        <ref role="1PxNhF" to="ddau:$OrRLOu4Y2" resolve="RefToDevice" />
+                        <node concept="30H73N" id="1OxX53tiPb8" role="1PxMeX" />
+                      </node>
+                      <node concept="3TrEf2" id="1OxX53tiPb9" role="2OqNvi">
+                        <ref role="3Tt5mk" to="ddau:5C9iBpnhqPw" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
