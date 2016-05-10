@@ -1045,11 +1045,6 @@
           </node>
         </node>
       </node>
-      <node concept="3LLIJQ" id="7Ij6CMqLahH" role="3LX2qu">
-        <node concept="ZpONE" id="3KMBoWMK27s" role="3LLIXq">
-          <ref role="ZpOSt" node="1ub0KooEDqZ" resolve="dnClass" />
-        </node>
-      </node>
     </node>
     <node concept="3GEVxB" id="1ub0KooEDsN" role="UzTCp">
       <ref role="3GEb4d" node="1ub0KooEDqY" resolve="Device_Node_Classification" />
@@ -1286,11 +1281,6 @@
           </node>
         </node>
       </node>
-      <node concept="3LLIJQ" id="3KMBoWMKFTP" role="3LX2qu">
-        <node concept="ZpONE" id="3KMBoWMKFTR" role="3LLIXq">
-          <ref role="ZpOSt" node="1ub0KooEDqZ" resolve="dnClass" />
-        </node>
-      </node>
     </node>
     <node concept="UzEYP" id="1ub0KooJY9X" role="UzTCv" />
     <node concept="UzEYP" id="1ub0KooJYe2" role="UzTCv" />
@@ -1331,6 +1321,11 @@
     <node concept="UzEYP" id="7Ij6CMqk7Tb" role="UzTCv" />
     <node concept="1uNGeH" id="7Ij6CMqk7Ts" role="UzTCv">
       <property role="TrG5h" value="hw" />
+      <node concept="3LLIJQ" id="1OxX53ti5Vp" role="3LX2qu">
+        <node concept="ZpONE" id="1OxX53ti5Vt" role="3LLIXq">
+          <ref role="ZpOSt" node="1ub0KooEDqZ" resolve="dnClass" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
