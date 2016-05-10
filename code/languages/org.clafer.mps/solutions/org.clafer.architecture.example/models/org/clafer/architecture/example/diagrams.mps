@@ -32,6 +32,7 @@
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
+      <concept id="1508831110959197090" name="org.clafer.architecture.structure.DeployedToExpr" flags="ng" index="2IdTD4" />
       <concept id="1679786397508364593" name="org.clafer.architecture.structure.IHardwareConnector" flags="ng" index="PiMn_">
         <reference id="4552959601553059646" name="target" index="2Kqnes" />
         <reference id="4552959601553059645" name="source" index="2Kqnev" />
@@ -119,12 +120,16 @@
       </concept>
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="6300420630909714393" name="org.clafer.core.structure.Constraint" flags="ng" index="2vxuzR">
+        <child id="4988923775218203830" name="expr" index="3WnoGb" />
+      </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
         <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
+      <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
       </concept>
@@ -211,6 +216,12 @@
           </node>
           <node concept="ZpONE" id="17N04ap_Kam" role="28Pzmy">
             <ref role="ZpOSt" node="1ub0KooEDft" resolve="aFunction" />
+          </node>
+          <node concept="2vxuzR" id="1OxX53tbqoG" role="2mZOl8">
+            <node concept="2qmXGp" id="1OxX53tbqp0" role="3WnoGb">
+              <node concept="2IdTD4" id="1OxX53tbqpi" role="1ESnxz" />
+              <node concept="2Zoh0E" id="1OxX53tbqoQ" role="1_9fRO" />
+            </node>
           </node>
         </node>
         <node concept="37mRI7" id="1ub0KooEDma" role="lGtFl">

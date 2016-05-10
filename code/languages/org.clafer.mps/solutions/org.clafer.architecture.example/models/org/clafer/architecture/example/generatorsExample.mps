@@ -666,6 +666,9 @@
         <property role="nHvRw" value="source" />
       </node>
     </node>
+    <node concept="3GEVxB" id="1OxX53tgXni" role="UzTCp">
+      <ref role="3GEb4d" node="7$28d_YywjR" resolve="TestModel3" />
+    </node>
   </node>
   <node concept="UzPwm" id="1th$N_eQKTj">
     <property role="TrG5h" value="TestModel4" />
