@@ -227,5 +227,36 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="1OxX53toqbZ">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="WuzLi" to="ddau:1OxX53topAa" resolve="ImplementationExpr" />
+    <node concept="11bSqf" id="1OxX53toqc0" role="11c4hB">
+      <node concept="3clFbS" id="1OxX53toqc1" role="2VODD2">
+        <node concept="lc7rE" id="1OxX53toqck" role="3cqZAp">
+          <node concept="la8eA" id="1OxX53tsu$z" role="lcghm">
+            <property role="lacIc" value="implementation" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1OxX53tsti6">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="WuzLi" to="ddau:1OxX53tjtgH" resolve="Implementation" />
+    <node concept="11bSqf" id="1OxX53tsti7" role="11c4hB">
+      <node concept="3clFbS" id="1OxX53tsti8" role="2VODD2">
+        <node concept="lc7rE" id="1OxX53tstik" role="3cqZAp">
+          <node concept="l9hG8" id="1OxX53tsti$" role="lcghm">
+            <node concept="2OqwBi" id="1OxX53tstms" role="lb14g">
+              <node concept="117lpO" id="1OxX53tstjm" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1OxX53tsttN" role="2OqNvi">
+                <ref role="3TsBF5" to="ddau:1OxX53tjtgI" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

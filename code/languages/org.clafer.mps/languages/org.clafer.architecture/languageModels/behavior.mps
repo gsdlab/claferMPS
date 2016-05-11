@@ -7011,5 +7011,60 @@
       <node concept="3clFbS" id="5YkgXg$gjfE" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="1OxX53tjtwk">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="13h7C2" to="ddau:1OxX53tjtgH" resolve="Implementation" />
+    <node concept="13i0hz" id="1OxX53tjtw_" role="13h7CS">
+      <property role="TrG5h" value="getPresentation" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="tpcu:hEwIMiw" resolve="getPresentation" />
+      <node concept="3clFbS" id="1OxX53tjtwB" role="3clF47">
+        <node concept="3cpWs6" id="1OxX53tjtEy" role="3cqZAp">
+          <node concept="2OqwBi" id="1OxX53tjtzK" role="3cqZAk">
+            <node concept="13iPFW" id="1OxX53tjtwR" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1OxX53tjtDr" role="2OqNvi">
+              <ref role="3TsBF5" to="ddau:1OxX53tjtgI" resolve="type" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1OxX53tjtwL" role="3clF45" />
+      <node concept="3Tm1VV" id="1OxX53tjtwM" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="1OxX53trAGd" role="13h7CS">
+      <property role="TrG5h" value="getTarget" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <node concept="3clFbS" id="1OxX53trAGf" role="3clF47">
+        <node concept="3clFbF" id="1OxX53trAH9" role="3cqZAp">
+          <node concept="10Nm6u" id="1OxX53trAH8" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1OxX53trAGR" role="3clF45" />
+      <node concept="3Tm1VV" id="1OxX53trAGS" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="1OxX53tjtwl" role="13h7CW">
+      <node concept="3clFbS" id="1OxX53tjtwm" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1OxX53toqbg">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="13h7C2" to="ddau:1OxX53topAa" resolve="ImplementationExpr" />
+    <node concept="13i0hz" id="1OxX53toqbo" role="13h7CS">
+      <property role="TrG5h" value="getTarget" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <node concept="3clFbS" id="1OxX53toqbq" role="3clF47">
+        <node concept="3clFbF" id="1OxX53toqbF" role="3cqZAp">
+          <node concept="10Nm6u" id="1OxX53toqbE" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="1OxX53toqb$" role="3clF45" />
+      <node concept="3Tm1VV" id="1OxX53toqb_" role="1B3o_S" />
+    </node>
+    <node concept="13hLZK" id="1OxX53toqbh" role="13h7CW">
+      <node concept="3clFbS" id="1OxX53toqbi" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

@@ -46,6 +46,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -4820,6 +4821,25 @@
       </node>
       <node concept="PMmxH" id="2IzCCeKmhcg" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO44bo" resolve="ArchOptional" />
+      </node>
+      <node concept="3F1sOY" id="1OxX53tlBYt" role="3EZMnx">
+        <ref role="1NtTu8" to="ddau:1OxX53tjvF2" />
+        <ref role="1ERwB7" node="1OxX53tttH1" resolve="FAComponent_removeImplementation" />
+        <node concept="pkWqt" id="1OxX53tlBZZ" role="pqm2j">
+          <node concept="3clFbS" id="1OxX53tlC00" role="2VODD2">
+            <node concept="3clFbF" id="1OxX53tlC81" role="3cqZAp">
+              <node concept="2OqwBi" id="1OxX53tlCPL" role="3clFbG">
+                <node concept="2OqwBi" id="1OxX53tlCf4" role="2Oq$k0">
+                  <node concept="pncrf" id="1OxX53tlC80" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1OxX53tlCxI" role="2OqNvi">
+                    <ref role="3Tt5mk" to="ddau:1OxX53tjvF2" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="1OxX53tlD4X" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="PMmxH" id="2IzCCeKmhch" role="3EZMnx">
         <ref role="PMmxG" node="$OrRLO47xg" resolve="ArchDefinition" />
@@ -10504,6 +10524,70 @@
         </node>
         <node concept="2iRfu4" id="5YkgXg$fKos" role="2iSdaV" />
         <node concept="Vb9p2" id="5YkgXg$fKot" role="3F10Kt" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1OxX53tjthA">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="1XX52x" to="ddau:1OxX53tjtgH" resolve="Implementation" />
+    <node concept="3F0A7n" id="1OxX53tjthK" role="2wV5jI">
+      <ref role="1NtTu8" to="ddau:1OxX53tjtgI" resolve="type" />
+      <node concept="Vb9p2" id="1OxX53tuuLS" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
+      <node concept="1uO$qF" id="1OxX53tutU9" role="3F10Kt">
+        <node concept="3nzxsE" id="1OxX53tutUa" role="1uO$qD">
+          <node concept="3clFbS" id="1OxX53tutUb" role="2VODD2">
+            <node concept="3clFbF" id="1OxX53tutZc" role="3cqZAp">
+              <node concept="3fqX7Q" id="1OxX53tuuBH" role="3clFbG">
+                <node concept="2OqwBi" id="1OxX53tuuBJ" role="3fr31v">
+                  <node concept="2OqwBi" id="1OxX53tuuBK" role="2Oq$k0">
+                    <node concept="pncrf" id="1OxX53tuuBL" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="1OxX53tuuBM" role="2OqNvi" />
+                  </node>
+                  <node concept="1mIQ4w" id="1OxX53tuuBN" role="2OqNvi">
+                    <node concept="chp4Y" id="1OxX53tuuBO" role="cj9EA">
+                      <ref role="cht4Q" to="mj1k:40tXLnqhyKc" resolve="GenericDotExpression" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1wgc9g" id="1OxX53tutVm" role="3XvnJa">
+          <ref role="1wgcnl" to="tpen:hgVS8CF" resolve="KeyWord" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1OxX53topAj">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="1XX52x" to="ddau:1OxX53topAa" resolve="ImplementationExpr" />
+    <node concept="PMmxH" id="1OxX53topAr" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="1OxX53tttH1">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="FAComponent_removeImplementation" />
+    <ref role="1h_SK9" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+    <node concept="1hA7zw" id="1OxX53tttH2" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="1OxX53tttH3" role="1hA7z_">
+        <node concept="3clFbS" id="1OxX53tttH4" role="2VODD2">
+          <node concept="3clFbF" id="1OxX53tttO$" role="3cqZAp">
+            <node concept="2OqwBi" id="1OxX53ttuwV" role="3clFbG">
+              <node concept="2OqwBi" id="1OxX53tttTM" role="2Oq$k0">
+                <node concept="0IXxy" id="1OxX53tttOz" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1OxX53ttuaB" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:1OxX53tjvF2" />
+                </node>
+              </node>
+              <node concept="1PgB_6" id="1OxX53ttuM0" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

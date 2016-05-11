@@ -151,6 +151,54 @@
           </node>
         </node>
       </node>
+      <node concept="UH0sd" id="1OxX53tm8$x" role="2vwUiP">
+        <property role="TrG5h" value="implementation" />
+        <node concept="UH0sd" id="1OxX53tm8_R" role="2vwUiP">
+          <property role="TrG5h" value="hardware" />
+          <node concept="2vxuzR" id="1OxX53tm8Ay" role="2vwUiP">
+            <node concept="LkG4F" id="1OxX53tm8Bt" role="3WnoGb">
+              <node concept="2BPB98" id="1OxX53tm8C2" role="3TlMhJ">
+                <node concept="vgzv4" id="1OxX53tm8CW" role="1_9fRO">
+                  <node concept="ZpONE" id="1OxX53tm8Dq" role="3TlMhJ">
+                    <ref role="ZpOSt" node="5H6GWMWU_L9" resolve="SmartDeviceNode" />
+                  </node>
+                  <node concept="ZpONE" id="1OxX53tm8Co" role="3TlMhI">
+                    <ref role="ZpOSt" node="5H6GWMWUA6N" resolve="EEDeviceNode" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2qmXGp" id="1OxX53tm8AW" role="3TlMhI">
+                <node concept="2ZqYGZ" id="1OxX53tm8Bf" role="1ESnxz">
+                  <ref role="2ZqYFj" node="5H6GWMWUAee" resolve="type" />
+                </node>
+                <node concept="ZpONE" id="1OxX53tm8AM" role="1_9fRO">
+                  <ref role="ZpOSt" node="6v3ZnYePIW2" resolve="deployedTo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="UH0sd" id="1OxX53tm8Hz" role="2vwUiP">
+          <property role="TrG5h" value="software" />
+          <node concept="2vxuzR" id="1OxX53tm8H$" role="2vwUiP">
+            <node concept="LkG4F" id="1OxX53tm8L7" role="3WnoGb">
+              <node concept="ZpONE" id="1OxX53tm8LI" role="3TlMhJ">
+                <ref role="ZpOSt" node="5H6GWMWU_L9" resolve="SmartDeviceNode" />
+              </node>
+              <node concept="2qmXGp" id="1OxX53tm8HE" role="3TlMhI">
+                <node concept="2ZqYGZ" id="1OxX53tm8HF" role="1ESnxz">
+                  <ref role="2ZqYFj" node="5H6GWMWUAee" resolve="type" />
+                </node>
+                <node concept="ZpONE" id="1OxX53tm8HG" role="1_9fRO">
+                  <ref role="ZpOSt" node="6v3ZnYePIW2" resolve="deployedTo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="UzEYP" id="1OxX53tm8E8" role="2vwUiP" />
+        <node concept="3E5GGL" id="1OxX53tm8_Z" role="2vBoQc" />
+      </node>
     </node>
     <node concept="UzEYP" id="6v3ZnYePIWw" role="UzTCv" />
     <node concept="UH0sd" id="6v3ZnYePIY9" role="UzTCv">

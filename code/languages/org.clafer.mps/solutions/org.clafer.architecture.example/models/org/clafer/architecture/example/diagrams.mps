@@ -32,12 +32,19 @@
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
+      <concept id="7456344075911071065" name="org.clafer.architecture.structure.FAComponent" flags="ng" index="oJGgR">
+        <child id="2099227529478798018" name="implementation" index="30r0Ui" />
+      </concept>
       <concept id="1508831110959197090" name="org.clafer.architecture.structure.DeployedToExpr" flags="ng" index="2IdTD4" />
       <concept id="1679786397508364593" name="org.clafer.architecture.structure.IHardwareConnector" flags="ng" index="PiMn_">
         <reference id="4552959601553059646" name="target" index="2Kqnes" />
         <reference id="4552959601553059645" name="source" index="2Kqnev" />
         <child id="3246930885582290891" name="targetExpr" index="3grLm$" />
         <child id="3246930885582290884" name="sourceExpr" index="3grLmF" />
+      </concept>
+      <concept id="2099227529480083850" name="org.clafer.architecture.structure.ImplementationExpr" flags="ng" index="30g6Rq" />
+      <concept id="2099227529478788141" name="org.clafer.architecture.structure.Implementation" flags="ng" index="30r21X">
+        <property id="2099227529478788142" name="type" index="30r21Y" />
       </concept>
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277980" name="org.clafer.architecture.structure.PowerTopology" flags="ng" index="36Bm2$" />
@@ -70,6 +77,7 @@
       <concept id="6081592096124286448" name="org.clafer.architecture.structure.IHaveType" flags="ng" index="1Uap8U">
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
+      <concept id="6081592096124551689" name="org.clafer.architecture.structure.NodeTypeExpr" flags="ng" index="1Udun3" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -164,15 +172,33 @@
       <property role="nHvRw" value="source" />
       <node concept="2mZLT$" id="1ub0KooEDft" role="2mZOl8">
         <property role="TrG5h" value="aFunction" />
+        <node concept="30r21X" id="1OxX53tm8uf" role="30r0Ui">
+          <property role="30r21Y" value="hardware" />
+        </node>
       </node>
       <node concept="2mZLT$" id="1ub0KooEDfz" role="2mZOl8">
         <property role="TrG5h" value="aFunction2" />
       </node>
       <node concept="2mXI97" id="1ub0KooEDfF" role="2mZOl8">
         <property role="TrG5h" value="fDevice" />
+        <node concept="30r21X" id="1OxX53tm8uu" role="30r0Ui">
+          <property role="30r21Y" value="software" />
+        </node>
       </node>
       <node concept="2mXI97" id="1ub0KooEDfP" role="2mZOl8">
         <property role="TrG5h" value="fDevice2" />
+        <node concept="30r21X" id="1OxX53tnXwj" role="30r0Ui" />
+        <node concept="2vxuzR" id="1OxX53tqdYL" role="2mZOl8">
+          <node concept="2qmXGp" id="1OxX53troQh" role="3WnoGb">
+            <node concept="30r21X" id="1OxX53txJWh" role="1ESnxz">
+              <property role="30r21Y" value="software" />
+            </node>
+            <node concept="2qmXGp" id="1OxX53tqI7b" role="1_9fRO">
+              <node concept="30g6Rq" id="1OxX53trea0" role="1ESnxz" />
+              <node concept="2Zoh0E" id="1OxX53tqdYV" role="1_9fRO" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="UzEYP" id="1ub0KooEDfV" role="2mZOl8" />
       <node concept="1eXri_" id="1ub0KooEDg8" role="2mZOl8">
@@ -195,6 +221,15 @@
         </node>
         <node concept="ZpONE" id="17N04ap_Kak" role="28Pzmy">
           <ref role="ZpOSt" node="1ub0KooEDfP" resolve="fDevice2" />
+        </node>
+        <node concept="2vxuzR" id="1OxX53tqdZF" role="2mZOl8">
+          <node concept="2qmXGp" id="1OxX53treq_" role="3WnoGb">
+            <node concept="1Udun3" id="1OxX53trer6" role="1ESnxz" />
+            <node concept="2qmXGp" id="1OxX53tqdZZ" role="1_9fRO">
+              <node concept="2IdTD4" id="1OxX53treoQ" role="1ESnxz" />
+              <node concept="2Zoh0E" id="1OxX53tqdZP" role="1_9fRO" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="UzEYP" id="1ub0KooEDgo" role="2mZOl8" />
