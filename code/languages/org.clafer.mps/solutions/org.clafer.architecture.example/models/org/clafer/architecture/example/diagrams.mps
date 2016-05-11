@@ -181,14 +181,14 @@
       <property role="nHvRw" value="source" />
       <node concept="2mZLT$" id="1ub0KooEDft" role="2mZOl8">
         <property role="TrG5h" value="aFunction" />
+        <node concept="30r21X" id="4kqSQ6TunPJ" role="30r0Ui">
+          <property role="30r21Y" value="hardware" />
+        </node>
       </node>
       <node concept="2mZLT$" id="1ub0KooEDfz" role="2mZOl8">
         <property role="TrG5h" value="aFunction2" />
         <node concept="30r21X" id="4kqSQ6TnKWq" role="30r0Ui">
           <property role="30r21Y" value="hardware" />
-        </node>
-        <node concept="30r21X" id="4kqSQ6Tsu30" role="30r0Ui">
-          <property role="30r21Y" value="software" />
         </node>
       </node>
       <node concept="2mXI97" id="1ub0KooEDfF" role="2mZOl8">
@@ -202,8 +202,8 @@
         <node concept="30r21X" id="1OxX53tnXwj" role="30r0Ui" />
         <node concept="2vxuzR" id="1OxX53tqdYL" role="2mZOl8">
           <node concept="2qmXGp" id="1OxX53troQh" role="3WnoGb">
-            <node concept="3Whttt" id="4kqSQ6TpD5Q" role="1ESnxz">
-              <property role="3Whtsz" value="software" />
+            <node concept="3Whttt" id="4kqSQ6Tuoaj" role="1ESnxz">
+              <property role="3Whtsz" value="hardware" />
             </node>
             <node concept="2qmXGp" id="1OxX53tqI7b" role="1_9fRO">
               <node concept="30g6Rq" id="1OxX53trea0" role="1ESnxz" />

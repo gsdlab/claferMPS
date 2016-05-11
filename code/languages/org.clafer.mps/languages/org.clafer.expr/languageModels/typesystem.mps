@@ -4097,5 +4097,31 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="yM9JMK8OXJ">
+    <property role="TrG5h" value="typeof_SumExpr" />
+    <property role="3GE5qa" value="expr.clafer" />
+    <node concept="3clFbS" id="yM9JMK8OXK" role="18ibNy">
+      <node concept="1Z5TYs" id="yM9JMK8OZE" role="3cqZAp">
+        <node concept="mw_s8" id="yM9JMK8P06" role="1ZfhKB">
+          <node concept="2pJPEk" id="yM9JMK8P02" role="mwGJk">
+            <node concept="2pJPED" id="yM9JMK8P0k" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1k:7FQByU3CrDG" resolve="IntType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="yM9JMK8OZH" role="1ZfhK$">
+          <node concept="1Z2H0r" id="yM9JMK8OXQ" role="mwGJk">
+            <node concept="1YBJjd" id="yM9JMK8OYl" role="1Z2MuG">
+              <ref role="1YBMHb" node="yM9JMK8OXM" resolve="sumExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="yM9JMK8OXM" role="1YuTPh">
+      <property role="TrG5h" value="sumExpr" />
+      <ref role="1YaFvo" to="mj1k:ORookiotnw" resolve="SumExpr" />
+    </node>
+  </node>
 </model>
 

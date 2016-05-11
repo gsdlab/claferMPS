@@ -1610,7 +1610,7 @@
     </node>
     <node concept="1YaCAy" id="1jKsuqUM28y" role="1YuTPh">
       <property role="TrG5h" value="deployedToExpr" />
-      <ref role="1YaFvo" to="ddau:1jKsuqULYIy" resolve="DeployedToExpr" />
+      <ref role="1YaFvo" to="ddau:1jKsuqULYIy" resolve="DeployedToDotTarget" />
     </node>
   </node>
   <node concept="18kY7G" id="5ipUCoiPsTc">

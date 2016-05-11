@@ -868,7 +868,7 @@
   <node concept="1TIwiD" id="1jKsuqULYIy">
     <property role="1pbfSe" value="810001016" />
     <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
-    <property role="TrG5h" value="DeployedToExpr" />
+    <property role="TrG5h" value="DeployedToDotTarget" />
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="deployedTo" />
@@ -964,7 +964,7 @@
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
     <node concept="1TJgyj" id="3WJnaafd3OM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="20kJfa" value="sourceBus" />
       <ref role="20lvS9" node="19aTRzkPSoJ" resolve="BusConnector" />
       <node concept="asaX9" id="17N04appB6v" role="lGtFl" />
@@ -972,7 +972,7 @@
     <node concept="1TJgyj" id="3WJnaafd3OO" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="targetBus" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="19aTRzkPSoJ" resolve="BusConnector" />
       <node concept="asaX9" id="17N04appB6x" role="lGtFl" />
     </node>
