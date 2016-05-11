@@ -1577,7 +1577,7 @@
   <node concept="3dkpOd" id="4kqSQ6TtjS9">
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="FAComponent_addImplementation" />
-    <ref role="2ZfgGC" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
+    <ref role="2ZfgGC" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
     <node concept="2S6ZIM" id="4kqSQ6TtjSa" role="2ZfVej">
       <node concept="3clFbS" id="4kqSQ6TtjSb" role="2VODD2">
         <node concept="3clFbF" id="4kqSQ6Tuebf" role="3cqZAp">
