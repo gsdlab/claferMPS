@@ -258,5 +258,23 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="4kqSQ6TnOiv">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="WuzLi" to="ddau:4kqSQ6TnNgW" resolve="ImplementationTypeExpr" />
+    <node concept="11bSqf" id="4kqSQ6TnOiw" role="11c4hB">
+      <node concept="3clFbS" id="4kqSQ6TnOix" role="2VODD2">
+        <node concept="lc7rE" id="4kqSQ6TnOj9" role="3cqZAp">
+          <node concept="l9hG8" id="4kqSQ6TnOjn" role="lcghm">
+            <node concept="2OqwBi" id="4kqSQ6TnOm7" role="lb14g">
+              <node concept="117lpO" id="4kqSQ6TnOk7" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4kqSQ6TnOqv" role="2OqNvi">
+                <ref role="3TsBF5" to="ddau:4kqSQ6TnNh2" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

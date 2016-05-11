@@ -887,6 +887,7 @@
     <node concept="1TJgyj" id="1OxX53tjvF2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="implementation" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1OxX53tjtgH" resolve="Implementation" />
     </node>
     <node concept="PrWs8" id="6tUgmTZN8L3" role="PzmwI">
@@ -1230,9 +1231,6 @@
     <node concept="PrWs8" id="1OxX53tjtgL" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
-    <node concept="PrWs8" id="1OxX53trtQf" role="PzmwI">
-      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1OxX53topAa">
     <property role="1pbfSe" value="92041766" />
@@ -1241,6 +1239,19 @@
     <property role="34LRSv" value="implementation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1OxX53topAb" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4kqSQ6TnNgW">
+    <property role="1pbfSe" value="25552995" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="ImplementationTypeExpr" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4kqSQ6TnNh2" role="1TKVEl">
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="1OxX53tjt6x" resolve="FACImplementation" />
+    </node>
+    <node concept="PrWs8" id="4kqSQ6TnNgZ" role="PzmwI">
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
   </node>

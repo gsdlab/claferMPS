@@ -3424,7 +3424,7 @@
     </node>
   </node>
   <node concept="1YbPZF" id="1OxX53tsiDH">
-    <property role="TrG5h" value="typeof_Implementation" />
+    <property role="TrG5h" value="typeof_ImplementationTypeExpr" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <node concept="3clFbS" id="1OxX53tsiDI" role="18ibNy">
       <node concept="3clFbJ" id="4kqSQ6Tk42M" role="3cqZAp">
@@ -3441,7 +3441,7 @@
             <node concept="mw_s8" id="1OxX53tsjkL" role="1ZfhK$">
               <node concept="1Z2H0r" id="1OxX53tsjj5" role="mwGJk">
                 <node concept="1YBJjd" id="1OxX53tsjj$" role="1Z2MuG">
-                  <ref role="1YBMHb" node="1OxX53tsiDK" resolve="implementation" />
+                  <ref role="1YBMHb" node="1OxX53tsiDK" resolve="implementationTypeExpr" />
                 </node>
               </node>
             </node>
@@ -3450,7 +3450,7 @@
         <node concept="2OqwBi" id="1OxX53tsj9u" role="3clFbw">
           <node concept="2OqwBi" id="1OxX53tsiJR" role="2Oq$k0">
             <node concept="1YBJjd" id="1OxX53tsiES" role="2Oq$k0">
-              <ref role="1YBMHb" node="1OxX53tsiDK" resolve="implementation" />
+              <ref role="1YBMHb" node="1OxX53tsiDK" resolve="implementationTypeExpr" />
             </node>
             <node concept="1mfA1w" id="1OxX53tsj0O" role="2OqNvi" />
           </node>
@@ -3463,8 +3463,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="1OxX53tsiDK" role="1YuTPh">
-      <property role="TrG5h" value="implementation" />
-      <ref role="1YaFvo" to="ddau:1OxX53tjtgH" resolve="Implementation" />
+      <property role="TrG5h" value="implementationTypeExpr" />
+      <ref role="1YaFvo" to="ddau:4kqSQ6TnNgW" resolve="ImplementationTypeExpr" />
     </node>
   </node>
 </model>

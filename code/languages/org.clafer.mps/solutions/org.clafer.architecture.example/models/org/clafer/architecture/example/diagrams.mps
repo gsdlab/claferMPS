@@ -61,6 +61,12 @@
         <child id="1293377804022658528" name="targetExpr" index="28Pzmy" />
       </concept>
       <concept id="8817732347957866929" name="org.clafer.architecture.structure.FunctionalAnalysis" flags="ng" index="1u8h5F" />
+      <concept id="6663788808724501982" name="org.clafer.architecture.structure.IHaveArchType" flags="ng" index="3uhtP3">
+        <child id="6663788808724501985" name="type" index="3uhtPW" />
+      </concept>
+      <concept id="6663788808723353478" name="org.clafer.architecture.structure.BusType" flags="ng" index="3ulOsr">
+        <property id="6663788808723353481" name="type" index="3ulOsk" />
+      </concept>
       <concept id="8817732347958928247" name="org.clafer.architecture.structure.HardwareArchitecture" flags="ng" index="1uNGeH" />
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
       <concept id="1196655094766887079" name="org.clafer.architecture.structure.FeatureModel" flags="ng" index="3yDFZg" />
@@ -78,6 +84,9 @@
         <child id="8674886736248617375" name="type" index="kIXCp" />
       </concept>
       <concept id="6081592096124551689" name="org.clafer.architecture.structure.NodeTypeExpr" flags="ng" index="1Udun3" />
+      <concept id="4979542346872861756" name="org.clafer.architecture.structure.ImplementationTypeExpr" flags="ng" index="3Whttt">
+        <property id="4979542346872861762" name="type" index="3Whtsz" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -172,16 +181,19 @@
       <property role="nHvRw" value="source" />
       <node concept="2mZLT$" id="1ub0KooEDft" role="2mZOl8">
         <property role="TrG5h" value="aFunction" />
-        <node concept="30r21X" id="1OxX53tm8uf" role="30r0Ui">
-          <property role="30r21Y" value="hardware" />
-        </node>
       </node>
       <node concept="2mZLT$" id="1ub0KooEDfz" role="2mZOl8">
         <property role="TrG5h" value="aFunction2" />
+        <node concept="30r21X" id="4kqSQ6TnKWq" role="30r0Ui">
+          <property role="30r21Y" value="hardware" />
+        </node>
+        <node concept="30r21X" id="4kqSQ6Tsu30" role="30r0Ui">
+          <property role="30r21Y" value="software" />
+        </node>
       </node>
       <node concept="2mXI97" id="1ub0KooEDfF" role="2mZOl8">
         <property role="TrG5h" value="fDevice" />
-        <node concept="30r21X" id="1OxX53tm8uu" role="30r0Ui">
+        <node concept="30r21X" id="4kqSQ6Tlnc6" role="30r0Ui">
           <property role="30r21Y" value="software" />
         </node>
       </node>
@@ -190,8 +202,8 @@
         <node concept="30r21X" id="1OxX53tnXwj" role="30r0Ui" />
         <node concept="2vxuzR" id="1OxX53tqdYL" role="2mZOl8">
           <node concept="2qmXGp" id="1OxX53troQh" role="3WnoGb">
-            <node concept="30r21X" id="1OxX53txJWh" role="1ESnxz">
-              <property role="30r21Y" value="software" />
+            <node concept="3Whttt" id="4kqSQ6TpD5Q" role="1ESnxz">
+              <property role="3Whtsz" value="software" />
             </node>
             <node concept="2qmXGp" id="1OxX53tqI7b" role="1_9fRO">
               <node concept="30g6Rq" id="1OxX53trea0" role="1ESnxz" />
@@ -527,6 +539,10 @@
         </node>
         <node concept="ZpONE" id="17N04apr_r7" role="28I6$c">
           <ref role="ZpOSt" node="1ub0KooEDra" resolve="smartDNode" />
+        </node>
+        <node concept="3ulOsr" id="4kqSQ6Tq9ld" role="3uhtPW" />
+        <node concept="3ulOsr" id="4kqSQ6TqBxk" role="3uhtPW">
+          <property role="3ulOsk" value="LIN" />
         </node>
       </node>
       <node concept="36Bm5n" id="17N04apr_rw" role="2mZOl8">
