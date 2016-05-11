@@ -10585,19 +10585,7 @@
     <node concept="1hA7zw" id="1OxX53tttH2" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="1OxX53tttH3" role="1hA7z_">
-        <node concept="3clFbS" id="1OxX53tttH4" role="2VODD2">
-          <node concept="3clFbF" id="1OxX53tttO$" role="3cqZAp">
-            <node concept="2OqwBi" id="1OxX53ttuwV" role="3clFbG">
-              <node concept="2OqwBi" id="1OxX53tttTM" role="2Oq$k0">
-                <node concept="0IXxy" id="1OxX53tttOz" role="2Oq$k0" />
-                <node concept="3TrEf2" id="1OxX53ttuaB" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ddau:1OxX53tjvF2" />
-                </node>
-              </node>
-              <node concept="1PgB_6" id="1OxX53ttuM0" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbS" id="1OxX53tttH4" role="2VODD2" />
       </node>
     </node>
   </node>
