@@ -6,7 +6,7 @@
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
-    <import index="t4ow" ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.sandbox.Preferences)" />
+    <import index="t4ow" ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.sandbox.preferences)" />
   </imports>
   <registry>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
