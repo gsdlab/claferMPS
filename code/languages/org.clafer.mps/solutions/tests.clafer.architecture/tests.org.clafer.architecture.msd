@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="tests.clafer.architecture" uuid="41e07d92-0eb3-45a1-8d4a-42db424a4af9" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="tests.org.clafer.architecture" uuid="41e07d92-0eb3-45a1-8d4a-42db424a4af9" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -74,7 +74,7 @@
     <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)" version="0" />
-    <module reference="41e07d92-0eb3-45a1-8d4a-42db424a4af9(tests.clafer.architecture)" version="0" />
+    <module reference="41e07d92-0eb3-45a1-8d4a-42db424a4af9(tests.org.clafer.architecture)" version="0" />
   </dependencyVersions>
 </solution>
 

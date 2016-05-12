@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.clafer.architecture.example" uuid="925f4a66-e822-41c9-89f3-e1efeb4715ec" moduleVersion="0" compileInMPS="true">
+<solution name="org.clafer.architecture.sandbox" uuid="925f4a66-e822-41c9-89f3-e1efeb4715ec" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -81,7 +81,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="0" />
-    <module reference="925f4a66-e822-41c9-89f3-e1efeb4715ec(org.clafer.architecture.example)" version="0" />
+    <module reference="925f4a66-e822-41c9-89f3-e1efeb4715ec(org.clafer.architecture.sandbox)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)" version="0" />
   </dependencyVersions>

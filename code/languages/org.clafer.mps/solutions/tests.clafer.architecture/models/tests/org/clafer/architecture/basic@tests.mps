@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:3b61cfec-79ff-4067-9f0f-8218acca7138(tests.clafer.architecture.basic@tests)">
+<model ref="r:3b61cfec-79ff-4067-9f0f-8218acca7138(tests.org.clafer.architecture.basic@tests)">
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
@@ -54,7 +54,7 @@
       <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
-      <concept id="1508831110959197090" name="org.clafer.architecture.structure.DeployedToExpr" flags="ng" index="2IdTD4" />
+      <concept id="1508831110959197090" name="org.clafer.architecture.structure.DeployedToDotTarget" flags="ng" index="2IdTD4" />
       <concept id="1679786397508364593" name="org.clafer.architecture.structure.IHardwareConnector" flags="ng" index="PiMn_">
         <child id="3246930885582290891" name="targetExpr" index="3grLm$" />
         <child id="3246930885582290884" name="sourceExpr" index="3grLmF" />
