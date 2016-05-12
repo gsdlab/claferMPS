@@ -16,14 +16,14 @@ Contributors
 
 * [Eldar Khalilov](http://gsd.uwaterloo.ca/ekhalilov), main developer.
 * [Markus Voelter](http://voelter.de/), main developer.
-* [Jordan Ross](http://gsd.uwaterloo.ca/j25ross), requirements, testing.
+* [Jordan Ross](http://gsd.uwaterloo.ca/j25ross), case studies, requirements, testing.
 * [Michał Antkiewicz](http://gsd.uwaterloo.ca/mantkiew), requirements, testing.
-* [Krzysztof Czarnecki](http://gsd.uwaterloo.ca/kczarnec), design of the Architecture DSL.
+* [Krzysztof Czarnecki](http://gsd.uwaterloo.ca/kczarnec), requirements, design of the Architecture DSL.
 
 Features
 --------
 
-ClaferMPS consists of two languages: Clafer and Architecture DSL, which extends Clafer in MPS.
+ClaferMPS consists of two languages: Clafer and Architecture DSL. The latter extends Clafer with automotive concepts from a reference model for early architecture exploration used in [case studies by Jordan Ross](http://gsd.uwaterloo.ca/node/668) (models from these case studies are available for download).
 
 * Clafer 0.4.3
    * a smart structured editor with autocompletion and many intentions,
@@ -51,7 +51,7 @@ Installation
     * Follow the [instructions](http://mbeddr.com/download.html); however, you may skip "Gcc, Make and Gdb", "Graphviz", "Verification Tools" sections
         * proceed to "mbeddr Source Installation"
         * do not set the `Global Libraries` setting, it will result in errors when building ClaferMPS
-        * in some `<target directory>`, clone `mbeddr.core` repository using `git clone https://github.com/mbeddr/mbeddr.core.git --depth 10` to avoid downloading the complete history
+        * in some `<target directory>`, clone `mbeddr.core` repository using `git clone https://github.com/mbeddr/mbeddr.core.git --depth 10 -b stable` to avoid downloading the complete history
 3. in some `<target directory>`, execute
     * `git clone https://github.com/gsdlab/claferMPS.git`
 4. run MPS
