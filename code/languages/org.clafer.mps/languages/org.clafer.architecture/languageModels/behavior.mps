@@ -509,7 +509,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="1tfNdgy3q9H" role="13h7CS">
-      <property role="TrG5h" value="ConnectorsExternalEndpoints" />
+      <property role="TrG5h" value="externalEndpoints" />
       <node concept="3Tm1VV" id="1tfNdgy3q9I" role="1B3o_S" />
       <node concept="3clFbS" id="1tfNdgy3q9J" role="3clF47">
         <node concept="3cpWs8" id="1tfNdgy3_jb" role="3cqZAp">
