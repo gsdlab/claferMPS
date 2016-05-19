@@ -1144,5 +1144,26 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="42bqIdUDY37">
+    <ref role="1M2myG" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+    <node concept="EnEH3" id="42bqIdUDY38" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="42bqIdUDY3a" role="EtsB7">
+        <node concept="3clFbS" id="42bqIdUDY3b" role="2VODD2">
+          <node concept="3clFbF" id="42bqIdUDY3O" role="3cqZAp">
+            <node concept="3cpWs3" id="42bqIdUDY7F" role="3clFbG">
+              <node concept="2OqwBi" id="42bqIdUDYi_" role="3uHU7w">
+                <node concept="EsrRn" id="42bqIdUDYcN" role="2Oq$k0" />
+                <node concept="2bSWHS" id="42bqIdUDYEF" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="42bqIdUDY3N" role="3uHU7B">
+                <property role="Xl_RC" value="empty_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

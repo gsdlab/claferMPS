@@ -76,6 +76,7 @@
     <property role="R5$K7" value="true" />
     <property role="R4oN_" value="--" />
     <property role="1pbfSe" value="23570336" />
+    <property role="34LRSv" value="clafer expression" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="$bJ0jgXxo3" role="PzmwI">
       <ref role="PrY4T" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
