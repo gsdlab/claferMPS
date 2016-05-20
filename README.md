@@ -118,7 +118,7 @@ Now you are ready to create the contents of the model.
 
 ### Using Clafer
 
-In the Logical View, r-click on your model and select `New->0.clafer.core->ClafeModule`. Give it a name and no imports. Use `<tab>` and `<shift>+<tab>` to navigate between name, imports, and the body of the module.
+In the Logical View, r-click on your model and select `New->o.clafer.core->ClafeModule`. Give it a name and no imports. Use `<tab>` and `<shift>+<tab>` to navigate between name, imports, and the body of the module.
 
 In the body of the module, type
 
@@ -199,9 +199,11 @@ You will see a diagram for `CarFAA` (there's no diagram for feature models).
 
 * Press `Auto layout diagram` in the top-left corner.
 
+There are many more architectural layers (hardware, including devices, communication and power topologies, deployment of functional analysis architecture to hardware design architecture, and quality perspectives). We encourage users to study the two large case studies created by Jordan Ross highlighted in the next section.
+
 ### Larger Case Studies
 
-For details about full size power window (single and two door) and door locks case studies, see [technical report](http://gsd.uwaterloo.ca/publications/view/667) and `CaseStudies.zip` from [Supplemental material page](http://gsd.uwaterloo.ca/node/668).
+For details about full size power window (single and two door) and door locks case studies, see [technical report](http://gsd.uwaterloo.ca/publications/view/667) and [`CaseStudies.zip`](http://gsd.uwaterloo.ca/sites/default/files/CaseStudies.zip).
 
 Need help?
 ==========
