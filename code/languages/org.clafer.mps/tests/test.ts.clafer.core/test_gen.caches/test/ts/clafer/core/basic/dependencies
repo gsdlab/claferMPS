@@ -2,14 +2,12 @@
 <dependenciesRoot>
   <dependency className="test.ts.clafer.core.basic.BasicClaferTests_Test" file="BasicClaferTests_Test.java">
     <classNode dependClassName="java.lang.Exception" />
-    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Throwable" />
-    <classNode dependClassName="java.lang.Void" />
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.test.behavior.NodeCheckOperation__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.test.runtime.BaseTestBody" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.junit.Test" />
     <classNode extendsClassName="jetbrains.mps.lang.test.runtime.BaseTransformationTest" />

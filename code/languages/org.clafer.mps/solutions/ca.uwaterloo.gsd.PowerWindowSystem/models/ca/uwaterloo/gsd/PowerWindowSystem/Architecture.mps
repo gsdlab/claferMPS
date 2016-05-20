@@ -2,6 +2,7 @@
 <model ref="r:ed3c2ea2-7329-405e-a4ef-6ad0d5a343e1(ca.uwaterloo.gsd.PowerWindowSystem.Architecture)">
   <persistence version="9" />
   <languages>
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports />
@@ -61,11 +62,12 @@
         <child id="4988923775218203830" name="expr" index="3WnoGb" />
       </concept>
       <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
-        <child id="5675649033537919505" name="targetType" index="3J4IUC" />
+        <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
       <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
+        <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
@@ -81,9 +83,6 @@
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
       </concept>
-      <concept id="2851923306472509129" name="org.clafer.core.structure.ClaferType" flags="ng" index="ZpTZE">
-        <reference id="2851923306472509130" name="clafer" index="ZpTZD" />
-      </concept>
       <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
         <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
       </concept>
@@ -93,6 +92,7 @@
   </registry>
   <node concept="UzPwm" id="1Rl2DKhZHoU">
     <property role="TrG5h" value="S22_Func_Dsgn_Hw_Window_System" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZHso" role="UzTCv" />
     <node concept="UzEYP" id="1Rl2DKhZHsq" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef8z3" role="UzTCv">
@@ -101,16 +101,16 @@
       <node concept="UH0sd" id="2l_ztDefhdR" role="2vwUiP">
         <property role="TrG5h" value="BCM" />
         <node concept="2K4itw" id="2l_ztDefhdT" role="2K4itM">
-          <node concept="ZpTZE" id="2l_ztDefhdV" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$Sdv0" resolve="ECU" />
+          <node concept="ZpONE" id="yXhLyrh0h$" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$Sdv0" resolve="ECU" />
           </node>
         </node>
       </node>
       <node concept="UH0sd" id="2l_ztDefhkX" role="2vwUiP">
         <property role="TrG5h" value="EC" />
         <node concept="2K4itw" id="2l_ztDefhl2" role="2K4itM">
-          <node concept="ZpTZE" id="2l_ztDefhvk" role="3J4IUC">
-            <ref role="ZpTZD" node="2l_ztDefhl4" resolve="ElectricCenter" />
+          <node concept="ZpONE" id="yXhLyrh0dL" role="2jwY2M">
+            <ref role="ZpOSt" node="2l_ztDefhl4" resolve="ElectricCenter" />
           </node>
         </node>
       </node>
@@ -171,6 +171,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZG9t">
     <property role="TrG5h" value="S13_Func_Dsgn_Dt_Generic_Window_LoadPwr" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZG9K" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDefbCh" role="UzTCv">
       <property role="TrG5h" value="WinSubSysLoadPwrDT" />
@@ -181,8 +182,8 @@
       <node concept="UH0sd" id="2l_ztDefbXv" role="2vwUiP">
         <property role="TrG5h" value="dn" />
         <node concept="2K4itw" id="2l_ztDefbXx" role="2K4itM">
-          <node concept="ZpTZE" id="2l_ztDefcqd" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$Wb9K" resolve="WinSubSysDN" />
+          <node concept="ZpONE" id="yXhLyrh0hB" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$Wb9K" resolve="WinSubSysDN" />
           </node>
         </node>
       </node>
@@ -447,6 +448,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZDgd">
     <property role="TrG5h" value="S12_Func_Dsgn_Dpl_Passenger_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZDLl" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef9Zs" role="UzTCv">
       <property role="TrG5h" value="PWinSubSysDpl" />
@@ -460,8 +462,8 @@
           <ref role="2vxcI7" node="2l_ztDef966" resolve="fa" />
         </node>
         <node concept="2K4itw" id="2l_ztDefad_" role="2K4itM">
-          <node concept="ZpTZE" id="1Rl2DKhZFZE" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$W9WF" resolve="PWinSubSysFA" />
+          <node concept="ZpONE" id="yXhLyrh0in" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$W9WF" resolve="PWinSubSysFA" />
           </node>
         </node>
       </node>
@@ -471,8 +473,8 @@
           <ref role="2vxcI7" node="2l_ztDef9aM" resolve="dn" />
         </node>
         <node concept="2K4itw" id="2l_ztDefadX" role="2K4itM">
-          <node concept="ZpTZE" id="2l_ztDefadZ" role="3J4IUC">
-            <ref role="ZpTZD" node="2pSCLMHYc4R" resolve="PWinSubSysDN" />
+          <node concept="ZpONE" id="yXhLyrh0jE" role="2jwY2M">
+            <ref role="ZpOSt" node="2pSCLMHYc4R" resolve="PWinSubSysDN" />
           </node>
         </node>
       </node>
@@ -496,6 +498,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZD6w">
     <property role="TrG5h" value="S11_Func_Dsgn_Dpl_Driver_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZE5U" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef9K8" role="UzTCv">
       <property role="TrG5h" value="DWinSubSysDpl" />
@@ -509,8 +512,8 @@
           <ref role="2vxcI7" node="2l_ztDef966" resolve="fa" />
         </node>
         <node concept="2K4itw" id="2l_ztDefcAD" role="2K4itM">
-          <node concept="ZpTZE" id="2l_ztDefcJP" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$W9TP" resolve="DWinSubSysFA" />
+          <node concept="ZpONE" id="yXhLyrh0f0" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$W9TP" resolve="DWinSubSysFA" />
           </node>
         </node>
       </node>
@@ -520,8 +523,8 @@
           <ref role="2vxcI7" node="2l_ztDef9aM" resolve="dn" />
         </node>
         <node concept="2K4itw" id="2l_ztDefcAH" role="2K4itM">
-          <node concept="ZpTZE" id="2l_ztDefcK7" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$Wc3E" resolve="DWinSubSysDN" />
+          <node concept="ZpONE" id="yXhLyrh0g2" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$Wc3E" resolve="DWinSubSysDN" />
           </node>
         </node>
       </node>
@@ -545,6 +548,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZC6p">
     <property role="TrG5h" value="S10_Func_Dsgn_Dpl_Generic_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZC6R" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef8Ka" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -552,16 +556,16 @@
       <node concept="UH0sd" id="2l_ztDef966" role="2vwUiP">
         <property role="TrG5h" value="fa" />
         <node concept="2K4itw" id="2l_ztDef968" role="2K4itM">
-          <node concept="ZpTZE" id="2l_ztDef96a" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$W9_N" resolve="WinSubSysFA" />
+          <node concept="ZpONE" id="yXhLyrh0ku" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$W9_N" resolve="WinSubSysFA" />
           </node>
         </node>
       </node>
       <node concept="UH0sd" id="2l_ztDef9aM" role="2vwUiP">
         <property role="TrG5h" value="dn" />
         <node concept="2K4itw" id="2l_ztDef9aR" role="2K4itM">
-          <node concept="ZpTZE" id="2l_ztDef9aT" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$Wb9K" resolve="WinSubSysDN" />
+          <node concept="ZpONE" id="yXhLyrh0ma" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$Wb9K" resolve="WinSubSysDN" />
           </node>
         </node>
       </node>
@@ -585,6 +589,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZAS9">
     <property role="TrG5h" value="S09_Func_Dsgn_Dn_Passenger_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZASs" role="UzTCv" />
     <node concept="UH0sd" id="2pSCLMHYc4R" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -642,8 +647,8 @@
       <node concept="UH0sd" id="2pSCLMHYcre" role="2vwUiP">
         <property role="TrG5h" value="DWinSwitch" />
         <node concept="2K4itw" id="2pSCLMHYcrw" role="2K4itM">
-          <node concept="ZpTZE" id="2pSCLMHYcry" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+          <node concept="ZpONE" id="yXhLyrh0mm" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
           </node>
         </node>
       </node>
@@ -661,6 +666,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZAfA">
     <property role="TrG5h" value="S08_Func_Dsgn_Dn_Driver_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZAp3" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$Wc3E" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -729,6 +735,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZ_rH">
     <property role="TrG5h" value="S07_Func_Dsgn_Dn_Generic_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZ_Y8" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$Wb9K" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -751,16 +758,16 @@
       <node concept="UH0sd" id="7oGBC4$WbgA" role="2vwUiP">
         <property role="TrG5h" value="MotorDriver" />
         <node concept="2K4itw" id="7oGBC4$WbgG" role="2K4itM">
-          <node concept="ZpTZE" id="7oGBC4$WbgI" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+          <node concept="ZpONE" id="yXhLyrh0g_" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
           </node>
         </node>
       </node>
       <node concept="UH0sd" id="7oGBC4$WbgZ" role="2vwUiP">
         <property role="TrG5h" value="BCM" />
         <node concept="2K4itw" id="7oGBC4$Wbh8" role="2K4itM">
-          <node concept="ZpTZE" id="7oGBC4$Wbha" role="3J4IUC">
-            <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+          <node concept="ZpONE" id="yXhLyrh0jd" role="2jwY2M">
+            <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
           </node>
         </node>
         <node concept="2vxuzR" id="7oGBC4$WbhE" role="2vwUiP">
@@ -841,6 +848,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZ$VG">
     <property role="TrG5h" value="S06_Func_Analysis_Passenger_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZ$VZ" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W9WF" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -865,8 +873,8 @@
             <ref role="2vxcI7" node="7oGBC4$W8$U" resolve="src" />
           </node>
           <node concept="2K4itw" id="7oGBC4$Wa3j" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$Wa3M" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$Wa0T" resolve="DWinSwitch" />
+            <node concept="ZpONE" id="yXhLyrh0is" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$Wa0T" resolve="DWinSwitch" />
             </node>
           </node>
         </node>
@@ -876,8 +884,8 @@
             <ref role="2vxcI7" node="7oGBC4$W8_b" resolve="dest" />
           </node>
           <node concept="2K4itw" id="7oGBC4$Wa3n" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$Wa43" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W9Bf" resolve="WinRqArbiter" />
+            <node concept="ZpONE" id="yXhLyrh0hk" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W9Bf" resolve="WinRqArbiter" />
             </node>
           </node>
         </node>
@@ -896,6 +904,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZzeW">
     <property role="TrG5h" value="S05_Func_Analysis_Driver_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZzLY" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W9TP" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -918,6 +927,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZy6D">
     <property role="TrG5h" value="S03_Func_Analysis_Generic_Window" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="1Rl2DKhZy6W" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W9_N" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -948,8 +958,8 @@
             <ref role="2vxcI7" node="7oGBC4$W8$U" resolve="src" />
           </node>
           <node concept="2K4itw" id="7oGBC4$W9BR" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W9BT" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W9B7" resolve="WinSwitch" />
+            <node concept="ZpONE" id="yXhLyrh0ef" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W9B7" resolve="WinSwitch" />
             </node>
           </node>
         </node>
@@ -959,8 +969,8 @@
             <ref role="2vxcI7" node="7oGBC4$W8_b" resolve="dest" />
           </node>
           <node concept="2K4itw" id="7oGBC4$W9En" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W9FT" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W9Bf" resolve="WinRqArbiter" />
+            <node concept="ZpONE" id="yXhLyrh0je" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W9Bf" resolve="WinRqArbiter" />
             </node>
           </node>
         </node>
@@ -992,15 +1002,6 @@
             <property role="TrG5h" value="expressUpDown" />
             <node concept="2vxcI6" id="7oGBC4$W9HL" role="2vxcI2">
               <ref role="2vxcI7" node="7oGBC4$W8rB" resolve="Feature" />
-            </node>
-          </node>
-          <node concept="1z9TsT" id="1Rl2DKhZzCV" role="lGtFl">
-            <node concept="OjmMv" id="1Rl2DKhZzCW" role="1w35rA">
-              <node concept="19SGf9" id="1Rl2DKhZzCX" role="OjmMu">
-                <node concept="19SUe$" id="1Rl2DKhZzCY" role="19SJt6">
-                  <property role="19SUeA" value="this comes from Slide4 but cannot figure out how to deal with it yet." />
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -1046,8 +1047,8 @@
               <ref role="2vxcI7" node="7oGBC4$W8$U" resolve="src" />
             </node>
             <node concept="2K4itw" id="7oGBC4$W9Oh" role="2K4itM">
-              <node concept="ZpTZE" id="7oGBC4$W9Oj" role="3J4IUC">
-                <ref role="ZpTZD" node="7oGBC4$W9ND" resolve="PositionSensor" />
+              <node concept="ZpONE" id="yXhLyrh0ja" role="2jwY2M">
+                <ref role="ZpOSt" node="7oGBC4$W9ND" resolve="PositionSensor" />
               </node>
             </node>
           </node>
@@ -1057,8 +1058,8 @@
               <ref role="2vxcI7" node="7oGBC4$W8_b" resolve="dest" />
             </node>
             <node concept="2K4itw" id="7oGBC4$W9OD" role="2K4itM">
-              <node concept="ZpTZE" id="7oGBC4$W9OF" role="3J4IUC">
-                <ref role="ZpTZD" node="7oGBC4$W9Nx" resolve="PinchDetection" />
+              <node concept="ZpONE" id="yXhLyrh0jH" role="2jwY2M">
+                <ref role="ZpOSt" node="7oGBC4$W9Nx" resolve="PinchDetection" />
               </node>
             </node>
           </node>
@@ -1074,8 +1075,8 @@
               <ref role="2vxcI7" node="7oGBC4$W8$U" resolve="src" />
             </node>
             <node concept="2K4itw" id="7oGBC4$W9PJ" role="2K4itM">
-              <node concept="ZpTZE" id="7oGBC4$W9Qq" role="3J4IUC">
-                <ref role="ZpTZD" node="7oGBC4$W9Nx" resolve="PinchDetection" />
+              <node concept="ZpONE" id="yXhLyrh0hG" role="2jwY2M">
+                <ref role="ZpOSt" node="7oGBC4$W9Nx" resolve="PinchDetection" />
               </node>
             </node>
           </node>
@@ -1085,8 +1086,8 @@
               <ref role="2vxcI7" node="7oGBC4$W8_b" resolve="dest" />
             </node>
             <node concept="2K4itw" id="7oGBC4$W9PN" role="2K4itM">
-              <node concept="ZpTZE" id="7oGBC4$W9QF" role="3J4IUC">
-                <ref role="ZpTZD" node="7oGBC4$W9Gh" resolve="WinCtr" />
+              <node concept="ZpONE" id="yXhLyrh0h8" role="2jwY2M">
+                <ref role="ZpOSt" node="7oGBC4$W9Gh" resolve="WinCtr" />
               </node>
             </node>
           </node>
@@ -1106,6 +1107,7 @@
   </node>
   <node concept="UzPwm" id="1Rl2DKhZhfV">
     <property role="TrG5h" value="S02_System_Architecture" />
+    <property role="3wNgFz" value="0" />
     <node concept="UH0sd" id="7oGBC4$W9xI" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="WinSysArch" />
@@ -1293,6 +1295,7 @@
   </node>
   <node concept="UzPwm" id="7oGBC4$W904">
     <property role="TrG5h" value="S01_Technical_Feature_Model" />
+    <property role="3wNgFz" value="0" />
     <node concept="3GEVxB" id="7oGBC4$W905" role="UzTCp">
       <ref role="3GEb4d" node="2FleQ6d99Ti" resolve="AutomotiveConcepts" />
     </node>
@@ -1335,6 +1338,7 @@
   </node>
   <node concept="UzPwm" id="7oGBC4$RZYL">
     <property role="TrG5h" value="EAST_ADL" />
+    <property role="3wNgFz" value="1000" />
     <node concept="UzEYP" id="7oGBC4$SatT" role="UzTCv" />
     <node concept="UH0sd" id="7oGBC4$W8qY" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -1360,6 +1364,7 @@
         </node>
       </node>
     </node>
+    <node concept="UzEYP" id="7jAnD$sJn3S" role="UzTCv" />
     <node concept="UzEYP" id="7oGBC4$W8vB" role="UzTCv" />
     <node concept="UH0sd" id="2pSCLMHYcVr" role="UzTCv">
       <property role="2vxgol" value="true" />
@@ -1377,8 +1382,8 @@
         <node concept="UH0sd" id="2l_ztDefakW" role="2vwUiP">
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="2l_ztDefala" role="2K4itM">
-            <node concept="ZpTZE" id="2l_ztDefalc" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0f1" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
             </node>
           </node>
         </node>
@@ -1396,33 +1401,24 @@
         <node concept="UH0sd" id="2FleQ6d9pic" role="2vwUiP">
           <property role="TrG5h" value="deployedTo" />
           <node concept="2K4itw" id="2FleQ6d9piz" role="2K4itM">
-            <node concept="ZpTZE" id="2FleQ6d9pi_" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W8O6" resolve="WireConnector" />
+            <node concept="ZpONE" id="yXhLyrh0ln" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W8O6" resolve="WireConnector" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="7oGBC4$W8$U" role="2vwUiP">
           <property role="TrG5h" value="src" />
           <node concept="2K4itw" id="7oGBC4$W8$W" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W8$Y" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W8wg" resolve="AnalysisFunction" />
+            <node concept="ZpONE" id="yXhLyrh0kV" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W8wg" resolve="AnalysisFunction" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="7oGBC4$W8_b" role="2vwUiP">
           <property role="TrG5h" value="dest" />
           <node concept="2K4itw" id="7oGBC4$W8_g" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W8_i" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$W8wg" resolve="AnalysisFunction" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1z9TsT" id="12ZezlWSxUY" role="lGtFl">
-        <node concept="OjmMv" id="12ZezlWSxUZ" role="1w35rA">
-          <node concept="19SGf9" id="12ZezlWSxV0" role="OjmMu">
-            <node concept="19SUe$" id="12ZezlWSxV1" role="19SJt6">
-              <property role="19SUeA" value="FAFragments should be only nested under FAFragments but cannot write a constraint\nbecause FAArchitecture is also an FAFragment but it can be nested anywhere" />
+            <node concept="ZpONE" id="yXhLyrh0fV" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$W8wg" resolve="AnalysisFunction" />
             </node>
           </node>
         </node>
@@ -1445,16 +1441,16 @@
         <node concept="UH0sd" id="7oGBC4$W8YL" role="2vwUiP">
           <property role="TrG5h" value="src" />
           <node concept="2K4itw" id="7oGBC4$W8YN" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W8YP" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0kB" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
             </node>
           </node>
         </node>
         <node concept="UH0sd" id="7oGBC4$W8Z2" role="2vwUiP">
           <property role="TrG5h" value="dest" />
           <node concept="2K4itw" id="7oGBC4$W8Z7" role="2K4itM">
-            <node concept="ZpTZE" id="7oGBC4$W8Z9" role="3J4IUC">
-              <ref role="ZpTZD" node="7oGBC4$Sa$1" resolve="Device" />
+            <node concept="ZpONE" id="yXhLyrh0ga" role="2jwY2M">
+              <ref role="ZpOSt" node="7oGBC4$Sa$1" resolve="Device" />
             </node>
           </node>
         </node>
@@ -1468,15 +1464,6 @@
         <property role="TrG5h" value="smart" />
         <node concept="3Edj9i" id="6qd05UcK4Vw" role="2vBZf8" />
       </node>
-      <node concept="1z9TsT" id="7aoJJL5vXug" role="lGtFl">
-        <node concept="OjmMv" id="7aoJJL5vXuh" role="1w35rA">
-          <node concept="19SGf9" id="7aoJJL5vXui" role="OjmMu">
-            <node concept="19SUe$" id="7aoJJL5vXuj" role="19SJt6">
-              <property role="19SUeA" value="Need to have it top-level because must be able to extend under Inline and HDFragment.\nCannot restrict the parent here, see AutomotiveConcepts::Pin : Device under Inline." />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="UzEYP" id="7aoJJL5vWzJ" role="UzTCv" />
     <node concept="UH0sd" id="2l_ztDef9iW" role="UzTCv">
@@ -1488,6 +1475,7 @@
   </node>
   <node concept="UzPwm" id="2FleQ6d99Ti">
     <property role="TrG5h" value="AutomotiveConcepts" />
+    <property role="3wNgFz" value="0" />
     <node concept="UzEYP" id="2FleQ6d9pfK" role="UzTCv" />
     <node concept="UH0sd" id="1Rl2DKhZwrj" role="UzTCv">
       <property role="2vxgol" value="true" />

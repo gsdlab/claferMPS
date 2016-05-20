@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:7e8dc0b4-9ba6-38d6-a86b-e67686e9b635(org.clafer.mps.__spreferences.CodeReviewPreferences)">
-  <persistence version="8" />
-  <import index="vs0r" modelUID="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" version="26" implicit="yes" />
-  <root type="vs0r.CodeReviewConfig" typeId="vs0r.293752265167076767" id="204078314067478398" nodeInfo="ng" />
+<model ref="r:7e8dc0b4-9ba6-38d6-a86b-e67686e9b635(org.clafer.mps.__spreferences.CodeReviewPreferences)">
+  <persistence version="9" />
+  <languages>
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
+  </languages>
+  <imports />
+  <registry>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="293752265167076767" name="com.mbeddr.core.base.structure.CodeReviewConfig" flags="ng" index="3Xb6eZ" />
+    </language>
+  </registry>
+  <node concept="3Xb6eZ" id="bl22kSm$tY" />
 </model>
 

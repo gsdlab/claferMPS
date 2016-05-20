@@ -2,7 +2,8 @@
 <model ref="r:b3ae7d9b-f0f7-40a8-96f1-7ff858cdebae(org.clafer.core.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -36,6 +37,11 @@
       </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
+    </language>
+    <language id="b92f861d-0184-446d-b88b-6dcf0e070241" name="com.mbeddr.mpsutil.intentions">
+      <concept id="5846558918537398687" name="com.mbeddr.mpsutil.intentions.structure.IntentionGroupAnnotation" flags="ng" index="1SWQZ3">
+        <property id="5846558918537400330" name="label" index="1SWRpm" />
       </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
@@ -80,6 +86,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -136,7 +143,7 @@
       <node concept="3clFbS" id="4kWdVQTp6U$" role="2VODD2">
         <node concept="3clFbF" id="4kWdVQTp7lF" role="3cqZAp">
           <node concept="Xl_RD" id="4kWdVQTp7lE" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality XOR" />
+            <property role="Xl_RC" value="Xor (Exactly One Of)" />
           </node>
         </node>
       </node>
@@ -157,6 +164,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="WgjoVd6KOd" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
     </node>
   </node>
   <node concept="2S6QgY" id="4kWdVQTpsES">
@@ -198,7 +208,7 @@
       <node concept="3clFbS" id="7ZQ7wlxmA$g" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxmChS" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxmChR" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality or" />
+            <property role="Xl_RC" value="Or (at Least One Of)" />
           </node>
         </node>
       </node>
@@ -220,6 +230,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6KKn" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="7ZQ7wlxn2e5">
     <property role="TrG5h" value="makeGCardMux" />
@@ -230,7 +243,7 @@
       <node concept="3clFbS" id="7ZQ7wlxn2e7" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxn2Hh" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxn2Hg" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality MUX" />
+            <property role="Xl_RC" value="Mux (at Most One Of)" />
           </node>
         </node>
       </node>
@@ -252,6 +265,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6Kz1" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="7ZQ7wlxncJs">
     <property role="TrG5h" value="makeGCardOpt" />
@@ -262,7 +278,7 @@
       <node concept="3clFbS" id="7ZQ7wlxncJu" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxneQR" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxneQQ" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality OPT" />
+            <property role="Xl_RC" value="Opt (Any Number Of)" />
           </node>
         </node>
       </node>
@@ -284,6 +300,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6KGx" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="7ZQ7wlxryc5">
     <property role="TrG5h" value="makeGCardNum" />
@@ -294,7 +313,7 @@
       <node concept="3clFbS" id="7ZQ7wlxryc7" role="2VODD2">
         <node concept="3clFbF" id="7ZQ7wlxr$9g" role="3cqZAp">
           <node concept="Xl_RD" id="7ZQ7wlxr$9f" role="3clFbG">
-            <property role="Xl_RC" value="Group Cardinality Num" />
+            <property role="Xl_RC" value="Num (a Specific Number Of)" />
           </node>
         </node>
       </node>
@@ -316,6 +335,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6KBL" role="lGtFl">
+      <property role="1SWRpm" value="GROUP CARDINALITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4MygMITdJIy">
     <property role="TrG5h" value="makeCardLone" />
@@ -326,7 +348,7 @@
       <node concept="3clFbS" id="4MygMITdJJt" role="2VODD2">
         <node concept="3clFbF" id="4MygMITdN5y" role="3cqZAp">
           <node concept="Xl_RD" id="4MygMITdN5x" role="3clFbG">
-            <property role="Xl_RC" value="Cardinality ?" />
+            <property role="Xl_RC" value="Multiplicity ?" />
           </node>
         </node>
       </node>
@@ -348,6 +370,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6KlF" role="lGtFl">
+      <property role="1SWRpm" value="CLAFER MULTIPLICITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4MygMITg1a8">
     <property role="3GE5qa" value="ExplicitCardinality" />
@@ -358,7 +383,7 @@
       <node concept="3clFbS" id="4MygMITg1aa" role="2VODD2">
         <node concept="3clFbF" id="4MygMITg1GS" role="3cqZAp">
           <node concept="Xl_RD" id="4MygMITg1GR" role="3clFbG">
-            <property role="Xl_RC" value="Cardinality +" />
+            <property role="Xl_RC" value="Multiplicity +" />
           </node>
         </node>
       </node>
@@ -380,6 +405,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6Kua" role="lGtFl">
+      <property role="1SWRpm" value="CLAFER MULTIPLICITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4MygMITg6pg">
     <property role="3GE5qa" value="ExplicitCardinality" />
@@ -390,7 +418,7 @@
       <node concept="3clFbS" id="4MygMITg6pi" role="2VODD2">
         <node concept="3clFbF" id="4MygMITg6VJ" role="3cqZAp">
           <node concept="Xl_RD" id="4MygMITg6VI" role="3clFbG">
-            <property role="Xl_RC" value="Cardinality *" />
+            <property role="Xl_RC" value="Multiplicity *" />
           </node>
         </node>
       </node>
@@ -412,6 +440,9 @@
         </node>
       </node>
     </node>
+    <node concept="1SWQZ3" id="WgjoVd6Kht" role="lGtFl">
+      <property role="1SWRpm" value="CLAFER MULTIPLICITY" />
+    </node>
   </node>
   <node concept="2S6QgY" id="4MygMITgcTi">
     <property role="3GE5qa" value="ExplicitCardinality" />
@@ -422,7 +453,7 @@
       <node concept="3clFbS" id="4MygMITgcTk" role="2VODD2">
         <node concept="3clFbF" id="4MygMITgfa_" role="3cqZAp">
           <node concept="Xl_RD" id="4MygMITgfa$" role="3clFbG">
-            <property role="Xl_RC" value="Cardinality Num" />
+            <property role="Xl_RC" value="Multiplicity Num" />
           </node>
         </node>
       </node>
@@ -443,6 +474,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1SWQZ3" id="WgjoVd6Kpq" role="lGtFl">
+      <property role="1SWRpm" value="CLAFER MULTIPLICITY" />
     </node>
   </node>
   <node concept="2S6QgY" id="3WlRoWeqTHB">
@@ -533,7 +567,7 @@
       <node concept="3clFbS" id="7CJUZX6WSN2" role="2VODD2">
         <node concept="3clFbF" id="7CJUZX6WTpr" role="3cqZAp">
           <node concept="Xl_RD" id="7CJUZX6WTpq" role="3clFbG">
-            <property role="Xl_RC" value="Add super clafer" />
+            <property role="Xl_RC" value="Add Super Clafer" />
           </node>
         </node>
       </node>
