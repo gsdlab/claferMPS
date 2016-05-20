@@ -199,6 +199,8 @@ You will see a diagram for `CarFAA` (there's no diagram for feature models).
 
 * Press `Auto layout diagram` in the top-left corner.
 
+![End Result](SampleProject.png)
+
 There are many more architectural layers (hardware, including devices, communication and power topologies, deployment of functional analysis architecture to hardware design architecture, and quality perspectives). We encourage users to study the two large case studies created by Jordan Ross highlighted in the next section.
 
 ### Larger Case Studies
