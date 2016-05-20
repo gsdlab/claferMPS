@@ -348,7 +348,7 @@
       <node concept="3clFbS" id="4MygMITdJJt" role="2VODD2">
         <node concept="3clFbF" id="4MygMITdN5y" role="3cqZAp">
           <node concept="Xl_RD" id="4MygMITdN5x" role="3clFbG">
-            <property role="Xl_RC" value="Cardinality ?" />
+            <property role="Xl_RC" value="Multiplicity ?" />
           </node>
         </node>
       </node>
@@ -371,7 +371,7 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="WgjoVd6KlF" role="lGtFl">
-      <property role="1SWRpm" value="EXPLICIT CARDINALITY" />
+      <property role="1SWRpm" value="CLAFER MULTIPLICITY" />
     </node>
   </node>
   <node concept="2S6QgY" id="4MygMITg1a8">
@@ -383,7 +383,7 @@
       <node concept="3clFbS" id="4MygMITg1aa" role="2VODD2">
         <node concept="3clFbF" id="4MygMITg1GS" role="3cqZAp">
           <node concept="Xl_RD" id="4MygMITg1GR" role="3clFbG">
-            <property role="Xl_RC" value="Cardinality +" />
+            <property role="Xl_RC" value="Multiplicity +" />
           </node>
         </node>
       </node>
@@ -406,7 +406,7 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="WgjoVd6Kua" role="lGtFl">
-      <property role="1SWRpm" value="EXPLICIT CARDINALITY" />
+      <property role="1SWRpm" value="CLAFER MULTIPLICITY" />
     </node>
   </node>
   <node concept="2S6QgY" id="4MygMITg6pg">
@@ -418,7 +418,7 @@
       <node concept="3clFbS" id="4MygMITg6pi" role="2VODD2">
         <node concept="3clFbF" id="4MygMITg6VJ" role="3cqZAp">
           <node concept="Xl_RD" id="4MygMITg6VI" role="3clFbG">
-            <property role="Xl_RC" value="Cardinality *" />
+            <property role="Xl_RC" value="Multiplicity *" />
           </node>
         </node>
       </node>
@@ -441,7 +441,7 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="WgjoVd6Kht" role="lGtFl">
-      <property role="1SWRpm" value="EXPLICIT CARDINALITY" />
+      <property role="1SWRpm" value="CLAFER MULTIPLICITY" />
     </node>
   </node>
   <node concept="2S6QgY" id="4MygMITgcTi">
@@ -453,7 +453,7 @@
       <node concept="3clFbS" id="4MygMITgcTk" role="2VODD2">
         <node concept="3clFbF" id="4MygMITgfa_" role="3cqZAp">
           <node concept="Xl_RD" id="4MygMITgfa$" role="3clFbG">
-            <property role="Xl_RC" value="Cardinality Num" />
+            <property role="Xl_RC" value="Multiplicity Num" />
           </node>
         </node>
       </node>
@@ -476,7 +476,7 @@
       </node>
     </node>
     <node concept="1SWQZ3" id="WgjoVd6Kpq" role="lGtFl">
-      <property role="1SWRpm" value="EXPLICIT CARDINALITY" />
+      <property role="1SWRpm" value="CLAFER MULTIPLICITY" />
     </node>
   </node>
   <node concept="2S6QgY" id="3WlRoWeqTHB">
