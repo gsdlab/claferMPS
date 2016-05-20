@@ -3,7 +3,7 @@ claferMPS
 
 ##### v0.4.3
 
-JetBrains Meta-Programming System (MPS)  support for Clafer
+JetBrains Meta-Programming System (MPS)  support for Clafer.
 
 [Clafer](http://clafer.org) is a general-purpose lightweight structural modeling language developed by
 [GSD Lab](http://gsd.uwaterloo.ca/), [University of Waterloo](http://uwaterloo.ca), and
@@ -17,7 +17,7 @@ Contributors
 * [Eldar Khalilov](http://gsd.uwaterloo.ca/ekhalilov), main developer.
 * [Markus Voelter](http://voelter.de/), main developer.
 * [Jordan Ross](http://gsd.uwaterloo.ca/j25ross), case studies, requirements, testing.
-* [Michał Antkiewicz](http://gsd.uwaterloo.ca/mantkiew), requirements, testing.
+* [Michał Antkiewicz](http://gsd.uwaterloo.ca/mantkiew), requirements, testing, releases.
 * [Krzysztof Czarnecki](http://gsd.uwaterloo.ca/kczarnec), requirements, design of the Architecture DSL.
 
 Features
@@ -93,7 +93,7 @@ Perform `Rebuild` as in step 6. of the installation.
 Usage
 -----
 
-MPS is a projectional editor and requires some getting used to.
+MPS is a projectional editor and it requires some getting used to.
 In particular, the process of editing the model is more structured and guided by the syntax and the type system of the language then compared to more traditional plain text editing.
 We highly recommend viewing videos and going through basic usage tutorials on the [MPS's website](https://www.jetbrains.com/mps/).
 
@@ -145,7 +145,7 @@ Now, we want `Alice` to extend from `Person`.
 
 * Place the cursor at the end of `Alice`, type `<space>` followed by `:` to enter a supertype and write `Per` + `<ctrl>+<space>` and select `Person` from the list.
 
-Now, we want Alice to be able to like many people, not just one. We need to change the multiplicity of the clafer `likes`.
+Now, we want Alice to be able to be able to like many people, not just one. We need to change the multiplicity of the clafer `likes`.
 
 * Place the cursor on `likes` and press `<alt>+<enter>`, select `Multiplicity *`.
 
@@ -173,7 +173,7 @@ The Architecture DSL is an extension of Clafer. Let's create a simple architectu
 
 We begin with a feature model.
 
-* Tn an empty line, press `<ctrl>+<space>` and select `Feature Model`.
+* In an empty line, press `<ctrl>+<space>` and select `Feature Model`.
 * Type `CarFM`, press `<space>` and `{` to add content.
 * Inside, press `<ctrl>+<space>` and select `Feature`, type `DualMotor`, `<enter>`.
 * Press `<ctrl>+<space>` and select `Feature`, type `ObstacleAvoidance`, `<alt>+<enter>`, select `Make Optional`, `<enter>`.
@@ -199,7 +199,9 @@ You will see a diagram for `CarFAA` (there's no diagram for feature models).
 
 * Press `Auto layout diagram` in the top-left corner.
 
-![End Result](SampleProject.png)
+Here's the resulting model in ClaferMPS. The source code for this sample project is available in [SampleProject/Project1.zip]().
+
+![End Result](SampleProject/SampleProject.png)
 
 There are many more architectural layers (hardware, including devices, communication and power topologies, deployment of functional analysis architecture to hardware design architecture, and quality perspectives). We encourage users to study the two large case studies created by Jordan Ross highlighted in the next section.
 
