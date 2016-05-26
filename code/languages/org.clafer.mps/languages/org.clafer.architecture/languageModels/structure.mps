@@ -89,14 +89,14 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
+      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
       <node concept="asaX9" id="17N04ap9jns" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3WJnaafipyc" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
+      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
       <node concept="asaX9" id="17N04ap9jnu" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="6tUgmTZN8Kq" role="PzmwI">
@@ -146,7 +146,7 @@
     <property role="TrG5h" value="AnalysisFunction" />
     <property role="34LRSv" value="Analysis Function" />
     <property role="1pbfSe" value="419470954" />
-    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FAComponent" />
+    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
     <property role="3GE5qa" value="FunctionalArchitecture" />
@@ -154,7 +154,7 @@
     <property role="34LRSv" value="Functional Device" />
     <property role="MwhBj" value="${module}/icons/gear.png" />
     <property role="1pbfSe" value="419891847" />
-    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FAComponent" />
+    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
   </node>
   <node concept="1TIwiD" id="4csP6fm34cz">
     <property role="TrG5h" value="DeviceNode" />
@@ -880,7 +880,7 @@
   <node concept="1TIwiD" id="6tUgmTZL8lp">
     <property role="1pbfSe" value="415316281" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
-    <property role="TrG5h" value="FAComponent" />
+    <property role="TrG5h" value="FunctionalAnalysisComponent" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="Functional Analysis Component" />
