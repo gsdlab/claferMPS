@@ -883,6 +883,7 @@
     <property role="TrG5h" value="FAComponent" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="Functional Analysis Component" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="1OxX53tjvF2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -892,6 +893,9 @@
     </node>
     <node concept="PrWs8" id="6tUgmTZN8L3" role="PzmwI">
       <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
+    </node>
+    <node concept="PrWs8" id="33hfkhhOHQC" role="PzmwI">
+      <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v3ZnYeNguT">
