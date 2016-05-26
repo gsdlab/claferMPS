@@ -45,10 +45,39 @@ Planned Features
 Installation
 ------------
 
-1. [JetBrains Meta Programming System (MPS)](https://www.jetbrains.com/mps/download/) v3.3.5 (build 143.1301).
+### mbeddr IDE
+
+On Windows and Mac, mbeddr IDE can be installed using an installer. For Linux, see the next section "MPS + mbeddr plugins".
+
+1. Download and install `mbeddr-win-setup.exe` for Windows or `mbeddr-macos.dmg` for Mac from [mbeddr releases](https://github.com/mbeddr/mbeddr.core/releases).
+2. Download ClaferMPS `0.4.3.zip` or `0.4.3.tar.gz` from [ClaferMPS releases](https://github.com/gsdlab/claferMPS/releases) and unpack to some `<target directory>`.
+3. Run mbeddr IDE
+4. `Open Project`
+    * choose `<target directory>/claferMPS/code/languages/org.clafer.mps`
+5. In the `Logical View`
+    * NOTE: if there's one error in `_spreferences`, ignore it
+    * r-click on `org.clafer.mps/core` and execute `Rebuid Project` from the context menu
+    * r-click on `org.clafer.mps/architecture` and execute `Rebuid Project` from the context menu
+
+### MPS + mbeddr plugins
+
+This method works on all platforms supported by MPS, including Linux.
+
+1. Download and install [JetBrains Meta Programming System (MPS)](https://www.jetbrains.com/mps/download/) v3.3.5 (build 143.1301) to some `<MPS directory>`.
     * On Windows, install MPS to a location without spaces, e.g., `c:\Programs\MPS3.3`
     * *Important*, start and close MPS before proceeding to step 2.
-2. [mbeddr](http://mbeddr.com/)
+2. Download `com.mbeddr.allInOne.zip` [mbeddr releases](https://github.com/mbeddr/mbeddr.core/releases) and unpack the contents to `<MPS directory>` (the folder `plugins` from the archive must be merged with the folder `<MPS directory>/plugins`).
+3. Run MPS
+4. Resume step 4. from the previous section.
+
+### MPS + building mbeddr from source
+
+This method is suitable when working with the latest development versions of mbeddr (on branch `master` and ClaferMPS on branch `develop`).
+
+1. Download and install [JetBrains Meta Programming System (MPS)](https://www.jetbrains.com/mps/download/) v3.3.5 (build 143.1301).
+    * On Windows, install MPS to a location without spaces, e.g., `c:\Programs\MPS3.3`
+    * *Important*, start and close MPS before proceeding to step 2.
+2. Download and install [mbeddr](http://mbeddr.com/)
     * Follow the [instructions](http://mbeddr.com/download.html); however, you may skip "Gcc, Make and Gdb", "Graphviz", "Verification Tools" sections
         * Proceed to "mbeddr Source Installation"
             * in some `<target directory>`, clone `mbeddr.core` repository using `git clone https://github.com/mbeddr/mbeddr.core.git --depth 10 -b stable` to avoid downloading the complete history
@@ -57,13 +86,8 @@ Installation
             * `mbeddr.core=<target directory>/code/languages`
             * `mbeddr.plugins=<target directory>/code/plugins`
 3. In some `<target directory>`, execute
-    * `git clone https://github.com/gsdlab/claferMPS.git`
-4. Run MPS
-5. `Open Project`
-    * choose `<target directory>/claferMPS/code/languages/org.clafer.mps`
-6. In the `Logical View`
-    * r-click on `org.clafer.mps/core` and execute `Rebuid Project` from the context menu
-    * r-click on `org.clafer.mps/architecture` and execute `Rebuid Project` from the context menu
+    * `git clone https://github.com/gsdlab/claferMPS.git -b develop`
+4. Resume step 3. from the previous section.
 
 Opening the automotive case studies
 -----------------------------------
