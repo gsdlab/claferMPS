@@ -723,6 +723,7 @@
     <property role="TrG5h" value="ElectrDeviceType" />
     <property role="34LRSv" value="electr" />
     <property role="MwhBj" value="${module}/icons/eeDevice.png" />
+    <property role="R4oN_" value="Electric/Electronic" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
     <node concept="PrWs8" id="2G_jlDGpToh" role="PzmwI">
       <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
@@ -734,6 +735,7 @@
     <property role="TrG5h" value="SmartDeviceType" />
     <property role="34LRSv" value="smart" />
     <property role="MwhBj" value="${module}/icons/smart_icon.png" />
+    <property role="R4oN_" value="Smart" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
     <node concept="PrWs8" id="2G_jlDGpToo" role="PzmwI">
       <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
@@ -745,6 +747,7 @@
     <property role="TrG5h" value="PowerDeviceType" />
     <property role="34LRSv" value="power" />
     <property role="MwhBj" value="${module}/icons/powerDevice.png" />
+    <property role="R4oN_" value="Power" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
     <node concept="PrWs8" id="2G_jlDGpTom" role="PzmwI">
       <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
