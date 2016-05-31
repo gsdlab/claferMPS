@@ -128,6 +128,7 @@
         <child id="1177327698839" name="canSubstitute" index="ucKa5" />
         <child id="1177327709106" name="handler" index="ucMEw" />
         <child id="1177336013307" name="matchingText" index="uGu3D" />
+        <child id="1177336018902" name="descriptionText" index="uGvr4" />
       </concept>
       <concept id="1177333529597" name="jetbrains.mps.lang.actions.structure.ConceptPart" flags="ng" index="uyZFJ">
         <reference id="1177333551023" name="concept" index="uz4UX" />
@@ -145,6 +146,7 @@
       <concept id="1177497140107" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_sourceNode" flags="nn" index="Cj7Ep" />
       <concept id="1177498013932" name="jetbrains.mps.lang.actions.structure.SimpleSideTransformMenuPart" flags="ng" index="Cmt7Y">
         <child id="1177498166690" name="matchingText" index="Cn2iK" />
+        <child id="1177498182537" name="descriptionText" index="Cn6ar" />
         <child id="1177498207384" name="handler" index="Cncma" />
       </concept>
       <concept id="1177498071304" name="jetbrains.mps.lang.actions.structure.QueryFunction_SideTransform_String" flags="in" index="CmF0q" />
@@ -312,6 +314,9 @@
           </node>
           <node concept="2h3Zct" id="4kWdVQTlbgN" role="uGu3D">
             <property role="2h4Kg1" value="abstract" />
+          </node>
+          <node concept="2h3Zct" id="pG4h8mhuCW" role="uGvr4">
+            <property role="2h4Kg1" value="Abstract clafer" />
           </node>
         </node>
       </node>
@@ -722,6 +727,9 @@
           </node>
           <node concept="2h1dTh" id="6yyIOiNlpKw" role="Cn2iK">
             <property role="2h1i$Z" value="abstract" />
+          </node>
+          <node concept="2h1dTh" id="pG4h8mhst3" role="Cn6ar">
+            <property role="2h1i$Z" value="Make abstract" />
           </node>
         </node>
       </node>

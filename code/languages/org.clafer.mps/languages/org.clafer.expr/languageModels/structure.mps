@@ -699,16 +699,14 @@
   <node concept="1TIwiD" id="3WlRoWe4755">
     <property role="3GE5qa" value="expr.clafer.goals" />
     <property role="TrG5h" value="maxGoalExpression" />
-    <property role="34LRSv" value="max" />
-    <property role="R4oN_" value="maximize" />
+    <property role="34LRSv" value="maximize" />
     <property role="1pbfSe" value="1294356180" />
     <ref role="1TJDcQ" node="3WlRoWe5nwB" resolve="GoalExpression" />
   </node>
   <node concept="1TIwiD" id="3WlRoWe48JB">
     <property role="3GE5qa" value="expr.clafer.goals" />
     <property role="TrG5h" value="minGoalExpression" />
-    <property role="34LRSv" value="min" />
-    <property role="R4oN_" value="minimize" />
+    <property role="34LRSv" value="minimize" />
     <property role="1pbfSe" value="1294362998" />
     <ref role="1TJDcQ" node="3WlRoWe5nwB" resolve="GoalExpression" />
   </node>
