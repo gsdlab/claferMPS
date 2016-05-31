@@ -47,6 +47,7 @@
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="ywuy" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd9(org.clafer.expr.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -173,6 +174,10 @@
       </concept>
       <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
         <property id="1225456424731" name="value" index="1iTho6" />
+      </concept>
+      <concept id="7597241200646296619" name="jetbrains.mps.lang.editor.structure.QueryFunction_SNode" flags="in" index="3k4GqP" />
+      <concept id="7597241200646296617" name="jetbrains.mps.lang.editor.structure.NavigatableNodeStyleClassItem" flags="ln" index="3k4GqR">
+        <child id="7597241200646296618" name="functionNode" index="3k4GqO" />
       </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
@@ -10176,9 +10181,23 @@
   </node>
   <node concept="24kQdi" id="pG4h8miPTi">
     <property role="3GE5qa" value="FunctionalArchitecture" />
-    <ref role="1XX52x" to="ddau:pG4h8miPSR" resolve="SenderExpr" />
+    <ref role="1XX52x" to="ddau:pG4h8miPSR" resolve="EndpointDotTarget" />
     <node concept="PMmxH" id="pG4h8miPTq" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <node concept="3k4GqR" id="M9rtBFUF9A" role="3F10Kt">
+        <node concept="3k4GqP" id="M9rtBFUF9B" role="3k4GqO">
+          <node concept="3clFbS" id="M9rtBFUF9C" role="2VODD2">
+            <node concept="3clFbF" id="M9rtBFUFab" role="3cqZAp">
+              <node concept="2OqwBi" id="M9rtBFUFac" role="3clFbG">
+                <node concept="pncrf" id="M9rtBFQi6y" role="2Oq$k0" />
+                <node concept="2qgKlT" id="M9rtBFQieb" role="2OqNvi">
+                  <ref role="37wK5l" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
