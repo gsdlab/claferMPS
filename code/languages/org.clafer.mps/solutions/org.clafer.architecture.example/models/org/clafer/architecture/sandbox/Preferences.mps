@@ -26,6 +26,7 @@
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
       <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
+        <property id="8556599590877743536" name="generateQA" index="1deALe" />
         <child id="8271111493164032678" name="constants" index="3tuoqM" />
       </concept>
       <concept id="598358034644499232" name="org.clafer.architecture.structure.Constant" flags="ng" index="1vcr1m">
@@ -218,6 +219,7 @@
   </node>
   <node concept="3tocZL" id="7b8T1iJGcgf">
     <property role="TrG5h" value="Preferences" />
+    <property role="1deALe" value="true" />
     <node concept="1vMfia" id="5fZiy7Lf6xB" role="3tuoqM">
       <property role="TrG5h" value="MassPerLength" />
       <node concept="1vcr1m" id="5fZiy7Lf6zY" role="1vM8HU">
