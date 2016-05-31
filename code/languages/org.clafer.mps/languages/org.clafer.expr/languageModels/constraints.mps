@@ -10,6 +10,7 @@
   <imports>
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" />
+    <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -573,6 +574,30 @@
                 <ref role="3TtcxE" to="mj1k:6Ig5vvl5lSX" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="pG4h8mhKt3">
+    <property role="3GE5qa" value="expr.clafer.goals" />
+    <ref role="1M2myG" to="mj1k:3WlRoWe5nwB" resolve="GoalExpression" />
+    <node concept="nKS2y" id="pG4h8mhKt7" role="1MLUbF">
+      <node concept="3clFbS" id="pG4h8mhKt8" role="2VODD2">
+        <node concept="3clFbF" id="pG4h8mhKud" role="3cqZAp">
+          <node concept="2OqwBi" id="pG4h8mhKIH" role="3clFbG">
+            <node concept="2OqwBi" id="pG4h8mhKw0" role="2Oq$k0">
+              <node concept="nLn13" id="pG4h8mhKuc" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="pG4h8mhK$c" role="2OqNvi">
+                <node concept="1xMEDy" id="pG4h8mhK$e" role="1xVPHs">
+                  <node concept="chp4Y" id="pG4h8mhK_Q" role="ri$Ld">
+                    <ref role="cht4Q" to="mecy:5tJ_MV8UBZ7" resolve="Goal" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="pG4h8mhKDE" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="pG4h8mhKZe" role="2OqNvi" />
           </node>
         </node>
       </node>

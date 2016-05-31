@@ -701,6 +701,7 @@
     <property role="TrG5h" value="maxGoalExpression" />
     <property role="34LRSv" value="maximize" />
     <property role="1pbfSe" value="1294356180" />
+    <property role="R4oN_" value="goal" />
     <ref role="1TJDcQ" node="3WlRoWe5nwB" resolve="GoalExpression" />
   </node>
   <node concept="1TIwiD" id="3WlRoWe48JB">
@@ -708,6 +709,7 @@
     <property role="TrG5h" value="minGoalExpression" />
     <property role="34LRSv" value="minimize" />
     <property role="1pbfSe" value="1294362998" />
+    <property role="R4oN_" value="goal" />
     <ref role="1TJDcQ" node="3WlRoWe5nwB" resolve="GoalExpression" />
   </node>
   <node concept="1TIwiD" id="3WlRoWdWNWR">
@@ -968,6 +970,31 @@
   <node concept="PlHQZ" id="6BTUndCaj39">
     <property role="TrG5h" value="IClaferSet" />
     <property role="1pbfSe" value="769451460" />
+  </node>
+  <node concept="1TIwiD" id="pG4h8mhBEk">
+    <property role="1pbfSe" value="481463206" />
+    <property role="3GE5qa" value="expr.clafer" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="TrG5h" value="ExtremaExpr" />
+    <ref role="1TJDcQ" node="2APHWiztz8M" resolve="UnaryExpression" />
+    <node concept="PrWs8" id="pG4h8mhNwX" role="PzmwI">
+      <ref role="PrY4T" node="7C830Ec4S3e" resolve="IStopReshuffling" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="pG4h8mhC9s">
+    <property role="1pbfSe" value="481465198" />
+    <property role="3GE5qa" value="expr.clafer" />
+    <property role="TrG5h" value="MinExtremaExpr" />
+    <property role="34LRSv" value="min" />
+    <ref role="1TJDcQ" node="pG4h8mhBEk" resolve="ExtremaExpr" />
+  </node>
+  <node concept="1TIwiD" id="pG4h8mhC9J">
+    <property role="1pbfSe" value="481465217" />
+    <property role="3GE5qa" value="expr.clafer" />
+    <property role="TrG5h" value="MaxExtremaExpr" />
+    <property role="34LRSv" value="max" />
+    <ref role="1TJDcQ" node="pG4h8mhBEk" resolve="ExtremaExpr" />
   </node>
 </model>
 
