@@ -2845,8 +2845,9 @@
           <node concept="3cpWsn" id="7hQ9wAVUbNJ" role="3cpWs9">
             <property role="TrG5h" value="baseModelName" />
             <node concept="17QB3L" id="7hQ9wAVUbNK" role="1tU5fm" />
-            <node concept="Xl_RD" id="7hQ9wAVUbNL" role="33vP2m">
-              <property role="Xl_RC" value="org.clafer.architecture.baseConcepts" />
+            <node concept="2YIFZM" id="5A7sq$BM3YB" role="33vP2m">
+              <ref role="37wK5l" to="f5o0:5A7sq$BM1rt" resolve="REFERENCE_MODEL_NAME" />
+              <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
             </node>
           </node>
         </node>

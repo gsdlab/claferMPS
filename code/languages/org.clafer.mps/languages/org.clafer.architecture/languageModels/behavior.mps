@@ -352,6 +352,21 @@
   <node concept="13h7C7" id="4csP6flTZWI">
     <property role="3GE5qa" value="" />
     <ref role="13h7C2" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <node concept="13i0hz" id="5A7sq$BM4o$" role="13h7CS">
+      <property role="TrG5h" value="getReferenceModelSolutionName" />
+      <property role="2Ki8OM" value="false" />
+      <ref role="13i0hy" to="f5p9:5A7sq$BLBiG" resolve="getReferenceModelSolutionName" />
+      <node concept="3clFbS" id="5A7sq$BM4oB" role="3clF47">
+        <node concept="3cpWs6" id="5A7sq$BN0hc" role="3cqZAp">
+          <node concept="2YIFZM" id="5A7sq$BN0i0" role="3cqZAk">
+            <ref role="37wK5l" node="5A7sq$BM1rt" resolve="REFERENCE_MODEL_NAME" />
+            <ref role="1Pybhc" node="7Ij6CMq2Ufp" resolve="ArchUtil" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5A7sq$BMXll" role="3clF45" />
+      <node concept="3Tm1VV" id="5A7sq$BMXlm" role="1B3o_S" />
+    </node>
     <node concept="13i0hz" id="1wtoVienntx" role="13h7CS">
       <property role="TrG5h" value="getDashWidth" />
       <property role="13i0it" value="true" />
@@ -6808,7 +6823,21 @@
   </node>
   <node concept="312cEu" id="7Ij6CMq2Ufp">
     <property role="TrG5h" value="ArchUtil" />
-    <node concept="2tJIrI" id="5C9iBpneEEm" role="jymVt" />
+    <node concept="2YIFZL" id="5A7sq$BM1rt" role="jymVt">
+      <property role="TrG5h" value="REFERENCE_MODEL_NAME" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="true" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5A7sq$BM1rw" role="3clF47">
+        <node concept="3cpWs6" id="5A7sq$BM4o6" role="3cqZAp">
+          <node concept="Xl_RD" id="5A7sq$BM4jD" role="3cqZAk">
+            <property role="Xl_RC" value="org.clafer.architecture.baseConcepts" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5A7sq$BM1m6" role="1B3o_S" />
+      <node concept="17QB3L" id="5A7sq$BM1vE" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="5C9iBpneEGj" role="jymVt" />
     <node concept="2YIFZL" id="7Ij6CMq2UfP" role="jymVt">
       <property role="TrG5h" value="getTarget" />

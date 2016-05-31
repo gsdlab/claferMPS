@@ -4,6 +4,8 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -187,6 +189,23 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -2739,6 +2758,27 @@
       <node concept="A3Dl8" id="6BTUndC7BLt" role="3clF45">
         <node concept="3Tqbb2" id="6BTUndC7BLv" role="A3Ik2">
           <ref role="ehGHo" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5A7sq$BLBiG" role="13h7CS">
+      <property role="TrG5h" value="getReferenceModelSolutionName" />
+      <property role="13i0it" value="true" />
+      <node concept="3Tm1VV" id="5A7sq$BLBiH" role="1B3o_S" />
+      <node concept="17QB3L" id="5A7sq$BLBF9" role="3clF45" />
+      <node concept="3clFbS" id="5A7sq$BLBiJ" role="3clF47">
+        <node concept="3clFbF" id="5A7sq$BLBFe" role="3cqZAp">
+          <node concept="10Nm6u" id="5A7sq$BLBFd" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="5A7sq$BLDcs" role="lGtFl">
+        <node concept="TZ5HA" id="5A7sq$BLDct" role="TZ5H$">
+          <node concept="1dT_AC" id="5A7sq$BLDcu" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns a name of a solution, which is used as a reference model of the Clafer DSL extension " />
+          </node>
+        </node>
+        <node concept="x79VA" id="5A7sq$BLDcv" role="x79VK">
+          <property role="x79VB" value="string name of the reference model solution, if available, null otherwise" />
         </node>
       </node>
     </node>

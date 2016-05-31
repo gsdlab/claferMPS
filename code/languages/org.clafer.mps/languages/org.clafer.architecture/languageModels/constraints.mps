@@ -1298,7 +1298,7 @@
                     <node concept="otxO1" id="6tUgmTZN98k" role="2Oq$k0" />
                     <node concept="2Zo12i" id="6tUgmTZN98l" role="2OqNvi">
                       <node concept="chp4Y" id="6tUgmTZN98_" role="2Zo12j">
-                        <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                        <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
                       </node>
                     </node>
                   </node>
@@ -3215,6 +3215,19 @@
         </node>
       </node>
     </node>
+    <node concept="nKS2y" id="5A7sq$BRn0j" role="1MLUbF">
+      <node concept="3clFbS" id="5A7sq$BRn0k" role="2VODD2">
+        <node concept="3clFbF" id="5A7sq$BRn2O" role="3cqZAp">
+          <node concept="3clFbC" id="5A7sq$BRn2P" role="3clFbG">
+            <node concept="28GBK8" id="5A7sq$BRn2Q" role="3uHU7w">
+              <ref role="28GBKb" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+              <ref role="28H3Ia" to="ddau:6kt45HTj4uN" />
+            </node>
+            <node concept="oXsJc" id="5A7sq$BRn2R" role="3uHU7B" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1M2fIO" id="2G_jlDGpU2d">
     <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification.DeviceTypes" />
@@ -3682,6 +3695,19 @@
                 <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="nKS2y" id="5A7sq$BRmG$" role="1MLUbF">
+      <node concept="3clFbS" id="5A7sq$BRmG_" role="2VODD2">
+        <node concept="3clFbF" id="5A7sq$BRmP1" role="3cqZAp">
+          <node concept="3clFbC" id="5A7sq$BRmTz" role="3clFbG">
+            <node concept="28GBK8" id="5A7sq$BRmVs" role="3uHU7w">
+              <ref role="28GBKb" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+              <ref role="28H3Ia" to="ddau:3_rlKvvnEFQ" />
+            </node>
+            <node concept="oXsJc" id="5A7sq$BRmP0" role="3uHU7B" />
           </node>
         </node>
       </node>
@@ -5116,15 +5142,13 @@
     <ref role="1M2myG" to="ddau:1OxX53tjtgH" resolve="Implementation" />
     <node concept="nKS2y" id="1OxX53tjtjG" role="1MLUbF">
       <node concept="3clFbS" id="1OxX53tjtjH" role="2VODD2">
-        <node concept="3clFbH" id="1OxX53ts8_u" role="3cqZAp" />
-        <node concept="3clFbF" id="1OxX53tjtkO" role="3cqZAp">
-          <node concept="2OqwBi" id="1OxX53tjtnl" role="3clFbG">
-            <node concept="nLn13" id="1OxX53tjtkN" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="1OxX53tjtrA" role="2OqNvi">
-              <node concept="chp4Y" id="1OxX53tjttI" role="cj9EA">
-                <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
-              </node>
+        <node concept="3clFbF" id="5A7sq$BUnDI" role="3cqZAp">
+          <node concept="3clFbC" id="5A7sq$BUnJ0" role="3clFbG">
+            <node concept="28GBK8" id="5A7sq$BUnM8" role="3uHU7w">
+              <ref role="28GBKb" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
+              <ref role="28H3Ia" to="ddau:1OxX53tjvF2" />
             </node>
+            <node concept="oXsJc" id="5A7sq$BUnDG" role="3uHU7B" />
           </node>
         </node>
       </node>
@@ -5192,7 +5216,7 @@
                 </node>
                 <node concept="1mIQ4w" id="1OxX53topTZ" role="2OqNvi">
                   <node concept="chp4Y" id="1OxX53toq61" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                    <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
                   </node>
                 </node>
               </node>
@@ -5276,6 +5300,30 @@
         <node concept="3clFbF" id="4kqSQ6TnNwI" role="3cqZAp">
           <node concept="3clFbT" id="4kqSQ6TnNwH" role="3clFbG">
             <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5A7sq$BUy13">
+    <property role="3GE5qa" value="QualityModule" />
+    <ref role="1M2myG" to="ddau:5A7sq$BUy03" resolve="QualityTableThisExpr" />
+    <node concept="nKS2y" id="5A7sq$BUy1_" role="1MLUbF">
+      <node concept="3clFbS" id="5A7sq$BUy1A" role="2VODD2">
+        <node concept="3clFbF" id="5A7sq$BUy2F" role="3cqZAp">
+          <node concept="2OqwBi" id="5A7sq$BUyjr" role="3clFbG">
+            <node concept="2OqwBi" id="5A7sq$BUy4X" role="2Oq$k0">
+              <node concept="nLn13" id="5A7sq$BUy2E" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5A7sq$BUy99" role="2OqNvi">
+                <node concept="1xMEDy" id="5A7sq$BUy9b" role="1xVPHs">
+                  <node concept="chp4Y" id="5A7sq$BUznc" role="ri$Ld">
+                    <ref role="cht4Q" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="5A7sq$BUyfC" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="5A7sq$BUyBK" role="2OqNvi" />
           </node>
         </node>
       </node>

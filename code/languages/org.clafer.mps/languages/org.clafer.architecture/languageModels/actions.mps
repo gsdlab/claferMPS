@@ -45,6 +45,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -127,6 +128,7 @@
         <child id="1177324142645" name="part" index="tZc4B" />
         <child id="1154465386371" name="precondition" index="3bvWUf" />
       </concept>
+      <concept id="1221634900557" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_link" flags="nn" index="1J7kdh" />
       <concept id="1138079221458" name="jetbrains.mps.lang.actions.structure.SideTransformHintSubstituteActionsBuilder" flags="ig" index="3UNGvq">
         <reference id="1138079221462" name="applicableConcept" index="3UNGvu" />
         <child id="1177442283389" name="part" index="_1QTJ" />
@@ -137,6 +139,10 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1226359078165" name="jetbrains.mps.lang.smodel.structure.LinkRefExpression" flags="nn" index="28GBK8">
+        <reference id="1226359078166" name="conceptDeclaration" index="28GBKb" />
+        <reference id="1226359192215" name="linkDeclaration" index="28H3Ia" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -1563,7 +1569,7 @@
                       <node concept="2Xjw5R" id="4IooPifUOVa" role="2OqNvi">
                         <node concept="1xMEDy" id="4IooPifUOVc" role="1xVPHs">
                           <node concept="chp4Y" id="5QLkobVPtHW" role="ri$Ld">
-                            <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                            <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
                           </node>
                         </node>
                         <node concept="1xIGOp" id="5QLkobVPusr" role="1xVPHs" />
@@ -1604,7 +1610,7 @@
               </node>
               <node concept="1mIQ4w" id="4IooPifUQTD" role="2OqNvi">
                 <node concept="chp4Y" id="5QLkobVPDlU" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                  <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
                 </node>
               </node>
             </node>
@@ -2040,6 +2046,19 @@
                   <property role="Xl_RC" value="Implemenation" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3buRE8" id="5A7sq$BUuxj" role="3bvWUf">
+        <node concept="3clFbS" id="5A7sq$BUuxk" role="2VODD2">
+          <node concept="3clFbF" id="5A7sq$BUnDI" role="3cqZAp">
+            <node concept="3clFbC" id="5A7sq$BUnJ0" role="3clFbG">
+              <node concept="28GBK8" id="5A7sq$BUnM8" role="3uHU7w">
+                <ref role="28GBKb" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
+                <ref role="28H3Ia" to="ddau:1OxX53tjvF2" />
+              </node>
+              <node concept="1J7kdh" id="5A7sq$BUuL$" role="3uHU7B" />
             </node>
           </node>
         </node>

@@ -566,6 +566,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6kt45HTk58g" resolve="ArchConceptRef" />
     </node>
+    <node concept="1TJgyj" id="5A7sq$BKVZP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="children" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
+    </node>
     <node concept="1TJgyj" id="6kt45HTj4uN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="qualities" />
@@ -1261,6 +1267,13 @@
     <node concept="PrWs8" id="4kqSQ6TnNgZ" role="PzmwI">
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5A7sq$BUy03">
+    <property role="1pbfSe" value="2123263572" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityTableThisExpr" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="mecy:6Ig5vvkWgnt" resolve="ThisExpr" />
   </node>
 </model>
 
