@@ -571,7 +571,7 @@
     <node concept="UzEYP" id="2XrN4Luq31F" role="UzTCv" />
     <node concept="g8znO" id="2XrN4Luq374" role="UzTCv">
       <node concept="3SKdUq" id="2XrN4Luq376" role="3SKWNk">
-        <property role="3SKdUp" value="Automotive Concepts [TODO]" />
+        <property role="3SKdUp" value="Automotive Concepts" />
       </node>
     </node>
     <node concept="UH0sd" id="7oGBC4$WaHx" role="UzTCv">

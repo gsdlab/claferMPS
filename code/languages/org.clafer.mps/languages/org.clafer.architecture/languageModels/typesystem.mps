@@ -2757,7 +2757,7 @@
               </node>
               <node concept="2OqwBi" id="42bqIdUB_qt" role="33vP2m">
                 <node concept="1PxgMI" id="42bqIdUBAfd" role="2Oq$k0">
-                  <ref role="1PxNhF" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                  <ref role="1PxNhF" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
                   <node concept="37vLTw" id="42bqIdUB_hq" role="1PxMeX">
                     <ref role="3cqZAo" node="2OfqAZWiry8" resolve="faElement" />
                   </node>
@@ -3188,7 +3188,7 @@
           </node>
           <node concept="1mIQ4w" id="60cgGK2yIFj" role="2OqNvi">
             <node concept="chp4Y" id="60cgGK2yIFk" role="cj9EA">
-              <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+              <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
             </node>
           </node>
         </node>
@@ -3525,7 +3525,7 @@
               </node>
               <node concept="1mIQ4w" id="17N04ap9PhK" role="2OqNvi">
                 <node concept="chp4Y" id="17N04ap9Qgq" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                  <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
                 </node>
               </node>
             </node>
@@ -3569,7 +3569,7 @@
               </node>
               <node concept="1mIQ4w" id="17N04ap9Pi3" role="2OqNvi">
                 <node concept="chp4Y" id="17N04ap9Qlz" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+                  <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
                 </node>
               </node>
             </node>
@@ -3888,6 +3888,178 @@
     <node concept="1YaCAy" id="1OxX53tsiDK" role="1YuTPh">
       <property role="TrG5h" value="implementationTypeExpr" />
       <ref role="1YaFvo" to="ddau:4kqSQ6TnNgW" resolve="ImplementationTypeExpr" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="pG4h8miQnr">
+    <property role="TrG5h" value="typeof_SenderExpr" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <node concept="3clFbS" id="pG4h8miQns" role="18ibNy">
+      <node concept="3cpWs8" id="pG4h8miQpU" role="3cqZAp">
+        <node concept="3cpWsn" id="pG4h8miQpV" role="3cpWs9">
+          <property role="TrG5h" value="leftSideOfDot" />
+          <property role="3TUv4t" value="true" />
+          <node concept="3Tqbb2" id="pG4h8miQpW" role="1tU5fm">
+            <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+          </node>
+          <node concept="2OqwBi" id="pG4h8miQpX" role="33vP2m">
+            <node concept="1PxgMI" id="pG4h8miQpY" role="2Oq$k0">
+              <ref role="1PxNhF" to="mj1k:40tXLnqhyKc" resolve="GenericDotExpression" />
+              <node concept="2OqwBi" id="pG4h8miQpZ" role="1PxMeX">
+                <node concept="1YBJjd" id="pG4h8miQw4" role="2Oq$k0">
+                  <ref role="1YBMHb" node="pG4h8miQnu" resolve="endpointDotTarget" />
+                </node>
+                <node concept="1mfA1w" id="pG4h8miQq1" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="pG4h8miQq2" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1k:6iIoqg1yDLg" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="nvevp" id="pG4h8miQq3" role="3cqZAp">
+        <node concept="3clFbS" id="pG4h8miQq4" role="nvhr_">
+          <node concept="3cpWs8" id="pG4h8miQq6" role="3cqZAp">
+            <node concept="3cpWsn" id="pG4h8miQq7" role="3cpWs9">
+              <property role="TrG5h" value="claferReferencedOnLeftSideOfDot" />
+              <node concept="3Tqbb2" id="pG4h8miQq8" role="1tU5fm">
+                <ref role="ehGHo" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+              </node>
+              <node concept="10QFUN" id="pG4h8miQq9" role="33vP2m">
+                <node concept="2OqwBi" id="pG4h8miQqa" role="10QFUP">
+                  <node concept="1PxgMI" id="pG4h8miQqb" role="2Oq$k0">
+                    <ref role="1PxNhF" to="mecy:2uk4icoWSV9" resolve="ClaferType" />
+                    <node concept="2X3wrD" id="pG4h8miQqc" role="1PxMeX">
+                      <ref role="2X3Bk0" node="pG4h8miQqT" resolve="leftType" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="pG4h8miQqd" role="2OqNvi">
+                    <ref role="3Tt5mk" to="mecy:2uk4icoWSVa" />
+                  </node>
+                </node>
+                <node concept="3Tqbb2" id="pG4h8miQqe" role="10QFUM">
+                  <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="pG4h8miQDD" role="3cqZAp" />
+          <node concept="3clFbJ" id="pG4h8miQIy" role="3cqZAp">
+            <node concept="3clFbS" id="pG4h8miQI$" role="3clFbx">
+              <node concept="3clFbH" id="M9rtBFNd_c" role="3cqZAp" />
+              <node concept="3clFbJ" id="M9rtBFNdEV" role="3cqZAp">
+                <node concept="3clFbS" id="M9rtBFNdEX" role="3clFbx">
+                  <node concept="1Z5TYs" id="pG4h8miQqg" role="3cqZAp">
+                    <node concept="mw_s8" id="pG4h8miQqh" role="1ZfhK$">
+                      <node concept="1Z2H0r" id="pG4h8miQqi" role="mwGJk">
+                        <node concept="1YBJjd" id="pG4h8miQ$d" role="1Z2MuG">
+                          <ref role="1YBMHb" node="pG4h8miQnu" resolve="endpointDotTarget" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="mw_s8" id="pG4h8miSeo" role="1ZfhKB">
+                      <node concept="2OqwBi" id="pG4h8miTWn" role="mwGJk">
+                        <node concept="2qgKlT" id="pG4h8mpKs9" role="2OqNvi">
+                          <ref role="37wK5l" to="f5p9:2uk4icpllHZ" resolve="createType" />
+                        </node>
+                        <node concept="2OqwBi" id="pG4h8mpK3J" role="2Oq$k0">
+                          <node concept="1PxgMI" id="pG4h8miShz" role="2Oq$k0">
+                            <ref role="1PxNhF" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+                            <node concept="37vLTw" id="pG4h8miSem" role="1PxMeX">
+                              <ref role="3cqZAo" node="pG4h8miQq7" resolve="claferReferencedOnLeftSideOfDot" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="pG4h8mpKkw" role="2OqNvi">
+                            <ref role="37wK5l" to="f5o0:17N04ap9KHl" resolve="getSourceNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="M9rtBFNejj" role="3clFbw">
+                  <node concept="1YBJjd" id="M9rtBFNehm" role="2Oq$k0">
+                    <ref role="1YBMHb" node="pG4h8miQnu" resolve="endpointDotTarget" />
+                  </node>
+                  <node concept="1mIQ4w" id="M9rtBFNevy" role="2OqNvi">
+                    <node concept="chp4Y" id="M9rtBFNevP" role="cj9EA">
+                      <ref role="cht4Q" to="ddau:M9rtBFNd$Y" resolve="SenderDotTarget" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="pG4h8miQIz" role="3cqZAp" />
+              <node concept="3clFbH" id="M9rtBFNeCE" role="3cqZAp" />
+              <node concept="3clFbJ" id="M9rtBFNeDG" role="3cqZAp">
+                <node concept="3clFbS" id="M9rtBFNeDH" role="3clFbx">
+                  <node concept="1Z5TYs" id="M9rtBFNeDI" role="3cqZAp">
+                    <node concept="mw_s8" id="M9rtBFNeDJ" role="1ZfhK$">
+                      <node concept="1Z2H0r" id="M9rtBFNeDK" role="mwGJk">
+                        <node concept="1YBJjd" id="M9rtBFNeDL" role="1Z2MuG">
+                          <ref role="1YBMHb" node="pG4h8miQnu" resolve="endpointDotTarget" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="mw_s8" id="M9rtBFNeDM" role="1ZfhKB">
+                      <node concept="2OqwBi" id="M9rtBFNeDN" role="mwGJk">
+                        <node concept="2qgKlT" id="M9rtBFNeDO" role="2OqNvi">
+                          <ref role="37wK5l" to="f5p9:2uk4icpllHZ" resolve="createType" />
+                        </node>
+                        <node concept="2OqwBi" id="M9rtBFNeDP" role="2Oq$k0">
+                          <node concept="1PxgMI" id="M9rtBFNeDQ" role="2Oq$k0">
+                            <ref role="1PxNhF" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+                            <node concept="37vLTw" id="M9rtBFNeDR" role="1PxMeX">
+                              <ref role="3cqZAo" node="pG4h8miQq7" resolve="claferReferencedOnLeftSideOfDot" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="M9rtBFPVee" role="2OqNvi">
+                            <ref role="37wK5l" to="f5o0:17N04ap9KHc" resolve="getTargetNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="M9rtBFNeDT" role="3clFbw">
+                  <node concept="1YBJjd" id="M9rtBFNeDU" role="2Oq$k0">
+                    <ref role="1YBMHb" node="pG4h8miQnu" resolve="endpointDotTarget" />
+                  </node>
+                  <node concept="1mIQ4w" id="M9rtBFNeDV" role="2OqNvi">
+                    <node concept="chp4Y" id="M9rtBFNeHF" role="cj9EA">
+                      <ref role="cht4Q" to="ddau:M9rtBFNd_5" resolve="ReceiverDotTarget" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="M9rtBFNeDm" role="3cqZAp" />
+            </node>
+            <node concept="2OqwBi" id="pG4h8miQN2" role="3clFbw">
+              <node concept="37vLTw" id="pG4h8miQJl" role="2Oq$k0">
+                <ref role="3cqZAo" node="pG4h8miQq7" resolve="claferReferencedOnLeftSideOfDot" />
+              </node>
+              <node concept="1mIQ4w" id="pG4h8miR1Q" role="2OqNvi">
+                <node concept="chp4Y" id="pG4h8miR29" role="cj9EA">
+                  <ref role="cht4Q" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="pG4h8miQHV" role="3cqZAp" />
+        </node>
+        <node concept="2X1qdy" id="pG4h8miQqT" role="2X0Ygz">
+          <property role="TrG5h" value="leftType" />
+          <node concept="2jxLKc" id="pG4h8miQqU" role="1tU5fm" />
+        </node>
+        <node concept="1Z2H0r" id="pG4h8miQqV" role="nvjzm">
+          <node concept="37vLTw" id="pG4h8miQqW" role="1Z2MuG">
+            <ref role="3cqZAo" node="pG4h8miQpV" resolve="leftSideOfDot" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="pG4h8miQnu" role="1YuTPh">
+      <property role="TrG5h" value="endpointDotTarget" />
+      <ref role="1YaFvo" to="ddau:pG4h8miPSR" resolve="EndpointDotTarget" />
     </node>
   </node>
 </model>

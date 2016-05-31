@@ -4389,7 +4389,7 @@
   </node>
   <node concept="24kQdi" id="2IzCCeKm54T">
     <property role="3GE5qa" value="FunctionalArchitecture" />
-    <ref role="1XX52x" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+    <ref role="1XX52x" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
     <node concept="3EZMnI" id="2IzCCeKmhcf" role="2wV5jI">
       <node concept="PMmxH" id="7ErTnvEO1wE" role="3EZMnx">
         <ref role="PMmxG" node="7ErTnvEHhF$" resolve="ArchGroupCard" />
@@ -10156,7 +10156,7 @@
   <node concept="1h_SRR" id="1OxX53tttH1">
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="FAComponent_removeImplementation" />
-    <ref role="1h_SK9" to="ddau:6tUgmTZL8lp" resolve="FAComponent" />
+    <ref role="1h_SK9" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
     <node concept="1hA7zw" id="1OxX53tttH2" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="1OxX53tttH3" role="1hA7z_">
@@ -10172,6 +10172,13 @@
       <node concept="Vb9p2" id="4kqSQ6TpD7l" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="pG4h8miPTi">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="1XX52x" to="ddau:pG4h8miPSR" resolve="SenderExpr" />
+    <node concept="PMmxH" id="pG4h8miPTq" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

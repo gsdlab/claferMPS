@@ -96,7 +96,7 @@
   </node>
   <node concept="WtQ9Q" id="1jKsuqUM2g5">
     <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
-    <ref role="WuzLi" to="ddau:1jKsuqULYIy" resolve="DeployedToExpr" />
+    <ref role="WuzLi" to="ddau:1jKsuqULYIy" resolve="DeployedToDotTarget" />
     <node concept="11bSqf" id="1jKsuqUM2g6" role="11c4hB">
       <node concept="3clFbS" id="1jKsuqUM2g7" role="2VODD2">
         <node concept="lc7rE" id="1jKsuqUM2gs" role="3cqZAp">
@@ -246,6 +246,24 @@
               <node concept="117lpO" id="4kqSQ6TnOk7" role="2Oq$k0" />
               <node concept="3TrcHB" id="4kqSQ6TnOqv" role="2OqNvi">
                 <ref role="3TsBF5" to="ddau:4kqSQ6TnNh2" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="pG4h8miQDe">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="WuzLi" to="ddau:pG4h8miPSR" resolve="EndpointDotTarget" />
+    <node concept="11bSqf" id="pG4h8miQDf" role="11c4hB">
+      <node concept="3clFbS" id="pG4h8miQDg" role="2VODD2">
+        <node concept="lc7rE" id="pG4h8motp7" role="3cqZAp">
+          <node concept="l9hG8" id="M9rtBFNddZ" role="lcghm">
+            <node concept="2OqwBi" id="M9rtBFNdgD" role="lb14g">
+              <node concept="117lpO" id="M9rtBFNdeD" role="2Oq$k0" />
+              <node concept="2qgKlT" id="M9rtBFNdok" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
               </node>
             </node>
           </node>

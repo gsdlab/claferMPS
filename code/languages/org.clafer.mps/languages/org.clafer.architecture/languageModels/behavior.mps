@@ -7163,5 +7163,23 @@
       <node concept="3clFbS" id="4kqSQ6TnN$W" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="pG4h8miQm$">
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <ref role="13h7C2" to="ddau:pG4h8miPSR" resolve="EndpointDotTarget" />
+    <node concept="13i0hz" id="pG4h8miQmM" role="13h7CS">
+      <property role="TrG5h" value="getTarget" />
+      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <node concept="3clFbS" id="pG4h8miQmN" role="3clF47">
+        <node concept="3clFbF" id="pG4h8miQmO" role="3cqZAp">
+          <node concept="10Nm6u" id="pG4h8miQmP" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="pG4h8miQmR" role="1B3o_S" />
+      <node concept="3Tqbb2" id="M9rtBFPr0D" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="pG4h8miQm_" role="13h7CW">
+      <node concept="3clFbS" id="pG4h8miQmA" role="2VODD2" />
+    </node>
+  </node>
 </model>
 

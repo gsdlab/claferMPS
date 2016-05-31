@@ -1262,5 +1262,30 @@
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
   </node>
+  <node concept="1TIwiD" id="pG4h8miPSR">
+    <property role="1pbfSe" value="481783625" />
+    <property role="TrG5h" value="EndpointDotTarget" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="M9rtBFMUFV" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="M9rtBFNd$Y">
+    <property role="1pbfSe" value="128563433" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="SenderDotTarget" />
+    <property role="34LRSv" value="sender" />
+    <ref role="1TJDcQ" node="pG4h8miPSR" resolve="EndpointDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="M9rtBFNd_5">
+    <property role="1pbfSe" value="128563426" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="ReceiverDotTarget" />
+    <property role="34LRSv" value="receiver" />
+    <ref role="1TJDcQ" node="pG4h8miPSR" resolve="EndpointDotTarget" />
+  </node>
 </model>
 
