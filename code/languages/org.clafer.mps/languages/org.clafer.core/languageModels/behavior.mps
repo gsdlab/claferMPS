@@ -204,6 +204,9 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
+        <reference id="1139880128956" name="concept" index="1A9B2P" />
+      </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
@@ -4306,6 +4309,26 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="yXhLyrfVMe" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="57pVhC6O4Nb">
+    <ref role="13h7C2" to="mecy:5tJ_MV8UBZ7" resolve="Goal" />
+    <node concept="13hLZK" id="57pVhC6O4Nc" role="13h7CW">
+      <node concept="3clFbS" id="57pVhC6O4Nd" role="2VODD2">
+        <node concept="3clFbF" id="57pVhC6O6zA" role="3cqZAp">
+          <node concept="2OqwBi" id="57pVhC6O6T1" role="3clFbG">
+            <node concept="2OqwBi" id="57pVhC6O6AE" role="2Oq$k0">
+              <node concept="13iPFW" id="57pVhC6O6z_" role="2Oq$k0" />
+              <node concept="3TrEf2" id="57pVhC6O6Ih" role="2OqNvi">
+                <ref role="3Tt5mk" to="mecy:2uk4icoRF9G" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="57pVhC6O77l" role="2OqNvi">
+              <ref role="1A9B2P" to="mj1k:3WlRoWe48JB" resolve="minGoalExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

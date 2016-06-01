@@ -79,6 +79,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -585,19 +588,13 @@
     <node concept="nKS2y" id="pG4h8mhKt7" role="1MLUbF">
       <node concept="3clFbS" id="pG4h8mhKt8" role="2VODD2">
         <node concept="3clFbF" id="pG4h8mhKud" role="3cqZAp">
-          <node concept="2OqwBi" id="pG4h8mhKIH" role="3clFbG">
-            <node concept="2OqwBi" id="pG4h8mhKw0" role="2Oq$k0">
-              <node concept="nLn13" id="pG4h8mhKuc" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="pG4h8mhK$c" role="2OqNvi">
-                <node concept="1xMEDy" id="pG4h8mhK$e" role="1xVPHs">
-                  <node concept="chp4Y" id="pG4h8mhK_Q" role="ri$Ld">
-                    <ref role="cht4Q" to="mecy:5tJ_MV8UBZ7" resolve="Goal" />
-                  </node>
-                </node>
-                <node concept="1xIGOp" id="pG4h8mhKDE" role="1xVPHs" />
+          <node concept="2OqwBi" id="57pVhC6O0RB" role="3clFbG">
+            <node concept="nLn13" id="57pVhC6O0P0" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="57pVhC6O0Zn" role="2OqNvi">
+              <node concept="chp4Y" id="57pVhC6O11v" role="cj9EA">
+                <ref role="cht4Q" to="mecy:5tJ_MV8UBZ7" resolve="Goal" />
               </node>
             </node>
-            <node concept="3x8VRR" id="pG4h8mhKZe" role="2OqNvi" />
           </node>
         </node>
       </node>
