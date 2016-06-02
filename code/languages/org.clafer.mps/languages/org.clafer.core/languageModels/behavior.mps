@@ -2,10 +2,8 @@
 <model ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -123,7 +121,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -222,6 +220,9 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
+        <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
@@ -4346,6 +4347,26 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="yXhLyrfVMe" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="57pVhC6O4Nb">
+    <ref role="13h7C2" to="mecy:5tJ_MV8UBZ7" resolve="Goal" />
+    <node concept="13hLZK" id="57pVhC6O4Nc" role="13h7CW">
+      <node concept="3clFbS" id="57pVhC6O4Nd" role="2VODD2">
+        <node concept="3clFbF" id="57pVhC6O6zA" role="3cqZAp">
+          <node concept="2OqwBi" id="57pVhC6O6T1" role="3clFbG">
+            <node concept="2OqwBi" id="57pVhC6O6AE" role="2Oq$k0">
+              <node concept="13iPFW" id="57pVhC6O6z_" role="2Oq$k0" />
+              <node concept="3TrEf2" id="57pVhC6O6Ih" role="2OqNvi">
+                <ref role="3Tt5mk" to="mecy:2uk4icoRF9G" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="57pVhC6O77l" role="2OqNvi">
+              <ref role="1A9B2P" to="mj1k:3WlRoWe48JB" resolve="minGoalExpression" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

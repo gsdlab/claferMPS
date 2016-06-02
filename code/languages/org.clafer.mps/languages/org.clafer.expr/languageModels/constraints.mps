@@ -10,6 +10,7 @@
   <imports>
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
     <import index="tpfp" ref="r:00000000-0000-4000-0000-011c89590519(jetbrains.mps.baseLanguage.regexp.jetbrains.mps.regexp.accessory)" />
+    <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -78,6 +79,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -571,6 +575,24 @@
               </node>
               <node concept="3Tsc0h" id="6Ig5vvl7FKl" role="2OqNvi">
                 <ref role="3TtcxE" to="mj1k:6Ig5vvl5lSX" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="pG4h8mhKt3">
+    <property role="3GE5qa" value="expr.clafer.goals" />
+    <ref role="1M2myG" to="mj1k:3WlRoWe5nwB" resolve="GoalExpression" />
+    <node concept="nKS2y" id="pG4h8mhKt7" role="1MLUbF">
+      <node concept="3clFbS" id="pG4h8mhKt8" role="2VODD2">
+        <node concept="3clFbF" id="pG4h8mhKud" role="3cqZAp">
+          <node concept="2OqwBi" id="57pVhC6O0RB" role="3clFbG">
+            <node concept="nLn13" id="57pVhC6O0P0" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="57pVhC6O0Zn" role="2OqNvi">
+              <node concept="chp4Y" id="57pVhC6O11v" role="cj9EA">
+                <ref role="cht4Q" to="mecy:5tJ_MV8UBZ7" resolve="Goal" />
               </node>
             </node>
           </node>

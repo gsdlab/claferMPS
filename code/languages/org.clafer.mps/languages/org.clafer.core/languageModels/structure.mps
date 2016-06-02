@@ -111,6 +111,7 @@
   <node concept="1TIwiD" id="bl22kSogWC">
     <property role="TrG5h" value="Clafer" />
     <property role="1pbfSe" value="993400653" />
+    <property role="R4oN_" value="clafer" />
     <ref role="1TJDcQ" node="4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="1TJgyi" id="5tJ_MV8UD4V" role="1TKVEl">
       <property role="TrG5h" value="isAbstract" />
@@ -484,6 +485,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1k:7FQByU3CrCQ" resolve="Type" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="pG4h8mhfBH">
+    <property role="1pbfSe" value="481364735" />
+    <property role="TrG5h" value="Assert" />
+    <property role="34LRSv" value="assert" />
+    <property role="R4oN_" value="assertion" />
+    <ref role="1TJDcQ" node="5tJ_MV8UBZp" resolve="Constraint" />
   </node>
 </model>
 

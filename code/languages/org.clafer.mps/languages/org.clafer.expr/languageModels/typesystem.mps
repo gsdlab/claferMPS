@@ -4123,5 +4123,31 @@
       <ref role="1YaFvo" to="mj1k:ORookiotnw" resolve="SumExpr" />
     </node>
   </node>
+  <node concept="1YbPZF" id="pG4h8mhBTh">
+    <property role="TrG5h" value="typeof_ExtremaExpr" />
+    <property role="3GE5qa" value="expr.clafer" />
+    <node concept="3clFbS" id="pG4h8mhBTi" role="18ibNy">
+      <node concept="1Z5TYs" id="pG4h8mhBTr" role="3cqZAp">
+        <node concept="mw_s8" id="pG4h8mhBTs" role="1ZfhKB">
+          <node concept="2pJPEk" id="pG4h8mhBTt" role="mwGJk">
+            <node concept="2pJPED" id="pG4h8mhBTu" role="2pJPEn">
+              <ref role="2pJxaS" to="mj1k:7FQByU3CrDG" resolve="IntType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="pG4h8mhBTv" role="1ZfhK$">
+          <node concept="1Z2H0r" id="pG4h8mhBTw" role="mwGJk">
+            <node concept="1YBJjd" id="pG4h8mhBVw" role="1Z2MuG">
+              <ref role="1YBMHb" node="pG4h8mhBTk" resolve="extremaExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="pG4h8mhBTk" role="1YuTPh">
+      <property role="TrG5h" value="extremaExpr" />
+      <ref role="1YaFvo" to="mj1k:pG4h8mhBEk" resolve="ExtremaExpr" />
+    </node>
+  </node>
 </model>
 
