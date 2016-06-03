@@ -2,14 +2,13 @@
 <model ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.sandbox.preferences)">
   <persistence version="9" />
   <languages>
-    <use id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core" version="1" />
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="3" />
-    <use id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
+    <devkit ref="689d09e3-f427-4b3a-8c27-77ad5f6606ba(org.architecture)" />
   </languages>
   <imports>
     <import index="pyz" ref="r:ee3a2e35-750e-4937-bca5-6cd2bc2152ab(org.clafer.architecture.sandbox.examples)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
+    <import index="3fny" ref="r:540d349c-81ff-410c-8f3c-04485d1ff1d6(org.clafer.architecture.baseConcepts.baseConcepts)" implicit="true" />
   </imports>
   <registry>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
@@ -20,6 +19,7 @@
         <child id="7285997757218440966" name="archConcept" index="skltt" />
         <child id="7285997757218441139" name="qualities" index="sklvC" />
         <child id="4132992774366472950" name="qualityRef" index="3A1vRL" />
+        <child id="6451249962562076661" name="content" index="1YhcTs" />
       </concept>
       <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
         <property id="2181707870707196839" name="visible" index="3jqXwo" />
@@ -39,6 +39,7 @@
       <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityTableElementRef" flags="ng" index="3Ev5JQ">
         <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
       </concept>
+      <concept id="6451249962564591619" name="org.clafer.architecture.structure.QualityTableThisExpr" flags="ng" index="1Yrl6E" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -46,13 +47,28 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
+      <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
+        <child id="7254843406768839760" name="expression" index="1_9fRO" />
+      </concept>
       <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="4620120465980402700" name="org.clafer.expr.structure.GenericDotExpression" flags="ng" index="2qmXGp">
+        <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
       <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="6300420630909714393" name="org.clafer.core.structure.Constraint" flags="ng" index="2vxuzR">
+        <child id="4988923775218203830" name="expr" index="3WnoGb" />
+      </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
+      <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
+        <child id="6300420630909825947" name="children" index="2vwUiP" />
+      </concept>
+      <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
+        <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
+      </concept>
     </language>
   </registry>
   <node concept="slzsT" id="H$98wxz$iD">
@@ -68,8 +84,14 @@
       <node concept="3EozPd" id="5RLJ9guqKU8" role="sklvC">
         <property role="TrG5h" value="totalWarrantyCost" />
       </node>
-      <node concept="sjk9b" id="5RLJ9guqKU1" role="skltt">
+      <node concept="sjk9b" id="6iQ_VzN9xTB" role="skltt">
         <ref role="sjk9f" to="ddau:12rnRvMhgdY" resolve="System" />
+      </node>
+      <node concept="UH0sd" id="6iQ_VzMYFFf" role="1YhcTs">
+        <property role="TrG5h" value="test" />
+        <node concept="UH0sd" id="6iQ_VzMYFG7" role="2vwUiP">
+          <property role="TrG5h" value="test" />
+        </node>
       </node>
     </node>
     <node concept="sklqP" id="H$98wxz$iE" role="sklmO">
@@ -88,7 +110,7 @@
       <node concept="3EozPd" id="1wmiO1AQl45" role="sklvC">
         <property role="TrG5h" value="warrantyCost" />
       </node>
-      <node concept="sjk9b" id="H$98wxz$iG" role="skltt">
+      <node concept="sjk9b" id="6iQ_VzN9xTU" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
       </node>
     </node>
@@ -214,6 +236,20 @@
       </node>
       <node concept="sjk9b" id="dW_p57skBH" role="skltt">
         <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+      </node>
+      <node concept="2vxuzR" id="6iQ_VzN5sCG" role="1YhcTs">
+        <node concept="2qmXGp" id="6iQ_VzN9x8q" role="3WnoGb">
+          <node concept="2ZqYGZ" id="6iQ_VzN9xSJ" role="1ESnxz">
+            <ref role="2ZqYFj" to="3fny:6v3ZnYePJ9l" resolve="receiver" />
+          </node>
+          <node concept="1Yrl6E" id="6iQ_VzN9x7L" role="1_9fRO" />
+        </node>
+      </node>
+      <node concept="UH0sd" id="6iQ_VzN0OMU" role="1YhcTs">
+        <property role="TrG5h" value="test" />
+        <node concept="UH0sd" id="6iQ_VzN0ONM" role="2vwUiP">
+          <property role="TrG5h" value="test_inner" />
+        </node>
       </node>
     </node>
   </node>

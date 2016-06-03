@@ -74,7 +74,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -5331,7 +5331,7 @@
   </node>
   <node concept="1M2fIO" id="pG4h8miPTR">
     <property role="3GE5qa" value="FunctionalArchitecture" />
-    <ref role="1M2myG" to="ddau:pG4h8miPSR" resolve="SenderExpr" />
+    <ref role="1M2myG" to="ddau:pG4h8miPSR" resolve="EndpointDotTarget" />
     <node concept="nKS2y" id="pG4h8mpKsz" role="1MLUbF">
       <node concept="3clFbS" id="pG4h8mpKs$" role="2VODD2">
         <node concept="3cpWs8" id="M9rtBFN4qS" role="3cqZAp">
@@ -5393,6 +5393,26 @@
                   <node concept="chp4Y" id="M9rtBFN50C" role="cj9EA">
                     <ref role="cht4Q" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6iQ_VzN2H4B">
+    <property role="3GE5qa" value="QualityModule" />
+    <ref role="1M2myG" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+    <node concept="Um2eU" id="6iQ_VzN2H4C" role="1kkKnR">
+      <node concept="3clFbS" id="6iQ_VzN2H4D" role="2VODD2">
+        <node concept="3clFbF" id="6iQ_VzN2Hms" role="3cqZAp">
+          <node concept="3fqX7Q" id="6iQ_VzN2Hmq" role="3clFbG">
+            <node concept="2OqwBi" id="6iQ_VzN2HsM" role="3fr31v">
+              <node concept="otxO1" id="6iQ_VzN2Hog" role="2Oq$k0" />
+              <node concept="3O6GUB" id="6iQ_VzN2Hyt" role="2OqNvi">
+                <node concept="chp4Y" id="6iQ_VzN2H_8" role="3QVz_e">
+                  <ref role="cht4Q" to="mecy:6Ig5vvkWgnt" resolve="ThisExpr" />
                 </node>
               </node>
             </node>

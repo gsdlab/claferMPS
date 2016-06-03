@@ -568,7 +568,7 @@
     </node>
     <node concept="1TJgyj" id="5A7sq$BKVZP" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="children" />
+      <property role="20kJfa" value="content" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
     </node>
