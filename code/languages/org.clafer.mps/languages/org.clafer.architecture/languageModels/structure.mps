@@ -1268,13 +1268,6 @@
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5A7sq$BUy03">
-    <property role="1pbfSe" value="2123263572" />
-    <property role="3GE5qa" value="QualityModule" />
-    <property role="TrG5h" value="QualityTableThisExpr" />
-    <property role="34LRSv" value="this" />
-    <ref role="1TJDcQ" to="mecy:6Ig5vvkWgnt" resolve="ThisExpr" />
-  </node>
   <node concept="1TIwiD" id="pG4h8miPSR">
     <property role="1pbfSe" value="481783625" />
     <property role="TrG5h" value="EndpointDotTarget" />

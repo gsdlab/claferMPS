@@ -25,6 +25,7 @@
         <property id="2181707870707196839" name="visible" index="3jqXwo" />
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
+      <concept id="8071399195256502219" name="org.clafer.architecture.structure.QualityThisExpr" flags="ng" index="2xC6$6" />
       <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
         <property id="8556599590877743536" name="generateQA" index="1deALe" />
         <child id="8271111493164032678" name="constants" index="3tuoqM" />
@@ -39,7 +40,6 @@
       <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityTableElementRef" flags="ng" index="3Ev5JQ">
         <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
       </concept>
-      <concept id="6451249962564591619" name="org.clafer.architecture.structure.QualityTableThisExpr" flags="ng" index="1Yrl6E" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -238,17 +238,17 @@
         <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
       </node>
       <node concept="2vxuzR" id="6iQ_VzN5sCG" role="1YhcTs">
-        <node concept="2qmXGp" id="6iQ_VzN9x8q" role="3WnoGb">
-          <node concept="2ZqYGZ" id="6iQ_VzN9xSJ" role="1ESnxz">
+        <node concept="2qmXGp" id="16CxyeeLfcq" role="3WnoGb">
+          <node concept="2ZqYGZ" id="16CxyeeLfcS" role="1ESnxz">
             <ref role="2ZqYFj" to="3fny:6v3ZnYePJ9l" resolve="receiver" />
           </node>
-          <node concept="1Yrl6E" id="6iQ_VzN9x7L" role="1_9fRO" />
+          <node concept="2xC6$6" id="16CxyeeLfbL" role="1_9fRO" />
         </node>
       </node>
       <node concept="UH0sd" id="6iQ_VzN0OMU" role="1YhcTs">
-        <property role="TrG5h" value="test" />
+        <property role="TrG5h" value="Clafer" />
         <node concept="UH0sd" id="6iQ_VzN0ONM" role="2vwUiP">
-          <property role="TrG5h" value="test_inner" />
+          <property role="TrG5h" value="Child" />
         </node>
       </node>
     </node>

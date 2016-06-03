@@ -339,9 +339,9 @@
           </node>
         </node>
       </node>
-      <node concept="UzEYP" id="6v3ZnYePJcc" role="2vwUiP" />
-      <node concept="UzEYP" id="6v3ZnYePJcz" role="2vwUiP" />
     </node>
+    <node concept="UzEYP" id="16CxyeeUlwP" role="UzTCv" />
+    <node concept="UzEYP" id="16CxyeeUlzY" role="UzTCv" />
     <node concept="3BDuFY" id="5H6GWMWU_L7" role="UzTCv">
       <property role="TrG5h" value="DeviceNodeType" />
       <node concept="3BDuFZ" id="5H6GWMWU_L9" role="3BDuFS">
