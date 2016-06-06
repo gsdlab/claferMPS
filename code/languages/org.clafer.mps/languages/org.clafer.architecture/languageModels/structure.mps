@@ -1293,5 +1293,11 @@
     <property role="34LRSv" value="receiver" />
     <ref role="1TJDcQ" node="pG4h8miPSR" resolve="EndpointDotTarget" />
   </node>
+  <node concept="1TIwiD" id="16CxyeeVoRx">
+    <property role="1pbfSe" value="1600777212" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityExpr" />
+    <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
+  </node>
 </model>
 

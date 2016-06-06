@@ -25,6 +25,7 @@
         <property id="2181707870707196839" name="visible" index="3jqXwo" />
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
+      <concept id="1272414382012075489" name="org.clafer.architecture.structure.QualityExpr" flags="ng" index="2vhgJ2" />
       <concept id="8071399195256502219" name="org.clafer.architecture.structure.QualityThisExpr" flags="ng" index="2xC6$6" />
       <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
         <property id="8556599590877743536" name="generateQA" index="1deALe" />
@@ -56,15 +57,28 @@
       <concept id="4620120465980402700" name="org.clafer.expr.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
+      <concept id="8860443239512129322" name="org.clafer.expr.structure.EqualsExpression" flags="ng" index="3TlM44" />
+      <concept id="8860443239512128052" name="org.clafer.expr.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
+      </concept>
+      <concept id="8860443239512128108" name="org.clafer.expr.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="629737693910916321" name="org.clafer.core.structure.TypeExpr" flags="ng" index="2jxDJT">
+        <child id="629737693910916322" name="targetType" index="2jxDJU" />
+      </concept>
       <concept id="6300420630909714393" name="org.clafer.core.structure.Constraint" flags="ng" index="2vxuzR">
         <child id="4988923775218203830" name="expr" index="3WnoGb" />
+      </concept>
+      <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
+        <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
         <child id="6300420630909825947" name="children" index="2vwUiP" />
+        <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
       <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
         <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
@@ -86,12 +100,6 @@
       </node>
       <node concept="sjk9b" id="6iQ_VzN9xTB" role="skltt">
         <ref role="sjk9f" to="ddau:12rnRvMhgdY" resolve="System" />
-      </node>
-      <node concept="UH0sd" id="6iQ_VzMYFFf" role="1YhcTs">
-        <property role="TrG5h" value="test" />
-        <node concept="UH0sd" id="6iQ_VzMYFG7" role="2vwUiP">
-          <property role="TrG5h" value="test" />
-        </node>
       </node>
     </node>
     <node concept="sklqP" id="H$98wxz$iE" role="sklmO">
@@ -238,17 +246,35 @@
         <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
       </node>
       <node concept="2vxuzR" id="6iQ_VzN5sCG" role="1YhcTs">
-        <node concept="2qmXGp" id="16CxyeeLfcq" role="3WnoGb">
-          <node concept="2ZqYGZ" id="16CxyeeLfcS" role="1ESnxz">
-            <ref role="2ZqYFj" to="3fny:6v3ZnYePJ9l" resolve="receiver" />
+        <node concept="3TlM44" id="16CxyeeVJSA" role="3WnoGb">
+          <node concept="3TlMh9" id="16CxyeeVJTA" role="3TlMhJ">
+            <property role="2hmy$m" value="10" />
           </node>
-          <node concept="2xC6$6" id="16CxyeeLfbL" role="1_9fRO" />
+          <node concept="2qmXGp" id="16CxyeeVJML" role="3TlMhI">
+            <node concept="2vhgJ2" id="16CxyeeVJNf" role="1ESnxz">
+              <ref role="2ZqYFj" node="dW_p57skC6" resolve="latency" />
+            </node>
+            <node concept="2xC6$6" id="16CxyeeLfbL" role="1_9fRO" />
+          </node>
+        </node>
+      </node>
+      <node concept="2vxuzR" id="V7t4xMde3K" role="1YhcTs">
+        <node concept="2qmXGp" id="V7t4xMde4W" role="3WnoGb">
+          <node concept="2ZqYGZ" id="V7t4xMde5q" role="1ESnxz">
+            <ref role="2ZqYFj" to="3fny:6v3ZnYePJ9X" resolve="deployedTo" />
+          </node>
+          <node concept="2xC6$6" id="V7t4xMde4j" role="1_9fRO" />
         </node>
       </node>
       <node concept="UH0sd" id="6iQ_VzN0OMU" role="1YhcTs">
-        <property role="TrG5h" value="Clafer" />
+        <property role="TrG5h" value="Person" />
         <node concept="UH0sd" id="6iQ_VzN0ONM" role="2vwUiP">
-          <property role="TrG5h" value="Child" />
+          <property role="TrG5h" value="age" />
+          <node concept="2K4itw" id="V7t4xMde67" role="2K4itM">
+            <node concept="2jxDJT" id="V7t4xMde6r" role="2jwY2M">
+              <node concept="3TlMh2" id="V7t4xMde6p" role="2jxDJU" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

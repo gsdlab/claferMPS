@@ -5413,5 +5413,57 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="16CxyeeVoRU">
+    <property role="3GE5qa" value="QualityModule" />
+    <ref role="1M2myG" to="ddau:16CxyeeVoRx" resolve="QualityExpr" />
+    <node concept="1N5Pfh" id="16CxyeeVpkb" role="1Mr941">
+      <ref role="1N5Vy1" to="mecy:6Ig5vvkYZW$" />
+      <node concept="13QW63" id="16CxyeeVp_C" role="1N6uqs">
+        <node concept="3clFbS" id="16CxyeeVp_D" role="2VODD2">
+          <node concept="3cpWs6" id="yXhLyrc$Og" role="3cqZAp">
+            <node concept="2YIFZM" id="16CxyeeVywK" role="3cqZAk">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="16CxyeeVBe0" role="37wK5m">
+                <node concept="2OqwBi" id="16CxyeeVyTb" role="2Oq$k0">
+                  <node concept="21POm0" id="16CxyeeVyOf" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="16CxyeeVB6T" role="2OqNvi">
+                    <node concept="1xMEDy" id="16CxyeeVB6V" role="1xVPHs">
+                      <node concept="chp4Y" id="16CxyeeVB8$" role="ri$Ld">
+                        <ref role="cht4Q" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+                      </node>
+                    </node>
+                    <node concept="1xIGOp" id="16CxyeeVBbc" role="1xVPHs" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="16CxyeeVBjI" role="2OqNvi">
+                  <ref role="3TtcxE" to="ddau:6kt45HTj4uN" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="nKS2y" id="16CxyeeVoRV" role="1MLUbF">
+      <node concept="3clFbS" id="16CxyeeVoRW" role="2VODD2">
+        <node concept="3clFbF" id="16CxyeeVoT1" role="3cqZAp">
+          <node concept="2OqwBi" id="16CxyeeVp9a" role="3clFbG">
+            <node concept="2OqwBi" id="16CxyeeVoVj" role="2Oq$k0">
+              <node concept="nLn13" id="16CxyeeVoT0" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="16CxyeeVoZv" role="2OqNvi">
+                <node concept="1xMEDy" id="16CxyeeVoZx" role="1xVPHs">
+                  <node concept="chp4Y" id="16CxyeeVp5F" role="ri$Ld">
+                    <ref role="cht4Q" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="16CxyeeVphP" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

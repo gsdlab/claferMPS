@@ -37,6 +37,9 @@
         <child id="2099227529478798018" name="implementation" index="30r0Ui" />
       </concept>
       <concept id="1508831110959197090" name="org.clafer.architecture.structure.DeployedToDotTarget" flags="ng" index="2IdTD4" />
+      <concept id="5776930868210688761" name="org.clafer.architecture.structure.IHaveQualityAttributes" flags="ng" index="Nx2FX">
+        <child id="4851172649685075330" name="qualities" index="33KLpg" />
+      </concept>
       <concept id="1679786397508364593" name="org.clafer.architecture.structure.IHardwareConnector" flags="ng" index="PiMn_">
         <reference id="4552959601553059646" name="target" index="2Kqnes" />
         <reference id="4552959601553059645" name="source" index="2Kqnev" />
@@ -46,6 +49,10 @@
       <concept id="2099227529480083850" name="org.clafer.architecture.structure.ImplementationExpr" flags="ng" index="30g6Rq" />
       <concept id="2099227529478788141" name="org.clafer.architecture.structure.Implementation" flags="ng" index="30r21X">
         <property id="2099227529478788142" name="type" index="30r21Y" />
+      </concept>
+      <concept id="4851172649685075389" name="org.clafer.architecture.structure.Quality" flags="ng" index="33KLpJ">
+        <reference id="4851172649685075405" name="tElement" index="33KLov" />
+        <child id="4851172649685075407" name="value" index="33KLot" />
       </concept>
       <concept id="1318120347112277827" name="org.clafer.architecture.structure.CommTopology" flags="ng" index="36Bm0V" />
       <concept id="1318120347112277980" name="org.clafer.architecture.structure.PowerTopology" flags="ng" index="36Bm2$" />
@@ -148,17 +155,27 @@
         <child id="8860443239512128064" name="left" index="3TlMhI" />
         <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
+      <concept id="8860443239512128108" name="org.clafer.expr.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="629737693910916321" name="org.clafer.core.structure.TypeExpr" flags="ng" index="2jxDJT">
+        <child id="629737693910916322" name="targetType" index="2jxDJU" />
+      </concept>
       <concept id="6300420630909714393" name="org.clafer.core.structure.Constraint" flags="ng" index="2vxuzR">
         <child id="4988923775218203830" name="expr" index="3WnoGb" />
+      </concept>
+      <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
+        <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
         <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
+      </concept>
+      <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
+        <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
@@ -290,6 +307,36 @@
                 <node concept="2Zoh0E" id="M9rtBFNL$m" role="1_9fRO" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="2vxuzR" id="4hL4ICEV$CX" role="2mZOl8">
+          <node concept="3TlM44" id="V7t4xMde9t" role="3WnoGb">
+            <node concept="3TlMh9" id="V7t4xMde9y" role="3TlMhJ">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="2qmXGp" id="4hL4ICEV$Ev" role="3TlMhI">
+              <node concept="2ZqYGZ" id="4hL4ICEV$EQ" role="1ESnxz">
+                <ref role="2ZqYFj" to="t4ow:6iQ_VzN0ONM" resolve="age" />
+              </node>
+              <node concept="2qmXGp" id="4hL4ICEV$E5" role="1_9fRO">
+                <node concept="2ZqYGZ" id="4hL4ICEV$Ej" role="1ESnxz">
+                  <ref role="2ZqYFj" to="t4ow:6iQ_VzN0OMU" resolve="Person" />
+                </node>
+                <node concept="2Zoh0E" id="4hL4ICEV$DW" role="1_9fRO" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="33KLpJ" id="16CxyeeVShZ" role="33KLpg">
+          <property role="TrG5h" value="latency" />
+          <ref role="33KLov" to="t4ow:dW_p57skC6" resolve="latency" />
+          <node concept="2K4itw" id="16CxyeeVSi0" role="2K4itM">
+            <node concept="2jxDJT" id="16CxyeeVSi1" role="2jwY2M">
+              <node concept="3TlMh2" id="16CxyeeVSi2" role="2jxDJU" />
+            </node>
+          </node>
+          <node concept="3TlMh9" id="16CxyeeVSiK" role="33KLot">
+            <property role="2hmy$m" value="10" />
           </node>
         </node>
       </node>
