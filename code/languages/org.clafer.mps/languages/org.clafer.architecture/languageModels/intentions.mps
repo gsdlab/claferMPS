@@ -1781,5 +1781,36 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="7XyBMvGa8eW">
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityTableElement_AddConstraint" />
+    <ref role="2ZfgGC" to="ddau:57FaIEVyhuB" resolve="QualityTableElement" />
+    <node concept="2S6ZIM" id="7XyBMvGa8eX" role="2ZfVej">
+      <node concept="3clFbS" id="7XyBMvGa8eY" role="2VODD2">
+        <node concept="3clFbF" id="7XyBMvGa8g$" role="3cqZAp">
+          <node concept="Xl_RD" id="7XyBMvGa8gz" role="3clFbG">
+            <property role="Xl_RC" value="Add Constraint" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7XyBMvGa8eZ" role="2ZfgGD">
+      <node concept="3clFbS" id="7XyBMvGa8f0" role="2VODD2">
+        <node concept="3clFbF" id="7XyBMvGa8nG" role="3cqZAp">
+          <node concept="2OqwBi" id="7XyBMvGa9u5" role="3clFbG">
+            <node concept="2OqwBi" id="7XyBMvGa8se" role="2Oq$k0">
+              <node concept="2Sf5sV" id="7XyBMvGa8nF" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7XyBMvGa8CO" role="2OqNvi">
+                <ref role="3TtcxE" to="ddau:7XyBMvG1HC6" />
+              </node>
+            </node>
+            <node concept="WFELt" id="7XyBMvGaco7" role="2OqNvi">
+              <ref role="1A0vxQ" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

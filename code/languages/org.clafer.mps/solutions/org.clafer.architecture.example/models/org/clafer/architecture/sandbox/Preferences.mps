@@ -37,7 +37,9 @@
       <concept id="598358034645073916" name="org.clafer.architecture.structure.ConstantsGroup" flags="ng" index="1vMfia">
         <child id="598358034645073932" name="children" index="1vM8HU" />
       </concept>
-      <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
+      <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd">
+        <child id="9179073984346905094" name="constraints" index="2jp4kx" />
+      </concept>
       <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityTableElementRef" flags="ng" index="3Ev5JQ">
         <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
       </concept>
@@ -226,6 +228,19 @@
       <node concept="3Ev5JQ" id="1wmiO1AQl49" role="3A1vRL">
         <ref role="3Ev5JR" node="1wmiO1AQl45" resolve="warrantyCost" />
       </node>
+      <node concept="2vxuzR" id="7XyBMvGkKgL" role="1YhcTs">
+        <node concept="3TlM44" id="7XyBMvGlQHm" role="3WnoGb">
+          <node concept="3TlMh9" id="7XyBMvGlQHF" role="3TlMhJ">
+            <property role="2hmy$m" value="19" />
+          </node>
+          <node concept="2qmXGp" id="7XyBMvGkKhK" role="3TlMhI">
+            <node concept="2vhgJ2" id="7XyBMvGlQGu" role="1ESnxz">
+              <ref role="2ZqYFj" node="1wmiO1AQkV2" resolve="cost" />
+            </node>
+            <node concept="2xC6$6" id="7XyBMvGkKh7" role="1_9fRO" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="sklqP" id="5ipUCoi8tju" role="sklmO">
       <node concept="3EozPd" id="5ipUCoi8tkT" role="sklvC">
@@ -241,6 +256,14 @@
     <node concept="sklqP" id="dW_p57sk_G" role="sklmO">
       <node concept="3EozPd" id="dW_p57skC6" role="sklvC">
         <property role="TrG5h" value="latency" />
+        <node concept="2vxuzR" id="7XyBMvGkJTY" role="2jp4kx">
+          <node concept="3TlM44" id="7XyBMvGkJVJ" role="3WnoGb">
+            <node concept="3TlMh9" id="7XyBMvGkJWo" role="3TlMhJ">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="2xC6$6" id="7XyBMvGkJUY" role="3TlMhI" />
+          </node>
+        </node>
       </node>
       <node concept="sjk9b" id="dW_p57skBH" role="skltt">
         <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
@@ -254,7 +277,7 @@
             <node concept="2vhgJ2" id="16CxyeeVJNf" role="1ESnxz">
               <ref role="2ZqYFj" node="dW_p57skC6" resolve="latency" />
             </node>
-            <node concept="2xC6$6" id="16CxyeeLfbL" role="1_9fRO" />
+            <node concept="2xC6$6" id="7XyBMvG4asT" role="1_9fRO" />
           </node>
         </node>
       </node>
@@ -263,7 +286,7 @@
           <node concept="2ZqYGZ" id="V7t4xMde5q" role="1ESnxz">
             <ref role="2ZqYFj" to="3fny:6v3ZnYePJ9X" resolve="deployedTo" />
           </node>
-          <node concept="2xC6$6" id="V7t4xMde4j" role="1_9fRO" />
+          <node concept="2xC6$6" id="7XyBMvG1HBF" role="1_9fRO" />
         </node>
       </node>
       <node concept="UH0sd" id="6iQ_VzN0OMU" role="1YhcTs">

@@ -605,6 +605,15 @@
     <property role="3GE5qa" value="QualityModule" />
     <property role="TrG5h" value="QualityTableElement" />
     <ref role="1TJDcQ" node="57FaIEV_R4r" resolve="QTElement" />
+    <node concept="1TJgyj" id="7XyBMvG1HC6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+    </node>
+    <node concept="PrWs8" id="7XyBMvG5KiD" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="57FaIEV_R4r">
     <property role="1pbfSe" value="226663429" />
