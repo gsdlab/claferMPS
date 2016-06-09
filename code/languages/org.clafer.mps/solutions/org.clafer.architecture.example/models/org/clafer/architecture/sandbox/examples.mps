@@ -168,6 +168,7 @@
       <concept id="7663324203600887714" name="org.clafer.core.structure.ClaferRef" flags="ng" index="2K4itw">
         <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
+      <concept id="4545783005415648009" name="org.clafer.core.structure.DrefExpr" flags="ng" index="KQRq6" />
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
         <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
@@ -175,6 +176,7 @@
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
+        <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
@@ -314,13 +316,11 @@
             <node concept="3TlMh9" id="V7t4xMde9y" role="3TlMhJ">
               <property role="2hmy$m" value="10" />
             </node>
-            <node concept="2qmXGp" id="4hL4ICEV$Ev" role="3TlMhI">
-              <node concept="2ZqYGZ" id="4hL4ICEV$EQ" role="1ESnxz">
-                <ref role="2ZqYFj" to="t4ow:6iQ_VzN0ONM" resolve="age" />
-              </node>
+            <node concept="2qmXGp" id="3xXk1ajMEZX" role="3TlMhI">
+              <node concept="KQRq6" id="3xXk1ajNejE" role="1ESnxz" />
               <node concept="2qmXGp" id="4hL4ICEV$E5" role="1_9fRO">
-                <node concept="2ZqYGZ" id="4hL4ICEV$Ej" role="1ESnxz">
-                  <ref role="2ZqYFj" to="t4ow:6iQ_VzN0OMU" resolve="Person" />
+                <node concept="2ZqYGZ" id="3xXk1ajMEXQ" role="1ESnxz">
+                  <ref role="2ZqYFj" to="t4ow:dW_p57skC6" resolve="latency" />
                 </node>
                 <node concept="2Zoh0E" id="4hL4ICEV$DW" role="1_9fRO" />
               </node>
@@ -379,6 +379,7 @@
             </node>
           </node>
         </node>
+        <node concept="UzEYP" id="3xXk1ajNqPK" role="2mZOl8" />
         <node concept="37mRI7" id="1ub0KooEDma" role="lGtFl">
           <node concept="37mRIm" id="1ub0KooEDmb" role="37mRID">
             <property role="37mO49" value="1696453009353643065" />
@@ -1647,7 +1648,17 @@
       </node>
       <node concept="36Bm2$" id="3KMBoWMKGb4" role="2mZOl8">
         <property role="TrG5h" value="ptolp" />
-        <node concept="UzEYP" id="3KMBoWMKGbl" role="2mZOl8" />
+        <node concept="UH0sd" id="3xXk1ajIRH2" role="2mZOl8">
+          <property role="TrG5h" value="pc" />
+          <node concept="UH0sd" id="3xXk1ajIRHa" role="2vwUiP">
+            <property role="TrG5h" value="pc" />
+          </node>
+        </node>
+      </node>
+      <node concept="UzEYP" id="3xXk1ajNqSZ" role="2mZOl8" />
+      <node concept="1uNHS9" id="3xXk1ajNqTj" role="2mZOl8">
+        <property role="TrG5h" value="dn" />
+        <node concept="UzEYP" id="3xXk1ajNqTK" role="2mZOl8" />
       </node>
     </node>
     <node concept="UzEYP" id="7Ij6CMqk7Tb" role="UzTCv" />

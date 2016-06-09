@@ -82,6 +82,7 @@
         <property id="7663324203601194103" name="isBag" index="2K5fiP" />
         <child id="629737693911099306" name="targetTypeExpr" index="2jwY2M" />
       </concept>
+      <concept id="4545783005404930938" name="org.clafer.core.structure.ParentExpr" flags="ng" index="KfJVP" />
       <concept id="4545783005407580309" name="org.clafer.core.structure.ClaferInit" flags="ng" index="Kh$Oq">
         <child id="4545783005407580361" name="value" index="Kh$P6" />
       </concept>
@@ -450,6 +451,39 @@
       <node concept="3Edj9i" id="4fqVouxv26L" role="2vBZf8" />
     </node>
     <node concept="UzEYP" id="5Rg5_Rc38l1" role="UzTCv" />
+    <node concept="UH0sd" id="3xXk1ajNfLQ" role="UzTCv">
+      <property role="TrG5h" value="A" />
+      <node concept="UH0sd" id="3xXk1ajNggF" role="2vwUiP">
+        <property role="TrG5h" value="res" />
+        <node concept="2K4itw" id="3xXk1ajNggL" role="2K4itM">
+          <node concept="2jxDJT" id="3xXk1ajNggQ" role="2jwY2M">
+            <node concept="3TlMh2" id="3xXk1ajNggO" role="2jxDJU" />
+          </node>
+        </node>
+        <node concept="2vxuzR" id="3xXk1ajNghV" role="2vwUiP">
+          <node concept="2qmXGp" id="3xXk1ajNo7F" role="3WnoGb">
+            <node concept="KfJVP" id="3xXk1ajNo86" role="1ESnxz" />
+            <node concept="2Zoh0E" id="3xXk1ajNjHu" role="1_9fRO" />
+          </node>
+        </node>
+      </node>
+      <node concept="UH0sd" id="3xXk1ajNo9d" role="2vwUiP">
+        <property role="TrG5h" value="B" />
+        <node concept="UH0sd" id="3xXk1ajNoaV" role="2vwUiP">
+          <property role="TrG5h" value="C" />
+          <node concept="2vxuzR" id="3xXk1ajNob9" role="2vwUiP">
+            <node concept="2qmXGp" id="3xXk1ajNobX" role="3WnoGb">
+              <node concept="KfJVP" id="3xXk1ajNoct" role="1ESnxz" />
+              <node concept="2qmXGp" id="3xXk1ajNobt" role="1_9fRO">
+                <node concept="KfJVP" id="3xXk1ajNobJ" role="1ESnxz" />
+                <node concept="2Zoh0E" id="3xXk1ajNobj" role="1_9fRO" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="UzEYP" id="3xXk1ajNfFJ" role="UzTCv" />
     <node concept="UH0sd" id="12ZezlWUuPF" role="UzTCv">
       <property role="TrG5h" value="X" />
       <node concept="2K4itw" id="12ZezlWUuRF" role="2K4itM">
@@ -565,7 +599,9 @@
         </node>
       </node>
     </node>
-    <node concept="UzEYP" id="12ZezlWUu_Q" role="UzTCv" />
+    <node concept="UH0sd" id="3xXk1ajGSZd" role="UzTCv">
+      <property role="TrG5h" value="fa" />
+    </node>
   </node>
   <node concept="UzPwm" id="6MOJxHINvX$">
     <property role="TrG5h" value="M2" />
