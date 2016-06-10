@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:540d349c-81ff-410c-8f3c-04485d1ff1d6(org.clafer.architecture.baseConcepts.baseConcepts)">
+<model ref="r:318e3602-1c18-4f45-8392-46c6f99dd97f(org.clafer.architecture.referencemodel.refmodel)">
   <persistence version="9" />
   <languages>
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />

@@ -7219,7 +7219,7 @@
       <node concept="3clFbS" id="5A7sq$BM1rw" role="3clF47">
         <node concept="3cpWs6" id="5A7sq$BM4o6" role="3cqZAp">
           <node concept="Xl_RD" id="5A7sq$BM4jD" role="3cqZAk">
-            <property role="Xl_RC" value="org.clafer.architecture.baseConcepts" />
+            <property role="Xl_RC" value="org.clafer.architecture.referencemodel" />
           </node>
         </node>
       </node>

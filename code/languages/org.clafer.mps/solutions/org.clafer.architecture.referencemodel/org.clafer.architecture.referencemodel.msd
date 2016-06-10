@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.clafer.architecture.baseConcepts" uuid="9dbd68bc-cb8b-44b4-bf6f-cd9789fe46b4" moduleVersion="0" compileInMPS="true">
+<solution name="org.clafer.architecture.referencemodel" uuid="0d295de9-76dc-4a2e-9845-e2d68d1079bb" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <sourcePath />
-  <usedDevKits>
-    <usedDevKit>f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)</usedDevKit>
-  </usedDevKits>
   <languageVersions>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="3" />
     <language id="223dd778-c44f-4ef3-9535-7aa7d12244a6" fqName="com.mbeddr.core.debug" version="0" />
@@ -36,7 +33,7 @@
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" fqName="org.clafer.expr" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="9dbd68bc-cb8b-44b4-bf6f-cd9789fe46b4(org.clafer.architecture.baseConcepts)" version="0" />
+    <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
   </dependencyVersions>
 </solution>
 
