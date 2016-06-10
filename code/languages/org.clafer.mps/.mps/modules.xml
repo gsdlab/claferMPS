@@ -11,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/solutions/pluginSolution/org.clafer.core.pluginSolution.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" folder="referenceModel" />
       <modulePath path="$PROJECT_DIR$/solutions/ArchBaseConcept/org.clafer.architecture.baseConcepts.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.NECSIS/ca.uwaterloo.gsd.NECSIS.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.PowerWindowSystem/ca.uwaterloo.gsd.PowerWindowSystem.msd" folder="examples" />
@@ -18,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.referencemodel/org.clafer.architecture.referencemodel.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.example.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.sandbox.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.referenceModel.sandbox/org.clafer.referenceModel.sandbox.msd" folder="referenceModel" />
       <modulePath path="$PROJECT_DIR$/solutions/tests.clafer.architecture/tests.org.clafer.architecture.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.clafer.core/test.ex.clafer.core.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.clafer.core/test.ts.clafer.core.msd" folder="core" />
