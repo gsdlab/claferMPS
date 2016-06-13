@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="org.clafer.referenceModel#6798851666866987618" uuid="e4a84757-5cfd-4baf-9c3a-663cffb384bb">
+    <generator name="" generatorUID="org.clafer.referenceModel#6798851666866987618" uuid="e4a84757-5cfd-4baf-9c3a-663cffb384bb">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
@@ -89,6 +89,7 @@
     <dependency reexport="false">b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</dependency>
     <dependency reexport="false">137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</dependency>
     <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)</dependency>
+    <dependency reexport="false" scope="generate-into">137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -150,6 +151,7 @@
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)" version="0" />
     <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
+    <module reference="0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</extendedLanguage>

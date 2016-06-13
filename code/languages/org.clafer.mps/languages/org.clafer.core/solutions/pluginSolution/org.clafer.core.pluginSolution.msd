@@ -66,6 +66,7 @@
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="d6aecdb1-19c5-4f41-9425-10162473419a(org.clafer.core.pluginSolution)" version="0" />
     <module reference="61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)" version="0" />
+    <module reference="0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)" version="0" />
   </dependencyVersions>
 </solution>
 

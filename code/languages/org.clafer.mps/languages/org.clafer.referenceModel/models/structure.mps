@@ -14,6 +14,7 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
     </language>
@@ -25,7 +26,8 @@
   </registry>
   <node concept="1TIwiD" id="5TqnT6Oe6mA">
     <property role="1pbfSe" value="311608631" />
-    <property role="TrG5h" value="ReferenceModel" />
+    <property role="TrG5h" value="ReferenceModule" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
   </node>
 </model>
