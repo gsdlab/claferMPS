@@ -3,10 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="3" />
+    <use id="5e8d2011-eb6c-491f-9520-19d12014a9bc" name="org.clafer.referenceModel" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
     <import index="t4ow" ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.sandbox.preferences)" />
+    <import index="7276" ref="r:4192835e-edb3-421c-91d0-0616013802b6(org.clafer.referenceModel.sandbox.refModel)" />
   </imports>
   <registry>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
@@ -36,6 +38,7 @@
       <concept id="7456344075911071065" name="org.clafer.architecture.structure.FunctionalAnalysisComponent" flags="ng" index="oJGgR">
         <child id="2099227529478798018" name="implementation" index="30r0Ui" />
       </concept>
+      <concept id="8071399195256502219" name="org.clafer.architecture.structure.QualityThisExpr" flags="ng" index="2xC6$6" />
       <concept id="1508831110959197090" name="org.clafer.architecture.structure.DeployedToDotTarget" flags="ng" index="2IdTD4" />
       <concept id="5776930868210688761" name="org.clafer.architecture.structure.IHaveQualityAttributes" flags="ng" index="Nx2FX">
         <child id="4851172649685075330" name="qualities" index="33KLpg" />
@@ -339,6 +342,24 @@
             <property role="2hmy$m" value="10" />
           </node>
         </node>
+        <node concept="33KLpJ" id="6Z_RGEXdGUa" role="33KLpg">
+          <property role="TrG5h" value="mass" />
+          <ref role="33KLov" to="t4ow:6Z_RGEXdGCX" resolve="mass" />
+          <node concept="2K4itw" id="6Z_RGEXdGUb" role="2K4itM">
+            <node concept="2jxDJT" id="6Z_RGEXdGUc" role="2jwY2M">
+              <node concept="3TlMh2" id="6Z_RGEXdGUd" role="2jxDJU" />
+            </node>
+          </node>
+          <node concept="2qmXGp" id="6Z_RGEXdHfv" role="33KLot">
+            <node concept="2ZqYGZ" id="6Z_RGEXdHfR" role="1ESnxz">
+              <ref role="2ZqYFj" to="t4ow:6BXeK5CiNLq" resolve="baseLatency" />
+            </node>
+            <node concept="2qmXGp" id="6Z_RGEXdHf4" role="1_9fRO">
+              <node concept="3BhrjB" id="6Z_RGEXdHfi" role="1ESnxz" />
+              <node concept="2xC6$6" id="6Z_RGEXdHeV" role="1_9fRO" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2mZLT$" id="42bqIdUBvUh" role="2mZOl8">
         <property role="TrG5h" value="simpleAFunction" />
@@ -379,7 +400,6 @@
             </node>
           </node>
         </node>
-        <node concept="UzEYP" id="3xXk1ajOtuX" role="2mZOl8" />
         <node concept="37mRI7" id="1ub0KooEDma" role="lGtFl">
           <node concept="37mRIm" id="1ub0KooEDmb" role="37mRID">
             <property role="37mO49" value="1696453009353643065" />

@@ -8,7 +8,6 @@
   <imports>
     <import index="pyz" ref="r:ee3a2e35-750e-4937-bca5-6cd2bc2152ab(org.clafer.architecture.sandbox.examples)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
-    <import index="3fny" ref="r:540d349c-81ff-410c-8f3c-04485d1ff1d6(org.clafer.architecture.baseConcepts.baseConcepts)" implicit="true" />
   </imports>
   <registry>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
@@ -254,20 +253,6 @@
       </node>
     </node>
     <node concept="sklqP" id="dW_p57sk_G" role="sklmO">
-      <node concept="3EozPd" id="dW_p57skC6" role="sklvC">
-        <property role="TrG5h" value="latency" />
-        <node concept="2vxuzR" id="7XyBMvGkJTY" role="2jp4kx">
-          <node concept="3TlM44" id="7XyBMvGkJVJ" role="3WnoGb">
-            <node concept="3TlMh9" id="7XyBMvGkJWo" role="3TlMhJ">
-              <property role="2hmy$m" value="10" />
-            </node>
-            <node concept="2xC6$6" id="7XyBMvGkJUY" role="3TlMhI" />
-          </node>
-        </node>
-      </node>
-      <node concept="sjk9b" id="dW_p57skBH" role="skltt">
-        <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-      </node>
       <node concept="2vxuzR" id="6iQ_VzN5sCG" role="1YhcTs">
         <node concept="3TlM44" id="16CxyeeVJSA" role="3WnoGb">
           <node concept="3TlMh9" id="16CxyeeVJTA" role="3TlMhJ">
@@ -281,13 +266,22 @@
           </node>
         </node>
       </node>
-      <node concept="2vxuzR" id="V7t4xMde3K" role="1YhcTs">
-        <node concept="2qmXGp" id="V7t4xMde4W" role="3WnoGb">
-          <node concept="2ZqYGZ" id="V7t4xMde5q" role="1ESnxz">
-            <ref role="2ZqYFj" to="3fny:6v3ZnYePJ9X" resolve="deployedTo" />
+      <node concept="3EozPd" id="6Z_RGEXdGCX" role="sklvC">
+        <property role="TrG5h" value="mass" />
+      </node>
+      <node concept="3EozPd" id="dW_p57skC6" role="sklvC">
+        <property role="TrG5h" value="latency" />
+        <node concept="2vxuzR" id="7XyBMvGkJTY" role="2jp4kx">
+          <node concept="3TlM44" id="7XyBMvGkJVJ" role="3WnoGb">
+            <node concept="3TlMh9" id="7XyBMvGkJWo" role="3TlMhJ">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="2xC6$6" id="7XyBMvGkJUY" role="3TlMhI" />
           </node>
-          <node concept="2xC6$6" id="7XyBMvG1HBF" role="1_9fRO" />
         </node>
+      </node>
+      <node concept="sjk9b" id="dW_p57skBH" role="skltt">
+        <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
       </node>
       <node concept="UH0sd" id="6iQ_VzN0OMU" role="1YhcTs">
         <property role="TrG5h" value="Person" />

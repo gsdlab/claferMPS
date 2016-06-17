@@ -18,6 +18,8 @@
       </external-templates>
       <dependencies>
         <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
+        <dependency reexport="false">0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)</dependency>
+        <dependency reexport="false">5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -29,6 +31,7 @@
         <language id="a482b416-d0c9-473f-8f67-725ed642b3f3" fqName="com.mbeddr.mpsutil.breadcrumb" version="0" />
         <language id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" fqName="com.mbeddr.mpsutil.jung" version="0" />
         <language id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" fqName="com.mbeddr.mpsutil.plantuml.node" version="0" />
+        <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" fqName="de.itemis.mps.editor.diagram.layout" version="0" />
         <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" fqName="de.slisson.mps.richtext" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -48,8 +51,10 @@
         <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
+        <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" fqName="org.clafer.architecture" version="3" />
         <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
         <language id="61c69711-ed61-4850-81d9-7714ff227ff0" fqName="org.clafer.expr" version="0" />
+        <language id="5e8d2011-eb6c-491f-9520-19d12014a9bc" fqName="org.clafer.referenceModel" version="0" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -87,25 +92,12 @@
         <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
         <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
         <module reference="61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)" version="0" />
+        <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
         <module reference="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" version="0" />
         <module reference="0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)" version="0" />
       </dependencyVersions>
       <mapping-priorities>
-        <mapping-priority-rule kind="strictly_before">
-          <greater-priority-mapping>
-            <generator generatorUID="bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)" />
-            <external-mapping>
-              <mapping-node modelUID="r:05bc933b-fedb-4e9e-afee-dab27825d955(org.clafer.architecture.generator.template.main@generator)" nodeID="968293731153677283" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" />
-            <external-mapping>
-              <mapping-node modelUID="r:acf0789f-dd9f-4a0a-acfb-b0f43541413e(org.clafer.referenceModel.generator.template.main@generator)" nodeID="6798851666866987619" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_after">
+        <mapping-priority-rule kind="strictly_together">
           <greater-priority-mapping>
             <generator generatorUID="bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)" />
             <external-mapping>
