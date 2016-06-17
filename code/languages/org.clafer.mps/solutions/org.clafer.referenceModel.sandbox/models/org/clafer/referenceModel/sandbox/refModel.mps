@@ -5,7 +5,9 @@
     <use id="5e8d2011-eb6c-491f-9520-19d12014a9bc" name="org.clafer.referenceModel" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="rl4e" ref="r:9705c638-4a25-40ea-948e-b712cb8c486e(org.clafer.referenceModel.sandbox.qaModule)" />
+  </imports>
   <registry>
     <language id="5e8d2011-eb6c-491f-9520-19d12014a9bc" name="org.clafer.referenceModel">
       <concept id="6798851666867676582" name="org.clafer.referenceModel.structure.ReferenceModule" flags="ng" index="3EozCR" />
