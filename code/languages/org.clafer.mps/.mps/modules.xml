@@ -12,6 +12,8 @@
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/solutions/pluginSolution/org.clafer.core.pluginSolution.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" folder="referenceModel" />
+      <modulePath path="$PROJECT_DIR$/languages/qualityAttributes/qualityAttributes.mpl" folder="qualityAttributes" />
+      <modulePath path="$PROJECT_DIR$/languages/qualityAttributes/sandbox/qualityAttributes.sandbox.msd" folder="qualityAttributes" />
       <modulePath path="$PROJECT_DIR$/solutions/ArchBaseConcept/org.clafer.architecture.baseConcepts.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.NECSIS/ca.uwaterloo.gsd.NECSIS.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ca.uwaterloo.gsd.PowerWindowSystem/ca.uwaterloo.gsd.PowerWindowSystem.msd" folder="examples" />
