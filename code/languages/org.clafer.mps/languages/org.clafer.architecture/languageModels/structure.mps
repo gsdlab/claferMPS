@@ -587,6 +587,9 @@
     <node concept="PrWs8" id="6kt45HTlS$5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="6eCqpcIp8sp" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6kt45HTk58g">
     <property role="1pbfSe" value="563256725" />
