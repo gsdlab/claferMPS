@@ -15,7 +15,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
@@ -46,6 +45,7 @@
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
     <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" />
+    <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -5778,7 +5778,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="5EXaBxYpn$l">
-    <property role="3GE5qa" value="actionMaps" />
+    <property role="3GE5qa" value="QualityModule" />
     <property role="TrG5h" value="QualityTableElement_removeQAttribute" />
     <ref role="1h_SK9" to="ddau:57FaIEVyhuB" resolve="QualityTableElement" />
     <node concept="1hA7zw" id="5EXaBxYppdA" role="1h_SK8">
@@ -6092,7 +6092,7 @@
     </node>
   </node>
   <node concept="325Ffw" id="7otgDTeg3HX">
-    <property role="3GE5qa" value="actionMaps" />
+    <property role="3GE5qa" value="QualityModule" />
     <property role="TrG5h" value="Quality_addContent" />
     <ref role="1chiOs" to="ddau:4diOXa0$smX" resolve="Quality" />
     <node concept="2PxR9H" id="7otgDTeg3I1" role="2QnnpI">
@@ -7059,6 +7059,9 @@
           </node>
           <node concept="3F0A7n" id="3NiPeHJVnyL" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="VSNWy" id="4o7Qi3xQqlW" role="3F10Kt">
+              <property role="1lJzqX" value="18" />
+            </node>
           </node>
           <node concept="3F0ifn" id="3NiPeHJVnMZ" role="3EZMnx">
             <property role="3F0ifm" value="?" />
@@ -7956,7 +7959,7 @@
         </node>
       </node>
       <node concept="VSNWy" id="GHdWIEHRQ" role="3F10Kt">
-        <property role="1lJzqX" value="13" />
+        <property role="1lJzqX" value="18" />
       </node>
       <node concept="27z8qx" id="GHdWIEHRR" role="3F10Kt">
         <property role="3$6WeP" value="2" />
