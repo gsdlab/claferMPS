@@ -96,7 +96,22 @@
         <module reference="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" version="0" />
         <module reference="0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)" version="0" />
       </dependencyVersions>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)" />
+            <external-mapping>
+              <mapping-node modelUID="r:05bc933b-fedb-4e9e-afee-dab27825d955(org.clafer.architecture.generator.template.main@generator)" nodeID="5749248055796882064" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" />
+            <external-mapping>
+              <mapping-node modelUID="r:acf0789f-dd9f-4a0a-acfb-b0f43541413e(org.clafer.referenceModel.generator.template.main@generator)" nodeID="6798851666866987619" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <sourcePath />
