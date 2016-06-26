@@ -10315,13 +10315,13 @@
     </node>
   </node>
   <node concept="325Ffw" id="3xXk1ajpCL7">
-    <property role="TrG5h" value="Clafer_transformToArchElement" />
+    <property role="TrG5h" value="Clafer_ExpandToArchElement" />
     <property role="2XBEHb" value="true" />
     <ref role="1chiOs" to="mecy:bl22kSogWC" resolve="Clafer" />
     <node concept="2PxR9H" id="3xXk1ajpCLh" role="2QnnpI">
       <node concept="2Py5lD" id="3xXk1ajpCLi" role="2PyaAO">
-        <property role="2PWKIS" value="VK_M" />
-        <property role="2PWKIB" value="ctrl+shift" />
+        <property role="2PWKIS" value="VK_ENTER" />
+        <property role="2PWKIB" value="ctrl" />
       </node>
       <node concept="2PzhpH" id="3xXk1ajpCLj" role="2PL9iG">
         <node concept="3clFbS" id="3xXk1ajpCLk" role="2VODD2">
