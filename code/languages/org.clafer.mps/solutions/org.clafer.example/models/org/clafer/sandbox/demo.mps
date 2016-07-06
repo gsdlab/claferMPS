@@ -107,9 +107,6 @@
       <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
         <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
       </concept>
-      <concept id="2290628819058175370" name="org.clafer.core.structure.RefRelationExpr" flags="ng" index="1fXtXc">
-        <reference id="2290628819058178520" name="refChild" index="1fXsGu" />
-      </concept>
       <concept id="7389562969670486691" name="org.clafer.core.structure.StarCard" flags="ng" index="3E6wFX" />
       <concept id="7389562969672659468" name="org.clafer.core.structure.QuestionMarkCard" flags="ng" index="3Edj9i" />
       <concept id="7389562969672660489" name="org.clafer.core.structure.NumberCard" flags="ng" index="3Edjpn">
@@ -509,25 +506,6 @@
           </node>
         </node>
       </node>
-      <node concept="2vxuzR" id="12ZezlWUvvz" role="2vwUiP">
-        <node concept="LdX3K" id="12ZezlWUvUb" role="3WnoGb">
-          <node concept="2qmXGp" id="12ZezlWUvVM" role="1_9fRO">
-            <node concept="1fXtXc" id="12ZezlWUvWz" role="1ESnxz">
-              <ref role="1fXsGu" node="12ZezlWUuVV" resolve="W" />
-            </node>
-            <node concept="2Zoh0E" id="12ZezlWUvVf" role="1_9fRO" />
-          </node>
-        </node>
-        <node concept="1z9TsT" id="12ZezlWUvYv" role="lGtFl">
-          <node concept="OjmMv" id="12ZezlWUvYw" role="1w35rA">
-            <node concept="19SGf9" id="12ZezlWUvYx" role="OjmMu">
-              <node concept="19SUe$" id="12ZezlWUvYy" role="19SJt6">
-                <property role="19SUeA" value="going to the child of reference requires &amp;" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="UH0sd" id="12ZezlWUuJz" role="UzTCv">
       <property role="TrG5h" value="Y" />
@@ -573,27 +551,6 @@
           <node concept="19SGf9" id="12ZezlWUv5b" role="OjmMu">
             <node concept="19SUe$" id="12ZezlWUv5c" role="19SJt6">
               <property role="19SUeA" value="going via reference is by default" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2vxuzR" id="12ZezlWUv86" role="UzTCv">
-      <node concept="LdX3K" id="12ZezlWUva_" role="3WnoGb">
-        <node concept="2qmXGp" id="12ZezlWUvbA" role="1_9fRO">
-          <node concept="1fXtXc" id="12ZezlWUvcn" role="1ESnxz">
-            <ref role="1fXsGu" node="12ZezlWUuVV" resolve="W" />
-          </node>
-          <node concept="ZpONE" id="12ZezlWUvb3" role="1_9fRO">
-            <ref role="ZpOSt" node="12ZezlWUuPF" resolve="X" />
-          </node>
-        </node>
-      </node>
-      <node concept="1z9TsT" id="12ZezlWUvfW" role="lGtFl">
-        <node concept="OjmMv" id="12ZezlWUvfX" role="1w35rA">
-          <node concept="19SGf9" id="12ZezlWUvfY" role="OjmMu">
-            <node concept="19SUe$" id="12ZezlWUvfZ" role="19SJt6">
-              <property role="19SUeA" value="going to the child of reference requires &amp;" />
             </node>
           </node>
         </node>

@@ -1587,37 +1587,6 @@
       </node>
     </node>
   </node>
-  <node concept="1YbPZF" id="72GPbqtc6yn">
-    <property role="TrG5h" value="typeof_RefRelationExpr" />
-    <property role="3GE5qa" value="expr" />
-    <node concept="3clFbS" id="72GPbqtc6yo" role="18ibNy">
-      <node concept="1Z5TYs" id="72GPbqtc6zh" role="3cqZAp">
-        <node concept="mw_s8" id="72GPbqtc6zm" role="1ZfhK$">
-          <node concept="1Z2H0r" id="72GPbqtc6zn" role="mwGJk">
-            <node concept="1YBJjd" id="6Fa64hUgCII" role="1Z2MuG">
-              <ref role="1YBMHb" node="72GPbqtc6yq" resolve="refRelationExpr" />
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="72GPbqtc6GI" role="1ZfhKB">
-          <node concept="1Z2H0r" id="72GPbqtc6GE" role="mwGJk">
-            <node concept="2OqwBi" id="72GPbqtc6J9" role="1Z2MuG">
-              <node concept="1YBJjd" id="72GPbqtc6Hb" role="2Oq$k0">
-                <ref role="1YBMHb" node="72GPbqtc6yq" resolve="refRelationExpr" />
-              </node>
-              <node concept="3TrEf2" id="hUWpPx6viB" role="2OqNvi">
-                <ref role="3Tt5mk" to="mecy:1Z9WGpgf3Bo" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="72GPbqtc6yq" role="1YuTPh">
-      <property role="TrG5h" value="refRelationExpr" />
-      <ref role="1YaFvo" to="mecy:1Z9WGpgf2Qa" resolve="RefRelationExpr" />
-    </node>
-  </node>
   <node concept="312cEu" id="7YIk2VQKlj4">
     <property role="TrG5h" value="MeetTypeHelper" />
     <node concept="2tJIrI" id="7F1rX5GVhiS" role="jymVt" />

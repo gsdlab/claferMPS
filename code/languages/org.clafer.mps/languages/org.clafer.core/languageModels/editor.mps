@@ -1481,28 +1481,6 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
-  <node concept="24kQdi" id="1Z9WGpgf2S9">
-    <property role="3GE5qa" value="expr" />
-    <ref role="1XX52x" to="mecy:1Z9WGpgf2Qa" resolve="RefRelationExpr" />
-    <node concept="3EZMnI" id="hUWpPxbUzm" role="2wV5jI">
-      <node concept="l2Vlx" id="hUWpPxbUzn" role="2iSdaV" />
-      <node concept="3F0ifn" id="hUWpPxbUzF" role="3EZMnx">
-        <property role="3F0ifm" value="&amp;" />
-        <node concept="11LMrY" id="hUWpPxbXzp" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="1iCGBv" id="hUWpPx6v6Q" role="3EZMnx">
-        <ref role="1NtTu8" to="mecy:1Z9WGpgf3Bo" />
-        <node concept="1sVBvm" id="hUWpPx6v6S" role="1sWHZn">
-          <node concept="3F0A7n" id="hUWpPx6v7n" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="6qd05Uc_KEV">
     <property role="3GE5qa" value="card" />
     <ref role="1XX52x" to="mecy:6qd05Uc_KdB" resolve="AbstractCardinality" />

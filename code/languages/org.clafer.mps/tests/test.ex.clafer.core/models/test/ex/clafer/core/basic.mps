@@ -127,9 +127,6 @@
       <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
         <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
       </concept>
-      <concept id="2290628819058175370" name="org.clafer.core.structure.RefRelationExpr" flags="ng" index="1fXtXc">
-        <reference id="2290628819058178520" name="refChild" index="1fXsGu" />
-      </concept>
       <concept id="7389562969670798191" name="org.clafer.core.structure.XorCard" flags="ng" index="3E5GGL" />
       <concept id="7389562969670486691" name="org.clafer.core.structure.StarCard" flags="ng" index="3E6wFX" />
       <concept id="7389562969672659109" name="org.clafer.core.structure.PlusCard" flags="ng" index="3Edj3V" />
@@ -864,20 +861,15 @@
       <node concept="2vxuzR" id="3WlRoWevjOO" role="2vwUiP">
         <node concept="LlVIb" id="3WlRoWfNCo5" role="3WnoGb">
           <node concept="LdX3K" id="3WlRoWfNCql" role="3TlMhJ">
-            <node concept="2qmXGp" id="znlrM7VT4$" role="1_9fRO">
-              <node concept="1fXtXc" id="znlrM7VYaK" role="1ESnxz">
-                <ref role="1fXsGu" node="3WlRoWevjOp" resolve="fixed" />
+            <node concept="2qmXGp" id="znlrM7VSWg" role="1_9fRO">
+              <node concept="2ZqYGZ" id="znlrM7VT0x" role="1ESnxz">
+                <ref role="2ZqYFj" node="3WlRoWevjKy" resolve="size" />
               </node>
-              <node concept="2qmXGp" id="znlrM7VSWg" role="1_9fRO">
-                <node concept="2ZqYGZ" id="znlrM7VT0x" role="1ESnxz">
-                  <ref role="2ZqYFj" node="3WlRoWevjKy" resolve="size" />
+              <node concept="2qmXGp" id="3WlRoWfNCwb" role="1_9fRO">
+                <node concept="2ZqYGZ" id="3WlRoWfNCxM" role="1ESnxz">
+                  <ref role="2ZqYFj" node="3WlRoWevjHZ" resolve="cache" />
                 </node>
-                <node concept="2qmXGp" id="3WlRoWfNCwb" role="1_9fRO">
-                  <node concept="2ZqYGZ" id="3WlRoWfNCxM" role="1ESnxz">
-                    <ref role="2ZqYFj" node="3WlRoWevjHZ" resolve="cache" />
-                  </node>
-                  <node concept="2Zoh0E" id="3WlRoWfNCr_" role="1_9fRO" />
-                </node>
+                <node concept="2Zoh0E" id="3WlRoWfNCr_" role="1_9fRO" />
               </node>
             </node>
           </node>

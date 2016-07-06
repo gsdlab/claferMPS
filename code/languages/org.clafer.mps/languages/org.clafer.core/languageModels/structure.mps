@@ -331,22 +331,6 @@
       <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1Z9WGpgf2Qa">
-    <property role="3GE5qa" value="expr" />
-    <property role="TrG5h" value="RefRelationExpr" />
-    <property role="34LRSv" value="&amp;" />
-    <property role="1pbfSe" value="1879449680" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1Z9WGpgf3Bo" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="refChild" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4Z9rElrxgzk" resolve="BaseClafer" />
-    </node>
-    <node concept="PrWs8" id="1Z9WGpggs$P" role="PzmwI">
-      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6qd05Uc_KdB">
     <property role="TrG5h" value="AbstractCardinality" />
     <property role="3GE5qa" value="card" />
