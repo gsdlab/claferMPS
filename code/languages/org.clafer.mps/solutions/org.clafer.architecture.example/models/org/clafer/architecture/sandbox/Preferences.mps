@@ -24,8 +24,8 @@
         <property id="2181707870707196839" name="visible" index="3jqXwo" />
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
-      <concept id="1272414382012075489" name="org.clafer.architecture.structure.QualityExpr" flags="ng" index="2vhgJ2" />
       <concept id="8071399195256502219" name="org.clafer.architecture.structure.QualityThisExpr" flags="ng" index="2xC6$6" />
+      <concept id="2099227529480083850" name="org.clafer.architecture.structure.ImplementationExpr" flags="ng" index="30g6Rq" />
       <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
         <property id="8556599590877743536" name="generateQA" index="1deALe" />
         <child id="8271111493164032678" name="constants" index="3tuoqM" />
@@ -227,19 +227,6 @@
       <node concept="3Ev5JQ" id="1wmiO1AQl49" role="3A1vRL">
         <ref role="3Ev5JR" node="1wmiO1AQl45" resolve="warrantyCost" />
       </node>
-      <node concept="2vxuzR" id="7XyBMvGkKgL" role="1YhcTs">
-        <node concept="3TlM44" id="7XyBMvGlQHm" role="3WnoGb">
-          <node concept="3TlMh9" id="7XyBMvGlQHF" role="3TlMhJ">
-            <property role="2hmy$m" value="19" />
-          </node>
-          <node concept="2qmXGp" id="7XyBMvGkKhK" role="3TlMhI">
-            <node concept="2vhgJ2" id="7XyBMvGlQGu" role="1ESnxz">
-              <ref role="2ZqYFj" node="1wmiO1AQkV2" resolve="cost" />
-            </node>
-            <node concept="2xC6$6" id="7XyBMvGkKh7" role="1_9fRO" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="sklqP" id="5ipUCoi8tju" role="sklmO">
       <node concept="3EozPd" id="5ipUCoi8tkT" role="sklvC">
@@ -251,21 +238,27 @@
       <node concept="sjk9b" id="5ipUCoi8tkz" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
       </node>
-    </node>
-    <node concept="sklqP" id="dW_p57sk_G" role="sklmO">
-      <node concept="2vxuzR" id="6iQ_VzN5sCG" role="1YhcTs">
-        <node concept="3TlM44" id="16CxyeeVJSA" role="3WnoGb">
-          <node concept="3TlMh9" id="16CxyeeVJTA" role="3TlMhJ">
+      <node concept="2vxuzR" id="6kV3EBwnqN4" role="1YhcTs">
+        <node concept="3TlM44" id="6kV3EBwnqPs" role="3WnoGb">
+          <node concept="3TlMh9" id="6kV3EBwnqPL" role="3TlMhJ">
             <property role="2hmy$m" value="10" />
           </node>
-          <node concept="2qmXGp" id="16CxyeeVJML" role="3TlMhI">
-            <node concept="2vhgJ2" id="16CxyeeVJNf" role="1ESnxz">
-              <ref role="2ZqYFj" node="dW_p57skC6" resolve="latency" />
+          <node concept="2qmXGp" id="6kV3EBwnqO4" role="3TlMhI">
+            <node concept="2ZqYGZ" id="6kV3EBwnqOz" role="1ESnxz">
+              <ref role="2ZqYFj" node="6BXeK5CiNLq" resolve="baseLatency" />
             </node>
-            <node concept="2xC6$6" id="7XyBMvG4asT" role="1_9fRO" />
+            <node concept="2xC6$6" id="6kV3EBwqxco" role="1_9fRO" />
           </node>
         </node>
       </node>
+      <node concept="2vxuzR" id="6kV3EBwrHPO" role="1YhcTs">
+        <node concept="2qmXGp" id="6kV3EBwrHR9" role="3WnoGb">
+          <node concept="30g6Rq" id="6kV3EBwrHRG" role="1ESnxz" />
+          <node concept="2xC6$6" id="6kV3EBwrHQu" role="1_9fRO" />
+        </node>
+      </node>
+    </node>
+    <node concept="sklqP" id="dW_p57sk_G" role="sklmO">
       <node concept="3EozPd" id="6Z_RGEXdGCX" role="sklvC">
         <property role="TrG5h" value="mass" />
       </node>
