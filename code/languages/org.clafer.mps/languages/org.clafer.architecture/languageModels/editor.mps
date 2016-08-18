@@ -54,7 +54,6 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="ywuy" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd9(org.clafer.expr.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
-    <import index="x08t" ref="r:d521f1d2-8caa-4564-84c1-36914730aa5a(org.clafer.util.tags.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -10487,13 +10486,6 @@
       <node concept="pVoyu" id="3vl9z2f8Ng9" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="7hp4$a4rUuu">
-    <ref role="1XX52x" to="x08t:7hp4$a4mUt9" resolve="tag" />
-    <node concept="2SsqMj" id="7hp4$a4rUGt" role="2wV5jI" />
-    <node concept="2aJ2om" id="7hp4$a4rUGi" role="CpUAK">
-      <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
   </node>
 </model>

@@ -6,12 +6,18 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="jyho" ref="r:c0d845a2-4853-4b9b-a005-8551d02b2034(org.clafer.architecture.editor)" />
     <import index="x08t" ref="r:d521f1d2-8caa-4564-84c1-36914730aa5a(org.clafer.util.tags.structure)" implicit="true" />
     <import index="i580" ref="r:ae97e9b4-d6ce-43d6-9f06-d4b667c42f24(org.clafer.util.tags.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
+      </concept>
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -95,6 +101,13 @@
       </node>
       <node concept="2SsqMj" id="7hp4$a4mUKw" role="3EZMnx" />
       <node concept="l2Vlx" id="7hp4$a4mUKj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5fOb1BOsEU4">
+    <ref role="1XX52x" to="x08t:7hp4$a4mUt9" resolve="tag" />
+    <node concept="2SsqMj" id="5fOb1BOsEUd" role="2wV5jI" />
+    <node concept="2aJ2om" id="5fOb1BOsEU9" role="CpUAK">
+      <ref role="2$4xQ3" to="jyho:1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
   </node>
 </model>

@@ -11,12 +11,16 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
       <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
         <property id="7588428831955550663" name="role" index="Hh88m" />
         <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
@@ -50,6 +54,9 @@
       <property role="Hh88m" value="tag" />
       <node concept="trNpa" id="7hp4$a4mUJI" role="EQaZv">
         <ref role="trN6q" to="ddau:4csP6flST3m" resolve="ArchElement" />
+      </node>
+      <node concept="tn0Fv" id="5fOb1BOrll2" role="HhnKV">
+        <property role="tnX3d" value="false" />
       </node>
     </node>
   </node>
