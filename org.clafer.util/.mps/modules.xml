@@ -2,7 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.tags/org.clafer.util.tags.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.util.tags.sandbox/org.clafer.util.tags.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>

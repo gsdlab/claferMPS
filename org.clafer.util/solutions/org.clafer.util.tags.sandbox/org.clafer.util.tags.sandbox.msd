@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.clafer.architecture.referencemodel" uuid="0d295de9-76dc-4a2e-9845-e2d68d1079bb" moduleVersion="0" compileInMPS="true">
+<solution name="org.clafer.util.tags.sandbox" uuid="a9aa48d5-657b-4aff-9f0a-6569b6d49ba8" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -33,11 +33,10 @@
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" fqName="org.clafer.architecture" version="3" />
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" fqName="org.clafer.expr" version="0" />
-    <language id="5e8d2011-eb6c-491f-9520-19d12014a9bc" fqName="org.clafer.referenceModel" version="0" />
     <language id="f0b44ab8-bd30-416e-b267-f165b5e42b67" fqName="org.clafer.util.tags" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
+    <module reference="a9aa48d5-657b-4aff-9f0a-6569b6d49ba8(org.clafer.util.tags.sandbox)" version="0" />
   </dependencyVersions>
 </solution>
 
