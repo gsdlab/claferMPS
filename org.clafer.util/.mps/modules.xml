@@ -3,8 +3,10 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
-      <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.tags/org.clafer.util.tags.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.util.tags.sandbox/org.clafer.util.tags.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.milestone/org.clafer.util.milestone.mpl" folder="milestone" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.milestone/sandbox/org.clafer.util.milestone.sandbox.msd" folder="milestone" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.tags/org.clafer.util.tags.mpl" folder="tags" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.util.tags.sandbox/org.clafer.util.tags.sandbox.msd" folder="tags" />
     </projectModules>
   </component>
 </project>

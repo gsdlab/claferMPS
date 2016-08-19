@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="org.clafer.util.tags.sandbox" uuid="a9aa48d5-657b-4aff-9f0a-6569b6d49ba8" moduleVersion="0" compileInMPS="true">
+<solution name="org.clafer.util.milestone.sandbox" uuid="9d444f5c-3ac1-4258-bd5f-79b7f8019350" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -33,11 +33,11 @@
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" fqName="org.clafer.architecture" version="3" />
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" fqName="org.clafer.expr" version="0" />
-    <language id="19cc4ac9-bac2-4507-89f0-0035b38c3e6e" fqName="org.clafer.util.milestone" version="0" />
+    <language id="19cc4ac9-bac2-4507-89f0-0035b38c3e6e" fqName="org.clafer.util.milestone" version="-1" />
     <language id="f0b44ab8-bd30-416e-b267-f165b5e42b67" fqName="org.clafer.util.tags" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="a9aa48d5-657b-4aff-9f0a-6569b6d49ba8(org.clafer.util.tags.sandbox)" version="0" />
+    <module reference="9d444f5c-3ac1-4258-bd5f-79b7f8019350(org.clafer.util.milestone.sandbox)" version="0" />
   </dependencyVersions>
 </solution>
 
