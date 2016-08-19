@@ -3,10 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="jyho" ref="r:c0d845a2-4853-4b9b-a005-8551d02b2034(org.clafer.architecture.editor)" />
+    <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="u9qf" ref="r:80a82414-28cc-4e76-a693-b906633907a3(org.clafer.util.milestone.structure)" implicit="true" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
   </imports>
@@ -97,8 +99,6 @@
   <node concept="24kQdi" id="5fOb1BOtcWt">
     <ref role="1XX52x" to="u9qf:5fOb1BOtcVP" resolve="Milestone" />
     <node concept="3EZMnI" id="5fOb1BOtcWy" role="2wV5jI">
-      <node concept="2SsqMj" id="5fOb1BOtcWG" role="3EZMnx" />
-      <node concept="2iRfu4" id="5fOb1BOv7L7" role="2iSdaV" />
       <node concept="3EZMnI" id="5fOb1BOtcXl" role="3EZMnx">
         <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
         <node concept="VPM3Z" id="5fOb1BOtcXn" role="3F10Kt">
@@ -122,6 +122,8 @@
         </node>
         <node concept="l2Vlx" id="5fOb1BOtcXq" role="2iSdaV" />
       </node>
+      <node concept="2SsqMj" id="5fOb1BOtcWG" role="3EZMnx" />
+      <node concept="2iRfu4" id="5fOb1BOv7L7" role="2iSdaV" />
     </node>
   </node>
   <node concept="1h_SRR" id="5fOb1BOv8kb">
