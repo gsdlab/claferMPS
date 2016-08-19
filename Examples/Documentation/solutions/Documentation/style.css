@@ -1,0 +1,19 @@
+body>div {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.tocSection a {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-style: italic;
+  color: inherit;
+  text-decoration: none;
+
+}
+
+.tocSection a:hover {text-decoration: underline;}
+
+.tocSection .tocSection {
+  margin-left: 15px;
+}

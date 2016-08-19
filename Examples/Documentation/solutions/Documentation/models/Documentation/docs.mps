@@ -9,7 +9,9 @@
   </imports>
   <registry>
     <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
-      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB" />
+      <concept id="3350625596580275037" name="com.mbeddr.doc.gen_xhtml.structure.HTMLRenderer" flags="ng" index="1_07dB">
+        <property id="4457500422381329081" name="stylesheet" index="1jVmeX" />
+      </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -21,6 +23,9 @@
     </language>
     <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
       <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
+      <concept id="6165313375056012512" name="com.mbeddr.doc.structure.DocumentInclude" flags="ng" index="$CzcT">
+        <child id="6165313375056012515" name="ref" index="$CzcU" />
+      </concept>
       <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
         <reference id="6657644269295214800" name="config" index="G9hjw" />
         <child id="126932837435370865" name="authors" index="Wq1Bf" />
@@ -59,6 +64,7 @@
         <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
       </concept>
       <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
         <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
       </concept>
       <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
@@ -68,14 +74,28 @@
       <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
         <reference id="3350625596580225386" name="doc" index="1_0j5g" />
       </concept>
+      <concept id="3350625596580108709" name="com.mbeddr.doc.structure.SectRefWord" flags="ng" index="1_0GAv">
+        <reference id="3350625596580108719" name="target" index="1_0GAl" />
+      </concept>
       <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
         <child id="3350625596580089613" name="text" index="1_0LWR" />
       </concept>
       <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
         <child id="3350625596580064250" name="contents" index="1_0VJ0" />
       </concept>
+      <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
+        <property id="3350625596580064225" name="text" index="1_0VJr" />
+      </concept>
+      <concept id="3350625596580064455" name="com.mbeddr.doc.structure.Section" flags="ng" index="1_0VNX" />
       <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
         <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
+      </concept>
+      <concept id="3350625596579911760" name="com.mbeddr.doc.structure.EmptyDocContent" flags="ng" index="1_1sxE" />
+      <concept id="5378658552262903588" name="com.mbeddr.doc.structure.Item" flags="ng" index="3X6T9g">
+        <child id="5378658552262903589" name="text" index="3X6T9h" />
+      </concept>
+      <concept id="5378658552262893169" name="com.mbeddr.doc.structure.ItemList" flags="ng" index="3X6WG5">
+        <child id="5378658552262986137" name="items" index="3Xp5NH" />
       </concept>
     </language>
     <language id="f44f6b9a-bf30-4f73-866e-fac17c177409" name="com.mbeddr.doc.gen_latex">
@@ -106,7 +126,10 @@
     <property role="TrG5h" value="Index" />
     <ref role="G9hjw" node="5fOb1BOtaYX" resolve="Config" />
     <node concept="1_0j5j" id="5fOb1BOtbKu" role="1DXQ57">
-      <ref role="1_0j5g" node="5fOb1BOtbII" resolve="Introduction" />
+      <ref role="1_0j5g" node="7Ji33qw4gZH" resolve="Introduction" />
+    </node>
+    <node concept="1_0j5j" id="7Ji33qw4gPU" role="1DXQ57">
+      <ref role="1_0j5g" node="7Ji33qw4e$2" resolve="Abstract" />
     </node>
     <node concept="Wq1Bs" id="5fOb1BOtb10" role="Wq1Bf">
       <property role="Wq1Bt" value="Eldar Khalilov" />
@@ -129,17 +152,30 @@
       <property role="Wq1Bt" value="Krzysztof Czarnecki" />
     </node>
     <node concept="3xmJbL" id="5fOb1BOtbKz" role="1_0VJ0" />
-    <node concept="3z_lpz" id="5fOb1BOtbWJ" role="1_0VJ0">
-      <property role="TrG5h" value="d" />
-      <node concept="OjmMv" id="5fOb1BOtbWL" role="3z_lpS">
-        <node concept="19SGf9" id="5fOb1BOtbWM" role="OjmMu">
-          <node concept="19SUe$" id="5fOb1BOtbWN" role="19SJt6" />
+    <node concept="1_1sxE" id="7Ji33qw4gOB" role="1_0VJ0">
+      <property role="TrG5h" value="empty_-1" />
+    </node>
+    <node concept="3X6WG5" id="7Ji33qw4gPc" role="1_0VJ0">
+      <node concept="3X6T9g" id="7Ji33qw4gPd" role="3Xp5NH">
+        <node concept="OjmMv" id="7Ji33qw4gPe" role="3X6T9h">
+          <node concept="19SGf9" id="7Ji33qw4gPf" role="OjmMu">
+            <node concept="19SUe$" id="7Ji33qw4gPC" role="19SJt6" />
+            <node concept="1_0GAv" id="7Ji33qw4gPB" role="19SJt6">
+              <ref role="1_0GAl" node="7Ji33qw4gOc" resolve="abstract" />
+            </node>
+            <node concept="19SUe$" id="7Ji33qw4gPD" role="19SJt6" />
+          </node>
         </node>
       </node>
-      <node concept="2bctqb" id="5fOb1BOtbWP" role="3z_lpT" />
-      <node concept="2NCZwO" id="5fOb1BOtbWR" role="3z_lpI">
-        <node concept="2NCMab" id="5fOb1BOtbXj" role="2NCMaf">
-          <ref role="2NCMaa" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+      <node concept="3X6T9g" id="7Ji33qw4gQ2" role="3Xp5NH">
+        <node concept="OjmMv" id="7Ji33qw4gQ3" role="3X6T9h">
+          <node concept="19SGf9" id="7Ji33qw4gQ4" role="OjmMu">
+            <node concept="19SUe$" id="7Ji33qw4h1t" role="19SJt6" />
+            <node concept="1_0GAv" id="7Ji33qw4h1s" role="19SJt6">
+              <ref role="1_0GAl" node="7Ji33qw4gZI" resolve="introduction" />
+            </node>
+            <node concept="19SUe$" id="7Ji33qw4h1u" role="19SJt6" />
+          </node>
         </node>
       </node>
     </node>
@@ -170,8 +206,8 @@
       <property role="2SbEId" value="temp" />
       <ref role="2SbEIe" node="5fOb1BOtaYY" resolve="temp" />
     </node>
-    <node concept="1_0j5j" id="5fOb1BOtb52" role="30Gjbj">
-      <ref role="1_0j5g" node="5fOb1BOtaYm" resolve="Index" />
+    <node concept="1_0j5j" id="7Ji33qw4hdN" role="30Gjbj">
+      <ref role="1_0j5g" node="7Ji33qw4hcH" resolve="Index2" />
     </node>
     <node concept="OjmMv" id="5fOb1BOtbI1" role="WqcPc">
       <node concept="19SGf9" id="5fOb1BOtbI2" role="OjmMu">
@@ -180,34 +216,128 @@
         </node>
       </node>
     </node>
-    <node concept="1_07dB" id="5fOb1BOtbWw" role="30GjaH" />
-    <node concept="1jVoCB" id="5fOb1BOtbWx" role="30Gjbi">
+    <node concept="1jVoCB" id="7Ji33qw4i2t" role="30GjaH">
       <property role="43dxY" value="prolog.ltx" />
       <property role="1jVoCx" value="llnc" />
     </node>
+    <node concept="1_07dB" id="7Ji33qw4i2u" role="30Gjbi">
+      <property role="1jVmeX" value="../../../style.css" />
+    </node>
   </node>
-  <node concept="1_1swa" id="5fOb1BOtbII">
+  <node concept="1_1swa" id="7Ji33qw4e$2">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="Abstract" />
+    <ref role="G9hjw" node="5fOb1BOtaYX" resolve="Config" />
+    <node concept="1_0VNX" id="7Ji33qw4gOc" role="1_0VJ0">
+      <property role="TrG5h" value="abstract" />
+      <property role="1_0VJr" value="Abstract" />
+      <node concept="1_0LV8" id="7Ji33qw4gOk" role="1_0VJ0">
+        <node concept="19SGf9" id="7Ji33qw4gOl" role="1_0LWR">
+          <node concept="19SUe$" id="7Ji33qw4gOm" role="19SJt6">
+            <property role="19SUeA" value="Modern automotive electric/electronic (E/E) architectures are&#10;growing to the point where architects can no longer manually predict the&#10;effects of their design decisions. Thus, in addition to applying an architecture&#10;reference model to decompose their architectures, they also require tools for&#10;synthesizing and evaluating candidate architectures during the design process.&#10;Clafer is a modeling language, which has been used to model variable multilayer,&#10;multi-perspective automotive system architectures according to an architecture&#10;reference model. Clafer tools allow architects to synthesize optimal&#10;candidates and evaluate effects of their design decisions. However, since Clafer&#10;is a general-purpose structural modeling language, it does not help the architects&#10;in building models conforming to the given architecture reference model.&#10;In this paper, we present an E/E architecture domain-specific language (DSL)&#10;built on top of Clafer, which embodies the reference model and which guides&#10;the architects in correctly applying it.We evaluate the DSL and its implementation&#10;by modeling two existing automotive systems, which were originally&#10;modeled in plain Clafer. The evaluation showed that by using the DSL, an evaluator&#10;obtained correctmodels by construction because the DSL helped prevent&#10;typical errors that are easy to make in plain Clafer. The evaluator was also&#10;able to synthesize and evaluate candidate architectures as with plain Clafer." />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1_1swa" id="7Ji33qw4gZH">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="Introduction" />
     <ref role="G9hjw" node="5fOb1BOtaYX" resolve="Config" />
-    <node concept="1_0LV8" id="5fOb1BOtbIZ" role="1_0VJ0">
-      <node concept="19SGf9" id="5fOb1BOtbJ0" role="1_0LWR">
-        <node concept="19SUe$" id="5fOb1BOtbJ1" role="19SJt6">
-          <property role="19SUeA" value="With the increasing number of intelligent automotive features and the push towards&#10;autonomous cars, modern automotive electric/electronic (E/E) architectures are&#10;becoming increasingly complex. The architects can no longer create and evaluate&#10;candidate architectures manually to understand the effects of their design decisions.&#10;Thus, architects require powerful modeling and reasoning tools to allow them to&#10;synthesize candidate architectures given some design decisions and discover the correct&#10;and optimal ones automatically." />
+    <node concept="1_0VNX" id="7Ji33qw4gZI" role="1_0VJ0">
+      <property role="TrG5h" value="introduction" />
+      <property role="1_0VJr" value="Introduction" />
+      <node concept="1_0LV8" id="7Ji33qw4gZN" role="1_0VJ0">
+        <node concept="19SGf9" id="7Ji33qw4gZO" role="1_0LWR">
+          <node concept="19SUe$" id="7Ji33qw4gZP" role="19SJt6">
+            <property role="19SUeA" value="With the increasing number of intelligent automotive features and the push towards&#10;autonomous cars, modern automotive electric/electronic (E/E) architectures are&#10;becoming increasingly complex. The architects can no longer create and evaluate&#10;candidate architectures manually to understand the effects of their design decisions.&#10;Thus, architects require powerful modeling and reasoning tools to allow them to&#10;synthesize candidate architectures given some design decisions and discover the correct&#10;and optimal ones automatically." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="7Ji33qw4h0l" role="1_0VJ0">
+        <node concept="19SGf9" id="7Ji33qw4h0m" role="1_0LWR">
+          <node concept="19SUe$" id="7Ji33qw4h0n" role="19SJt6">
+            <property role="19SUeA" value="One approach to conquering the complexity is using a reference model which prescribes&#10;a certain way of decomposing the overall architecture into layers and capturing&#10;the crosscutting concerns, including variability and quality.We present such a reference&#10;model in Section 2. Furthermore, in order to be able to automatically reason about an&#10;E/E architecture (evaluate the effect of design decisions), the architecture must be represented&#10;using a formal modeling language which is supported by a scalable automated&#10;reasoner. One such language is Clafer [1], and we introduce architectural modeling&#10;using Clafer in Section 3. However, Clafer is a general-purpose structural modeling&#10;language which does not provide the architectural concepts from the reference model&#10;as first-class language constructs. Thus, to make the modeling and reasoning power of&#10;Clafer available to practitioners who are not Clafer experts, we implemented an architecture&#10;domain-specific language (DSL) based on the reference model to guide users&#10;in correctly and consistently applying the reference model (Section 4). Our implementation&#10;relies on the JetBrains MPS language workbench [2], whereby we implemented&#10;Clafer as anMPS language and the Architecture DSL as an extension of Clafer in MPS." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="7Ji33qw4h0P" role="1_0VJ0">
+        <node concept="19SGf9" id="7Ji33qw4h0Q" role="1_0LWR">
+          <node concept="19SUe$" id="7Ji33qw4h0R" role="19SJt6">
+            <property role="19SUeA" value="We present the design of the Architecture DSL and how it addresses the challenges&#10;of applying plain Clafer to architectural modeling in Section 5. We evaluate our work&#10;by using the DSL to model two existing architectures of two automotive subsystems&#10;which were previously modeled in plain Clafer [3]. The goal of the evaluation is to&#10;see whether the DSL improves the modeling experience compared to plain Clafer&#10;while still supporting the reasoning capabilities. We present the key observations and&#10;discussion in Section 6. We briefly summarize the related work in Section 7, and&#10;conclude the paper in Section 8." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0LV8" id="7Ji33qw4h00" role="1_0VJ0">
+        <node concept="19SGf9" id="7Ji33qw4h01" role="1_0LWR">
+          <node concept="19SUe$" id="7Ji33qw4h02" role="19SJt6" />
         </node>
       </node>
     </node>
-    <node concept="1_0LV8" id="5fOb1BOtbJc" role="1_0VJ0">
-      <node concept="19SGf9" id="5fOb1BOtbJd" role="1_0LWR">
-        <node concept="19SUe$" id="5fOb1BOtbJe" role="19SJt6">
-          <property role="19SUeA" value="One approach to conquering the complexity is using a reference model which prescribes&#10;a certain way of decomposing the overall architecture into layers and capturing&#10;the crosscutting concerns, including variability and quality.We present such a reference&#10;model in Section 2. Furthermore, in order to be able to automatically reason about an&#10;E/E architecture (evaluate the effect of design decisions), the architecture must be represented&#10;using a formal modeling language which is supported by a scalable automated&#10;reasoner. One such language is Clafer [1], and we introduce architectural modeling&#10;using Clafer in Section 3. However, Clafer is a general-purpose structural modeling&#10;language which does not provide the architectural concepts from the reference model&#10;as first-class language constructs. Thus, to make the modeling and reasoning power of&#10;Clafer available to practitioners who are not Clafer experts, we implemented an architecture&#10;domain-specific language (DSL) based on the reference model to guide users&#10;in correctly and consistently applying the reference model (Section 4). Our implementation&#10;relies on the JetBrains MPS language workbench [2], whereby we implemented&#10;Clafer as anMPS language and the Architecture DSL as an extension of Clafer in MPS." />
+  </node>
+  <node concept="1_1swa" id="7Ji33qw4hcH">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="Index2" />
+    <ref role="G9hjw" node="5fOb1BOtaYX" resolve="Config" />
+    <node concept="1_0j5j" id="7Ji33qw4hcI" role="1DXQ57">
+      <ref role="1_0j5g" node="7Ji33qw4gZH" resolve="Introduction" />
+    </node>
+    <node concept="1_0j5j" id="7Ji33qw4hcJ" role="1DXQ57">
+      <ref role="1_0j5g" node="7Ji33qw4e$2" resolve="Abstract" />
+    </node>
+    <node concept="Wq1Bs" id="7Ji33qw4hcK" role="Wq1Bf">
+      <property role="Wq1Bt" value="Eldar Khalilov" />
+      <property role="Wq1Bq" value="ekhalilov@gsd.uwaterloo.ca" />
+    </node>
+    <node concept="Wq1Bs" id="7Ji33qw4hcL" role="Wq1Bf">
+      <property role="Wq1Bt" value="Jordan Ross" />
+      <property role="Wq1Bq" value="j25ross@gsd.uwaterloo.ca" />
+    </node>
+    <node concept="Wq1Bs" id="7Ji33qw4hcM" role="Wq1Bf">
+      <property role="Wq1Bt" value="Michał Antkiewicz" />
+      <property role="Wq1Bq" value="mantkiew@gsd.uwaterloo.ca" />
+    </node>
+    <node concept="Wq1Bs" id="7Ji33qw4hcN" role="Wq1Bf">
+      <property role="Wq1Bt" value="Markus Völter" />
+      <property role="Wq1Bq" value="voelter@gmail.com" />
+    </node>
+    <node concept="Wq1Bs" id="7Ji33qw4hcO" role="Wq1Bf">
+      <property role="Wq1Bq" value="kczarnec@gsd.uwaterloo.ca" />
+      <property role="Wq1Bt" value="Krzysztof Czarnecki" />
+    </node>
+    <node concept="1_0VNX" id="7Ji33qw4hpm" role="1_0VJ0">
+      <property role="TrG5h" value="index" />
+      <property role="1_0VJr" value="Modeling and Optimizing Automotive Electric/Electronic (E/E) Architectures" />
+      <node concept="3xmJbL" id="7Ji33qw4hHO" role="1_0VJ0" />
+      <node concept="1_1sxE" id="7Ji33qw4hQT" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="3z_lpz" id="7Ji33qw4hRC" role="1_0VJ0">
+        <property role="TrG5h" value="attr" />
+        <property role="3z_lpJ" value="true" />
+        <node concept="OjmMv" id="7Ji33qw4hRE" role="3z_lpS">
+          <node concept="19SGf9" id="7Ji33qw4hRF" role="OjmMu">
+            <node concept="19SUe$" id="7Ji33qw4hRG" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="2bctqb" id="7Ji33qw4hRI" role="3z_lpT" />
+        <node concept="2NCZwO" id="7Ji33qw4hRK" role="3z_lpI">
+          <node concept="2NCMab" id="7Ji33qw4hSu" role="2NCMaf">
+            <ref role="2NCMaa" to="tpck:4uZwTti3_$T" resolve="Attribute" />
+          </node>
         </node>
       </node>
-    </node>
-    <node concept="1_0LV8" id="5fOb1BOtbJW" role="1_0VJ0">
-      <node concept="19SGf9" id="5fOb1BOtbJX" role="1_0LWR">
-        <node concept="19SUe$" id="5fOb1BOtbJY" role="19SJt6">
-          <property role="19SUeA" value="We present the design of the Architecture DSL and how it addresses the challenges&#10;of applying plain Clafer to architectural modeling in Section 5. We evaluate our work&#10;by using the DSL to model two existing architectures of two automotive subsystems&#10;which were previously modeled in plain Clafer [3]. The goal of the evaluation is to&#10;see whether the DSL improves the modeling experience compared to plain Clafer&#10;while still supporting the reasoning capabilities. We present the key observations and&#10;discussion in Section 6. We briefly summarize the related work in Section 7, and&#10;conclude the paper in Section 8." />
+      <node concept="1_1sxE" id="7Ji33qw4hHx" role="1_0VJ0">
+        <property role="TrG5h" value="empty_-1" />
+      </node>
+      <node concept="$CzcT" id="7Ji33qw4hDn" role="1_0VJ0">
+        <node concept="1_0j5j" id="7Ji33qw4hDo" role="$CzcU">
+          <ref role="1_0j5g" node="7Ji33qw4e$2" resolve="Abstract" />
+        </node>
+      </node>
+      <node concept="$CzcT" id="7Ji33qw4hpP" role="1_0VJ0">
+        <node concept="1_0j5j" id="7Ji33qw4hq5" role="$CzcU">
+          <ref role="1_0j5g" node="7Ji33qw4gZH" resolve="Introduction" />
         </node>
       </node>
     </node>
