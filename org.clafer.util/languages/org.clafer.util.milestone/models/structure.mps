@@ -32,7 +32,9 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
+        <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
@@ -41,6 +43,12 @@
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
+      </concept>
+      <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
+        <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
+        <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -73,7 +81,6 @@
   <node concept="1TIwiD" id="5fOb1BO_2wk">
     <property role="1pbfSe" value="1216893997" />
     <property role="TrG5h" value="MilestoneCondition" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="5fOb1BO_2zT" role="1TKVEl">
       <property role="TrG5h" value="minVersion" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -81,15 +88,6 @@
     <node concept="1TJgyi" id="4pZCXPVzq9" role="1TKVEl">
       <property role="TrG5h" value="condition" />
       <ref role="AX2Wp" node="2OawaSCo90A" resolve="MilestoneConditionEnum" />
-    </node>
-    <node concept="M6xJ_" id="5fOb1BO_2zK" role="lGtFl">
-      <property role="Hh88m" value="minVersion" />
-      <node concept="tn0Fv" id="4pZCXPVLq7" role="HhnKV">
-        <property role="tnX3d" value="true" />
-      </node>
-      <node concept="trNpa" id="5fOb1BO_2zQ" role="EQaZv">
-        <ref role="trN6q" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
-      </node>
     </node>
   </node>
   <node concept="AxPO7" id="2OawaSCo90A">
@@ -120,6 +118,62 @@
   <node concept="PlHQZ" id="4pZCXPVIQi">
     <property role="1pbfSe" value="1997073441" />
     <property role="TrG5h" value="IVersionable" />
+  </node>
+  <node concept="1TIwiD" id="4pZCXPZ3lk">
+    <property role="1pbfSe" value="1997943779" />
+    <property role="TrG5h" value="MilestoneFilter" />
+    <property role="34LRSv" value="Milestone Filter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4pZCXPZ3oR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conditions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5fOb1BO_2wk" resolve="MilestoneCondition" />
+    </node>
+    <node concept="1TJgyi" id="4pZCXPZ$ID" role="1TKVEl">
+      <property role="TrG5h" value="handler" />
+      <ref role="AX2Wp" node="4pZCXPZ$IH" resolve="MilestoneFilterHandler" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4pZCXPZt2B">
+    <property role="1pbfSe" value="1998049078" />
+    <property role="TrG5h" value="MilestoneController" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="4pZCXPZt_u" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="filters" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4pZCXPZ3lk" resolve="MilestoneFilter" />
+    </node>
+    <node concept="M6xJ_" id="4pZCXPZtzn" role="lGtFl">
+      <property role="Hh88m" value="controller" />
+      <node concept="tn0Fv" id="4pZCXPZtzq" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="4pZCXPZtWj" role="EQaZv">
+        <ref role="trN6q" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
+      </node>
+    </node>
+  </node>
+  <node concept="AxPO7" id="4pZCXPZ$IH">
+    <property role="TrG5h" value="MilestoneFilterHandler" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="4pZCXPZ$II" role="M5hS2">
+      <property role="1uS6qv" value="visibility" />
+      <property role="1uS6qo" value="visibility" />
+    </node>
+    <node concept="M4N5e" id="4pZCXPZ$JL" role="M5hS2">
+      <property role="1uS6qv" value="red" />
+      <property role="1uS6qo" value="red" />
+    </node>
+    <node concept="M4N5e" id="4pZCXPZ$JS" role="M5hS2">
+      <property role="1uS6qv" value="green" />
+      <property role="1uS6qo" value="green" />
+    </node>
+    <node concept="M4N5e" id="4pZCXPZ$K2" role="M5hS2">
+      <property role="1uS6qo" value="orange" />
+      <property role="1uS6qv" value="orange" />
+    </node>
   </node>
 </model>
 

@@ -51,11 +51,13 @@
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
+      <concept id="1192795771125" name="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" flags="in" index="2SaL7w" />
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
+        <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
@@ -67,8 +69,8 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -194,12 +196,29 @@
             <node concept="2OqwBi" id="5fOb1BO_2E2" role="2Oq$k0">
               <node concept="2Sf5sV" id="5fOb1BO_2E3" role="2Oq$k0" />
               <node concept="3CFZ6_" id="5fOb1BO_2E4" role="2OqNvi">
-                <node concept="3CFYIy" id="5fOb1BO_31R" role="3CFYIz">
-                  <ref role="3CFYIx" to="u9qf:5fOb1BO_2wk" resolve="MilestoneCondition" />
+                <node concept="3CFYIy" id="4pZCXPZuj2" role="3CFYIz">
+                  <ref role="3CFYIx" to="u9qf:4pZCXPZt2B" resolve="MilestoneController" />
                 </node>
               </node>
             </node>
-            <node concept="WFELt" id="4pZCXPYD3y" role="2OqNvi" />
+            <node concept="zfrQC" id="4pZCXPZw5T" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="4pZCXPZv6g" role="2ZfVeh">
+      <node concept="3clFbS" id="4pZCXPZv6h" role="2VODD2">
+        <node concept="3clFbF" id="4pZCXPZva7" role="3cqZAp">
+          <node concept="2OqwBi" id="4pZCXPZvDM" role="3clFbG">
+            <node concept="2OqwBi" id="4pZCXPZvia" role="2Oq$k0">
+              <node concept="2Sf5sV" id="4pZCXPZva6" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="4pZCXPZvzb" role="2OqNvi">
+                <node concept="3CFYIy" id="4pZCXPZvAC" role="3CFYIz">
+                  <ref role="3CFYIx" to="u9qf:4pZCXPZt2B" resolve="MilestoneController" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="4pZCXPZvQA" role="2OqNvi" />
           </node>
         </node>
       </node>
