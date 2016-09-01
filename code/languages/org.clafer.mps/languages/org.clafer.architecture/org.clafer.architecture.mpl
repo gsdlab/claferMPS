@@ -136,6 +136,7 @@
     <dependency reexport="true">0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)</dependency>
     <dependency reexport="false">5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)</dependency>
     <dependency reexport="true">0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)</dependency>
+    <dependency reexport="true">19cc4ac9-bac2-4507-89f0-0035b38c3e6e(org.clafer.util.milestone)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>

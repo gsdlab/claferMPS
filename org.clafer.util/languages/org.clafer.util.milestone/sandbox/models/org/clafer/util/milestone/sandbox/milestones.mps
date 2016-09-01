@@ -9,6 +9,18 @@
   <imports />
   <registry>
     <language id="19cc4ac9-bac2-4507-89f0-0035b38c3e6e" name="org.clafer.util.milestone">
+      <concept id="6011591716833075931" name="org.clafer.util.milestone.structure.MilestoneCustomType" flags="ng" index="23Ulgb">
+        <property id="6011591716833076912" name="b" index="23Ul1w" />
+        <property id="6011591716833076904" name="r" index="23Ul1S" />
+        <property id="6011591716833076907" name="g" index="23Ul1V" />
+        <property id="6011591716833261216" name="visibility" index="23US1K" />
+      </concept>
+      <concept id="6011591716833075889" name="org.clafer.util.milestone.structure.MilestoneTable" flags="ng" index="23Ulhx">
+        <child id="6011591716833075921" name="types" index="23Ulg1" />
+      </concept>
+      <concept id="6011591716833072572" name="org.clafer.util.milestone.structure.MilestoneProperties" flags="ng" index="23UmdG">
+        <child id="6011591716833136111" name="typesTable" index="23U7GZ" />
+      </concept>
       <concept id="6049508689454573588" name="org.clafer.util.milestone.structure.MilestoneCondition" flags="ng" index="2Bo0gd">
         <property id="6049508689454573817" name="minVersion" index="2Bo0jw" />
         <property id="79374360568018569" name="condition" index="1OXWw6" />
@@ -20,7 +32,8 @@
         <child id="79374360569043294" name="filters" index="1OT2vh" />
       </concept>
       <concept id="79374360568935764" name="org.clafer.util.milestone.structure.MilestoneFilter" flags="ng" index="1OTsJr">
-        <property id="79374360569072553" name="handler" index="1OTVkA" />
+        <property id="6011591716832854312" name="isActive" index="23VrvS" />
+        <reference id="6011591716833208632" name="handler" index="23UPZC" />
         <child id="79374360568935991" name="conditions" index="1OTsyS" />
       </concept>
     </language>
@@ -252,8 +265,8 @@
         <node concept="37mRIm" id="4pZCXPZ6Do" role="37mRID">
           <property role="37mO49" value="79374360568888723" />
           <node concept="gqqVs" id="4pZCXPZ6Dn" role="37mO4d">
-            <property role="gqqTZ" value="567.0001001358032" />
-            <property role="gqqTW" value="22.526315789473685" />
+            <property role="gqqTZ" value="544.1930825919436" />
+            <property role="gqqTW" value="41.824561403508774" />
             <property role="gqqTX" value="183.0" />
             <property role="gqqTy" value="36.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -275,23 +288,66 @@
       <property role="2Bo0jw" value="14" />
     </node>
     <node concept="1OT2SC" id="4pZCXPZyr0" role="lGtFl">
-      <node concept="1OTsJr" id="4pZCXPZyr5" role="1OT2vh">
-        <property role="1OTVkA" value="red" />
-        <node concept="2Bo0gd" id="4pZCXPZyrb" role="1OTsyS">
-          <property role="1OXWw6" value="0" />
-          <property role="2Bo0jw" value="16" />
-        </node>
-      </node>
-      <node concept="1OTsJr" id="6ONwzYgN0dH" role="1OT2vh">
-        <property role="1OTVkA" value="orange" />
-        <node concept="2Bo0gd" id="6ONwzYgN0dI" role="1OTsyS">
+      <node concept="1OTsJr" id="5dHtH3gyqCy" role="1OT2vh">
+        <property role="23VrvS" value="true" />
+        <ref role="23UPZC" node="5dHtH3gxZyG" resolve="Visibility" />
+        <node concept="2Bo0gd" id="5dHtH3gyqCz" role="1OTsyS">
           <property role="2Bo0jw" value="14" />
           <property role="1OXWw6" value="3" />
         </node>
-        <node concept="2Bo0gd" id="6ONwzYgN0dR" role="1OTsyS">
-          <property role="2Bo0jw" value="15" />
+        <node concept="2Bo0gd" id="5dHtH3gyyos" role="1OTsyS">
           <property role="1OXWw6" value="1" />
+          <property role="2Bo0jw" value="17" />
         </node>
+      </node>
+      <node concept="1OTsJr" id="5dHtH3gyyoG" role="1OT2vh">
+        <property role="23VrvS" value="true" />
+        <ref role="23UPZC" node="5dHtH3gy686" resolve="Red" />
+        <node concept="2Bo0gd" id="5dHtH3gyyoH" role="1OTsyS">
+          <property role="2Bo0jw" value="14" />
+          <property role="1OXWw6" value="3" />
+        </node>
+        <node concept="2Bo0gd" id="5dHtH3gyyp8" role="1OTsyS">
+          <property role="1OXWw6" value="1" />
+          <property role="2Bo0jw" value="16" />
+        </node>
+      </node>
+      <node concept="1OTsJr" id="5dHtH3gyyoS" role="1OT2vh">
+        <property role="23VrvS" value="true" />
+        <ref role="23UPZC" node="5dHtH3gy68i" resolve="Orange" />
+        <node concept="2Bo0gd" id="5dHtH3gyyoT" role="1OTsyS">
+          <property role="1OXWw6" value="0" />
+          <property role="2Bo0jw" value="15" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="23UmdG" id="5dHtH3gxnmL">
+    <property role="TrG5h" value="Types" />
+    <node concept="23Ulhx" id="5dHtH3gxnmM" role="23U7GZ">
+      <node concept="23Ulgb" id="5dHtH3gxZyG" role="23Ulg1">
+        <property role="TrG5h" value="Visibility" />
+        <property role="23US1K" value="true" />
+      </node>
+      <node concept="23Ulgb" id="5dHtH3gy686" role="23Ulg1">
+        <property role="TrG5h" value="Red" />
+        <property role="23Ul1S" value="234" />
+        <property role="23Ul1V" value="153" />
+        <property role="23Ul1w" value="153" />
+      </node>
+      <node concept="23Ulgb" id="5dHtH3gy68b" role="23Ulg1">
+        <property role="23US1K" value="false" />
+        <property role="TrG5h" value="Green" />
+        <property role="23Ul1S" value="147" />
+        <property role="23Ul1V" value="196" />
+        <property role="23Ul1w" value="125" />
+      </node>
+      <node concept="23Ulgb" id="5dHtH3gy68i" role="23Ulg1">
+        <property role="23US1K" value="false" />
+        <property role="TrG5h" value="Orange" />
+        <property role="23Ul1S" value="246" />
+        <property role="23Ul1V" value="178" />
+        <property role="23Ul1w" value="107" />
       </node>
     </node>
   </node>
