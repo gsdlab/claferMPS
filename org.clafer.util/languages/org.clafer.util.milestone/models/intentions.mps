@@ -6,7 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
     <import index="u9qf" ref="r:80a82414-28cc-4e76-a693-b906633907a3(org.clafer.util.milestone.structure)" implicit="true" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
   </imports>
@@ -112,7 +111,7 @@
   </registry>
   <node concept="2S6QgY" id="5fOb1BOtdvs">
     <property role="TrG5h" value="Milestone_addVersion" />
-    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <ref role="2ZfgGC" to="u9qf:4pZCXPVIQi" resolve="IVersionable" />
     <node concept="2S6ZIM" id="5fOb1BOtdvt" role="2ZfVej">
       <node concept="3clFbS" id="5fOb1BOtdvu" role="2VODD2">
         <node concept="3clFbF" id="5fOb1BOtdx2" role="3cqZAp">

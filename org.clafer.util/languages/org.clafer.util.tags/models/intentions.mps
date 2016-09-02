@@ -7,7 +7,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
     <import index="x08t" ref="r:d521f1d2-8caa-4564-84c1-36914730aa5a(org.clafer.util.tags.structure)" implicit="true" />
   </imports>
   <registry>
@@ -78,7 +77,7 @@
   </registry>
   <node concept="2S6QgY" id="7hp4$a4mVn3">
     <property role="TrG5h" value="AddGreenTag" />
-    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <ref role="2ZfgGC" to="x08t:7bA4V6KyOHz" resolve="ITaggable" />
     <node concept="2S6ZIM" id="7hp4$a4mVn4" role="2ZfVej">
       <node concept="3clFbS" id="7hp4$a4mVn5" role="2VODD2">
         <node concept="3clFbF" id="7hp4$a4mVoz" role="3cqZAp">
@@ -96,7 +95,7 @@
               <node concept="2Sf5sV" id="7hp4$a4mVwE" role="2Oq$k0" />
               <node concept="3CFZ6_" id="7hp4$a4mVKO" role="2OqNvi">
                 <node concept="3CFYIy" id="7hp4$a4mVLp" role="3CFYIz">
-                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="tag" />
+                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
                 </node>
               </node>
             </node>
@@ -110,7 +109,7 @@
                 <node concept="2Sf5sV" id="5fOb1BOrbJE" role="2Oq$k0" />
                 <node concept="3CFZ6_" id="5fOb1BOrc1M" role="2OqNvi">
                   <node concept="3CFYIy" id="5fOb1BOrc25" role="3CFYIz">
-                    <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="tag" />
+                    <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
                   </node>
                 </node>
               </node>
@@ -132,7 +131,7 @@
   </node>
   <node concept="2S6QgY" id="5fOb1BOrcIW">
     <property role="TrG5h" value="AddOrangeTag" />
-    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <ref role="2ZfgGC" to="x08t:7bA4V6KyOHz" resolve="ITaggable" />
     <node concept="2S6ZIM" id="5fOb1BOrcIX" role="2ZfVej">
       <node concept="3clFbS" id="5fOb1BOrcIY" role="2VODD2">
         <node concept="3clFbF" id="5fOb1BOrcIZ" role="3cqZAp">
@@ -150,7 +149,7 @@
               <node concept="2Sf5sV" id="5fOb1BOrcJ6" role="2Oq$k0" />
               <node concept="3CFZ6_" id="5fOb1BOrcJ7" role="2OqNvi">
                 <node concept="3CFYIy" id="5fOb1BOrcJ8" role="3CFYIz">
-                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="tag" />
+                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
                 </node>
               </node>
             </node>
@@ -167,7 +166,7 @@
                 <node concept="2Sf5sV" id="5fOb1BOrcJf" role="2Oq$k0" />
                 <node concept="3CFZ6_" id="5fOb1BOrcJg" role="2OqNvi">
                   <node concept="3CFYIy" id="5fOb1BOrcJh" role="3CFYIz">
-                    <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="tag" />
+                    <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
                   </node>
                 </node>
               </node>
@@ -186,7 +185,7 @@
   </node>
   <node concept="2S6QgY" id="5fOb1BOrdnC">
     <property role="TrG5h" value="AddRedTag" />
-    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <ref role="2ZfgGC" to="x08t:7bA4V6KyOHz" resolve="ITaggable" />
     <node concept="2S6ZIM" id="5fOb1BOrdnD" role="2ZfVej">
       <node concept="3clFbS" id="5fOb1BOrdnE" role="2VODD2">
         <node concept="3clFbF" id="5fOb1BOrdnF" role="3cqZAp">
@@ -204,7 +203,7 @@
               <node concept="2Sf5sV" id="5fOb1BOrdnM" role="2Oq$k0" />
               <node concept="3CFZ6_" id="5fOb1BOrdnN" role="2OqNvi">
                 <node concept="3CFYIy" id="5fOb1BOrdnO" role="3CFYIz">
-                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="tag" />
+                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
                 </node>
               </node>
             </node>
@@ -218,7 +217,7 @@
                 <node concept="2Sf5sV" id="5fOb1BOrdnV" role="2Oq$k0" />
                 <node concept="3CFZ6_" id="5fOb1BOrdnW" role="2OqNvi">
                   <node concept="3CFYIy" id="5fOb1BOrdnX" role="3CFYIz">
-                    <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="tag" />
+                    <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
                   </node>
                 </node>
               </node>
@@ -240,7 +239,7 @@
   </node>
   <node concept="2S6QgY" id="5fOb1BOrjci">
     <property role="TrG5h" value="DeleteTag" />
-    <ref role="2ZfgGC" to="ddau:4csP6flST3m" resolve="ArchElement" />
+    <ref role="2ZfgGC" to="x08t:7bA4V6KyOHz" resolve="ITaggable" />
     <node concept="2S6ZIM" id="5fOb1BOrjcj" role="2ZfVej">
       <node concept="3clFbS" id="5fOb1BOrjck" role="2VODD2">
         <node concept="3clFbF" id="5fOb1BOrjcl" role="3cqZAp">
@@ -258,7 +257,7 @@
               <node concept="2Sf5sV" id="5fOb1BOrjcs" role="2Oq$k0" />
               <node concept="3CFZ6_" id="5fOb1BOrjct" role="2OqNvi">
                 <node concept="3CFYIy" id="5fOb1BOrjcu" role="3CFYIz">
-                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="tag" />
+                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
                 </node>
               </node>
             </node>

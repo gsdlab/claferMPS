@@ -12,12 +12,7 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
-        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
-      </concept>
-      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
-        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
-      </concept>
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -73,7 +68,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="7hp4$a4mUKb">
-    <ref role="1XX52x" to="x08t:7hp4$a4mUt9" resolve="tag" />
+    <ref role="1XX52x" to="x08t:7hp4$a4mUt9" resolve="Tag" />
     <node concept="3EZMnI" id="7hp4$a4mUKg" role="2wV5jI">
       <node concept="3F0ifn" id="5fOb1BOr2r4" role="3EZMnx">
         <property role="3F0ifm" value="tag" />
@@ -101,13 +96,6 @@
       </node>
       <node concept="2SsqMj" id="7hp4$a4mUKw" role="3EZMnx" />
       <node concept="l2Vlx" id="7hp4$a4mUKj" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="5fOb1BOsEU4">
-    <ref role="1XX52x" to="x08t:7hp4$a4mUt9" resolve="tag" />
-    <node concept="2SsqMj" id="5fOb1BOsEUd" role="2wV5jI" />
-    <node concept="2aJ2om" id="5fOb1BOsEU9" role="CpUAK">
-      <ref role="2$4xQ3" to="jyho:1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
   </node>
 </model>
