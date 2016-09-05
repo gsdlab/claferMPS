@@ -13,7 +13,6 @@
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" folder="referenceModel" />
       <modulePath path="$PROJECT_DIR$/languages/qualityAttributes/qualityAttributes.mpl" folder="qualityAttributes" />
-      <modulePath path="$PROJECT_DIR$/languages/qualityAttributes/sandbox/qualityAttributes.sandbox.msd" folder="qualityAttributes" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.example/org.clafer.architecture.sandbox.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.referencemodel/org.clafer.architecture.referencemodel.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.sandbox.msd" folder="core" />
