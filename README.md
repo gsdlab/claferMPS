@@ -61,7 +61,7 @@ We tested with pre-release [nightly-131](https://github.com/mbeddr/mbeddr.core/r
     * ignore all issues related to version control (VCS) and Git
 4. in mbeddr, without having any project open, click on `Settings`
     * in the search window, type `Global` and open the `Global Libraries` section
-    * press `+` to add a new global library `clafer` and give it a value `<targed directory>/ClaferMPS`
+    * press `+` to add a new global library `clafer` and give it a value `<targed directory>/claferMPS`
 
 #### Building ClaferMPS
 
@@ -76,8 +76,7 @@ We first need to build `org.clafer.util`.
     * open `Logical project view` using `<alt>+1`
 6. In the `Logical View`
     * NOTE: do not build the sandboxes because they depend on Clafer and Architecture DSL which we haven't built yet
-    * in `org.clafer.util/tags/` select `org.clafer.util.tags` and execute `Rebuid Selected Module` from the context menu
-    * in `org.clafer.util/milestone/` select `org.clafer.util/milestone/` and execute `Rebuid Selected Module` from the context menu
+    * in `org.clafer.util/milestone` select `org.clafer.util.milestone` and in `org.clafer.util/tags` select `org.clafer.util.tags` and execute `Rebuild Selected Modules` from the context menu (you can select multiple elements using `<ctrl>+<click>`)
 
 Now we can build `org.clafer.mps`.
 
@@ -86,7 +85,7 @@ Now we can build `org.clafer.mps`.
     * if mbeddr asks to perform migration, it is usually safe to do so
     * open `Logical project view` using `<alt>+1`
 8. In the `Logical View`
-    * in `org.clafer.mps` select `_spreferences`, `architecture`, `core`, `referenceModel` and execute `Rebuid Selected Modules` from the context menu (you can select multiple elements using `<ctrl>+<click>`)
+    * in `org.clafer.mps` select `_spreferences`, `architecture`, `core`, `referenceModel` and execute `Rebuild Selected Modules` from the context menu (you can select multiple elements using `<ctrl>+<click>`)
     * if there's one error (in `_spreferences`), ignore it by pressing `Ignore Errors`
 
 ### MPS + mbeddr plugins
@@ -98,7 +97,7 @@ This method works on all platforms supported by MPS, including Linux.
     * *Important*, start and close MPS before proceeding to step 2.
 2. Download `com.mbeddr.allInOne.zip` [mbeddr releases](https://github.com/mbeddr/mbeddr.core/releases) and unpack the contents to `<MPS directory>` (the folder `plugins` from the archive must be merged with the folder `<MPS directory>/plugins`).
 3. Run MPS
-4. Resume [Building ClaferMPS](#Building ClaferMPS) from the previous section.
+4. Resume [Building ClaferMPS](#building-clafermps) from the previous section.
 
 ### MPS + building mbeddr from source
 
@@ -117,7 +116,7 @@ This method is suitable when working with the latest development versions of mbe
             * `mbeddr.plugins` and give it a value `<target directory>/code/plugins`
 3. In some `<target directory>`, execute
     * `git clone https://github.com/gsdlab/claferMPS.git -b develop`
-4. Resume [Building ClaferMPS](#Building ClaferMPS) from the previous section.
+4. Resume [Building ClaferMPS](#building-clafermps) from the previous section.
 
 Opening the automotive case studies
 -----------------------------------
