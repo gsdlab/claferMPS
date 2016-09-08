@@ -3,12 +3,12 @@ claferMPS
 
 ##### v0.4.4
 
-JetBrains Meta-Programming System (MPS) support for Clafer.
+JetBrains Meta-Programming System (MPS) support for Clafer and architectural modeling.
 
 [Clafer](http://clafer.org) is a general-purpose lightweight structural modeling language developed by
 [GSD Lab](http://gsd.uwaterloo.ca/), [University of Waterloo](http://uwaterloo.ca), and
 [MODELS](http://www.itu.dk/research/models/) group at [IT University of Copenhagen](http://www.itu.dk/).
-Clafer can be used for modeling of static hierarchical structures but has no support for modeling the change of the structures over time (behavior).
+Clafer can be used for modeling of static hierarchical structures but it has no support for modeling the change of the structures over time (behavior).
 The main goal of Clafer is to make modeling more accessible to a wider range of users and domains.
 
 Contributors
@@ -23,7 +23,7 @@ Contributors
 Features
 --------
 
-ClaferMPS consists of two languages: Clafer and Architecture DSL. The latter extends Clafer with automotive concepts from a reference model for early architecture exploration used in [case studies by Jordan Ross](http://gsd.uwaterloo.ca/node/668) (models from these case studies are available for download).
+ClaferMPS consists of three languages: Clafer, Architecture DSL, and milestones. Architecture DSL extends Clafer with automotive concepts from a reference model for early architecture exploration used in [case studies by Jordan Ross](http://gsd.uwaterloo.ca/node/668) (models from these case studies are available for download). The milestones language is useful for tagging model elements with milestones and viewing versions of the model across ranges of milestones.
 
 * Clafer 0.4.4
    * a smart structured editor with autocompletion and many intentions,
@@ -48,7 +48,7 @@ Installation
 ### mbeddr IDE
 
 On Windows and Mac, mbeddr IDE can be installed using an installer. For Linux, see the next section "MPS + mbeddr plugins".
-We tested with pre-release [nightly-129](https://github.com/mbeddr/mbeddr.core/releases/tag/nightly-129).
+We tested with pre-release [nightly-131](https://github.com/mbeddr/mbeddr.core/releases/tag/nightly-131).
 
 1. Download and install `mbeddr-win-setup.exe` for Windows or `mbeddr-macos.dmg` for Mac from [mbeddr releases](https://github.com/mbeddr/mbeddr.core/releases).
     * no need to install the third-party components
@@ -58,16 +58,36 @@ We tested with pre-release [nightly-129](https://github.com/mbeddr/mbeddr.core/r
         * `git clone https://github.com/gsdlab/claferMPS.git -b develop`
 3. Run mbeddr IDE
     * allow network access through the firewall
-4. `Open Project`
-    * choose `<target directory>/claferMPS/code/languages/org.clafer.mps`
+    * ignore all issues related to version control (VCS) and Git
+4. in mbeddr, without having any project open, click on `Settings`
+    * in the search window, type `Global` and open the `Global Libraries` section
+    * press `+` to add a new global library `clafer` and give it a value `<targed directory>/ClaferMPS`
+
+#### Building ClaferMPS
+
+We first need to build `org.clafer.util`.
+
+* NOTE: if there during the build you get an error `cannot save files` run mbeddr in priviledged mode (on Windows, `Run as Administrator`)
+* NOTE: in case of severe problems click on `File->Invalidate Caches / Restart`, and select `Invalidate and Restart`
+
+5. `Open Project`
+    * choose `<target directory>/claferMPS/org.clafer.util`
     * if mbeddr asks to perform migration, it is usually safe to do so
     * open `Logical project view` using `<alt>+1`
-5. In the `Logical View`
-    * NOTE: if there's one error in `_spreferences`, ignore it
-    * r-click on `org.clafer.mps/core` and execute `Rebuid Project` from the context menu
-    * r-click on `org.clafer.mps/referenceModel` and execute `Rebuid Project` from the context menu
-    * r-click on `org.clafer.mps/architecture` and execute `Rebuid Project` from the context menu
-    * in case of errors, try ignoring them if they are not important (e.g., in test cases or sandbox)
+6. In the `Logical View`
+    * NOTE: do not build the sandboxes because they depend on Clafer and Architecture DSL which we haven't built yet
+    * in `org.clafer.util/tags/` select `org.clafer.util.tags` and execute `Rebuid Selected Module` from the context menu
+    * in `org.clafer.util/milestone/` select `org.clafer.util/milestone/` and execute `Rebuid Selected Module` from the context menu
+
+Now we can build `org.clafer.mps`.
+
+7. `Open Project`
+    * choose `<target directory>/claferMPS/code/languages/org.clafer.mps` and press `This Window`
+    * if mbeddr asks to perform migration, it is usually safe to do so
+    * open `Logical project view` using `<alt>+1`
+8. In the `Logical View`
+    * in `org.clafer.mps` select `_spreferences`, `architecture`, `core`, `referenceModel` and execute `Rebuid Selected Modules` from the context menu (you can select multiple elements using `<ctrl>+<click>`)
+    * if there's one error (in `_spreferences`), ignore it by pressing `Ignore Errors`
 
 ### MPS + mbeddr plugins
 
@@ -78,7 +98,7 @@ This method works on all platforms supported by MPS, including Linux.
     * *Important*, start and close MPS before proceeding to step 2.
 2. Download `com.mbeddr.allInOne.zip` [mbeddr releases](https://github.com/mbeddr/mbeddr.core/releases) and unpack the contents to `<MPS directory>` (the folder `plugins` from the archive must be merged with the folder `<MPS directory>/plugins`).
 3. Run MPS
-4. Resume step 4. from the previous section.
+4. Resume [Building ClaferMPS](#Building ClaferMPS) from the previous section.
 
 ### MPS + building mbeddr from source
 
@@ -93,11 +113,11 @@ This method is suitable when working with the latest development versions of mbe
             * in some `<target directory>`, clone `mbeddr.core` repository using `git clone https://github.com/mbeddr/mbeddr.core.git --depth 10 -b stable` to avoid downloading the complete history
             * in the `build.properties` file, always use `/`, even on Windows. For example, `mps.home=c:/Programs/MPS3.3`.
         * For the `Global Libraries` settings, add two libraries
-            * `mbeddr.core=<target directory>/code/languages`
-            * `mbeddr.plugins=<target directory>/code/plugins`
+            * `mbeddr.core` and give it a value `<target directory>/code/languages`
+            * `mbeddr.plugins` and give it a value `<target directory>/code/plugins`
 3. In some `<target directory>`, execute
     * `git clone https://github.com/gsdlab/claferMPS.git -b develop`
-4. Resume step 3. from the previous section.
+4. Resume [Building ClaferMPS](#Building ClaferMPS) from the previous section.
 
 Opening the automotive case studies
 -----------------------------------
