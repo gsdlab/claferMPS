@@ -128,6 +128,7 @@
         <child id="1177327698839" name="canSubstitute" index="ucKa5" />
         <child id="1177327709106" name="handler" index="ucMEw" />
         <child id="1177336013307" name="matchingText" index="uGu3D" />
+        <child id="1177336018902" name="descriptionText" index="uGvr4" />
       </concept>
       <concept id="1177333529597" name="jetbrains.mps.lang.actions.structure.ConceptPart" flags="ng" index="uyZFJ">
         <reference id="1177333551023" name="concept" index="uz4UX" />
@@ -145,6 +146,7 @@
       <concept id="1177497140107" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_sourceNode" flags="nn" index="Cj7Ep" />
       <concept id="1177498013932" name="jetbrains.mps.lang.actions.structure.SimpleSideTransformMenuPart" flags="ng" index="Cmt7Y">
         <child id="1177498166690" name="matchingText" index="Cn2iK" />
+        <child id="1177498182537" name="descriptionText" index="Cn6ar" />
         <child id="1177498207384" name="handler" index="Cncma" />
       </concept>
       <concept id="1177498071304" name="jetbrains.mps.lang.actions.structure.QueryFunction_SideTransform_String" flags="in" index="CmF0q" />
@@ -217,6 +219,8 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144100932627" name="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" flags="ng" index="1xIGOp" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -312,6 +316,9 @@
           </node>
           <node concept="2h3Zct" id="4kWdVQTlbgN" role="uGu3D">
             <property role="2h4Kg1" value="abstract" />
+          </node>
+          <node concept="2h3Zct" id="pG4h8mhuCW" role="uGvr4">
+            <property role="2h4Kg1" value="Abstract clafer" />
           </node>
         </node>
       </node>
@@ -591,7 +598,7 @@
       <property role="2uHTBK" value="default_RTransform" />
       <ref role="3UNGvu" to="mj1k:7FQByU3CrCQ" resolve="Type" />
       <node concept="tYCnQ" id="3WlRoWfnUIK" role="_1QTJ">
-        <ref role="uz4UX" to="mecy:6DpAcbqibYy" resolve="ClaferRef" />
+        <ref role="uz4UX" to="mj1k:7FQByU3CrCQ" resolve="Type" />
         <node concept="Cmt7Y" id="3WlRoWfnVmA" role="uz6Si">
           <node concept="Cnhdc" id="3WlRoWfnVmB" role="Cncma">
             <node concept="3clFbS" id="3WlRoWfnVmC" role="2VODD2">
@@ -664,13 +671,16 @@
             <node concept="2OqwBi" id="3WlRoWfCG0$" role="3clFbG">
               <node concept="2OqwBi" id="3WlRoWfCF1X" role="2Oq$k0">
                 <node concept="Cj7Ep" id="3WlRoWfCEOd" role="2Oq$k0" />
-                <node concept="1mfA1w" id="3WlRoWfCFB6" role="2OqNvi" />
-              </node>
-              <node concept="1mIQ4w" id="3WlRoWfCGoy" role="2OqNvi">
-                <node concept="chp4Y" id="3WlRoWfCG$t" role="cj9EA">
-                  <ref role="cht4Q" to="mecy:6DpAcbqibYy" resolve="ClaferRef" />
+                <node concept="2Xjw5R" id="3xXk1ajnzVB" role="2OqNvi">
+                  <node concept="1xMEDy" id="3xXk1ajnzVD" role="1xVPHs">
+                    <node concept="chp4Y" id="3xXk1ajnzYg" role="ri$Ld">
+                      <ref role="cht4Q" to="mecy:6DpAcbqibYy" resolve="ClaferRef" />
+                    </node>
+                  </node>
+                  <node concept="1xIGOp" id="3xXk1ajn$dj" role="1xVPHs" />
                 </node>
               </node>
+              <node concept="3x8VRR" id="3xXk1ajn$8l" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -722,6 +732,9 @@
           </node>
           <node concept="2h1dTh" id="6yyIOiNlpKw" role="Cn2iK">
             <property role="2h1i$Z" value="abstract" />
+          </node>
+          <node concept="2h1dTh" id="pG4h8mhst3" role="Cn6ar">
+            <property role="2h1i$Z" value="Make abstract" />
           </node>
         </node>
       </node>

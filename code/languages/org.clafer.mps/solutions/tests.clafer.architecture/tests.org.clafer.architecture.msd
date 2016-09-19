@@ -39,6 +39,8 @@
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" fqName="org.clafer.architecture" version="3" />
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" fqName="org.clafer.expr" version="0" />
+    <language id="19cc4ac9-bac2-4507-89f0-0035b38c3e6e" fqName="org.clafer.util.milestone" version="0" />
+    <language id="f0b44ab8-bd30-416e-b267-f165b5e42b67" fqName="org.clafer.util.tags" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -72,8 +74,12 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="0" />
+    <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="61c69711-ed61-4850-81d9-7714ff227ff0(org.clafer.expr)" version="0" />
+    <module reference="0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)" version="0" />
+    <module reference="19cc4ac9-bac2-4507-89f0-0035b38c3e6e(org.clafer.util.milestone)" version="0" />
+    <module reference="f0b44ab8-bd30-416e-b267-f165b5e42b67(org.clafer.util.tags)" version="0" />
     <module reference="41e07d92-0eb3-45a1-8d4a-42db424a4af9(tests.org.clafer.architecture)" version="0" />
   </dependencyVersions>
 </solution>

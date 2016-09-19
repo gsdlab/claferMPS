@@ -2,13 +2,15 @@
 <model ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="x08t" ref="r:d521f1d2-8caa-4564-84c1-36914730aa5a(org.clafer.util.tags.structure)" implicit="true" />
+    <import index="u9qf" ref="r:80a82414-28cc-4e76-a693-b906633907a3(org.clafer.util.milestone.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -89,14 +91,14 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="source" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
+      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
       <node concept="asaX9" id="17N04ap9jns" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="3WJnaafipyc" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FAComponent" />
+      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
       <node concept="asaX9" id="17N04ap9jnu" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="6tUgmTZN8Kq" role="PzmwI">
@@ -114,8 +116,14 @@
     <node concept="PrWs8" id="6LOryU0rqHo" role="PzmwI">
       <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     </node>
+    <node concept="PrWs8" id="7bA4V6KDwem" role="PzmwI">
+      <ref role="PrY4T" to="x08t:7bA4V6KyOHz" resolve="ITaggable" />
+    </node>
     <node concept="PrWs8" id="3g3ywkm6Xbv" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="4pZCXPVJJI" role="PzmwI">
+      <ref role="PrY4T" to="u9qf:4pZCXPVIQi" resolve="IVersionable" />
     </node>
     <node concept="PrWs8" id="5ipUCoiwI5d" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -146,7 +154,7 @@
     <property role="TrG5h" value="AnalysisFunction" />
     <property role="34LRSv" value="Analysis Function" />
     <property role="1pbfSe" value="419470954" />
-    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FAComponent" />
+    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
   </node>
   <node concept="1TIwiD" id="4csP6flUzo$">
     <property role="3GE5qa" value="FunctionalArchitecture" />
@@ -154,7 +162,7 @@
     <property role="34LRSv" value="Functional Device" />
     <property role="MwhBj" value="${module}/icons/gear.png" />
     <property role="1pbfSe" value="419891847" />
-    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FAComponent" />
+    <ref role="1TJDcQ" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
   </node>
   <node concept="1TIwiD" id="4csP6fm34cz">
     <property role="TrG5h" value="DeviceNode" />
@@ -566,6 +574,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6kt45HTk58g" resolve="ArchConceptRef" />
     </node>
+    <node concept="1TJgyj" id="5A7sq$BKVZP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
+    </node>
     <node concept="1TJgyj" id="6kt45HTj4uN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="qualities" />
@@ -580,6 +594,9 @@
     </node>
     <node concept="PrWs8" id="6kt45HTlS$5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6eCqpcIp8sp" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="6kt45HTk58g">
@@ -599,6 +616,15 @@
     <property role="3GE5qa" value="QualityModule" />
     <property role="TrG5h" value="QualityTableElement" />
     <ref role="1TJDcQ" node="57FaIEV_R4r" resolve="QTElement" />
+    <node concept="1TJgyj" id="7XyBMvG1HC6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+    </node>
+    <node concept="PrWs8" id="7XyBMvG5KiD" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="57FaIEV_R4r">
     <property role="1pbfSe" value="226663429" />
@@ -723,6 +749,7 @@
     <property role="TrG5h" value="ElectrDeviceType" />
     <property role="34LRSv" value="electr" />
     <property role="MwhBj" value="${module}/icons/eeDevice.png" />
+    <property role="R4oN_" value="Electric/Electronic" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
     <node concept="PrWs8" id="2G_jlDGpToh" role="PzmwI">
       <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
@@ -734,6 +761,7 @@
     <property role="TrG5h" value="SmartDeviceType" />
     <property role="34LRSv" value="smart" />
     <property role="MwhBj" value="${module}/icons/smart_icon.png" />
+    <property role="R4oN_" value="Smart" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
     <node concept="PrWs8" id="2G_jlDGpToo" role="PzmwI">
       <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
@@ -745,6 +773,7 @@
     <property role="TrG5h" value="PowerDeviceType" />
     <property role="34LRSv" value="power" />
     <property role="MwhBj" value="${module}/icons/powerDevice.png" />
+    <property role="R4oN_" value="Power" />
     <ref role="1TJDcQ" node="EXzEoUui47" resolve="NodeType" />
     <node concept="PrWs8" id="2G_jlDGpTom" role="PzmwI">
       <ref role="PrY4T" node="2G_jlDGpToa" resolve="IDeviceType" />
@@ -880,9 +909,10 @@
   <node concept="1TIwiD" id="6tUgmTZL8lp">
     <property role="1pbfSe" value="415316281" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
-    <property role="TrG5h" value="FAComponent" />
+    <property role="TrG5h" value="FunctionalAnalysisComponent" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="Functional Analysis Component" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="1OxX53tjvF2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -892,6 +922,9 @@
     </node>
     <node concept="PrWs8" id="6tUgmTZN8L3" role="PzmwI">
       <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
+    </node>
+    <node concept="PrWs8" id="33hfkhhOHQC" role="PzmwI">
+      <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v3ZnYeNguT">
@@ -1254,6 +1287,37 @@
     <node concept="PrWs8" id="4kqSQ6TnNgZ" role="PzmwI">
       <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="pG4h8miPSR">
+    <property role="1pbfSe" value="481783625" />
+    <property role="TrG5h" value="EndpointDotTarget" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="M9rtBFMUFV" role="PzmwI">
+      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="M9rtBFNd$Y">
+    <property role="1pbfSe" value="128563433" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="SenderDotTarget" />
+    <property role="34LRSv" value="sender" />
+    <ref role="1TJDcQ" node="pG4h8miPSR" resolve="EndpointDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="M9rtBFNd_5">
+    <property role="1pbfSe" value="128563426" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="ReceiverDotTarget" />
+    <property role="34LRSv" value="receiver" />
+    <ref role="1TJDcQ" node="pG4h8miPSR" resolve="EndpointDotTarget" />
+  </node>
+  <node concept="1TIwiD" id="16CxyeeVoRx">
+    <property role="1pbfSe" value="1600777212" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityExpr" />
+    <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
   </node>
 </model>
 

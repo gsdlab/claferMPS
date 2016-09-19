@@ -31,6 +31,7 @@
     </language>
   </registry>
   <node concept="2xbcct" id="bl22kSm$we">
+    <property role="TrG5h" value="Platform Templaste Container" />
     <node concept="2xbbuh" id="bl22kSm$wg" role="2xbcco">
       <property role="TrG5h" value="Desktop Platform" />
       <node concept="2AWWZL" id="bl22kSm$wf" role="2xbbhh">
