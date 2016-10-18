@@ -104,6 +104,9 @@
     <node concept="PrWs8" id="6tUgmTZN8Kq" role="PzmwI">
       <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
     </node>
+    <node concept="PrWs8" id="2Qy0VF32jTR" role="PzmwI">
+      <ref role="PrY4T" node="2Qy0VF32jTy" resolve="IFunctionalAnalysisComponent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4csP6flST3m">
     <property role="TrG5h" value="ArchElement" />
@@ -388,6 +391,9 @@
     <property role="34LRSv" value="Functional Analysis" />
     <property role="1pbfSe" value="1629564277" />
     <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="PrWs8" id="1kn3UCOfu6d" role="PzmwI">
+      <ref role="PrY4T" node="2Qy0VF32jTy" resolve="IFunctionalAnalysisComponent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7DuSdC$$2dR">
     <property role="TrG5h" value="HardwareArchitecture" />
@@ -926,6 +932,9 @@
     <node concept="PrWs8" id="33hfkhhOHQC" role="PzmwI">
       <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
     </node>
+    <node concept="PrWs8" id="2Qy0VF32jTE" role="PzmwI">
+      <ref role="PrY4T" node="2Qy0VF32jTy" resolve="IFunctionalAnalysisComponent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6v3ZnYeNguT">
     <property role="1pbfSe" value="158268104" />
@@ -1318,6 +1327,11 @@
     <property role="3GE5qa" value="QualityModule" />
     <property role="TrG5h" value="QualityExpr" />
     <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
+  </node>
+  <node concept="PlHQZ" id="2Qy0VF32jTy">
+    <property role="1pbfSe" value="257211876" />
+    <property role="3GE5qa" value="FunctionalArchitecture" />
+    <property role="TrG5h" value="IFunctionalAnalysisComponent" />
   </node>
 </model>
 

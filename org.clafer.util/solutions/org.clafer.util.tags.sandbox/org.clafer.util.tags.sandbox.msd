@@ -34,7 +34,7 @@
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" fqName="org.clafer.expr" version="0" />
     <language id="19cc4ac9-bac2-4507-89f0-0035b38c3e6e" fqName="org.clafer.util.milestone" version="0" />
-    <language id="f0b44ab8-bd30-416e-b267-f165b5e42b67" fqName="org.clafer.util.tags" version="0" />
+    <language id="f0b44ab8-bd30-416e-b267-f165b5e42b67" fqName="org.clafer.util.tags" version="-1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="a9aa48d5-657b-4aff-9f0a-6569b6d49ba8(org.clafer.util.tags.sandbox)" version="0" />

@@ -1276,40 +1276,20 @@
         <node concept="3clFbJ" id="5UcaHciOHBG" role="3cqZAp">
           <node concept="3clFbS" id="5UcaHciOHBH" role="3clFbx">
             <node concept="3cpWs6" id="5UcaHciOHBI" role="3cqZAp">
-              <node concept="22lmx$" id="6tUgmTZN9k5" role="3cqZAk">
-                <node concept="22lmx$" id="6tUgmTZN97i" role="3uHU7B">
-                  <node concept="22lmx$" id="5UcaHciOHBJ" role="3uHU7B">
-                    <node concept="2OqwBi" id="5UcaHciOHBK" role="3uHU7w">
-                      <node concept="otxO1" id="5UcaHciOHBL" role="2Oq$k0" />
-                      <node concept="2Zo12i" id="5UcaHciOHBM" role="2OqNvi">
-                        <node concept="chp4Y" id="6tUgmTZN91p" role="2Zo12j">
-                          <ref role="cht4Q" to="ddau:7DuSdC$vZ6L" resolve="FunctionalAnalysis" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="1Z9B1UhXvtM" role="3uHU7B">
-                      <node concept="EsrRn" id="1Z9B1UhXvtN" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="1Z9B1UhXvtO" role="2OqNvi">
-                        <ref role="37wK5l" to="f5o0:1Z9B1UhUJqv" resolve="childConceptIsClafer" />
-                        <node concept="otxO1" id="1Z9B1UhXvtP" role="37wK5m" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="6tUgmTZN98j" role="3uHU7w">
-                    <node concept="otxO1" id="6tUgmTZN98k" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="6tUgmTZN98l" role="2OqNvi">
-                      <node concept="chp4Y" id="6tUgmTZN98_" role="2Zo12j">
-                        <ref role="cht4Q" to="ddau:6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
-                      </node>
+              <node concept="22lmx$" id="5UcaHciOHBJ" role="3cqZAk">
+                <node concept="2OqwBi" id="5UcaHciOHBK" role="3uHU7w">
+                  <node concept="otxO1" id="5UcaHciOHBL" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="5UcaHciOHBM" role="2OqNvi">
+                    <node concept="chp4Y" id="2Qy0VF32jU3" role="2Zo12j">
+                      <ref role="cht4Q" to="ddau:2Qy0VF32jTy" resolve="IFunctionalAnalysisComponent" />
                     </node>
                   </node>
                 </node>
-                <node concept="2OqwBi" id="6tUgmTZN9ly" role="3uHU7w">
-                  <node concept="otxO1" id="6tUgmTZN9lz" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="6tUgmTZN9l$" role="2OqNvi">
-                    <node concept="chp4Y" id="6tUgmTZN9lO" role="2Zo12j">
-                      <ref role="cht4Q" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-                    </node>
+                <node concept="2OqwBi" id="1Z9B1UhXvtM" role="3uHU7B">
+                  <node concept="EsrRn" id="1Z9B1UhXvtN" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="1Z9B1UhXvtO" role="2OqNvi">
+                    <ref role="37wK5l" to="f5o0:1Z9B1UhUJqv" resolve="childConceptIsClafer" />
+                    <node concept="otxO1" id="1Z9B1UhXvtP" role="37wK5m" />
                   </node>
                 </node>
               </node>
