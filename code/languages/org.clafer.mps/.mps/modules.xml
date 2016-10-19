@@ -11,6 +11,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/solutions/pluginSolution/org.clafer.core.pluginSolution.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.expressions/org.clafer.expressions.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" folder="referenceModel" />
       <modulePath path="$PROJECT_DIR$/languages/qualityAttributes/qualityAttributes.mpl" folder="qualityAttributes" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.example/org.clafer.architecture.sandbox.msd" folder="architecture" />
