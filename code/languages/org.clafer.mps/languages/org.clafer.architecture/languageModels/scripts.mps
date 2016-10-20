@@ -7,10 +7,10 @@
   </languages>
   <imports>
     <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" />
-    <import index="ywuy" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd9(org.clafer.expr.behavior)" />
+    <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
+    <import index="wrtg" ref="r:4719b444-431a-4b3a-8eb1-d31303c73fb9(org.clafer.expressions.behavior)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
-    <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -191,7 +191,7 @@
                 <node concept="2OqwBi" id="6tUgmTZR9xc" role="2Oq$k0">
                   <node concept="_YI3z" id="6tUgmTZR9ub" role="2Oq$k0" />
                   <node concept="2qgKlT" id="6tUgmTZR9Ad" role="2OqNvi">
-                    <ref role="37wK5l" to="f5o0:5EXaBxYaaPb" resolve="getTupleByConceptName" />
+                    <ref role="37wK5l" to="f5o0:5EXaBxYaaPb" resolve="getTuplesByConceptName" />
                     <node concept="3TUQnm" id="6tUgmTZRbU9" role="37wK5m">
                       <ref role="3TV0OU" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
                     </node>
@@ -213,7 +213,7 @@
                     <node concept="2OqwBi" id="6tUgmTZRh9R" role="2Oq$k0">
                       <node concept="_YI3z" id="6tUgmTZRh9S" role="2Oq$k0" />
                       <node concept="2qgKlT" id="6tUgmTZRh9T" role="2OqNvi">
-                        <ref role="37wK5l" to="f5o0:5EXaBxYaaPb" resolve="getTupleByConceptName" />
+                        <ref role="37wK5l" to="f5o0:5EXaBxYaaPb" resolve="getTuplesByConceptName" />
                         <node concept="3TUQnm" id="6tUgmTZRh9U" role="37wK5m">
                           <ref role="3TV0OU" to="ddau:4csP6flUzo$" resolve="FunctionalDevice" />
                         </node>
@@ -589,7 +589,7 @@
             <node concept="3cpWsn" id="5YkgXg$yBTM" role="3cpWs9">
               <property role="TrG5h" value="faExpr" />
               <node concept="3Tqbb2" id="5YkgXg$yBTH" role="1tU5fm">
-                <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+                <ref role="ehGHo" to="dajg:7FQByU3CrCM" resolve="Expression" />
               </node>
               <node concept="2OqwBi" id="5YkgXg$yC2M" role="33vP2m">
                 <node concept="_YI3z" id="5YkgXg$yBZ4" role="2Oq$k0" />
@@ -684,8 +684,8 @@
                   </node>
                   <node concept="1P9Npp" id="5YkgXg$$tZG" role="2OqNvi">
                     <node concept="2YIFZM" id="5YkgXg$$uJU" role="1P9ThW">
-                      <ref role="37wK5l" to="ywuy:2ejvBnQt76K" resolve="createDotExpr" />
-                      <ref role="1Pybhc" to="ywuy:2ejvBnQxMkR" resolve="DotExprUtil" />
+                      <ref role="1Pybhc" to="wrtg:2ejvBnQxMkR" resolve="DotExprUtil" />
+                      <ref role="37wK5l" to="wrtg:2ejvBnQt76K" resolve="createDotExpr" />
                       <node concept="37vLTw" id="5YkgXg$$uKO" role="37wK5m">
                         <ref role="3cqZAo" node="5YkgXg$y_7p" resolve="faPath" />
                       </node>
@@ -816,8 +816,8 @@
                                 </node>
                                 <node concept="1P9Npp" id="5YkgXg$BitO" role="2OqNvi">
                                   <node concept="2YIFZM" id="5YkgXg$BitP" role="1P9ThW">
-                                    <ref role="37wK5l" to="ywuy:2ejvBnQt76K" resolve="createDotExpr" />
-                                    <ref role="1Pybhc" to="ywuy:2ejvBnQxMkR" resolve="DotExprUtil" />
+                                    <ref role="1Pybhc" to="wrtg:2ejvBnQxMkR" resolve="DotExprUtil" />
+                                    <ref role="37wK5l" to="wrtg:2ejvBnQt76K" resolve="createDotExpr" />
                                     <node concept="37vLTw" id="5YkgXg$BitQ" role="37wK5m">
                                       <ref role="3cqZAo" node="5YkgXg$Bitk" resolve="haPath" />
                                     </node>

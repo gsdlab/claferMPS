@@ -5,6 +5,7 @@
     <use id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
     <use id="d4615e3b-d671-4ba9-af01-2b78369b0ba7" name="jetbrains.mps.lang.pattern" version="0" />
+    <use id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -152,11 +153,46 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="90746344-04fd-4286-97d5-b46ae6a81709" name="jetbrains.mps.lang.migration">
+      <concept id="3116305438947623350" name="jetbrains.mps.lang.migration.structure.MoveConcept" flags="ng" index="7a1rZ" />
+      <concept id="3116305438947553624" name="jetbrains.mps.lang.migration.structure.RefactoringPart" flags="ng" index="7amoh">
+        <property id="3628660716136424362" name="participant" index="hSBgo" />
+        <child id="3628660716136424366" name="finalState" index="hSBgs" />
+        <child id="3628660716136424364" name="initialState" index="hSBgu" />
+      </concept>
+      <concept id="2864063292004102367" name="jetbrains.mps.lang.migration.structure.ReflectionNodeReference" flags="ng" index="2pBcaW">
+        <property id="2864063292004102809" name="nodeName" index="2pBc3U" />
+        <property id="2864063292004103235" name="modelRef" index="2pBcow" />
+        <property id="2864063292004103247" name="nodeId" index="2pBcoG" />
+      </concept>
+      <concept id="2015900981881695631" name="jetbrains.mps.lang.migration.structure.RefactoringLog" flags="ng" index="W$Crc">
+        <property id="2015900981881695633" name="fromVersion" index="W$Cri" />
+        <child id="2015900981881695634" name="part" index="W$Crh" />
+        <child id="3597905718825595708" name="options" index="1w76sc" />
+      </concept>
+      <concept id="7431903976166007326" name="jetbrains.mps.lang.migration.structure.MoveNode" flags="ng" index="Z4OXk">
+        <child id="3116305438947564633" name="specialization" index="7agGg" />
+        <child id="7431903976166276375" name="toNode" index="Z5P1t" />
+        <child id="7431903976166276373" name="fromNode" index="Z5P1v" />
+      </concept>
+      <concept id="7431903976166443707" name="jetbrains.mps.lang.migration.structure.PureMigrationScript" flags="ng" index="Z5qvL">
+        <property id="7431903976166443708" name="fromVersion" index="Z5qvQ" />
+        <child id="7431903976166447091" name="part" index="Z5rET" />
+      </concept>
+      <concept id="3597905718825595712" name="jetbrains.mps.lang.migration.structure.RefactoringOptions" flags="ng" index="1w76tK">
+        <child id="3597905718825595718" name="options" index="1w76tQ" />
+      </concept>
+      <concept id="3597905718825595715" name="jetbrains.mps.lang.migration.structure.RefactoringOption" flags="ng" index="1w76tN">
+        <property id="3597905718825595716" name="optionId" index="1w76tO" />
+        <property id="3597905718825650036" name="description" index="1w7ld4" />
+      </concept>
       <concept id="8352104482584315555" name="jetbrains.mps.lang.migration.structure.MigrationScript" flags="ig" index="3SyAh_">
         <property id="5820409521797704727" name="fromVersion" index="qMTe8" />
       </concept>
@@ -1591,6 +1627,782 @@
     <node concept="3tTeZs" id="5C9iBpnhJvJ" role="jymVt">
       <property role="3tTeZt" value="&lt;no result checking&gt;" />
       <ref role="3tTeZr" to="slm6:1JWcQ2VeXpD" resolve="check" />
+    </node>
+  </node>
+  <node concept="Z5qvL" id="3o3oC3mn6_6">
+    <property role="Z5qvQ" value="3" />
+    <property role="TrG5h" value="MigrationScript_3" />
+    <node concept="Z4OXk" id="3o3oC3mn6_b" role="Z5rET">
+      <node concept="2pBcaW" id="3o3oC3mn6_9" role="Z5P1v">
+        <property role="2pBcoG" value="8817732347957866929" />
+        <property role="2pBcow" value="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
+        <property role="2pBc3U" value="FunctionalAnalysis_old" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6_a" role="Z5P1t">
+        <property role="2pBcoG" value="8817732347957866929" />
+        <property role="2pBcow" value="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
+        <property role="2pBc3U" value="FunctionalAnalysis" />
+      </node>
+      <node concept="7a1rZ" id="3o3oC3mn6_8" role="7agGg" />
+    </node>
+  </node>
+  <node concept="W$Crc" id="3o3oC3mn6A3">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="0" />
+    <property role="TrG5h" value="RefactoringLog_0" />
+    <node concept="1w76tK" id="3o3oC3mn6A4" role="1w76sc">
+      <node concept="1w76tN" id="3o3oC3mn6A5" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.moveConceptAspects" />
+        <property role="1w7ld4" value="Move concept aspects" />
+      </node>
+      <node concept="1w76tN" id="3o3oC3mn6A6" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="3o3oC3mn6A7" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="3o3oC3mn6A8" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references in current project" />
+      </node>
+      <node concept="1w76tN" id="3o3oC3mn6A9" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="3o3oC3mn6Aa" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Ab" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$c" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957873712" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="FunctionalAnalysis_Constraints" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6A2" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957873712" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="FunctionalAnalysis_Constraints" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Ad" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$d" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957874206" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunction_CanBeAChild@85410" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Ac" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957874206" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunction_CanBeAChild@85410" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Af" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$e" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957874207" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="StatementList@85411" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Ae" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957874207" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="StatementList@85411" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Ah" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$f" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957874522" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ExpressionStatement@85598" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Ag" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957874522" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ExpressionStatement@85598" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Aj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$g" role="hSBgu">
+        <property role="2pBcoG" value="4331309997815058328" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="OrExpression@83116" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Ai" role="hSBgs">
+        <property role="2pBcoG" value="4331309997815058328" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="OrExpression@83116" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Al" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$h" role="hSBgu">
+        <property role="2pBcoG" value="4331309997815059319" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="DotExpression@85967" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Ak" role="hSBgs">
+        <property role="2pBcoG" value="4331309997815059319" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="DotExpression@85967" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6An" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$i" role="hSBgu">
+        <property role="2pBcoG" value="4331309997815058807" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_parentNode@86479" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Am" role="hSBgs">
+        <property role="2pBcoG" value="4331309997815058807" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_parentNode@86479" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Ap" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$j" role="hSBgu">
+        <property role="2pBcoG" value="4331309997815060476" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Node_IsInstanceOfOperation@85064" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Ao" role="hSBgs">
+        <property role="2pBcoG" value="4331309997815060476" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Node_IsInstanceOfOperation@85064" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Ar" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$k" role="hSBgu">
+        <property role="2pBcoG" value="4331309997815060947" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="RefConcept_Reference@88691" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Aq" role="hSBgs">
+        <property role="2pBcoG" value="4331309997815060947" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="RefConcept_Reference@88691" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6At" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$l" role="hSBgu">
+        <property role="2pBcoG" value="8817732347958081720" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="OrExpression@79679" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6As" role="hSBgs">
+        <property role="2pBcoG" value="8817732347958081720" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="OrExpression@79679" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Av" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$m" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957874908" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="DotExpression@85732" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Au" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957874908" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="DotExpression@85732" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Ax" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$n" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957874521" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_parentNode@85601" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Aw" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957874521" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_parentNode@85601" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Az" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$o" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957875928" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Node_IsInstanceOfOperation@86752" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Ay" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957875928" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Node_IsInstanceOfOperation@86752" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6A_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$p" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957876667" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="RefConcept_Reference@87615" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6A$" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957876667" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="RefConcept_Reference@87615" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$q" role="hSBgu">
+        <property role="2pBcoG" value="8817732347958082581" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="DotExpression@80812" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AA" role="hSBgs">
+        <property role="2pBcoG" value="8817732347958082581" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="DotExpression@80812" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$r" role="hSBgu">
+        <property role="2pBcoG" value="8817732347958082127" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_parentNode@80242" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AC" role="hSBgs">
+        <property role="2pBcoG" value="8817732347958082127" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_parentNode@80242" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$s" role="hSBgu">
+        <property role="2pBcoG" value="8817732347958083681" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Node_IsInstanceOfOperation@65432" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AE" role="hSBgs">
+        <property role="2pBcoG" value="8817732347958083681" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Node_IsInstanceOfOperation@65432" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$t" role="hSBgu">
+        <property role="2pBcoG" value="8817732347958084094" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="RefConcept_Reference@65537" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AG" role="hSBgs">
+        <property role="2pBcoG" value="8817732347958084094" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="RefConcept_Reference@65537" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$u" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346991883" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunction_CanBeAParent@81974" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AI" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346991883" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunction_CanBeAParent@81974" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$v" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346991884" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="StatementList@81981" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AK" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346991884" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="StatementList@81981" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$w" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222781670" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="SingleLineComment@83973" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AM" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222781670" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="SingleLineComment@83973" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$x" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222781672" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Content" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AO" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222781672" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Content" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$y" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992108" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="IfStatement@81821" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AQ" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992108" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="IfStatement@81821" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$z" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992109" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="StatementList@81820" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AS" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992109" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="StatementList@81820" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$$" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992110" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ReturnStatement@81819" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AU" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992110" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ReturnStatement@81819" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$_" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992111" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="OrExpression@81818" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AW" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992111" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="OrExpression@81818" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6AZ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$A" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992112" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="DotExpression@81793" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6AY" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992112" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="DotExpression@81793" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6B1" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$B" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992113" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_childConcept@81792" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6B0" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992113" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_childConcept@81792" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6B3" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$C" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992114" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Concept_IsSubConceptOfOperation@81791" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6B2" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992114" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Concept_IsSubConceptOfOperation@81791" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6B5" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$D" role="hSBgu">
+        <property role="2pBcoG" value="3288194778604846723" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="RefConcept_Reference@76772" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6B4" role="hSBgs">
+        <property role="2pBcoG" value="3288194778604846723" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="RefConcept_Reference@76772" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6B7" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$E" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606375794" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="DotExpression@63912" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6B6" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606375794" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="DotExpression@63912" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6B9" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$F" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606375795" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintsFunctionParameter_node@63913" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6B8" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606375795" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintsFunctionParameter_node@63913" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bb" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$G" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606375796" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Node_ConceptMethodCall@63910" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Ba" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606375796" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Node_ConceptMethodCall@63910" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bd" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$H" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606375797" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_childConcept@63911" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bc" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606375797" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_childConcept@63911" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bf" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$I" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992124" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="EqualsExpression@81805" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Be" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992124" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="EqualsExpression@81805" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bh" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$J" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992125" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="LinkRefExpression@81804" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bg" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992125" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="LinkRefExpression@81804" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bj" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$K" role="hSBgu">
+        <property role="2pBcoG" value="6812867422346992126" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_link@81803" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bi" role="hSBgs">
+        <property role="2pBcoG" value="6812867422346992126" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_link@81803" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bl" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$L" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782378" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Statement@82257" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bk" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782378" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Statement@82257" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bn" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$M" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782379" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="SingleLineComment@82256" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bm" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782379" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="SingleLineComment@82256" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bp" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$N" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782380" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Group Cardinality" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bo" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782380" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Group Cardinality" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Br" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$O" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782381" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="IfStatement@82254" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bq" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782381" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="IfStatement@82254" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bt" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$P" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782382" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="StatementList@82253" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bs" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782382" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="StatementList@82253" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bv" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$Q" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782383" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ReturnStatement@82252" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bu" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782383" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ReturnStatement@82252" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bx" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$R" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606377410" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="DotExpression@61464" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6Bw" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606377410" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="DotExpression@61464" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6Bz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$S" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606376296" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintsFunctionParameter_node@62386" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6By" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606376296" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintsFunctionParameter_node@62386" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6B_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$T" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606378611" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Node_ConceptMethodCall@76972" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6B$" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606378611" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Node_ConceptMethodCall@76972" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$U" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606378970" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_childConcept@77315" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BA" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606378970" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_childConcept@77315" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$V" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782396" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="EqualsExpression@82239" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BC" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782396" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="EqualsExpression@82239" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$W" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782397" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="LinkRefExpression@82238" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BE" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782397" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="LinkRefExpression@82238" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$X" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782398" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_link@82237" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BG" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782398" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ConstraintFunctionParameter_link@82237" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$Y" role="hSBgu">
+        <property role="2pBcoG" value="2290533540606379333" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Statement@75674" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BI" role="hSBgs">
+        <property role="2pBcoG" value="2290533540606379333" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Statement@75674" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6$Z" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782399" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="ExpressionStatement@82236" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BK" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782399" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="ExpressionStatement@82236" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6_0" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782400" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="BooleanConstant@82219" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BM" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782400" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="BooleanConstant@82219" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6_1" role="hSBgu">
+        <property role="2pBcoG" value="8834907397222782205" />
+        <property role="2pBcow" value="r:b6b51f42-961e-42a1-99f1-bfb8cc8d79b5(org.clafer.architecture.constraints)" />
+        <property role="2pBc3U" value="Statement@82430" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BO" role="hSBgs">
+        <property role="2pBcoG" value="8834907397222782205" />
+        <property role="2pBcow" value="r:5f16ef8b-8657-4027-9a18-57b1ca8aeb19(org.clafer.expressions.constraints)" />
+        <property role="2pBc3U" value="Statement@82430" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6_2" role="hSBgu">
+        <property role="2pBcoG" value="8817732347957866929" />
+        <property role="2pBcow" value="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
+        <property role="2pBc3U" value="FunctionalAnalysis" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BQ" role="hSBgs">
+        <property role="2pBcoG" value="8817732347957866929" />
+        <property role="2pBcow" value="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
+        <property role="2pBc3U" value="FunctionalAnalysis" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3o3oC3mn6BT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3o3oC3mn6_3" role="hSBgu">
+        <property role="2pBcoG" value="1519700622956159373" />
+        <property role="2pBcow" value="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
+        <property role="2pBc3U" value="InterfaceConceptReference@69457" />
+      </node>
+      <node concept="2pBcaW" id="3o3oC3mn6BS" role="hSBgs">
+        <property role="2pBcoG" value="1519700622956159373" />
+        <property role="2pBcow" value="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
+        <property role="2pBc3U" value="InterfaceConceptReference@69457" />
+      </node>
     </node>
   </node>
 </model>

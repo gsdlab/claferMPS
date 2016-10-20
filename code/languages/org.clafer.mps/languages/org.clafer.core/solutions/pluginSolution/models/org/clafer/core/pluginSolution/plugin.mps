@@ -10,6 +10,7 @@
     <import index="vrqc" ref="r:53e59391-150a-45ff-930e-2b4fdafb0905(org.clafer.expr.editor)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="jyho" ref="r:c0d845a2-4853-4b9b-a005-8551d02b2034(org.clafer.architecture.editor)" />
+    <import index="zt9g" ref="r:659b48cd-375e-4546-aac4-e08ba59b09e4(org.clafer.expressions.editor)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -47,8 +48,8 @@
     <property role="TrG5h" value="symbolicMode" />
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
       <property role="33g7Lv" value="Clafer: Symbolic" />
-      <ref role="33glcW" to="vrqc:2uk4icpqhNc" resolve="claferProjections" />
-      <ref role="33glcY" to="vrqc:2uk4icpqi4Y" resolve="symbolicClafer" />
+      <ref role="33glcW" to="zt9g:2uk4icpqhNc" resolve="claferProjections" />
+      <ref role="33glcY" to="zt9g:2uk4icpqi4Y" resolve="symbolicClafer" />
     </node>
     <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
@@ -60,8 +61,8 @@
     <property role="TrG5h" value="graphicalMode" />
     <node concept="33gmoH" id="1JcbkuzlprB" role="2hfSGL">
       <property role="33g7Lv" value="Clafer: Graphical" />
-      <ref role="33glcW" to="vrqc:2uk4icpqhNc" resolve="claferProjections" />
-      <ref role="33glcY" to="vrqc:1Jcbkuzeevw" resolve="graphicalClafer" />
+      <ref role="33glcY" to="zt9g:1Jcbkuzeevw" resolve="graphicalClafer" />
+      <ref role="33glcW" to="zt9g:2uk4icpqhNc" resolve="claferProjections" />
     </node>
     <node concept="tT9cl" id="1JcbkuzlprC" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
@@ -73,8 +74,8 @@
     <property role="TrG5h" value="indentMode" />
     <node concept="33gmoH" id="6yyIOiNeiXw" role="2hfSGL">
       <property role="33g7Lv" value="Clafer: Indent Lines" />
-      <ref role="33glcW" to="vrqc:2uk4icpqhNc" resolve="claferProjections" />
-      <ref role="33glcY" to="vrqc:6yyIOiNaML7" resolve="showIndentsInClafer" />
+      <ref role="33glcY" to="zt9g:6yyIOiNaML7" resolve="showIndentsInClafer" />
+      <ref role="33glcW" to="zt9g:2uk4icpqhNc" resolve="claferProjections" />
     </node>
     <node concept="tT9cl" id="6yyIOiNeiXx" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />

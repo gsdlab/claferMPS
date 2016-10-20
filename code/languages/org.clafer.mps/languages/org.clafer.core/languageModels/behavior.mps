@@ -24,9 +24,10 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
+    <import index="wrtg" ref="r:4719b444-431a-4b3a-8eb1-d31303c73fb9(org.clafer.expressions.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2419,7 +2420,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="getTarget" />
-      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <ref role="13i0hy" to="wrtg:66uzewbZgGM" resolve="getTarget" />
       <node concept="3Tm1VV" id="6Ig5vvkZ0h$" role="1B3o_S" />
       <node concept="3clFbS" id="6Ig5vvkZ0hB" role="3clF47">
         <node concept="3clFbF" id="6Ig5vvkZ0hI" role="3cqZAp">
@@ -2439,7 +2440,7 @@
     <ref role="13h7C2" to="mecy:3WlRoWfaMdU" resolve="ParentExpr" />
     <node concept="13i0hz" id="3WlRoWfPVrU" role="13h7CS">
       <property role="TrG5h" value="getTarget" />
-      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <ref role="13i0hy" to="wrtg:66uzewbZgGM" resolve="getTarget" />
       <node concept="3clFbS" id="3WlRoWfPVrX" role="3clF47">
         <node concept="3clFbF" id="3WlRoWfQXxw" role="3cqZAp">
           <node concept="10Nm6u" id="3WlRoWfQXxr" role="3clFbG" />
@@ -2457,7 +2458,7 @@
     <ref role="13h7C2" to="mecy:3WlRoWfNEG9" resolve="DrefExpr" />
     <node concept="13i0hz" id="3SHz3PXUNGt" role="13h7CS">
       <property role="TrG5h" value="getTarget" />
-      <ref role="13i0hy" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+      <ref role="13i0hy" to="wrtg:66uzewbZgGM" resolve="getTarget" />
       <node concept="3clFbS" id="3SHz3PXUNGw" role="3clF47">
         <node concept="3clFbF" id="3SHz3PXUY1o" role="3cqZAp">
           <node concept="10Nm6u" id="3SHz3PXUY1n" role="3clFbG" />
@@ -4301,7 +4302,7 @@
           <node concept="3cpWsn" id="1OxX53t4W2H" role="3cpWs9">
             <property role="TrG5h" value="expr" />
             <node concept="3Tqbb2" id="1OxX53t4W2C" role="1tU5fm">
-              <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+              <ref role="ehGHo" to="dajg:7FQByU3CrCM" resolve="Expression" />
             </node>
             <node concept="2OqwBi" id="1OxX53t4W75" role="33vP2m">
               <node concept="13iPFW" id="1OxX53t4W5t" role="2Oq$k0" />
@@ -4401,7 +4402,7 @@
               </node>
             </node>
             <node concept="zfrQC" id="57pVhC6O77l" role="2OqNvi">
-              <ref role="1A9B2P" to="mj1k:3WlRoWe48JB" resolve="minGoalExpression" />
+              <ref role="1A9B2P" to="dajg:3WlRoWe48JB" resolve="minGoalExpression" />
             </node>
           </node>
         </node>

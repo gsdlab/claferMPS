@@ -2,6 +2,7 @@
 <model ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.sandbox.preferences)">
   <persistence version="9" />
   <languages>
+    <use id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions" version="1" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
     <devkit ref="689d09e3-f427-4b3a-8c27-77ad5f6606ba(org.architecture)" />
   </languages>
@@ -10,6 +11,19 @@
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions">
+      <concept id="3005510381523579442" name="org.clafer.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
+        <child id="7254843406768839760" name="expression" index="1_9fRO" />
+      </concept>
+      <concept id="2212975673976017893" name="org.clafer.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="4620120465980402700" name="org.clafer.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
+        <child id="7034214596252529803" name="target" index="1ESnxz" />
+      </concept>
+      <concept id="8860443239512128108" name="org.clafer.expressions.structure.IntType" flags="ng" index="3TlMh2" />
+      <concept id="8860443239512128103" name="org.clafer.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
+    </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="7285997757218705936" name="org.clafer.architecture.structure.ArchConceptRef" flags="ng" index="sjk9b">
         <reference id="7285997757218705940" name="archConcept" index="sjk9f" />
@@ -36,9 +50,7 @@
       <concept id="598358034645073916" name="org.clafer.architecture.structure.ConstantsGroup" flags="ng" index="1vMfia">
         <child id="598358034645073932" name="children" index="1vM8HU" />
       </concept>
-      <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd">
-        <child id="9179073984346905094" name="constraints" index="2jp4kx" />
-      </concept>
+      <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
       <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityTableElementRef" flags="ng" index="3Ev5JQ">
         <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
       </concept>
@@ -47,24 +59,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-    </language>
-    <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
-      <concept id="3005510381523579442" name="org.clafer.expr.structure.UnaryExpression" flags="ng" index="2aKSnQ">
-        <child id="7254843406768839760" name="expression" index="1_9fRO" />
-      </concept>
-      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
-        <property id="2212975673976043696" name="value" index="2hmy$m" />
-      </concept>
-      <concept id="4620120465980402700" name="org.clafer.expr.structure.GenericDotExpression" flags="ng" index="2qmXGp">
-        <child id="7034214596252529803" name="target" index="1ESnxz" />
-      </concept>
-      <concept id="8860443239512129322" name="org.clafer.expr.structure.EqualsExpression" flags="ng" index="3TlM44" />
-      <concept id="8860443239512128052" name="org.clafer.expr.structure.BinaryExpression" flags="ng" index="3TlMgq">
-        <child id="8860443239512128064" name="left" index="3TlMhI" />
-        <child id="8860443239512128065" name="right" index="3TlMhJ" />
-      </concept>
-      <concept id="8860443239512128108" name="org.clafer.expr.structure.IntType" flags="ng" index="3TlMh2" />
-      <concept id="8860443239512128103" name="org.clafer.expr.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
       <concept id="629737693910916321" name="org.clafer.core.structure.TypeExpr" flags="ng" index="2jxDJT">
@@ -80,9 +74,6 @@
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
         <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
-      </concept>
-      <concept id="7750719112879013576" name="org.clafer.core.structure.SubclaferRef" flags="ng" index="2ZqYGZ">
-        <reference id="7750719112879013668" name="clafer" index="2ZqYFj" />
       </concept>
     </language>
   </registry>
@@ -238,23 +229,10 @@
       <node concept="sjk9b" id="5ipUCoi8tkz" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
       </node>
-      <node concept="2vxuzR" id="6kV3EBwnqN4" role="1YhcTs">
-        <node concept="3TlM44" id="6kV3EBwnqPs" role="3WnoGb">
-          <node concept="3TlMh9" id="6kV3EBwnqPL" role="3TlMhJ">
-            <property role="2hmy$m" value="10" />
-          </node>
-          <node concept="2qmXGp" id="6kV3EBwnqO4" role="3TlMhI">
-            <node concept="2ZqYGZ" id="6kV3EBwnqOz" role="1ESnxz">
-              <ref role="2ZqYFj" node="6BXeK5CiNLq" resolve="baseLatency" />
-            </node>
-            <node concept="2xC6$6" id="6kV3EBwqxco" role="1_9fRO" />
-          </node>
-        </node>
-      </node>
       <node concept="2vxuzR" id="6kV3EBwrHPO" role="1YhcTs">
         <node concept="2qmXGp" id="6kV3EBwrHR9" role="3WnoGb">
-          <node concept="30g6Rq" id="6kV3EBwrHRG" role="1ESnxz" />
           <node concept="2xC6$6" id="6kV3EBwrHQu" role="1_9fRO" />
+          <node concept="30g6Rq" id="6kV3EBwrHRG" role="1ESnxz" />
         </node>
       </node>
     </node>
@@ -264,14 +242,6 @@
       </node>
       <node concept="3EozPd" id="dW_p57skC6" role="sklvC">
         <property role="TrG5h" value="latency" />
-        <node concept="2vxuzR" id="7XyBMvGkJTY" role="2jp4kx">
-          <node concept="3TlM44" id="7XyBMvGkJVJ" role="3WnoGb">
-            <node concept="3TlMh9" id="7XyBMvGkJWo" role="3TlMhJ">
-              <property role="2hmy$m" value="10" />
-            </node>
-            <node concept="2xC6$6" id="7XyBMvGkJUY" role="3TlMhI" />
-          </node>
-        </node>
       </node>
       <node concept="sjk9b" id="dW_p57skBH" role="skltt">
         <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
@@ -296,43 +266,43 @@
       <property role="TrG5h" value="MassPerLength" />
       <node concept="1vcr1m" id="5fZiy7Lf6zY" role="1vM8HU">
         <property role="TrG5h" value="LoadPowerConnector" />
-        <node concept="3TlMh9" id="5fZiy7Lf6$o" role="1vcgrG">
+        <node concept="3TlMh9" id="4lKrsgQsLi3" role="1vcgrG">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6$z" role="1vM8HU">
         <property role="TrG5h" value="DevicePowerConnector" />
-        <node concept="3TlMh9" id="5fZiy7Lf6$$" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhAl" role="1vcgrG">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6_2" role="1vM8HU">
         <property role="TrG5h" value="DiscreteDataConnector" />
-        <node concept="3TlMh9" id="5fZiy7Lf6_3" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhAp" role="1vcgrG">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6_P" role="1vM8HU">
         <property role="TrG5h" value="LowSpeedCANBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6_Q" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhAJ" role="1vcgrG">
           <property role="2hmy$m" value="2" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6Aj" role="1vM8HU">
         <property role="TrG5h" value="HighSpeedCANBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Ak" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhAW" role="1vcgrG">
           <property role="2hmy$m" value="2" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6AN" role="1vM8HU">
         <property role="TrG5h" value="LINBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6AO" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhBp" role="1vcgrG">
           <property role="2hmy$m" value="2" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6Bx" role="1vM8HU">
         <property role="TrG5h" value="FlexRayBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6By" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhBA" role="1vcgrG">
           <property role="2hmy$m" value="4" />
         </node>
       </node>
@@ -341,43 +311,43 @@
       <property role="TrG5h" value="CostPerLength" />
       <node concept="1vcr1m" id="5fZiy7Lf6JB" role="1vM8HU">
         <property role="TrG5h" value="LoadPowerConnector" />
-        <node concept="3TlMh9" id="5fZiy7Lf6JC" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhBN" role="1vcgrG">
           <property role="2hmy$m" value="9" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6JD" role="1vM8HU">
         <property role="TrG5h" value="DevicePowerConnector" />
-        <node concept="3TlMh9" id="5fZiy7Lf6JE" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhC0" role="1vcgrG">
           <property role="2hmy$m" value="9" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6JF" role="1vM8HU">
         <property role="TrG5h" value="DiscreteDataConnector" />
-        <node concept="3TlMh9" id="5fZiy7Lf6JG" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhCd" role="1vcgrG">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6JH" role="1vM8HU">
         <property role="TrG5h" value="LowSpeedCANBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6JI" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhCq" role="1vcgrG">
           <property role="2hmy$m" value="5" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6JJ" role="1vM8HU">
         <property role="TrG5h" value="HighSpeedCANBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6JK" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhCB" role="1vcgrG">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6JL" role="1vM8HU">
         <property role="TrG5h" value="LINBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6JM" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhCO" role="1vcgrG">
           <property role="2hmy$m" value="2" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6JN" role="1vM8HU">
         <property role="TrG5h" value="FlexRayBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6JO" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhD1" role="1vcgrG">
           <property role="2hmy$m" value="2" />
         </node>
       </node>
@@ -386,25 +356,25 @@
       <property role="TrG5h" value="TimePerSize" />
       <node concept="1vcr1m" id="5fZiy7Lf6Mc" role="1vM8HU">
         <property role="TrG5h" value="LowSpeedCANBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Md" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhDe" role="1vcgrG">
           <property role="2hmy$m" value="6" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6Me" role="1vM8HU">
         <property role="TrG5h" value="HighSpeedCANBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Mf" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhDr" role="1vcgrG">
           <property role="2hmy$m" value="3" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6Mg" role="1vM8HU">
         <property role="TrG5h" value="LINBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Mh" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhDC" role="1vcgrG">
           <property role="2hmy$m" value="4" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6Mi" role="1vM8HU">
         <property role="TrG5h" value="FlexRayBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Mj" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhDP" role="1vcgrG">
           <property role="2hmy$m" value="1" />
         </node>
       </node>
@@ -413,33 +383,33 @@
       <property role="TrG5h" value="BusProtocolOverhead" />
       <node concept="1vcr1m" id="5fZiy7Lf6Q8" role="1vM8HU">
         <property role="TrG5h" value="LowSpeedCANBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Q9" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhE4" role="1vcgrG">
           <property role="2hmy$m" value="5" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6Qa" role="1vM8HU">
         <property role="TrG5h" value="HighSpeedCANBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Qb" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhEh" role="1vcgrG">
           <property role="2hmy$m" value="5" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6Qc" role="1vM8HU">
         <property role="TrG5h" value="LINBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Qd" role="1vcgrG">
+        <node concept="3TlMh9" id="2FS8nA4ZhEs" role="1vcgrG">
           <property role="2hmy$m" value="4" />
         </node>
       </node>
       <node concept="1vcr1m" id="5fZiy7Lf6Qe" role="1vM8HU">
         <property role="TrG5h" value="FlexRayBus" />
-        <node concept="3TlMh9" id="5fZiy7Lf6Qf" role="1vcgrG">
-          <property role="2hmy$m" value="8" />
+        <node concept="3TlMh9" id="2FS8nA4ZhED" role="1vcgrG">
+          <property role="2hmy$m" value="1" />
         </node>
       </node>
     </node>
     <node concept="1vcr1m" id="5fZiy7Lf6yT" role="3tuoqM">
       <property role="TrG5h" value="ReferenceSpeedFactor" />
-      <node concept="3TlMh9" id="5fZiy7Lf6zh" role="1vcgrG">
-        <property role="2hmy$m" value="1" />
+      <node concept="3TlMh9" id="2FS8nA4ZhEQ" role="1vcgrG">
+        <property role="2hmy$m" value="5" />
       </node>
     </node>
     <node concept="UzEYP" id="3rHVZEpZ2Dp" role="3tuoqM" />

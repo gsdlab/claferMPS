@@ -8,7 +8,7 @@
   <imports />
   <registry>
     <language id="f0b44ab8-bd30-416e-b267-f165b5e42b67" name="org.clafer.util.tags">
-      <concept id="8383752258224629577" name="org.clafer.util.tags.structure.tag" flags="ng" index="3K0Fkb">
+      <concept id="8383752258224629577" name="org.clafer.util.tags.structure.Tag" flags="ng" index="3K0Fkb">
         <property id="6049508689451976590" name="colorIndex" index="2BAaIn" />
       </concept>
     </language>
@@ -27,22 +27,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
-      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
-        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
-        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
-        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
-        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
-      </concept>
-      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
-        <child id="8963411245960991904" name="entries" index="37mRID" />
-      </concept>
-      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
-        <property id="8963411245960998400" name="key" index="37mO49" />
-        <child id="8963411245960998404" name="value" index="37mO4d" />
-      </concept>
-    </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
       <concept id="204078314067568528" name="org.clafer.core.structure.EmptyClaferModuleContent" flags="ng" index="UzEYP" />
       <concept id="204078314067480627" name="org.clafer.core.structure.ClaferModule" flags="ng" index="UzPwm">
@@ -55,25 +39,12 @@
     <property role="3wNgFz" value="0" />
     <property role="TrG5h" value="TagsExample" />
     <node concept="UzEYP" id="7hp4$a4rTzh" role="UzTCv" />
-    <node concept="1u8h5F" id="7hp4$a4rTzx" role="UzTCv">
+    <node concept="1u8h5F" id="2FS8nA56eul" role="UzTCv">
       <property role="TrG5h" value="fa" />
-      <node concept="2mZLT$" id="7hp4$a4rTzJ" role="2mZOl8">
+      <node concept="2mZLT$" id="2FS8nA56euJ" role="2mZOl8">
         <property role="TrG5h" value="af" />
-        <node concept="3K0Fkb" id="5fOb1BOrk1j" role="lGtFl">
-          <property role="2BAaIn" value="2" />
-        </node>
-      </node>
-      <node concept="UzEYP" id="7hp4$a4rTzN" role="2mZOl8" />
-      <node concept="37mRI7" id="7hp4$a4smYF" role="lGtFl">
-        <node concept="37mRIm" id="7hp4$a4smYG" role="37mRID">
-          <property role="37mO49" value="8383752258225936623" />
-          <node concept="gqqVs" id="7hp4$a4smYE" role="37mO4d">
-            <property role="gqqTZ" value="12.0" />
-            <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="240.0" />
-            <property role="gqqTy" value="130.0" />
-            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-          </node>
+        <node concept="3K0Fkb" id="2FS8nA56euN" role="lGtFl">
+          <property role="2BAaIn" value="1" />
         </node>
       </node>
     </node>

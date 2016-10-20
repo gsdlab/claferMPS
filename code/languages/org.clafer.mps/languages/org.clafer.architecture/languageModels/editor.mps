@@ -29,7 +29,6 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
-    <import index="vrqc" ref="r:53e59391-150a-45ff-930e-2b4fdafb0905(org.clafer.expr.editor)" />
     <import index="qon6" ref="r:77666878-a961-4760-8fa7-8b6fd31b3f35(org.clafer.core.editor)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings(MPS.Editor/)" />
@@ -45,16 +44,16 @@
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
     <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" />
+    <import index="wrtg" ref="r:4719b444-431a-4b3a-8eb1-d31303c73fb9(org.clafer.expressions.behavior)" />
+    <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="u9qf" ref="r:80a82414-28cc-4e76-a693-b906633907a3(org.clafer.util.milestone.structure)" implicit="true" />
     <import index="x6j7" ref="r:323b0bea-cb32-4ef0-8dde-bf6f73649126(org.clafer.util.milestone.behavior)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
-    <import index="ywuy" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd9(org.clafer.expr.behavior)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="x08t" ref="r:d521f1d2-8caa-4564-84c1-36914730aa5a(org.clafer.util.tags.structure)" implicit="true" />
   </imports>
@@ -3815,7 +3814,7 @@
           </node>
           <node concept="37u81S" id="399d13sao3U" role="2M4AHK" />
           <node concept="3Tqbb2" id="399d13saj5P" role="2M4AHM">
-            <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+            <ref role="ehGHo" to="dajg:7FQByU3CrCM" resolve="Expression" />
           </node>
           <node concept="37q72E" id="399d13sainf" role="2M4AHN">
             <node concept="3clFbS" id="399d13sainh" role="2VODD2">
@@ -3842,7 +3841,7 @@
                 <node concept="3cpWsn" id="1MaSFbjyAgR" role="3cpWs9">
                   <property role="TrG5h" value="endpoints" />
                   <node concept="2I9FWS" id="1MaSFbjyAgM" role="1tU5fm">
-                    <ref role="2I9WkF" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+                    <ref role="2I9WkF" to="dajg:7FQByU3CrCM" resolve="Expression" />
                   </node>
                   <node concept="2OqwBi" id="1MaSFbjyC8$" role="33vP2m">
                     <node concept="2OqwBi" id="399d13saNHt" role="2Oq$k0">
@@ -3874,7 +3873,7 @@
                                 </node>
                                 <node concept="v3k3i" id="17N04apjfOR" role="2OqNvi">
                                   <node concept="chp4Y" id="1MaSFbjxpJv" role="v3oSu">
-                                    <ref role="cht4Q" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+                                    <ref role="cht4Q" to="dajg:7FQByU3CrCM" resolve="Expression" />
                                   </node>
                                 </node>
                               </node>
@@ -10772,7 +10771,7 @@
                   </node>
                   <node concept="1mIQ4w" id="1OxX53tuuBN" role="2OqNvi">
                     <node concept="chp4Y" id="1OxX53tuuBO" role="cj9EA">
-                      <ref role="cht4Q" to="mj1k:40tXLnqhyKc" resolve="GenericDotExpression" />
+                      <ref role="cht4Q" to="dajg:40tXLnqhyKc" resolve="GenericDotExpression" />
                     </node>
                   </node>
                 </node>
@@ -10826,7 +10825,7 @@
               <node concept="2OqwBi" id="M9rtBFUFac" role="3clFbG">
                 <node concept="pncrf" id="M9rtBFQi6y" role="2Oq$k0" />
                 <node concept="2qgKlT" id="M9rtBFQieb" role="2OqNvi">
-                  <ref role="37wK5l" to="ywuy:66uzewbZgGM" resolve="getTarget" />
+                  <ref role="37wK5l" to="wrtg:66uzewbZgGM" resolve="getTarget" />
                 </node>
               </node>
             </node>
