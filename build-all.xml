@@ -58,10 +58,10 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
     <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
-    <mkdir dir="${build.tmp}/deps/org.clafer.architecture/org.clafer.architecture.zip" />
-    <unzip src="${artifacts.org.clafer.architecture}/org.clafer.architecture.zip" dest="${build.tmp}/deps/org.clafer.architecture/org.clafer.architecture.zip" />
     <mkdir dir="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
     <unzip src="${artifacts.org.clafer.core.mps}/org.clafer.core.mps.zip" dest="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
+    <mkdir dir="${build.tmp}/deps/org.clafer.architecture/org.clafer.architecture.zip" />
+    <unzip src="${artifacts.org.clafer.architecture}/org.clafer.architecture.zip" dest="${build.tmp}/deps/org.clafer.architecture/org.clafer.architecture.zip" />
   </target>
   
   <target name="build" depends="assemble" />

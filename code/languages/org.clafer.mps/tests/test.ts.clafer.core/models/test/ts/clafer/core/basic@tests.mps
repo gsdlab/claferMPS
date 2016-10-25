@@ -97,8 +97,8 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
-      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns94">
-        <property id="2212975673976043696" name="value" index="2hmy$n" />
+      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral_old" flags="ng" index="2hns94">
+        <property id="2212975673976043696" name="value_old" index="2hmy$n" />
       </concept>
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
