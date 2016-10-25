@@ -14,7 +14,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
-    <import index="s1om" ref="r:1c4c0f03-ba56-4dfb-b7f1-39e731762799(org.clafer.referenceModel.generator.org.clafer.referenceModel.util)" />
+    <import index="aaok" ref="r:18b72e9a-8630-4c65-811d-c4e169c6148a(org.clafer.referenceModel.behavior)" />
     <import index="t0n6" ref="r:414c079d-9eb7-4f55-bf30-49912fdadcdb(org.clafer.referenceModel.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -23,10 +23,17 @@
       <concept id="3005510381523579442" name="org.clafer.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
         <child id="7254843406768839760" name="expression" index="1_9fRO" />
       </concept>
+      <concept id="2212975673976017893" name="org.clafer.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
+        <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
       <concept id="4620120465980402700" name="org.clafer.expressions.structure.GenericDotExpression" flags="ng" index="2qmXGp">
         <child id="7034214596252529803" name="target" index="1ESnxz" />
       </concept>
       <concept id="8860443239512129322" name="org.clafer.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
+      <concept id="8860443239512128052" name="org.clafer.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
+      </concept>
       <concept id="8860443239512128108" name="org.clafer.expressions.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="org.clafer.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
@@ -218,15 +225,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-    <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
-      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral" flags="ng" index="2hns93">
-        <property id="2212975673976043696" name="value" index="2hmy$m" />
-      </concept>
-      <concept id="8860443239512128052" name="org.clafer.expr.structure.BinaryExpression" flags="ng" index="3TlMgq">
-        <child id="8860443239512128064" name="left" index="3TlMhI" />
-        <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
@@ -738,18 +736,18 @@
                         <ref role="3cqZAo" node="PK4wiFTkGU" resolve="result" />
                       </node>
                       <node concept="X8dFx" id="PK4wiFVgmh" role="2OqNvi">
-                        <node concept="2YIFZM" id="PK4wiFVHg8" role="25WWJ7">
-                          <ref role="1Pybhc" to="s1om:PK4wiFU7Uy" resolve="ReferenceModelUtil" />
-                          <ref role="37wK5l" to="s1om:2NSDVxFOIB1" resolve="getTableQAttributesByConceptName" />
-                          <node concept="2OqwBi" id="PK4wiFVHg9" role="37wK5m">
-                            <node concept="30H73N" id="PK4wiFVHga" role="2Oq$k0" />
-                            <node concept="3TrcHB" id="PK4wiFVHgb" role="2OqNvi">
+                        <node concept="2YIFZM" id="2WKmNEH4c9U" role="25WWJ7">
+                          <ref role="37wK5l" to="aaok:2NSDVxFOIB1" resolve="getTableQAttributesByConceptName" />
+                          <ref role="1Pybhc" to="aaok:2WKmNEH41rs" resolve="RefUtils" />
+                          <node concept="2OqwBi" id="2WKmNEH4c9V" role="37wK5m">
+                            <node concept="30H73N" id="2WKmNEH4c9W" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="2WKmNEH4c9X" role="2OqNvi">
                               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="PK4wiFVHgc" role="37wK5m">
-                            <node concept="30H73N" id="PK4wiFVHgd" role="2Oq$k0" />
-                            <node concept="I4A8Y" id="PK4wiFVHge" role="2OqNvi" />
+                          <node concept="2OqwBi" id="2WKmNEH4c9Y" role="37wK5m">
+                            <node concept="30H73N" id="2WKmNEH4c9Z" role="2Oq$k0" />
+                            <node concept="I4A8Y" id="2WKmNEH4ca0" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -794,12 +792,6 @@
           </node>
         </node>
         <node concept="2vxuzR" id="2VAdP2TgVsN" role="2vwUiP">
-          <node concept="3TlM44" id="6kV3EBwnJan" role="3WnoGb">
-            <node concept="3TlMh9" id="6kV3EBwnJas" role="3TlMhJ">
-              <property role="2hmy$m" value="10" />
-            </node>
-            <node concept="2Zoh0E" id="2VAdP2Th00i" role="3TlMhI" />
-          </node>
           <node concept="2b32R4" id="2VAdP2Th03V" role="lGtFl">
             <node concept="3JmXsc" id="2VAdP2Th03X" role="2P8S$">
               <node concept="3clFbS" id="2VAdP2Th03Z" role="2VODD2">
@@ -813,6 +805,12 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="3TlM44" id="3VxdJ6sQgSL" role="3WnoGb">
+            <node concept="3TlMh9" id="3VxdJ6sQgUH" role="3TlMhJ">
+              <property role="2hmy$m" value="10" />
+            </node>
+            <node concept="2Zoh0E" id="3VxdJ6sQgJj" role="3TlMhI" />
           </node>
         </node>
       </node>

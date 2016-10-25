@@ -111,7 +111,6 @@
     <module reference="925f4a66-e822-41c9-89f3-e1efeb4715ec(org.clafer.architecture.sandbox)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
-    <module reference="0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)" version="0" />
     <module reference="19cc4ac9-bac2-4507-89f0-0035b38c3e6e(org.clafer.util.milestone)" version="0" />
     <module reference="f0b44ab8-bd30-416e-b267-f165b5e42b67(org.clafer.util.tags)" version="0" />
   </dependencyVersions>

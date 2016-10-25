@@ -10,6 +10,7 @@
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="5e8d2011-eb6c-491f-9520-19d12014a9bc" name="org.clafer.referenceModel" version="0" />
     <use id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions" version="1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -17,9 +18,9 @@
     <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" />
     <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" />
     <import index="uta" ref="r:318e3602-1c18-4f45-8392-46c6f99dd97f(org.clafer.architecture.referencemodel.refmodel)" />
-    <import index="s1om" ref="r:1c4c0f03-ba56-4dfb-b7f1-39e731762799(org.clafer.referenceModel.generator.org.clafer.referenceModel.util)" />
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="wrtg" ref="r:4719b444-431a-4b3a-8eb1-d31303c73fb9(org.clafer.expressions.behavior)" />
+    <import index="aaok" ref="r:18b72e9a-8630-4c65-811d-c4e169c6148a(org.clafer.referenceModel.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
@@ -1955,11 +1956,11 @@
                     <node concept="3Tqbb2" id="7$28d_YY6Ww" role="1tU5fm">
                       <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
                     </node>
-                    <node concept="2YIFZM" id="2VAdP2Tpjeg" role="33vP2m">
-                      <ref role="37wK5l" to="s1om:7$28d_YWxAw" resolve="getConceptClafer" />
-                      <ref role="1Pybhc" to="s1om:PK4wiFU7Uy" resolve="ReferenceModelUtil" />
-                      <node concept="30H73N" id="2VAdP2Tpjeh" role="37wK5m" />
-                      <node concept="1iwH7S" id="2VAdP2Tpjei" role="37wK5m" />
+                    <node concept="2YIFZM" id="2WKmNEGVv08" role="33vP2m">
+                      <ref role="1Pybhc" to="aaok:2WKmNEH41rs" resolve="RefUtils" />
+                      <ref role="37wK5l" to="aaok:7$28d_YWxAw" resolve="getConceptClafer" />
+                      <node concept="30H73N" id="2WKmNEGVv09" role="37wK5m" />
+                      <node concept="1iwH7S" id="2WKmNEGVv0a" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -2028,11 +2029,11 @@
                   <node concept="9aQIb" id="7$28d_YY0re" role="9aQIa">
                     <node concept="3clFbS" id="7$28d_YY0rf" role="9aQI4">
                       <node concept="3cpWs6" id="2VAdP2Tpiy9" role="3cqZAp">
-                        <node concept="2YIFZM" id="2VAdP2Tpiya" role="3cqZAk">
-                          <ref role="37wK5l" to="s1om:7$28d_YWxAw" resolve="getConceptClafer" />
-                          <ref role="1Pybhc" to="s1om:PK4wiFU7Uy" resolve="ReferenceModelUtil" />
-                          <node concept="30H73N" id="2VAdP2TpiJ9" role="37wK5m" />
-                          <node concept="1iwH7S" id="2VAdP2Tpj35" role="37wK5m" />
+                        <node concept="2YIFZM" id="2WKmNEGVv6A" role="3cqZAk">
+                          <ref role="1Pybhc" to="aaok:2WKmNEH41rs" resolve="RefUtils" />
+                          <ref role="37wK5l" to="aaok:7$28d_YWxAw" resolve="getConceptClafer" />
+                          <node concept="30H73N" id="2WKmNEGVv6B" role="37wK5m" />
+                          <node concept="1iwH7S" id="2WKmNEGVv6C" role="37wK5m" />
                         </node>
                       </node>
                       <node concept="3clFbH" id="2VAdP2Tpiw9" role="3cqZAp" />
@@ -2318,17 +2319,17 @@
                     <node concept="3$xsQk" id="1OxX53tiRRJ" role="3$ytzL">
                       <node concept="3clFbS" id="1OxX53tiRRK" role="2VODD2">
                         <node concept="3cpWs6" id="2VAdP2TphC7" role="3cqZAp">
-                          <node concept="2YIFZM" id="2VAdP2Tpib0" role="3cqZAk">
-                            <ref role="37wK5l" to="s1om:7$28d_YWxAw" resolve="getConceptClafer" />
-                            <ref role="1Pybhc" to="s1om:PK4wiFU7Uy" resolve="ReferenceModelUtil" />
-                            <node concept="2ShNRf" id="2VAdP2Tpidw" role="37wK5m">
-                              <node concept="3zrR0B" id="2VAdP2Tpidx" role="2ShVmc">
-                                <node concept="3Tqbb2" id="2VAdP2Tpidy" role="3zrR0E">
+                          <node concept="2YIFZM" id="2WKmNEGVvbX" role="3cqZAk">
+                            <ref role="1Pybhc" to="aaok:2WKmNEH41rs" resolve="RefUtils" />
+                            <ref role="37wK5l" to="aaok:7$28d_YWxAw" resolve="getConceptClafer" />
+                            <node concept="2ShNRf" id="2WKmNEGVvbY" role="37wK5m">
+                              <node concept="3zrR0B" id="2WKmNEGVvbZ" role="2ShVmc">
+                                <node concept="3Tqbb2" id="2WKmNEGVvc0" role="3zrR0E">
                                   <ref role="ehGHo" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
                                 </node>
                               </node>
                             </node>
-                            <node concept="1iwH7S" id="2VAdP2Tpjbx" role="37wK5m" />
+                            <node concept="1iwH7S" id="2WKmNEGVvc1" role="37wK5m" />
                           </node>
                         </node>
                       </node>
@@ -2987,11 +2988,11 @@
             <node concept="2I9FWS" id="7hQ9wAVUbNP" role="1tU5fm">
               <ref role="2I9WkF" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
             </node>
-            <node concept="2YIFZM" id="4NBd3iZt6Yw" role="33vP2m">
-              <ref role="1Pybhc" to="s1om:PK4wiFU7Uy" resolve="ReferenceModelUtil" />
-              <ref role="37wK5l" to="s1om:7$28d_Ysb$$" resolve="getModuleChunks" />
-              <node concept="1Q6Npb" id="4NBd3iZt6Yx" role="37wK5m" />
-              <node concept="37vLTw" id="4NBd3iZtIaA" role="37wK5m">
+            <node concept="2YIFZM" id="2WKmNEH4fAG" role="33vP2m">
+              <ref role="37wK5l" to="aaok:7$28d_Ysb$$" resolve="getModuleChunks" />
+              <ref role="1Pybhc" to="aaok:2WKmNEH41rs" resolve="RefUtils" />
+              <node concept="1Q6Npb" id="2WKmNEH4fAH" role="37wK5m" />
+              <node concept="37vLTw" id="2WKmNEH4fAI" role="37wK5m">
                 <ref role="3cqZAo" node="7hQ9wAVUbNJ" resolve="baseModelName" />
               </node>
             </node>

@@ -18,9 +18,9 @@
       </external-templates>
       <dependencies>
         <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
-        <dependency reexport="false">0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)</dependency>
         <dependency reexport="false">5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)</dependency>
         <dependency reexport="false">8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)</dependency>
+        <dependency reexport="false">e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -97,7 +97,6 @@
         <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
         <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
         <module reference="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" version="0" />
-        <module reference="0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)" version="0" />
         <module reference="19cc4ac9-bac2-4507-89f0-0035b38c3e6e(org.clafer.util.milestone)" version="0" />
         <module reference="f0b44ab8-bd30-416e-b267-f165b5e42b67(org.clafer.util.tags)" version="0" />
       </dependencyVersions>
@@ -136,7 +135,6 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="true">0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)</dependency>
     <dependency reexport="false">5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)</dependency>
-    <dependency reexport="true">0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)</dependency>
     <dependency reexport="true">19cc4ac9-bac2-4507-89f0-0035b38c3e6e(org.clafer.util.milestone)</dependency>
   </dependencies>
   <usedDevKits>
@@ -234,7 +232,6 @@
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
     <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
-    <module reference="0616dcdc-cb9a-4000-bf83-eac7b6c3a66f(org.clafer.referenceModel.sandbox)" version="0" />
     <module reference="19cc4ac9-bac2-4507-89f0-0035b38c3e6e(org.clafer.util.milestone)" version="0" />
     <module reference="f0b44ab8-bd30-416e-b267-f165b5e42b67(org.clafer.util.tags)" version="0" />
   </dependencyVersions>
