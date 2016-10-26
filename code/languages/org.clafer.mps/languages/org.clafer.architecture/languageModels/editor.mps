@@ -2093,7 +2093,7 @@
     </node>
   </node>
   <node concept="2ABfQD" id="1q5jVmNO7wz">
-    <property role="TrG5h" value="architectureStuff" />
+    <property role="TrG5h" value="architectureProjections" />
     <node concept="2BsEeg" id="1q5jVmNO7w$" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="architectureDiagrams" />
@@ -4712,7 +4712,7 @@
     <property role="TrG5h" value="archMode" />
     <node concept="33gmoH" id="7YIt5pdxmj8" role="2hfSGL">
       <property role="33g7Lv" value="Clafer: Architecture" />
-      <ref role="33glcW" node="1q5jVmNO7wz" resolve="architectureStuff" />
+      <ref role="33glcW" node="1q5jVmNO7wz" resolve="architectureProjections" />
       <ref role="33glcY" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
     <node concept="tT9cl" id="7YIt5pdxmj9" role="2hfP89">

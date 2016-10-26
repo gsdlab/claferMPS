@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" folder="referenceModel" />
       <modulePath path="$PROJECT_DIR$/languages/qualityAttributes/qualityAttributes.mpl" folder="qualityAttributes" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.example/org.clafer.architecture.sandbox.msd" folder="architecture" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.pluginSolution/org.clafer.architecture.pluginSolution.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.referencemodel/org.clafer.architecture.referencemodel.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.sandbox.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.mps.build/org.clafer.mps.build.msd" folder="" />
