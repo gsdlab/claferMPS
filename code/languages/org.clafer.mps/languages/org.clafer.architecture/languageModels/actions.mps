@@ -106,6 +106,7 @@
         <child id="1177498207384" name="handler" index="Cncma" />
       </concept>
       <concept id="1177498227294" name="jetbrains.mps.lang.actions.structure.QueryFunction_SideTransform_Handler" flags="in" index="Cnhdc" />
+      <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
       <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
         <child id="1158700779049" name="nodeFactory" index="37WGs$" />
       </concept>
@@ -2208,6 +2209,28 @@
           <node concept="3clFbF" id="6nffD2fSP3u" role="3cqZAp">
             <node concept="3clFbT" id="6nffD2fSP3t" role="3clFbG">
               <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="37WguZ" id="IwWtVY8vFF">
+    <node concept="37WvkG" id="IwWtVY8vFG" role="37WGs$">
+      <ref role="37XkoT" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+      <node concept="37Y9Zx" id="IwWtVY8vFH" role="37ZfLb">
+        <node concept="3clFbS" id="IwWtVY8vFI" role="2VODD2">
+          <node concept="3clFbF" id="IwWtVY8vFM" role="3cqZAp">
+            <node concept="2OqwBi" id="IwWtVY8wIu" role="3clFbG">
+              <node concept="2OqwBi" id="IwWtVY8vLl" role="2Oq$k0">
+                <node concept="1r4Lsj" id="IwWtVY8vFL" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="IwWtVY8vZD" role="2OqNvi">
+                  <ref role="3TtcxE" to="ddau:4csP6flST4F" />
+                </node>
+              </node>
+              <node concept="2DeJg1" id="IwWtVY8ySd" role="2OqNvi">
+                <ref role="1A0vxQ" to="mecy:bl22kSmUug" resolve="EmptyClaferModuleContent" />
+              </node>
             </node>
           </node>
         </node>
