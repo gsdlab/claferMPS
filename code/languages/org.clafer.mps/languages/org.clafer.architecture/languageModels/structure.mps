@@ -9,8 +9,8 @@
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
-    <import index="x08t" ref="r:d521f1d2-8caa-4564-84c1-36914730aa5a(org.clafer.util.tags.structure)" implicit="true" />
-    <import index="u9qf" ref="r:80a82414-28cc-4e76-a693-b906633907a3(org.clafer.util.milestone.structure)" implicit="true" />
+    <import index="1drr" ref="r:efe8ca06-a104-4b6a-81d4-3821bf9939ba(org.clafer.util.milestone.structure)" />
+    <import index="dkee" ref="r:efb465bf-ea7d-479d-8823-2c3c77049b98(org.clafer.util.tags.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -120,13 +120,13 @@
       <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     </node>
     <node concept="PrWs8" id="7bA4V6KDwem" role="PzmwI">
-      <ref role="PrY4T" to="x08t:7bA4V6KyOHz" resolve="ITaggable" />
+      <ref role="PrY4T" to="dkee:7bA4V6KyOHz" resolve="ITaggable" />
     </node>
     <node concept="PrWs8" id="3g3ywkm6Xbv" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
     </node>
     <node concept="PrWs8" id="4pZCXPVJJI" role="PzmwI">
-      <ref role="PrY4T" to="u9qf:4pZCXPVIQi" resolve="IVersionable" />
+      <ref role="PrY4T" to="1drr:4pZCXPVIQi" resolve="IVersionable" />
     </node>
     <node concept="PrWs8" id="5ipUCoiwI5d" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />

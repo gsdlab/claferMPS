@@ -96,11 +96,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="61c69711-ed61-4850-81d9-7714ff227ff0" name="org.clafer.expr">
-      <concept id="2212975673976017893" name="org.clafer.expr.structure.NumericLiteral_old" flags="ng" index="2hns94">
-        <property id="2212975673976043696" name="value_old" index="2hmy$n" />
-      </concept>
-    </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
       <concept id="629737693910916321" name="org.clafer.core.structure.TypeExpr" flags="ng" index="2jxDJT">
         <child id="629737693910916322" name="targetType" index="2jxDJU" />
@@ -451,12 +446,9 @@
               <node concept="biTqx" id="yXhLyrh0dn" role="2jxDJU" />
             </node>
           </node>
-          <node concept="Kh$Oq" id="32HtSayYoS$" role="KmSwm">
-            <node concept="3TlMh9" id="32HtSayYoSC" role="Kh$P6">
-              <property role="2hmy$n" value="10" />
-              <node concept="7CXmI" id="RURm_$0UBO" role="lGtFl">
-                <node concept="1TM$A" id="RURm_$0UBP" role="7EUXB" />
-              </node>
+          <node concept="Kh$Oq" id="4sEmwuuEiSb" role="KmSwm">
+            <node concept="7CXmI" id="4sEmwuuEj36" role="lGtFl">
+              <node concept="1TM$A" id="4sEmwuuEj37" role="7EUXB" />
             </node>
           </node>
         </node>

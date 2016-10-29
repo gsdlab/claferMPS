@@ -90,8 +90,8 @@
         <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
         <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
         <module reference="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" version="0" />
-        <module reference="19cc4ac9-bac2-4507-89f0-0035b38c3e6e(org.clafer.util.milestone)" version="0" />
-        <module reference="f0b44ab8-bd30-416e-b267-f165b5e42b67(org.clafer.util.tags)" version="0" />
+        <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
+        <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -166,8 +166,8 @@
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
     <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
-    <module reference="19cc4ac9-bac2-4507-89f0-0035b38c3e6e(org.clafer.util.milestone)" version="0" />
-    <module reference="f0b44ab8-bd30-416e-b267-f165b5e42b67(org.clafer.util.tags)" version="0" />
+    <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
+    <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</extendedLanguage>

@@ -22,12 +22,12 @@
     <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="x6j7" ref="r:323b0bea-cb32-4ef0-8dde-bf6f73649126(org.clafer.util.milestone.behavior)" />
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="wrtg" ref="r:4719b444-431a-4b3a-8eb1-d31303c73fb9(org.clafer.expressions.behavior)" />
-    <import index="x08t" ref="r:d521f1d2-8caa-4564-84c1-36914730aa5a(org.clafer.util.tags.structure)" implicit="true" />
-    <import index="i580" ref="r:ae97e9b4-d6ce-43d6-9f06-d4b667c42f24(org.clafer.util.tags.behavior)" implicit="true" />
-    <import index="u9qf" ref="r:80a82414-28cc-4e76-a693-b906633907a3(org.clafer.util.milestone.structure)" implicit="true" />
+    <import index="1drr" ref="r:efe8ca06-a104-4b6a-81d4-3821bf9939ba(org.clafer.util.milestone.structure)" />
+    <import index="ektw" ref="r:13a58bae-5386-4ea7-a304-618e4aaca473(org.clafer.util.milestone.behavior)" />
+    <import index="8csk" ref="r:6c8938be-aad5-41b9-af4c-1bf55f3f4d36(org.clafer.util.tags.behavior)" />
+    <import index="dkee" ref="r:efb465bf-ea7d-479d-8823-2c3c77049b98(org.clafer.util.tags.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -450,12 +450,12 @@
                   <node concept="13iPFW" id="7hp4$a4rmrB" role="2Oq$k0" />
                   <node concept="3CFZ6_" id="7hp4$a4rmGX" role="2OqNvi">
                     <node concept="3CFYIy" id="7hp4$a4rmIJ" role="3CFYIz">
-                      <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
+                      <ref role="3CFYIx" to="dkee:7hp4$a4mUt9" resolve="Tag" />
                     </node>
                   </node>
                 </node>
                 <node concept="2qgKlT" id="7hp4$a4rmXG" role="2OqNvi">
-                  <ref role="37wK5l" to="i580:1wtoViepsLV" resolve="getTagColor" />
+                  <ref role="37wK5l" to="8csk:1wtoViepsLV" resolve="getTagColor" />
                 </node>
               </node>
             </node>
@@ -465,7 +465,7 @@
               <node concept="13iPFW" id="7hp4$a4rn6H" role="2Oq$k0" />
               <node concept="3CFZ6_" id="7hp4$a4rnqz" role="2OqNvi">
                 <node concept="3CFYIy" id="7hp4$a4rnrd" role="3CFYIz">
-                  <ref role="3CFYIx" to="x08t:7hp4$a4mUt9" resolve="Tag" />
+                  <ref role="3CFYIx" to="dkee:7hp4$a4mUt9" resolve="Tag" />
                 </node>
               </node>
             </node>
@@ -479,12 +479,12 @@
                     <node concept="13iPFW" id="6ONwzYgLK3J" role="2Oq$k0" />
                     <node concept="3CFZ6_" id="6ONwzYgLKrC" role="2OqNvi">
                       <node concept="3CFYIy" id="6ONwzYgLKvI" role="3CFYIz">
-                        <ref role="3CFYIx" to="u9qf:5fOb1BOtcVP" resolve="Milestone" />
+                        <ref role="3CFYIx" to="1drr:5fOb1BOtcVP" resolve="Milestone" />
                       </node>
                     </node>
                   </node>
                   <node concept="2qgKlT" id="6ONwzYgLKN0" role="2OqNvi">
-                    <ref role="37wK5l" to="x6j7:1wtoViepsLV" resolve="getVersionColor" />
+                    <ref role="37wK5l" to="ektw:1wtoViepsLV" resolve="getVersionColor" />
                   </node>
                 </node>
               </node>
@@ -494,7 +494,7 @@
                 <node concept="13iPFW" id="6ONwzYgLKSL" role="2Oq$k0" />
                 <node concept="3CFZ6_" id="6ONwzYgLKSM" role="2OqNvi">
                   <node concept="3CFYIy" id="6ONwzYgLKSN" role="3CFYIz">
-                    <ref role="3CFYIx" to="u9qf:5fOb1BOtcVP" resolve="Milestone" />
+                    <ref role="3CFYIx" to="1drr:5fOb1BOtcVP" resolve="Milestone" />
                   </node>
                 </node>
               </node>

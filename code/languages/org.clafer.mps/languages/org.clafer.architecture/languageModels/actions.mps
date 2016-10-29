@@ -2216,6 +2216,7 @@
     </node>
   </node>
   <node concept="37WguZ" id="IwWtVY8vFF">
+    <property role="TrG5h" value="BaseFragment_InitContent" />
     <node concept="37WvkG" id="IwWtVY8vFG" role="37WGs$">
       <ref role="37XkoT" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
       <node concept="37Y9Zx" id="IwWtVY8vFH" role="37ZfLb">

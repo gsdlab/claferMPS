@@ -9,7 +9,6 @@
   </languages>
   <imports>
     <import index="t4ow" ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.sandbox.preferences)" />
-    <import index="7276" ref="r:4192835e-edb3-421c-91d0-0616013802b6(org.clafer.referenceModel.sandbox.refModel)" />
   </imports>
   <registry>
     <language id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions">
