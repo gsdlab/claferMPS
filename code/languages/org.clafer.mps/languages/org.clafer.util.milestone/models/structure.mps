@@ -33,8 +33,6 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="4628067390765956807" name="final" index="R5$K2" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -71,9 +69,8 @@
   </registry>
   <node concept="1TIwiD" id="5dHtH3gx2br">
     <property role="1pbfSe" value="603036075" />
-    <property role="TrG5h" value="MilestoneCustomType" />
-    <property role="3GE5qa" value="types" />
-    <ref role="1TJDcQ" node="5dHtH3gx2aY" resolve="MilestoneGenericType" />
+    <property role="TrG5h" value="MilestoneDefinition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5dHtH3gx2qC" role="1TKVEl">
       <property role="TrG5h" value="r" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -90,16 +87,14 @@
       <property role="TrG5h" value="visibility" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="5dHtH3gx2aY">
-    <property role="1pbfSe" value="603036046" />
-    <property role="TrG5h" value="MilestoneGenericType" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="types" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5dHtH3gx2be" role="PzmwI">
+    <node concept="PrWs8" id="3$duOrL70De" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="3$duOrL7ejS" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conditions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5fOb1BO_2wk" resolve="MilestoneCondition" />
     </node>
   </node>
   <node concept="PlHQZ" id="4pZCXPVIQi">
@@ -116,18 +111,6 @@
     <node concept="1TJgyi" id="4pZCXPVzq9" role="1TKVEl">
       <property role="TrG5h" value="condition" />
       <ref role="AX2Wp" node="2OawaSCo90A" resolve="MilestoneConditionEnum" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5dHtH3gx2aL">
-    <property role="1pbfSe" value="603036033" />
-    <property role="TrG5h" value="MilestoneTable" />
-    <property role="3GE5qa" value="types" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5dHtH3gx2bh" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="types" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5dHtH3gx2br" resolve="MilestoneCustomType" />
     </node>
   </node>
   <node concept="1TIwiD" id="5fOb1BOtcVP">
@@ -152,6 +135,10 @@
     <property role="1pbfSe" value="1998049078" />
     <property role="TrG5h" value="MilestoneController" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="59wQzhKXTVB" role="1TKVEl">
+      <property role="TrG5h" value="showUnversioned" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="4pZCXPZt_u" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="filters" />
@@ -177,13 +164,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="handler" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5dHtH3gx2br" resolve="MilestoneCustomType" />
-    </node>
-    <node concept="1TJgyj" id="4pZCXPZ3oR" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="conditions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5fOb1BO_2wk" resolve="MilestoneCondition" />
+      <ref role="20lvS9" node="5dHtH3gx2br" resolve="MilestoneDefinition" />
     </node>
     <node concept="1TJgyi" id="5dHtH3gwc4C" role="1TKVEl">
       <property role="TrG5h" value="isActive" />
@@ -224,34 +205,14 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5dHtH3gxgRJ" role="1TKVEi">
+    <node concept="1TJgyj" id="3$duOrL6$OY" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="typesTable" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5dHtH3gx2aL" resolve="MilestoneTable" />
+      <property role="20kJfa" value="types" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5dHtH3gx2br" resolve="MilestoneDefinition" />
     </node>
     <node concept="PrWs8" id="5dHtH3gx1vD" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="4pZCXPZ$IH">
-    <property role="TrG5h" value="MilestoneFilterHandler" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="4pZCXPZ$II" role="M5hS2">
-      <property role="1uS6qv" value="visibility" />
-      <property role="1uS6qo" value="visibility" />
-    </node>
-    <node concept="M4N5e" id="4pZCXPZ$JL" role="M5hS2">
-      <property role="1uS6qv" value="red" />
-      <property role="1uS6qo" value="red" />
-    </node>
-    <node concept="M4N5e" id="4pZCXPZ$JS" role="M5hS2">
-      <property role="1uS6qv" value="green" />
-      <property role="1uS6qo" value="green" />
-    </node>
-    <node concept="M4N5e" id="4pZCXPZ$K2" role="M5hS2">
-      <property role="1uS6qo" value="orange" />
-      <property role="1uS6qv" value="orange" />
     </node>
   </node>
 </model>
