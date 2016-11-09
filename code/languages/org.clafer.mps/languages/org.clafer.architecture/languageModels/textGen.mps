@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -102,28 +103,6 @@
         <node concept="lc7rE" id="1jKsuqUM2gs" role="3cqZAp">
           <node concept="la8eA" id="1jKsuqUM2gG" role="lcghm">
             <property role="lacIc" value="deployedTo" />
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="WtQ9Q" id="7irZwUoby1s">
-    <ref role="WuzLi" to="ddau:7irZwUo26tP" resolve="ArchElementRefExpr" />
-    <node concept="11bSqf" id="7irZwUoby1t" role="11c4hB">
-      <node concept="3clFbS" id="7irZwUoby1u" role="2VODD2">
-        <node concept="lc7rE" id="7irZwUoby2w" role="3cqZAp">
-          <node concept="l9hG8" id="7irZwUoby2O" role="lcghm">
-            <node concept="2OqwBi" id="7irZwUobymN" role="lb14g">
-              <node concept="2OqwBi" id="7irZwUoby6x" role="2Oq$k0">
-                <node concept="117lpO" id="7irZwUoby3A" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7irZwUobycU" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ddau:7irZwUo26An" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="7irZwUobCmF" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
           </node>
         </node>
       </node>

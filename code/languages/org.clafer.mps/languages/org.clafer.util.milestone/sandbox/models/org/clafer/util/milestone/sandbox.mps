@@ -9,6 +9,11 @@
   </languages>
   <imports />
   <registry>
+    <language id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" name="org.clafer.architecture.core">
+      <concept id="4835973625144381654" name="org.clafer.architecture.core.structure.ArchElement" flags="ng" index="2mZOiP">
+        <child id="4835973625144381739" name="contents" index="2mZOl8" />
+      </concept>
+    </language>
     <language id="e9e86950-9616-4c00-85d2-04b82bc81259" name="org.clafer.util.milestone">
       <concept id="6011591716833075931" name="org.clafer.util.milestone.structure.MilestoneDefinition" flags="ng" index="23Ulgb">
         <child id="4111077579482260728" name="conditions" index="384pYY" />
@@ -40,9 +45,6 @@
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="4835973625144817188" name="org.clafer.architecture.structure.FunctionalDevice" flags="ng" index="2mXI97" />
       <concept id="4835973625144396295" name="org.clafer.architecture.structure.AnalysisFunction" flags="ng" index="2mZLT$" />
-      <concept id="4835973625144381654" name="org.clafer.architecture.structure.ArchElement" flags="ng" index="2mZOiP">
-        <child id="4835973625144381739" name="contents" index="2mZOl8" />
-      </concept>
       <concept id="2141331924789116591" name="org.clafer.architecture.structure.FunctionConnector" flags="ng" index="1eXri_">
         <child id="1293377804022658520" name="sourceExpr" index="28Pzmq" />
         <child id="1293377804022658528" name="targetExpr" index="28Pzmy" />
@@ -104,31 +106,6 @@
     <property role="TrG5h" value="Milestone_example" />
     <node concept="1u8h5F" id="3$duOrL6zjd" role="UzTCv">
       <property role="TrG5h" value="faArch" />
-      <node concept="2mZLT$" id="3$duOrL6zjh" role="2mZOl8">
-        <property role="TrG5h" value="af" />
-      </node>
-      <node concept="2mXI97" id="3$duOrL6zjn" role="2mZOl8">
-        <property role="TrG5h" value="fd" />
-        <node concept="2BwebG" id="3iESOxs$23T" role="lGtFl">
-          <property role="2Bwecr" value="14" />
-        </node>
-      </node>
-      <node concept="1eXri_" id="3$duOrL6zjv" role="2mZOl8">
-        <property role="TrG5h" value="connerctor" />
-        <node concept="ZpONE" id="3$duOrL6zjG" role="28Pzmq">
-          <ref role="ZpOSt" node="3$duOrL6zjh" resolve="af" />
-        </node>
-        <node concept="ZpONE" id="3$duOrL6zjO" role="28Pzmy">
-          <ref role="ZpOSt" node="3$duOrL6zjn" resolve="fd" />
-        </node>
-      </node>
-      <node concept="UzEYP" id="3$duOrL6zjU" role="2mZOl8" />
-      <node concept="2mXI97" id="3$duOrL6zk9" role="2mZOl8">
-        <property role="TrG5h" value="fd2" />
-        <node concept="2BwebG" id="3$duOrL6znS" role="lGtFl">
-          <property role="2Bwecr" value="13" />
-        </node>
-      </node>
       <node concept="37mRI7" id="3iESOxs$22h" role="lGtFl">
         <node concept="37mRIm" id="3iESOxs$22i" role="37mRID">
           <property role="37mO49" value="4111077579482084561" />
@@ -203,6 +180,31 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="2mZLT$" id="3$duOrL6zjh" role="2mZOl8">
+        <property role="TrG5h" value="af" />
+      </node>
+      <node concept="2mXI97" id="3$duOrL6zjn" role="2mZOl8">
+        <property role="TrG5h" value="fd" />
+        <node concept="2BwebG" id="3iESOxs$23T" role="lGtFl">
+          <property role="2Bwecr" value="14" />
+        </node>
+      </node>
+      <node concept="1eXri_" id="3$duOrL6zjv" role="2mZOl8">
+        <property role="TrG5h" value="connerctor" />
+        <node concept="ZpONE" id="3$duOrL6zjG" role="28Pzmq">
+          <ref role="ZpOSt" node="3$duOrL6zjh" resolve="af" />
+        </node>
+        <node concept="ZpONE" id="3$duOrL6zjO" role="28Pzmy">
+          <ref role="ZpOSt" node="3$duOrL6zjn" resolve="fd" />
+        </node>
+      </node>
+      <node concept="UzEYP" id="3$duOrL6zjU" role="2mZOl8" />
+      <node concept="2mXI97" id="3$duOrL6zk9" role="2mZOl8">
+        <property role="TrG5h" value="fd2" />
+        <node concept="2BwebG" id="3$duOrL6znS" role="lGtFl">
+          <property role="2Bwecr" value="13" />
         </node>
       </node>
     </node>

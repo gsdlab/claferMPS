@@ -11,6 +11,7 @@
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="1drr" ref="r:efe8ca06-a104-4b6a-81d4-3821bf9939ba(org.clafer.util.milestone.structure)" />
     <import index="dkee" ref="r:efb465bf-ea7d-479d-8823-2c3c77049b98(org.clafer.util.tags.structure)" />
+    <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
@@ -74,7 +75,7 @@
     <property role="34LRSv" value="Function Connector" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="1pbfSe" value="1895418041" />
-    <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
+    <ref role="1TJDcQ" to="xnt3:6v3ZnYeNguT" resolve="BaseConnector" />
     <node concept="1TJgyj" id="17N04ap9jno" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="sourceExpr" />
@@ -108,50 +109,6 @@
       <ref role="PrY4T" node="2Qy0VF32jTy" resolve="IFunctionalAnalysisComponent" />
     </node>
   </node>
-  <node concept="1TIwiD" id="4csP6flST3m">
-    <property role="TrG5h" value="ArchElement" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="" />
-    <property role="1pbfSe" value="419456313" />
-    <property role="34LRSv" value="ArchElement" />
-    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
-    <node concept="PrWs8" id="6LOryU0rqHo" role="PzmwI">
-      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
-    </node>
-    <node concept="PrWs8" id="7bA4V6KDwem" role="PzmwI">
-      <ref role="PrY4T" to="dkee:7bA4V6KyOHz" resolve="ITaggable" />
-    </node>
-    <node concept="PrWs8" id="3g3ywkm6Xbv" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
-    </node>
-    <node concept="PrWs8" id="4pZCXPVJJI" role="PzmwI">
-      <ref role="PrY4T" to="1drr:4pZCXPVIQi" resolve="IVersionable" />
-    </node>
-    <node concept="PrWs8" id="5ipUCoiwI5d" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-    <node concept="1TJgyj" id="4csP6flST4F" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="contents" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
-    </node>
-    <node concept="1TJgyj" id="7ErTnvEGNJB" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="groupCard" />
-      <ref role="20lvS9" to="mecy:6qd05Uc_KdB" resolve="AbstractCardinality" />
-    </node>
-    <node concept="1TJgyj" id="6Fa64hUbAAy" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="superNode" />
-      <ref role="20lvS9" node="72GPbqtjtj4" resolve="SuperArchElRef" />
-    </node>
-    <node concept="1TJgyi" id="6Fa64hUbOYB" role="1TKVEl">
-      <property role="TrG5h" value="isOptional" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4csP6flSWC7">
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="AnalysisFunction" />
@@ -172,7 +129,7 @@
     <property role="3GE5qa" value="HardwareArchitecture.DeviceNodeClassification" />
     <property role="34LRSv" value="Device Node" />
     <property role="1pbfSe" value="422123398" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" to="xnt3:4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="23T79tC3_81" role="PzmwI">
       <ref role="PrY4T" node="5hA9WCIjVnK" resolve="IHaveType" />
     </node>
@@ -223,20 +180,9 @@
     <property role="34LRSv" value="Feature" />
     <property role="3GE5qa" value="FeatureModel" />
     <property role="1pbfSe" value="233467517" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" to="xnt3:4csP6flST3m" resolve="ArchElement" />
     <node concept="PrWs8" id="6_lRZv9_Bmx" role="PzmwI">
-      <ref role="PrY4T" node="6_lRZv9_Blz" resolve="DontShowAsBox" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="72GPbqtjtj4">
-    <property role="TrG5h" value="SuperArchElRef" />
-    <property role="1pbfSe" value="234531194" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="72GPbqtjtjz" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="superNode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
+      <ref role="PrY4T" to="xnt3:6_lRZv9_Blz" resolve="DontShowAsBox" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Fa64hUc88i">
@@ -244,7 +190,7 @@
     <property role="34LRSv" value="Deployment" />
     <property role="3GE5qa" value="HardwareArchitecture.Deployment" />
     <property role="1pbfSe" value="453338538" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
     <node concept="1TJgyj" id="6Fa64hUppo2" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fa" />
@@ -265,7 +211,7 @@
     <property role="3GE5qa" value="" />
     <property role="34LRSv" value="Architecture" />
     <property role="1pbfSe" value="452511797" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="$OrRLOgbn5">
     <property role="3GE5qa" value="AutomobileConcepts" />
@@ -276,11 +222,6 @@
     <node concept="PrWs8" id="3f7bmGhwmiB" role="PzmwI">
       <ref role="PrY4T" node="3f7bmGhwmis" resolve="IHaveFixedDeviceType" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="$OrRLOo_6A">
-    <property role="TrG5h" value="IHaveNotSuperNode" />
-    <property role="3GE5qa" value="" />
-    <property role="1pbfSe" value="2107031842" />
   </node>
   <node concept="1TIwiD" id="$OrRLOu4Y2">
     <property role="3GE5qa" value="AutomobileConcepts" />
@@ -293,10 +234,10 @@
       <ref role="PrY4T" node="5hA9WCIjVny" resolve="IHaveNotDeviceType" />
     </node>
     <node concept="PrWs8" id="$OrRLOu554" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
+      <ref role="PrY4T" to="xnt3:$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
     <node concept="PrWs8" id="32wpDnehaVc" role="PzmwI">
-      <ref role="PrY4T" node="32wpDneh2zd" resolve="IHaveNotMetaClafer" />
+      <ref role="PrY4T" to="xnt3:32wpDneh2zd" resolve="IHaveNotMetaClafer" />
     </node>
     <node concept="1TJgyj" id="$OrRLOvD_w" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -322,11 +263,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="6_lRZv9_Blz">
-    <property role="TrG5h" value="DontShowAsBox" />
-    <property role="3GE5qa" value="" />
-    <property role="1pbfSe" value="854349146" />
   </node>
   <node concept="PlHQZ" id="1tfNdgy1e$L">
     <property role="TrG5h" value="IHardwareConnector" />
@@ -376,14 +312,14 @@
     <property role="TrG5h" value="FeatureModel" />
     <property role="34LRSv" value="Feature Model" />
     <property role="1pbfSe" value="47792158" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="12rnRvMhgdY">
     <property role="TrG5h" value="System" />
     <property role="3GE5qa" value="" />
     <property role="34LRSv" value="System" />
     <property role="1pbfSe" value="48259829" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="7DuSdC$$2dR">
     <property role="TrG5h" value="HardwareArchitecture" />
@@ -391,7 +327,7 @@
     <property role="34LRSv" value="Hardware Architecture" />
     <property role="1pbfSe" value="1628502959" />
     <property role="MwhBj" value="${module}/icons/hardwareArchitecture.png" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="7DuSdC$$3Vj">
     <property role="TrG5h" value="DeviceNodeClassification" />
@@ -399,7 +335,7 @@
     <property role="34LRSv" value="Device Node Classification" />
     <property role="1pbfSe" value="1628495955" />
     <property role="MwhBj" value="${module}/icons/gear.png" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPQU0">
     <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
@@ -408,7 +344,7 @@
     <property role="1pbfSe" value="417180168" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="6v3ZnYeNguT" resolve="BaseConnector" />
+    <ref role="1TJDcQ" to="xnt3:6v3ZnYeNguT" resolve="BaseConnector" />
     <node concept="PrWs8" id="3WJnaafnuZT" role="PzmwI">
       <ref role="PrY4T" node="3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
     </node>
@@ -461,7 +397,7 @@
     <property role="TrG5h" value="CommTopology" />
     <property role="34LRSv" value="Communication Topology" />
     <property role="1pbfSe" value="417173829" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSvs">
     <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
@@ -469,7 +405,7 @@
     <property role="34LRSv" value="Power Topology" />
     <property role="1pbfSe" value="417173676" />
     <property role="MwhBj" value="${module}/icons/powerTopology.png" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
   </node>
   <node concept="1TIwiD" id="19aTRzkPSHp">
     <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
@@ -885,11 +821,6 @@
       <ref role="20lvS9" node="xdMRpnvdAm" resolve="ConstantElement" />
     </node>
   </node>
-  <node concept="PlHQZ" id="32wpDneh2zd">
-    <property role="1pbfSe" value="18575518" />
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="IHaveNotMetaClafer" />
-  </node>
   <node concept="1TIwiD" id="1jKsuqULYIy">
     <property role="1pbfSe" value="810001016" />
     <property role="3GE5qa" value="HardwareArchitecture.NodeTypeExpr" />
@@ -909,7 +840,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="Functional Analysis Component" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
+    <ref role="1TJDcQ" to="xnt3:4csP6flST3m" resolve="ArchElement" />
     <node concept="1TJgyj" id="1OxX53tjvF2" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="implementation" />
@@ -924,18 +855,6 @@
     </node>
     <node concept="PrWs8" id="2Qy0VF32jTE" role="PzmwI">
       <ref role="PrY4T" node="2Qy0VF32jTy" resolve="IFunctionalAnalysisComponent" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6v3ZnYeNguT">
-    <property role="1pbfSe" value="158268104" />
-    <property role="TrG5h" value="BaseConnector" />
-    <property role="3GE5qa" value="" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="Base Connector" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="PrWs8" id="6v3ZnYeNgv2" role="PzmwI">
-      <ref role="PrY4T" node="$OrRLOo_6A" resolve="IHaveNotSuperNode" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v3ZnYeNRw_">
@@ -1029,70 +948,12 @@
     <property role="TrG5h" value="IAbstractVisibleInQATable" />
     <property role="3GE5qa" value="QualityModule" />
   </node>
-  <node concept="1TIwiD" id="1Z9B1UhMN__">
-    <property role="1pbfSe" value="1315646077" />
-    <property role="TrG5h" value="BaseFragment" />
-    <property role="R5$K7" value="true" />
-    <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="1TJgyj" id="1kFIkf$RTZt" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="fragmentRefs" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1kFIkf$RTXv" resolve="FragmentRef" />
-    </node>
-    <node concept="1TJgyi" id="3NiPeHJR19s" role="1TKVEl">
-      <property role="TrG5h" value="showConLabels" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="6ciUqxODLhc" role="lGtFl" />
-    </node>
-    <node concept="1TJgyi" id="3NiPeHJR19u" role="1TKVEl">
-      <property role="TrG5h" value="showConLabelsNearSources" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-      <node concept="asaX9" id="6ciUqxODLhe" role="lGtFl" />
-    </node>
-    <node concept="1TJgyi" id="6ciUqxODLh8" role="1TKVEl">
-      <property role="TrG5h" value="connLabelsPosition" />
-      <ref role="AX2Wp" node="6ciUqxODLi0" resolve="LabelPosition" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="6ciUqxODLi0">
-    <property role="TrG5h" value="LabelPosition" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="6ciUqxODLi1" role="M5hS2">
-      <property role="1uS6qo" value="hidden" />
-      <property role="1uS6qv" value="hidden" />
-    </node>
-    <node concept="M4N5e" id="6ciUqxODLi2" role="M5hS2">
-      <property role="1uS6qo" value="center" />
-      <property role="1uS6qv" value="center" />
-    </node>
-    <node concept="M4N5e" id="6ciUqxODLih" role="M5hS2">
-      <property role="1uS6qo" value="source" />
-      <property role="1uS6qv" value="source" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="2fHaKcTZRlA">
     <property role="1pbfSe" value="1575788649" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="TrG5h" value="DeploymentOf" />
     <property role="34LRSv" value="deployment of" />
     <ref role="1TJDcQ" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
-  </node>
-  <node concept="1TIwiD" id="7irZwUo26tP">
-    <property role="1pbfSe" value="212100483" />
-    <property role="TrG5h" value="ArchElementRefExpr" />
-    <ref role="1TJDcQ" to="dajg:7FQByU3CrCM" resolve="Expression" />
-    <node concept="1TJgyj" id="7irZwUo26An" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="archConcept" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
-    </node>
-    <node concept="PrWs8" id="7irZwUobvLw" role="PzmwI">
-      <ref role="PrY4T" to="mecy:1TKBT2MCJhr" resolve="DontGenerateFullPath" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1b24ZrMcSWM">
     <property role="1pbfSe" value="83206952" />
@@ -1133,7 +994,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="faElement" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="4csP6flST3m" resolve="ArchElement" />
+      <ref role="20lvS9" to="xnt3:4csP6flST3m" resolve="ArchElement" />
       <node concept="asaX9" id="5YkgXg$1tUp" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="5YkgXg$x8mO" role="PzmwI">
@@ -1328,7 +1189,7 @@
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="34LRSv" value="Functional Analysis" />
     <property role="1pbfSe" value="1629564277" />
-    <ref role="1TJDcQ" node="1Z9B1UhMN__" resolve="BaseFragment" />
+    <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
     <node concept="PrWs8" id="1kn3UCOfu6d" role="PzmwI">
       <ref role="PrY4T" node="2Qy0VF32jTy" resolve="IFunctionalAnalysisComponent" />
     </node>

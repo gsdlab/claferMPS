@@ -9,6 +9,8 @@
     <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" />
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="wrtg" ref="r:4719b444-431a-4b3a-8eb1-d31303c73fb9(org.clafer.expressions.behavior)" />
+    <import index="3636" ref="r:204ce34c-c886-4f28-81c0-4b1b9a6fe4ed(org.clafer.architecture.core.behavior)" />
+    <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" implicit="true" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" implicit="true" />
   </imports>
@@ -391,7 +393,7 @@
     <property role="TrG5h" value="ArchitectureMigrateConnectors" />
     <node concept="_XfAh" id="3NiPeHK4MPK" role="_YvDr">
       <property role="_XH9r" value="Architecture: Migrate Connectors' Labels" />
-      <ref role="_XDHR" to="ddau:1Z9B1UhMN__" resolve="BaseFragment" />
+      <ref role="_XDHR" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
       <node concept="_ZGcI" id="3NiPeHK4MPL" role="_XPhp">
         <node concept="3clFbS" id="3NiPeHK4MPM" role="2VODD2">
           <node concept="3clFbF" id="3NiPeHK4PgG" role="3cqZAp">
@@ -399,12 +401,12 @@
               <node concept="2OqwBi" id="3NiPeHK4Plz" role="2Oq$k0">
                 <node concept="_YI3z" id="3NiPeHK4PgE" role="2Oq$k0" />
                 <node concept="3TrcHB" id="6ciUqxOFdS5" role="2OqNvi">
-                  <ref role="3TsBF5" to="ddau:6ciUqxODLh8" resolve="connLabelsPosition" />
+                  <ref role="3TsBF5" to="xnt3:6ciUqxODLh8" resolve="connLabelsPosition" />
                 </node>
               </node>
               <node concept="tyxLq" id="6ciUqxOFeie" role="2OqNvi">
                 <node concept="uoxfO" id="6ciUqxOFeiG" role="tz02z">
-                  <ref role="uo_Cq" to="ddau:6ciUqxODLi1" />
+                  <ref role="uo_Cq" to="xnt3:6ciUqxODLi1" />
                 </node>
               </node>
             </node>
@@ -537,7 +539,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="5YkgXg$y$XP" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:1kFIkf_2pmn" resolve="getFragmentRefs" />
+                  <ref role="37wK5l" to="3636:1kFIkf_2pmn" resolve="getFragmentRefs" />
                 </node>
               </node>
             </node>
@@ -605,11 +607,11 @@
                 <node concept="3cpWsn" id="5YkgXg$y_7p" role="3cpWs9">
                   <property role="TrG5h" value="faPath" />
                   <node concept="2I9FWS" id="5YkgXg$y_7k" role="1tU5fm">
-                    <ref role="2I9WkF" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                    <ref role="2I9WkF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                   </node>
                   <node concept="2OqwBi" id="5YkgXg$yHXP" role="33vP2m">
                     <node concept="1PxgMI" id="5YkgXg$yHO3" role="2Oq$k0">
-                      <ref role="1PxNhF" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                      <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                       <node concept="2YIFZM" id="5YkgXg$yNY7" role="1PxMeX">
                         <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
                         <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
@@ -624,9 +626,9 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="5YkgXg$yIqj" role="2OqNvi">
-                      <ref role="37wK5l" to="f5o0:2ejvBnQf17G" resolve="getFullPath" />
+                      <ref role="37wK5l" to="3636:2ejvBnQf17G" resolve="getFullPath" />
                       <node concept="1PxgMI" id="5YkgXg$yJk1" role="37wK5m">
-                        <ref role="1PxNhF" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                        <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                         <node concept="2OqwBi" id="5YkgXg$yITU" role="1PxMeX">
                           <node concept="1PxgMI" id="5YkgXg$yIKP" role="2Oq$k0">
                             <ref role="1PxNhF" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
@@ -737,11 +739,11 @@
                               <node concept="3cpWsn" id="5YkgXg$Bitk" role="3cpWs9">
                                 <property role="TrG5h" value="haPath" />
                                 <node concept="2I9FWS" id="5YkgXg$Bitl" role="1tU5fm">
-                                  <ref role="2I9WkF" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                                  <ref role="2I9WkF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                                 </node>
                                 <node concept="2OqwBi" id="5YkgXg$Bitm" role="33vP2m">
                                   <node concept="1PxgMI" id="5YkgXg$Bitn" role="2Oq$k0">
-                                    <ref role="1PxNhF" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                                    <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                                     <node concept="2YIFZM" id="5YkgXg$Bito" role="1PxMeX">
                                       <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
                                       <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
@@ -756,9 +758,9 @@
                                     </node>
                                   </node>
                                   <node concept="2qgKlT" id="5YkgXg$Bits" role="2OqNvi">
-                                    <ref role="37wK5l" to="f5o0:2ejvBnQf17G" resolve="getFullPath" />
+                                    <ref role="37wK5l" to="3636:2ejvBnQf17G" resolve="getFullPath" />
                                     <node concept="1PxgMI" id="5YkgXg$Bitt" role="37wK5m">
-                                      <ref role="1PxNhF" to="ddau:4csP6flST3m" resolve="ArchElement" />
+                                      <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                                       <node concept="2OqwBi" id="5YkgXg$Bitu" role="1PxMeX">
                                         <node concept="1PxgMI" id="5YkgXg$Bitv" role="2Oq$k0">
                                           <ref role="1PxNhF" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />

@@ -14,6 +14,7 @@
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="t0n6" ref="r:414c079d-9eb7-4f55-bf30-49912fdadcdb(org.clafer.referenceModel.structure)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
+    <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -812,7 +813,7 @@
                 </node>
                 <node concept="1mIQ4w" id="32wpDnehaP2" role="2OqNvi">
                   <node concept="chp4Y" id="32wpDnehaRA" role="cj9EA">
-                    <ref role="cht4Q" to="ddau:32wpDneh2zd" resolve="IHaveNotMetaClafer" />
+                    <ref role="cht4Q" to="xnt3:32wpDneh2zd" resolve="IHaveNotMetaClafer" />
                   </node>
                 </node>
               </node>
