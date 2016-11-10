@@ -40,6 +40,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -202,6 +203,67 @@
     <property role="TrG5h" value="IHaveNotSuperNode" />
     <property role="3GE5qa" value="" />
     <property role="1pbfSe" value="2107031842" />
+  </node>
+  <node concept="1TIwiD" id="xdMRpnvdAm">
+    <property role="1pbfSe" value="1607116044" />
+    <property role="3GE5qa" value="Preferences" />
+    <property role="TrG5h" value="ConstantElement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+  </node>
+  <node concept="1TIwiD" id="xdMRpnt2D_">
+    <property role="1pbfSe" value="1606546907" />
+    <property role="3GE5qa" value="Preferences" />
+    <property role="TrG5h" value="ConstantExpr" />
+    <ref role="1TJDcQ" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
+  </node>
+  <node concept="1TIwiD" id="xdMRpnv7Gw">
+    <property role="1pbfSe" value="1607091862" />
+    <property role="3GE5qa" value="Preferences" />
+    <property role="TrG5h" value="Constant" />
+    <ref role="1TJDcQ" node="xdMRpnvdAm" resolve="ConstantElement" />
+    <node concept="1TJgyj" id="xdMRpnvcQq" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="xdMRpnCHBZ" role="PzmwI">
+      <ref role="PrY4T" to="mecy:xdMRpnCdR0" resolve="IPrimitiveClaferType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="xdMRpnxjZW">
+    <property role="1pbfSe" value="1607666546" />
+    <property role="3GE5qa" value="Preferences" />
+    <property role="TrG5h" value="ConstantsGroup" />
+    <ref role="1TJDcQ" node="xdMRpnvdAm" resolve="ConstantElement" />
+    <node concept="1TJgyj" id="xdMRpnxk0c" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="children" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="xdMRpnvdAm" resolve="ConstantElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7b8T1iJE2J_">
+    <property role="1pbfSe" value="577835001" />
+    <property role="TrG5h" value="Preferences" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="Preferences" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7qZ9vSVxkAK" role="1TKVEl">
+      <property role="TrG5h" value="generateQA" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7b8T1iJGmaA" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constants" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
+    </node>
+    <node concept="PrWs8" id="7b8T1iJE2Sf" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
   </node>
 </model>
 

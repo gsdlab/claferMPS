@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions" version="1" />
+    <use id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" name="org.clafer.architecture.core" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
     <devkit ref="689d09e3-f427-4b3a-8c27-77ad5f6606ba(org.architecture)" />
   </languages>
@@ -24,6 +25,18 @@
       <concept id="8860443239512128108" name="org.clafer.expressions.structure.IntType" flags="ng" index="3TlMh2" />
       <concept id="8860443239512128103" name="org.clafer.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
+    <language id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" name="org.clafer.architecture.core">
+      <concept id="8271111493163428837" name="org.clafer.architecture.core.structure.Preferences" flags="ng" index="3tocZL">
+        <property id="8556599590877743536" name="generateQA" index="1deALe" />
+        <child id="8271111493164032678" name="constants" index="3tuoqM" />
+      </concept>
+      <concept id="598358034644499232" name="org.clafer.architecture.core.structure.Constant" flags="ng" index="1vcr1m">
+        <child id="598358034644520346" name="value" index="1vcgrG" />
+      </concept>
+      <concept id="598358034645073916" name="org.clafer.architecture.core.structure.ConstantsGroup" flags="ng" index="1vMfia">
+        <child id="598358034645073932" name="children" index="1vM8HU" />
+      </concept>
+    </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="7285997757218705936" name="org.clafer.architecture.structure.ArchConceptRef" flags="ng" index="sjk9b">
         <reference id="7285997757218705940" name="archConcept" index="sjk9f" />
@@ -40,16 +53,6 @@
       </concept>
       <concept id="8071399195256502219" name="org.clafer.architecture.structure.QualityThisExpr" flags="ng" index="2xC6$6" />
       <concept id="2099227529480083850" name="org.clafer.architecture.structure.ImplementationExpr" flags="ng" index="30g6Rq" />
-      <concept id="8271111493163428837" name="org.clafer.architecture.structure.Preferences" flags="ng" index="3tocZL">
-        <property id="8556599590877743536" name="generateQA" index="1deALe" />
-        <child id="8271111493164032678" name="constants" index="3tuoqM" />
-      </concept>
-      <concept id="598358034644499232" name="org.clafer.architecture.structure.Constant" flags="ng" index="1vcr1m">
-        <child id="598358034644520346" name="value" index="1vcgrG" />
-      </concept>
-      <concept id="598358034645073916" name="org.clafer.architecture.structure.ConstantsGroup" flags="ng" index="1vMfia">
-        <child id="598358034645073932" name="children" index="1vM8HU" />
-      </concept>
       <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
       <concept id="5902858924257145116" name="org.clafer.architecture.structure.QualityTableElementRef" flags="ng" index="3Ev5JQ">
         <reference id="5902858924257145117" name="quality" index="3Ev5JR" />
@@ -259,162 +262,26 @@
       </node>
     </node>
   </node>
-  <node concept="3tocZL" id="7b8T1iJGcgf">
-    <property role="TrG5h" value="Preferences" />
+  <node concept="3tocZL" id="zkM81HW78">
+    <property role="TrG5h" value="preferences" />
     <property role="1deALe" value="true" />
-    <node concept="1vMfia" id="5fZiy7Lf6xB" role="3tuoqM">
-      <property role="TrG5h" value="MassPerLength" />
-      <node concept="1vcr1m" id="5fZiy7Lf6zY" role="1vM8HU">
-        <property role="TrG5h" value="LoadPowerConnector" />
-        <node concept="3TlMh9" id="4lKrsgQsLi3" role="1vcgrG">
-          <property role="2hmy$m" value="1" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6$z" role="1vM8HU">
-        <property role="TrG5h" value="DevicePowerConnector" />
-        <node concept="3TlMh9" id="2FS8nA4ZhAl" role="1vcgrG">
-          <property role="2hmy$m" value="1" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6_2" role="1vM8HU">
-        <property role="TrG5h" value="DiscreteDataConnector" />
-        <node concept="3TlMh9" id="2FS8nA4ZhAp" role="1vcgrG">
-          <property role="2hmy$m" value="1" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6_P" role="1vM8HU">
-        <property role="TrG5h" value="LowSpeedCANBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhAJ" role="1vcgrG">
-          <property role="2hmy$m" value="2" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6Aj" role="1vM8HU">
-        <property role="TrG5h" value="HighSpeedCANBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhAW" role="1vcgrG">
-          <property role="2hmy$m" value="2" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6AN" role="1vM8HU">
-        <property role="TrG5h" value="LINBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhBp" role="1vcgrG">
-          <property role="2hmy$m" value="2" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6Bx" role="1vM8HU">
-        <property role="TrG5h" value="FlexRayBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhBA" role="1vcgrG">
-          <property role="2hmy$m" value="4" />
-        </node>
+    <node concept="1vcr1m" id="zkM81LXrW" role="3tuoqM">
+      <property role="TrG5h" value="test2" />
+      <node concept="3TlMh9" id="zkM81LXso" role="1vcgrG">
+        <property role="2hmy$m" value="123" />
       </node>
     </node>
-    <node concept="1vMfia" id="5fZiy7Lf6JA" role="3tuoqM">
-      <property role="TrG5h" value="CostPerLength" />
-      <node concept="1vcr1m" id="5fZiy7Lf6JB" role="1vM8HU">
-        <property role="TrG5h" value="LoadPowerConnector" />
-        <node concept="3TlMh9" id="2FS8nA4ZhBN" role="1vcgrG">
-          <property role="2hmy$m" value="9" />
+    <node concept="1vMfia" id="zkM81LVUw" role="3tuoqM">
+      <property role="TrG5h" value="ConstantGr" />
+      <node concept="1vcr1m" id="zkM81LVVA" role="1vM8HU">
+        <property role="TrG5h" value="test" />
+        <node concept="3TlMh9" id="zkM81LVW8" role="1vcgrG">
+          <property role="2hmy$m" value="32" />
         </node>
       </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6JD" role="1vM8HU">
-        <property role="TrG5h" value="DevicePowerConnector" />
-        <node concept="3TlMh9" id="2FS8nA4ZhC0" role="1vcgrG">
-          <property role="2hmy$m" value="9" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6JF" role="1vM8HU">
-        <property role="TrG5h" value="DiscreteDataConnector" />
-        <node concept="3TlMh9" id="2FS8nA4ZhCd" role="1vcgrG">
-          <property role="2hmy$m" value="1" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6JH" role="1vM8HU">
-        <property role="TrG5h" value="LowSpeedCANBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhCq" role="1vcgrG">
-          <property role="2hmy$m" value="5" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6JJ" role="1vM8HU">
-        <property role="TrG5h" value="HighSpeedCANBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhCB" role="1vcgrG">
-          <property role="2hmy$m" value="1" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6JL" role="1vM8HU">
-        <property role="TrG5h" value="LINBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhCO" role="1vcgrG">
-          <property role="2hmy$m" value="2" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6JN" role="1vM8HU">
-        <property role="TrG5h" value="FlexRayBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhD1" role="1vcgrG">
-          <property role="2hmy$m" value="2" />
-        </node>
-      </node>
+      <node concept="UzEYP" id="zkM81LXrj" role="1vM8HU" />
+      <node concept="UzEYP" id="zkM81LXr3" role="1vM8HU" />
     </node>
-    <node concept="1vMfia" id="5fZiy7Lf6Mb" role="3tuoqM">
-      <property role="TrG5h" value="TimePerSize" />
-      <node concept="1vcr1m" id="5fZiy7Lf6Mc" role="1vM8HU">
-        <property role="TrG5h" value="LowSpeedCANBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhDe" role="1vcgrG">
-          <property role="2hmy$m" value="6" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6Me" role="1vM8HU">
-        <property role="TrG5h" value="HighSpeedCANBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhDr" role="1vcgrG">
-          <property role="2hmy$m" value="3" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6Mg" role="1vM8HU">
-        <property role="TrG5h" value="LINBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhDC" role="1vcgrG">
-          <property role="2hmy$m" value="4" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6Mi" role="1vM8HU">
-        <property role="TrG5h" value="FlexRayBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhDP" role="1vcgrG">
-          <property role="2hmy$m" value="1" />
-        </node>
-      </node>
-    </node>
-    <node concept="1vMfia" id="5fZiy7Lf6Q7" role="3tuoqM">
-      <property role="TrG5h" value="BusProtocolOverhead" />
-      <node concept="1vcr1m" id="5fZiy7Lf6Q8" role="1vM8HU">
-        <property role="TrG5h" value="LowSpeedCANBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhE4" role="1vcgrG">
-          <property role="2hmy$m" value="5" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6Qa" role="1vM8HU">
-        <property role="TrG5h" value="HighSpeedCANBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhEh" role="1vcgrG">
-          <property role="2hmy$m" value="5" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6Qc" role="1vM8HU">
-        <property role="TrG5h" value="LINBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhEs" role="1vcgrG">
-          <property role="2hmy$m" value="4" />
-        </node>
-      </node>
-      <node concept="1vcr1m" id="5fZiy7Lf6Qe" role="1vM8HU">
-        <property role="TrG5h" value="FlexRayBus" />
-        <node concept="3TlMh9" id="2FS8nA4ZhED" role="1vcgrG">
-          <property role="2hmy$m" value="1" />
-        </node>
-      </node>
-    </node>
-    <node concept="1vcr1m" id="5fZiy7Lf6yT" role="3tuoqM">
-      <property role="TrG5h" value="ReferenceSpeedFactor" />
-      <node concept="3TlMh9" id="2FS8nA4ZhEQ" role="1vcgrG">
-        <property role="2hmy$m" value="5" />
-      </node>
-    </node>
-    <node concept="UzEYP" id="3rHVZEpZ2Dp" role="3tuoqM" />
-    <node concept="UzEYP" id="3rHVZEpZ37q" role="3tuoqM" />
-    <node concept="UzEYP" id="3rHVZEpZ38f" role="3tuoqM" />
   </node>
 </model>
 

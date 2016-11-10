@@ -15,6 +15,7 @@
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="aaok" ref="r:18b72e9a-8630-4c65-811d-c4e169c6148a(org.clafer.referenceModel.behavior)" />
+    <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
     <import index="t0n6" ref="r:414c079d-9eb7-4f55-bf30-49912fdadcdb(org.clafer.referenceModel.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -295,11 +296,11 @@
             <node concept="3cpWsn" id="PK4wiFThIy" role="3cpWs9">
               <property role="TrG5h" value="pref" />
               <node concept="2I9FWS" id="PK4wiFThIz" role="1tU5fm">
-                <ref role="2I9WkF" to="ddau:7b8T1iJE2J_" resolve="Preferences" />
+                <ref role="2I9WkF" to="xnt3:7b8T1iJE2J_" resolve="Preferences" />
               </node>
               <node concept="2OqwBi" id="PK4wiFThI$" role="33vP2m">
                 <node concept="3lApI0" id="PK4wiFThI_" role="2OqNvi">
-                  <ref role="3lApI3" to="ddau:7b8T1iJE2J_" resolve="Preferences" />
+                  <ref role="3lApI3" to="xnt3:7b8T1iJE2J_" resolve="Preferences" />
                 </node>
                 <node concept="2OqwBi" id="PK4wiFTJxm" role="2Oq$k0">
                   <node concept="30H73N" id="PK4wiFTJrD" role="2Oq$k0" />
@@ -326,7 +327,7 @@
                       </node>
                     </node>
                     <node concept="3TrcHB" id="PK4wiFThIM" role="2OqNvi">
-                      <ref role="3TsBF5" to="ddau:7qZ9vSVxkAK" resolve="generateQA" />
+                      <ref role="3TsBF5" to="xnt3:7qZ9vSVxkAK" resolve="generateQA" />
                     </node>
                   </node>
                 </node>
@@ -463,11 +464,11 @@
             <node concept="3cpWsn" id="33hfkhi3hSw" role="3cpWs9">
               <property role="TrG5h" value="pref" />
               <node concept="2I9FWS" id="33hfkhi3hSr" role="1tU5fm">
-                <ref role="2I9WkF" to="ddau:7b8T1iJE2J_" resolve="Preferences" />
+                <ref role="2I9WkF" to="xnt3:7b8T1iJE2J_" resolve="Preferences" />
               </node>
               <node concept="2OqwBi" id="33hfkhi3jau" role="33vP2m">
                 <node concept="3lApI0" id="33hfkhi3jav" role="2OqNvi">
-                  <ref role="3lApI3" to="ddau:7b8T1iJE2J_" resolve="Preferences" />
+                  <ref role="3lApI3" to="xnt3:7b8T1iJE2J_" resolve="Preferences" />
                 </node>
                 <node concept="2OqwBi" id="PK4wiFTJPP" role="2Oq$k0">
                   <node concept="30H73N" id="PK4wiFTJK8" role="2Oq$k0" />
@@ -494,7 +495,7 @@
                       </node>
                     </node>
                     <node concept="3TrcHB" id="7qZ9vSV$EjM" role="2OqNvi">
-                      <ref role="3TsBF5" to="ddau:7qZ9vSVxkAK" resolve="generateQA" />
+                      <ref role="3TsBF5" to="xnt3:7qZ9vSVxkAK" resolve="generateQA" />
                     </node>
                   </node>
                 </node>
