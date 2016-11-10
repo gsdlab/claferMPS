@@ -6,6 +6,7 @@
     <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="4" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
     <use id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions" version="1" />
+    <use id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" name="org.clafer.architecture.core" version="0" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
   </languages>
   <imports>
@@ -28,19 +29,21 @@
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
     </language>
+    <language id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" name="org.clafer.architecture.core">
+      <concept id="7285997757218705936" name="" flags="ng" index="sjk9b">
+        <reference id="7285997757218705940" name="" index="sjk9f" />
+      </concept>
+      <concept id="7285997757218440942" name="" flags="ng" index="sklqP">
+        <child id="7285997757218440966" name="" index="skltt" />
+        <child id="7285997757218441139" name="" index="sklvC" />
+      </concept>
+      <concept id="7285997757218367330" name="" flags="ng" index="slzsT">
+        <child id="7285997757218440687" name="" index="sklmO" />
+      </concept>
+      <concept id="5902858924256204711" name="" flags="ng" index="3EozPd" />
+    </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
-      <concept id="7285997757218705936" name="org.clafer.architecture.structure.ArchConceptRef" flags="ng" index="sjk9b">
-        <reference id="7285997757218705940" name="archConcept" index="sjk9f" />
-      </concept>
-      <concept id="7285997757218440942" name="org.clafer.architecture.structure.QualityTuple" flags="ng" index="sklqP">
-        <child id="7285997757218440966" name="archConcept" index="skltt" />
-        <child id="7285997757218441139" name="qualities" index="sklvC" />
-      </concept>
-      <concept id="7285997757218367330" name="org.clafer.architecture.structure.QualityModule" flags="ng" index="slzsT">
-        <child id="7285997757218440687" name="tuples" index="sklmO" />
-      </concept>
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />
-      <concept id="5902858924256204711" name="org.clafer.architecture.structure.QualityTableElement" flags="ng" index="3EozPd" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -74,6 +77,25 @@
   <node concept="2XOHcx" id="3CQgxu9uwGL">
     <property role="2XOHcw" value="${clafer.home}/code/languages/org.clafer.mps" />
   </node>
+  <node concept="1lH9Xt" id="3CQgxu9vbEV">
+    <property role="TrG5h" value="FragmentReferences" />
+    <node concept="1qefOq" id="3CQgxu9vbF5" role="1SKRRt">
+      <node concept="UzPwm" id="3CQgxu9vbF9" role="1qenE9">
+        <property role="3wNgFz" value="0" />
+        <property role="TrG5h" value="FragmentRefs_test" />
+        <node concept="7CXmI" id="3CQgxu9vbFd" role="lGtFl">
+          <node concept="7OXhh" id="3CQgxu9vbFf" role="7EUXB" />
+        </node>
+        <node concept="1uNHS9" id="3CQgxu9B7p5" role="UzTCv">
+          <property role="TrG5h" value="dnClassification_external" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="42bqIdUE6yx">
+    <property role="TrG5h" value="NodeTypesTS" />
+    <node concept="1qefOq" id="42bqIdUE6yy" role="1SKRRt" />
+  </node>
   <node concept="slzsT" id="3CQgxu9uYAz">
     <property role="TrG5h" value="Test_QA" />
     <node concept="sklqP" id="3CQgxu9uYAE" role="sklmO">
@@ -95,25 +117,6 @@
         <ref role="sjk9f" to="ddau:19aTRzkPSt3" resolve="CommTopology" />
       </node>
     </node>
-  </node>
-  <node concept="1lH9Xt" id="3CQgxu9vbEV">
-    <property role="TrG5h" value="FragmentReferences" />
-    <node concept="1qefOq" id="3CQgxu9vbF5" role="1SKRRt">
-      <node concept="UzPwm" id="3CQgxu9vbF9" role="1qenE9">
-        <property role="3wNgFz" value="0" />
-        <property role="TrG5h" value="FragmentRefs_test" />
-        <node concept="7CXmI" id="3CQgxu9vbFd" role="lGtFl">
-          <node concept="7OXhh" id="3CQgxu9vbFf" role="7EUXB" />
-        </node>
-        <node concept="1uNHS9" id="3CQgxu9B7p5" role="UzTCv">
-          <property role="TrG5h" value="dnClassification_external" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1lH9Xt" id="42bqIdUE6yx">
-    <property role="TrG5h" value="NodeTypesTS" />
-    <node concept="1qefOq" id="42bqIdUE6yy" role="1SKRRt" />
   </node>
 </model>
 

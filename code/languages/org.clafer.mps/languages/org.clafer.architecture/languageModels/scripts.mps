@@ -180,20 +180,20 @@
     <property role="TrG5h" value="ArchitectureMigrateFDeviceQA" />
     <node concept="_XfAh" id="6tUgmTZR7Qp" role="_YvDr">
       <property role="_XH9r" value="qatributes" />
-      <ref role="_XDHR" to="ddau:6kt45HTiMty" resolve="QualityModule" />
+      <ref role="_XDHR" to="xnt3:6kt45HTiMty" resolve="QualityModule" />
       <node concept="_ZGcI" id="6tUgmTZR7Qq" role="_XPhp">
         <node concept="3clFbS" id="6tUgmTZR7Qr" role="2VODD2">
           <node concept="3cpWs8" id="6tUgmTZR9ta" role="3cqZAp">
             <node concept="3cpWsn" id="6tUgmTZR9td" role="3cpWs9">
               <property role="TrG5h" value="aFunctionTuple" />
               <node concept="3Tqbb2" id="6tUgmTZR9t8" role="1tU5fm">
-                <ref role="ehGHo" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+                <ref role="ehGHo" to="xnt3:6kt45HTj4rI" resolve="QualityTuple" />
               </node>
               <node concept="2OqwBi" id="6tUgmTZRayM" role="33vP2m">
                 <node concept="2OqwBi" id="6tUgmTZR9xc" role="2Oq$k0">
                   <node concept="_YI3z" id="6tUgmTZR9ub" role="2Oq$k0" />
                   <node concept="2qgKlT" id="6tUgmTZR9Ad" role="2OqNvi">
-                    <ref role="37wK5l" to="f5o0:5EXaBxYaaPb" resolve="getTuplesByConceptName" />
+                    <ref role="37wK5l" to="3636:5EXaBxYaaPb" resolve="getTuplesByConceptName" />
                     <node concept="3TUQnm" id="6tUgmTZRbU9" role="37wK5m">
                       <ref role="3TV0OU" to="ddau:4csP6flSWC7" resolve="AnalysisFunction" />
                     </node>
@@ -209,13 +209,13 @@
                 <node concept="3cpWsn" id="6tUgmTZRh9O" role="3cpWs9">
                   <property role="TrG5h" value="fDeviceTuple" />
                   <node concept="3Tqbb2" id="6tUgmTZRh9P" role="1tU5fm">
-                    <ref role="ehGHo" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+                    <ref role="ehGHo" to="xnt3:6kt45HTj4rI" resolve="QualityTuple" />
                   </node>
                   <node concept="2OqwBi" id="6tUgmTZRh9Q" role="33vP2m">
                     <node concept="2OqwBi" id="6tUgmTZRh9R" role="2Oq$k0">
                       <node concept="_YI3z" id="6tUgmTZRh9S" role="2Oq$k0" />
                       <node concept="2qgKlT" id="6tUgmTZRh9T" role="2OqNvi">
-                        <ref role="37wK5l" to="f5o0:5EXaBxYaaPb" resolve="getTuplesByConceptName" />
+                        <ref role="37wK5l" to="3636:5EXaBxYaaPb" resolve="getTuplesByConceptName" />
                         <node concept="3TUQnm" id="6tUgmTZRh9U" role="37wK5m">
                           <ref role="3TV0OU" to="ddau:4csP6flUzo$" resolve="FunctionalDevice" />
                         </node>
@@ -232,7 +232,7 @@
                       <node concept="2ShNRf" id="6tUgmTZRdu0" role="37vLTx">
                         <node concept="3zrR0B" id="6tUgmTZRdtY" role="2ShVmc">
                           <node concept="3Tqbb2" id="6tUgmTZRdtZ" role="3zrR0E">
-                            <ref role="ehGHo" to="ddau:6kt45HTj4rI" resolve="QualityTuple" />
+                            <ref role="ehGHo" to="xnt3:6kt45HTj4rI" resolve="QualityTuple" />
                           </node>
                         </node>
                       </node>
@@ -245,12 +245,12 @@
                     <node concept="3cpWsn" id="6tUgmTZRdPL" role="3cpWs9">
                       <property role="TrG5h" value="concept" />
                       <node concept="3Tqbb2" id="6tUgmTZRdPG" role="1tU5fm">
-                        <ref role="ehGHo" to="ddau:6kt45HTk58g" resolve="ArchConceptRef" />
+                        <ref role="ehGHo" to="xnt3:6kt45HTk58g" resolve="ArchConceptRef" />
                       </node>
                       <node concept="2ShNRf" id="6tUgmTZRdQG" role="33vP2m">
                         <node concept="3zrR0B" id="6tUgmTZRdQE" role="2ShVmc">
                           <node concept="3Tqbb2" id="6tUgmTZRdQF" role="3zrR0E">
-                            <ref role="ehGHo" to="ddau:6kt45HTk58g" resolve="ArchConceptRef" />
+                            <ref role="ehGHo" to="xnt3:6kt45HTk58g" resolve="ArchConceptRef" />
                           </node>
                         </node>
                       </node>
@@ -263,7 +263,7 @@
                           <ref role="3cqZAo" node="6tUgmTZRdPL" resolve="concept" />
                         </node>
                         <node concept="3TrEf2" id="6tUgmTZRdWU" role="2OqNvi">
-                          <ref role="3Tt5mk" to="ddau:6kt45HTk58k" />
+                          <ref role="3Tt5mk" to="xnt3:6kt45HTk58k" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="6tUgmTZRoXL" role="37vLTx">
@@ -281,7 +281,7 @@
                           <ref role="3cqZAo" node="6tUgmTZRh9O" resolve="fDeviceTuple" />
                         </node>
                         <node concept="3TrEf2" id="6tUgmTZRdF7" role="2OqNvi">
-                          <ref role="3Tt5mk" to="ddau:6kt45HTj4s6" />
+                          <ref role="3Tt5mk" to="xnt3:6kt45HTj4s6" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="6tUgmTZRea7" role="37vLTx">
@@ -295,7 +295,7 @@
                       <node concept="2OqwBi" id="6tUgmTZReg3" role="2Oq$k0">
                         <node concept="_YI3z" id="6tUgmTZRee1" role="2Oq$k0" />
                         <node concept="3Tsc0h" id="6tUgmTZRekZ" role="2OqNvi">
-                          <ref role="3TtcxE" to="ddau:6kt45HTj4nJ" />
+                          <ref role="3TtcxE" to="xnt3:6kt45HTj4nJ" />
                         </node>
                       </node>
                       <node concept="TSZUe" id="6tUgmTZRfBP" role="2OqNvi">
@@ -321,7 +321,7 @@
                       <ref role="3cqZAo" node="6tUgmTZR9td" resolve="aFunctionTuple" />
                     </node>
                     <node concept="3Tsc0h" id="6tUgmTZRq4A" role="2OqNvi">
-                      <ref role="3TtcxE" to="ddau:6kt45HTj4uN" />
+                      <ref role="3TtcxE" to="xnt3:6kt45HTj4uN" />
                     </node>
                   </node>
                   <node concept="2es0OD" id="6tUgmTZRt62" role="2OqNvi">
@@ -336,7 +336,7 @@
                                     <ref role="3cqZAo" node="6tUgmTZRh9O" resolve="fDeviceTuple" />
                                   </node>
                                   <node concept="3Tsc0h" id="6tUgmTZRtkO" role="2OqNvi">
-                                    <ref role="3TtcxE" to="ddau:6kt45HTj4uN" />
+                                    <ref role="3TtcxE" to="xnt3:6kt45HTj4uN" />
                                   </node>
                                 </node>
                                 <node concept="TSZUe" id="6tUgmTZRvdg" role="2OqNvi">
@@ -369,7 +369,7 @@
                     <ref role="3cqZAo" node="6tUgmTZR9td" resolve="aFunctionTuple" />
                   </node>
                   <node concept="3Tsc0h" id="6tUgmTZRkdT" role="2OqNvi">
-                    <ref role="3TtcxE" to="ddau:6kt45HTj4uN" />
+                    <ref role="3TtcxE" to="xnt3:6kt45HTj4uN" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="6tUgmTZRnoq" role="2OqNvi" />

@@ -104,7 +104,7 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false" scope="generate-into">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
     <dependency reexport="false">8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)</dependency>
-    <dependency reexport="false">b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</dependency>
+    <dependency reexport="false">bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -172,8 +172,8 @@
     <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
-    <extendedLanguage>b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</extendedLanguage>
     <extendedLanguage>137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</extendedLanguage>
+    <extendedLanguage>bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)</extendedLanguage>
   </extendedLanguages>
 </language>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.clafer.architecture" uuid="b41ca45b-f035-4e58-bc7d-a14b21b3db45" languageVersion="1" moduleVersion="17">
+<language namespace="org.clafer.architecture" uuid="b41ca45b-f035-4e58-bc7d-a14b21b3db45" languageVersion="6" moduleVersion="22">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -130,7 +130,17 @@
           <lesser-priority-mapping>
             <generator generatorUID="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" />
             <external-mapping>
-              <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6496364123346699425" />
+              <mapping-set>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6496364123346699425" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="9943029708740935" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6977959945969476357" />
+                </mapping-set-element>
+              </mapping-set>
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>

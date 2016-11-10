@@ -28,6 +28,7 @@
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -73,7 +74,7 @@
     <property role="34LRSv" value="ArchElement" />
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="PrWs8" id="6LOryU0rqHo" role="PzmwI">
-      <ref role="PrY4T" to="ddau:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
+      <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
     </node>
     <node concept="PrWs8" id="7bA4V6KDwem" role="PzmwI">
       <ref role="PrY4T" to="dkee:7bA4V6KyOHz" resolve="ITaggable" />
@@ -262,6 +263,166 @@
       <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
     </node>
     <node concept="PrWs8" id="7b8T1iJE2Sf" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3WJnaafhyWS">
+    <property role="1pbfSe" value="831157286" />
+    <property role="TrG5h" value="IAbstractVisibleInQATable" />
+    <property role="3GE5qa" value="QualityModule" />
+  </node>
+  <node concept="1TIwiD" id="6kt45HTk58g">
+    <property role="1pbfSe" value="563256725" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="ArchConceptRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6kt45HTk58k" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="archConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="50FM0hzFYbT">
+    <property role="TrG5h" value="IHaveQualityAttributes" />
+    <property role="1pbfSe" value="1277449475" />
+    <property role="3GE5qa" value="QualityModule" />
+    <node concept="1TJgyj" id="4diOXa0$sm2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="qualities" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4diOXa0$smX" resolve="Quality" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="16CxyeeVoRx">
+    <property role="1pbfSe" value="1600777212" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityExpr" />
+    <ref role="1TJDcQ" to="mecy:6Ig5vvkYZV8" resolve="SubclaferRef" />
+  </node>
+  <node concept="1TIwiD" id="4diOXa0$smX">
+    <property role="1pbfSe" value="1008428657" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="Quality" />
+    <ref role="1TJDcQ" to="mecy:bl22kSogWC" resolve="Clafer" />
+    <node concept="1TJgyj" id="4diOXa0$snd" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="tElement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+    </node>
+    <node concept="1TJgyj" id="4diOXa0$snf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="6BXeK5CkZwm" role="PzmwI">
+      <ref role="PrY4T" to="mecy:xdMRpnCdR0" resolve="IPrimitiveClaferType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="57FaIEVyhuB">
+    <property role="1pbfSe" value="225723025" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityTableElement" />
+    <ref role="1TJDcQ" node="57FaIEV_R4r" resolve="QTElement" />
+    <node concept="1TJgyj" id="7XyBMvG1HC6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:5tJ_MV8UBZp" resolve="Constraint" />
+    </node>
+    <node concept="PrWs8" id="7XyBMvG5KiD" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="57FaIEV_R4s">
+    <property role="1pbfSe" value="226663430" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityTableElementRef" />
+    <ref role="1TJDcQ" node="57FaIEV_R4r" resolve="QTElement" />
+    <node concept="1TJgyj" id="57FaIEV_R4t" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="quality" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="703nGRhCNvb">
+    <property role="1pbfSe" value="1101436568" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QualityThisExpr" />
+    <property role="34LRSv" value="this" />
+    <ref role="1TJDcQ" to="mecy:6Ig5vvkWgnt" resolve="ThisExpr" />
+  </node>
+  <node concept="1TIwiD" id="57FaIEV_R4r">
+    <property role="1pbfSe" value="226663429" />
+    <property role="3GE5qa" value="QualityModule" />
+    <property role="TrG5h" value="QTElement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="PrWs8" id="6BXeK5CiAYY" role="PzmwI">
+      <ref role="PrY4T" to="mecy:xdMRpnCdR0" resolve="IPrimitiveClaferType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6kt45HTj4rI">
+    <property role="1pbfSe" value="563521719" />
+    <property role="TrG5h" value="QualityTuple" />
+    <property role="3GE5qa" value="QualityModule" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6kt45HTj4s6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="archConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6kt45HTk58g" resolve="ArchConceptRef" />
+    </node>
+    <node concept="1TJgyj" id="5A7sq$BKVZP" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="mecy:bl22kSmCpX" resolve="IElement" />
+    </node>
+    <node concept="1TJgyj" id="6kt45HTj4uN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="qualities" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+    </node>
+    <node concept="1TJgyj" id="3_rlKvvnEFQ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="qualityRef" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="57FaIEV_R4s" resolve="QualityTableElementRef" />
+    </node>
+    <node concept="PrWs8" id="6kt45HTlS$5" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6eCqpcIp8sp" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6kt45HTiMty">
+    <property role="1pbfSe" value="563595331" />
+    <property role="TrG5h" value="QualityModule" />
+    <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="define quality attributes" />
+    <property role="3GE5qa" value="QualityModule" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1T6YVZdbieB" role="1TKVEl">
+      <property role="TrG5h" value="visible" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="6kt45HTj4nJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tuples" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6kt45HTj4rI" resolve="QualityTuple" />
+    </node>
+    <node concept="PrWs8" id="6kt45HTlWSS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="57FaIEVvWSi" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
   </node>
