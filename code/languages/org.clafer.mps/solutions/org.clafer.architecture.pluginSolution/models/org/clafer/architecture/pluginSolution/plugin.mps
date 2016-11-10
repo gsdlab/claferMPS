@@ -12,6 +12,7 @@
   <imports>
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="jyho" ref="r:c0d845a2-4853-4b9b-a005-8551d02b2034(org.clafer.architecture.editor)" />
+    <import index="4y9z" ref="r:6e243ac1-f9a8-47bf-8183-27ab6dd52152(org.clafer.architecture.core.editor)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -49,8 +50,8 @@
     <property role="TrG5h" value="ArchitectureMode" />
     <node concept="33gmoH" id="6Ct43dp6DgC" role="2hfSGL">
       <property role="33g7Lv" value="E/E Architecture Diagrams" />
-      <ref role="33glcW" to="jyho:1q5jVmNO7wz" resolve="architectureProjections" />
-      <ref role="33glcY" to="jyho:1q5jVmNO7w$" resolve="architectureDiagrams" />
+      <ref role="33glcY" to="4y9z:1q5jVmNO7w$" resolve="architectureDiagrams" />
+      <ref role="33glcW" to="4y9z:1q5jVmNO7wz" resolve="architectureProjections" />
     </node>
     <node concept="tT9cl" id="6Ct43dp6DgD" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
