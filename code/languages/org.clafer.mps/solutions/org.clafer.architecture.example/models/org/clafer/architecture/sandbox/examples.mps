@@ -107,6 +107,9 @@
       <concept id="4979542346872861756" name="org.clafer.architecture.structure.ImplementationTypeExpr" flags="ng" index="3Whttt">
         <property id="4979542346872861762" name="type" index="3Whtsz" />
       </concept>
+      <concept id="663277625450975106" name="org.clafer.architecture.structure.RefToDevice" flags="ng" index="1Xj23Y">
+        <child id="6487798610334690656" name="refToDeviceExpr" index="djesm" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -123,6 +126,9 @@
         <property id="1351664789508528405" name="textGenPriority" index="3wNgFz" />
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
+      </concept>
+      <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
+        <child id="6300420630909825947" name="children" index="2vwUiP" />
       </concept>
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
@@ -185,6 +191,16 @@
         </node>
       </node>
       <node concept="UzEYP" id="1JOdLtDwOo2" role="2mZOl8" />
+      <node concept="UH0sd" id="1JOdLtDzIho" role="2mZOl8">
+        <property role="TrG5h" value="clafer" />
+        <node concept="UH0sd" id="1JOdLtDzIls" role="2vwUiP">
+          <property role="TrG5h" value="clafer2" />
+        </node>
+        <node concept="UH0sd" id="1JOdLtDzIlZ" role="2vwUiP">
+          <property role="TrG5h" value="clafer3" />
+        </node>
+      </node>
+      <node concept="UzEYP" id="1JOdLtDzIg2" role="2mZOl8" />
       <node concept="1eXri_" id="1JOdLtDwOoz" role="2mZOl8">
         <property role="TrG5h" value="fConnector" />
         <node concept="2qmXGp" id="1JOdLtDwOs1" role="28Pzmq">
@@ -333,6 +349,21 @@
         <node concept="kwSKj" id="1JOdLtDy$Mr" role="kIXCp" />
         <node concept="kwSKi" id="1JOdLtDy$Mw" role="kIXCp" />
         <node concept="kIXAu" id="1JOdLtDy$MC" role="kIXCp" />
+      </node>
+      <node concept="UzEYP" id="1JOdLtD$VC9" role="2mZOl8" />
+      <node concept="1Xj23Y" id="1JOdLtD$VCK" role="2mZOl8">
+        <property role="TrG5h" value="ref" />
+      </node>
+      <node concept="1Xj23Y" id="1JOdLtD$VDq" role="2mZOl8">
+        <property role="TrG5h" value="ref2" />
+        <node concept="2qmXGp" id="1JOdLtD$VPz" role="djesm">
+          <node concept="2ZqYGZ" id="1JOdLtD$VPL" role="1ESnxz">
+            <ref role="2ZqYFj" to="t4ow:1JOdLtDwOG_" resolve="cost" />
+          </node>
+          <node concept="ZpONE" id="1JOdLtD$VDQ" role="1_9fRO">
+            <ref role="ZpOSt" node="1JOdLtDy$Le" resolve="dNode" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
