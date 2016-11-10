@@ -14,6 +14,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -29,6 +30,7 @@
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="8yf6" ref="r:05bc933b-fedb-4e9e-afee-dab27825d955(org.clafer.architecture.generator.template.main@generator)" />
+    <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -623,7 +625,7 @@
                           <node concept="2OqwBi" id="5YkgXg$fP2v" role="3clFbG">
                             <node concept="1iwH7S" id="5YkgXg$fP2w" role="2Oq$k0" />
                             <node concept="1iwH70" id="5YkgXg$fP2x" role="2OqNvi">
-                              <ref role="1iwH77" to="8yf6:1kFIkf_raJx" resolve="FragmentRef" />
+                              <ref role="1iwH77" node="1kFIkf_raJx" resolve="FragmentRef" />
                               <node concept="2OqwBi" id="5YkgXg$fP2y" role="1iwH7V">
                                 <node concept="2OqwBi" id="5YkgXg$fP2z" role="2Oq$k0">
                                   <node concept="30H73N" id="5YkgXg$i4E$" role="2Oq$k0" />
@@ -652,6 +654,11 @@
       <property role="TrG5h" value="ArchElement" />
       <ref role="2rTdP9" to="xnt3:4csP6flST3m" resolve="ArchElement" />
       <ref role="2rZz_L" to="mecy:bl22kSogWC" resolve="Clafer" />
+    </node>
+    <node concept="2rT7sh" id="1kFIkf_raJx" role="2rTMjI">
+      <property role="TrG5h" value="FragmentRef" />
+      <ref role="2rZz_L" to="mecy:bl22kSogWC" resolve="Clafer" />
+      <ref role="2rTdP9" to="xnt3:1kFIkf$RTXv" resolve="FragmentRef" />
     </node>
   </node>
   <node concept="13MO4I" id="3T8tWljOhvv">
@@ -1137,9 +1144,9 @@
           <node concept="3cpWsn" id="7hQ9wAVUbNJ" role="3cpWs9">
             <property role="TrG5h" value="baseModelName" />
             <node concept="17QB3L" id="7hQ9wAVUbNK" role="1tU5fm" />
-            <node concept="2YIFZM" id="zkM81ANS2" role="33vP2m">
+            <node concept="2YIFZM" id="63mGpAsKe1N" role="33vP2m">
               <ref role="37wK5l" to="3636:5A7sq$BM1rt" resolve="REFERENCE_MODEL_NAME" />
-              <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtil" />
+              <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
             </node>
           </node>
         </node>
@@ -2165,7 +2172,7 @@
                           <node concept="2OqwBi" id="1kFIkf_qx2q" role="3clFbG">
                             <node concept="1iwH7S" id="1kFIkf_qx0Q" role="2Oq$k0" />
                             <node concept="1iwH70" id="1kFIkf_rcA0" role="2OqNvi">
-                              <ref role="1iwH77" to="8yf6:1kFIkf_raJx" resolve="FragmentRef" />
+                              <ref role="1iwH77" node="1kFIkf_raJx" resolve="FragmentRef" />
                               <node concept="37vLTw" id="1kFIkf_rcKW" role="1iwH7V">
                                 <ref role="3cqZAo" node="1kFIkf_qx_$" resolve="superFragmentRef" />
                               </node>
@@ -2181,7 +2188,7 @@
           </node>
         </node>
         <node concept="2ZBi8u" id="1kFIkf_rcc0" role="lGtFl">
-          <ref role="2rW$FS" to="8yf6:1kFIkf_raJx" resolve="FragmentRef" />
+          <ref role="2rW$FS" node="1kFIkf_raJx" resolve="FragmentRef" />
         </node>
       </node>
       <node concept="UzEYP" id="1OxX53thB0e" role="UzTCv" />

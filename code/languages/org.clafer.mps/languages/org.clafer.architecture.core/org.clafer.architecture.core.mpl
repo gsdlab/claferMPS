@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.clafer.architecture.core" uuid="bb2706c2-79b9-4711-8bf9-d8df74d841ba" languageVersion="0" moduleVersion="1">
+<language namespace="org.clafer.architecture.core" uuid="bb2706c2-79b9-4711-8bf9-d8df74d841ba" languageVersion="0" moduleVersion="2">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />
@@ -16,9 +16,10 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)</dependency>
-        <dependency reexport="false">bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)</dependency>
+        <dependency reexport="false">b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</dependency>
+        <dependency reexport="false">bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -50,7 +51,7 @@
         <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
-        <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" fqName="org.clafer.architecture" version="2" />
+        <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" fqName="org.clafer.architecture" version="7" />
         <language id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" fqName="org.clafer.architecture.core" version="-1" />
         <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
         <language id="8d4e2a78-2e34-46b0-903b-f624343daeaa" fqName="org.clafer.expressions" version="1" />
@@ -88,7 +89,7 @@
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
-        <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="17" />
+        <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="26" />
         <module reference="bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)" version="0" />
         <module reference="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" version="0" />
         <module reference="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" version="0" />
@@ -108,7 +109,6 @@
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
-    <dependency reexport="false">b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</dependency>
     <dependency reexport="false">9e24fcdc-a232-4d24-8c95-1f525946191a(com.mbeddr.core.base.pluginSolution)</dependency>
   </dependencies>
   <usedDevKits>
@@ -175,7 +175,6 @@
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="7b45fa94-2707-4a1a-9e6a-ce40c4aaf35a(de.itemis.mps.editor.collapsible.runtime)" version="0" />
-    <module reference="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" version="0" />
     <module reference="1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)" version="0" />
     <module reference="56c81845-acaf-48a7-bcd8-e29b36c98dd7(de.itemis.mps.editor.diagram.styles)" version="0" />
     <module reference="5c13c612-0f7b-4f0a-ab8b-565186b418de(de.itemis.mps.mouselistener.runtime)" version="0" />
@@ -201,9 +200,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
-    <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="17" />
     <module reference="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" version="0" />
-    <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
     <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
@@ -219,7 +216,6 @@
     <extendedLanguage>e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)</extendedLanguage>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)</extendedLanguage>
-    <extendedLanguage>b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</extendedLanguage>
   </extendedLanguages>
 </language>
 
