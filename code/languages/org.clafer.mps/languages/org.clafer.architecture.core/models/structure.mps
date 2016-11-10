@@ -161,12 +161,6 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="4csP6flST3m" resolve="ArchElement" />
-    <node concept="1TJgyj" id="1kFIkf$RTZt" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="fragmentRefs" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="ddau:1kFIkf$RTXv" resolve="FragmentRef" />
-    </node>
     <node concept="1TJgyi" id="3NiPeHJR19s" role="1TKVEl">
       <property role="TrG5h" value="showConLabels" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -176,6 +170,12 @@
       <property role="TrG5h" value="showConLabelsNearSources" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
       <node concept="asaX9" id="6ciUqxODLhe" role="lGtFl" />
+    </node>
+    <node concept="1TJgyj" id="1kFIkf$RTZt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fragmentRefs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="ddau:1kFIkf$RTXv" resolve="FragmentRef" />
     </node>
     <node concept="1TJgyi" id="6ciUqxODLh8" role="1TKVEl">
       <property role="TrG5h" value="connLabelsPosition" />

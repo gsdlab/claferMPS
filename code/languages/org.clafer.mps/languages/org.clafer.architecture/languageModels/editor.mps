@@ -1850,7 +1850,7 @@
         <node concept="3clFbT" id="cflUTbyl6N" role="3XKxJP" />
         <node concept="238au4" id="3NiPeHJYbD4" role="1PNbKP">
           <node concept="PMmxH" id="3NiPeHJYbGN" role="2wV5jI">
-            <ref role="PMmxG" to="4y9z:GHdWIEFiy" resolve="ArchConnectorLabel" />
+            <ref role="PMmxG" to="4y9z:GHdWIEFiy" resolve="BaseConnector_Label" />
             <node concept="pkWqt" id="3NiPeHJYbGO" role="pqm2j">
               <node concept="3clFbS" id="3NiPeHJYbGP" role="2VODD2">
                 <node concept="3clFbF" id="6ciUqxOEbHd" role="3cqZAp">
@@ -1913,7 +1913,7 @@
       </node>
       <node concept="238au4" id="1ub0KooO$Ec" role="3kqczz">
         <node concept="PMmxH" id="GHdWIEFiM" role="2wV5jI">
-          <ref role="PMmxG" to="4y9z:GHdWIEFiy" resolve="ArchConnectorLabel" />
+          <ref role="PMmxG" to="4y9z:GHdWIEFiy" resolve="BaseConnector_Label" />
           <node concept="pkWqt" id="3NiPeHJXLcU" role="pqm2j">
             <node concept="3clFbS" id="3NiPeHJXLcV" role="2VODD2">
               <node concept="3clFbF" id="6ciUqxOEbRA" role="3cqZAp">
@@ -2853,8 +2853,8 @@
                               <node concept="1PxgMI" id="5YkgXg$1rWV" role="25WWJ7">
                                 <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                                 <node concept="2YIFZM" id="5YkgXg$1rt2" role="1PxMeX">
-                                  <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                                  <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+                                  <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
+                                  <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtil" />
                                   <node concept="2OqwBi" id="5YkgXg$1pu9" role="37wK5m">
                                     <node concept="37vLTw" id="5YkgXg$1pkr" role="2Oq$k0">
                                       <ref role="3cqZAo" node="5YkgXg$1iAJ" resolve="it" />
@@ -7716,8 +7716,8 @@
     </node>
     <node concept="2ZK4vF" id="399d13smbt6" role="2wV5jI">
       <node concept="2YIFZM" id="5C9iBpnhzhz" role="3zeBtW">
-        <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-        <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+        <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
+        <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtil" />
         <node concept="2OqwBi" id="3NiPeHKl2EU" role="37wK5m">
           <node concept="1Pxb5l" id="3NiPeHKkByo" role="2Oq$k0" />
           <node concept="3TrEf2" id="5C9iBpnhzSZ" role="2OqNvi">
@@ -8718,20 +8718,6 @@
       <node concept="pVoyu" id="3vl9z2f8Ng9" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="7bA4V6Ky$GA">
-    <ref role="1XX52x" to="1drr:5fOb1BOtcVP" resolve="Milestone" />
-    <node concept="2SsqMj" id="7bA4V6KyGcD" role="2wV5jI" />
-    <node concept="2aJ2om" id="7bA4V6KyGcu" role="CpUAK">
-      <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="7bA4V6KyOHn">
-    <ref role="1XX52x" to="dkee:7hp4$a4mUt9" resolve="Tag" />
-    <node concept="2SsqMj" id="7bA4V6KyOI0" role="2wV5jI" />
-    <node concept="2aJ2om" id="7bA4V6KyOHv" role="CpUAK">
-      <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
   </node>
 </model>

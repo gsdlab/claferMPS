@@ -49,7 +49,7 @@
     <property role="TrG5h" value="ArchitectureMode" />
     <node concept="33gmoH" id="6Ct43dp6DgC" role="2hfSGL">
       <property role="33g7Lv" value="E/E Architecture Diagrams" />
-      <ref role="33glcW" to="jyho:1q5jVmNO7wz" resolve="architectureStuff" />
+      <ref role="33glcW" to="jyho:1q5jVmNO7wz" resolve="architectureProjections" />
       <ref role="33glcY" to="jyho:1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
     <node concept="tT9cl" id="6Ct43dp6DgD" role="2hfP89">

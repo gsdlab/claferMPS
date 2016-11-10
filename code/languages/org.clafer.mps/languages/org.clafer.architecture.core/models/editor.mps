@@ -36,6 +36,7 @@
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" />
+    <import index="dkee" ref="r:efb465bf-ea7d-479d-8823-2c3c77049b98(org.clafer.util.tags.structure)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -89,6 +90,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -2226,8 +2228,8 @@
                                 <node concept="1PxgMI" id="5fOb1BO$uvT" role="33vP2m">
                                   <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                                   <node concept="2YIFZM" id="5fOb1BO$ucW" role="1PxMeX">
-                                    <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                                    <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+                                    <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
+                                    <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtil" />
                                     <node concept="37vLTw" id="5fOb1BO$ucX" role="37wK5m">
                                       <ref role="3cqZAo" node="5fOb1BO$nyD" resolve="it" />
                                     </node>
@@ -2302,8 +2304,8 @@
               <node concept="1PxgMI" id="1MaSFbjzf6g" role="23hSWE">
                 <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                 <node concept="2YIFZM" id="1MaSFbjzeY5" role="1PxMeX">
-                  <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
-                  <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
+                  <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
+                  <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtil" />
                   <node concept="37u81S" id="1MaSFbjzeYU" role="37wK5m" />
                 </node>
               </node>
@@ -2733,6 +2735,20 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7bA4V6KyOHn">
+    <ref role="1XX52x" to="dkee:7hp4$a4mUt9" resolve="Tag" />
+    <node concept="2SsqMj" id="7bA4V6KyOI0" role="2wV5jI" />
+    <node concept="2aJ2om" id="7bA4V6KyOHv" role="CpUAK">
+      <ref role="2$4xQ3" to="jyho:1q5jVmNO7w$" resolve="architectureDiagrams" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7bA4V6Ky$GA">
+    <ref role="1XX52x" to="1drr:5fOb1BOtcVP" resolve="Milestone" />
+    <node concept="2SsqMj" id="7bA4V6KyGcD" role="2wV5jI" />
+    <node concept="2aJ2om" id="7bA4V6KyGcu" role="CpUAK">
+      <ref role="2$4xQ3" to="jyho:1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
   </node>
 </model>

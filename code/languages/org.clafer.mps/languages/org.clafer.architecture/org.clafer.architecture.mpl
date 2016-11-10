@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.clafer.architecture" uuid="b41ca45b-f035-4e58-bc7d-a14b21b3db45" languageVersion="2" moduleVersion="12">
+<language namespace="org.clafer.architecture" uuid="b41ca45b-f035-4e58-bc7d-a14b21b3db45" languageVersion="2" moduleVersion="16">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -15,12 +15,14 @@
       </models>
       <external-templates>
         <generator generatorUID="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" />
+        <generator generatorUID="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" />
       </external-templates>
       <dependencies>
         <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
         <dependency reexport="false">5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)</dependency>
         <dependency reexport="false">8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)</dependency>
         <dependency reexport="false">e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)</dependency>
+        <dependency reexport="false">34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -91,9 +93,10 @@
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
-        <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="12" />
+        <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="16" />
         <module reference="bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)" version="0" />
         <module reference="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" version="0" />
+        <module reference="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" version="0" />
         <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
         <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
         <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
@@ -114,6 +117,20 @@
             <generator generatorUID="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" />
             <external-mapping>
               <mapping-node modelUID="r:acf0789f-dd9f-4a0a-acfb-b0f43541413e(org.clafer.referenceModel.generator.template.main@generator)" nodeID="6798851666866987619" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_together">
+          <greater-priority-mapping>
+            <generator generatorUID="bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)" />
+            <external-mapping>
+              <mapping-node modelUID="r:05bc933b-fedb-4e9e-afee-dab27825d955(org.clafer.architecture.generator.template.main@generator)" nodeID="5749248055796882064" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" />
+            <external-mapping>
+              <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6496364123346699425" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
@@ -230,7 +247,7 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
-    <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="12" />
+    <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="16" />
     <module reference="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" version="0" />
     <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
