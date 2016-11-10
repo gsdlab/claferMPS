@@ -1587,5 +1587,107 @@
       <ref role="1YaFvo" to="xnt3:6kt45HTiMty" resolve="QualityModule" />
     </node>
   </node>
+  <node concept="1YbPZF" id="5YkgXg$fKWZ">
+    <property role="TrG5h" value="typeof_FragmentRefDotTarget" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <node concept="3clFbS" id="5YkgXg$fKX0" role="18ibNy">
+      <node concept="3cpWs8" id="5YkgXg$fKYn" role="3cqZAp">
+        <node concept="3cpWsn" id="5YkgXg$fKYo" role="3cpWs9">
+          <property role="TrG5h" value="baseFragment" />
+          <node concept="3Tqbb2" id="5YkgXg$fKYp" role="1tU5fm">
+            <ref role="ehGHo" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+          </node>
+          <node concept="2OqwBi" id="5YkgXg$fKYq" role="33vP2m">
+            <node concept="2OqwBi" id="5YkgXg$fKYr" role="2Oq$k0">
+              <node concept="1YBJjd" id="5YkgXg$mpVB" role="2Oq$k0">
+                <ref role="1YBMHb" node="5YkgXg$fKX2" resolve="fragmentRefDotTarget" />
+              </node>
+              <node concept="3TrEf2" id="5YkgXg$mqgN" role="2OqNvi">
+                <ref role="3Tt5mk" to="xnt3:5YkgXg$fKiv" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="5YkgXg$fKYu" role="2OqNvi">
+              <ref role="37wK5l" to="3636:1kFIkf_fmHN" resolve="getRefTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="5YkgXg$fKYv" role="3cqZAp">
+        <node concept="mw_s8" id="5YkgXg$fKYw" role="1ZfhKB">
+          <node concept="2OqwBi" id="5YkgXg$fKYx" role="mwGJk">
+            <node concept="37vLTw" id="5YkgXg$fKYy" role="2Oq$k0">
+              <ref role="3cqZAo" node="5YkgXg$fKYo" resolve="baseFragment" />
+            </node>
+            <node concept="2qgKlT" id="5YkgXg$fKYz" role="2OqNvi">
+              <ref role="37wK5l" to="f5p9:2uk4icpllHZ" resolve="createType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5YkgXg$fKY$" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5YkgXg$fKY_" role="mwGJk">
+            <node concept="1YBJjd" id="5YkgXg$mqkx" role="1Z2MuG">
+              <ref role="1YBMHb" node="5YkgXg$fKX2" resolve="fragmentRefDotTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="5YkgXg$fKYB" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="5YkgXg$fKX2" role="1YuTPh">
+      <property role="TrG5h" value="fragmentRefDotTarget" />
+      <ref role="1YaFvo" to="xnt3:5YkgXg$fKio" resolve="FragmentRefDotTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="1kFIkf_fliY">
+    <property role="TrG5h" value="typeof_FragmentRefExpr" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <node concept="3clFbS" id="1kFIkf_fliZ" role="18ibNy">
+      <node concept="3cpWs8" id="1kFIkf_fljo" role="3cqZAp">
+        <node concept="3cpWsn" id="1kFIkf_fljr" role="3cpWs9">
+          <property role="TrG5h" value="baseFragment" />
+          <node concept="3Tqbb2" id="1kFIkf_fljn" role="1tU5fm">
+            <ref role="ehGHo" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+          </node>
+          <node concept="2OqwBi" id="1kFIkf_fogD" role="33vP2m">
+            <node concept="2OqwBi" id="1kFIkf_flqC" role="2Oq$k0">
+              <node concept="1YBJjd" id="1kFIkf_flob" role="2Oq$k0">
+                <ref role="1YBMHb" node="1kFIkf_flj1" resolve="fragmentRefExpr" />
+              </node>
+              <node concept="3TrEf2" id="1kFIkf_flvn" role="2OqNvi">
+                <ref role="3Tt5mk" to="xnt3:1kFIkf_edvs" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="1kFIkf_folp" role="2OqNvi">
+              <ref role="37wK5l" to="3636:1kFIkf_fmHN" resolve="getRefTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Z5TYs" id="1kFIkf_foNI" role="3cqZAp">
+        <node concept="mw_s8" id="1kFIkf_foPe" role="1ZfhKB">
+          <node concept="2OqwBi" id="1kFIkf_foSy" role="mwGJk">
+            <node concept="37vLTw" id="1kFIkf_foPc" role="2Oq$k0">
+              <ref role="3cqZAo" node="1kFIkf_fljr" resolve="baseFragment" />
+            </node>
+            <node concept="2qgKlT" id="1kFIkf_fp7m" role="2OqNvi">
+              <ref role="37wK5l" to="f5p9:2uk4icpllHZ" resolve="createType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="1kFIkf_foNL" role="1ZfhK$">
+          <node concept="1Z2H0r" id="1kFIkf_foKE" role="mwGJk">
+            <node concept="1YBJjd" id="1kFIkf_foMm" role="1Z2MuG">
+              <ref role="1YBMHb" node="1kFIkf_flj1" resolve="fragmentRefExpr" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="1kFIkf_flOx" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="1kFIkf_flj1" role="1YuTPh">
+      <property role="TrG5h" value="fragmentRefExpr" />
+      <ref role="1YaFvo" to="xnt3:1kFIkf_9FX9" resolve="FragmentRefExpr" />
+    </node>
+  </node>
 </model>
 

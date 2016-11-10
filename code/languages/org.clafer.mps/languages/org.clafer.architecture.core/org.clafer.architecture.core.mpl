@@ -121,6 +121,7 @@
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" fqName="de.itemis.mps.editor.diagram" version="0" />
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" fqName="de.itemis.mps.editor.diagram.layout" version="0" />
     <language id="21063c66-85ba-4e98-839b-036445b17ae2" fqName="de.itemis.mps.editor.layout" version="0" />
+    <language id="a0ab8c10-c118-4755-ba27-3853435cf524" fqName="de.itemis.mps.tooltips" version="0" />
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" fqName="de.slisson.mps.tables" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />

@@ -177,7 +177,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fragmentRefs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="ddau:1kFIkf$RTXv" resolve="FragmentRef" />
+      <ref role="20lvS9" node="1kFIkf$RTXv" resolve="FragmentRef" />
     </node>
     <node concept="1TJgyi" id="6ciUqxODLh8" role="1TKVEl">
       <property role="TrG5h" value="connLabelsPosition" />
@@ -424,6 +424,53 @@
     </node>
     <node concept="PrWs8" id="57FaIEVvWSi" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5YkgXg$fKio">
+    <property role="1pbfSe" value="2083305364" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="FragmentRefDotTarget" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5YkgXg$fKis" role="PzmwI">
+      <ref role="PrY4T" to="dajg:40tXLnqhXcx" resolve="IGenericDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="5YkgXg$fKiv" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragmentRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1kFIkf$RTXv" resolve="FragmentRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1kFIkf_9FX9">
+    <property role="1pbfSe" value="95258484" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="TrG5h" value="FragmentRefExpr" />
+    <ref role="1TJDcQ" to="dajg:7FQByU3CrCM" resolve="Expression" />
+    <node concept="1TJgyj" id="1kFIkf_edvs" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragmentRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1kFIkf$RTXv" resolve="FragmentRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1kFIkf$RTXv">
+    <property role="1pbfSe" value="99919710" />
+    <property role="TrG5h" value="FragmentRef" />
+    <property role="3GE5qa" value="FragemtRef" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
+    <node concept="PrWs8" id="1kFIkf$YCDw" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="1kFIkf_jtjh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="1kFIkf$Vlop" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="baseFragment" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
 </model>
