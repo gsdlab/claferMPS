@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.clafer.architecture" uuid="b41ca45b-f035-4e58-bc7d-a14b21b3db45" languageVersion="2" moduleVersion="2">
+<language namespace="org.clafer.architecture" uuid="b41ca45b-f035-4e58-bc7d-a14b21b3db45" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -163,7 +163,7 @@
     <dependency reexport="true">0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)</dependency>
     <dependency reexport="false">5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)</dependency>
     <dependency reexport="true">e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)</dependency>
-    <dependency reexport="false">bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)</dependency>
+    <dependency reexport="true">bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>

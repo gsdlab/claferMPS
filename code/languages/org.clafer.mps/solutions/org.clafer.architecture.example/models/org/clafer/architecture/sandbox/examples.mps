@@ -127,9 +127,6 @@
         <child id="204078314067497532" name="imports" index="UzTCp" />
         <child id="204078314067497530" name="contents" index="UzTCv" />
       </concept>
-      <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
-        <child id="6300420630909825947" name="children" index="2vwUiP" />
-      </concept>
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
@@ -191,15 +188,6 @@
         </node>
       </node>
       <node concept="UzEYP" id="1JOdLtDwOo2" role="2mZOl8" />
-      <node concept="UH0sd" id="1JOdLtDzIho" role="2mZOl8">
-        <property role="TrG5h" value="clafer" />
-        <node concept="UH0sd" id="1JOdLtDzIls" role="2vwUiP">
-          <property role="TrG5h" value="clafer2" />
-        </node>
-        <node concept="UH0sd" id="1JOdLtDzIlZ" role="2vwUiP">
-          <property role="TrG5h" value="clafer3" />
-        </node>
-      </node>
       <node concept="UzEYP" id="1JOdLtDzIg2" role="2mZOl8" />
       <node concept="1eXri_" id="1JOdLtDwOoz" role="2mZOl8">
         <property role="TrG5h" value="fConnector" />

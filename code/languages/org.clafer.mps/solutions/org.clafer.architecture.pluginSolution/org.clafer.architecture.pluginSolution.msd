@@ -10,6 +10,7 @@
     <dependency reexport="false">9e24fcdc-a232-4d24-8c95-1f525946191a(com.mbeddr.core.base.pluginSolution)</dependency>
     <dependency reexport="false">b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)</dependency>
   </dependencies>
   <languageVersions>
     <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" fqName="com.mbeddr.mpsutil.refactoring" version="0" />
