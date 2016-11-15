@@ -72,10 +72,6 @@
     <property role="1pbfSe" value="603036075" />
     <property role="TrG5h" value="MilestoneDefinition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5dHtH3gxJqw" role="1TKVEl">
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="PrWs8" id="3$duOrL70De" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
