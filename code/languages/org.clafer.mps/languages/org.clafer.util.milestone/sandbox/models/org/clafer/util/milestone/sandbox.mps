@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="e9e86950-9616-4c00-85d2-04b82bc81259" name="org.clafer.util.milestone" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
     <devkit ref="689d09e3-f427-4b3a-8c27-77ad5f6606ba(org.architecture)" />
   </languages>
@@ -16,7 +15,6 @@
     </language>
     <language id="e9e86950-9616-4c00-85d2-04b82bc81259" name="org.clafer.util.milestone">
       <concept id="6011591716833075931" name="org.clafer.util.milestone.structure.MilestoneDefinition" flags="ng" index="23Ulgb">
-        <property id="2565434317177596744" name="projection" index="1MruIz" />
         <child id="4111077579482260728" name="conditions" index="384pYY" />
         <child id="3795095535943034655" name="color" index="1C9chn" />
       </concept>
@@ -227,33 +225,35 @@
     <node concept="UzEYP" id="2eqgeHig0Wr" role="UzTCv" />
     <node concept="1OT2SC" id="76lcNQ9lzyX" role="lGtFl">
       <node concept="1OTsJr" id="76lcNQ9lzyZ" role="1OT2vh">
-        <ref role="23UPZC" node="3iESOxszQWU" resolve="Test" />
+        <ref role="23UPZC" node="76lcNQ9lXDD" resolve="Test" />
+      </node>
+      <node concept="1OTsJr" id="76lcNQ9lXEj" role="1OT2vh">
+        <ref role="23UPZC" node="76lcNQ9lXE4" resolve="Test2" />
       </node>
     </node>
   </node>
   <node concept="23UmdG" id="3$duOrL7azN">
     <property role="TrG5h" value="test" />
-    <node concept="23Ulgb" id="3iESOxszQWU" role="385NpS">
+    <node concept="23Ulgb" id="76lcNQ9lXDD" role="385NpS">
       <property role="TrG5h" value="Test" />
-      <property role="1MruIz" value="MilestoneView1" />
-      <node concept="2Bo0gd" id="3iESOxszQWY" role="384pYY">
+      <node concept="2Bo0gd" id="76lcNQ9lXDF" role="384pYY">
         <property role="2Bo0jw" value="13" />
       </node>
-      <node concept="1C9fSv" id="3iESOxszQWW" role="1C9chn">
-        <property role="23Ul1S" value="102" />
-        <property role="23Ul1V" value="255" />
-        <property role="23Ul1w" value="102" />
+      <node concept="1C9fSv" id="76lcNQ9lXDH" role="1C9chn">
+        <property role="23Ul1S" value="231" />
+        <property role="23Ul1V" value="76" />
+        <property role="23Ul1w" value="60" />
       </node>
     </node>
-    <node concept="23Ulgb" id="3iESOxs$229" role="385NpS">
+    <node concept="23Ulgb" id="76lcNQ9lXE4" role="385NpS">
       <property role="TrG5h" value="Test2" />
-      <node concept="2Bo0gd" id="3iESOxs$22e" role="384pYY">
+      <node concept="2Bo0gd" id="76lcNQ9lXE5" role="384pYY">
         <property role="2Bo0jw" value="14" />
       </node>
-      <node concept="1C9fSv" id="3iESOxs$dql" role="1C9chn">
-        <property role="23Ul1S" value="153" />
-        <property role="23Ul1V" value="153" />
-        <property role="23Ul1w" value="153" />
+      <node concept="1C9fSv" id="76lcNQ9lXE6" role="1C9chn">
+        <property role="23Ul1S" value="52" />
+        <property role="23Ul1V" value="152" />
+        <property role="23Ul1w" value="219" />
       </node>
     </node>
   </node>
