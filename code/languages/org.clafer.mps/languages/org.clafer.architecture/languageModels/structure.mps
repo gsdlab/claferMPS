@@ -7,10 +7,7 @@
   </languages>
   <imports>
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
-    <import index="1drr" ref="r:efe8ca06-a104-4b6a-81d4-3821bf9939ba(org.clafer.util.milestone.structure)" />
-    <import index="dkee" ref="r:efb465bf-ea7d-479d-8823-2c3c77049b98(org.clafer.util.tags.structure)" />
     <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -250,6 +247,9 @@
     <property role="34LRSv" value="System" />
     <property role="1pbfSe" value="48259829" />
     <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
+    <node concept="PrWs8" id="7NFmM4jKYA3" role="PzmwI">
+      <ref role="PrY4T" to="xnt3:7NFmM4jKYA2" resolve="ITopWrapper" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7DuSdC$$2dR">
     <property role="TrG5h" value="HardwareArchitecture" />

@@ -4,9 +4,8 @@
   <property name="build.tmp" location="${build.dir}/tmp/org.clafer.core.mps" />
   <property name="build.layout" location="${build.dir}/artifacts/org.clafer.core.mps" />
   <property name="project.root" location="${basedir}/../../../../.." />
-  <property name="mps.home" location="${project.root}/../MPS" />
-  <property name="mbeddr.github.core.home" location="${project.root}/../mbeddr.core" />
-  <property name="artifacts.root" location="${mbeddr.github.core.home}/artifacts" />
+  <property name="mps.home" location="${project.root}/../../MPS/Platforms/MPS 3.3" />
+  <property name="artifacts.root" location="${project.root}/../../MPS/Artifacts" />
   <property name="platform.distribution.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="mbeddr.allInOne.artifacts" location="${artifacts.root}/com.mbeddr.allInOne" />
   <property name="artifacts.mps" location="${mps.home}" />
@@ -383,7 +382,6 @@
       </jvmargs>
       <macro name="project.root" path="${project.root}" />
       <macro name="mps.home" path="${mps.home}" />
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="platform.distribution.artifacts" path="${platform.distribution.artifacts}" />
       <macro name="mbeddr.allInOne.artifacts" path="${mbeddr.allInOne.artifacts}" />

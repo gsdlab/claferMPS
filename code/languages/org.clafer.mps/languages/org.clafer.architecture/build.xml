@@ -4,9 +4,8 @@
   <property name="build.tmp" location="${build.dir}/tmp/org.clafer.architecture" />
   <property name="build.layout" location="${build.dir}/artifacts/org.clafer.architecture" />
   <property name="project.root" location="${basedir}/../../../../.." />
-  <property name="mps.home" location="${project.root}/../MPS" />
-  <property name="mbeddr.github.core.home" location="${project.root}/../mbeddr.core" />
-  <property name="artifacts.root" location="${project.root}/../artifacts" />
+  <property name="mps.home" location="${project.root}/../../MPS/Platforms/MPS 3.3" />
+  <property name="artifacts.root" location="${project.root}/../../MPS/Artifacts" />
   <property name="platform.distribution.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="mbeddr.allInOne.artifacts" location="${artifacts.root}/com.mbeddr.allInOne" />
   <property name="artifacts.mps" location="${mps.home}" />
@@ -73,19 +72,12 @@
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
           <module ref="94b17d5e-87d9-4868-8101-157e83e33243(com.mbeddr.mpsutil.editor.querylist.runtime)" />
-          <module ref="8f16104e-22e6-406d-8251-ef9688474557(com.mbeddr.mpsutil.refactoring.rt)" />
-          <module ref="e1808c0b-7a09-4f46-9950-17a7f0b53c29(com.mbeddr.mpsutil.targetchooser)" />
-          <module ref="278dc825-2faf-4320-b29f-78b1e6994ed4(de.itemis.mps.editor.bool.runtime)" />
           <module ref="1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)" />
           <module ref="776efd50-4c6d-4d39-90b3-7f994c98f819(de.itemis.mps.editor.layout.runtime)" />
-          <module ref="0022e9df-2136-4ef8-81b2-08650aeb1dc7(de.itemis.mps.tooltips.runtime)" />
-          <module ref="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" />
-          <module ref="da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="528ff3b9-5fc4-40dd-931f-c6ce3650640e(jetbrains.mps.lang.migration.runtime)" />
@@ -123,6 +115,69 @@
       <zipfileset file="${basedir}/org.clafer.architecture.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languageModels" prefix="module/languageModels" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/org.clafer.architecture.core.jar" />
+    <mkdir dir="${build.tmp}/default/org.clafer.architecture.core.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.clafer.architecture.core.jar/META-INF/module.xml">
+      <module namespace="org.clafer.architecture.core" type="language" uuid="bb2706c2-79b9-4711-8bf9-d8df74d841ba">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="94b17d5e-87d9-4868-8101-157e83e33243(com.mbeddr.mpsutil.editor.querylist.runtime)" />
+          <module ref="8f16104e-22e6-406d-8251-ef9688474557(com.mbeddr.mpsutil.refactoring.rt)" />
+          <module ref="e1808c0b-7a09-4f46-9950-17a7f0b53c29(com.mbeddr.mpsutil.targetchooser)" />
+          <module ref="278dc825-2faf-4320-b29f-78b1e6994ed4(de.itemis.mps.editor.bool.runtime)" />
+          <module ref="1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)" />
+          <module ref="776efd50-4c6d-4d39-90b3-7f994c98f819(de.itemis.mps.editor.layout.runtime)" />
+          <module ref="0022e9df-2136-4ef8-81b2-08650aeb1dc7(de.itemis.mps.tooltips.runtime)" />
+          <module ref="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" />
+          <module ref="da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="528ff3b9-5fc4-40dd-931f-c6ce3650640e(jetbrains.mps.lang.migration.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="org.clafer.architecture.core-src.jar" descriptor="org.clafer.architecture.core.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/org.clafer.architecture.zip/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.clafer.architecture.core" />
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core" includes="icons/**, resources/**" />
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/org.clafer.architecture.core.jar" />
+    </jar>
+    <jar destfile="${build.tmp}/default/org.clafer.architecture.zip/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.clafer.architecture.core#6496364123346699424" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-org.clafer.mps-languages-org.clafer.architecture.core-generator-template">
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/code-languages-org.clafer.mps-languages-org.clafer.architecture.core-models">
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/org.clafer.architecture.zip/org.clafer.architecture.mps/languages/org.clafer.architecture/org.clafer.architecture.core-src.jar" duplicate="preserve">
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/org.clafer.architecture.core.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-org.clafer.mps-languages-org.clafer.architecture.core-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-org.clafer.mps-languages-org.clafer.architecture.core-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/org.clafer.referenceModel.jar" />
     <mkdir dir="${build.tmp}/default/org.clafer.referenceModel.jar/META-INF" />
@@ -193,10 +248,8 @@
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
@@ -380,10 +433,10 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
-    <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
     <mkdir dir="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
     <unzip src="${artifacts.org.clafer.core.mps}/org.clafer.core.mps.zip" dest="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
+    <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
+    <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -393,7 +446,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.org.clafer.architecture, java.compile.org.clafer.architecture#5749248055796882063, java.compile.org.clafer.referenceModel, java.compile.org.clafer.referenceModel#6798851666866987618, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.milestone#5128010114487885350, java.compile.org.clafer.util.tags, java.compile.org.clafer.util.tags#5128010114487885309, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.architecture.pluginSolution" />
+  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.org.clafer.architecture, java.compile.org.clafer.architecture#5749248055796882063, java.compile.org.clafer.architecture.core, java.compile.org.clafer.architecture.core#6496364123346699424, java.compile.org.clafer.referenceModel, java.compile.org.clafer.referenceModel#6798851666866987618, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.milestone#5128010114487885350, java.compile.org.clafer.util.tags, java.compile.org.clafer.util.tags#5128010114487885309, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.architecture.pluginSolution" />
   
   <target name="processResources" />
   
@@ -462,9 +515,9 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationParameters.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.intentions.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.migration.jar" />
@@ -504,7 +557,6 @@
       <library file="${artifacts.mps}/lib/mps-tool.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
-      <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.migration.util.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-api/lib/execution-api.jar" />
@@ -527,9 +579,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.runtime.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core/languages/com.mbeddr.core/com.mbeddt.core.expressions.pluginSolution.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.baseLanguage/com.mbeddr.mpsutil.common.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -538,14 +587,10 @@
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor-support/com.mbeddr.mpsutil.targetchooser.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.grammarcells/com.mbeddr.mpsutil.grammarcells.runtimelang.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.infrastructure-support/com.mbeddr.mpsutil.nodeaccess.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.infrastructure-support/com.mbeddr.mpsutil.serializer.xml.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.intentions/com.mbeddr.mpsutil.intentions.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.pluginSolution.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.margincell_review/com.mbeddr.mpsutil.margincell.editor.jar" />
@@ -558,8 +603,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.rt.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.context.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.suppresswarning/com.mbeddr.mpsutil.suppresswarning.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
@@ -578,6 +621,7 @@
       </chunk>
       <chunk bootstrap="true">
         <module file="${basedir}/org.clafer.architecture.mpl" />
+        <module file="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/org.clafer.architecture.core.mpl" />
         <module file="${project.root}/code/languages/org.clafer.mps/solutions/org.clafer.architecture.referencemodel/org.clafer.architecture.referencemodel.msd" bootstrap="true" />
         <module file="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" />
       </chunk>
@@ -591,7 +635,6 @@
       </jvmargs>
       <macro name="project.root" path="${project.root}" />
       <macro name="mps.home" path="${mps.home}" />
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="platform.distribution.artifacts" path="${platform.distribution.artifacts}" />
       <macro name="mbeddr.allInOne.artifacts" path="${mbeddr.allInOne.artifacts}" />
@@ -615,6 +658,7 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/source_gen" />
+        <path location="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/source_gen" />
         <path location="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.referenceModel/source_gen" />
       </src>
       <classpath>
@@ -650,18 +694,12 @@
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.rt.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor-support/com.mbeddr.mpsutil.targetchooser.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" />
@@ -671,29 +709,33 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.mouselistener.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
         <fileset file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.rt.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor-support/com.mbeddr.mpsutil.targetchooser.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
         <pathelement path="${build.tmp}/java/out/org.clafer.architecture.referencemodel" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.tags" />
@@ -722,7 +764,164 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <pathelement path="${build.tmp}/java/out/org.clafer.architecture.referencemodel" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.util.tags" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/lib/jgraphx.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/lib/klay-emf_2014-05.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/lib/KIELER/org.adaptagrams-0.1.0-SNAPSHOT.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/lib/KIELER/de.cau.cs.kieler.kiml.libavoid-0.1.0-SNAPSHOT.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/lib/libavoid/adaptagrams.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.layout/lib/miglayout-core-4.2.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.mouselistener.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.org.clafer.architecture#5749248055796882063" depends="java.compile.org.clafer.architecture, java.compile.org.clafer.architecture.core, java.compile.org.clafer.architecture.core#6496364123346699424, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.referenceModel, java.compile.org.clafer.referenceModel#6798851666866987618, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.tags, fetchDependencies">
+    <mkdir dir="${basedir}/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.clafer.architecture#5749248055796882063" />
+    <javac destdir="${build.tmp}/java/out/org.clafer.architecture#5749248055796882063" fork="true" encoding="utf8" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture" />
+        <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture.core" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture.core#6496364123346699424" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture.referencemodel" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.referenceModel" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.referenceModel#6798851666866987618" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.util.tags" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/lib/diff_match_patch.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
+        <fileset file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.org.clafer.architecture.core" depends="java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.tags, java.compile.java.modules.cycle.1, fetchDependencies">
+    <mkdir dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.clafer.architecture.core" />
+    <javac destdir="${build.tmp}/java/out/org.clafer.architecture.core" fork="true" encoding="utf8" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.tags" />
         <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
@@ -747,8 +946,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
@@ -759,7 +956,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.styles.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.layout/languages/de.itemis.mps.editor.miglayout/de.itemis.mps.editor.layout.runtime.jar" />
@@ -794,13 +990,13 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.clafer.architecture#5749248055796882063" depends="java.compile.org.clafer.architecture, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.referenceModel, java.compile.org.clafer.referenceModel#6798851666866987618, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.tags, fetchDependencies">
-    <mkdir dir="${basedir}/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/org.clafer.architecture#5749248055796882063" />
-    <javac destdir="${build.tmp}/java/out/org.clafer.architecture#5749248055796882063" fork="true" encoding="utf8" includeantruntime="false">
+  <target name="java.compile.org.clafer.architecture.core#6496364123346699424" depends="java.compile.org.clafer.architecture.core, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.referenceModel, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.tags, fetchDependencies">
+    <mkdir dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.clafer.architecture.core#6496364123346699424" />
+    <javac destdir="${build.tmp}/java/out/org.clafer.architecture.core#6496364123346699424" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/generator/source_gen" />
+        <path location="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -818,10 +1014,9 @@
         <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/org.clafer.architecture" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture.core" />
         <pathelement path="${build.tmp}/java/out/org.clafer.architecture.referencemodel" />
         <pathelement path="${build.tmp}/java/out/org.clafer.referenceModel" />
-        <pathelement path="${build.tmp}/java/out/org.clafer.referenceModel#6798851666866987618" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.tags" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -845,7 +1040,6 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.diagram/languages/de.itemis.mps.editor.diagram/de.itemis.mps.editor.diagram.layout.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
@@ -936,7 +1130,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.clafer.referenceModel#6798851666866987618" depends="java.compile.org.clafer.architecture, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.referenceModel, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.tags, fetchDependencies">
+  <target name="java.compile.org.clafer.referenceModel#6798851666866987618" depends="java.compile.org.clafer.architecture, java.compile.org.clafer.architecture.core, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.referenceModel, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.tags, fetchDependencies">
     <mkdir dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.referenceModel/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.referenceModel#6798851666866987618" />
     <javac destdir="${build.tmp}/java/out/org.clafer.referenceModel#6798851666866987618" fork="true" encoding="utf8" includeantruntime="false">
@@ -957,10 +1151,11 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture" />
         <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/org.clafer.architecture" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture.core" />
         <pathelement path="${build.tmp}/java/out/org.clafer.architecture.referencemodel" />
         <pathelement path="${build.tmp}/java/out/org.clafer.referenceModel" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
@@ -1252,7 +1447,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.org.clafer.architecture.pluginSolution" depends="java.compile.org.clafer.architecture, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.tags, fetchDependencies">
+  <target name="java.compile.org.clafer.architecture.pluginSolution" depends="java.compile.org.clafer.architecture, java.compile.org.clafer.architecture.core, java.compile.org.clafer.architecture.referencemodel, java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.tags, fetchDependencies">
     <mkdir dir="${project.root}/code/languages/org.clafer.mps/solutions/org.clafer.architecture.pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.architecture.pluginSolution" />
     <javac destdir="${build.tmp}/java/out/org.clafer.architecture.pluginSolution" fork="true" encoding="utf8" includeantruntime="false">
@@ -1273,10 +1468,11 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture" />
         <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/org.clafer.architecture" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.architecture.core" />
         <pathelement path="${build.tmp}/java/out/org.clafer.architecture.referencemodel" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.tags" />
@@ -1326,6 +1522,7 @@
     <delete dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.util.milestone/source_gen" />
     <delete dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.util.tags/source_gen" />
     <delete dir="${basedir}/generator/source_gen" />
+    <delete dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.architecture.core/generator/source_gen" />
     <delete dir="${project.root}/code/languages/org.clafer.mps/solutions/org.clafer.architecture.pluginSolution/source_gen" />
     <delete dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.referenceModel/generator/source_gen" />
   </target>

@@ -4,12 +4,10 @@
   <property name="build.tmp" location="${build.dir}/tmp/org.clafer.util" />
   <property name="build.layout" location="${build.dir}/artifacts/org.clafer.util" />
   <property name="project.root" location="${basedir}/../../../.." />
-  <property name="mps.home" location="${project.root}/../MPS" />
-  <property name="mbeddr.github.core.home" location="${project.root}/../mbeddr.core" />
-  <property name="artifacts.root" location="${mbeddr.github.core.home}/artifacts" />
+  <property name="mps.home" location="${project.root}/../../MPS/Platforms/MPS 3.3" />
+  <property name="artifacts.root" location="${project.root}/../../MPS/Artifacts" />
   <property name="platform.distribution.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="mbeddr.allInOne.artifacts" location="${artifacts.root}/com.mbeddr.allInOne" />
-  <property name="platform.sl-all" location="${artifacts.root}/mps-sl-all" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.jetpad" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.allInOne" location="${mbeddr.allInOne.artifacts}" />
@@ -80,10 +78,8 @@
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
           <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
@@ -349,11 +345,9 @@
       </jvmargs>
       <macro name="project.root" path="${project.root}" />
       <macro name="mps.home" path="${mps.home}" />
-      <macro name="mbeddr.github.core.home" path="${mbeddr.github.core.home}" />
       <macro name="artifacts.root" path="${artifacts.root}" />
       <macro name="platform.distribution.artifacts" path="${platform.distribution.artifacts}" />
       <macro name="mbeddr.allInOne.artifacts" path="${mbeddr.allInOne.artifacts}" />
-      <macro name="platform.sl-all" path="${platform.sl-all}" />
     </generate>
   </target>
   

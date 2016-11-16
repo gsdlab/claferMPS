@@ -14,7 +14,6 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -29,8 +28,6 @@
     <import index="3636" ref="r:204ce34c-c886-4f28-81c0-4b1b9a6fe4ed(org.clafer.architecture.core.behavior)" />
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="8yf6" ref="r:05bc933b-fedb-4e9e-afee-dab27825d955(org.clafer.architecture.generator.template.main@generator)" />
-    <import index="f5o0" ref="r:1171adf6-5290-4933-a628-454c0319eff9(org.clafer.architecture.behavior)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -1013,8 +1010,8 @@
                     <node concept="2OqwBi" id="2QVp5ERSpQl" role="3fr31v">
                       <node concept="30H73N" id="2QVp5ERSpQm" role="2Oq$k0" />
                       <node concept="1mIQ4w" id="2QVp5ERSpQn" role="2OqNvi">
-                        <node concept="chp4Y" id="2QVp5ERSpTM" role="cj9EA">
-                          <ref role="cht4Q" to="ddau:12rnRvMhgdY" resolve="System" />
+                        <node concept="chp4Y" id="7NFmM4jKYGL" role="cj9EA">
+                          <ref role="cht4Q" to="xnt3:7NFmM4jKYA2" resolve="ITopWrapper" />
                         </node>
                       </node>
                     </node>
