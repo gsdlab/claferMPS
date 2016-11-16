@@ -19,6 +19,8 @@
     <import index="3636" ref="r:204ce34c-c886-4f28-81c0-4b1b9a6fe4ed(org.clafer.architecture.core.behavior)" />
     <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
     <import index="5y9x" ref="r:026a3a0c-798c-4dc1-92e8-40548e2c355c(org.clafer.architecture.core.constraints)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -541,16 +543,16 @@
             <node concept="3clFbC" id="7Ij6CMq1H2g" role="3uHU7B">
               <node concept="oXsJc" id="7Ij6CMq1H2h" role="3uHU7B" />
               <node concept="28GBK8" id="7Ij6CMq1H2i" role="3uHU7w">
-                <ref role="28GBKb" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-                <ref role="28H3Ia" to="ddau:17N04ap9jno" />
+                <ref role="28GBKb" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                <ref role="28H3Ia" to="xnt3:2OfqAZXo7Z4" />
               </node>
             </node>
             <node concept="3clFbC" id="7Ij6CMq1H2j" role="3uHU7w">
-              <node concept="28GBK8" id="7Ij6CMq1H2k" role="3uHU7w">
-                <ref role="28GBKb" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-                <ref role="28H3Ia" to="ddau:17N04ap9jnw" />
-              </node>
               <node concept="oXsJc" id="7Ij6CMq1H2l" role="3uHU7B" />
+              <node concept="28GBK8" id="76lcNQ9m$om" role="3uHU7w">
+                <ref role="28GBKb" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                <ref role="28H3Ia" to="xnt3:2OfqAZXo7Zb" />
+              </node>
             </node>
           </node>
         </node>
@@ -1893,10 +1895,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="19aTRzkPTYK">
-    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
-    <ref role="1M2myG" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
-  </node>
   <node concept="1M2fIO" id="19aTRzkRP0P">
     <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
     <ref role="1M2myG" to="ddau:19aTRzkPSt3" resolve="CommTopology" />
@@ -2157,20 +2155,20 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="7Ij6CMq1J5J" role="3clFbw">
-            <node concept="3clFbC" id="7Ij6CMq1J5K" role="3uHU7B">
-              <node concept="oXsJc" id="7Ij6CMq1J5L" role="3uHU7B" />
-              <node concept="28GBK8" id="7Ij6CMq1J5M" role="3uHU7w">
-                <ref role="28H3Ia" to="ddau:2OfqAZXo7Z4" />
-                <ref role="28GBKb" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
+          <node concept="22lmx$" id="76lcNQ9mJqE" role="3clFbw">
+            <node concept="3clFbC" id="76lcNQ9mJqF" role="3uHU7B">
+              <node concept="oXsJc" id="76lcNQ9mJqG" role="3uHU7B" />
+              <node concept="28GBK8" id="76lcNQ9mJqH" role="3uHU7w">
+                <ref role="28GBKb" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                <ref role="28H3Ia" to="xnt3:2OfqAZXo7Z4" />
               </node>
             </node>
-            <node concept="3clFbC" id="7Ij6CMq1J5N" role="3uHU7w">
-              <node concept="28GBK8" id="7Ij6CMq1J5O" role="3uHU7w">
-                <ref role="28H3Ia" to="ddau:2OfqAZXo7Zb" />
-                <ref role="28GBKb" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
+            <node concept="3clFbC" id="76lcNQ9mJqI" role="3uHU7w">
+              <node concept="oXsJc" id="76lcNQ9mJqJ" role="3uHU7B" />
+              <node concept="28GBK8" id="76lcNQ9mJqK" role="3uHU7w">
+                <ref role="28H3Ia" to="xnt3:2OfqAZXo7Z4" />
+                <ref role="28GBKb" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
               </node>
-              <node concept="oXsJc" id="7Ij6CMq1J5P" role="3uHU7B" />
             </node>
           </node>
         </node>
@@ -3333,16 +3331,16 @@
             <node concept="3clFbC" id="2OfqAZXrHvK" role="3uHU7B">
               <node concept="oXsJc" id="2OfqAZXrHvL" role="3uHU7B" />
               <node concept="28GBK8" id="2OfqAZXrHvM" role="3uHU7w">
-                <ref role="28H3Ia" to="ddau:2OfqAZXo7Z4" />
-                <ref role="28GBKb" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
+                <ref role="28GBKb" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                <ref role="28H3Ia" to="xnt3:2OfqAZXo7Z4" />
               </node>
             </node>
             <node concept="3clFbC" id="2OfqAZXrHvN" role="3uHU7w">
-              <node concept="28GBK8" id="2OfqAZXrHvO" role="3uHU7w">
-                <ref role="28H3Ia" to="ddau:2OfqAZXo7Zb" />
-                <ref role="28GBKb" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
-              </node>
               <node concept="oXsJc" id="2OfqAZXrHvP" role="3uHU7B" />
+              <node concept="28GBK8" id="76lcNQ9mJgo" role="3uHU7w">
+                <ref role="28H3Ia" to="xnt3:2OfqAZXo7Z4" />
+                <ref role="28GBKb" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+              </node>
             </node>
           </node>
         </node>

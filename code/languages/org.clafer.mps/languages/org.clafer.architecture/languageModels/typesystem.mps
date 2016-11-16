@@ -75,6 +75,7 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -90,6 +91,10 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -849,82 +854,6 @@
       <ref role="1YaFvo" to="ddau:1jKsuqULYIy" resolve="DeployedToDotTarget" />
     </node>
   </node>
-  <node concept="18kY7G" id="5ipUCoiPsTc">
-    <property role="TrG5h" value="check_BusConnector" />
-    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
-    <node concept="3clFbS" id="5ipUCoiPsTd" role="18ibNy">
-      <node concept="1DcWWT" id="17N04apnOcK" role="3cqZAp">
-        <node concept="3clFbS" id="17N04apnOcM" role="2LFqv$">
-          <node concept="2Mj0R9" id="17N04apnQmu" role="3cqZAp">
-            <node concept="Xl_RD" id="17N04apnQm_" role="2MkJ7o">
-              <property role="Xl_RC" value="Target must be a Device Node" />
-            </node>
-            <node concept="37vLTw" id="17N04apptCl" role="2OEOjV">
-              <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
-            </node>
-            <node concept="2OqwBi" id="7Ij6CMq5Foc" role="2MkoU_">
-              <node concept="2YIFZM" id="7Ij6CMq5FiX" role="2Oq$k0">
-                <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
-                <node concept="37vLTw" id="7Ij6CMq5Fk9" role="37wK5m">
-                  <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="7Ij6CMq5FBz" role="2OqNvi">
-                <node concept="chp4Y" id="7Ij6CMq5FCe" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbH" id="17N04apnOcL" role="3cqZAp" />
-        </node>
-        <node concept="3cpWsn" id="17N04apnOcN" role="1Duv9x">
-          <property role="TrG5h" value="endpointExpr" />
-          <node concept="3Tqbb2" id="17N04apnOkn" role="1tU5fm">
-            <ref role="ehGHo" to="dajg:7FQByU3CrCM" resolve="Expression" />
-          </node>
-        </node>
-        <node concept="2OqwBi" id="17N04apnOEM" role="1DdaDG">
-          <node concept="1YBJjd" id="17N04apnOrq" role="2Oq$k0">
-            <ref role="1YBMHb" node="5ipUCoiPsTf" resolve="busConnector" />
-          </node>
-          <node concept="3Tsc0h" id="17N04apnPQt" role="2OqNvi">
-            <ref role="3TtcxE" to="ddau:17N04apiQ_e" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbH" id="17N04apnMPE" role="3cqZAp" />
-      <node concept="2Mj0R9" id="5ipUCoiPsTF" role="3cqZAp">
-        <node concept="2d3UOw" id="5ipUCoiP$vh" role="2MkoU_">
-          <node concept="3cmrfG" id="5ipUCoiP$yh" role="3uHU7w">
-            <property role="3cmrfH" value="2" />
-          </node>
-          <node concept="2OqwBi" id="5ipUCoiPudQ" role="3uHU7B">
-            <node concept="2OqwBi" id="5ipUCoiPt8a" role="2Oq$k0">
-              <node concept="1YBJjd" id="5ipUCoiPsU7" role="2Oq$k0">
-                <ref role="1YBMHb" node="5ipUCoiPsTf" resolve="busConnector" />
-              </node>
-              <node concept="3Tsc0h" id="17N04apjq$d" role="2OqNvi">
-                <ref role="3TtcxE" to="ddau:17N04apiQ_e" />
-              </node>
-            </node>
-            <node concept="34oBXx" id="5ipUCoiPyjB" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="Xl_RD" id="5ipUCoiP$I7" role="2MkJ7o">
-          <property role="Xl_RC" value="The bus connects at least two device nodes" />
-        </node>
-        <node concept="1YBJjd" id="5ipUCoiP$LE" role="2OEOjV">
-          <ref role="1YBMHb" node="5ipUCoiPsTf" resolve="busConnector" />
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5ipUCoiPsTf" role="1YuTPh">
-      <property role="TrG5h" value="busConnector" />
-      <ref role="1YaFvo" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-    </node>
-  </node>
   <node concept="18kY7G" id="5H6GWMWQ$wD">
     <property role="TrG5h" value="check_IHaveArchType" />
     <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
@@ -1303,14 +1232,14 @@
           </node>
           <node concept="1PxgMI" id="5YkgXg$1xTg" role="33vP2m">
             <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
-            <node concept="2YIFZM" id="5YkgXg$1wkh" role="1PxMeX">
-              <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-              <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
-              <node concept="2OqwBi" id="2OfqAZWirHe" role="37wK5m">
-                <node concept="1YBJjd" id="2OfqAZWirCD" role="2Oq$k0">
+            <node concept="2YIFZM" id="76lcNQ9o787" role="1PxMeX">
+              <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
+              <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
+              <node concept="2OqwBi" id="76lcNQ9o788" role="37wK5m">
+                <node concept="1YBJjd" id="76lcNQ9o789" role="2Oq$k0">
                   <ref role="1YBMHb" node="3ezTVQYbYGk" resolve="deploy" />
                 </node>
-                <node concept="3TrEf2" id="5YkgXg$1x2x" role="2OqNvi">
+                <node concept="3TrEf2" id="76lcNQ9o78a" role="2OqNvi">
                   <ref role="3Tt5mk" to="ddau:5YkgXg$1tUY" />
                 </node>
               </node>
@@ -1350,10 +1279,10 @@
                                 <ref role="cht4Q" to="ddau:19aTRzkPSlW" resolve="HardwareDataConnector" />
                               </node>
                             </node>
-                            <node concept="2YIFZM" id="42bqIdUB$V_" role="2Oq$k0">
-                              <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                              <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
-                              <node concept="37vLTw" id="42bqIdUB$VA" role="37wK5m">
+                            <node concept="2YIFZM" id="76lcNQ9o7OR" role="2Oq$k0">
+                              <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
+                              <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
+                              <node concept="37vLTw" id="76lcNQ9o7OS" role="37wK5m">
                                 <ref role="3cqZAo" node="42bqIdUB$VB" resolve="it" />
                               </node>
                             </node>
@@ -1390,8 +1319,8 @@
                         <node concept="3fqX7Q" id="42bqIdUBUcL" role="3clFbG">
                           <node concept="2OqwBi" id="42bqIdUBUcN" role="3fr31v">
                             <node concept="2YIFZM" id="42bqIdUBUcO" role="2Oq$k0">
-                              <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                              <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+                              <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
+                              <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
                               <node concept="37vLTw" id="42bqIdUBUcP" role="37wK5m">
                                 <ref role="3cqZAo" node="60cgGK2yG0I" resolve="it" />
                               </node>
@@ -1522,8 +1451,8 @@
                               </node>
                             </node>
                             <node concept="2YIFZM" id="42bqIdUB$HL" role="2Oq$k0">
-                              <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                              <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+                              <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
+                              <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
                               <node concept="37vLTw" id="42bqIdUB$On" role="37wK5m">
                                 <ref role="3cqZAo" node="42bqIdUBxKc" resolve="it" />
                               </node>
@@ -1569,8 +1498,8 @@
                             <node concept="1PxgMI" id="42bqIdUCs5T" role="33vP2m">
                               <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
                               <node concept="2YIFZM" id="42bqIdUCs5U" role="1PxMeX">
-                                <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                                <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+                                <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
+                                <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
                                 <node concept="37vLTw" id="42bqIdUCs5V" role="37wK5m">
                                   <ref role="3cqZAo" node="42bqIdUCs6G" resolve="dep" />
                                 </node>
@@ -1771,8 +1700,8 @@
                       <node concept="3clFbF" id="42bqIdUCIK8" role="3cqZAp">
                         <node concept="2OqwBi" id="42bqIdUCIRZ" role="3clFbG">
                           <node concept="2YIFZM" id="42bqIdUCIKa" role="2Oq$k0">
-                            <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                            <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+                            <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
+                            <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
                             <node concept="37vLTw" id="42bqIdUCJpG" role="37wK5m">
                               <ref role="3cqZAo" node="42bqIdUCIG1" resolve="it" />
                             </node>
@@ -1806,8 +1735,8 @@
                             <node concept="1PxgMI" id="5YkgXg$1DwW" role="33vP2m">
                               <ref role="1PxNhF" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
                               <node concept="2YIFZM" id="5YkgXg$1$qI" role="1PxMeX">
-                                <ref role="37wK5l" to="f5o0:7Ij6CMq2UfP" resolve="getTarget" />
-                                <ref role="1Pybhc" to="f5o0:7Ij6CMq2Ufp" resolve="ArchUtil" />
+                                <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
+                                <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
                                 <node concept="37vLTw" id="5YkgXg$1YZS" role="37wK5m">
                                   <ref role="3cqZAo" node="60cgGK2yKA$" resolve="dep" />
                                 </node>
@@ -2313,105 +2242,6 @@
       <ref role="1YaFvo" to="ddau:6oTHSFINJek" resolve="BusExpr" />
     </node>
   </node>
-  <node concept="18kY7G" id="2OfqAZXp3Ub">
-    <property role="TrG5h" value="check_IHardwareConnector" />
-    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
-    <node concept="3clFbS" id="2OfqAZXp3Uc" role="18ibNy">
-      <node concept="3clFbJ" id="2OfqAZXrY3r" role="3cqZAp">
-        <node concept="3clFbS" id="2OfqAZXrY3t" role="3clFbx">
-          <node concept="2Mj0R9" id="2OfqAZXp3Ui" role="3cqZAp">
-            <node concept="2OqwBi" id="2OfqAZXp4db" role="2MkoU_">
-              <node concept="2OqwBi" id="2OfqAZXp3Xw" role="2Oq$k0">
-                <node concept="1YBJjd" id="2OfqAZXp3UE" role="2Oq$k0">
-                  <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
-                </node>
-                <node concept="2qgKlT" id="2OfqAZXp48c" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:2OfqAZXo$V4" resolve="getTargetNode" />
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="2OfqAZXp4tE" role="2OqNvi">
-                <node concept="chp4Y" id="2OfqAZXp4w6" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
-                </node>
-              </node>
-            </node>
-            <node concept="Xl_RD" id="2OfqAZXp4G7" role="2MkJ7o">
-              <property role="Xl_RC" value="Target must be a Device Node" />
-            </node>
-            <node concept="2OqwBi" id="2OfqAZXspUp" role="2OEOjV">
-              <node concept="1YBJjd" id="2OfqAZXp4Mo" role="2Oq$k0">
-                <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
-              </node>
-              <node concept="3TrEf2" id="2OfqAZXsq55" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:2OfqAZXo7Zb" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="2OfqAZXrYdR" role="3clFbw">
-          <node concept="2OqwBi" id="2OfqAZXrY8N" role="2Oq$k0">
-            <node concept="1YBJjd" id="2OfqAZXrY8O" role="2Oq$k0">
-              <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
-            </node>
-            <node concept="2qgKlT" id="2OfqAZXrY8P" role="2OqNvi">
-              <ref role="37wK5l" to="f5o0:2OfqAZXo$V4" resolve="getTargetNode" />
-            </node>
-          </node>
-          <node concept="3x8VRR" id="2OfqAZXrYxM" role="2OqNvi" />
-        </node>
-      </node>
-      <node concept="3clFbH" id="2OfqAZXrYLF" role="3cqZAp" />
-      <node concept="3clFbJ" id="2OfqAZXrYUO" role="3cqZAp">
-        <node concept="3clFbS" id="2OfqAZXrYUQ" role="3clFbx">
-          <node concept="2Mj0R9" id="2OfqAZXp4Q$" role="3cqZAp">
-            <node concept="2OqwBi" id="2OfqAZXp4Q_" role="2MkoU_">
-              <node concept="2OqwBi" id="2OfqAZXp4QA" role="2Oq$k0">
-                <node concept="1YBJjd" id="2OfqAZXp4QB" role="2Oq$k0">
-                  <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
-                </node>
-                <node concept="2qgKlT" id="2OfqAZXp50X" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:2OfqAZXo_hI" resolve="getSourceNode" />
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="2OfqAZXp4QD" role="2OqNvi">
-                <node concept="chp4Y" id="2OfqAZXp4QE" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
-                </node>
-              </node>
-            </node>
-            <node concept="Xl_RD" id="2OfqAZXp4QF" role="2MkJ7o">
-              <property role="Xl_RC" value="Source must be a Device Node" />
-            </node>
-            <node concept="2OqwBi" id="2OfqAZXsq8m" role="2OEOjV">
-              <node concept="1YBJjd" id="2OfqAZXp4QG" role="2Oq$k0">
-                <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
-              </node>
-              <node concept="3TrEf2" id="2OfqAZXsqj5" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:2OfqAZXo7Z4" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="2OfqAZXrZnW" role="3clFbw">
-          <node concept="2OqwBi" id="2OfqAZXrZ3t" role="2Oq$k0">
-            <node concept="1YBJjd" id="2OfqAZXrZ0H" role="2Oq$k0">
-              <ref role="1YBMHb" node="2OfqAZXp3Ue" resolve="iHardwareConnector" />
-            </node>
-            <node concept="2qgKlT" id="2OfqAZXrZiZ" role="2OqNvi">
-              <ref role="37wK5l" to="f5o0:2OfqAZXo_hI" resolve="getSourceNode" />
-            </node>
-          </node>
-          <node concept="3x8VRR" id="2OfqAZXrZGa" role="2OqNvi" />
-        </node>
-      </node>
-      <node concept="3clFbH" id="17N04apnMm6" role="3cqZAp" />
-      <node concept="3clFbH" id="17N04apnMs_" role="3cqZAp" />
-    </node>
-    <node concept="1YaCAy" id="2OfqAZXp3Ue" role="1YuTPh">
-      <property role="TrG5h" value="iHardwareConnector" />
-      <ref role="1YaFvo" to="ddau:1tfNdgy1e$L" resolve="IHardwareConnector" />
-    </node>
-  </node>
   <node concept="18kY7G" id="17N04ap9Phy">
     <property role="TrG5h" value="check_FunctionConnector" />
     <property role="3GE5qa" value="FunctionalArchitecture" />
@@ -2424,8 +2254,8 @@
                 <node concept="1YBJjd" id="17N04ap9PYw" role="2Oq$k0">
                   <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
                 </node>
-                <node concept="2qgKlT" id="17N04ap9PhJ" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:17N04ap9KHc" resolve="getTargetNode" />
+                <node concept="2qgKlT" id="76lcNQ9mAfi" role="2OqNvi">
+                  <ref role="37wK5l" to="3636:76lcNQ9m533" resolve="getTarget" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="17N04ap9PhK" role="2OqNvi">
@@ -2441,8 +2271,8 @@
               <node concept="1YBJjd" id="17N04apbU_E" role="2Oq$k0">
                 <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
               </node>
-              <node concept="3TrEf2" id="17N04apbVeV" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:17N04ap9jnw" />
+              <node concept="3TrEf2" id="76lcNQ9mBrJ" role="2OqNvi">
+                <ref role="3Tt5mk" to="xnt3:2OfqAZXo7Zb" />
               </node>
             </node>
           </node>
@@ -2452,8 +2282,8 @@
             <node concept="1YBJjd" id="17N04ap9PQO" role="2Oq$k0">
               <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
             </node>
-            <node concept="2qgKlT" id="17N04ap9PhT" role="2OqNvi">
-              <ref role="37wK5l" to="f5o0:17N04ap9KHc" resolve="getTargetNode" />
+            <node concept="2qgKlT" id="76lcNQ9m_Qq" role="2OqNvi">
+              <ref role="37wK5l" to="3636:76lcNQ9m533" resolve="getTarget" />
             </node>
           </node>
           <node concept="3x8VRR" id="17N04ap9PhU" role="2OqNvi" />
@@ -2468,8 +2298,8 @@
                 <node concept="1YBJjd" id="17N04ap9Q9j" role="2Oq$k0">
                   <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
                 </node>
-                <node concept="2qgKlT" id="17N04ap9Pi2" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:17N04ap9KHl" resolve="getSourceNode" />
+                <node concept="2qgKlT" id="76lcNQ9mB1N" role="2OqNvi">
+                  <ref role="37wK5l" to="3636:76lcNQ9m52R" resolve="getSource" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="17N04ap9Pi3" role="2OqNvi">
@@ -2485,8 +2315,8 @@
               <node concept="1YBJjd" id="17N04apbVlg" role="2Oq$k0">
                 <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
               </node>
-              <node concept="3TrEf2" id="17N04apbVx9" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:17N04ap9jno" />
+              <node concept="3TrEf2" id="76lcNQ9mBMI" role="2OqNvi">
+                <ref role="3Tt5mk" to="xnt3:2OfqAZXo7Z4" />
               </node>
             </node>
           </node>
@@ -2496,8 +2326,8 @@
             <node concept="1YBJjd" id="17N04ap9Q1F" role="2Oq$k0">
               <ref role="1YBMHb" node="17N04ap9Ph_" resolve="functionConnector" />
             </node>
-            <node concept="2qgKlT" id="17N04ap9Pic" role="2OqNvi">
-              <ref role="37wK5l" to="f5o0:17N04ap9KHl" resolve="getSourceNode" />
+            <node concept="2qgKlT" id="76lcNQ9mADe" role="2OqNvi">
+              <ref role="37wK5l" to="3636:76lcNQ9m52R" resolve="getSource" />
             </node>
           </node>
           <node concept="3x8VRR" id="17N04ap9Pid" role="2OqNvi" />
@@ -2507,120 +2337,6 @@
     <node concept="1YaCAy" id="17N04ap9Ph_" role="1YuTPh">
       <property role="TrG5h" value="functionConnector" />
       <ref role="1YaFvo" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="17N04appQXn">
-    <property role="TrG5h" value="check_LogicalBusBridge" />
-    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
-    <node concept="3clFbS" id="17N04appQXo" role="18ibNy">
-      <node concept="3clFbJ" id="17N04appQYk" role="3cqZAp">
-        <node concept="3clFbS" id="17N04appQYl" role="3clFbx">
-          <node concept="2Mj0R9" id="17N04appQYm" role="3cqZAp">
-            <node concept="2OqwBi" id="17N04appQYn" role="2MkoU_">
-              <node concept="2OqwBi" id="17N04appQYo" role="2Oq$k0">
-                <node concept="1YBJjd" id="17N04appRdE" role="2Oq$k0">
-                  <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
-                </node>
-                <node concept="2qgKlT" id="17N04appXU2" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:17N04appBEW" resolve="getTarget" />
-                  <node concept="2OqwBi" id="17N04apq24L" role="37wK5m">
-                    <node concept="1YBJjd" id="17N04apq24M" role="2Oq$k0">
-                      <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
-                    </node>
-                    <node concept="3TrEf2" id="17N04apq24N" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ddau:17N04appB6m" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="17N04appQYr" role="2OqNvi">
-                <node concept="chp4Y" id="17N04appRFm" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-                </node>
-              </node>
-            </node>
-            <node concept="Xl_RD" id="17N04appQYt" role="2MkJ7o">
-              <property role="Xl_RC" value="Target must be a Bus Connector" />
-            </node>
-            <node concept="2OqwBi" id="17N04appQYu" role="2OEOjV">
-              <node concept="1YBJjd" id="17N04appRLb" role="2Oq$k0">
-                <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
-              </node>
-              <node concept="3TrEf2" id="17N04apq3w5" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:17N04appB6m" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="17N04appQYx" role="3clFbw">
-          <node concept="2OqwBi" id="17N04appQYy" role="2Oq$k0">
-            <node concept="1YBJjd" id="17N04appRat" role="2Oq$k0">
-              <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
-            </node>
-            <node concept="3TrEf2" id="17N04apq12z" role="2OqNvi">
-              <ref role="3Tt5mk" to="ddau:17N04appB6m" />
-            </node>
-          </node>
-          <node concept="3x8VRR" id="17N04appQY_" role="2OqNvi" />
-        </node>
-      </node>
-      <node concept="3clFbH" id="17N04appQYA" role="3cqZAp" />
-      <node concept="3clFbJ" id="17N04appQYB" role="3cqZAp">
-        <node concept="3clFbS" id="17N04appQYC" role="3clFbx">
-          <node concept="2Mj0R9" id="17N04appQYD" role="3cqZAp">
-            <node concept="2OqwBi" id="17N04appQYE" role="2MkoU_">
-              <node concept="2OqwBi" id="17N04appQYF" role="2Oq$k0">
-                <node concept="1YBJjd" id="17N04appRtY" role="2Oq$k0">
-                  <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
-                </node>
-                <node concept="2qgKlT" id="17N04apq2uv" role="2OqNvi">
-                  <ref role="37wK5l" to="f5o0:17N04appBEW" resolve="getTarget" />
-                  <node concept="2OqwBi" id="17N04apq2uw" role="37wK5m">
-                    <node concept="1YBJjd" id="17N04apq2ux" role="2Oq$k0">
-                      <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
-                    </node>
-                    <node concept="3TrEf2" id="17N04apq2PI" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ddau:17N04appB6q" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1mIQ4w" id="17N04appQYI" role="2OqNvi">
-                <node concept="chp4Y" id="17N04appR_x" role="cj9EA">
-                  <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
-                </node>
-              </node>
-            </node>
-            <node concept="Xl_RD" id="17N04appQYK" role="2MkJ7o">
-              <property role="Xl_RC" value="Target must be a Bus Connector" />
-            </node>
-            <node concept="2OqwBi" id="17N04appQYL" role="2OEOjV">
-              <node concept="1YBJjd" id="17N04appRT2" role="2Oq$k0">
-                <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
-              </node>
-              <node concept="3TrEf2" id="17N04apq3cQ" role="2OqNvi">
-                <ref role="3Tt5mk" to="ddau:17N04appB6q" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2OqwBi" id="17N04appQYO" role="3clFbw">
-          <node concept="2OqwBi" id="17N04appQYP" role="2Oq$k0">
-            <node concept="1YBJjd" id="17N04appRlP" role="2Oq$k0">
-              <ref role="1YBMHb" node="17N04appQXq" resolve="logicalBusBridge" />
-            </node>
-            <node concept="3TrEf2" id="17N04apq2sb" role="2OqNvi">
-              <ref role="3Tt5mk" to="ddau:17N04appB6q" />
-            </node>
-          </node>
-          <node concept="3x8VRR" id="17N04appQYS" role="2OqNvi" />
-        </node>
-      </node>
-      <node concept="3clFbH" id="17N04appQYT" role="3cqZAp" />
-    </node>
-    <node concept="1YaCAy" id="17N04appQXq" role="1YuTPh">
-      <property role="TrG5h" value="logicalBusBridge" />
-      <ref role="1YaFvo" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
     </node>
   </node>
   <node concept="1YbPZF" id="1OxX53tresK">
@@ -2762,18 +2478,21 @@
                     </node>
                     <node concept="mw_s8" id="pG4h8miSeo" role="1ZfhKB">
                       <node concept="2OqwBi" id="pG4h8miTWn" role="mwGJk">
-                        <node concept="2qgKlT" id="pG4h8mpKs9" role="2OqNvi">
+                        <node concept="2qgKlT" id="76lcNQ9p12A" role="2OqNvi">
                           <ref role="37wK5l" to="f5p9:2uk4icpllHZ" resolve="createType" />
                         </node>
-                        <node concept="2OqwBi" id="pG4h8mpK3J" role="2Oq$k0">
-                          <node concept="1PxgMI" id="pG4h8miShz" role="2Oq$k0">
-                            <ref role="1PxNhF" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-                            <node concept="37vLTw" id="pG4h8miSem" role="1PxMeX">
-                              <ref role="3cqZAo" node="pG4h8miQq7" resolve="claferReferencedOnLeftSideOfDot" />
+                        <node concept="1PxgMI" id="76lcNQ9p0IH" role="2Oq$k0">
+                          <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
+                          <node concept="2OqwBi" id="pG4h8mpK3J" role="1PxMeX">
+                            <node concept="1PxgMI" id="pG4h8miShz" role="2Oq$k0">
+                              <ref role="1PxNhF" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+                              <node concept="37vLTw" id="pG4h8miSem" role="1PxMeX">
+                                <ref role="3cqZAo" node="pG4h8miQq7" resolve="claferReferencedOnLeftSideOfDot" />
+                              </node>
                             </node>
-                          </node>
-                          <node concept="2qgKlT" id="pG4h8mpKkw" role="2OqNvi">
-                            <ref role="37wK5l" to="f5o0:17N04ap9KHl" resolve="getSourceNode" />
+                            <node concept="2qgKlT" id="76lcNQ9oArI" role="2OqNvi">
+                              <ref role="37wK5l" to="3636:76lcNQ9m52R" resolve="getSource" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -2805,18 +2524,21 @@
                     </node>
                     <node concept="mw_s8" id="M9rtBFNeDM" role="1ZfhKB">
                       <node concept="2OqwBi" id="M9rtBFNeDN" role="mwGJk">
-                        <node concept="2qgKlT" id="M9rtBFNeDO" role="2OqNvi">
+                        <node concept="2qgKlT" id="76lcNQ9p1DC" role="2OqNvi">
                           <ref role="37wK5l" to="f5p9:2uk4icpllHZ" resolve="createType" />
                         </node>
-                        <node concept="2OqwBi" id="M9rtBFNeDP" role="2Oq$k0">
-                          <node concept="1PxgMI" id="M9rtBFNeDQ" role="2Oq$k0">
-                            <ref role="1PxNhF" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
-                            <node concept="37vLTw" id="M9rtBFNeDR" role="1PxMeX">
-                              <ref role="3cqZAo" node="pG4h8miQq7" resolve="claferReferencedOnLeftSideOfDot" />
+                        <node concept="1PxgMI" id="76lcNQ9p1fr" role="2Oq$k0">
+                          <ref role="1PxNhF" to="xnt3:4csP6flST3m" resolve="ArchElement" />
+                          <node concept="2OqwBi" id="M9rtBFNeDP" role="1PxMeX">
+                            <node concept="1PxgMI" id="M9rtBFNeDQ" role="2Oq$k0">
+                              <ref role="1PxNhF" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
+                              <node concept="37vLTw" id="M9rtBFNeDR" role="1PxMeX">
+                                <ref role="3cqZAo" node="pG4h8miQq7" resolve="claferReferencedOnLeftSideOfDot" />
+                              </node>
                             </node>
-                          </node>
-                          <node concept="2qgKlT" id="M9rtBFPVee" role="2OqNvi">
-                            <ref role="37wK5l" to="f5o0:17N04ap9KHc" resolve="getTargetNode" />
+                            <node concept="2qgKlT" id="76lcNQ9oAOU" role="2OqNvi">
+                              <ref role="37wK5l" to="3636:76lcNQ9m533" resolve="getTarget" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -2863,6 +2585,360 @@
     <node concept="1YaCAy" id="pG4h8miQnu" role="1YuTPh">
       <property role="TrG5h" value="endpointDotTarget" />
       <ref role="1YaFvo" to="ddau:pG4h8miPSR" resolve="EndpointDotTarget" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="76lcNQ9mOv4">
+    <property role="TrG5h" value="check_HardwareConnector" />
+    <property role="3GE5qa" value="HardwareArchitecture.PowerTopology" />
+    <node concept="3clFbS" id="76lcNQ9mOv5" role="18ibNy">
+      <node concept="3clFbJ" id="76lcNQ9mVfG" role="3cqZAp">
+        <node concept="3clFbS" id="76lcNQ9mVfI" role="3clFbx">
+          <node concept="3clFbJ" id="76lcNQ9mXRF" role="3cqZAp">
+            <node concept="3clFbS" id="76lcNQ9mXRG" role="3clFbx">
+              <node concept="2Mj0R9" id="76lcNQ9mXRH" role="3cqZAp">
+                <node concept="2OqwBi" id="76lcNQ9mXRI" role="2MkoU_">
+                  <node concept="2OqwBi" id="76lcNQ9mXRJ" role="2Oq$k0">
+                    <node concept="2qgKlT" id="76lcNQ9mXRL" role="2OqNvi">
+                      <ref role="37wK5l" to="f5o0:17N04appBEW" resolve="getTarget" />
+                      <node concept="2OqwBi" id="76lcNQ9mXRM" role="37wK5m">
+                        <node concept="3TrEf2" id="76lcNQ9mXRO" role="2OqNvi">
+                          <ref role="3Tt5mk" to="ddau:17N04appB6m" />
+                        </node>
+                        <node concept="1PxgMI" id="76lcNQ9n3dS" role="2Oq$k0">
+                          <ref role="1PxNhF" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                          <node concept="1YBJjd" id="76lcNQ9n3dT" role="1PxMeX">
+                            <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1PxgMI" id="76lcNQ9n2$g" role="2Oq$k0">
+                      <ref role="1PxNhF" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                      <node concept="1YBJjd" id="76lcNQ9n2$h" role="1PxMeX">
+                        <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="76lcNQ9mXRP" role="2OqNvi">
+                    <node concept="chp4Y" id="76lcNQ9mXRQ" role="cj9EA">
+                      <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="76lcNQ9mXRR" role="2MkJ7o">
+                  <property role="Xl_RC" value="Target must be a Bus Connector" />
+                </node>
+                <node concept="2OqwBi" id="76lcNQ9mXRS" role="2OEOjV">
+                  <node concept="3TrEf2" id="76lcNQ9mXRU" role="2OqNvi">
+                    <ref role="3Tt5mk" to="ddau:17N04appB6m" />
+                  </node>
+                  <node concept="1PxgMI" id="76lcNQ9n3jg" role="2Oq$k0">
+                    <ref role="1PxNhF" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                    <node concept="1YBJjd" id="76lcNQ9n3jh" role="1PxMeX">
+                      <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="76lcNQ9mXRV" role="3clFbw">
+              <node concept="2OqwBi" id="76lcNQ9mXRW" role="2Oq$k0">
+                <node concept="1PxgMI" id="76lcNQ9mY7Q" role="2Oq$k0">
+                  <ref role="1PxNhF" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                  <node concept="1YBJjd" id="76lcNQ9mXXd" role="1PxMeX">
+                    <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="76lcNQ9mXRY" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:17N04appB6m" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="76lcNQ9mXRZ" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="76lcNQ9mXS0" role="3cqZAp" />
+          <node concept="3clFbJ" id="76lcNQ9mXS1" role="3cqZAp">
+            <node concept="3clFbS" id="76lcNQ9mXS2" role="3clFbx">
+              <node concept="2Mj0R9" id="76lcNQ9mXS3" role="3cqZAp">
+                <node concept="2OqwBi" id="76lcNQ9mXS4" role="2MkoU_">
+                  <node concept="2OqwBi" id="76lcNQ9mXS5" role="2Oq$k0">
+                    <node concept="2qgKlT" id="76lcNQ9mXS7" role="2OqNvi">
+                      <ref role="37wK5l" to="f5o0:17N04appBEW" resolve="getTarget" />
+                      <node concept="2OqwBi" id="76lcNQ9mXS8" role="37wK5m">
+                        <node concept="3TrEf2" id="76lcNQ9mXSa" role="2OqNvi">
+                          <ref role="3Tt5mk" to="ddau:17N04appB6q" />
+                        </node>
+                        <node concept="1PxgMI" id="76lcNQ9n3zc" role="2Oq$k0">
+                          <ref role="1PxNhF" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                          <node concept="1YBJjd" id="76lcNQ9n3zd" role="1PxMeX">
+                            <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1PxgMI" id="76lcNQ9n3tU" role="2Oq$k0">
+                      <ref role="1PxNhF" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                      <node concept="1YBJjd" id="76lcNQ9n3tV" role="1PxMeX">
+                        <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="76lcNQ9mXSb" role="2OqNvi">
+                    <node concept="chp4Y" id="76lcNQ9mXSc" role="cj9EA">
+                      <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="76lcNQ9mXSd" role="2MkJ7o">
+                  <property role="Xl_RC" value="Target must be a Bus Connector" />
+                </node>
+                <node concept="2OqwBi" id="76lcNQ9mXSe" role="2OEOjV">
+                  <node concept="3TrEf2" id="76lcNQ9mXSg" role="2OqNvi">
+                    <ref role="3Tt5mk" to="ddau:17N04appB6q" />
+                  </node>
+                  <node concept="1PxgMI" id="76lcNQ9n3Cs" role="2Oq$k0">
+                    <ref role="1PxNhF" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                    <node concept="1YBJjd" id="76lcNQ9n3Ct" role="1PxMeX">
+                      <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="76lcNQ9mXSh" role="3clFbw">
+              <node concept="2OqwBi" id="76lcNQ9mXSi" role="2Oq$k0">
+                <node concept="3TrEf2" id="76lcNQ9mXSk" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ddau:17N04appB6q" />
+                </node>
+                <node concept="1PxgMI" id="76lcNQ9n3oA" role="2Oq$k0">
+                  <ref role="1PxNhF" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+                  <node concept="1YBJjd" id="76lcNQ9n3oB" role="1PxMeX">
+                    <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3x8VRR" id="76lcNQ9mXSl" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="76lcNQ9mVfH" role="3cqZAp" />
+        </node>
+        <node concept="2OqwBi" id="76lcNQ9mVtM" role="3clFbw">
+          <node concept="1YBJjd" id="76lcNQ9mVlh" role="2Oq$k0">
+            <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+          </node>
+          <node concept="1mIQ4w" id="76lcNQ9mWSI" role="2OqNvi">
+            <node concept="chp4Y" id="76lcNQ9mWT1" role="cj9EA">
+              <ref role="cht4Q" to="ddau:3WJnaafd3OJ" resolve="LogicalBusBridge" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eNFk2" id="76lcNQ9n3HD" role="3eNLev">
+          <node concept="3clFbS" id="76lcNQ9n3HF" role="3eOfB_">
+            <node concept="3clFbJ" id="76lcNQ9mPhx" role="3cqZAp">
+              <node concept="3clFbS" id="76lcNQ9mPhy" role="3clFbx">
+                <node concept="2Mj0R9" id="76lcNQ9mPhz" role="3cqZAp">
+                  <node concept="2OqwBi" id="76lcNQ9mPh$" role="2MkoU_">
+                    <node concept="2OqwBi" id="76lcNQ9mPh_" role="2Oq$k0">
+                      <node concept="1PxgMI" id="76lcNQ9mPGK" role="2Oq$k0">
+                        <ref role="1PxNhF" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                        <node concept="1YBJjd" id="76lcNQ9mPou" role="1PxMeX">
+                          <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="76lcNQ9mQd_" role="2OqNvi">
+                        <ref role="37wK5l" to="3636:76lcNQ9m533" resolve="getTarget" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="76lcNQ9mPhC" role="2OqNvi">
+                      <node concept="chp4Y" id="76lcNQ9mPhD" role="cj9EA">
+                        <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="76lcNQ9mPhE" role="2MkJ7o">
+                    <property role="Xl_RC" value="Target must be a Device Node" />
+                  </node>
+                  <node concept="2OqwBi" id="76lcNQ9mPhF" role="2OEOjV">
+                    <node concept="3TrEf2" id="76lcNQ9mPhH" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xnt3:2OfqAZXo7Zb" />
+                    </node>
+                    <node concept="1PxgMI" id="76lcNQ9mPZG" role="2Oq$k0">
+                      <ref role="1PxNhF" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                      <node concept="1YBJjd" id="76lcNQ9mPZH" role="1PxMeX">
+                        <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="76lcNQ9mPhI" role="3clFbw">
+                <node concept="2OqwBi" id="76lcNQ9mPhJ" role="2Oq$k0">
+                  <node concept="1YBJjd" id="76lcNQ9mPlG" role="2Oq$k0">
+                    <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                  </node>
+                  <node concept="2qgKlT" id="76lcNQ9mPhL" role="2OqNvi">
+                    <ref role="37wK5l" to="3636:76lcNQ9m533" resolve="getTarget" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="76lcNQ9mPhM" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="76lcNQ9mPhN" role="3cqZAp" />
+            <node concept="3clFbJ" id="76lcNQ9mPhO" role="3cqZAp">
+              <node concept="3clFbS" id="76lcNQ9mPhP" role="3clFbx">
+                <node concept="2Mj0R9" id="76lcNQ9mPhQ" role="3cqZAp">
+                  <node concept="2OqwBi" id="76lcNQ9mPhR" role="2MkoU_">
+                    <node concept="2OqwBi" id="76lcNQ9mPhS" role="2Oq$k0">
+                      <node concept="2qgKlT" id="76lcNQ9mPhU" role="2OqNvi">
+                        <ref role="37wK5l" to="3636:76lcNQ9m52R" resolve="getSource" />
+                      </node>
+                      <node concept="1PxgMI" id="76lcNQ9mPUX" role="2Oq$k0">
+                        <ref role="1PxNhF" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                        <node concept="1YBJjd" id="76lcNQ9mPUY" role="1PxMeX">
+                          <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="76lcNQ9mPhV" role="2OqNvi">
+                      <node concept="chp4Y" id="76lcNQ9mPhW" role="cj9EA">
+                        <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="76lcNQ9mPhX" role="2MkJ7o">
+                    <property role="Xl_RC" value="Source must be a Device Node" />
+                  </node>
+                  <node concept="2OqwBi" id="76lcNQ9mPhY" role="2OEOjV">
+                    <node concept="3TrEf2" id="76lcNQ9mPi0" role="2OqNvi">
+                      <ref role="3Tt5mk" to="xnt3:2OfqAZXo7Z4" />
+                    </node>
+                    <node concept="1PxgMI" id="76lcNQ9mQ4y" role="2Oq$k0">
+                      <ref role="1PxNhF" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                      <node concept="1YBJjd" id="76lcNQ9mQ4z" role="1PxMeX">
+                        <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="76lcNQ9mPi1" role="3clFbw">
+                <node concept="2OqwBi" id="76lcNQ9mPi2" role="2Oq$k0">
+                  <node concept="2qgKlT" id="76lcNQ9mPi4" role="2OqNvi">
+                    <ref role="37wK5l" to="3636:76lcNQ9m52R" resolve="getSource" />
+                  </node>
+                  <node concept="1PxgMI" id="76lcNQ9mPQl" role="2Oq$k0">
+                    <ref role="1PxNhF" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+                    <node concept="1YBJjd" id="76lcNQ9mPQm" role="1PxMeX">
+                      <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="76lcNQ9mPi5" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="76lcNQ9mOG$" role="3eO9$A">
+            <node concept="1YBJjd" id="76lcNQ9mO$3" role="2Oq$k0">
+              <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+            </node>
+            <node concept="1mIQ4w" id="76lcNQ9mPgJ" role="2OqNvi">
+              <node concept="chp4Y" id="76lcNQ9mPh2" role="cj9EA">
+                <ref role="cht4Q" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3eNFk2" id="76lcNQ9n5Nb" role="3eNLev">
+          <node concept="3clFbS" id="76lcNQ9n5Nd" role="3eOfB_">
+            <node concept="1DcWWT" id="17N04apnOcK" role="3cqZAp">
+              <node concept="3clFbS" id="17N04apnOcM" role="2LFqv$">
+                <node concept="2Mj0R9" id="17N04apnQmu" role="3cqZAp">
+                  <node concept="Xl_RD" id="17N04apnQm_" role="2MkJ7o">
+                    <property role="Xl_RC" value="Target must be a Device Node" />
+                  </node>
+                  <node concept="37vLTw" id="17N04apptCl" role="2OEOjV">
+                    <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
+                  </node>
+                  <node concept="2OqwBi" id="7Ij6CMq5Foc" role="2MkoU_">
+                    <node concept="2YIFZM" id="76lcNQ9mOn4" role="2Oq$k0">
+                      <ref role="1Pybhc" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
+                      <ref role="37wK5l" to="3636:7Ij6CMq2UfP" resolve="getTarget" />
+                      <node concept="37vLTw" id="76lcNQ9mOn5" role="37wK5m">
+                        <ref role="3cqZAo" node="17N04apnOcN" resolve="endpointExpr" />
+                      </node>
+                    </node>
+                    <node concept="1mIQ4w" id="7Ij6CMq5FBz" role="2OqNvi">
+                      <node concept="chp4Y" id="7Ij6CMq5FCe" role="cj9EA">
+                        <ref role="cht4Q" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="17N04apnOcL" role="3cqZAp" />
+              </node>
+              <node concept="3cpWsn" id="17N04apnOcN" role="1Duv9x">
+                <property role="TrG5h" value="endpointExpr" />
+                <node concept="3Tqbb2" id="17N04apnOkn" role="1tU5fm">
+                  <ref role="ehGHo" to="dajg:7FQByU3CrCM" resolve="Expression" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="17N04apnOEM" role="1DdaDG">
+                <node concept="1PxgMI" id="76lcNQ9mSh_" role="2Oq$k0">
+                  <ref role="1PxNhF" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                  <node concept="1YBJjd" id="76lcNQ9mRHz" role="1PxMeX">
+                    <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="17N04apnPQt" role="2OqNvi">
+                  <ref role="3TtcxE" to="ddau:17N04apiQ_e" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="17N04apnMPE" role="3cqZAp" />
+            <node concept="2Mj0R9" id="5ipUCoiPsTF" role="3cqZAp">
+              <node concept="2d3UOw" id="5ipUCoiP$vh" role="2MkoU_">
+                <node concept="3cmrfG" id="5ipUCoiP$yh" role="3uHU7w">
+                  <property role="3cmrfH" value="2" />
+                </node>
+                <node concept="2OqwBi" id="5ipUCoiPudQ" role="3uHU7B">
+                  <node concept="2OqwBi" id="5ipUCoiPt8a" role="2Oq$k0">
+                    <node concept="3Tsc0h" id="17N04apjq$d" role="2OqNvi">
+                      <ref role="3TtcxE" to="ddau:17N04apiQ_e" />
+                    </node>
+                    <node concept="1PxgMI" id="76lcNQ9mTnY" role="2Oq$k0">
+                      <ref role="1PxNhF" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+                      <node concept="1YBJjd" id="76lcNQ9mTnZ" role="1PxMeX">
+                        <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="5ipUCoiPyjB" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="5ipUCoiP$I7" role="2MkJ7o">
+                <property role="Xl_RC" value="The bus connects at least two device nodes" />
+              </node>
+              <node concept="1YBJjd" id="76lcNQ9mTQK" role="2OEOjV">
+                <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="76lcNQ9mQxP" role="3eO9$A">
+            <node concept="1YBJjd" id="76lcNQ9mQpk" role="2Oq$k0">
+              <ref role="1YBMHb" node="76lcNQ9mOv7" resolve="hardwareConnector" />
+            </node>
+            <node concept="1mIQ4w" id="76lcNQ9mRaQ" role="2OqNvi">
+              <node concept="chp4Y" id="76lcNQ9mRb9" role="cj9EA">
+                <ref role="cht4Q" to="ddau:19aTRzkPSoJ" resolve="BusConnector" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="76lcNQ9mOv7" role="1YuTPh">
+      <property role="TrG5h" value="hardwareConnector" />
+      <ref role="1YaFvo" to="ddau:19aTRzkPQU0" resolve="HardwareConnector" />
     </node>
   </node>
 </model>

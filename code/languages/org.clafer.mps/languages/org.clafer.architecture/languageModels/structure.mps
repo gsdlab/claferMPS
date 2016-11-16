@@ -35,9 +35,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -74,34 +72,11 @@
     <property role="3GE5qa" value="FunctionalArchitecture" />
     <property role="1pbfSe" value="1895418041" />
     <ref role="1TJDcQ" to="xnt3:6v3ZnYeNguT" resolve="BaseConnector" />
-    <node concept="1TJgyj" id="17N04ap9jno" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="sourceExpr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="17N04ap9jnw" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="targetExpr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="3WJnaafipxM" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
-      <node concept="asaX9" id="17N04ap9jns" role="lGtFl" />
-    </node>
-    <node concept="1TJgyj" id="3WJnaafipyc" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6tUgmTZL8lp" resolve="FunctionalAnalysisComponent" />
-      <node concept="asaX9" id="17N04ap9jnu" role="lGtFl" />
-    </node>
     <node concept="PrWs8" id="6tUgmTZN8Kq" role="PzmwI">
       <ref role="PrY4T" node="6PK7EUlNtky" resolve="IHaveDeployment" />
+    </node>
+    <node concept="PrWs8" id="76lcNQ9myTL" role="PzmwI">
+      <ref role="PrY4T" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
     </node>
     <node concept="PrWs8" id="2Qy0VF32jTR" role="PzmwI">
       <ref role="PrY4T" node="2Qy0VF32jTy" resolve="IFunctionalAnalysisComponent" />
@@ -262,49 +237,6 @@
       <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
     </node>
   </node>
-  <node concept="PlHQZ" id="1tfNdgy1e$L">
-    <property role="TrG5h" value="IHardwareConnector" />
-    <property role="3GE5qa" value="HardwareArchitecture.CommunicationTopology" />
-    <property role="1pbfSe" value="961852933" />
-    <node concept="1TJgyj" id="2OfqAZXo7Z4" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="sourceExpr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="2OfqAZXo7Zb" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="targetExpr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="3WJnaafhyWX" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="source" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
-      <node concept="asaX9" id="2OfqAZXo7Zk" role="lGtFl" />
-    </node>
-    <node concept="1TJgyj" id="3WJnaafhyWY" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="4csP6fm34cz" resolve="DeviceNode" />
-      <node concept="asaX9" id="2OfqAZXoiZ8" role="lGtFl" />
-    </node>
-    <node concept="PrWs8" id="3WJnaafhyWV" role="PrDN$">
-      <ref role="PrY4T" to="xnt3:3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
-    </node>
-    <node concept="PrWs8" id="1ub0KooHLhE" role="PrDN$">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="3NiPeHJQWUV" role="PrDN$">
-      <ref role="PrY4T" to="xnt3:50FM0hzFYbT" resolve="IHaveQualityAttributes" />
-    </node>
-    <node concept="PrWs8" id="17N04ape6NV" role="PrDN$">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="12rnRvMfu2B">
     <property role="3GE5qa" value="FeatureModel" />
     <property role="TrG5h" value="FeatureModel" />
@@ -363,8 +295,8 @@
     <property role="1pbfSe" value="417174256" />
     <property role="MwhBj" value="${module}/icons/discrete_data_connector.png" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
-    <node concept="PrWs8" id="3WJnaafh_tD" role="PzmwI">
-      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IHardwareConnector" />
+    <node concept="PrWs8" id="76lcNQ9nd4B" role="PzmwI">
+      <ref role="PrY4T" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
     </node>
   </node>
   <node concept="1TIwiD" id="19aTRzkPSoJ">
@@ -378,13 +310,6 @@
       <property role="20kJfa" value="connectsExpr" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="5OLu9WxSgwO" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="connects" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="mecy:2uk4icoWPR9" resolve="ClaferRefExpr" />
-      <node concept="asaX9" id="7Ij6CMq2qlJ" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="5LUy9Q2fPnv" role="PzmwI">
       <ref role="PrY4T" node="5LUy9Q2fPnu" resolve="IHaveArchType" />
@@ -429,8 +354,8 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="19aTRzkPQU0" resolve="HardwareConnector" />
-    <node concept="PrWs8" id="3WJnaafhC7h" role="PzmwI">
-      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IHardwareConnector" />
+    <node concept="PrWs8" id="76lcNQ9nd4E" role="PzmwI">
+      <ref role="PrY4T" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
     </node>
     <node concept="PrWs8" id="3WJnaafpj3J" role="PzmwI">
       <ref role="PrY4T" to="xnt3:3WJnaafhyWS" resolve="IAbstractVisibleInQATable" />
@@ -652,8 +577,8 @@
     <property role="34LRSv" value="Analog Data Connector" />
     <property role="MwhBj" value="${module}/icons/analog_data_connector.png" />
     <ref role="1TJDcQ" node="19aTRzkPSlW" resolve="HardwareDataConnector" />
-    <node concept="PrWs8" id="3WJnaafh_mN" role="PzmwI">
-      <ref role="PrY4T" node="1tfNdgy1e$L" resolve="IHardwareConnector" />
+    <node concept="PrWs8" id="76lcNQ9nd4$" role="PzmwI">
+      <ref role="PrY4T" to="xnt3:76lcNQ9mj9X" resolve="ISimpleConnector" />
     </node>
   </node>
   <node concept="1TIwiD" id="2XrN4LuAS5Z">
