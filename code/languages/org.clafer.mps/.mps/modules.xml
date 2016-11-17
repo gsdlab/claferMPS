@@ -6,17 +6,26 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/org.architecture/org.architecture.devkit" folder="architecture" />
+      <modulePath path="$PROJECT_DIR$/devkits/org.clafer.architecture.devkit/org.clafer.architecture.devkit.devkit" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/devkits/org.clafer.devkit" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.architecture.core/org.clafer.architecture.core.mpl" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.architecture/org.clafer.architecture.mpl" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/solutions/pluginSolution/org.clafer.core.pluginSolution.msd" folder="core" />
-      <modulePath path="$PROJECT_DIR$/languages/org.clafer.expr/org.clafer.expr.mpl" folder="core" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.expressions/org.clafer.expressions.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" folder="referenceModel" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.milestone/org.clafer.util.milestone.mpl" folder="utils.milestone" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.milestone/sandbox/org.clafer.util.milestone.sandbox.msd" folder="utils.milestone" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.tags/org.clafer.util.tags.mpl" folder="utils.tags" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.tags/sandbox/org.clafer.util.tags.sandbox.msd" folder="utils.tags" />
       <modulePath path="$PROJECT_DIR$/languages/qualityAttributes/qualityAttributes.mpl" folder="qualityAttributes" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.example/org.clafer.architecture.sandbox.msd" folder="architecture" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.pluginSolution/org.clafer.architecture.pluginSolution.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.architecture.referencemodel/org.clafer.architecture.referencemodel.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.sandbox.msd" folder="core" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.mps.build/org.clafer.mps.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.referenceModel.sandbox/org.clafer.referenceModel.sandbox.msd" folder="referenceModel" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.util.milestone.pluginSolution/org.clafer.util.milestone.pluginSolution.msd" folder="utils.milestone" />
       <modulePath path="$PROJECT_DIR$/solutions/tests.clafer.architecture/tests.org.clafer.architecture.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.clafer.core/test.ex.clafer.core.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.clafer.core/test.ts.clafer.core.msd" folder="core" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="org.clafer.architecture.devkit" uuid="ae43b4a1-760c-45a1-9b50-27b4612b75e3">
+  <exported-language name="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" />
+  <exported-language name="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" />
+  <extendedDevKits>
+    <extendedDevKit>f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+

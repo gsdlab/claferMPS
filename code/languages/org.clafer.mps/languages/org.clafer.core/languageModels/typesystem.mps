@@ -7,11 +7,11 @@
   </languages>
   <imports>
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
-    <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
     <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
+    <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -1188,7 +1188,7 @@
               <node concept="2ShNRf" id="4Z9rElqGx3l" role="3cqZAk">
                 <node concept="3zrR0B" id="4Z9rElqGxdo" role="2ShVmc">
                   <node concept="3Tqbb2" id="4Z9rElqGxdq" role="3zrR0E">
-                    <ref role="ehGHo" to="mj1k:2uk4icoUtww" resolve="GenericSetType" />
+                    <ref role="ehGHo" to="dajg:2uk4icoUtww" resolve="GenericSetType" />
                   </node>
                 </node>
               </node>
@@ -1308,11 +1308,11 @@
           <property role="TrG5h" value="leftSideOfDot" />
           <property role="3TUv4t" value="true" />
           <node concept="3Tqbb2" id="3SHz3PXXoA7" role="1tU5fm">
-            <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+            <ref role="ehGHo" to="dajg:7FQByU3CrCM" resolve="Expression" />
           </node>
           <node concept="2OqwBi" id="3SHz3PXXoA8" role="33vP2m">
             <node concept="1PxgMI" id="3SHz3PXXoA9" role="2Oq$k0">
-              <ref role="1PxNhF" to="mj1k:40tXLnqhyKc" resolve="GenericDotExpression" />
+              <ref role="1PxNhF" to="dajg:40tXLnqhyKc" resolve="GenericDotExpression" />
               <node concept="2OqwBi" id="3SHz3PXXoAa" role="1PxMeX">
                 <node concept="1YBJjd" id="3SHz3PXXoL1" role="2Oq$k0">
                   <ref role="1YBMHb" node="3WlRoWfNGwm" resolve="re" />
@@ -1321,7 +1321,7 @@
               </node>
             </node>
             <node concept="3TrEf2" id="3SHz3PXXoAd" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1k:6iIoqg1yDLg" />
+              <ref role="3Tt5mk" to="dajg:6iIoqg1yDLg" />
             </node>
           </node>
         </node>
@@ -1406,11 +1406,11 @@
           <property role="TrG5h" value="leftSideOfDot" />
           <property role="3TUv4t" value="true" />
           <node concept="3Tqbb2" id="3WlRoWfRikq" role="1tU5fm">
-            <ref role="ehGHo" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+            <ref role="ehGHo" to="dajg:7FQByU3CrCM" resolve="Expression" />
           </node>
           <node concept="2OqwBi" id="3WlRoWfRiky" role="33vP2m">
             <node concept="1PxgMI" id="3WlRoWfRikz" role="2Oq$k0">
-              <ref role="1PxNhF" to="mj1k:40tXLnqhyKc" resolve="GenericDotExpression" />
+              <ref role="1PxNhF" to="dajg:40tXLnqhyKc" resolve="GenericDotExpression" />
               <node concept="2OqwBi" id="3WlRoWfRik$" role="1PxMeX">
                 <node concept="1YBJjd" id="3WlRoWfRik_" role="2Oq$k0">
                   <ref role="1YBMHb" node="3WlRoWfPCl2" resolve="pe" />
@@ -1419,7 +1419,7 @@
               </node>
             </node>
             <node concept="3TrEf2" id="3WlRoWfRikB" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1k:6iIoqg1yDLg" />
+              <ref role="3Tt5mk" to="dajg:6iIoqg1yDLg" />
             </node>
           </node>
         </node>
@@ -1563,7 +1563,7 @@
         </node>
       </node>
       <node concept="3gn64h" id="5Rg5_Rc1w3h" role="32tDTA">
-        <ref role="3gnhBz" to="mj1k:3SHz3PXYRpj" resolve="BelongingExpression" />
+        <ref role="3gnhBz" to="dajg:3SHz3PXYRpj" resolve="BelongingExpression" />
       </node>
       <node concept="3ciZUL" id="5Rg5_Rc1w1r" role="32tDT$">
         <node concept="3clFbS" id="5Rg5_Rc1w1w" role="2VODD2">
@@ -1571,7 +1571,7 @@
             <node concept="2ShNRf" id="5Rg5_Rc1$Up" role="3clFbG">
               <node concept="3zrR0B" id="5Rg5_Rc1_6L" role="2ShVmc">
                 <node concept="3Tqbb2" id="5Rg5_Rc1_6N" role="3zrR0E">
-                  <ref role="ehGHo" to="mj1k:7FQByU3CrCU" resolve="BooleanType" />
+                  <ref role="ehGHo" to="dajg:7FQByU3CrCU" resolve="BooleanType" />
                 </node>
               </node>
             </node>
@@ -1847,7 +1847,7 @@
                 </node>
                 <node concept="1mIQ4w" id="6BTUndBNpsC" role="2OqNvi">
                   <node concept="chp4Y" id="6BTUndBNp$o" role="cj9EA">
-                    <ref role="cht4Q" to="mj1k:6BTUndBNkiZ" resolve="ClaferSetType" />
+                    <ref role="cht4Q" to="dajg:6BTUndBNkiZ" resolve="ClaferSetType" />
                   </node>
                 </node>
               </node>
@@ -1866,7 +1866,7 @@
                   </node>
                   <node concept="1mIQ4w" id="2Rf2MeK8zo2" role="2OqNvi">
                     <node concept="chp4Y" id="2Rf2MeK8zo3" role="cj9EA">
-                      <ref role="cht4Q" to="mj1k:7FQByU3CrCU" resolve="BooleanType" />
+                      <ref role="cht4Q" to="dajg:7FQByU3CrCU" resolve="BooleanType" />
                     </node>
                   </node>
                 </node>

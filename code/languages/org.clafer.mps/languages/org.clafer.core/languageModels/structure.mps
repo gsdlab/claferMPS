@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="mj1k" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b3(org.clafer.expr.structure)" />
+    <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -166,7 +166,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:3WlRoWe5nwB" resolve="GoalExpression" />
+      <ref role="20lvS9" to="dajg:3WlRoWe5nwB" resolve="GoalExpression" />
     </node>
     <node concept="PrWs8" id="5tJ_MV8UBZm" role="PzmwI">
       <ref role="PrY4T" node="bl22kSmCpX" resolve="IElement" />
@@ -184,7 +184,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="5tJ_MV8UCAJ">
@@ -226,14 +226,14 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targetType" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCQ" resolve="Type" />
+      <ref role="20lvS9" to="dajg:7FQByU3CrCQ" resolve="Type" />
       <node concept="asaX9" id="yXhLyrh1oZ" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="yXhLyrfEuE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targetTypeExpr" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
     </node>
     <node concept="1TJgyi" id="6DpAcbqjmLR" role="1TKVEl">
       <property role="TrG5h" value="isBag" />
@@ -244,7 +244,7 @@
     <property role="TrG5h" value="ClaferRefExpr" />
     <property role="3GE5qa" value="expr" />
     <property role="1pbfSe" value="1082617580" />
-    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" to="dajg:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="2uk4icoWPWY" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="clafer" />
@@ -256,7 +256,7 @@
     <property role="3GE5qa" value="expr" />
     <property role="TrG5h" value="ClaferType" />
     <property role="1pbfSe" value="1082630124" />
-    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCQ" resolve="Type" />
+    <ref role="1TJDcQ" to="dajg:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="2uk4icoWSVa" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="clafer" />
@@ -264,7 +264,7 @@
       <ref role="20lvS9" node="4Z9rElrxgzk" resolve="BaseClafer" />
     </node>
     <node concept="PrWs8" id="6BTUndCcX1v" role="PzmwI">
-      <ref role="PrY4T" to="mj1k:6BTUndCaj39" resolve="IClaferSet" />
+      <ref role="PrY4T" to="dajg:6BTUndCaj39" resolve="IClaferSet" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Ig5vvkWgnt">
@@ -272,7 +272,7 @@
     <property role="TrG5h" value="ThisExpr" />
     <property role="34LRSv" value="this" />
     <property role="1pbfSe" value="1082203092" />
-    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" to="dajg:7FQByU3CrCM" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="6Ig5vvkYZV8">
     <property role="3GE5qa" value="expr" />
@@ -286,7 +286,7 @@
       <ref role="20lvS9" node="4Z9rElrxgzk" resolve="BaseClafer" />
     </node>
     <node concept="PrWs8" id="6Ig5vvkYZWy" role="PzmwI">
-      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+      <ref role="PrY4T" to="dajg:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="3WlRoWfaMdU">
@@ -296,7 +296,7 @@
     <property role="1pbfSe" value="1312882953" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3WlRoWfPVnH" role="PzmwI">
-      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+      <ref role="PrY4T" to="dajg:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="3WlRoWfkT2l">
@@ -308,7 +308,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+      <ref role="20lvS9" to="dajg:7FQByU3CrCM" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="3WlRoWfNEG9">
@@ -318,7 +318,7 @@
     <property role="1pbfSe" value="1323600024" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3SHz3PXUNqp" role="PzmwI">
-      <ref role="PrY4T" to="mj1k:40tXLnqhXcx" resolve="IGenericDotTarget" />
+      <ref role="PrY4T" to="dajg:40tXLnqhXcx" resolve="IGenericDotTarget" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Z9rElrxgzk">
@@ -462,12 +462,12 @@
   <node concept="1TIwiD" id="yXhLyreXNx">
     <property role="1pbfSe" value="1543953415" />
     <property role="TrG5h" value="TypeExpr" />
-    <ref role="1TJDcQ" to="mj1k:7FQByU3CrCM" resolve="Expression" />
+    <ref role="1TJDcQ" to="dajg:7FQByU3CrCM" resolve="Expression" />
     <node concept="1TJgyj" id="yXhLyreXNy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="targetType" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="mj1k:7FQByU3CrCQ" resolve="Type" />
+      <ref role="20lvS9" to="dajg:7FQByU3CrCQ" resolve="Type" />
     </node>
   </node>
   <node concept="1TIwiD" id="pG4h8mhfBH">
@@ -476,6 +476,10 @@
     <property role="34LRSv" value="assert" />
     <property role="R4oN_" value="assertion" />
     <ref role="1TJDcQ" node="5tJ_MV8UBZp" resolve="Constraint" />
+  </node>
+  <node concept="PlHQZ" id="2zEjgGwmaLs">
+    <property role="1pbfSe" value="1229125991" />
+    <property role="TrG5h" value="NotInScope" />
   </node>
 </model>
 
