@@ -3,8 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="5e8d2011-eb6c-491f-9520-19d12014a9bc" name="org.clafer.referenceModel" version="0" />
-    <use id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions" version="1" />
-    <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
+    <devkit ref="ae43b4a1-760c-45a1-9b50-27b4612b75e3(org.clafer.architecture.devkit)" />
   </languages>
   <imports>
     <import index="rl4e" ref="r:9705c638-4a25-40ea-948e-b712cb8c486e(org.clafer.referenceModel.sandbox.qaModule)" />

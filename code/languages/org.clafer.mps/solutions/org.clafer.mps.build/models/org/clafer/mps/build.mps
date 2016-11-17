@@ -141,7 +141,11 @@
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
       <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
+        <child id="322010710375805250" name="extends" index="3LEz9a" />
         <child id="322010710375832962" name="exports" index="3LEDUa" />
+      </concept>
+      <concept id="322010710375805242" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitRef" flags="ng" index="3LEz8M">
+        <reference id="322010710375805243" name="devkit" index="3LEz8N" />
       </concept>
       <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
         <reference id="322010710375832947" name="language" index="3LEDTV" />
@@ -616,8 +620,8 @@
       <property role="TrG5h" value="org.clafer.architecture" />
       <node concept="3LEwk6" id="7NFmM4jLb2D" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="org.architecture" />
-        <property role="3LESm3" value="689d09e3-f427-4b3a-8c27-77ad5f6606ba" />
+        <property role="TrG5h" value="org.clafer.architecture.devkit" />
+        <property role="3LESm3" value="ae43b4a1-760c-45a1-9b50-27b4612b75e3" />
         <node concept="398BVA" id="7NFmM4jLb5J" role="3LF7KH">
           <ref role="398BVh" node="4sEmwuuQokW" resolve="project.root" />
           <node concept="2Ry0Ak" id="7NFmM4jLb5N" role="iGT6I">
@@ -629,9 +633,9 @@
                 <node concept="2Ry0Ak" id="7NFmM4jLb62" role="2Ry0An">
                   <property role="2Ry0Am" value="devkits" />
                   <node concept="2Ry0Ak" id="7NFmM4jLb67" role="2Ry0An">
-                    <property role="2Ry0Am" value="org.architecture" />
-                    <node concept="2Ry0Ak" id="4y6XwhP14pn" role="2Ry0An">
-                      <property role="2Ry0Am" value="org.architecture.devkit" />
+                    <property role="2Ry0Am" value="org.clafer.architecture.devkit" />
+                    <node concept="2Ry0Ak" id="1HkVHwNLJ0e" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.clafer.architecture.devkit.devkit" />
                     </node>
                   </node>
                 </node>
@@ -644,6 +648,9 @@
         </node>
         <node concept="3LEDTy" id="7NFmM4jLb9d" role="3LEDUa">
           <ref role="3LEDTV" node="7NFmM4jKXYk" resolve="org.clafer.architecture.core" />
+        </node>
+        <node concept="3LEz8M" id="1HkVHwNLJ3q" role="3LEz9a">
+          <ref role="3LEz8N" node="7yXle6M7559" resolve="org.clafer" />
         </node>
       </node>
       <node concept="1E1JtD" id="7NFmM4jL5Yr" role="2G$12L">

@@ -462,7 +462,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/code-languages-org.clafer.mps-solutions-org.clafer.util.milestone.pluginSolution-models" prefix="module/models" />
     </jar>
     <zip destfile="${build.layout}/org.clafer.architecture.zip">
-      <zipfileset file="${project.root}/code/languages/org.clafer.mps/devkits/org.architecture/org.architecture.devkit" prefix="org.clafer.architecture.mps/languages/org.clafer.architecture" />
+      <zipfileset file="${project.root}/code/languages/org.clafer.mps/devkits/org.clafer.architecture.devkit/org.clafer.architecture.devkit.devkit" prefix="org.clafer.architecture.mps/languages/org.clafer.architecture" />
       <fileset dir="${build.tmp}/default/org.clafer.architecture.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}</echo>
@@ -473,10 +473,10 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
-    <unzip src="${artifacts.org.clafer.core.mps}/org.clafer.core.mps.zip" dest="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
     <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
     <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
+    <mkdir dir="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
+    <unzip src="${artifacts.org.clafer.core.mps}/org.clafer.core.mps.zip" dest="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -670,7 +670,7 @@
         <module file="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" />
       </chunk>
       <chunk>
-        <module file="${project.root}/code/languages/org.clafer.mps/devkits/org.architecture/org.architecture.devkit" />
+        <module file="${project.root}/code/languages/org.clafer.mps/devkits/org.clafer.architecture.devkit/org.clafer.architecture.devkit.devkit" />
         <module file="${project.root}/code/languages/org.clafer.mps/solutions/org.clafer.architecture.pluginSolution/org.clafer.architecture.pluginSolution.msd" />
       </chunk>
       <jvmargs>

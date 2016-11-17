@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/_spreferences/PlatformTemplates/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/_spreferences/TypeSizeConfiguration/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/org.architecture/org.architecture.devkit" folder="architecture" />
+      <modulePath path="$PROJECT_DIR$/devkits/org.clafer.architecture.devkit/org.clafer.architecture.devkit.devkit" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/devkits/org.clafer.devkit" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.architecture.core/org.clafer.architecture.core.mpl" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.architecture/org.clafer.architecture.mpl" folder="architecture" />

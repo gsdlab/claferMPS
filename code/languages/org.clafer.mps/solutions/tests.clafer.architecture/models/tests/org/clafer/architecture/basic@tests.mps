@@ -3,11 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture" version="4" />
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
-    <use id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions" version="1" />
-    <use id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" name="org.clafer.architecture.core" version="0" />
-    <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
+    <devkit ref="ae43b4a1-760c-45a1-9b50-27b4612b75e3(org.clafer.architecture.devkit)" />
   </languages>
   <imports>
     <import index="41ts" ref="r:40659a6f-55d4-4542-a92a-ad127141bf7f(org.clafer.architecture.typesystem)" />
@@ -30,17 +27,17 @@
       </concept>
     </language>
     <language id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" name="org.clafer.architecture.core">
-      <concept id="7285997757218705936" name="" flags="ng" index="sjk9b">
-        <reference id="7285997757218705940" name="" index="sjk9f" />
+      <concept id="7285997757218705936" name="org.clafer.architecture.core.structure.ArchConceptRef" flags="ng" index="sjk9b">
+        <reference id="7285997757218705940" name="archConcept" index="sjk9f" />
       </concept>
-      <concept id="7285997757218440942" name="" flags="ng" index="sklqP">
-        <child id="7285997757218440966" name="" index="skltt" />
-        <child id="7285997757218441139" name="" index="sklvC" />
+      <concept id="7285997757218440942" name="org.clafer.architecture.core.structure.QualityTuple" flags="ng" index="sklqP">
+        <child id="7285997757218440966" name="archConcept" index="skltt" />
+        <child id="7285997757218441139" name="qualities" index="sklvC" />
       </concept>
-      <concept id="7285997757218367330" name="" flags="ng" index="slzsT">
-        <child id="7285997757218440687" name="" index="sklmO" />
+      <concept id="7285997757218367330" name="org.clafer.architecture.core.structure.QualityModule" flags="ng" index="slzsT">
+        <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
-      <concept id="5902858924256204711" name="" flags="ng" index="3EozPd" />
+      <concept id="5902858924256204711" name="org.clafer.architecture.core.structure.QualityTableElement" flags="ng" index="3EozPd" />
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="8817732347958935251" name="org.clafer.architecture.structure.DeviceNodeClassification" flags="ng" index="1uNHS9" />

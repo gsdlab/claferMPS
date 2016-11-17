@@ -2,9 +2,9 @@
 <model ref="r:265427c6-6723-4b42-be92-b9000d1be9b5(org.clafer.architecture.sandbox.variability)">
   <persistence version="9" />
   <languages>
-    <devkit ref="689d09e3-f427-4b3a-8c27-77ad5f6606ba(org.architecture)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />
+    <devkit ref="ae43b4a1-760c-45a1-9b50-27b4612b75e3(org.clafer.architecture.devkit)" />
   </languages>
   <imports />
   <registry>
