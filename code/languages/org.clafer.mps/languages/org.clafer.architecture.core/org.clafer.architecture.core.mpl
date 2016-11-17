@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.clafer.architecture.core" uuid="bb2706c2-79b9-4711-8bf9-d8df74d841ba" languageVersion="0" moduleVersion="1">
+<language namespace="org.clafer.architecture.core" uuid="bb2706c2-79b9-4711-8bf9-d8df74d841ba" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />
