@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:10762dac-af87-4c59-9b65-bd77374f346f(org.clafer.architecture.pluginSolution.plugin)">
+<model ref="r:e615d33d-a0bf-40c5-80a8-1cedbfa8ac3c(org.clafer.util.milestone.pluginSolution.plugin)">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
@@ -10,8 +10,8 @@
     <use id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring" version="0" />
   </languages>
   <imports>
+    <import index="3po9" ref="r:a81a6b44-9936-4832-ad2d-4ac40799b00b(org.clafer.util.milestone.editor)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
-    <import index="4y9z" ref="r:6e243ac1-f9a8-47bf-8183-27ab6dd52152(org.clafer.architecture.core.editor)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -24,9 +24,6 @@
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -43,18 +40,17 @@
       </concept>
     </language>
   </registry>
-  <node concept="2DaZZR" id="IwWtVY7uDy" />
-  <node concept="33ghlw" id="6Ct43dp6DgB">
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="ArchitectureMode" />
-    <node concept="33gmoH" id="6Ct43dp6DgC" role="2hfSGL">
-      <property role="33g7Lv" value="E/E Architecture Diagrams" />
-      <ref role="33glcY" to="4y9z:1q5jVmNO7w$" resolve="architectureDiagrams" />
-      <ref role="33glcW" to="4y9z:1q5jVmNO7wz" resolve="architectureProjections" />
+  <node concept="2DaZZR" id="58bfNF0mqBm" />
+  <node concept="33ghlw" id="1_Obfe_KGT7">
+    <property role="TrG5h" value="milstoneNode" />
+    <node concept="33gmoH" id="1_Obfe_KGT8" role="2hfSGL">
+      <property role="33g7Lv" value="Show Unversioned Nodes" />
+      <ref role="33glcY" to="3po9:7NFmM4k2JLw" resolve="showUnversionedNodes" />
+      <ref role="33glcW" to="3po9:7NFmM4k2JLv" resolve="milestoneHints" />
     </node>
-    <node concept="tT9cl" id="6Ct43dp6DgD" role="2hfP89">
-      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+    <node concept="tT9cl" id="1_Obfe_KGT9" role="2hfP89">
       <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
     </node>
   </node>
 </model>

@@ -50,6 +50,13 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
+        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
+        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
+      </concept>
       <concept id="1136916919141" name="jetbrains.mps.lang.editor.structure.CellKeyMapItem" flags="lg" index="2PxR9H">
         <child id="1136916998332" name="keystroke" index="2PyaAO" />
         <child id="1136920925604" name="executeFunction" index="2PL9iG" />
@@ -453,19 +460,6 @@
   <node concept="24kQdi" id="4pZCXPZtzP">
     <ref role="1XX52x" to="1drr:4pZCXPZt2B" resolve="MilestoneController" />
     <node concept="3EZMnI" id="4pZCXPZt_b" role="2wV5jI">
-      <node concept="3EZMnI" id="59wQzhKY8Vm" role="3EZMnx">
-        <node concept="VPM3Z" id="59wQzhKY8Vo" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="27S6Sx" id="59wQzhKYbEV" role="3EZMnx">
-          <ref role="1NtTu8" to="1drr:59wQzhKXTVB" resolve="showUnversioned" />
-        </node>
-        <node concept="3F0ifn" id="59wQzhKY8Wh" role="3EZMnx">
-          <property role="3F0ifm" value="show unversioned nodes" />
-        </node>
-        <node concept="2iRfu4" id="59wQzhKY8Vr" role="2iSdaV" />
-      </node>
-      <node concept="3F0ifn" id="4pZCXPZBEr" role="3EZMnx" />
       <node concept="2rfBfz" id="2hmLFg9RGVH" role="3EZMnx">
         <node concept="2reSaE" id="2hmLFg9RH3L" role="2rf8GZ">
           <ref role="2reCK$" to="1drr:4pZCXPZt_u" />
@@ -927,6 +921,14 @@
         <ref role="1NtTu8" to="1drr:5dHtH3gx2qK" resolve="b" />
       </node>
       <node concept="2iRfu4" id="3iESOxszuYR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="2ABfQD" id="7NFmM4k2JLv">
+    <property role="TrG5h" value="milestoneHints" />
+    <node concept="2BsEeg" id="7NFmM4k2JLw" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="showUnversionedNodes" />
+      <property role="2BUmq6" value="Show Unversioned Nodes" />
     </node>
   </node>
 </model>

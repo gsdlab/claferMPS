@@ -25,7 +25,6 @@
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="3636" ref="r:204ce34c-c886-4f28-81c0-4b1b9a6fe4ed(org.clafer.architecture.core.behavior)" />
     <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
-    <import index="ektw" ref="r:13a58bae-5386-4ea7-a304-618e4aaca473(org.clafer.util.milestone.behavior)" />
     <import index="r4b4" ref="r:1784e088-20fd-4fdb-96b8-bc57f0056d94(com.mbeddr.core.base.editor)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -44,14 +43,9 @@
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="3po9" ref="r:a81a6b44-9936-4832-ad2d-4ac40799b00b(org.clafer.util.milestone.editor)" />
   </imports>
   <registry>
-    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
-      <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
-        <reference id="1204992316090" name="point" index="2f8Tey" />
-        <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
-      </concept>
-    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
@@ -672,17 +666,6 @@
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
-    <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
-      <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
-        <child id="8575378964581617586" name="modification" index="2hfP89" />
-        <child id="8575378964581602954" name="options" index="2hfSGL" />
-      </concept>
-      <concept id="3897771026684496949" name="com.mbeddr.mpsutil.refactoring.structure.PushHintOption" flags="ng" index="33gmoH">
-        <property id="3897771026684565063" name="menuLabel" index="33g7Lv" />
-        <reference id="3897771026684508452" name="hintCollection" index="33glcW" />
-        <reference id="3897771026684508454" name="hint" index="33glcY" />
-      </concept>
-    </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
@@ -1141,14 +1124,18 @@
         </node>
         <node concept="2OqwBi" id="1wtoViepw$s" role="1xbcaF">
           <node concept="1Pxb5l" id="1wtoViepwuS" role="2Oq$k0" />
-          <node concept="2qgKlT" id="1wtoViepwQ2" role="2OqNvi">
+          <node concept="2qgKlT" id="58bfNF0snVh" role="2OqNvi">
             <ref role="37wK5l" to="3636:1wtoViepsLV" resolve="getBoxColor" />
+            <node concept="UMIS2" id="58bfNF0tzsI" role="37wK5m" />
           </node>
         </node>
       </node>
     </node>
     <node concept="2aJ2om" id="6_lRZv9yZ$P" role="CpUAK">
       <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
+    </node>
+    <node concept="PMmxH" id="58bfNF0tAcO" role="6VMZX">
+      <ref role="PMmxG" node="1T6YVZd85oj" resolve="ArchInspector" />
     </node>
   </node>
   <node concept="PKFIW" id="1tfNdgy4jBs">
@@ -5978,18 +5965,6 @@
     </node>
     <node concept="2x7zL7" id="399d13snrn6" role="2x7_pA">
       <node concept="3clFbS" id="399d13snrn7" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="33ghlw" id="7YIt5pdxmj7">
-    <property role="TrG5h" value="archMode" />
-    <node concept="33gmoH" id="7YIt5pdxmj8" role="2hfSGL">
-      <property role="33g7Lv" value="Clafer: Architecture" />
-      <ref role="33glcW" node="1q5jVmNO7wz" resolve="architectureProjections" />
-      <ref role="33glcY" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
-    </node>
-    <node concept="tT9cl" id="7YIt5pdxmj9" role="2hfP89">
-      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
-      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
   </node>
   <node concept="2ABfQD" id="1q5jVmNO7wz">

@@ -876,6 +876,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1_Obfe_Oqpq" role="3bR37C">
+          <node concept="3bR9La" id="1_Obfe_Oqpr" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7ub7faJ4dw7" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1072,6 +1078,12 @@
           <node concept="3bR9La" id="7NFmM4jKY4Y" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1_Obfe_Oqrv" role="3bR37C">
+          <node concept="3bR9La" id="1_Obfe_Oqrw" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:4gGXGcLVMsv" resolve="com.mbeddr.mpsutil.multilingual.common" />
           </node>
         </node>
       </node>
@@ -1748,6 +1760,12 @@
           <node concept="3bR9La" id="7NFmM4jKXGo" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1_Obfe_Oqui" role="3bR37C">
+          <node concept="3bR9La" id="1_Obfe_Oquj" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:4gGXGcLVMsv" resolve="com.mbeddr.mpsutil.multilingual.common" />
           </node>
         </node>
       </node>

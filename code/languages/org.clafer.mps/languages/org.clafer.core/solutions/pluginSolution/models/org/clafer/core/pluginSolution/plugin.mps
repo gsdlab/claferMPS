@@ -23,9 +23,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
@@ -44,40 +52,48 @@
   <node concept="33ghlw" id="3onExzPnGul">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="symbolicMode" />
-    <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
-      <property role="33g7Lv" value="Clafer: Symbolic" />
-      <ref role="33glcW" to="zt9g:2uk4icpqhNc" resolve="claferProjections" />
-      <ref role="33glcY" to="zt9g:2uk4icpqi4Y" resolve="symbolicClafer" />
-    </node>
     <node concept="tT9cl" id="3onExzPnGun" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
       <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+    </node>
+    <node concept="1X3_iC" id="1_Obfe_Rmm3" role="lGtFl">
+      <property role="3V$3am" value="options" />
+      <property role="3V$3ak" value="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/3897771026684493688/8575378964581602954" />
+      <node concept="33gmoH" id="3onExzPnGum" role="8Wnug">
+        <property role="33g7Lv" value="Clafer: Symbolic" />
+        <ref role="33glcW" to="zt9g:2uk4icpqhNc" resolve="claferProjections" />
+        <ref role="33glcY" to="zt9g:2uk4icpqi4Y" resolve="symbolicClafer" />
+      </node>
     </node>
   </node>
   <node concept="33ghlw" id="1JcbkuzlprA">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="graphicalMode" />
-    <node concept="33gmoH" id="1JcbkuzlprB" role="2hfSGL">
-      <property role="33g7Lv" value="Clafer: Graphical" />
-      <ref role="33glcY" to="zt9g:1Jcbkuzeevw" resolve="graphicalClafer" />
-      <ref role="33glcW" to="zt9g:2uk4icpqhNc" resolve="claferProjections" />
-    </node>
     <node concept="tT9cl" id="1JcbkuzlprC" role="2hfP89">
       <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
       <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+    </node>
+    <node concept="1X3_iC" id="1_Obfe_RmlV" role="lGtFl">
+      <property role="3V$3am" value="options" />
+      <property role="3V$3ak" value="1fc20ffe-f35b-4791-a0b7-d706bad5c49a/3897771026684493688/8575378964581602954" />
+      <node concept="33gmoH" id="1JcbkuzlprB" role="8Wnug">
+        <property role="33g7Lv" value="Clafer: Graphical" />
+        <ref role="33glcY" to="zt9g:1Jcbkuzeevw" resolve="graphicalClafer" />
+        <ref role="33glcW" to="zt9g:2uk4icpqhNc" resolve="claferProjections" />
+      </node>
     </node>
   </node>
   <node concept="33ghlw" id="6yyIOiNeiXv">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="indentMode" />
+    <node concept="tT9cl" id="6yyIOiNeiXx" role="2hfP89">
+      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
+      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
+    </node>
     <node concept="33gmoH" id="6yyIOiNeiXw" role="2hfSGL">
       <property role="33g7Lv" value="Clafer: Indent Lines" />
       <ref role="33glcY" to="zt9g:6yyIOiNaML7" resolve="showIndentsInClafer" />
       <ref role="33glcW" to="zt9g:2uk4icpqhNc" resolve="claferProjections" />
-    </node>
-    <node concept="tT9cl" id="6yyIOiNeiXx" role="2hfP89">
-      <ref role="tU$_T" to="d244:goNQ8fnbtb" resolve="mbeddrPlatformProjectionModeGroup" />
-      <ref role="2f8Tey" to="d244:goNQ8fnbte" resolve="mbeddrPlatformProjectionModes" />
     </node>
   </node>
 </model>

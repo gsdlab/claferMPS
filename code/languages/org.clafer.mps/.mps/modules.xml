@@ -25,6 +25,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.mps.build/org.clafer.mps.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.referenceModel.sandbox/org.clafer.referenceModel.sandbox.msd" folder="referenceModel" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.util.milestone.pluginSolution/org.clafer.util.milestone.pluginSolution.msd" folder="utils.milestone" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.util.milestone.pluginSolution/org.clafer.util.milestone.pluginSolution.msd" folder="utils.milestone" />
       <modulePath path="$PROJECT_DIR$/solutions/tests.clafer.architecture/tests.org.clafer.architecture.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.clafer.core/test.ex.clafer.core.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.clafer.core/test.ts.clafer.core.msd" folder="core" />
