@@ -1202,6 +1202,45 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="58bfNF0vBKW" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.clafer.util.milestone.pluginSolution" />
+        <property role="3LESm3" value="1054b31e-e3c2-4f55-b48e-1d8dd46cff9c" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="58bfNF0vBKX" role="3LF7KH">
+          <ref role="398BVh" node="4sEmwuuQokW" resolve="project.root" />
+          <node concept="2Ry0Ak" id="58bfNF0vBKY" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="58bfNF0vBKZ" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="58bfNF0vBL0" role="2Ry0An">
+                <property role="2Ry0Am" value="org.clafer.mps" />
+                <node concept="2Ry0Ak" id="58bfNF0vBL1" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="58bfNF0vBL2" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.clafer.util.milestone.pluginSolution" />
+                    <node concept="2Ry0Ak" id="58bfNF0vBL3" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.clafer.util.milestone.pluginSolution.msd" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="58bfNF0vBL4" role="3bR37C">
+          <node concept="3bR9La" id="58bfNF0vBL5" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7DOOjci1TMm" resolve="org.clafer.util.milestone" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="58bfNF0vBL6" role="3bR37C">
+          <node concept="3bR9La" id="58bfNF0vBL7" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2sgV4H" id="7ub7faJ4aVQ" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
@@ -1768,6 +1807,18 @@
             <ref role="3bR37D" to="al5i:4gGXGcLVMsv" resolve="com.mbeddr.mpsutil.multilingual.common" />
           </node>
         </node>
+        <node concept="1SiIV0" id="58bfNF0vB3i" role="3bR37C">
+          <node concept="3bR9La" id="58bfNF0vB3j" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="58bfNF0vB3k" role="3bR37C">
+          <node concept="3bR9La" id="58bfNF0vB3l" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2FS8nA59PoC" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1790,6 +1841,45 @@
         <node concept="1SiIV0" id="4sEmwuuIGpX" role="3bR37C">
           <node concept="1Busua" id="4sEmwuuIGpY" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="58bfNF0vB22" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.clafer.util.milestone.pluginSolution" />
+        <property role="3LESm3" value="1054b31e-e3c2-4f55-b48e-1d8dd46cff9c" />
+        <property role="2GAjPV" value="false" />
+        <node concept="398BVA" id="58bfNF0vB2J" role="3LF7KH">
+          <ref role="398BVh" node="4sEmwuuQozb" resolve="project.root" />
+          <node concept="2Ry0Ak" id="58bfNF0vB2R" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="58bfNF0vB2W" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="58bfNF0vB31" role="2Ry0An">
+                <property role="2Ry0Am" value="org.clafer.mps" />
+                <node concept="2Ry0Ak" id="58bfNF0vB36" role="2Ry0An">
+                  <property role="2Ry0Am" value="solutions" />
+                  <node concept="2Ry0Ak" id="58bfNF0vB3b" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.clafer.util.milestone.pluginSolution" />
+                    <node concept="2Ry0Ak" id="58bfNF0vB3g" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.clafer.util.milestone.pluginSolution.msd" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="58bfNF0vB4O" role="3bR37C">
+          <node concept="3bR9La" id="58bfNF0vB4P" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="2FS8nA59Poy" resolve="org.clafer.util.milestone" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="58bfNF0vB4Q" role="3bR37C">
+          <node concept="3bR9La" id="58bfNF0vB4R" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQdz" resolve="com.mbeddr.core.base.pluginSolution" />
           </node>
         </node>
       </node>
