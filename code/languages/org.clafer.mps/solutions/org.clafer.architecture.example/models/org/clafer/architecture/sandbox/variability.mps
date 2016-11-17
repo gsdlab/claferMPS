@@ -2,8 +2,6 @@
 <model ref="r:265427c6-6723-4b42-be92-b9000d1be9b5(org.clafer.architecture.sandbox.variability)">
   <persistence version="9" />
   <languages>
-    <use id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions" version="1" />
-    <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
     <devkit ref="689d09e3-f427-4b3a-8c27-77ad5f6606ba(org.architecture)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="b31efd26-898e-4b0e-b5dc-2d7ced06e7f7(com.mbeddr.cc.variability)" />

@@ -12,6 +12,7 @@
   <imports>
     <import index="3po9" ref="r:a81a6b44-9936-4832-ad2d-4ac40799b00b(org.clafer.util.milestone.editor)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+    <import index="1drr" ref="r:efe8ca06-a104-4b6a-81d4-3821bf9939ba(org.clafer.util.milestone.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -30,6 +31,7 @@
     </language>
     <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
       <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
+        <reference id="8575378964582005791" name="requiredConcept" index="2hhq6$" />
         <child id="8575378964581617586" name="modification" index="2hfP89" />
         <child id="8575378964581602954" name="options" index="2hfSGL" />
       </concept>
@@ -42,7 +44,8 @@
   </registry>
   <node concept="2DaZZR" id="58bfNF0mqBm" />
   <node concept="33ghlw" id="1_Obfe_KGT7">
-    <property role="TrG5h" value="milstoneNode" />
+    <property role="TrG5h" value="MilestoneHintsSwitcher" />
+    <ref role="2hhq6$" to="1drr:4pZCXPZt2B" resolve="MilestoneController" />
     <node concept="33gmoH" id="1_Obfe_KGT8" role="2hfSGL">
       <property role="33g7Lv" value="Show Unversioned Nodes" />
       <ref role="33glcY" to="3po9:7NFmM4k2JLw" resolve="showUnversionedNodes" />

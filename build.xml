@@ -8,6 +8,7 @@
   <property name="platform.distribution.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="mbeddr.allInOne.artifacts" location="${artifacts.root}/com.mbeddr.allInOne" />
   <property name="version" value="0.4.4.3" />
+  <property name="mbeddrVersion" value="253-MPS-3.3.5" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.jetpad" location="${mps.home}" />
   <property name="artifacts.com.mbeddr.allInOne" location="${mbeddr.allInOne.artifacts}" />
@@ -41,11 +42,11 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
     <mkdir dir="${build.layout}" />
-    <zip destfile="${build.layout}/org.clafer.all.zip">
+    <zip destfile="${build.layout}/org.clafer.all-${version}.zip">
       <zipfileset dir="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" prefix="plugins" />
       <zipfileset dir="${build.tmp}/deps/org.clafer.architecture/org.clafer.architecture.zip" prefix="plugins" />
     </zip>
-    <echo file="${build.layout}/build.properties">org.clafer.all.version=${version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}</echo>
+    <echo file="${build.layout}/build.properties">org.clafer.all.version=${version}${line.separator}org.clafer.all.mbeddrVersion=${mbeddrVersion}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}</echo>
   </target>
   
   <target name="buildDependents">
@@ -56,10 +57,10 @@
   <target name="fetchDependencies">
     <mkdir dir="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
     <unzip src="${artifacts.com.mbeddr.allInOne}/com.mbeddr.allInOne.zip" dest="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip" />
-    <mkdir dir="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
-    <unzip src="${artifacts.org.clafer.core.mps}/org.clafer.core.mps.zip" dest="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
     <mkdir dir="${build.tmp}/deps/org.clafer.architecture/org.clafer.architecture.zip" />
     <unzip src="${artifacts.org.clafer.architecture}/org.clafer.architecture.zip" dest="${build.tmp}/deps/org.clafer.architecture/org.clafer.architecture.zip" />
+    <mkdir dir="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
+    <unzip src="${artifacts.org.clafer.core.mps}/org.clafer.core.mps.zip" dest="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip" />
   </target>
   
   <target name="build" depends="assemble" />
@@ -81,7 +82,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.6">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -223,7 +224,7 @@
   <target name="java.compile.org.clafer.mps.build" depends="fetchDependencies">
     <mkdir dir="${basedir}/code/languages/org.clafer.mps/solutions/org.clafer.mps.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.mps.build" />
-    <javac destdir="${build.tmp}/java/out/org.clafer.mps.build" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.clafer.mps.build" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/code/languages/org.clafer.mps/solutions/org.clafer.mps.build/source_gen" />
@@ -235,6 +236,9 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.all/languages/de.slisson.mps.all/de.slisson.mps.all.build.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/org.clafer.mps.build">
+      <fileset dir="${basedir}/code/languages/org.clafer.mps/solutions/org.clafer.mps.build/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

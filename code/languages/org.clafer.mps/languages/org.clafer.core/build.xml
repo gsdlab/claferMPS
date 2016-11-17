@@ -239,7 +239,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="4" useInplaceTransform="true" hideWarnings="false" createStaticRefs="true" fork="true" targetJavaVersion="1.6">
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -393,7 +393,7 @@
   
   <target name="java.compile.java.modules.cycle.1" depends="fetchDependencies">
     <mkdir dir="${build.tmp}/java.modules.cycle.1" />
-    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" memorymaximumsize="6096m" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/source_gen" />
@@ -458,7 +458,7 @@
   <target name="java.compile.org.clafer.core" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.core" />
-    <javac destdir="${build.tmp}/java/out/org.clafer.core" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.clafer.core" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/source_gen" />
@@ -516,12 +516,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/org.clafer.core">
+      <fileset dir="${basedir}/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.org.clafer.core#204078314067472851" depends="java.compile.org.clafer.core, java.compile.org.clafer.expressions, fetchDependencies">
     <mkdir dir="${basedir}/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.core#204078314067472851" />
-    <javac destdir="${build.tmp}/java/out/org.clafer.core#204078314067472851" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.clafer.core#204078314067472851" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/generator/source_gen" />
@@ -574,12 +577,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/org.clafer.core#204078314067472851">
+      <fileset dir="${basedir}/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.org.clafer.expressions" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.expressions/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.expressions" />
-    <javac destdir="${build.tmp}/java/out/org.clafer.expressions" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.clafer.expressions" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.expressions/source_gen" />
@@ -637,12 +643,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/org.clafer.expressions">
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.expressions/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.org.clafer.expressions#3892062808469841665" depends="java.compile.org.clafer.expressions, fetchDependencies">
     <mkdir dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.expressions/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.expressions#3892062808469841665" />
-    <javac destdir="${build.tmp}/java/out/org.clafer.expressions#3892062808469841665" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.clafer.expressions#3892062808469841665" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.expressions/generator/source_gen" />
@@ -700,12 +709,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/org.clafer.expressions#3892062808469841665">
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.expressions/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.org.clafer.core.pluginSolution" depends="java.compile.org.clafer.expressions, fetchDependencies">
     <mkdir dir="${basedir}/solutions/pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.core.pluginSolution" />
-    <javac destdir="${build.tmp}/java/out/org.clafer.core.pluginSolution" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.clafer.core.pluginSolution" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/pluginSolution/source_gen" />
@@ -764,6 +776,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/org.clafer.core.pluginSolution">
+      <fileset dir="${basedir}/solutions/pluginSolution/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="cleanSources">

@@ -28,6 +28,11 @@
         <reference id="5617550519002745380" name="script" index="1l3spb" />
         <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262398947" name="heapSize" index="2_GNG2" />
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+        <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
+      </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
       </concept>
@@ -181,6 +186,11 @@
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
+    </node>
+    <node concept="2_Ic$z" id="2$jJqYzdYrS" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_GNG2" value="6096" />
+      <property role="TZNOO" value="1.6" />
     </node>
     <node concept="10PD9b" id="2FS8nA59NQF" role="10PD9s" />
     <node concept="3b7kt6" id="2FS8nA59NQG" role="10PD9s" />
@@ -564,6 +574,11 @@
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
     </node>
+    <node concept="2_Ic$z" id="2$jJqYzdYF_" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_GNG2" value="6096" />
+      <property role="TZNOO" value="1.6" />
+    </node>
     <node concept="m$_wf" id="7ub7faJ4aWI" role="3989C9">
       <property role="m$_wk" value="org.clafer.architecture.mps" />
       <node concept="m$_yC" id="7ub7faJ4aXQ" role="m$_yJ">
@@ -615,7 +630,7 @@
                   <property role="2Ry0Am" value="devkits" />
                   <node concept="2Ry0Ak" id="7NFmM4jLb67" role="2Ry0An">
                     <property role="2Ry0Am" value="org.architecture" />
-                    <node concept="2Ry0Ak" id="7NFmM4jLb6c" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="4y6XwhP14pn" role="2Ry0An">
                       <property role="2Ry0Am" value="org.architecture.devkit" />
                     </node>
                   </node>
@@ -1382,6 +1397,11 @@
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
     </node>
+    <node concept="2_Ic$z" id="2$jJqYzdYx1" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_GNG2" value="6096" />
+      <property role="TZNOO" value="1.6" />
+    </node>
     <node concept="m$_wf" id="7yXle6M6Cpm" role="3989C9">
       <property role="m$_wk" value="org.clafer.all" />
       <node concept="m$_yC" id="7yXle6M6Cpn" role="m$_yJ">
@@ -1563,6 +1583,16 @@
         </node>
       </node>
     </node>
+    <node concept="2kB4xC" id="2$jJqYze3YT" role="1l3spd">
+      <property role="TrG5h" value="mbeddrVersion" />
+      <node concept="aVJcg" id="2$jJqYze43b" role="aVJcv">
+        <node concept="NbPM2" id="2$jJqYze43a" role="aVJcq">
+          <node concept="3Mxwew" id="2$jJqYze439" role="3MwsjC">
+            <property role="3MwjfP" value="253-MPS-3.3.5" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="10PD9b" id="7yXle6M6Col" role="10PD9s" />
     <node concept="3b7kt6" id="7yXle6M6Com" role="10PD9s" />
     <node concept="55IIr" id="7yXle6M6CnS" role="auvoZ" />
@@ -1582,8 +1612,14 @@
           </node>
         </node>
         <node concept="3_J27D" id="7yXle6M6CpK" role="Nbhlr">
-          <node concept="3Mxwew" id="7yXle6M6CpL" role="3MwsjC">
-            <property role="3MwjfP" value="org.clafer.all.zip" />
+          <node concept="3Mxwew" id="2$jJqYzdY2N" role="3MwsjC">
+            <property role="3MwjfP" value="org.clafer.all-" />
+          </node>
+          <node concept="3Mxwey" id="2$jJqYzdY4k" role="3MwsjC">
+            <ref role="3Mxwex" node="7yXle6M71WH" resolve="version" />
+          </node>
+          <node concept="3Mxwew" id="2$jJqYzdY4A" role="3MwsjC">
+            <property role="3MwjfP" value=".zip" />
           </node>
         </node>
       </node>
@@ -1621,6 +1657,11 @@
       <property role="1wNuhh" value="4" />
       <property role="1wOHq$" value="true" />
       <property role="3Ej$Sc" value="true" />
+    </node>
+    <node concept="2_Ic$z" id="7OyG8hrcgea" role="3989C9">
+      <property role="2_Ic$$" value="true" />
+      <property role="2_GNG2" value="6096" />
+      <property role="TZNOO" value="1.6" />
     </node>
     <node concept="2sgV4H" id="4sEmwuuGViC" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />

@@ -2,9 +2,6 @@
 <model ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.sandbox.preferences)">
   <persistence version="9" />
   <languages>
-    <use id="8d4e2a78-2e34-46b0-903b-f624343daeaa" name="org.clafer.expressions" version="1" />
-    <use id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" name="org.clafer.architecture.core" version="0" />
-    <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
     <devkit ref="689d09e3-f427-4b3a-8c27-77ad5f6606ba(org.architecture)" />
   </languages>
   <imports>
@@ -108,7 +105,7 @@
       <node concept="3EozPd" id="1JOdLtDwOIq" role="sklvC">
         <property role="TrG5h" value="warrantyCost" />
       </node>
-      <node concept="sjk9b" id="1JOdLtDwOG7" role="skltt">
+      <node concept="sjk9b" id="4y6XwhOVlkM" role="skltt">
         <ref role="sjk9f" to="ddau:4csP6fm34cz" resolve="DeviceNode" />
       </node>
     </node>
