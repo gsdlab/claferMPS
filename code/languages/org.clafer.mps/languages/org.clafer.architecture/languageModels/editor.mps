@@ -33,6 +33,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -422,6 +423,7 @@
         <child id="7890587897031726225" name="query" index="2M4AHN" />
       </concept>
       <concept id="7890587897031711745" name="de.itemis.mps.editor.diagram.structure.Content_GenericEdgeQuery" flags="ng" index="2M4Efz" />
+      <concept id="5112292084089908370" name="de.itemis.mps.editor.diagram.structure.EditorContextExpression" flags="ng" index="UMIS2" />
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
@@ -3810,7 +3812,6 @@
       </node>
       <node concept="2ZMM4L" id="7NFmM4jw1LH" role="aCds2">
         <node concept="3clFbS" id="7NFmM4jw1LI" role="2VODD2">
-          <node concept="3clFbH" id="7NFmM4jw1LJ" role="3cqZAp" />
           <node concept="3clFbF" id="7NFmM4jw1LK" role="3cqZAp">
             <node concept="2OqwBi" id="7NFmM4jw1LM" role="3clFbG">
               <node concept="2OqwBi" id="7NFmM4jw1LN" role="2Oq$k0">
@@ -3837,6 +3838,7 @@
                           </node>
                           <node concept="2qgKlT" id="7NFmM4jB$7u" role="2OqNvi">
                             <ref role="37wK5l" to="3636:7NFmM4jBtK3" resolve="isVisible" />
+                            <node concept="UMIS2" id="7NFmM4jV1kQ" role="37wK5m" />
                           </node>
                         </node>
                         <node concept="3fqX7Q" id="7NFmM4jw1LX" role="3uHU7B">
@@ -4028,6 +4030,7 @@
                                   </node>
                                   <node concept="2qgKlT" id="7NFmM4jDtKc" role="2OqNvi">
                                     <ref role="37wK5l" to="3636:7NFmM4jBtK3" resolve="isVisible" />
+                                    <node concept="UMIS2" id="7NFmM4jZGkt" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>

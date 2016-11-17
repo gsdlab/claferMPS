@@ -279,8 +279,7 @@
         <property role="23VrvS" value="true" />
         <ref role="23UPZC" node="76lcNQ9lXDD" resolve="Test" />
       </node>
-      <node concept="1OTsJr" id="76lcNQ9lXEj" role="1OT2vh">
-        <property role="23VrvS" value="true" />
+      <node concept="1OTsJr" id="7NFmM4k1SLm" role="1OT2vh">
         <ref role="23UPZC" node="76lcNQ9lXE4" resolve="Test2" />
       </node>
     </node>

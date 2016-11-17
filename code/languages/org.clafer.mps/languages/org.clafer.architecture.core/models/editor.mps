@@ -466,6 +466,7 @@
         <child id="7890587897031726224" name="parameterType" index="2M4AHM" />
         <child id="7890587897031726225" name="query" index="2M4AHN" />
       </concept>
+      <concept id="5112292084089908370" name="de.itemis.mps.editor.diagram.structure.EditorContextExpression" flags="ng" index="UMIS2" />
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="1315262826372527521" name="editor" index="1ytjkN" />
@@ -1142,26 +1143,6 @@
           <node concept="1Pxb5l" id="1wtoViepwuS" role="2Oq$k0" />
           <node concept="2qgKlT" id="1wtoViepwQ2" role="2OqNvi">
             <ref role="37wK5l" to="3636:1wtoViepsLV" resolve="getBoxColor" />
-          </node>
-        </node>
-      </node>
-      <node concept="pkWqt" id="6ONwzYgT2Tx" role="pqm2j">
-        <node concept="3clFbS" id="6ONwzYgT2Ty" role="2VODD2">
-          <node concept="3clFbF" id="6ONwzYgT5kY" role="3cqZAp">
-            <node concept="2OqwBi" id="6ONwzYgT5CB" role="3clFbG">
-              <node concept="1PxgMI" id="6ONwzYgT5yR" role="2Oq$k0">
-                <ref role="1PxNhF" to="1drr:4pZCXPVIQi" resolve="IVersionable" />
-                <node concept="pncrf" id="6ONwzYgT5kQ" role="1PxMeX" />
-              </node>
-              <node concept="2qgKlT" id="6ONwzYgT5La" role="2OqNvi">
-                <ref role="37wK5l" to="ektw:4pZCXPVN1$" resolve="isCurrentlyVisible" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="6ONwzYgWTuR" role="3cqZAp">
-            <node concept="3clFbT" id="6ONwzYgWTuQ" role="3clFbG">
-              <property role="3clFbU" value="true" />
-            </node>
           </node>
         </node>
       </node>
@@ -6851,6 +6832,7 @@
                           </node>
                           <node concept="2qgKlT" id="7NFmM4jDwf7" role="2OqNvi">
                             <ref role="37wK5l" to="3636:7NFmM4jBtK3" resolve="isVisible" />
+                            <node concept="UMIS2" id="7NFmM4jV2vO" role="37wK5m" />
                           </node>
                         </node>
                         <node concept="3fqX7Q" id="7NFmM4jw0om" role="3uHU7B">
