@@ -766,7 +766,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
         <fileset file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
         <fileset file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
@@ -970,7 +969,6 @@
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
