@@ -1,8 +1,7 @@
-[//]: # (nightly-253-MPS-3.3.5)
-[//]: # (org.clafer.all-0.4.4.3.zip)
-[//]: # (org.clafer.all-0.4.4.3.tar.gz)
-[//]: # (v0.4.4.3)
-[//]: # (v3.3.5 (build 143.1301))
+[//mbeddr version]: # (nightly-253-MPS-3.3.5)
+[//ClaferMPS zip name]: # (org.clafer.all-0.4.4.3.zip)
+[//ClaferMPS version]: # (v0.4.4.3)
+[//MPS version]: # (v3.3.5 (build 143.1301))
 
 
 ClaferMPS
@@ -60,12 +59,12 @@ We tested with pre-release [nightly-253-MPS-3.3.5](https://github.com/mbeddr/mbe
 1. Download and install `mbeddr-win-setup.exe` for Windows or `mbeddr-macos.dmg` for Mac from [mbeddr releases](https://github.com/mbeddr/mbeddr.core/releases) to some `<mbeddr directory>`.
     * no need to install the third-party components
 2. Depending on whether you want to install released or development versions
-    * for a released version, download ClaferMPS `org.clafer.all-0.4.4.3.zip` or `org.clafer.all-0.4.4.3.tar.gz` from [ClaferMPS releases](https://github.com/gsdlab/ClaferMPS/releases) and unpack the contents to `<mbeddr directory>` (the folder `plugins` from the archive must be merged with the folder `<mbeddr directory>/plugins`).
-    * for a development version, go to [Installing ClaferMPS (development version)](#building-ClaferMPS).
+    * for a released version, download ClaferMPS `org.clafer.all-0.4.4.3.zip` from [ClaferMPS releases](https://github.com/gsdlab/ClaferMPS/releases) and unpack the contents to `<mbeddr directory>` (the folder `plugins` from the archive must be merged with the folder `<mbeddr directory>/plugins`).
+    * for a development version, go to [ClaferMPS (development version)](#building-ClaferMPS).
 
 
 
-#### Installing ClaferMPS (development version) <a id="building-ClaferMPS"></a>
+#### ClaferMPS (development version) <a id="building-ClaferMPS"></a>
 
 * NOTE: if there during the build you get an error `cannot save files` run mbeddr in priviledged mode (on Windows, `Run as Administrator`)
 * NOTE: in case of severe problems click on `File->Invalidate Caches / Restart`, and select `Invalidate and Restart`
@@ -99,8 +98,8 @@ This method works on all platforms supported by MPS, including Linux.
 2. Download `com.mbeddr.allInOne.zip` [nightly-253-MPS-3.3.5](https://github.com/mbeddr/mbeddr.core/releases/tag/nightly-253-MPS-3.3.5) and unpack the contents to `<MPS directory>` (the folder `plugins` from the archive must be merged with the folder `<MPS directory>/plugins`).
 
 3. Depending on whether you want to install released or development versions
-    * for a released version, download ClaferMPS `org.clafer.all-0.4.4.3.zip` or `org.clafer.all-0.4.4.3.tar.gz` from [ClaferMPS releases](https://github.com/gsdlab/ClaferMPS/releases) and unpack the contents to `<MPS directory>` (the folder `plugins` from the archive must be merged with the folder `<MPS directory>/plugins`).
-    * for a development version, resume [Installing ClaferMPS (development version)](#building-ClaferMPS) from the previous section.
+    * for a released version, download ClaferMPS `org.clafer.all-0.4.4.3.zip` from [ClaferMPS releases](https://github.com/gsdlab/ClaferMPS/releases) and unpack the contents to `<MPS directory>` (the folder `plugins` from the archive must be merged with the folder `<MPS directory>/plugins`).
+    * for a development version, resume [ClaferMPS (development version)](#building-ClaferMPS) from the previous section.
 
 ### MPS + building mbeddr from source
 
@@ -119,8 +118,8 @@ This method is suitable when working with the latest development versions of mbe
             * `mbeddr.plugins` and give it a value `<target directory>/code/plugins`
 
 3. Depending on whether you want to install released or development versions
-    * for a released version, download ClaferMPS `org.clafer.all-0.4.4.3.zip` or `org.clafer.all-0.4.4.3.tar.gz` from [ClaferMPS releases](https://github.com/gsdlab/ClaferMPS/releases) and unpack the contents to `<MPS directory>` (the folder `plugins` from the archive must be merged with the folder `<MPS directory>/plugins`).
-    * for a development version, resume [Installing ClaferMPS (development version)](#building-ClaferMPS) from the previous section.
+    * for a released version, download ClaferMPS `org.clafer.all-0.4.4.3.zip` from [ClaferMPS releases](https://github.com/gsdlab/ClaferMPS/releases) and unpack the contents to `<MPS directory>` (the folder `plugins` from the archive must be merged with the folder `<MPS directory>/plugins`).
+    * for a development version, resume [ClaferMPS (development version)](#building-ClaferMPS) from the previous section.
 
 Opening the automotive case studies
 -----------------------------------
