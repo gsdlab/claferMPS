@@ -92,6 +92,10 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -5432,7 +5436,18 @@
       <node concept="17QB3L" id="5A7sq$BM1vE" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="5YkgXg$2ax7" role="jymVt" />
-    <node concept="2tJIrI" id="5YkgXg$2ayY" role="jymVt" />
+    <node concept="Wx3nA" id="2bzmd5CzfCl" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="TMP_PREFIX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2bzmd5Czf_g" role="1B3o_S" />
+      <node concept="17QB3L" id="2bzmd5CzfCe" role="1tU5fm" />
+      <node concept="Xl_RD" id="2bzmd5CzfHl" role="33vP2m">
+        <property role="Xl_RC" value="__tmp__" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2bzmd5Czfzp" role="jymVt" />
     <node concept="2YIFZL" id="7Ij6CMq2UfP" role="jymVt">
       <property role="TrG5h" value="getTarget" />
       <property role="DiZV1" value="false" />
