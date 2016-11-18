@@ -21,6 +21,9 @@
       </concept>
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
+      <concept id="8459220543629920150" name="org.clafer.core.structure.PlatformOption" flags="ng" index="2eQFvl">
+        <property id="8459220543629920153" name="value" index="2eQFvq" />
+      </concept>
       <concept id="6300420630909770920" name="org.clafer.core.structure.SuperClaferRef" flags="ng" index="2vxcI6">
         <reference id="6300420630909770921" name="superClafer" index="2vxcI7" />
       </concept>
@@ -43,6 +46,17 @@
       </concept>
       <concept id="2851923306472496585" name="org.clafer.core.structure.ClaferRefExpr" flags="ng" index="ZpONE">
         <reference id="2851923306472496958" name="clafer" index="ZpOSt" />
+      </concept>
+      <concept id="561898820035739559" name="org.clafer.core.structure.PlatformTemplateContainer" flags="ng" index="3CfbLo">
+        <child id="561898820035741363" name="templates" index="3Cfklc" />
+      </concept>
+      <concept id="561898820035741362" name="org.clafer.core.structure.PlatformTemplate" flags="ng" index="3Cfkld">
+        <property id="561898820035743890" name="compiler" index="3CfldH" />
+        <child id="8459220543629920210" name="compilerOptions" index="2eQFuh" />
+        <child id="561898820035743897" name="modules" index="3CfldA" />
+      </concept>
+      <concept id="561898820035743900" name="org.clafer.core.structure.ClaferModuleRef" flags="ng" index="3Cfldz">
+        <reference id="561898820035743901" name="module" index="3Cfldy" />
       </concept>
       <concept id="7389562969670486691" name="org.clafer.core.structure.StarCard" flags="ng" index="3E6wFX" />
       <concept id="7389562969672660489" name="org.clafer.core.structure.NumberCard" flags="ng" index="3Edjpn">
@@ -139,6 +153,21 @@
     <node concept="UzEYP" id="6BTUndCmboU" role="UzTCv" />
     <node concept="UzEYP" id="6MOJxHINBHu" role="UzTCv" />
     <node concept="UzEYP" id="6MOJxHINBE1" role="UzTCv" />
+  </node>
+  <node concept="3CfbLo" id="vcgZZJXgg7">
+    <node concept="3Cfkld" id="7l_c4fVLBYy" role="3Cfklc">
+      <property role="3CfldH" value="Clafer" />
+      <property role="TrG5h" value="Test" />
+      <node concept="2eQFvl" id="7l_c4fVNqrW" role="2eQFuh">
+        <property role="2eQFvq" value="-m html" />
+      </node>
+      <node concept="2eQFvl" id="7l_c4fVNqsc" role="2eQFuh">
+        <property role="2eQFvq" value="-m choco" />
+      </node>
+      <node concept="3Cfldz" id="7l_c4fVLBY$" role="3CfldA">
+        <ref role="3Cfldy" node="bl22kSotJv" resolve="M1" />
+      </node>
+    </node>
   </node>
 </model>
 

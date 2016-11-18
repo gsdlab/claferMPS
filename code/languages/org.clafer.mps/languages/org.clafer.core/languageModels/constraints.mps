@@ -14,6 +14,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="q5uw" ref="r:0b784ab1-23fb-426b-b1a5-548466796576(org.clafer.core.typesystem)" />
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -163,6 +164,9 @@
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -1076,6 +1080,48 @@
               </node>
               <node concept="Xl_RD" id="42bqIdUDY3N" role="3uHU7B">
                 <property role="Xl_RC" value="empty_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="vcgZZJWg2J">
+    <property role="3GE5qa" value="Platform" />
+    <ref role="1M2myG" to="mecy:vcgZZJWfYB" resolve="PlatformTemplateContainer" />
+    <node concept="EnEH3" id="vcgZZJWg2Q" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="vcgZZJWg2S" role="EtsB7">
+        <node concept="3clFbS" id="vcgZZJWg2T" role="2VODD2">
+          <node concept="3clFbF" id="4zqPC3avYP1" role="3cqZAp">
+            <node concept="Xl_RD" id="4zqPC3avYP0" role="3clFbG">
+              <property role="Xl_RC" value="Platform Template Container" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7l_c4fVC6qt">
+    <property role="3GE5qa" value="Platform" />
+    <ref role="1M2myG" to="mecy:vcgZZJWh2s" resolve="ClaferModuleRef" />
+    <node concept="1N5Pfh" id="7l_c4fVC6qu" role="1Mr941">
+      <ref role="1N5Vy1" to="mecy:vcgZZJWh2t" />
+      <node concept="13QW63" id="7l_c4fVC6qV" role="1N6uqs">
+        <node concept="3clFbS" id="7l_c4fVC6qX" role="2VODD2">
+          <node concept="3clFbF" id="7l_c4fVC6rM" role="3cqZAp">
+            <node concept="2YIFZM" id="7l_c4fVC6wd" role="3clFbG">
+              <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+              <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+              <node concept="2OqwBi" id="7l_c4fVC6Pt" role="37wK5m">
+                <node concept="2OqwBi" id="7l_c4fVC6IH" role="2Oq$k0">
+                  <node concept="21POm0" id="7l_c4fVC6FY" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="7l_c4fVC6LY" role="2OqNvi" />
+                </node>
+                <node concept="2RRcyG" id="7l_c4fVC6S8" role="2OqNvi">
+                  <ref role="2RRcyH" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
+                </node>
               </node>
             </node>
           </node>

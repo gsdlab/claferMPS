@@ -13,12 +13,17 @@
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -51,6 +56,8 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -144,8 +151,22 @@
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
       </concept>
+      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
+        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
+      </concept>
+      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383482742" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgument" flags="ng" index="Q6JDH">
+        <child id="1216383511839" name="argumentType" index="Q6QK4" />
+      </concept>
+      <concept id="1216390348809" name="jetbrains.mps.lang.typesystem.structure.QuickFixArgumentReference" flags="nn" index="QwW4i">
+        <reference id="1216390348810" name="quickFixArgument" index="QwW4h" />
+      </concept>
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
@@ -169,6 +190,15 @@
       <concept id="1236083146670" name="jetbrains.mps.lang.typesystem.structure.OverloadedOperatorTypeFunction" flags="in" index="3ciZUL" />
       <concept id="1236165709895" name="jetbrains.mps.lang.typesystem.structure.OverloadedOpRulesContainer" flags="ng" index="3hdX5o">
         <child id="1236165725858" name="rule" index="3he0YX" />
+      </concept>
+      <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
+        <reference id="1216388525179" name="quickFix" index="QpYPw" />
+        <child id="1210784493590" name="actualArgument" index="3Coj4f" />
+      </concept>
+      <concept id="1210784384552" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntentionArgument" flags="ng" index="3CnSsL">
+        <reference id="1216386999476" name="quickFixArgument" index="QkamJ" />
+        <child id="1210784642750" name="value" index="3CoRuB" />
       </concept>
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
@@ -1928,6 +1958,111 @@
     <node concept="1YaCAy" id="yXhLyreXPk" role="1YuTPh">
       <property role="TrG5h" value="typeExpr" />
       <ref role="1YaFvo" to="mecy:yXhLyreXNx" resolve="TypeExpr" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7l_c4fV$Gni">
+    <property role="TrG5h" value="check_PlatformTemplate" />
+    <property role="3GE5qa" value="Platform" />
+    <node concept="3clFbS" id="7l_c4fV$Gnj" role="18ibNy">
+      <node concept="3clFbJ" id="3s1LyzGuwm6" role="3cqZAp">
+        <node concept="3clFbS" id="3s1LyzGuwm7" role="3clFbx">
+          <node concept="2MkqsV" id="7l_c4fV$GU_" role="3cqZAp">
+            <node concept="3Cnw8n" id="7l_c4fV$HUT" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="7l_c4fV$H6C" resolve="InitToolPaths" />
+              <node concept="3CnSsL" id="7l_c4fV$HWe" role="3Coj4f">
+                <ref role="QkamJ" node="7l_c4fV$H6P" resolve="template" />
+                <node concept="1YBJjd" id="7l_c4fV$HWr" role="3CoRuB">
+                  <ref role="1YBMHb" node="7l_c4fV$Gnl" resolve="platformTemplate" />
+                </node>
+              </node>
+            </node>
+            <node concept="1YBJjd" id="7l_c4fV$GV5" role="2OEOjV">
+              <ref role="1YBMHb" node="7l_c4fV$Gnl" resolve="platformTemplate" />
+            </node>
+            <node concept="Xl_RD" id="7l_c4fV$GUU" role="2MkJ7o">
+              <property role="Xl_RC" value="no path to compiler specified" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbC" id="7l_c4fV_vGs" role="3clFbw">
+          <node concept="3cmrfG" id="7l_c4fV_vIN" role="3uHU7w">
+            <property role="3cmrfH" value="0" />
+          </node>
+          <node concept="2OqwBi" id="3s1LyzGEQwk" role="3uHU7B">
+            <node concept="2OqwBi" id="3s1LyzGuwqU" role="2Oq$k0">
+              <node concept="1YBJjd" id="7l_c4fV$Gr4" role="2Oq$k0">
+                <ref role="1YBMHb" node="7l_c4fV$Gnl" resolve="platformTemplate" />
+              </node>
+              <node concept="3TrcHB" id="7l_c4fV$G_n" role="2OqNvi">
+                <ref role="3TsBF5" to="mecy:vcgZZJWh2i" resolve="compiler" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7l_c4fV_v_h" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="7l_c4fV$I4l" role="3cqZAp" />
+      <node concept="3clFbH" id="7l_c4fV$I29" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="7l_c4fV$Gnl" role="1YuTPh">
+      <property role="TrG5h" value="platformTemplate" />
+      <ref role="1YaFvo" to="mecy:vcgZZJWgqM" resolve="PlatformTemplate" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="7l_c4fV$H6C">
+    <property role="3GE5qa" value="Platform" />
+    <property role="TrG5h" value="InitToolPaths" />
+    <node concept="Q6JDH" id="7l_c4fV$H6P" role="Q6Id_">
+      <property role="TrG5h" value="template" />
+      <node concept="3Tqbb2" id="7l_c4fV$H6V" role="Q6QK4">
+        <ref role="ehGHo" to="mecy:vcgZZJWgqM" resolve="PlatformTemplate" />
+      </node>
+    </node>
+    <node concept="Q5ZZ6" id="7l_c4fV$H6D" role="Q6x$H">
+      <node concept="3clFbS" id="7l_c4fV$H6E" role="2VODD2">
+        <node concept="3clFbJ" id="3s1LyzGuU24" role="3cqZAp">
+          <node concept="3clFbS" id="3s1LyzGuU25" role="3clFbx">
+            <node concept="3clFbF" id="3s1LyzGuUJV" role="3cqZAp">
+              <node concept="37vLTI" id="3s1LyzGuVOJ" role="3clFbG">
+                <node concept="Xl_RD" id="3s1LyzGuVPF" role="37vLTx">
+                  <property role="Xl_RC" value="Clafer" />
+                </node>
+                <node concept="2OqwBi" id="3s1LyzGuUN5" role="37vLTJ">
+                  <node concept="QwW4i" id="7l_c4fV$HsJ" role="2Oq$k0">
+                    <ref role="QwW4h" node="7l_c4fV$H6P" resolve="template" />
+                  </node>
+                  <node concept="3TrcHB" id="7l_c4fV$Hxe" role="2OqNvi">
+                    <ref role="3TsBF5" to="mecy:vcgZZJWh2i" resolve="compiler" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3s1LyzGENC4" role="3clFbw">
+            <node concept="2OqwBi" id="3s1LyzGuU2a" role="2Oq$k0">
+              <node concept="QwW4i" id="7l_c4fV$HlV" role="2Oq$k0">
+                <ref role="QwW4h" node="7l_c4fV$H6P" resolve="template" />
+              </node>
+              <node concept="3TrcHB" id="7l_c4fV$HrP" role="2OqNvi">
+                <ref role="3TsBF5" to="mecy:vcgZZJWh2i" resolve="compiler" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="3s1LyzGEOsu" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="7l_c4fV$H7a" role="QzAvj">
+      <node concept="3clFbS" id="7l_c4fV$H7b" role="2VODD2">
+        <node concept="3clFbF" id="3s1LyzGuRlZ" role="3cqZAp">
+          <node concept="Xl_RD" id="3s1LyzGuRlY" role="3clFbG">
+            <property role="Xl_RC" value="Initialize compiler in Template" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

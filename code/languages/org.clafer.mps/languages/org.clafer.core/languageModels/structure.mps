@@ -481,5 +481,70 @@
     <property role="1pbfSe" value="1229125991" />
     <property role="TrG5h" value="NotInScope" />
   </node>
+  <node concept="1TIwiD" id="vcgZZJWfYB">
+    <property role="1pbfSe" value="138591322" />
+    <property role="TrG5h" value="PlatformTemplateContainer" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="Platform" />
+    <property role="34LRSv" value="Platform Template Container" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="vcgZZJWgqN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="templates" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="vcgZZJWgqM" resolve="PlatformTemplate" />
+    </node>
+    <node concept="PrWs8" id="vcgZZJWfYC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="vcgZZJWgqM">
+    <property role="1pbfSe" value="138589519" />
+    <property role="3GE5qa" value="Platform" />
+    <property role="TrG5h" value="PlatformTemplate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="vcgZZJWh2i" role="1TKVEl">
+      <property role="TrG5h" value="compiler" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="vcgZZJWh2p" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="modules" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="vcgZZJWh2s" resolve="ClaferModuleRef" />
+    </node>
+    <node concept="1TJgyj" id="7l_c4fVJSvi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="compilerOptions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7l_c4fVJSum" resolve="PlatformOption" />
+    </node>
+    <node concept="PrWs8" id="vcgZZJWhU2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="vcgZZJWh2s">
+    <property role="1pbfSe" value="138586981" />
+    <property role="3GE5qa" value="Platform" />
+    <property role="TrG5h" value="ClaferModuleRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="vcgZZJWh2t" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="bl22kSm_0N" resolve="ClaferModule" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7l_c4fVJSum">
+    <property role="1pbfSe" value="1898231769" />
+    <property role="3GE5qa" value="Platform" />
+    <property role="TrG5h" value="PlatformOption" />
+    <property role="34LRSv" value="option" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7l_c4fVJSup" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
