@@ -248,7 +248,7 @@
     <property role="1pbfSe" value="48259829" />
     <ref role="1TJDcQ" to="xnt3:1Z9B1UhMN__" resolve="BaseFragment" />
     <node concept="PrWs8" id="7NFmM4jKYA3" role="PzmwI">
-      <ref role="PrY4T" to="xnt3:7NFmM4jKYA2" resolve="ITopWrapper" />
+      <ref role="PrY4T" to="xnt3:7NFmM4jKYA2" resolve="ISystemContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="7DuSdC$$2dR">

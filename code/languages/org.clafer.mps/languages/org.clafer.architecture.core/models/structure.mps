@@ -301,7 +301,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="tElement" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityDeclaration" />
     </node>
     <node concept="1TJgyj" id="4diOXa0$snf" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -316,7 +316,7 @@
   <node concept="1TIwiD" id="57FaIEVyhuB">
     <property role="1pbfSe" value="225723025" />
     <property role="3GE5qa" value="QualityModule" />
-    <property role="TrG5h" value="QualityTableElement" />
+    <property role="TrG5h" value="QualityDeclaration" />
     <ref role="1TJDcQ" node="57FaIEV_R4r" resolve="QTElement" />
     <node concept="1TJgyj" id="7XyBMvG1HC6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -337,7 +337,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="quality" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="703nGRhCNvb">
@@ -360,7 +360,7 @@
   </node>
   <node concept="1TIwiD" id="6kt45HTj4rI">
     <property role="1pbfSe" value="563521719" />
-    <property role="TrG5h" value="QualityTuple" />
+    <property role="TrG5h" value="QAConceptDeclaration" />
     <property role="3GE5qa" value="QualityModule" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6kt45HTj4s6" role="1TKVEi">
@@ -379,7 +379,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="qualities" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityTableElement" />
+      <ref role="20lvS9" node="57FaIEVyhuB" resolve="QualityDeclaration" />
     </node>
     <node concept="1TJgyj" id="3_rlKvvnEFQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -396,7 +396,7 @@
   </node>
   <node concept="1TIwiD" id="6kt45HTiMty">
     <property role="1pbfSe" value="563595331" />
-    <property role="TrG5h" value="QualityModule" />
+    <property role="TrG5h" value="QATable" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="define quality attributes" />
     <property role="3GE5qa" value="QualityModule" />
@@ -409,7 +409,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="tuples" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6kt45HTj4rI" resolve="QualityTuple" />
+      <ref role="20lvS9" node="6kt45HTj4rI" resolve="QAConceptDeclaration" />
     </node>
     <node concept="PrWs8" id="6kt45HTlWSS" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -493,7 +493,7 @@
   </node>
   <node concept="PlHQZ" id="7NFmM4jKYA2">
     <property role="1pbfSe" value="1867561821" />
-    <property role="TrG5h" value="ITopWrapper" />
+    <property role="TrG5h" value="ISystemContainer" />
   </node>
 </model>
 

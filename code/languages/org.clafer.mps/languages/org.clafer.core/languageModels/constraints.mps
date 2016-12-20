@@ -833,18 +833,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="22lmx$" id="6qd05UcJnCp" role="3uHU7B">
-                  <node concept="3clFbC" id="6qd05UcCwoZ" role="3uHU7B">
-                    <node concept="otxO1" id="6qd05UcCwp0" role="3uHU7B" />
-                    <node concept="3TUQnm" id="6qd05UcCwp1" role="3uHU7w">
-                      <ref role="3TV0OU" to="mecy:5tJ_MV8UCAJ" resolve="RangeCardinality" />
-                    </node>
-                  </node>
-                  <node concept="3clFbC" id="6qd05UcJnTR" role="3uHU7w">
-                    <node concept="otxO1" id="6qd05UcJnTS" role="3uHU7B" />
-                    <node concept="3TUQnm" id="6qd05UcJnTT" role="3uHU7w">
-                      <ref role="3TV0OU" to="mecy:6qd05UcI3o9" resolve="NumberCard" />
-                    </node>
+                <node concept="3clFbC" id="6qd05UcCwoZ" role="3uHU7B">
+                  <node concept="otxO1" id="6qd05UcCwp0" role="3uHU7B" />
+                  <node concept="3TUQnm" id="6qd05UcCwp1" role="3uHU7w">
+                    <ref role="3TV0OU" to="mecy:5tJ_MV8UCAJ" resolve="RangeCardinality" />
                   </node>
                 </node>
               </node>

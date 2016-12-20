@@ -130,7 +130,7 @@
     </node>
     <node concept="1TJgyj" id="5tJ_MV8W6jA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="explicitCard" />
+      <property role="20kJfa" value="multiplicity" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6qd05Uc_KdB" resolve="AbstractCardinality" />
     </node>

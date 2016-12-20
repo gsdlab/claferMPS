@@ -27,6 +27,11 @@
       <concept id="6300420630909770920" name="org.clafer.core.structure.SuperClaferRef" flags="ng" index="2vxcI6">
         <reference id="6300420630909770921" name="superClafer" index="2vxcI7" />
       </concept>
+      <concept id="6300420630909716911" name="org.clafer.core.structure.RangeCardinality" flags="ng" index="2vxhU1">
+        <property id="9220590295543795961" name="min" index="uIOVW" />
+        <property id="9220590295543795963" name="max" index="uIOVY" />
+        <property id="4487968718073694674" name="maxString" index="1H$nSn" />
+      </concept>
       <concept id="6300420630909714393" name="org.clafer.core.structure.Constraint" flags="ng" index="2vxuzR">
         <child id="4988923775218203830" name="expr" index="3WnoGb" />
       </concept>
@@ -40,7 +45,9 @@
       </concept>
       <concept id="204078314067922728" name="org.clafer.core.structure.Clafer" flags="ng" index="UH0sd">
         <property id="6300420630909718843" name="isAbstract" index="2vxgol" />
+        <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="6300420630909770924" name="superClafer" index="2vxcI2" />
+        <child id="6300420630910212770" name="groupCard" index="2vBoQc" />
         <child id="6300420630910100710" name="explicitCard" index="2vBZf8" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
@@ -58,7 +65,9 @@
       <concept id="561898820035743900" name="org.clafer.core.structure.ClaferModuleRef" flags="ng" index="3Cfldz">
         <reference id="561898820035743901" name="module" index="3Cfldy" />
       </concept>
+      <concept id="7389562969670798191" name="org.clafer.core.structure.XorCard" flags="ng" index="3E5GGL" />
       <concept id="7389562969670486691" name="org.clafer.core.structure.StarCard" flags="ng" index="3E6wFX" />
+      <concept id="7389562969672659468" name="org.clafer.core.structure.QuestionMarkCard" flags="ng" index="3Edj9i" />
       <concept id="7389562969672660489" name="org.clafer.core.structure.NumberCard" flags="ng" index="3Edjpn">
         <property id="7389562969672660490" name="number" index="3Edjpk" />
       </concept>
@@ -67,6 +76,45 @@
   <node concept="UzPwm" id="bl22kSotJv">
     <property role="TrG5h" value="M1" />
     <property role="3wNgFz" value="0" />
+    <node concept="UH0sd" id="2GhWfUX1AH2" role="UzTCv">
+      <property role="2vxgol" value="true" />
+      <property role="TrG5h" value="Person" />
+    </node>
+    <node concept="UH0sd" id="26KqrEnLZiS" role="UzTCv">
+      <property role="TrG5h" value="Car" />
+    </node>
+    <node concept="UH0sd" id="2GhWfUX1AF9" role="UzTCv">
+      <property role="TrG5h" value="Car" />
+      <node concept="UH0sd" id="2GhWfUX1AFh" role="2vwUiP">
+        <property role="TrG5h" value="engine" />
+      </node>
+      <node concept="UH0sd" id="2GhWfUX1AFU" role="2vwUiP">
+        <property role="TrG5h" value="wheel" />
+        <node concept="3Edjpn" id="2GhWfUX1AG5" role="2vBZf8">
+          <property role="3Edjpk" value="4" />
+        </node>
+      </node>
+      <node concept="UH0sd" id="2GhWfUX1AGi" role="2vwUiP">
+        <property role="TrG5h" value="seat" />
+        <node concept="2vxhU1" id="2GhWfUX1AGz" role="2vBZf8">
+          <property role="uIOVW" value="2" />
+          <property role="uIOVY" value="4" />
+          <property role="1H$nSn" value="4" />
+        </node>
+      </node>
+      <node concept="UH0sd" id="2GhWfUX1AFm" role="2vwUiP">
+        <property role="TrG5h" value="transmition" />
+        <node concept="UH0sd" id="2GhWfUX1AFx" role="2vwUiP">
+          <property role="TrG5h" value="automatic" />
+          <node concept="3Edj9i" id="2GhWfUX1AFH" role="2vBZf8" />
+        </node>
+        <node concept="UH0sd" id="2GhWfUX1AFA" role="2vwUiP">
+          <property role="TrG5h" value="manual" />
+          <node concept="3Edj9i" id="2GhWfUX1AFE" role="2vBZf8" />
+        </node>
+        <node concept="3E5GGL" id="2GhWfUX1AFJ" role="2vBoQc" />
+      </node>
+    </node>
   </node>
   <node concept="UzPwm" id="6MOJxHINvX$">
     <property role="TrG5h" value="M2" />
