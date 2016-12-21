@@ -14,6 +14,7 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="3" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="5e8d2011-eb6c-491f-9520-19d12014a9bc" name="org.clafer.referenceModel" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -28,6 +29,9 @@
     <import index="dajg" ref="r:dccc0d16-f4d6-4c94-91c8-38752772f06b(org.clafer.expressions.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="hghe" ref="r:aa4745ee-7d1e-4d0e-ab82-25f7ef8842a5(org.clafer.architecture.core.parameters)" />
+    <import index="t0n6" ref="r:414c079d-9eb7-4f55-bf30-49912fdadcdb(org.clafer.referenceModel.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -290,6 +294,12 @@
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <reference id="1140138128738" name="concept" index="1PxNhF" />
         <child id="1140138123956" name="leftExpression" index="1PxMeX" />
@@ -354,7 +364,7 @@
         <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="6300420630909770924" name="superClafer" index="2vxcI2" />
         <child id="6300420630910212770" name="groupCard" index="2vBoQc" />
-        <child id="6300420630910100710" name="explicitCard" index="2vBZf8" />
+        <child id="6300420630910100710" name="multiplicity" index="2vBZf8" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
@@ -722,18 +732,32 @@
                 <node concept="3clFbH" id="7$28d_YY6OI" role="3cqZAp" />
                 <node concept="3cpWs8" id="7$28d_YY6Wy" role="3cqZAp">
                   <node concept="3cpWsn" id="7$28d_YY6W_" role="3cpWs9">
-                    <property role="TrG5h" value="baseClafer" />
+                    <property role="TrG5h" value="sourceClaferAtt" />
                     <node concept="3Tqbb2" id="7$28d_YY6Ww" role="1tU5fm">
-                      <ref role="ehGHo" to="mecy:bl22kSogWC" resolve="Clafer" />
+                      <ref role="ehGHo" to="t0n6:2ocu_$GXGUs" resolve="SourceClaferAttribute" />
                     </node>
-                    <node concept="2YIFZM" id="2WKmNEGVv08" role="33vP2m">
-                      <ref role="1Pybhc" to="aaok:2WKmNEH41rs" resolve="RefUtils" />
-                      <ref role="37wK5l" to="aaok:7$28d_YWxAw" resolve="getConceptClafer" />
-                      <node concept="30H73N" id="2WKmNEGVv09" role="37wK5m" />
-                      <node concept="1iwH7S" id="2WKmNEGVv0a" role="37wK5m" />
+                    <node concept="2OqwBi" id="2ocu_$H2cdk" role="33vP2m">
+                      <node concept="1PxgMI" id="2ocu_$H2cdl" role="2Oq$k0">
+                        <ref role="1PxNhF" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+                        <node concept="2OqwBi" id="2ocu_$H2cdm" role="1PxMeX">
+                          <node concept="2OqwBi" id="2ocu_$H2cdn" role="2Oq$k0">
+                            <node concept="30H73N" id="2ocu_$H2cdo" role="2Oq$k0" />
+                            <node concept="2yIwOk" id="2ocu_$H2cdp" role="2OqNvi" />
+                          </node>
+                          <node concept="liA8E" id="2ocu_$H2cdq" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3CFZ6_" id="2ocu_$H2cdr" role="2OqNvi">
+                        <node concept="3CFYIy" id="2ocu_$H2cds" role="3CFYIz">
+                          <ref role="3CFYIx" to="t0n6:2ocu_$GXGUs" resolve="SourceClaferAttribute" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="2ocu_$H2cHq" role="3cqZAp" />
                 <node concept="3clFbF" id="7$28d_YUWDh" role="3cqZAp">
                   <node concept="22lmx$" id="7$28d_YUWDi" role="3clFbG">
                     <node concept="2OqwBi" id="7$28d_YUWDj" role="3uHU7w">
@@ -748,7 +772,7 @@
                     <node concept="2OqwBi" id="7$28d_YUWDo" role="3uHU7B">
                       <node concept="3x8VRR" id="7$28d_YUWDq" role="2OqNvi" />
                       <node concept="37vLTw" id="7$28d_YY7zI" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7$28d_YY6W_" resolve="baseClafer" />
+                        <ref role="3cqZAo" node="7$28d_YY6W_" resolve="sourceClaferAtt" />
                       </node>
                     </node>
                   </node>
@@ -798,12 +822,41 @@
                   </node>
                   <node concept="9aQIb" id="7$28d_YY0re" role="9aQIa">
                     <node concept="3clFbS" id="7$28d_YY0rf" role="9aQI4">
+                      <node concept="3cpWs8" id="2ocu_$H2a$u" role="3cqZAp">
+                        <node concept="3cpWsn" id="2ocu_$H2a$x" role="3cpWs9">
+                          <property role="TrG5h" value="sourceClaferAtt" />
+                          <node concept="3Tqbb2" id="2ocu_$H2a$s" role="1tU5fm">
+                            <ref role="ehGHo" to="t0n6:2ocu_$GXGUs" resolve="SourceClaferAttribute" />
+                          </node>
+                          <node concept="2OqwBi" id="2ocu_$H1OI1" role="33vP2m">
+                            <node concept="1PxgMI" id="2ocu_$H1IWS" role="2Oq$k0">
+                              <ref role="1PxNhF" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+                              <node concept="2OqwBi" id="2ocu_$H1HCZ" role="1PxMeX">
+                                <node concept="2OqwBi" id="2ocu_$H1snZ" role="2Oq$k0">
+                                  <node concept="30H73N" id="2ocu_$H1rbD" role="2Oq$k0" />
+                                  <node concept="2yIwOk" id="2ocu_$H1AkC" role="2OqNvi" />
+                                </node>
+                                <node concept="liA8E" id="2ocu_$H1HSP" role="2OqNvi">
+                                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getDeclarationNode():org.jetbrains.mps.openapi.model.SNode" resolve="getDeclarationNode" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3CFZ6_" id="2ocu_$H1OUv" role="2OqNvi">
+                              <node concept="3CFYIy" id="2ocu_$H1Q64" role="3CFYIz">
+                                <ref role="3CFYIx" to="t0n6:2ocu_$GXGUs" resolve="SourceClaferAttribute" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                       <node concept="3cpWs6" id="2VAdP2Tpiy9" role="3cqZAp">
-                        <node concept="2YIFZM" id="2WKmNEGVv6A" role="3cqZAk">
-                          <ref role="1Pybhc" to="aaok:2WKmNEH41rs" resolve="RefUtils" />
-                          <ref role="37wK5l" to="aaok:7$28d_YWxAw" resolve="getConceptClafer" />
-                          <node concept="30H73N" id="2WKmNEGVv6B" role="37wK5m" />
-                          <node concept="1iwH7S" id="2WKmNEGVv6C" role="37wK5m" />
+                        <node concept="2OqwBi" id="2ocu_$H2bM6" role="3cqZAk">
+                          <node concept="37vLTw" id="2ocu_$H2bA4" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2ocu_$H2a$x" resolve="sourceClaferAtt" />
+                          </node>
+                          <node concept="3TrEf2" id="2ocu_$H2bU0" role="2OqNvi">
+                            <ref role="3Tt5mk" to="t0n6:2ocu_$GZX_o" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbH" id="2VAdP2Tpiw9" role="3cqZAp" />
@@ -1025,7 +1078,7 @@
                       <node concept="30H73N" id="2QVp5ERSpQm" role="2Oq$k0" />
                       <node concept="1mIQ4w" id="2QVp5ERSpQn" role="2OqNvi">
                         <node concept="chp4Y" id="7NFmM4jKYGL" role="cj9EA">
-                          <ref role="cht4Q" to="xnt3:7NFmM4jKYA2" resolve="ITopWrapper" />
+                          <ref role="cht4Q" to="xnt3:7NFmM4jKYA2" resolve="ISystemContainer" />
                         </node>
                       </node>
                     </node>
@@ -1128,7 +1181,7 @@
                   <node concept="3cpWs3" id="2bzmd5Cz8HI" role="tz02z">
                     <node concept="10M0yZ" id="2bzmd5CzfKI" role="3uHU7B">
                       <ref role="1PxDUh" to="3636:7Ij6CMq2Ufp" resolve="ArchUtilCore" />
-                      <ref role="3cqZAo" to="3636:2bzmd5CzfCl" resolve="TMP_PREFFIX" />
+                      <ref role="3cqZAo" to="3636:2bzmd5CzfCl" resolve="TMP_PREFIX" />
                     </node>
                     <node concept="2OqwBi" id="2bzmd5Cz8jh" role="3uHU7w">
                       <node concept="37vLTw" id="2bzmd5Cz8bN" role="2Oq$k0">
@@ -1790,7 +1843,7 @@
                               </node>
                               <node concept="1mIQ4w" id="6CFB2pPMtUG" role="2OqNvi">
                                 <node concept="chp4Y" id="6CFB2pPMWkQ" role="cj9EA">
-                                  <ref role="cht4Q" to="xnt3:57FaIEVyhuB" resolve="QualityTableElement" />
+                                  <ref role="cht4Q" to="xnt3:57FaIEVyhuB" resolve="QualityDeclaration" />
                                 </node>
                               </node>
                             </node>
@@ -1832,7 +1885,7 @@
                               </node>
                               <node concept="1mIQ4w" id="6CFB2pPMva5" role="2OqNvi">
                                 <node concept="chp4Y" id="6CFB2pPMWzS" role="cj9EA">
-                                  <ref role="cht4Q" to="xnt3:57FaIEVyhuB" resolve="QualityTableElement" />
+                                  <ref role="cht4Q" to="xnt3:57FaIEVyhuB" resolve="QualityDeclaration" />
                                 </node>
                               </node>
                             </node>
@@ -1901,7 +1954,7 @@
       </node>
     </node>
     <node concept="aNPBN" id="2VAdP2TwxEW" role="aQYdv">
-      <ref role="aOQi4" to="xnt3:6kt45HTiMty" resolve="QualityModule" />
+      <ref role="aOQi4" to="xnt3:6kt45HTiMty" resolve="QATable" />
     </node>
   </node>
   <node concept="13MO4I" id="1kFIkf_ovVI">
