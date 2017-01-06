@@ -14,6 +14,8 @@
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/solutions/pluginSolution/org.clafer.core.pluginSolution.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.expressions/org.clafer.expressions.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.referenceModel/org.clafer.referenceModel.mpl" folder="referenceModel" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.slicing/org.clafer.slicing.mpl" folder="utils.slicing" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.slicing/sandbox/org.clafer.slicing.sandbox.msd" folder="utils.slicing" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.milestone/org.clafer.util.milestone.mpl" folder="utils.milestone" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.milestone/sandbox/org.clafer.util.milestone.sandbox.msd" folder="utils.milestone" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.util.tags/org.clafer.util.tags.mpl" folder="utils.tags" />
@@ -25,6 +27,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.example/org.clafer.sandbox.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.mps.build/org.clafer.mps.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.referenceModel.sandbox/org.clafer.referenceModel.sandbox.msd" folder="referenceModel" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.clafer.slices.pluginSolution/org.clafer.slices.pluginSolution.msd" folder="utils.slicing" />
       <modulePath path="$PROJECT_DIR$/solutions/org.clafer.util.milestone.pluginSolution/org.clafer.util.milestone.pluginSolution.msd" folder="utils.milestone" />
       <modulePath path="$PROJECT_DIR$/solutions/tests.clafer.architecture/tests.org.clafer.architecture.msd" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/tests/test.ex.clafer.core/test.ex.clafer.core.msd" folder="core" />

@@ -37,6 +37,7 @@
         <child id="1525516600048852957" name="fragmentRefs" index="3LX2qu" />
       </concept>
       <concept id="4835973625144381654" name="org.clafer.architecture.core.structure.ArchElement" flags="ng" index="2mZOiP">
+        <property id="7694989595702677415" name="isOptional" index="gTlvz" />
         <child id="7694989595702618530" name="superNode" index="gT77A" />
         <child id="4835973625144381739" name="contents" index="2mZOl8" />
       </concept>
@@ -997,6 +998,47 @@
   <node concept="UzPwm" id="1JOdLtDwOlO">
     <property role="3wNgFz" value="0" />
     <property role="TrG5h" value="FA_Architecture" />
+    <node concept="UzEYP" id="5u8lQlNZqNF" role="UzTCv" />
+    <node concept="UzEYP" id="5u8lQlNZqPI" role="UzTCv" />
+    <node concept="1u8h5F" id="5u8lQlNZrb3" role="UzTCv">
+      <property role="TrG5h" value="PowerWindowFAA" />
+      <node concept="2mZLT$" id="5u8lQlNZrdq" role="2mZOl8">
+        <property role="TrG5h" value="WinControl" />
+        <node concept="30r21X" id="5u8lQlNZrev" role="30r0Ui">
+          <property role="30r21Y" value="software" />
+        </node>
+      </node>
+      <node concept="2mXI97" id="5u8lQlNZrdy" role="2mZOl8">
+        <property role="TrG5h" value="WinMotor" />
+        <node concept="30r21X" id="5u8lQlNZre$" role="30r0Ui">
+          <property role="30r21Y" value="hardware" />
+        </node>
+      </node>
+      <node concept="2mZLT$" id="5u8lQlNZrdH" role="2mZOl8">
+        <property role="TrG5h" value="PinchDetction" />
+        <property role="gTlvz" value="true" />
+        <node concept="30r21X" id="5u8lQlNZreD" role="30r0Ui">
+          <property role="30r21Y" value="software" />
+        </node>
+      </node>
+      <node concept="1eXri_" id="5u8lQlNZre6" role="2mZOl8">
+        <property role="TrG5h" value="WinCmd" />
+        <node concept="ZpONE" id="5u8lQlNZreh" role="3grLmF">
+          <ref role="ZpOSt" node="5u8lQlNZrdq" resolve="WinControl" />
+        </node>
+        <node concept="ZpONE" id="5u8lQlNZrep" role="3grLm$">
+          <ref role="ZpOSt" node="5u8lQlNZrdy" resolve="WinMotor" />
+        </node>
+      </node>
+    </node>
+    <node concept="UzEYP" id="5u8lQlNZqTR" role="UzTCv" />
+    <node concept="UzEYP" id="5u8lQlNZqVX" role="UzTCv" />
+    <node concept="UzEYP" id="5u8lQlNZqY4" role="UzTCv" />
+    <node concept="UzEYP" id="5u8lQlNZr0c" role="UzTCv" />
+    <node concept="UzEYP" id="5u8lQlNZr2l" role="UzTCv" />
+    <node concept="UzEYP" id="5u8lQlNZr4v" role="UzTCv" />
+    <node concept="UzEYP" id="5u8lQlNZr6E" role="UzTCv" />
+    <node concept="UzEYP" id="5u8lQlNZr8Q" role="UzTCv" />
     <node concept="1u8h5F" id="1JOdLtDwOlP" role="UzTCv">
       <property role="TrG5h" value="faArchitecture" />
       <property role="nHvRw" value="center" />
