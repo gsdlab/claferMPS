@@ -87,23 +87,6 @@
         </node>
       </node>
     </node>
-    <node concept="2SaL7w" id="2ocu_$H43MI" role="2ZfVeh">
-      <node concept="3clFbS" id="2ocu_$H43MJ" role="2VODD2">
-        <node concept="3clFbF" id="2ocu_$H43NR" role="3cqZAp">
-          <node concept="2OqwBi" id="2ocu_$H448w" role="3clFbG">
-            <node concept="2OqwBi" id="2ocu_$H43Se" role="2Oq$k0">
-              <node concept="2Sf5sV" id="2ocu_$H43NQ" role="2Oq$k0" />
-              <node concept="3CFZ6_" id="2ocu_$H440S" role="2OqNvi">
-                <node concept="3CFYIy" id="2ocu_$H443B" role="3CFYIz">
-                  <ref role="3CFYIx" to="on7c:2ocu_$H3VG$" resolve="SliceCondition" />
-                </node>
-              </node>
-            </node>
-            <node concept="3w_OXm" id="2ocu_$H44jT" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="2S6QgY" id="5u8lQlNZ2d9">
     <property role="TrG5h" value="addController" />

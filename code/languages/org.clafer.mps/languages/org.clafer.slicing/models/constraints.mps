@@ -314,8 +314,5 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="1hJrUfbpXfv">
-    <ref role="1M2myG" to="on7c:2ocu_$H3Njo" resolve="SliceTagDeclaration" />
-  </node>
 </model>
 

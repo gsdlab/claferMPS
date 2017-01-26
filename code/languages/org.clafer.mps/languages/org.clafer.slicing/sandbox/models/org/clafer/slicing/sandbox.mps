@@ -49,7 +49,7 @@
         <child id="6825476687691337713" name="contents" index="Idr$j" />
       </concept>
       <concept id="2741700796588473124" name="org.clafer.slicing.structure.SliceCondition" flags="ng" index="b0W5X">
-        <child id="2741700796588505462" name="tag" index="b74cJ" />
+        <child id="2741700796588505462" name="tags" index="b74cJ" />
       </concept>
       <concept id="2741700796588505417" name="org.clafer.slicing.structure.SliceTagRef" flags="ng" index="b74cg">
         <reference id="2741700796588505418" name="tag" index="b74cj" />
@@ -531,6 +531,14 @@
     <node concept="UH0sd" id="2VAdP2ThqSZ" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="HardwareConnector" />
+      <node concept="b0W5X" id="1QamZildVzS" role="lGtFl">
+        <node concept="b74cg" id="1QamZildVzW" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZl3" resolve="CT" />
+        </node>
+        <node concept="b74cg" id="1QamZildV$2" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZli" resolve="PT" />
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="2VAdP2ThqT0" role="UzTCv" />
     <node concept="UH0sd" id="2VAdP2ThqT1" role="UzTCv">
@@ -555,6 +563,11 @@
           </node>
         </node>
       </node>
+      <node concept="b0W5X" id="1QamZildV$6" role="lGtFl">
+        <node concept="b74cg" id="1QamZildV$8" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZli" resolve="PT" />
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="2VAdP2ThqT9" role="UzTCv" />
     <node concept="UH0sd" id="2VAdP2ThqTa" role="UzTCv">
@@ -563,12 +576,22 @@
       <node concept="2vxcI6" id="2VAdP2ThqTb" role="2vxcI2">
         <ref role="2vxcI7" node="2VAdP2ThqT1" resolve="PowerConnector" />
       </node>
+      <node concept="b0W5X" id="1QamZildV$a" role="lGtFl">
+        <node concept="b74cg" id="1QamZildV$e" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZli" resolve="PT" />
+        </node>
+      </node>
     </node>
     <node concept="UH0sd" id="2VAdP2ThqTc" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="DevicePowerConnector" />
       <node concept="2vxcI6" id="2VAdP2ThqTd" role="2vxcI2">
         <ref role="2vxcI7" node="2VAdP2ThqT1" resolve="PowerConnector" />
+      </node>
+      <node concept="b0W5X" id="1QamZildV$h" role="lGtFl">
+        <node concept="b74cg" id="1QamZildV$j" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZli" resolve="PT" />
+        </node>
       </node>
     </node>
     <node concept="UzEYP" id="2VAdP2ThqTe" role="UzTCv" />
@@ -617,6 +640,16 @@
             </node>
           </node>
         </node>
+        <node concept="b0W5X" id="1QamZildV_G" role="lGtFl">
+          <node concept="b74cg" id="1QamZildVAC" role="b74cJ">
+            <ref role="b74cj" node="1hJrUfbpZkg" resolve="DPL" />
+          </node>
+        </node>
+      </node>
+      <node concept="b0W5X" id="1QamZildV$l" role="lGtFl">
+        <node concept="b74cg" id="1QamZildV_E" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZl3" resolve="CT" />
+        </node>
       </node>
     </node>
     <node concept="UzEYP" id="2VAdP2ThqTx" role="UzTCv" />
@@ -626,12 +659,22 @@
       <node concept="2vxcI6" id="2VAdP2ThqTz" role="2vxcI2">
         <ref role="2vxcI7" node="2VAdP2ThqTf" resolve="HardwareDataConnector" />
       </node>
+      <node concept="b0W5X" id="1QamZildVAE" role="lGtFl">
+        <node concept="b74cg" id="1QamZildVAG" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZl3" resolve="CT" />
+        </node>
+      </node>
     </node>
     <node concept="UH0sd" id="2VAdP2ThqT$" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="AnalogDataConnector" />
       <node concept="2vxcI6" id="2VAdP2ThqT_" role="2vxcI2">
         <ref role="2vxcI7" node="2VAdP2ThqTf" resolve="HardwareDataConnector" />
+      </node>
+      <node concept="b0W5X" id="1QamZildVAI" role="lGtFl">
+        <node concept="b74cg" id="1QamZildVAK" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZl3" resolve="CT" />
+        </node>
       </node>
     </node>
     <node concept="UzEYP" id="2VAdP2ThqTA" role="UzTCv" />
@@ -681,8 +724,12 @@
           <property role="TrG5h" value="FlexRay" />
         </node>
       </node>
+      <node concept="b0W5X" id="1QamZildVAM" role="lGtFl">
+        <node concept="b74cg" id="1QamZildVAR" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZl3" resolve="CT" />
+        </node>
+      </node>
     </node>
-    <node concept="UzEYP" id="2VAdP2ThqTS" role="UzTCv" />
     <node concept="UH0sd" id="2VAdP2ThqTT" role="UzTCv">
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="LogicalBusBridge" />
@@ -727,11 +774,35 @@
       <node concept="2vxcI6" id="2VAdP2ThqU9" role="2vxcI2">
         <ref role="2vxcI7" node="2VAdP2ThqTf" resolve="HardwareDataConnector" />
       </node>
+      <node concept="b0W5X" id="1QamZildVAT" role="lGtFl">
+        <node concept="b74cg" id="1QamZildVB0" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZl3" resolve="CT" />
+        </node>
+      </node>
     </node>
     <node concept="3GEVxB" id="2ocu_$H42wr" role="UzTCp">
       <ref role="3GEb4d" node="2ocu_$H3PDc" resolve="Slices" />
     </node>
     <node concept="$vNDO" id="5u8lQlNZ6l2" role="lGtFl" />
+  </node>
+  <node concept="UzPwm" id="1QamZildNTI">
+    <property role="3wNgFz" value="0" />
+    <property role="TrG5h" value="Slices2" />
+    <node concept="3GEVxB" id="1QamZildNTJ" role="UzTCp">
+      <ref role="3GEb4d" node="2ocu_$H3PDc" resolve="Slices" />
+    </node>
+    <node concept="UH0sd" id="1QamZildNTL" role="UzTCv">
+      <property role="TrG5h" value="Slice1" />
+      <node concept="b0W5X" id="1QamZildNU2" role="lGtFl">
+        <node concept="b74cg" id="1QamZildNU4" role="b74cJ">
+          <ref role="b74cj" node="1hJrUfbpZk4" resolve="FM" />
+        </node>
+      </node>
+    </node>
+    <node concept="UzEYP" id="1QamZildNTN" role="UzTCv" />
+    <node concept="UH0sd" id="1QamZildNTU" role="UzTCv">
+      <property role="TrG5h" value="Slice2" />
+    </node>
   </node>
 </model>
 
