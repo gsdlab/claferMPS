@@ -791,6 +791,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="7Vqo7nYDeer" role="3bR37C">
+          <node concept="1Busua" id="7Vqo7nYDees" role="1SiIV1">
+            <ref role="1Busuk" node="7Vqo7nYDdTX" resolve="org.clafer.slicing" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7NFmM4jKXYk" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -934,6 +939,36 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7Vqo7nYDdx7" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDdx8" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:11w71Xmfzpd" resolve="org.xml" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Vqo7nYDdx9" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDdxa" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:2N1CSrzSJt4" resolve="com.mbeddr.mpsutil.plantuml.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Vqo7nYDdxb" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDdxc" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Vqo7nYDdxd" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDdxe" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:31bAEZ0srt5" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Vqo7nYDdxf" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDdxg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:2N1CSrzsp0s" resolve="com.mbeddr.mpsutil.serializer.xml" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7ub7faJ4dw7" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1022,6 +1057,12 @@
             <node concept="3bR9La" id="7NFmM4jL628" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="7NFmM4jL5Yr" resolve="org.clafer.architecture" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="7Vqo7nYDdAT" role="3bR37C">
+            <node concept="3bR9La" id="7Vqo7nYDdAU" role="1SiIV1">
+              <property role="3bR36h" value="false" />
+              <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
             </node>
           </node>
         </node>
@@ -1173,6 +1214,56 @@
         <node concept="1SiIV0" id="4sEmwuuIOXl" role="3bR37C">
           <node concept="1Busua" id="4sEmwuuIOXm" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="7Vqo7nYDdTX" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.clafer.slicing" />
+        <property role="3LESm3" value="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" />
+        <node concept="398BVA" id="7Vqo7nYDe3Y" role="3LF7KH">
+          <ref role="398BVh" node="4sEmwuuQokW" resolve="project.root" />
+          <node concept="2Ry0Ak" id="7Vqo7nYDe7e" role="iGT6I">
+            <property role="2Ry0Am" value="code" />
+            <node concept="2Ry0Ak" id="7Vqo7nYDeat" role="2Ry0An">
+              <property role="2Ry0Am" value="languages" />
+              <node concept="2Ry0Ak" id="7Vqo7nYDeay" role="2Ry0An">
+                <property role="2Ry0Am" value="org.clafer.mps" />
+                <node concept="2Ry0Ak" id="7Vqo7nYDeaB" role="2Ry0An">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="7Vqo7nYDeaG" role="2Ry0An">
+                    <property role="2Ry0Am" value="org.clafer.slicing" />
+                    <node concept="2Ry0Ak" id="7Vqo7nYDeaL" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.clafer.slicing.mpl" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Vqo7nYDeaN" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDeaO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Vqo7nYDeaP" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDeaQ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Vqo7nYDeaR" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDeaS" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7Vqo7nYDeaT" role="3bR37C">
+          <node concept="3bR9La" id="7Vqo7nYDeaU" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="90a9:6SVXTgIejl1" resolve="de.itemis.mps.editor.celllayout.runtime" />
           </node>
         </node>
       </node>

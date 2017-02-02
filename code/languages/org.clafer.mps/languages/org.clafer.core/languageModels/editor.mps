@@ -5,6 +5,12 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -83,6 +89,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1214320119173" name="jetbrains.mps.lang.editor.structure.SideTransformAnchorTagStyleClassItem" flags="ln" index="2V7CMv">
         <property id="1214320119174" name="tag" index="2V7CMs" />
       </concept>
@@ -286,6 +293,9 @@
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
       <concept id="767145758118872824" name="jetbrains.mps.lang.actions.structure.NF_Node_InsertNewNextSiblingOperation" flags="nn" index="2DeJnS" />
     </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
         <reference id="1204851882689" name="link" index="26LbJp" />
@@ -370,6 +380,15 @@
   </node>
   <node concept="24kQdi" id="bl22kSoeSe">
     <ref role="1XX52x" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
+    <node concept="3EZMnI" id="1b24ZrM4kjU" role="6VMZX">
+      <node concept="3F0ifn" id="1b24ZrM4kjW" role="3EZMnx">
+        <property role="3F0ifm" value="Text Generation Priority " />
+      </node>
+      <node concept="3F0A7n" id="1b24ZrM4krn" role="3EZMnx">
+        <ref role="1NtTu8" to="mecy:1b24ZrM3L$l" resolve="textGenPriority" />
+      </node>
+      <node concept="2iRfu4" id="1b24ZrM4kjX" role="2iSdaV" />
+    </node>
     <node concept="1gkWj3" id="7NL61LdmCYF" role="2wV5jI">
       <property role="1gkWj2" value="true" />
       <node concept="3EZMnI" id="5_l8w1EmTdD" role="1gkWjp">
@@ -685,15 +704,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3EZMnI" id="1b24ZrM4kjU" role="6VMZX">
-      <node concept="3F0ifn" id="1b24ZrM4kjW" role="3EZMnx">
-        <property role="3F0ifm" value="Text Generation Priority " />
-      </node>
-      <node concept="3F0A7n" id="1b24ZrM4krn" role="3EZMnx">
-        <ref role="1NtTu8" to="mecy:1b24ZrM3L$l" resolve="textGenPriority" />
-      </node>
-      <node concept="2iRfu4" id="1b24ZrM4kjX" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="bl22kSohOr">
@@ -2234,6 +2244,25 @@
     <ref role="1XX52x" to="mecy:7l_c4fVJSum" resolve="PlatformOption" />
     <node concept="3F0A7n" id="7l_c4fVJSvf" role="2wV5jI">
       <ref role="1NtTu8" to="mecy:7l_c4fVJSup" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1X1_h3Tm7OT">
+    <ref role="1XX52x" to="mecy:1X1_h3Tm7NE" resolve="TextGenAnnotation" />
+    <node concept="3EZMnI" id="1X1_h3TiQUc" role="2wV5jI">
+      <node concept="3EZMnI" id="1X1_h3TiQUq" role="3EZMnx">
+        <node concept="VPM3Z" id="1X1_h3TiQUs" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="1X1_h3TiQUu" role="3EZMnx">
+          <property role="3F0ifm" value="Generate Text: " />
+        </node>
+        <node concept="27S6Sx" id="7Vqo7nYyd6C" role="3EZMnx">
+          <ref role="1NtTu8" to="mecy:1X1_h3TiRor" resolve="textGen" />
+        </node>
+        <node concept="2iRfu4" id="1X1_h3TiQUv" role="2iSdaV" />
+      </node>
+      <node concept="2SsqMj" id="1X1_h3Tm7Qz" role="3EZMnx" />
+      <node concept="2iRkQZ" id="1X1_h3TiQUf" role="2iSdaV" />
     </node>
   </node>
 </model>

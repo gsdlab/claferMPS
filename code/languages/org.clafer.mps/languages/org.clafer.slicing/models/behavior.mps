@@ -97,12 +97,18 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
+        <child id="1140725362529" name="linkTarget" index="2oxUTC" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -454,6 +460,66 @@
             </node>
             <node concept="ANE8D" id="1QamZild3SC" role="2OqNvi" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="2GoOGWLlTsI" role="13h7CS">
+      <property role="TrG5h" value="addTag" />
+      <node concept="3Tm1VV" id="2GoOGWLlTsJ" role="1B3o_S" />
+      <node concept="3cqZAl" id="2GoOGWLlUd4" role="3clF45" />
+      <node concept="3clFbS" id="2GoOGWLlTsL" role="3clF47">
+        <node concept="3cpWs8" id="2GoOGWLlUdj" role="3cqZAp">
+          <node concept="3cpWsn" id="2GoOGWLlUdm" role="3cpWs9">
+            <property role="TrG5h" value="ref" />
+            <node concept="3Tqbb2" id="2GoOGWLlUdi" role="1tU5fm">
+              <ref role="ehGHo" to="on7c:2ocu_$H43_9" resolve="SliceTagRef" />
+            </node>
+            <node concept="2ShNRf" id="2GoOGWLlUdL" role="33vP2m">
+              <node concept="3zrR0B" id="2GoOGWLlUdJ" role="2ShVmc">
+                <node concept="3Tqbb2" id="2GoOGWLlUdK" role="3zrR0E">
+                  <ref role="ehGHo" to="on7c:2ocu_$H43_9" resolve="SliceTagRef" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GoOGWLlUe8" role="3cqZAp">
+          <node concept="2OqwBi" id="2GoOGWLlUne" role="3clFbG">
+            <node concept="2OqwBi" id="2GoOGWLlUfk" role="2Oq$k0">
+              <node concept="37vLTw" id="2GoOGWLlUe6" role="2Oq$k0">
+                <ref role="3cqZAo" node="2GoOGWLlUdm" resolve="ref" />
+              </node>
+              <node concept="3TrEf2" id="2GoOGWLlUi9" role="2OqNvi">
+                <ref role="3Tt5mk" to="on7c:2ocu_$H43_a" />
+              </node>
+            </node>
+            <node concept="2oxUTD" id="2GoOGWLlUz0" role="2OqNvi">
+              <node concept="37vLTw" id="2GoOGWLlU$0" role="2oxUTC">
+                <ref role="3cqZAo" node="2GoOGWLlUd8" resolve="tag" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2GoOGWLlUFE" role="3cqZAp">
+          <node concept="2OqwBi" id="2GoOGWLlVb8" role="3clFbG">
+            <node concept="2OqwBi" id="2GoOGWLlUHO" role="2Oq$k0">
+              <node concept="13iPFW" id="2GoOGWLlUFC" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2GoOGWLlUMs" role="2OqNvi">
+                <ref role="3TtcxE" to="on7c:5u8lQlNXQPu" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="2GoOGWLlVT1" role="2OqNvi">
+              <node concept="37vLTw" id="2GoOGWLlVZq" role="25WWJ7">
+                <ref role="3cqZAo" node="2GoOGWLlUdm" resolve="ref" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="2GoOGWLlUd8" role="3clF46">
+        <property role="TrG5h" value="tag" />
+        <node concept="3Tqbb2" id="2GoOGWLlUd7" role="1tU5fm">
+          <ref role="ehGHo" to="on7c:2ocu_$H3Njo" resolve="SliceTagDeclaration" />
         </node>
       </node>
     </node>

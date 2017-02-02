@@ -23,6 +23,7 @@
         <dependency reexport="false">8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)</dependency>
         <dependency reexport="false">e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)</dependency>
         <dependency reexport="false">34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)</dependency>
+        <dependency reexport="false">25b4f8db-5167-4494-9399-64188ee2fa64(org.clafer.slicing#2741700796588433415)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -95,6 +96,8 @@
         <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
         <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
         <module reference="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" version="0" />
+        <module reference="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4(org.clafer.slicing)" version="0" />
+        <module reference="25b4f8db-5167-4494-9399-64188ee2fa64(org.clafer.slicing#2741700796588433415)" version="0" />
         <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
         <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
       </dependencyVersions>
@@ -107,34 +110,30 @@
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
-            <generator generatorUID="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" />
-            <external-mapping>
-              <mapping-node modelUID="r:acf0789f-dd9f-4a0a-acfb-b0f43541413e(org.clafer.referenceModel.generator.template.main@generator)" nodeID="6798851666866987619" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-        <mapping-priority-rule kind="strictly_together">
-          <greater-priority-mapping>
-            <generator generatorUID="bb0db9c3-9f73-4b16-8d92-4c0315ca3ad5(org.clafer.architecture#5749248055796882063)" />
-            <external-mapping>
-              <mapping-node modelUID="r:05bc933b-fedb-4e9e-afee-dab27825d955(org.clafer.architecture.generator.template.main@generator)" nodeID="5749248055796882064" />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" />
-            <external-mapping>
-              <mapping-set>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6496364123346699425" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="9943029708740935" />
-                </mapping-set-element>
-                <mapping-set-element>
-                  <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6977959945969476357" />
-                </mapping-set-element>
-              </mapping-set>
-            </external-mapping>
+            <mapping-set>
+              <mapping-set-element>
+                <generator generatorUID="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" />
+                <external-mapping>
+                  <mapping-node modelUID="r:acf0789f-dd9f-4a0a-acfb-b0f43541413e(org.clafer.referenceModel.generator.template.main@generator)" nodeID="6798851666866987619" />
+                </external-mapping>
+              </mapping-set-element>
+              <mapping-set-element>
+                <generator generatorUID="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" />
+                <external-mapping>
+                  <mapping-set>
+                    <mapping-set-element>
+                      <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6496364123346699425" />
+                    </mapping-set-element>
+                    <mapping-set-element>
+                      <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="9943029708740935" />
+                    </mapping-set-element>
+                    <mapping-set-element>
+                      <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6977959945969476357" />
+                    </mapping-set-element>
+                  </mapping-set>
+                </external-mapping>
+              </mapping-set-element>
+            </mapping-set>
           </lesser-priority-mapping>
         </mapping-priority-rule>
       </mapping-priorities>
@@ -201,6 +200,7 @@
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
     <language id="8d4e2a78-2e34-46b0-903b-f624343daeaa" fqName="org.clafer.expressions" version="1" />
     <language id="5e8d2011-eb6c-491f-9520-19d12014a9bc" fqName="org.clafer.referenceModel" version="0" />
+    <language id="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" fqName="org.clafer.slicing" version="0" />
     <language id="e9e86950-9616-4c00-85d2-04b82bc81259" fqName="org.clafer.util.milestone" version="0" />
     <language id="763983de-9550-4aa7-a552-5bc929753997" fqName="org.clafer.util.tags" version="0" />
   </languageVersions>
@@ -248,6 +248,7 @@
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
     <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
+    <module reference="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4(org.clafer.slicing)" version="0" />
     <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
     <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
   </dependencyVersions>
