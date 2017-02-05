@@ -88,7 +88,6 @@
         <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
         <module reference="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" version="1" />
         <module reference="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" version="0" />
-        <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
         <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
         <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
         <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
@@ -219,9 +218,6 @@
     <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
     <module reference="96569509-ecfc-4944-b6c9-075faf02fe2c(org.xml)" version="0" />
   </dependencyVersions>
-  <runtime>
-    <dependency reexport="false">0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)</dependency>
-  </runtime>
   <extendedLanguages>
     <extendedLanguage>137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>

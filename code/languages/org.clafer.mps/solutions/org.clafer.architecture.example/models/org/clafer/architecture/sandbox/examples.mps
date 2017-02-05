@@ -52,6 +52,17 @@
         <child id="3246930885582290884" name="sourceExpr" index="3grLmF" />
       </concept>
     </language>
+    <language id="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" name="org.clafer.slicing">
+      <concept id="2741700796588473124" name="org.clafer.slicing.structure.SliceCondition" flags="ng" index="b0W5X">
+        <child id="2741700796588505462" name="tags" index="b74cJ" />
+      </concept>
+      <concept id="2741700796588505417" name="org.clafer.slicing.structure.SliceTagRef" flags="ng" index="b74cg">
+        <reference id="2741700796588505418" name="tag" index="b74cj" />
+      </concept>
+      <concept id="6307387371381288209" name="org.clafer.slicing.structure.SliceController" flags="ng" index="$vNDO">
+        <child id="6307387371381288286" name="slices" index="$vNCV" />
+      </concept>
+    </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
       <concept id="7694989595702755858" name="org.clafer.architecture.structure.Deployment" flags="ng" index="gYDDm" />
       <concept id="8674886736249155476" name="org.clafer.architecture.structure.SmartDeviceType" flags="ng" index="kwSKi" />
@@ -172,6 +183,9 @@
     <node concept="3GEVxB" id="1JOdLtDy$Wb" role="UzTCp">
       <ref role="3GEb4d" node="1JOdLtDy$L9" resolve="Device_Node_Classification" />
     </node>
+    <node concept="3GEVxB" id="3MxXXebphm8" role="UzTCp">
+      <ref role="3GEb4d" to="t4ow:3MxXXebphlY" resolve="Slices" />
+    </node>
     <node concept="36Bm0V" id="1JOdLtDy$Wd" role="UzTCv">
       <property role="TrG5h" value="comTopology" />
       <node concept="3D38lq" id="7NFmM4jmNqf" role="2mZOl8">
@@ -182,6 +196,11 @@
         <node concept="ZpONE" id="7NFmM4jmNqQ" role="3grLm$">
           <ref role="ZpOSt" node="1JOdLtDy$Lk" resolve="smartDNode" />
         </node>
+        <node concept="b0W5X" id="3MxXXebphlC" role="lGtFl">
+          <node concept="b74cg" id="3MxXXebphmj" role="b74cJ">
+            <ref role="b74cj" to="t4ow:3MxXXebphlZ" resolve="Test" />
+          </node>
+        </node>
       </node>
       <node concept="36Bmbw" id="7NFmM4jmNrA" role="2mZOl8">
         <property role="TrG5h" value="ddConnector" />
@@ -190,6 +209,11 @@
         </node>
         <node concept="ZpONE" id="7NFmM4jmNsd" role="3grLm$">
           <ref role="ZpOSt" node="1JOdLtDy$LI" resolve="power_smart_electr_DNode" />
+        </node>
+        <node concept="b0W5X" id="3MxXXebpoMn" role="lGtFl">
+          <node concept="b74cg" id="3MxXXebpoMp" role="b74cJ">
+            <ref role="b74cj" to="t4ow:3MxXXebphmn" resolve="Test2" />
+          </node>
         </node>
       </node>
       <node concept="36Bm5n" id="1JOdLtDy$XW" role="2mZOl8">
@@ -703,6 +727,11 @@
         </node>
       </node>
     </node>
+    <node concept="$vNDO" id="3MxXXebphm1" role="lGtFl">
+      <node concept="b74cg" id="3MxXXebphml" role="$vNCV">
+        <ref role="b74cj" to="t4ow:3MxXXebphlZ" resolve="Test" />
+      </node>
+    </node>
   </node>
   <node concept="UzPwm" id="1JOdLtDy$L9">
     <property role="3wNgFz" value="0" />
@@ -774,8 +803,8 @@
       <property role="TrG5h" value="depl" />
       <node concept="UzEYP" id="1JOdLtDy_j2" role="2mZOl8" />
       <node concept="3KIKab" id="1JOdLtDy_j5" role="3LX2qu">
-        <node concept="ZpONE" id="1JOdLtDy_j9" role="3LLIXq">
-          <ref role="ZpOSt" node="1JOdLtDwOlP" resolve="faArchitecture" />
+        <node concept="ZpONE" id="3MxXXebpqt8" role="3LLIXq">
+          <ref role="ZpOSt" node="5u8lQlNZrb3" resolve="PowerWindowFAA" />
         </node>
       </node>
       <node concept="3KIKac" id="1JOdLtDy_jo" role="3LX2qu">
@@ -1030,10 +1059,22 @@
           <ref role="ZpOSt" node="5u8lQlNZrdy" resolve="WinMotor" />
         </node>
       </node>
+      <node concept="b0W5X" id="3MxXXebppB3" role="lGtFl">
+        <node concept="b74cg" id="3MxXXebppB5" role="b74cJ">
+          <ref role="b74cj" to="t4ow:3MxXXebphlZ" resolve="Test" />
+        </node>
+      </node>
     </node>
     <node concept="UzEYP" id="5u8lQlNZqTR" role="UzTCv" />
     <node concept="UzEYP" id="5u8lQlNZqVX" role="UzTCv" />
-    <node concept="UzEYP" id="5u8lQlNZqY4" role="UzTCv" />
+    <node concept="2l49t0" id="3MxXXebpraX" role="UzTCv">
+      <property role="TrG5h" value="dn" />
+      <node concept="b0W5X" id="3MxXXebprdo" role="lGtFl">
+        <node concept="b74cg" id="3MxXXebprdq" role="b74cJ">
+          <ref role="b74cj" to="t4ow:3MxXXebphmn" resolve="Test2" />
+        </node>
+      </node>
+    </node>
     <node concept="UzEYP" id="5u8lQlNZr0c" role="UzTCv" />
     <node concept="UzEYP" id="5u8lQlNZr2l" role="UzTCv" />
     <node concept="UzEYP" id="5u8lQlNZr4v" role="UzTCv" />
@@ -1401,6 +1442,19 @@
           </node>
         </node>
       </node>
+      <node concept="b0W5X" id="3MxXXebppB7" role="lGtFl">
+        <node concept="b74cg" id="3MxXXebppC3" role="b74cJ">
+          <ref role="b74cj" to="t4ow:3MxXXebphmn" resolve="Test2" />
+        </node>
+      </node>
+    </node>
+    <node concept="$vNDO" id="3MxXXebppAU" role="lGtFl">
+      <node concept="b74cg" id="3MxXXebppB0" role="$vNCV">
+        <ref role="b74cj" to="t4ow:3MxXXebphlZ" resolve="Test" />
+      </node>
+    </node>
+    <node concept="3GEVxB" id="3MxXXebppAY" role="UzTCp">
+      <ref role="3GEb4d" to="t4ow:3MxXXebphlY" resolve="Slices" />
     </node>
   </node>
 </model>

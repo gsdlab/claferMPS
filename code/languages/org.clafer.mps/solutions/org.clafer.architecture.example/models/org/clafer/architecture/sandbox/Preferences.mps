@@ -2,6 +2,7 @@
 <model ref="r:6d17692a-3f8a-4284-99d1-f0ae20649700(org.clafer.architecture.sandbox.preferences)">
   <persistence version="9" />
   <languages>
+    <use id="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" name="org.clafer.slicing" version="0" />
     <devkit ref="ae43b4a1-760c-45a1-9b50-27b4612b75e3(org.clafer.architecture.devkit)" />
   </languages>
   <imports>
@@ -31,18 +32,24 @@
       <concept id="7285997757218705936" name="org.clafer.architecture.core.structure.ArchConceptRef" flags="ng" index="sjk9b">
         <reference id="7285997757218705940" name="archConcept" index="sjk9f" />
       </concept>
-      <concept id="7285997757218440942" name="org.clafer.architecture.core.structure.QualityTuple" flags="ng" index="sklqP">
+      <concept id="7285997757218440942" name="org.clafer.architecture.core.structure.QAConceptDeclaration" flags="ng" index="sklqP">
         <child id="7285997757218440966" name="archConcept" index="skltt" />
         <child id="7285997757218441139" name="qualities" index="sklvC" />
         <child id="6451249962562076661" name="content" index="1YhcTs" />
       </concept>
-      <concept id="7285997757218367330" name="org.clafer.architecture.core.structure.QualityModule" flags="ng" index="slzsT">
+      <concept id="7285997757218367330" name="org.clafer.architecture.core.structure.QATable" flags="ng" index="slzsT">
         <property id="2181707870707196839" name="visible" index="3jqXwo" />
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
       <concept id="8071399195256502219" name="org.clafer.architecture.core.structure.QualityThisExpr" flags="ng" index="2xC6$6" />
-      <concept id="5902858924256204711" name="org.clafer.architecture.core.structure.QualityTableElement" flags="ng" index="3EozPd">
+      <concept id="5902858924256204711" name="org.clafer.architecture.core.structure.QualityDeclaration" flags="ng" index="3EozPd">
         <child id="9179073984346905094" name="constraints" index="2jp4kx" />
+      </concept>
+    </language>
+    <language id="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" name="org.clafer.slicing">
+      <concept id="2741700796588438744" name="org.clafer.slicing.structure.SliceTagDeclaration" flags="ng" index="b0OU1" />
+      <concept id="2741700796588433417" name="org.clafer.slicing.structure.ConfigurationModel" flags="ng" index="b0PDg">
+        <child id="6825476687691337713" name="contents" index="Idr$j" />
       </concept>
     </language>
     <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" name="org.clafer.architecture">
@@ -187,6 +194,15 @@
       <node concept="sjk9b" id="1JOdLtDwOW0" role="skltt">
         <ref role="sjk9f" to="ddau:1QRywDjgzUJ" resolve="FunctionConnector" />
       </node>
+    </node>
+  </node>
+  <node concept="b0PDg" id="3MxXXebphlY">
+    <property role="TrG5h" value="Slices" />
+    <node concept="b0OU1" id="3MxXXebphlZ" role="Idr$j">
+      <property role="TrG5h" value="Test" />
+    </node>
+    <node concept="b0OU1" id="3MxXXebphmn" role="Idr$j">
+      <property role="TrG5h" value="Test2" />
     </node>
   </node>
 </model>

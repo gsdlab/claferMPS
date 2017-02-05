@@ -9,6 +9,7 @@
   <dependencies>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
+    <dependency reexport="false">0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)</usedDevKit>
@@ -87,6 +88,7 @@
     <module reference="642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+    <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
     <module reference="925f4a66-e822-41c9-89f3-e1efeb4715ec(org.clafer.architecture.sandbox)" version="0" />
   </dependencyVersions>
 </solution>

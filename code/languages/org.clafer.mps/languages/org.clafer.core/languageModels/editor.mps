@@ -89,7 +89,6 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
-      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1214320119173" name="jetbrains.mps.lang.editor.structure.SideTransformAnchorTagStyleClassItem" flags="ln" index="2V7CMv">
         <property id="1214320119174" name="tag" index="2V7CMs" />
       </concept>
@@ -292,9 +291,6 @@
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
       <concept id="767145758118872824" name="jetbrains.mps.lang.actions.structure.NF_Node_InsertNewNextSiblingOperation" flags="nn" index="2DeJnS" />
-    </language>
-    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
-      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204851882688" name="jetbrains.mps.lang.smodel.structure.LinkRefQualifier" flags="ng" index="26LbJo">
@@ -2244,25 +2240,6 @@
     <ref role="1XX52x" to="mecy:7l_c4fVJSum" resolve="PlatformOption" />
     <node concept="3F0A7n" id="7l_c4fVJSvf" role="2wV5jI">
       <ref role="1NtTu8" to="mecy:7l_c4fVJSup" resolve="value" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="1X1_h3Tm7OT">
-    <ref role="1XX52x" to="mecy:1X1_h3Tm7NE" resolve="TextGenAnnotation" />
-    <node concept="3EZMnI" id="1X1_h3TiQUc" role="2wV5jI">
-      <node concept="3EZMnI" id="1X1_h3TiQUq" role="3EZMnx">
-        <node concept="VPM3Z" id="1X1_h3TiQUs" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="1X1_h3TiQUu" role="3EZMnx">
-          <property role="3F0ifm" value="Generate Text: " />
-        </node>
-        <node concept="27S6Sx" id="7Vqo7nYyd6C" role="3EZMnx">
-          <ref role="1NtTu8" to="mecy:1X1_h3TiRor" resolve="textGen" />
-        </node>
-        <node concept="2iRfu4" id="1X1_h3TiQUv" role="2iSdaV" />
-      </node>
-      <node concept="2SsqMj" id="1X1_h3Tm7Qz" role="3EZMnx" />
-      <node concept="2iRkQZ" id="1X1_h3TiQUf" role="2iSdaV" />
     </node>
   </node>
 </model>

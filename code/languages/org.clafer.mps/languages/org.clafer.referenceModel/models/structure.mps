@@ -73,5 +73,22 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="1X1_h3TDrbf">
+    <property role="1pbfSe" value="417810399" />
+    <property role="TrG5h" value="RefModelTargetAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="1X1_h3TDrbk" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
+    </node>
+    <node concept="M6xJ_" id="1X1_h3TDrbg" role="lGtFl">
+      <property role="Hh88m" value="refModelTarget" />
+      <node concept="trNpa" id="1X1_h3TDrbi" role="EQaZv">
+        <ref role="trN6q" to="mecy:bl22kSm_0N" resolve="ClaferModule" />
+      </node>
+    </node>
+  </node>
 </model>
 
