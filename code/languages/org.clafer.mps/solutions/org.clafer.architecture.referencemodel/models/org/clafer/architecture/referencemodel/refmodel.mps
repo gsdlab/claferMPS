@@ -2,9 +2,7 @@
 <model ref="r:318e3602-1c18-4f45-8392-46c6f99dd97f(org.clafer.architecture.referencemodel.refmodel)">
   <persistence version="9" />
   <languages>
-    <use id="5e8d2011-eb6c-491f-9520-19d12014a9bc" name="org.clafer.referenceModel" version="0" />
-    <use id="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" name="org.clafer.slicing" version="0" />
-    <devkit ref="f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)" />
+    <devkit ref="ae43b4a1-760c-45a1-9b50-27b4612b75e3(org.clafer.architecture.devkit)" />
   </languages>
   <imports />
   <registry>

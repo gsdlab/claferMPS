@@ -8,29 +8,14 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="289fcc83-6543-41e8-a5ca-768235715ce4" name="jetbrains.mps.lang.generator.generationParameters" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="tpcq" ref="r:00000000-0000-4000-0000-011c89590286(jetbrains.mps.lang.core.plugin)" />
-    <import index="9vrl" ref="r:9e8f23e3-7bd3-4292-ac1d-5693a6c373f3(jetbrains.mps.internal.collections)" />
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="fn29" ref="r:6ba2667b-185e-45cd-ac65-e4b9d66da28e(jetbrains.mps.smodel.resources)" />
-    <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="ud0o" ref="r:71895ceb-c89d-4545-aa38-89d1cd891f17(jetbrains.mps.make.facet)" />
     <import index="fy8e" ref="r:89c0fb70-0977-7777-a076-5906f9d8630f(jetbrains.mps.make.facets)" />
-    <import index="hghe" ref="r:aa4745ee-7d1e-4d0e-ab82-25f7ef8842a5(org.clafer.architecture.core.parameters)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="3636" ref="r:204ce34c-c886-4f28-81c0-4b1b9a6fe4ed(org.clafer.architecture.core.behavior)" />
     <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="kppg" ref="r:7f268764-a3f4-4633-b896-ead1357be1a2(org.clafer.core.plugin)" />
@@ -213,38 +198,6 @@
   </registry>
   <node concept="15KeUS" id="W3GDriXF_Z">
     <property role="TrG5h" value="TempFiles" />
-    <node concept="15KeUm" id="W3GDrj3gxA" role="15LFul">
-      <property role="TrG5h" value="refModel" />
-      <property role="2w7fpF" value="TRANSFORM" />
-      <node concept="15KeVb" id="W3GDrj3jFY" role="15LFui">
-        <property role="3HPxAp" value="AFTER" />
-        <ref role="15KeV8" to="tpcq:72ouys9JzGh" resolve="configure" />
-      </node>
-      <node concept="15KeVb" id="W3GDrj3jFZ" role="15LFui">
-        <ref role="15KeV8" to="tpcq:5L5h3brvzcf" resolve="generate" />
-      </node>
-      <node concept="2aLE7I" id="W3GDrj3gxB" role="ElM8M">
-        <node concept="ElOhj" id="W3GDrj3gxC" role="2aLE7H">
-          <node concept="3clFbS" id="W3GDrj3gxD" role="2VODD2">
-            <node concept="3SKdUt" id="W3GDrj3gRP" role="3cqZAp">
-              <node concept="3SKdUq" id="W3GDrj3gRU" role="3SKWNk">
-                <property role="3SKdUp" value="See https://mps-support.jetbrains.com/hc/en-us/community/posts/206611835-Where-to-set-generator-parameters" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3D36IL" id="W3GDrj3n$7" role="3D36I5">
-        <node concept="3D27Fh" id="W3GDrj3nCr" role="3D36IM">
-          <ref role="3uigEE" to="fn29:1Xl3kQ1uadK" resolve="MResource" />
-        </node>
-      </node>
-      <node concept="3D36IL" id="W3GDrj3nGN" role="3D36I4">
-        <node concept="3D27Fh" id="W3GDrj3nPm" role="3D36IM">
-          <ref role="3uigEE" to="fn29:1Xl3kQ1uadK" resolve="MResource" />
-        </node>
-      </node>
-    </node>
     <node concept="3HPw9p" id="bq6A3e6cTH" role="1Mm5TH">
       <ref role="1Mm5Yu" to="tpcq:5L5h3brvDH_" resolve="TextGen" />
     </node>
@@ -253,6 +206,42 @@
     </node>
     <node concept="3HPw9p" id="3nDbt_S1sW9" role="1Mm5TH">
       <ref role="1Mm5Yu" to="kppg:W3GDriXF_Z" resolve="Clafer" />
+    </node>
+    <node concept="1X3_iC" id="3MxXXebDro0" role="lGtFl">
+      <property role="3V$3am" value="targetDeclaration" />
+      <property role="3V$3ak" value="696c1165-4a59-463b-bc5d-902caab85dd0/6418371274763029523/6418371274763146558" />
+      <node concept="15KeUm" id="W3GDrj3gxA" role="8Wnug">
+        <property role="TrG5h" value="refModel" />
+        <property role="2w7fpF" value="TRANSFORM" />
+        <node concept="15KeVb" id="W3GDrj3jFY" role="15LFui">
+          <property role="3HPxAp" value="AFTER" />
+          <ref role="15KeV8" to="tpcq:72ouys9JzGh" resolve="configure" />
+        </node>
+        <node concept="15KeVb" id="W3GDrj3jFZ" role="15LFui">
+          <ref role="15KeV8" to="tpcq:5L5h3brvzcf" resolve="generate" />
+        </node>
+        <node concept="2aLE7I" id="W3GDrj3gxB" role="ElM8M">
+          <node concept="ElOhj" id="W3GDrj3gxC" role="2aLE7H">
+            <node concept="3clFbS" id="W3GDrj3gxD" role="2VODD2">
+              <node concept="3SKdUt" id="W3GDrj3gRP" role="3cqZAp">
+                <node concept="3SKdUq" id="W3GDrj3gRU" role="3SKWNk">
+                  <property role="3SKdUp" value="See https://mps-support.jetbrains.com/hc/en-us/community/posts/206611835-Where-to-set-generator-parameters" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3D36IL" id="W3GDrj3n$7" role="3D36I5">
+          <node concept="3D27Fh" id="W3GDrj3nCr" role="3D36IM">
+            <ref role="3uigEE" to="fn29:1Xl3kQ1uadK" resolve="MResource" />
+          </node>
+        </node>
+        <node concept="3D36IL" id="W3GDrj3nGN" role="3D36I4">
+          <node concept="3D27Fh" id="W3GDrj3nPm" role="3D36IM">
+            <ref role="3uigEE" to="fn29:1Xl3kQ1uadK" resolve="MResource" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="15KeUm" id="W3GDriYOLC" role="15LFul">
       <property role="TrG5h" value="referenceModel" />

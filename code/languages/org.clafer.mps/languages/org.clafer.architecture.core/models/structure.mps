@@ -6,7 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="dkee" ref="r:efb465bf-ea7d-479d-8823-2c3c77049b98(org.clafer.util.tags.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
@@ -74,9 +73,6 @@
     <ref role="1TJDcQ" to="mecy:4Z9rElrxgzk" resolve="BaseClafer" />
     <node concept="PrWs8" id="6LOryU0rqHo" role="PzmwI">
       <ref role="PrY4T" node="50FM0hzFYbT" resolve="IHaveQualityAttributes" />
-    </node>
-    <node concept="PrWs8" id="7bA4V6KDwem" role="PzmwI">
-      <ref role="PrY4T" to="dkee:7bA4V6KyOHz" resolve="ITaggable" />
     </node>
     <node concept="PrWs8" id="3g3ywkm6Xbv" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />

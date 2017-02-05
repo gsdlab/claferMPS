@@ -34,14 +34,11 @@
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="f5p9" ref="r:2feaea5e-53bc-4a89-a5e6-4b641151a82e(org.clafer.core.behavior)" />
-    <import index="dkee" ref="r:efb465bf-ea7d-479d-8823-2c3c77049b98(org.clafer.util.tags.structure)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="7ou7" ref="r:c2174d48-8423-45ea-b84e-77408df7449d(de.itemis.mps.editor.diagram.runtime.shape)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="6o3w" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.parser(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="e373" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.util(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
     <import index="lhjl" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.w3c.dom(JDK/)" />
     <import index="k99n" ref="c0488c1e-322f-4f38-92d4-5520a7ce96c1/java:org.apache.batik.dom.svg(com.mbeddr.mpsutil.plantuml.pluginSolution/)" />
@@ -1938,13 +1935,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="7bA4V6KyOHn">
-    <ref role="1XX52x" to="dkee:7hp4$a4mUt9" resolve="Tag" />
-    <node concept="2SsqMj" id="7bA4V6KyOI0" role="2wV5jI" />
-    <node concept="2aJ2om" id="7bA4V6KyOHv" role="CpUAK">
-      <ref role="2$4xQ3" node="1q5jVmNO7w$" resolve="architectureDiagrams" />
     </node>
   </node>
   <node concept="24kQdi" id="7bA4V6Ky$GA">

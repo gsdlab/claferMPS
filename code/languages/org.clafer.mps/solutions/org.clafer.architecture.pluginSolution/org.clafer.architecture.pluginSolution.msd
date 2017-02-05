@@ -68,7 +68,6 @@
     <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
     <module reference="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4(org.clafer.slicing)" version="0" />
     <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
-    <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
   </dependencyVersions>
 </solution>
 

@@ -23,7 +23,6 @@
         <dependency reexport="false">8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)</dependency>
         <dependency reexport="false">e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)</dependency>
         <dependency reexport="false">34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)</dependency>
-        <dependency reexport="false">25b4f8db-5167-4494-9399-64188ee2fa64(org.clafer.slicing#2741700796588433415)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -97,9 +96,7 @@
         <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
         <module reference="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" version="0" />
         <module reference="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4(org.clafer.slicing)" version="0" />
-        <module reference="25b4f8db-5167-4494-9399-64188ee2fa64(org.clafer.slicing#2741700796588433415)" version="0" />
         <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
-        <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
       </dependencyVersions>
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_together">
@@ -139,7 +136,6 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="true">0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)</dependency>
-    <dependency reexport="false">5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)</dependency>
     <dependency reexport="true">bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)</dependency>
   </dependencies>
   <usedDevKits>
@@ -192,7 +188,6 @@
     <language id="5e8d2011-eb6c-491f-9520-19d12014a9bc" fqName="org.clafer.referenceModel" version="0" />
     <language id="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" fqName="org.clafer.slicing" version="0" />
     <language id="e9e86950-9616-4c00-85d2-04b82bc81259" fqName="org.clafer.util.milestone" version="0" />
-    <language id="763983de-9550-4aa7-a552-5bc929753997" fqName="org.clafer.util.tags" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -240,13 +235,11 @@
     <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
     <module reference="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4(org.clafer.slicing)" version="0" />
     <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
-    <module reference="763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)" version="0" />
   </dependencyVersions>
   <runtime>
     <dependency reexport="false">0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)</dependency>
   </runtime>
   <extendedLanguages>
-    <extendedLanguage>763983de-9550-4aa7-a552-5bc929753997(org.clafer.util.tags)</extendedLanguage>
     <extendedLanguage>8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)</extendedLanguage>
     <extendedLanguage>8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</extendedLanguage>
     <extendedLanguage>137e622e-709a-48af-8f85-420e945711de(org.clafer.core)</extendedLanguage>
