@@ -140,7 +140,6 @@
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <property id="1184950341882" name="topPriorityGroup" index="3$yP7D" />
         <child id="1200911492601" name="mappingLabel" index="2rTMjI" />
         <child id="1167172143858" name="weavingMappingRule" index="30SoJX" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
@@ -312,13 +311,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="137e622e-709a-48af-8f85-420e945711de" name="org.clafer.core">
@@ -1380,17 +1372,6 @@
         <node concept="3clFbH" id="2GoOGWLklZV" role="3cqZAp" />
         <node concept="3clFbH" id="2GoOGWLkO$W" role="3cqZAp" />
         <node concept="3clFbH" id="2GoOGWLkOo$" role="3cqZAp" />
-      </node>
-    </node>
-  </node>
-  <node concept="bUwia" id="2GoOGWLoCLV">
-    <property role="TrG5h" value="GenerateRModels" />
-    <property role="3$yP7D" value="true" />
-    <node concept="1X3_iC" id="3MxXXebpu$k" role="lGtFl">
-      <property role="3V$3am" value="preMappingScript" />
-      <property role="3V$3ak" value="b401a680-8325-4110-8fd3-84331ff25bef/1095416546421/1195502100749" />
-      <node concept="1puMqW" id="2GoOGWLoCLW" role="8Wnug">
-        <ref role="1puQsG" node="2GoOGWLhdve" resolve="GenerateReferenceModel" />
       </node>
     </node>
   </node>

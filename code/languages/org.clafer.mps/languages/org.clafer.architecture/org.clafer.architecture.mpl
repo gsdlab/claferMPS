@@ -114,23 +114,13 @@
               <mapping-set-element>
                 <generator generatorUID="e4a84757-5cfd-4baf-9c3a-663cffb384bb(org.clafer.referenceModel#6798851666866987618)" />
                 <external-mapping>
-                  <mapping-node modelUID="r:acf0789f-dd9f-4a0a-acfb-b0f43541413e(org.clafer.referenceModel.generator.template.main@generator)" nodeID="6798851666866987619" />
+                  <all-local-mappings />
                 </external-mapping>
               </mapping-set-element>
               <mapping-set-element>
                 <generator generatorUID="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" />
                 <external-mapping>
-                  <mapping-set>
-                    <mapping-set-element>
-                      <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6496364123346699425" />
-                    </mapping-set-element>
-                    <mapping-set-element>
-                      <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="9943029708740935" />
-                    </mapping-set-element>
-                    <mapping-set-element>
-                      <mapping-node modelUID="r:8ea8b49e-3d40-4419-b1bb-a3c6c8742e30(org.clafer.architecture.core.generator.template.main@generator)" nodeID="6977959945969476357" />
-                    </mapping-set-element>
-                  </mapping-set>
+                  <all-local-mappings />
                 </external-mapping>
               </mapping-set-element>
             </mapping-set>
