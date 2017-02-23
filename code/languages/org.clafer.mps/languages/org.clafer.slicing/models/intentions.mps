@@ -28,6 +28,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -43,7 +44,6 @@
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
-        <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
@@ -73,32 +73,64 @@
       <node concept="3clFbS" id="2ocu_$H42y8" role="2VODD2">
         <node concept="3clFbF" id="2ocu_$H43BX" role="3cqZAp">
           <node concept="Xl_RD" id="2ocu_$H43BW" role="3clFbG">
-            <property role="Xl_RC" value="Add Slice Condition" />
+            <property role="Xl_RC" value="Toggle Slice Condition" />
           </node>
         </node>
       </node>
     </node>
     <node concept="2Sbjvc" id="2ocu_$H42y9" role="2ZfgGD">
       <node concept="3clFbS" id="2ocu_$H42ya" role="2VODD2">
-        <node concept="3clFbF" id="2ocu_$H44ng" role="3cqZAp">
-          <node concept="2OqwBi" id="2ocu_$H44Aj" role="3clFbG">
-            <node concept="2OqwBi" id="2ocu_$H44ra" role="2Oq$k0">
-              <node concept="2Sf5sV" id="2ocu_$H44ne" role="2Oq$k0" />
-              <node concept="3CFZ6_" id="2ocu_$H44yJ" role="2OqNvi">
-                <node concept="3CFYIy" id="2ocu_$H44$c" role="3CFYIz">
+        <node concept="3clFbJ" id="2_koKdCO1OI" role="3cqZAp">
+          <node concept="3clFbS" id="2_koKdCO1OJ" role="3clFbx">
+            <node concept="3clFbF" id="2_koKdCO1OK" role="3cqZAp">
+              <node concept="2OqwBi" id="2_koKdCO1OL" role="3clFbG">
+                <node concept="2OqwBi" id="2_koKdCO1OM" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2_koKdCO1ON" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="2_koKdCO1OO" role="2OqNvi">
+                    <node concept="3CFYIy" id="2_koKdCO1U3" role="3CFYIz">
+                      <ref role="3CFYIx" to="on7c:2ocu_$H3VG$" resolve="SliceCondition" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="zfrQC" id="2_koKdCO1OQ" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2_koKdCO1OR" role="3clFbw">
+            <node concept="2OqwBi" id="2_koKdCO1OS" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2_koKdCO1OT" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="2_koKdCO1OU" role="2OqNvi">
+                <node concept="3CFYIy" id="2_koKdCO1Sr" role="3CFYIz">
                   <ref role="3CFYIx" to="on7c:2ocu_$H3VG$" resolve="SliceCondition" />
                 </node>
               </node>
             </node>
-            <node concept="zfrQC" id="2ocu_$H44GS" role="2OqNvi" />
+            <node concept="3w_OXm" id="2_koKdCO1OW" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="2_koKdCO1OX" role="9aQIa">
+            <node concept="3clFbS" id="2_koKdCO1OY" role="9aQI4">
+              <node concept="3clFbF" id="2_koKdCO1OZ" role="3cqZAp">
+                <node concept="2OqwBi" id="2_koKdCO1P0" role="3clFbG">
+                  <node concept="2OqwBi" id="2_koKdCO1P1" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="2_koKdCO1P2" role="2Oq$k0" />
+                    <node concept="3CFZ6_" id="2_koKdCO1P3" role="2OqNvi">
+                      <node concept="3CFYIy" id="2_koKdCO1VU" role="3CFYIz">
+                        <ref role="3CFYIx" to="on7c:2ocu_$H3VG$" resolve="SliceCondition" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1PgB_6" id="2_koKdCO1P5" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2_koKdCO1O9" role="3cqZAp" />
       </node>
     </node>
   </node>
   <node concept="2S6QgY" id="5u8lQlNZ2d9">
     <property role="TrG5h" value="addController" />
-    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="2S6ZIM" id="5u8lQlNZ2da" role="2ZfVej">
       <node concept="3clFbS" id="5u8lQlNZ2db" role="2VODD2">
