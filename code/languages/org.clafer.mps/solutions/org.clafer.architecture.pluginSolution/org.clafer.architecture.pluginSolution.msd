@@ -79,6 +79,7 @@
     <module reference="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" version="0" />
     <module reference="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" version="1" />
     <module reference="6aff701a-05a7-4771-a756-f2a362407675(org.clafer.architecture.pluginSolution)" version="0" />
+    <module reference="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd(org.clafer.colorChooser)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
     <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />

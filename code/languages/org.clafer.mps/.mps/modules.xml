@@ -10,6 +10,8 @@
       <modulePath path="$PROJECT_DIR$/devkits/org.clafer.devkit" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.architecture.core/org.clafer.architecture.core.mpl" folder="architecture" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.architecture/org.clafer.architecture.mpl" folder="architecture" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.colorChooser/org.clafer.colorChooser.mpl" folder="utils.colorChooser" />
+      <modulePath path="$PROJECT_DIR$/languages/org.clafer.colorChooser/sandbox/org.clafer.colorChooser.sandbox.msd" folder="utils.colorChooser" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/org.clafer.core.mpl" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.core/solutions/pluginSolution/org.clafer.core.pluginSolution.msd" folder="core" />
       <modulePath path="$PROJECT_DIR$/languages/org.clafer.expressions/org.clafer.expressions.mpl" folder="core" />

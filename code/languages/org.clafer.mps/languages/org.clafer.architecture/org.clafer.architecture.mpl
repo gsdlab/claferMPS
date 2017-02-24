@@ -106,6 +106,7 @@
         <module reference="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" version="1" />
         <module reference="34737f7e-0ec2-43d8-acad-946c9afd3972(org.clafer.architecture.core#6496364123346699424)" version="0" />
         <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
+        <module reference="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd(org.clafer.colorChooser)" version="0" />
         <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
         <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
         <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />
@@ -191,6 +192,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
     <language id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" fqName="org.clafer.architecture.core" version="0" />
+    <language id="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd" fqName="org.clafer.colorChooser" version="0" />
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
     <language id="8d4e2a78-2e34-46b0-903b-f624343daeaa" fqName="org.clafer.expressions" version="1" />
     <language id="5e8d2011-eb6c-491f-9520-19d12014a9bc" fqName="org.clafer.referenceModel" version="0" />
@@ -246,6 +248,7 @@
     <module reference="b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)" version="17" />
     <module reference="bb2706c2-79b9-4711-8bf9-d8df74d841ba(org.clafer.architecture.core)" version="1" />
     <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />
+    <module reference="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd(org.clafer.colorChooser)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
     <module reference="5e8d2011-eb6c-491f-9520-19d12014a9bc(org.clafer.referenceModel)" version="0" />

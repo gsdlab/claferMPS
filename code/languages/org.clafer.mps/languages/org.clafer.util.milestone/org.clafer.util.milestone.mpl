@@ -41,6 +41,7 @@
         <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
+        <language id="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd" fqName="org.clafer.colorChooser" version="0" />
         <language id="e9e86950-9616-4c00-85d2-04b82bc81259" fqName="org.clafer.util.milestone" version="-1" />
       </languageVersions>
       <dependencyVersions>
@@ -72,6 +73,7 @@
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
+        <module reference="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd(org.clafer.colorChooser)" version="0" />
         <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
         <module reference="317c23fa-eb51-40a9-ae52-1019e2315fcb(org.clafer.util.milestone#5128010114487885350)" version="0" />
       </dependencyVersions>
@@ -117,6 +119,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
+    <language id="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd" fqName="org.clafer.colorChooser" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -149,11 +152,13 @@
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
+    <module reference="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd(org.clafer.colorChooser)" version="0" />
     <module reference="137e622e-709a-48af-8f85-420e945711de(org.clafer.core)" version="0" />
     <module reference="8d4e2a78-2e34-46b0-903b-f624343daeaa(org.clafer.expressions)" version="2" />
     <module reference="e9e86950-9616-4c00-85d2-04b82bc81259(org.clafer.util.milestone)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
+    <extendedLanguage>18c86094-88f4-4b4b-be55-c7ae0fd8b7dd(org.clafer.colorChooser)</extendedLanguage>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
     <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
   </extendedLanguages>

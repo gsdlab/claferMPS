@@ -8,6 +8,13 @@
   </languages>
   <imports />
   <registry>
+    <language id="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd" name="org.clafer.colorChooser">
+      <concept id="3795095535943032151" name="org.clafer.colorChooser.structure.ColorChooser" flags="ng" index="1C9fSv">
+        <property id="6011591716833076912" name="b" index="23Ul1w" />
+        <property id="6011591716833076904" name="r" index="23Ul1S" />
+        <property id="6011591716833076907" name="g" index="23Ul1V" />
+      </concept>
+    </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB">
         <reference id="747084250476878887" name="chunk" index="3GEb4d" />
@@ -15,6 +22,7 @@
     </language>
     <language id="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" name="org.clafer.slicing">
       <concept id="2741700796588438744" name="org.clafer.slicing.structure.SliceTagDeclaration" flags="ng" index="b0OU1">
+        <child id="5997785652685801009" name="color" index="1guuLR" />
         <child id="1472518352456001040" name="dependencies" index="3v3kAN" />
       </concept>
       <concept id="2741700796588433417" name="org.clafer.slicing.structure.ConfigurationModel" flags="ng" index="b0PDg">
@@ -93,8 +101,13 @@
   </node>
   <node concept="b0PDg" id="2ocu_$H3PDh">
     <property role="TrG5h" value="Slices2" />
-    <node concept="b0OU1" id="5cWq$o3f_$v" role="Idr$j">
+    <node concept="b0OU1" id="5cWq$o3hZEX" role="Idr$j">
       <property role="TrG5h" value="test" />
+      <node concept="1C9fSv" id="5cWq$o3i75Y" role="1guuLR">
+        <property role="23Ul1S" value="102" />
+        <property role="23Ul1V" value="102" />
+        <property role="23Ul1w" value="255" />
+      </node>
     </node>
   </node>
   <node concept="UzPwm" id="2ocu_$H3VGc">
@@ -104,8 +117,8 @@
       <property role="2vxgol" value="true" />
       <property role="TrG5h" value="test" />
       <node concept="b0W5X" id="5cWq$o3f_$1" role="lGtFl">
-        <node concept="b74cg" id="5cWq$o3f_$G" role="b74cJ">
-          <ref role="b74cj" node="5cWq$o3f_$v" resolve="test" />
+        <node concept="b74cg" id="16hWdlVM39p" role="b74cJ">
+          <ref role="b74cj" node="5cWq$o3hZEX" resolve="test" />
         </node>
       </node>
     </node>
@@ -117,7 +130,18 @@
     <property role="3wNgFz" value="0" />
     <property role="TrG5h" value="Slices2" />
     <node concept="3GEVxB" id="1QamZildNTJ" role="UzTCp">
+      <ref role="3GEb4d" node="2ocu_$H3PDh" resolve="Slices2" />
+    </node>
+    <node concept="3GEVxB" id="16hWdlVM39v" role="UzTCp">
       <ref role="3GEb4d" node="2ocu_$H3PDc" resolve="Slices" />
+    </node>
+    <node concept="UH0sd" id="4iwPaE7WE1d" role="UzTCv">
+      <property role="TrG5h" value="test" />
+      <node concept="b0W5X" id="4iwPaE7WE1f" role="lGtFl">
+        <node concept="b74cg" id="4iwPaE7WE1h" role="b74cJ">
+          <ref role="b74cj" node="5cWq$o3hZEX" resolve="test" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
