@@ -41,6 +41,16 @@
         <child id="7285997757218440687" name="tuples" index="sklmO" />
       </concept>
       <concept id="8071399195256502219" name="org.clafer.architecture.core.structure.QualityThisExpr" flags="ng" index="2xC6$6" />
+      <concept id="8271111493163428837" name="org.clafer.architecture.core.structure.Preferences" flags="ng" index="3tocZL">
+        <property id="8556599590877743536" name="generateQA" index="1deALe" />
+        <child id="8271111493164032678" name="constants" index="3tuoqM" />
+      </concept>
+      <concept id="598358034644499232" name="org.clafer.architecture.core.structure.Constant" flags="ng" index="1vcr1m">
+        <child id="598358034644520346" name="value" index="1vcgrG" />
+      </concept>
+      <concept id="598358034645073916" name="org.clafer.architecture.core.structure.ConstantsGroup" flags="ng" index="1vMfia">
+        <child id="598358034645073932" name="children" index="1vM8HU" />
+      </concept>
       <concept id="5902858924256204711" name="org.clafer.architecture.core.structure.QualityDeclaration" flags="ng" index="3EozPd">
         <child id="9179073984346905094" name="constraints" index="2jp4kx" />
       </concept>
@@ -202,6 +212,19 @@
     </node>
     <node concept="b0OU1" id="3MxXXebphmn" role="Idr$j">
       <property role="TrG5h" value="Test2" />
+    </node>
+  </node>
+  <node concept="3tocZL" id="71szcjGPq58">
+    <property role="TrG5h" value="Pref" />
+    <property role="1deALe" value="true" />
+    <node concept="1vMfia" id="71szcjGPq5c" role="3tuoqM">
+      <property role="TrG5h" value="constantGroup" />
+      <node concept="1vcr1m" id="71szcjGPq5E" role="1vM8HU">
+        <property role="TrG5h" value="constant" />
+        <node concept="3TlMh9" id="71szcjGPq60" role="1vcgrG">
+          <property role="2hmy$m" value="10" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

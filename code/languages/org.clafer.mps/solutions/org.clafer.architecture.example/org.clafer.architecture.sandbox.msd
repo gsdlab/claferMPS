@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">b41ca45b-f035-4e58-bc7d-a14b21b3db45(org.clafer.architecture)</dependency>
+    <dependency reexport="false">8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>f5479205-2504-43e0-bdca-f3e2aed0435c(org.clafer)</usedDevKit>
