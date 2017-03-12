@@ -12,6 +12,7 @@
   <imports>
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="4y9z" ref="r:6e243ac1-f9a8-47bf-8183-27ab6dd52152(org.clafer.architecture.core.editor)" />
+    <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -33,6 +34,7 @@
     </language>
     <language id="1fc20ffe-f35b-4791-a0b7-d706bad5c49a" name="com.mbeddr.mpsutil.refactoring">
       <concept id="3897771026684493688" name="com.mbeddr.mpsutil.refactoring.structure.ProjectionModeSwitcher" flags="ng" index="33ghlw">
+        <reference id="8575378964582005791" name="requiredConcept" index="2hhq6$" />
         <child id="8575378964581617586" name="modification" index="2hfP89" />
         <child id="8575378964581602954" name="options" index="2hfSGL" />
       </concept>
@@ -47,6 +49,7 @@
   <node concept="33ghlw" id="6Ct43dp6DgB">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="ArchitectureMode" />
+    <ref role="2hhq6$" to="xnt3:4csP6flST3m" resolve="ArchElement" />
     <node concept="33gmoH" id="6Ct43dp6DgC" role="2hfSGL">
       <property role="33g7Lv" value="E/E Architecture Diagrams" />
       <ref role="33glcY" to="4y9z:1q5jVmNO7w$" resolve="architectureDiagrams" />

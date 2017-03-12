@@ -71,7 +71,6 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="278dc825-2faf-4320-b29f-78b1e6994ed4(de.itemis.mps.editor.bool.runtime)" />
           <module ref="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" />
           <module ref="da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
@@ -113,6 +112,57 @@
       <zipfileset file="${basedir}/org.clafer.util.milestone/org.clafer.util.milestone.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/org.clafer.util.milestone-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/org.clafer.util.milestone-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/org.clafer.colorChooser.jar" />
+    <mkdir dir="${build.tmp}/default/org.clafer.colorChooser.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.clafer.colorChooser.jar/META-INF/module.xml">
+      <module namespace="org.clafer.colorChooser" type="language" uuid="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <sources jar="org.clafer.colorChooser-src.jar" descriptor="org.clafer.colorChooser.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/org.clafer.util.zip/org.clafer.util/languages/org.clafer.util/org.clafer.colorChooser.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.clafer.colorChooser" />
+      <fileset dir="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.colorChooser" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/org.clafer.colorChooser/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${build.tmp}/default/org.clafer.colorChooser.jar" />
+    </jar>
+    <jar destfile="${build.tmp}/default/org.clafer.util.zip/org.clafer.util/languages/org.clafer.util/org.clafer.colorChooser-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.clafer.colorChooser#5997785652685561846" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/org.clafer.colorChooser-generator-template">
+      <fileset dir="${basedir}/org.clafer.colorChooser/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/org.clafer.colorChooser-models">
+      <fileset dir="${basedir}/org.clafer.colorChooser/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/org.clafer.util.zip/org.clafer.util/languages/org.clafer.util/org.clafer.colorChooser-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/org.clafer.colorChooser/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <fileset dir="${basedir}/org.clafer.colorChooser/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+      </fileset>
+      <zipfileset file="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.colorChooser/org.clafer.colorChooser.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/org.clafer.colorChooser-generator-template" prefix="module/../../../../../../../../../org.clafer.colorChooser/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/org.clafer.colorChooser-models" prefix="module/../../../../../../../../../org.clafer.colorChooser/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/org.clafer.util.tags.jar" />
     <mkdir dir="${build.tmp}/default/org.clafer.util.tags.jar/META-INF" />
@@ -232,7 +282,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.milestone#5128010114487885350, java.compile.org.clafer.util.tags, java.compile.org.clafer.util.tags#5128010114487885309, java.compile.org.clafer.util.milestone.pluginSolution" />
+  <target name="compileJava" depends="java.compile.org.clafer.util.milestone, java.compile.org.clafer.util.milestone#5128010114487885350, java.compile.org.clafer.colorChooser, java.compile.org.clafer.colorChooser#5997785652685561846, java.compile.org.clafer.util.tags, java.compile.org.clafer.util.tags#5128010114487885309, java.compile.org.clafer.util.milestone.pluginSolution" />
   
   <target name="processResources" />
   
@@ -347,8 +397,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.hints.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
@@ -359,7 +407,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor-support/com.mbeddr.mpsutil.editor.utils.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor-support/com.mbeddr.mpsutil.targetchooser.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.httpsupport/com.mbeddr.mpsutil.httpsupport.rt.jar" />
@@ -368,8 +415,6 @@
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.intentions/com.mbeddr.mpsutil.intentions.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.pluginSolution.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual/com.mbeddr.mpsutil.multilingual.common.jar" />
-      <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual/com.mbeddr.mpsutil.multilingual.common.runtime.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.jar" />
       <library file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.refactoring/com.mbeddr.mpsutil.refactoring.rt.jar" />
@@ -386,9 +431,12 @@
       <library file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.core.jar" />
       <library file="${build.tmp}/deps/org.clafer.core.mps/org.clafer.core.mps.zip/org.clafer.core.mps/languages/org.clafer.mps/org.clafer.expressions.jar" />
       <chunk>
+        <module file="${project.root}/code/languages/org.clafer.mps/languages/org.clafer.colorChooser/org.clafer.colorChooser.mpl" />
+        <module file="${basedir}/org.clafer.util.tags/org.clafer.util.tags.mpl" />
+      </chunk>
+      <chunk>
         <module file="${basedir}/org.clafer.util.milestone/org.clafer.util.milestone.mpl" />
         <module file="${project.root}/code/languages/org.clafer.mps/solutions/org.clafer.util.milestone.pluginSolution/org.clafer.util.milestone.pluginSolution.msd" />
-        <module file="${basedir}/org.clafer.util.tags/org.clafer.util.tags.mpl" />
       </chunk>
       <chunk />
       <jvmargs>
@@ -414,7 +462,7 @@
     </ant>
   </target>
   
-  <target name="java.compile.org.clafer.util.milestone" depends="fetchDependencies">
+  <target name="java.compile.org.clafer.util.milestone" depends="java.compile.org.clafer.colorChooser, fetchDependencies">
     <mkdir dir="${basedir}/org.clafer.util.milestone/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.util.milestone" />
     <javac destdir="${build.tmp}/java/out/org.clafer.util.milestone" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
@@ -435,6 +483,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.colorChooser" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -445,16 +494,11 @@
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.pluginSolution.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor-support/com.mbeddr.mpsutil.editor.utils.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual/com.mbeddr.mpsutil.multilingual.common.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual/com.mbeddr.mpsutil.multilingual.common.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
-        <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.bool.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
@@ -462,18 +506,14 @@
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.sharedConcepts.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
@@ -487,7 +527,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.clafer.util.milestone#5128010114487885350" depends="java.compile.org.clafer.util.milestone, fetchDependencies">
+  <target name="java.compile.org.clafer.util.milestone#5128010114487885350" depends="java.compile.org.clafer.colorChooser, java.compile.org.clafer.util.milestone, fetchDependencies">
     <mkdir dir="${basedir}/org.clafer.util.milestone/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.util.milestone#5128010114487885350" />
     <javac destdir="${build.tmp}/java/out/org.clafer.util.milestone#5128010114487885350" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
@@ -508,6 +548,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.colorChooser" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${build.tmp}/deps/com.mbeddr.allInOne/com.mbeddr.allInOne.zip/plugins/mps-multiline/lib/diff_match_patch.jar" />
@@ -549,6 +590,87 @@
     </javac>
     <copy todir="${build.tmp}/java/out/org.clafer.util.milestone#5128010114487885350">
       <fileset dir="${basedir}/org.clafer.util.milestone/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.org.clafer.colorChooser" depends="fetchDependencies">
+    <mkdir dir="${basedir}/org.clafer.colorChooser/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.clafer.colorChooser" />
+    <javac destdir="${build.tmp}/java/out/org.clafer.colorChooser" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/org.clafer.colorChooser/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/org.clafer.colorChooser">
+      <fileset dir="${basedir}/org.clafer.colorChooser/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.org.clafer.colorChooser#5997785652685561846" depends="java.compile.org.clafer.colorChooser, fetchDependencies">
+    <mkdir dir="${basedir}/org.clafer.colorChooser/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.clafer.colorChooser#5997785652685561846" />
+    <javac destdir="${build.tmp}/java/out/org.clafer.colorChooser#5997785652685561846" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/org.clafer.colorChooser/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.colorChooser" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
+        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+    <copy todir="${build.tmp}/java/out/org.clafer.colorChooser#5997785652685561846">
+      <fileset dir="${basedir}/org.clafer.colorChooser/generator/source_gen" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -634,7 +756,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.clafer.util.milestone.pluginSolution" depends="java.compile.org.clafer.util.milestone, fetchDependencies">
+  <target name="java.compile.org.clafer.util.milestone.pluginSolution" depends="java.compile.org.clafer.colorChooser, java.compile.org.clafer.util.milestone, fetchDependencies">
     <mkdir dir="${project.root}/code/languages/org.clafer.mps/solutions/org.clafer.util.milestone.pluginSolution/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.clafer.util.milestone.pluginSolution" />
     <javac destdir="${build.tmp}/java/out/org.clafer.util.milestone.pluginSolution" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.6" target="1.6">
@@ -655,6 +777,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <pathelement path="${build.tmp}/java/out/org.clafer.colorChooser" />
         <pathelement path="${build.tmp}/java/out/org.clafer.util.milestone" />
         <fileset file="${artifacts.mps}/lib/mps-tool.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
@@ -701,10 +824,12 @@
   </target>
   
   <target name="cleanSources">
+    <delete dir="${basedir}/org.clafer.colorChooser/source_gen" />
+    <delete dir="${basedir}/org.clafer.util.tags/source_gen" />
+    <delete dir="${basedir}/org.clafer.colorChooser/generator/source_gen" />
     <delete dir="${basedir}/org.clafer.util.milestone/source_gen" />
     <delete dir="${project.root}/code/languages/org.clafer.mps/solutions/org.clafer.util.milestone.pluginSolution/source_gen" />
-    <delete dir="${basedir}/org.clafer.util.tags/source_gen" />
-    <delete dir="${basedir}/org.clafer.util.milestone/generator/source_gen" />
     <delete dir="${basedir}/org.clafer.util.tags/generator/source_gen" />
+    <delete dir="${basedir}/org.clafer.util.milestone/generator/source_gen" />
   </target>
 </project>

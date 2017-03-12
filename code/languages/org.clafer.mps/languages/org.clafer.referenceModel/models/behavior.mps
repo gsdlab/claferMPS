@@ -13,7 +13,6 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mecy" ref="r:bf75342d-291a-4d28-8aca-7b2cc474681b(org.clafer.core.structure)" />
     <import index="t0n6" ref="r:414c079d-9eb7-4f55-bf30-49912fdadcdb(org.clafer.referenceModel.structure)" />
-    <import index="ddau" ref="r:99aabafd-847f-465c-9fb1-dde7fec9a0d0(org.clafer.architecture.structure)" />
     <import index="xnt3" ref="r:7b64a208-e098-422f-a5f7-f061ea807381(org.clafer.architecture.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -858,11 +857,11 @@
           <node concept="3cpWsn" id="PK4wiFV3t1" role="3cpWs9">
             <property role="TrG5h" value="qModules" />
             <node concept="2I9FWS" id="6mpz4vWcDqQ" role="1tU5fm">
-              <ref role="2I9WkF" to="xnt3:6kt45HTiMty" resolve="QualityModule" />
+              <ref role="2I9WkF" to="xnt3:6kt45HTiMty" resolve="QATable" />
             </node>
             <node concept="2OqwBi" id="PK4wiFV3t2" role="33vP2m">
               <node concept="3lApI0" id="PK4wiFV3t3" role="2OqNvi">
-                <ref role="3lApI3" to="xnt3:6kt45HTiMty" resolve="QualityModule" />
+                <ref role="3lApI3" to="xnt3:6kt45HTiMty" resolve="QATable" />
               </node>
               <node concept="37vLTw" id="2NSDVxFOK_t" role="2Oq$k0">
                 <ref role="3cqZAo" node="2NSDVxFOJAj" resolve="model" />
@@ -875,12 +874,12 @@
             <property role="TrG5h" value="qElements" />
             <property role="3TUv4t" value="false" />
             <node concept="2I9FWS" id="6mpz4vWaOOA" role="1tU5fm">
-              <ref role="2I9WkF" to="xnt3:57FaIEVyhuB" resolve="QualityTableElement" />
+              <ref role="2I9WkF" to="xnt3:57FaIEVyhuB" resolve="QualityDeclaration" />
             </node>
             <node concept="2ShNRf" id="6mpz4vWaQ6s" role="33vP2m">
               <node concept="2T8Vx0" id="6mpz4vWaQ6q" role="2ShVmc">
                 <node concept="2I9FWS" id="6mpz4vWaQ6r" role="2T96Bj">
-                  <ref role="2I9WkF" to="xnt3:57FaIEVyhuB" resolve="QualityTableElement" />
+                  <ref role="2I9WkF" to="xnt3:57FaIEVyhuB" resolve="QualityDeclaration" />
                 </node>
               </node>
             </node>
@@ -1071,7 +1070,7 @@
       </node>
       <node concept="3Tm1VV" id="2NSDVxFOIfN" role="1B3o_S" />
       <node concept="2I9FWS" id="2NSDVxFOIlQ" role="3clF45">
-        <ref role="2I9WkF" to="xnt3:57FaIEVyhuB" resolve="QualityTableElement" />
+        <ref role="2I9WkF" to="xnt3:57FaIEVyhuB" resolve="QualityDeclaration" />
       </node>
       <node concept="37vLTG" id="2NSDVxFP1qE" role="3clF46">
         <property role="TrG5h" value="conceptName" />

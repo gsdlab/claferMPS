@@ -37,10 +37,10 @@
       <node concept="2AWWZL" id="bl22kSm$wf" role="2xbbhh">
         <property role="2AWWZJ" value="gcc" />
         <property role="3r8Kw1" value="gdb" />
-        <property role="3r8Kxs" value="make" />
         <property role="2AWWZI" value="-std=c99" />
         <property role="1FkSt$" value="-g" />
         <property role="3I8uaA" value="" />
+        <property role="3r8Kxs" value="make" />
       </node>
     </node>
   </node>

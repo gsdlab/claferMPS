@@ -129,7 +129,7 @@
         <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="6300420630909770924" name="superClafer" index="2vxcI2" />
         <child id="6300420630910212770" name="groupCard" index="2vBoQc" />
-        <child id="6300420630910100710" name="explicitCard" index="2vBZf8" />
+        <child id="6300420630910100710" name="multiplicity" index="2vBZf8" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
         <child id="4545783005407237529" name="initializer" index="KmSwm" />
       </concept>
@@ -365,18 +365,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="UH0sd" id="3WlRoWeC6O$" role="UzTCv">
-          <property role="TrG5h" value="C10" />
-          <node concept="UH0sd" id="3WlRoWeEBTr" role="2vwUiP">
-            <property role="TrG5h" value="C11" />
-          </node>
-          <node concept="UH0sd" id="3WlRoWeEBTw" role="2vwUiP">
-            <property role="TrG5h" value="C12" />
-          </node>
-          <node concept="3Edjpn" id="3iBNEMrctLx" role="2vBoQc">
-            <property role="3Edjpk" value="1" />
           </node>
         </node>
         <node concept="UH0sd" id="3WlRoWeC62S" role="UzTCv">
@@ -701,8 +689,8 @@
             <node concept="ZpONE" id="3SHz3PY1xjn" role="3TlMhI">
               <ref role="ZpOSt" node="3WlRoWeC62S" resolve="C6" />
             </node>
-            <node concept="ZpONE" id="3SHz3PY1xk5" role="3TlMhJ">
-              <ref role="ZpOSt" node="3WlRoWeC6O$" resolve="C10" />
+            <node concept="ZpONE" id="3MxXXebJMh1" role="3TlMhJ">
+              <ref role="ZpOSt" node="2uk4icnIZRG" resolve="C1" />
             </node>
           </node>
         </node>
@@ -722,8 +710,8 @@
               <node concept="ZpONE" id="2FS8nA549bB" role="3TlMhJ">
                 <ref role="ZpOSt" node="3WlRoWeC5Ho" resolve="C2" />
               </node>
-              <node concept="ZpONE" id="2FS8nA549aX" role="3TlMhI">
-                <ref role="ZpOSt" node="3WlRoWeC6O$" resolve="C10" />
+              <node concept="ZpONE" id="3MxXXebJMhp" role="3TlMhI">
+                <ref role="ZpOSt" node="2uk4icnIZRG" resolve="C1" />
               </node>
             </node>
           </node>
@@ -741,8 +729,8 @@
           </node>
           <node concept="LdX3K" id="2FS8nA549m$" role="3WnoGb">
             <node concept="Lgdc3" id="2FS8nA549n6" role="1_9fRO">
-              <node concept="ZpONE" id="2FS8nA549nt" role="3TlMhJ">
-                <ref role="ZpOSt" node="3WlRoWeC6O$" resolve="C10" />
+              <node concept="ZpONE" id="3MxXXebJMhP" role="3TlMhJ">
+                <ref role="ZpOSt" node="2uk4icnIZRG" resolve="C1" />
               </node>
               <node concept="ZpONE" id="2FS8nA549mP" role="3TlMhI">
                 <ref role="ZpOSt" node="3WlRoWeC62S" resolve="C6" />
@@ -763,8 +751,8 @@
           </node>
           <node concept="LdX3K" id="2FS8nA549KA" role="3WnoGb">
             <node concept="Lgdc3" id="2FS8nA549L8" role="1_9fRO">
-              <node concept="ZpONE" id="2FS8nA549Lv" role="3TlMhJ">
-                <ref role="ZpOSt" node="3WlRoWeC6O$" resolve="C10" />
+              <node concept="ZpONE" id="3MxXXebJMig" role="3TlMhJ">
+                <ref role="ZpOSt" node="2uk4icnIZRG" resolve="C1" />
               </node>
               <node concept="ZpONE" id="2FS8nA549KR" role="3TlMhI">
                 <ref role="ZpOSt" node="3WlRoWeC62S" resolve="C6" />

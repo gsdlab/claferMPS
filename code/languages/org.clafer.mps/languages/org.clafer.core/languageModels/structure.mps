@@ -14,6 +14,17 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -130,7 +141,7 @@
     </node>
     <node concept="1TJgyj" id="5tJ_MV8W6jA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="explicitCard" />
+      <property role="20kJfa" value="multiplicity" />
       <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6qd05Uc_KdB" resolve="AbstractCardinality" />
     </node>
@@ -480,6 +491,85 @@
   <node concept="PlHQZ" id="2zEjgGwmaLs">
     <property role="1pbfSe" value="1229125991" />
     <property role="TrG5h" value="NotInScope" />
+  </node>
+  <node concept="1TIwiD" id="vcgZZJWfYB">
+    <property role="1pbfSe" value="138591322" />
+    <property role="TrG5h" value="PlatformTemplateContainer" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="Platform" />
+    <property role="34LRSv" value="Platform Template Container" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="vcgZZJWgqN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="templates" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="vcgZZJWgqM" resolve="PlatformTemplate" />
+    </node>
+    <node concept="PrWs8" id="vcgZZJWfYC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="vcgZZJWgqM">
+    <property role="1pbfSe" value="138589519" />
+    <property role="3GE5qa" value="Platform" />
+    <property role="TrG5h" value="PlatformTemplate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="vcgZZJWh2i" role="1TKVEl">
+      <property role="TrG5h" value="compiler" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="vcgZZJWh2p" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="modules" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="vcgZZJWh2s" resolve="ClaferModuleRef" />
+    </node>
+    <node concept="1TJgyj" id="7l_c4fVJSvi" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="compilerOptions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7l_c4fVJSum" resolve="PlatformOption" />
+    </node>
+    <node concept="PrWs8" id="vcgZZJWhU2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="vcgZZJWh2s">
+    <property role="1pbfSe" value="138586981" />
+    <property role="3GE5qa" value="Platform" />
+    <property role="TrG5h" value="ClaferModuleRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="vcgZZJWh2t" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="bl22kSm_0N" resolve="ClaferModule" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7l_c4fVJSum">
+    <property role="1pbfSe" value="1898231769" />
+    <property role="3GE5qa" value="Platform" />
+    <property role="TrG5h" value="PlatformOption" />
+    <property role="34LRSv" value="option" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7l_c4fVJSup" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="71szcjGRxd_">
+    <property role="1pbfSe" value="1564123177" />
+    <property role="TrG5h" value="DestroyInGenerationAnnotation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="71szcjGRxdS" role="lGtFl">
+      <property role="Hh88m" value="destroyInGeneration" />
+      <node concept="tn0Fv" id="71szcjGRxdV" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="71szcjGRxdY" role="EQaZv">
+        <ref role="trN6q" node="bl22kSm_0N" resolve="ClaferModule" />
+      </node>
+    </node>
   </node>
 </model>
 

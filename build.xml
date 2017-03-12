@@ -7,7 +7,7 @@
   <property name="artifacts.root" location="${basedir}/../../MPS/Artifacts" />
   <property name="platform.distribution.artifacts" location="${artifacts.root}/com.mbeddr.platform" />
   <property name="mbeddr.allInOne.artifacts" location="${artifacts.root}/com.mbeddr.allInOne" />
-  <property name="version" value="0.4.4.3" />
+  <property name="version" value="0.4.4.4" />
   <property name="mbeddrVersion" value="253-MPS-3.3.5" />
   <property name="artifacts.mps" location="${mps.home}" />
   <property name="artifacts.jetpad" location="${mps.home}" />

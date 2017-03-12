@@ -29,6 +29,7 @@
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update()" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project()" />
+    <import index="y8ld" ref="r:6cfe0d64-cf40-4860-a959-49a95c2c0eac(org.clafer.colorChooser.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -224,9 +225,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
-        <child id="1138662048170" name="value" index="tz02z" />
-      </concept>
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
@@ -316,7 +314,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="3iESOxszznm" role="2OqNvi">
-                  <ref role="37wK5l" node="3iESOxszyjH" resolve="getColor" />
+                  <ref role="37wK5l" to="y8ld:3iESOxszyjH" resolve="getColor" />
                 </node>
               </node>
             </node>
@@ -361,7 +359,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="3iESOxsz$mK" role="2OqNvi">
-                  <ref role="37wK5l" node="3iESOxszyjX" resolve="setColor" />
+                  <ref role="37wK5l" to="y8ld:3iESOxszyjX" resolve="setColor" />
                   <node concept="37vLTw" id="3iESOxsz$mZ" role="37wK5m">
                     <ref role="3cqZAo" node="3iESOxsxzEE" resolve="newColor" />
                   </node>
@@ -2034,132 +2032,6 @@
     <node concept="3Tm1VV" id="kk$uAJkIuO" role="1B3o_S" />
     <node concept="3uibUv" id="kk$uAJkIyk" role="1zkMxy">
       <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="3iESOxszy4E">
-    <ref role="13h7C2" to="1drr:3iESOxszxPn" resolve="MilestoneColor" />
-    <node concept="13i0hz" id="3iESOxszyjH" role="13h7CS">
-      <property role="TrG5h" value="getColor" />
-      <node concept="3Tm1VV" id="3iESOxszyjI" role="1B3o_S" />
-      <node concept="3uibUv" id="3iESOxszyjJ" role="3clF45">
-        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-      </node>
-      <node concept="3clFbS" id="3iESOxszyjK" role="3clF47">
-        <node concept="3cpWs6" id="3iESOxszyjL" role="3cqZAp">
-          <node concept="2ShNRf" id="3iESOxszyjM" role="3cqZAk">
-            <node concept="1pGfFk" id="3iESOxszyjN" role="2ShVmc">
-              <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-              <node concept="2OqwBi" id="3iESOxszyjO" role="37wK5m">
-                <node concept="13iPFW" id="3iESOxszyjP" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3iESOxszyjQ" role="2OqNvi">
-                  <ref role="3TsBF5" to="1drr:5dHtH3gx2qC" resolve="r" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="3iESOxszyjR" role="37wK5m">
-                <node concept="13iPFW" id="3iESOxszyjS" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3iESOxszyjT" role="2OqNvi">
-                  <ref role="3TsBF5" to="1drr:5dHtH3gx2qF" resolve="g" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="3iESOxszyjU" role="37wK5m">
-                <node concept="13iPFW" id="3iESOxszyjV" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3iESOxszyjW" role="2OqNvi">
-                  <ref role="3TsBF5" to="1drr:5dHtH3gx2qK" resolve="b" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="13i0hz" id="3iESOxszyjX" role="13h7CS">
-      <property role="TrG5h" value="setColor" />
-      <node concept="3Tm1VV" id="3iESOxszyjY" role="1B3o_S" />
-      <node concept="3cqZAl" id="3iESOxszyjZ" role="3clF45" />
-      <node concept="3clFbS" id="3iESOxszyk0" role="3clF47">
-        <node concept="3clFbF" id="3iESOxszyk1" role="3cqZAp">
-          <node concept="2OqwBi" id="3iESOxszyk2" role="3clFbG">
-            <node concept="2OqwBi" id="3iESOxszyk3" role="2Oq$k0">
-              <node concept="13iPFW" id="3iESOxszyk4" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3iESOxszyk5" role="2OqNvi">
-                <ref role="3TsBF5" to="1drr:5dHtH3gx2qC" resolve="r" />
-              </node>
-            </node>
-            <node concept="tyxLq" id="3iESOxszyk6" role="2OqNvi">
-              <node concept="2OqwBi" id="3iESOxszyk7" role="tz02z">
-                <node concept="37vLTw" id="3iESOxszyk8" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3iESOxszyks" resolve="newColor" />
-                </node>
-                <node concept="liA8E" id="3iESOxszyk9" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Color.getRed():int" resolve="getRed" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3iESOxszyka" role="3cqZAp">
-          <node concept="2OqwBi" id="3iESOxszykb" role="3clFbG">
-            <node concept="2OqwBi" id="3iESOxszykc" role="2Oq$k0">
-              <node concept="13iPFW" id="3iESOxszykd" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3iESOxszyke" role="2OqNvi">
-                <ref role="3TsBF5" to="1drr:5dHtH3gx2qF" resolve="g" />
-              </node>
-            </node>
-            <node concept="tyxLq" id="3iESOxszykf" role="2OqNvi">
-              <node concept="2OqwBi" id="3iESOxszykg" role="tz02z">
-                <node concept="37vLTw" id="3iESOxszykh" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3iESOxszyks" resolve="newColor" />
-                </node>
-                <node concept="liA8E" id="3iESOxszyki" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Color.getGreen():int" resolve="getGreen" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3iESOxszykj" role="3cqZAp">
-          <node concept="2OqwBi" id="3iESOxszykk" role="3clFbG">
-            <node concept="2OqwBi" id="3iESOxszykl" role="2Oq$k0">
-              <node concept="13iPFW" id="3iESOxszykm" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3iESOxszykn" role="2OqNvi">
-                <ref role="3TsBF5" to="1drr:5dHtH3gx2qK" resolve="b" />
-              </node>
-            </node>
-            <node concept="tyxLq" id="3iESOxszyko" role="2OqNvi">
-              <node concept="2OqwBi" id="3iESOxszykp" role="tz02z">
-                <node concept="37vLTw" id="3iESOxszykq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3iESOxszyks" resolve="newColor" />
-                </node>
-                <node concept="liA8E" id="3iESOxszykr" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Color.getBlue():int" resolve="getBlue" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="3iESOxszyks" role="3clF46">
-        <property role="TrG5h" value="newColor" />
-        <node concept="3uibUv" id="3iESOxszykt" role="1tU5fm">
-          <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
-        </node>
-      </node>
-    </node>
-    <node concept="13hLZK" id="3iESOxszy4F" role="13h7CW">
-      <node concept="3clFbS" id="3iESOxszy4G" role="2VODD2">
-        <node concept="3clFbF" id="3iESOxszyrf" role="3cqZAp">
-          <node concept="2OqwBi" id="3iESOxszyrh" role="3clFbG">
-            <node concept="13iPFW" id="3iESOxszyri" role="2Oq$k0" />
-            <node concept="2qgKlT" id="3iESOxszyrj" role="2OqNvi">
-              <ref role="37wK5l" node="3iESOxszyjX" resolve="setColor" />
-              <node concept="10M0yZ" id="3iESOxszyrk" role="37wK5m">
-                <ref role="3cqZAo" to="z60i:~Color.WHITE" resolve="WHITE" />
-                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="2eqgeHi4j1O">

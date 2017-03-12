@@ -29,12 +29,14 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="1" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
+    <language id="b41ca45b-f035-4e58-bc7d-a14b21b3db45" fqName="org.clafer.architecture" version="0" />
     <language id="bb2706c2-79b9-4711-8bf9-d8df74d841ba" fqName="org.clafer.architecture.core" version="0" />
+    <language id="18c86094-88f4-4b4b-be55-c7ae0fd8b7dd" fqName="org.clafer.colorChooser" version="0" />
     <language id="137e622e-709a-48af-8f85-420e945711de" fqName="org.clafer.core" version="1" />
     <language id="8d4e2a78-2e34-46b0-903b-f624343daeaa" fqName="org.clafer.expressions" version="1" />
     <language id="5e8d2011-eb6c-491f-9520-19d12014a9bc" fqName="org.clafer.referenceModel" version="0" />
+    <language id="3caa48f5-b58c-40e5-8e9c-25dcd3ac80e4" fqName="org.clafer.slicing" version="0" />
     <language id="e9e86950-9616-4c00-85d2-04b82bc81259" fqName="org.clafer.util.milestone" version="0" />
-    <language id="763983de-9550-4aa7-a552-5bc929753997" fqName="org.clafer.util.tags" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="0d295de9-76dc-4a2e-9845-e2d68d1079bb(org.clafer.architecture.referencemodel)" version="0" />

@@ -137,7 +137,7 @@
         <child id="6300420630909825947" name="children" index="2vwUiP" />
         <child id="6300420630909770924" name="superClafer" index="2vxcI2" />
         <child id="6300420630910212770" name="groupCard" index="2vBoQc" />
-        <child id="6300420630910100710" name="explicitCard" index="2vBZf8" />
+        <child id="6300420630910100710" name="multiplicity" index="2vBZf8" />
         <child id="7663324203600887728" name="ref" index="2K4itM" />
       </concept>
       <concept id="7750719112878294493" name="org.clafer.core.structure.ThisExpr" flags="ng" index="2Zoh0E" />
@@ -622,8 +622,8 @@
       </node>
       <node concept="2dvt44" id="1e18CmCst7o" role="lGtFl">
         <node concept="3o9_tv" id="1e18CmCst7p" role="2dvt70">
-          <node concept="2qVrgw" id="1e18CmCst7C" role="3o9_ts">
-            <ref role="2qVrgz" node="1e18CmCsq23" resolve="PT" />
+          <node concept="2qVrgw" id="4iwPaE7WEL5" role="3o9_ts">
+            <ref role="2qVrgz" node="1e18CmCsq1W" resolve="CT" />
           </node>
         </node>
       </node>
@@ -935,7 +935,7 @@
     </node>
     <node concept="2dvl_R" id="7hp4$a4lXBG" role="lGtFl">
       <ref role="2dvl_Q" node="1e18CmCsq1y" resolve="RMF" />
-      <ref role="AiAcg" node="1e18CmCswgG" resolve="FC" />
+      <ref role="AiAcg" node="1e18CmCstfz" resolve="Full" />
     </node>
   </node>
   <node concept="Idr$i" id="7hp4$a4lWW5">
