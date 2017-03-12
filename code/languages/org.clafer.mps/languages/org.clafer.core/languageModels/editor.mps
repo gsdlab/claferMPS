@@ -84,6 +84,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1214320119173" name="jetbrains.mps.lang.editor.structure.SideTransformAnchorTagStyleClassItem" flags="ln" index="2V7CMv">
         <property id="1214320119174" name="tag" index="2V7CMs" />
       </concept>
@@ -2235,6 +2236,16 @@
     <ref role="1XX52x" to="mecy:7l_c4fVJSum" resolve="PlatformOption" />
     <node concept="3F0A7n" id="7l_c4fVJSvf" role="2wV5jI">
       <ref role="1NtTu8" to="mecy:7l_c4fVJSup" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="71szcjGRxep">
+    <ref role="1XX52x" to="mecy:71szcjGRxd_" resolve="DestroyInGenerationAnnotation" />
+    <node concept="3EZMnI" id="71szcjGRxeH" role="2wV5jI">
+      <node concept="3F0ifn" id="71szcjGRxeR" role="3EZMnx">
+        <property role="3F0ifm" value="@destroyInGeneration" />
+      </node>
+      <node concept="2SsqMj" id="71szcjGRxf0" role="3EZMnx" />
+      <node concept="2iRkQZ" id="71szcjGRxeK" role="2iSdaV" />
     </node>
   </node>
 </model>
