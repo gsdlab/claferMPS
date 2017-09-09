@@ -1,9 +1,3 @@
-[//mbeddr version]: # (nightly-253-MPS-3.3.5)
-[//ClaferMPS zip name]: # (org.clafer.all-0.4.4.4.zip)
-[//ClaferMPS version]: # (v0.4.4.4)
-[//MPS version]: # (v3.3.5 (build 143.1301))
-
-
 ClaferMPS
 =========
 
